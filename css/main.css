@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Manrope", sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+header {
+	height: 72px;
+	border-bottom: 1px solid #e5e9f2;
+}
