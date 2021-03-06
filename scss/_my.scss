@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}

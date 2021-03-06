@@ -1,13 +1,7 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
+@import "_my.scss";
 
 body {
 	font-family: "Manrope", sans-serif;
-	padding: 0;
-	margin: 0;
 }
 
 header {
@@ -20,21 +14,18 @@ header {
 	width: 1113px;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-.nav {
-	margin-top: 22px;
-	margin-right: 200px;
-	margin-bottom: 22px;
-	margin-left: 10px;
+	.nav {
+		margin-top: 22px;
+		margin-right: 200px;
+		margin-bottom: 22px;
+		margin-left: 10px;
+	}
 }
 
 .nav-list {
 	display: flex;
 	justify-content: space-between;
 	width: 490px;
-	padding: 0;
-	margin: 0;
 	li {
 		list-style-type: none;
 	}
@@ -50,14 +41,6 @@ header {
 .appstore {
 	margin-bottom: 16px;
 	margin-top: 16px;
-}
-
-.logo {
-	margin-bottom: 21px;
-	margin-top: 21px;
-}
-
-.appstore {
 	width: 284px;
 	a {
 		&:first-child {
@@ -66,6 +49,120 @@ header {
 	}
 }
 
+.logo {
+	margin-bottom: 21px;
+	margin-top: 21px;
+}
+
 .title {
 	display: flex;
+	width: 1102px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title-text {
+	margin-top: 221px;
+	margin-right: 38px;
+	margin-bottom: 189px;
+	width: 540px;
+	h1 {
+		margin-bottom: 16px;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 72px;
+		line-height: 98px;
+		color: #18191f;
+	}
+	p {
+		margin-bottom: 32px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 32px;
+		color: #18191f;
+		line-height: 32px;
+	}
+}
+
+button {
+	width: 284px;
+	height: 62px;
+
+	border: 0;
+	background: #8c30f5;
+	border-radius: 8px;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+}
+
+.image {
+	margin-top: 197px;
+	img {
+		width: 524px;
+		height: 400px;
+	}
+}
+
+footer {
+	background: #0b0d17;
+	margin-bottom: 0;
+}
+
+.footer-container {
+	display: flex;
+	width: 1110px;
+	height: 72px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.copyright {
+	width: 270px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	margin-right: 656px;
+	p {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: #d9dbe1;
+	}
+}
+
+.footer-social {
+	margin-top: 19px;
+	margin-bottom: 19px;
+	width: 184px;
+	height: 34px;
+}
+
+.social-list {
+	display: flex;
+	justify-content: space-between;
+	li {
+		width: 34px;
+		height: 34px;
+		list-style-type: none;
+	}
+	img {
+		display: block;
+		margin: 8px;
+		width: 18px;
+		height: 18px;
+	}
+	a {
+		display: inline-block;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background: #23252e;
+		text-decoration: none;
+	}
 }
