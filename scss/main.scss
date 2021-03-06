@@ -2,6 +2,9 @@
 
 body {
 	font-family: "Manrope", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 header {
@@ -11,12 +14,12 @@ header {
 .header-container {
 	display: flex;
 	height: 72px;
-	width: 1113px;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 	.nav {
 		margin-top: 22px;
-		margin-right: 200px;
+		margin-right: auto;
 		margin-bottom: 22px;
 		margin-left: 10px;
 	}
@@ -41,9 +44,12 @@ header {
 .appstore {
 	margin-bottom: 16px;
 	margin-top: 16px;
-	width: 284px;
+	width: 294px;
 	a {
 		&:first-child {
+			margin-right: 10px;
+		}
+		&:last-child {
 			margin-right: 10px;
 		}
 	}
@@ -52,20 +58,19 @@ header {
 .logo {
 	margin-bottom: 21px;
 	margin-top: 21px;
+	margin-left: 10px;
 }
 
 .title {
 	display: flex;
-	width: 1102px;
-	margin-left: auto;
-	margin-right: auto;
+	justify-content: center;
+	width: 100%;
+	margin-right: 38px;
 }
 
 .title-text {
-	margin-top: 221px;
-	margin-right: 38px;
-	margin-bottom: 189px;
-	width: 540px;
+	width: 464px;
+	height: 434px;
 	h1 {
 		margin-bottom: 16px;
 		font-style: normal;
@@ -102,7 +107,6 @@ button {
 }
 
 .image {
-	margin-top: 197px;
 	img {
 		width: 524px;
 		height: 400px;
@@ -110,13 +114,14 @@ button {
 }
 
 footer {
+	width: 100%;
 	background: #0b0d17;
-	margin-bottom: 0;
 }
 
 .footer-container {
+	margin-top: auto;
 	display: flex;
-	width: 1110px;
+	width: 100%;
 	height: 72px;
 	margin-left: auto;
 	margin-right: auto;
@@ -126,7 +131,7 @@ footer {
 	width: 270px;
 	margin-top: 24px;
 	margin-bottom: 24px;
-	margin-right: 656px;
+	margin-left: 10%;
 	p {
 		font-style: normal;
 		font-weight: normal;
@@ -135,10 +140,11 @@ footer {
 		color: #d9dbe1;
 	}
 }
-
 .footer-social {
 	margin-top: 19px;
+	margin-right: 10%;
 	margin-bottom: 19px;
+	margin-left: auto;
 	width: 184px;
 	height: 34px;
 }
