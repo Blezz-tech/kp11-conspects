@@ -52,6 +52,7 @@ header {
   margin-left: 50px;
   height: 20px;
   width: 270px;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +175,18 @@ header {
 }
 
 .content {
+  padding-top: 80px;
+  padding-right: calc((100vw - 1000px) / 2);
+  padding-bottom: 80px;
+  padding-left: calc((100vw - 1000px) / 2);
   min-width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (450px)[2];
+      grid-template-columns: repeat(2, 450px);
+  -ms-grid-rows: repeat 2, auto;
+      grid-template-rows: repeat 2, auto;
+  gap: 100px;
 }
 
 .content img {
@@ -203,9 +215,101 @@ header {
 }
 
 .content p {
+  margin-top: 30px;
   font-family: Verdana;
   font-weight: normal;
   line-height: 20px;
   font-size: 14px;
   color: #222222;
+}
+
+.content ul {
+  padding-left: 40px;
+  color: #feca30;
+}
+
+.content ul li {
+  margin-top: 20px;
+}
+
+.content ul span {
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 14px;
+  color: #222222;
+}
+
+.content ul .bold {
+  font-weight: bold;
+}
+
+footer {
+  padding-top: 60px;
+  padding-right: 160px;
+  padding-bottom: 80px;
+  padding-left: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #131313;
+}
+
+footer .copyright div {
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .copyright div p {
+  margin-left: 15px;
+  margin-top: 20px;
+  height: 20px;
+  width: 60px;
+  font-family: Verdana;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 14px;
+  color: #d4d4d4;
+}
+
+footer .copyright img {
+  height: 60px;
+  width: 60px;
+}
+
+footer .copyright > p {
+  margin-top: 110px;
+  width: 200px;
+  color: #555555;
+}
+
+footer h2 {
+  margin-top: 20px;
+  font-family: Verdana;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+footer li {
+  margin-top: 20px;
+  font-family: Verdana;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 13px;
+  color: #888888;
+}
+
+footer ul {
+  margin-top: 50px;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #888888;
 }
