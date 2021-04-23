@@ -108,6 +108,8 @@ button {
 
 	background-color: #efe6e4;
 	h2 {
+		margin-bottom: 20px;
+
 		text-align: center;
 
 		font-size: 40px;
@@ -353,10 +355,158 @@ button {
 			background-color: #8d7370;
 		}
 		p:last-child {
+			margin-top: 20px;
+
 			font-size: 18px;
 			line-height: 30px;
 
 			color: #533738;
 		}
 	}
+}
+
+.reviews {
+	padding-top: 65px;
+	padding-right: 190px;
+	padding-bottom: 60px;
+	padding-left: 190px;
+
+	display: flex;
+
+	background-color: #efe6e4;
+	h2 {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	button {
+		height: 72px;
+		width: 72px;
+
+		border-radius: 36px;
+		background-color: #cc8b86;
+		margin-bottom: auto;
+		margin-top: auto;
+		&:hover {
+			background-color: rgba(135, 56, 50, 0.7);
+		}
+	}
+	.btn-left {
+		margin-right: 30px;
+		margin-left: auto;
+	}
+	.btn-right {
+		margin-right: auto;
+		margin-left: 30px;
+	}
+}
+
+.reviews-container {
+	width: 840px;
+
+	display: flex;
+
+	.text {
+		margin-top: 90px;
+
+		width: 410px;
+
+		p {
+			margin-bottom: 19px;
+
+			font-size: 18px;
+			line-height: 30px;
+
+			color: #533738;
+		}
+	}
+	.images {
+		margin-left: 20px;
+
+		display: flex;
+		flex-direction: column;
+
+		img {
+			width: 410px;
+			height: 280px;
+			&:first-child {
+				margin-bottom: 24px;
+			}
+		}
+	}
+}
+
+.forms {
+	padding-right: 100px;
+	padding-left: 100px;
+
+	display: flex;
+
+	background-color: #8d7370;
+	.form-title {
+		margin-top: 50px;
+
+		font-size: 40px;
+		line-height: 50px;
+
+		text-transform: uppercase;
+
+		color: #ffffff;
+	}
+	.text {
+		margin-top: 24px;
+
+		font-size: 18px;
+		line-height: 30px;
+
+		color: #ffffff;
+
+		opacity: 0.6;
+	}
+	form {
+		margin-top: 45px;
+
+		width: calc(100vw - 790px);
+	}
+
+	input {
+		margin-bottom: 35px;
+		background-color: inherit;
+
+		&:nth-child(1),
+		&:nth-child(4) {
+			width: 85%;
+
+			font-family: inherit;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 30px;
+
+			border-bottom: 1px solid #ffffff;
+			color: #f6ede9;
+		}
+		&::placeholder {
+			color: #f6ede9;
+		}
+		&.submit {
+			height: 74px;
+			width: 310px;
+
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 24px;
+
+			color: #533738;
+			background-color: #cc8b86;
+		}
+	}
+	img {
+		height: 524px;
+		width: 590px;
+	}
+}
+
+.footer {
 }
