@@ -527,3 +527,31 @@ button {
   height: 524px;
   width: 590px;
 }
+
+.footer {
+  padding-top: 37px;
+  padding-right: 100px;
+  padding-bottom: 37px;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #efe6e4;
+}
+
+.footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #533738;
+}
+
+.footer .address {
+  margin-left: 42px;
+}
+
+.footer .name {
+  margin-left: auto;
+}
