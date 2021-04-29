@@ -62,6 +62,10 @@ body {
   width: 210px;
 }
 
+.header button.button-started {
+  margin-top: 0;
+}
+
 .logo {
   margin-top: 33px;
   margin-bottom: 32px;
