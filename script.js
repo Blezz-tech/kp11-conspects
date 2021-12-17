@@ -14,11 +14,21 @@ function MyEnemies(number = 1000, out = 10000) {
 }
 
 let buttonStart = document.getElementById("btn-start");
-let canvas = document.getElementById("drawingCanvas");
-let context = canvas.getContext("2d");
+let canvas      = document.getElementById("drawing-canvas");
+let context     = canvas.getContext("2d");
+
+let info_score       = document.getElementById("score");
+let info_totalScore  = document.getElementById("total-score");
 
 let imgPlayer = new Image();
 let imgEnemies = [];
+
+let score = {
+    score: 0,
+    scoreTotal: 0,
+    scoreSpeed: 10,
+    FPS: 15,
+};
 
 let setting = {
     loadingIMG: [false, false, false],
@@ -33,6 +43,7 @@ let setting = {
         Check: 0,
         Render: 0,
         MyEvent: 0,
+        MySocreEvent: 0,
     },
 };
 
@@ -134,11 +145,18 @@ function init() {
     enemies.cells = [];
     enemies.row = Math.ceil(setting.screen.height / 400);
     for (let i = 0; i < enemies.row; i++) {
-        enemies.number.push(random(1, 6));
+        enemies.number.push(random(1, 5));
         enemies.cells[i] = [];
+
+        let myMas = [0, 1, 2, 3, 4, 5];
+        let randomNumber = 0;
         for (let j = 0; j < enemies.number[i]; j++) {
+            let n = random(0, myMas.length - 1);
+            randomNumber = myMas[n];
+            myMas.splice(n, 1);
+
             enemies.cells[i][j] = {};
-            enemies.cells[i][j].x = random(0, 6) * enemies.gap + 10;
+            enemies.cells[i][j].x = randomNumber * enemies.gap + 10;
             enemies.cells[i][j].y = -(i + 1) * 400;
             enemies.cells[i][j].img = random(0, enemies.imgMax - 1);
         }
@@ -170,13 +188,22 @@ function start() {
     init();
     setting.id.Render = setInterval(render, 1000 / 60);
     setting.id.MyEvent = setInterval(myEvent, 1000 / 60);
-    console.log("start");
+    setting.id.MySocreEvent = setInterval(scoreEvent, 1000 / score.FPS);
 }
 
 function stop() {
     clearInterval(setting.id.Render);
     clearInterval(setting.id.MyEvent);
+    clearInterval(setting.id.MySocreEvent);
+    score.score = 0;
     buttonStart.classList.remove("hide");
+}
+
+function scoreEvent() {
+    score.score += Math.round(score.scoreSpeed / score.FPS);
+    if( score.score > score.scoreTotal) {
+        score.scoreTotal = score.score;
+    }
 }
 
 function myEvent() {
@@ -231,13 +258,19 @@ function myEvent() {
     // Передвмжение врагов
     for (let i = 0; i < enemies.row; i++)
     {
+        let myMas = [0, 1, 2, 3, 4, 5];
+        let randomNumber = 0;
         for (let j = 0; j < enemies.number[i]; j++) {
             enemies.cells[i][j].y += enemies.speed;
             if (enemies.cells[i][j].y > setting.screen.height) {
-                enemies.number[i] = random(1, 6);
+                enemies.number[i] = random(1, 5);
                 for (let c = 0; c < enemies.number[i]; c++) {
+                    let n = random(0, myMas.length - 1);
+                    randomNumber = myMas[n];
+                    myMas.splice(n, 1);
+
                     enemies.cells[i][c] = {};
-                    enemies.cells[i][c].x = random(0, 5) * enemies.gap + 10;
+                    enemies.cells[i][c].x = randomNumber * enemies.gap + 10;
                     enemies.cells[i][c].y = -100;
                     enemies.cells[i][c].img = random(0, enemies.imgMax - 1);
                 }
@@ -282,9 +315,13 @@ function render() {
 
         }
     }
+
+    //Очки
+    info_score.innerHTML      = score.score;
+    info_totalScore.innerHTML = score.scoreTotal;
 }
 
 function random(min, max) {
     let rand = min - 0.5 + Math.random() * (max - min + 1);
     return Math.round(rand);
-  }
+}
