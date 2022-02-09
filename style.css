@@ -1,0 +1,231 @@
+@import url("fonts/Asap/font-asap.css");
+@import url("fonts/Droid_Sans/font-droid-sans.css");
+@import url("fonts/Oleo_Script/font-oleo-script.css");
+
+/*|||||||||||||||||||||||| All ||||||||||||||||||||||||*/
+* {
+    margin: 0;
+    padding: 0;    
+
+    box-sizing: border-box;
+
+    border: 0;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+
+    color:black;
+}
+
+body {
+    background-color: #001b31;
+}
+
+/*|||||||||||||||||||||||| Header ||||||||||||||||||||||||*/
+
+.header {
+    display: flex;
+    justify-content:space-evenly;
+
+    height: 128px;
+
+    background-image: url("img/header-background.png");
+}
+
+.logo {
+    margin: auto 0;
+
+    font-family: "OleoScript";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 500px;
+    height: 80px;    
+}
+
+.social-network a {
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+}
+
+.social-network .face {
+    background-image: url("img/face.png");
+}
+
+.social-network .tw {
+    background-image: url("img/tw.png");
+}
+
+.social-network .rss {
+    background-image: url("img/rss.png");
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+    width: 500px;
+}
+
+.menu a{
+    font-family: "OleoScript";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+
+    color:white;
+}
+
+.menu a:hover {
+    color: #606060;
+}
+
+/*|||||||||||||||||||||||| Gallery ||||||||||||||||||||||||*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    width: 100%;
+
+    overflow: hidden
+}
+
+.gallery img {
+    position: relative;
+    left: calc(-190px);
+
+    height: 250px;
+    width: 457px;
+}
+
+/*|||||||||||||||||||||||| Description ||||||||||||||||||||||||*/
+
+.greeting {
+    padding: 20px;
+}
+.greeting h1 {
+    
+    text-align: center;
+
+    font-family: "OleoScript";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+
+    color: white;
+}
+
+.greeting p {
+    text-align: center;
+
+    font-family: "Asap";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+
+    color: white;
+}
+
+/*|||||||||||||||||||||||| Description ||||||||||||||||||||||||*/
+
+.description {
+    margin: auto;
+
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 35px;
+    padding-left: 15px;
+
+    display: flex;
+    height: 228px;
+    width: 1170px;
+
+    background-image: url("img/wrapper1-background.png");
+    background-repeat: no-repeat;
+}
+
+.description .card {
+    display: flex;
+}
+
+.description .card:nth-child(1) img {
+    width: 75px;
+    height: 40px;
+}
+
+.description .card:nth-child(2) img {
+    width: 75px;
+    height: 36px;
+}
+
+.description .card:nth-child(3) img {
+    width: 75px;
+    height: 40px;
+}
+
+.description .text {
+    margin-left: 10px;
+
+}
+
+.description h3 {
+    font-family: "OleoScript";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+
+    color: white;
+
+}
+
+.description p:nth-child(2) {
+    margin-top: 10px;
+
+    font-family: "Asap";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+
+    color: white;
+}
+
+.description p:nth-child(3) {
+    margin-top: 10px;
+
+    font-family: "DroidSans";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+
+    color: white;
+}
+
+.description p:nth-child(4) {
+    margin-top: 10px;
+
+    font-family: "OleoScript";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+
+    color: white;
+}
+
+/*|||||||||||||||||||||||| Description ||||||||||||||||||||||||*/
