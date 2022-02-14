@@ -36,7 +36,7 @@ body {
     background-image: url("img/header-background.png");
 }
 
-.logo {
+.header .logo {
     margin: auto 0;
 
     font-family: "OleoScript";
@@ -47,7 +47,7 @@ body {
     color: white;
 }
 
-.nav {
+.header .nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,33 +57,33 @@ body {
     height: 80px;    
 }
 
-.social-network a {
+.header .social-network a {
     display: inline-block;
 
     width: 24px;
     height: 24px;
 }
 
-.social-network .face {
+.header .social-network .face {
     background-image: url("img/face.png");
 }
 
-.social-network .tw {
+.header .social-network .tw {
     background-image: url("img/tw.png");
 }
 
-.social-network .rss {
+.header .social-network .rss {
     background-image: url("img/rss.png");
 }
 
-.menu {
+.header .menu {
     display: flex;
     justify-content: space-between;
 
     width: 500px;
 }
 
-.menu a{
+.header .menu a{
     font-family: "OleoScript";
     font-weight: bold;
     font-style: normal;
@@ -92,7 +92,7 @@ body {
     color:white;
 }
 
-.menu a:hover {
+.header .menu a:hover {
     color: #606060;
 }
 
