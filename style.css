@@ -145,20 +145,18 @@ body {
 
 /*|||||||||||||||||||||||| Description ||||||||||||||||||||||||*/
 
-.description {
-    margin: auto;
-
+.description {    
     padding-top: 20px;
     padding-right: 5px;
     padding-bottom: 35px;
     padding-left: 15px;
-
+    
     display: flex;
-    height: 228px;
-    width: 1170px;
-
-    background-image: url("img/wrapper1-background.png");
-    background-repeat: no-repeat;
+    justify-content: space-around;
+    
+    height: 227px;
+    
+    background-image: url(img/wrapper1-background.png);
 }
 
 .description .card {
