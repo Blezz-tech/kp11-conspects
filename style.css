@@ -57,6 +57,10 @@ body {
     height: 80px;    
 }
 
+.header .social-network {
+    margin-top: 20px;
+}
+
 .header .social-network a {
     display: inline-block;
 
