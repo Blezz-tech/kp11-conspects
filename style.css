@@ -375,7 +375,8 @@ ol[class] {
 /* STUDIO AREAS */
 
 .studio-areas {
-    margin: auto;
+    
+    margin: 20px auto 0 auto;
 
     display: flex;
     justify-content: space-between;
