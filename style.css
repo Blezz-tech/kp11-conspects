@@ -424,18 +424,19 @@ ol[class] {
 /* FOOTER */
 
 .footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     max-width: 1200px;
 }
 
 .footer .footer-copyright {
-    text-algin: center;
-    
+    text-align: center;
+
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 15px;
 }
