@@ -63,41 +63,50 @@
 	},
 }
 
-while (true) {
+let myWhile = true;
+while (myWhile) {
 	let key = prompt('Выберите действия:\n0 - Выйти из цикла\n1 - Зашифровать текст\n2 - Расшифровать текст', '0');
 
-	if (key === '0') {
-		break;
-	} else if (key === '1') {
-		let decodedMessage = prompt('Введите текст для зашифровки:', 'Лучше котлета в зубах, чем синица в небе.');
-		let sign = prompt('Введите знак шага("+" или "-"):', "+");
-		let userShift = +prompt('Введите шаг для зашифровки:', 10) % encoder.symbols.length;
-
-		if (sign == "+") {
-			encoder.shift = userShift;
-		} else if (sign == "-") {
-			encoder.shift = -userShift;
+	switch (key) {
+		case '0': {
+			myWhile = false;
+			break;
 		}
 
-		delete userShift;
-		delete sign;
+		case '1': {
+			let decodedMessage = prompt('Введите текст для зашифровки:', 'Лучше котлета в зубах, чем синица в небе.');
+			let sign = prompt('Введите знак шага("+" или "-"):', "+");
+			let userShift = +prompt('Введите шаг для зашифровки:', 10) % encoder.symbols.length;
 
-		alert(encoder.messageEncoded(decodedMessage));
-	} else if (key === '2') {
+			if (sign == "+") {
+				encoder.shift = userShift;
+			} else if (sign == "-") {
+				encoder.shift = -userShift;
+			}
 
-		let encodedMessage = prompt('Введите текст для рсшифровки:', '');
-		let sign = prompt('Введите знак шага("+" или "-"):', "+");
-		let userShift = +prompt('Введите шаг для расшифровки:', 10) % encoder.symbols.length;
+			delete userShift;
+			delete sign;
 
-		if (sign == "+") {
-			encoder.shift = userShift;
-		} else if (sign == "-") {
-			encoder.shift = -userShift;
+			alert(encoder.messageEncoded(decodedMessage));
+			break;
 		}
 
-		delete userShift;
-		delete sign;
+		case '2': {
+			let encodedMessage = prompt('Введите текст для рсшифровки:', '');
+			let sign = prompt('Введите знак шага("+" или "-"):', "+");
+			let userShift = +prompt('Введите шаг для расшифровки:', 10) % encoder.symbols.length;
 
-		alert(encoder.messageDecoded(encodedMessage));
+			if (sign == "+") {
+				encoder.shift = userShift;
+			} else if (sign == "-") {
+				encoder.shift = -userShift;
+			}
+
+			delete userShift;
+			delete sign;
+
+			alert(encoder.messageDecoded(encodedMessage));
+			break;
+		}
 	}
 }
