@@ -5,14 +5,10 @@
 	box-sizing: border-box;
 }
 
-table {
-	border-collapse: collapse;
-}
-
 html,
 body {
 	min-height: 100vh;
-	min-width: 99vw;
+	width: 100%;
 }
 
 ol,
@@ -21,7 +17,12 @@ ul {
 }
 
 .wrapper {
+	min-height: 100vh;
+
 	padding: 25px;
+
+	/* background-color: rgb(95, 220, 220); */
+	background-color: #faf3d5;
 }
 
 .my-form {
@@ -72,6 +73,10 @@ ul {
 	font-size: 14px;
 }
 
+.property-group input {
+	background-color: #4ecf86;
+}
+
 .property-group .text {
 	margin-top: 8px;
 	margin-bottom: 2px;
@@ -88,11 +93,11 @@ ul {
 	border: 0;
 	border-radius: 5px;
 
-	background-color: rgb(200, 100, 3);
+	background-color: #994d00;
 
-	color: white;
+	color: rgb(210, 210, 210);
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .guest-group {
@@ -108,7 +113,12 @@ ul {
 
 	width: 220px;
 
-	border-left: 1px solid gray;
+	/* background-color: rgb(120, 60, 0); */
+	background-color: #994d00;
+	border: 1px solid gray;
+	border-radius: 5px;
+
+	color: rgb(210, 210, 210);
 }
 
 .guest-group-item .title {
@@ -118,6 +128,10 @@ ul {
 
 .guest-group-item input {
 	width: 100%;
+
+	background-color: #964b00;
+
+	color: rgb(229, 229, 229);
 }
 
 .guest-group-item .remove-guest {
@@ -168,10 +182,18 @@ ul {
 
 .send-data-box .send-table {
 	margin-top: 20px;
+
+	border-collapse: initial;
 }
 
 .send-data-box .send-table td {
 	padding: 20px;
 
 	border: 1px solid rgb(166, 166, 166);
+
+	color: rgb(210, 210, 210);
+	font-size: 18px;
+	font-weight: 500;
+
+	background-color: #994d00;
 }
