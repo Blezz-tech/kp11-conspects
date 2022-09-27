@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Урок 1</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sample">
+			FN: <input type="text" v-model.trim="firstName"><br>
+			LN: <input type="text" v-model.trim="lastName">
+			<hr>
+			<h2>Hello, {{ fullName }}</h2>
+			<hr>
+			<button type="button" class="btn btn-primary" @click="showAlert = !showAlert">Toggle</button>
+			<div class="alert alert-danger" v-show="showAlert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dicta ratione molestias dolor officia pariatur quos veritatis similique? Cumque repudiandae delectus soluta odio tempore adipisci dolores, ad dolore. Facere, ratione!</div>
+		</div>
+	</div>
+	<script>
+		
+		let app = Vue.createApp({
+			data: () => ({
+				firstName: '',
+				lastName: '',
+				showAlert: false
+			}),
+			computed: {
+				fullName(){
+					//console.log(1);
+					return `${this.firstName} ${this.lastName}`;
+				}
+			}
+		});
+		
+		app.mount('.sample');
+		console.log(app)
+		/*
+			{
+				firstName: '',
+				lastName: '',
+				showAlert: '',
+				_computed: {
+					fullName: fullName()
+				}
+			}
+
+			_get(target, name)
+			name == fullName
+				-> cacheTN
+
+			_set(target, name, value){
+				(name == firstName
+				name == lastName)
+				cacheTN = fullName()
+			}
+		*/
+
+	</script>
+</body>
+</html>

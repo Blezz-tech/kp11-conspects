@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	box-sizing: border-box;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+html,
+body {
+	min-height: 100vh;
+	min-width: 99vw;
+}
+
+ol,
+ul {
+	list-style-type: none;
+}
+
+.wrapper {
+	padding: 25px;
+}
+
+.my-form {
+}
+
+.header {
+	display: flex;
+	gap: 20px;
+}
+
+.add-guest {
+	width: 110px;
+	height: 45px;
+
+	color: white;
+	font-weight: 500;
+
+	border: 0;
+	border-radius: 10px;
+	background-color: rgb(50, 130, 200);
+}
+
+.property-group {
+	width: 300px;
+}
+
+.property-group-item {
+	width: 185px;
+}
+
+.property-group-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.property-group .remove-prop {
+	width: 25px;
+	height: 25px;
+
+	border: 0;
+	border-radius: 5px;
+
+	background-color: rgb(198, 3, 3);
+
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.property-group .text {
+	margin-top: 8px;
+	margin-bottom: 2px;
+
+	font-weight: 700;
+}
+
+.add-prop {
+	margin-top: 10px;
+
+	width: 120px;
+	height: 30px;
+
+	border: 0;
+	border-radius: 5px;
+
+	background-color: rgb(200, 100, 3);
+
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.guest-group {
+	margin-top: 20px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.guest-group-item {
+	padding: 10px;
+
+	width: 220px;
+
+	border-left: 1px solid gray;
+}
+
+.guest-group-item .title {
+	display: flex;
+	gap: 20px;
+}
+
+.guest-group-item input {
+	width: 100%;
+}
+
+.guest-group-item .remove-guest {
+	width: 40px;
+	height: 40px;
+
+	border: 0;
+	border-radius: 5px;
+
+	background-color: rgb(198, 3, 3);
+
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.guest-group-item .text {
+	margin-top: 8px;
+	margin-bottom: 2px;
+
+	font-weight: 700;
+}
+
+.send-data {
+	width: 110px;
+	height: 45px;
+
+	color: white;
+	font-weight: 500;
+
+	border: 0;
+	border-radius: 10px;
+	background-color: rgb(95, 180, 95);
+}
+
+.send-data-box .return-editor {
+	width: 210px;
+	height: 45px;
+
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+
+	border: 0;
+	border-radius: 10px;
+	background-color: rgb(95, 180, 95);
+}
+
+.send-data-box .send-table {
+	margin-top: 20px;
+}
+
+.send-data-box .send-table td {
+	padding: 20px;
+
+	border: 1px solid rgb(166, 166, 166);
+}

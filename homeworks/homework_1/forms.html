@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Домашнее задание 1</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/vue.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form-app">
+                <div class="my-form" v-if="!data['form-posted']">
+                    <div class="header">
+                        <h1>Guests</h1>
+                        <button class="add-guest" @click="addGuest">ADD GUEST</button>
+                    </div>
+                    <div class="property-group">
+                        <h2>Property guest form</h2>
+                        <div class="property-group-item" v-for="(item, i) in lists.property">
+                            <div class="property-group-box">
+                                <p class="text">{{item}}</p>
+                                <button class="remove-prop" @click="removeProp(i)">X</button>
+                            </div>
+                        </div>
+                        <div class="add-prop-box">
+                            <p class="text">Property name</p>
+                            <input class="add-prop-str" type="text" v-model="data['prop-name']">
+                            <br>
+                            <button class="add-prop" @click="addProp">ADD PROP</button>
+                        </div>
+                    </div>
+                    <ul class="guest-group">
+                        <li class="guest-group-item" v-for="(guestData, i) in lists.guests">
+                            <div class="title">
+                                <h2>guest-{{ i }}</h2>
+                                <button class="remove-guest" @click="removeGuest(i)">X</button>
+                            </div>
+                            <div class="box" v-for="(item, j) in guestData">
+                                <p class="text">{{lists.property[j]}}</p>
+                                <input type="text" v-model.trim="guestData[j]">
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="send-data" @click="sendData">SEND DATA</button>
+                </div>
+                <div class="send-data-box" v-else>
+                    <button class="return-editor" @click="returnEditor">RETURN EDITOR</button>
+                    <table class="send-table">
+                        <thead>
+                            <td v-for="item in lists.property">{{item}}</td>
+                            <tr v-for="item in lists.guests">
+                                <td v-for="item in item">{{item}}</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            let formApp = Vue.createApp({
+                data: () => (
+                    {
+                        data: {
+                            "form-posted": false,
+                            "prop-name": ""
+                        },
+                        lists: {
+                            guests: [
+                                [
+                                    "", "", "", "",
+                                ],
+                                [
+                                    "", "", "", "",
+                                ],
+                                [
+                                    "lolic@rocky.com", "+7-234-236-34-76", "Lolic", "Lol",
+                                ],
+                                [
+                                    "golobol@for.er", "+1-347-876-67-98", "Faraon", "Egipetskii",
+                                ],
+                                [
+                                    "asdf@asd.asd", "+5-234-678-34-56", "Frag", "Froget",
+                                ],
+                                [
+                                    "bh987u@dfg.asd", "+123-234-756-87-98", "Cat", "Katty",
+                                ],
+                            ],
+                            property: ["Email", "Phone", "First Name", "Last Name"]
+                        }
+
+                    }
+                ),
+                methods: {
+                    addGuest() {
+                        const guest = [];
+                        this.lists.property.forEach((item, i) => {
+                            guest.push("");
+                        });
+                        this.lists.guests.push(guest);
+                    },
+                    removeGuest(i) {
+                        this.lists.guests.splice(i, 1);
+                    },
+                    addProp() {
+                        const propName = this.data["prop-name"];
+                        if (propName != "") {
+                            this.lists.property.push(propName);
+
+                            this.lists.guests.forEach(e => {
+                                e.push("");
+                            });
+
+                            this.data["prop-name"] = "";
+                        }
+                    },
+                    removeProp(i) {
+                        this.lists.property.splice(i, 1);
+
+                        this.lists.guests.forEach((item) => {
+                            item.splice(i, 1);
+                        });
+                    },
+                    sendData() {
+                        this.data["form-posted"] = true;
+                    },
+                    returnEditor() {
+                        this.data["form-posted"] = false;
+                    }
+                }
+            });
+
+            formApp.mount('.form-app');
+        </script>
+    </body>
+</html>
