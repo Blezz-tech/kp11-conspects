@@ -19,7 +19,7 @@
                     <div class="form-group">
                         <div class="form-group-item" v-for="(item) in info">
                             <label>{{item.name + ' ' + symbol(item)}}</label>
-                            <input type="text" class="form-control" v-model="item.value"> 
+                            <input type="text" class="form-control" v-model="item.value" @input="check">
                         </div>
                     </div>
                     <button type="button" class="btn btn-primary" @click="sendData">
@@ -69,6 +69,7 @@
                         ],
                         data: {
                             send: false,
+                            check: ""
                         }
                     }
                 ),
@@ -76,15 +77,9 @@
                     hasSend() {
                         return this.data.send;
                     },
-					progressStyles() {
-						const string = this.info.reduce((acc, item) =>
-								acc +  item.pattern.test(item.value)
-								? 100 / this.info.length 
-								: 0, 0) + '%';
-						return {
-							'width': string,
-						};
-					},
+                    progressStyles() {
+                        return {'width': this.data.check};
+                    }
                 },
                 methods: {
                     sendData() {
@@ -96,6 +91,11 @@
                     symbol(item) {
                         return this.checkValue(item) ? "✅" : "❌";
                     },
+                    check() {
+                        this.data.check = this.info.reduce((acc, item) => {
+                            return acc + (item.pattern.test(item.value) ? 100 / this.info.length : 0);
+                        }, 0) + '%';
+                    }
 
                 }
             }).mount('.sample');
