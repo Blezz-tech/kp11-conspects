@@ -40,7 +40,8 @@ class UserController {
 	}
 
 	async check(req, res, next) {
-		// Продолжить с 1:04:00
+		const token = generateJwt(req.user.id, req.user.email, req.user.role);
+		return res.json({token});
 	}
 }
 
