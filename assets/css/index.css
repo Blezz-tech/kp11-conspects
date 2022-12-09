@@ -96,6 +96,16 @@ section {
     text-align: right;
 }
 
+.title {
+    margin-left: 10px;
+    font-size: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
 form * {
     margin-top: 10px;
 }
@@ -115,4 +125,10 @@ form * {
 p {
     font-size: 18px;
     font-weight: 400;
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
