@@ -132,3 +132,7 @@ iframe {
     margin-right: auto;
     display: block;
 }
+
+body > main > section:nth-child(4) > div {
+    color: white
+}
