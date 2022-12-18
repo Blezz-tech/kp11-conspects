@@ -132,3 +132,15 @@ iframe {
     margin-right: auto;
     display: block;
 }
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+li {    
+    list-style-type:none;
+}
