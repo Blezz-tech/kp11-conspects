@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.none {
+  display: none;
+}
+
+body {
+  background-color: rgb(0, 4, 15);
+  font-family: "Onest", Arial, sans-serif;
+  color: white;
+}
+
+.color-spray {
+  color: #80e8ec;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1600px;
+  padding: 40px 60px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header > a > .logo {
+  width: 167px;
+}
+
+.header > .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.header > .nav p {
+  color: white;
+  background-color: #1d1d21;
+  padding: 15px 20px;
+  border-radius: 30px;
+
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1600px;
+}
+
+.course {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.course > .left {
+  padding: 30px;
+
+  border-width: 1px;
+  border-radius: 25px;
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./img/bg-course.svg);
+}
+
+.course .specifications {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.course .specifications p.text {
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 500;
+
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.course .title {
+  margin-top: 20px;
+
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.course .left > p.text {
+  margin-top: 20px;
+}
+
+.course .bottom {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.course .div-registration {
+  display: flex;
+  flex-direction: row;
+}
+
+.course .registration {
+  width: 170px;
+  height: 50px;
+
+  background-color: #80e8ec;
+
+  color: black;
+  font-size: 16px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+
+  border-radius: 25px;
+  border: 0;
+}
+
+.course .arrow {
+  width: 50px;
+  height: 50px;
+
+  background-color: #80e8ec;
+
+  color: black;
+  font-size: 40px;
+
+  border-radius: 25px;
+  text-align: center;
+}
+
+.course .description {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.course .description p {
+  margin-top: 10px;
+
+  font-size: 14px;
+  font-family: "Onest", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.course > .right {
+  min-width: 400px;
+  border-radius: 25px;
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: url(./img/woman.jpg);
+}
+
+.course .info {
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+.course .info:hover {
+  cursor: pointer;
+}
+
+.course .fullname {
+}
+
+.course .button {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+
+  font-size: 25px;
+  color: black;
+  text-align: center;
+
+
+  background-color: #80e8ec;
+  border-radius: 30px;
+}
