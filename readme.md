@@ -1,0 +1,1 @@
+https://blezz-tech.github.io/Generator-of-silly-stories/
