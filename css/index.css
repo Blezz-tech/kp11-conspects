@@ -1,0 +1,16 @@
+/* COLOR */
+:root {
+    --bs-purple-rgb: 111,61,255;
+}
+
+/* BORDER */
+.border-purple {
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--bs-purple-rgb),var(--bs-border-opacity))!important;
+}
+
+/* SHADOW */
+.box-shadow-purple {
+    box-shadow: 5px 5px rgba(var(--bs-purple-rgb));
+}
+
