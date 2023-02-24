@@ -71,3 +71,15 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+
+.service {
+
+}
+
+.service .title {
+  text-align: center;
+}
+
+.service ol {
+  padding: 20px 20px 40px 40px;
+}
