@@ -1,16 +1,83 @@
-/* COLOR */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Colors */
 :root {
-    --bs-purple-rgb: 111,61,255;
+  --usr-purple-rgb: 111, 61, 255;
+  --usr-yellow-rgb: 255, 199, 0;
+  --usr-white-rgb: 255, 255, 255;
 }
 
-/* BORDER */
+/* Border */
 .border-purple {
-    --bs-border-opacity: 1;
-    border-color: rgba(var(--bs-purple-rgb),var(--bs-border-opacity))!important;
+  --bs-border-opacity: 1;
+  border: 1px solid;
+  border-color: rgba(
+    var(--usr-purple-rgb),
+    var(--bs-border-opacity)
+  ) !important;
+  box-shadow: 5px 5px rgba(var(--usr-purple-rgb));
 }
 
-/* SHADOW */
-.box-shadow-purple {
-    box-shadow: 5px 5px rgba(var(--bs-purple-rgb));
+.button {
+  --bs-border-opacity: 1;
+  border-color: rgba(
+    var(--usr-purple-rgb),
+    var(--bs-border-opacity)
+  ) !important;
+  box-shadow: 5px 5px rgba(var(--usr-purple-rgb));
+
+  background-color: white;
 }
 
+/* Background Color */
+.bg-yellow {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--usr-yellow-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+
+.bg-white {
+    --bs-bg-opacity: 1;
+    background-color: rgba(
+      var(--usr-white-rgb),
+      var(--bs-bg-opacity)
+    ) !important;
+
+}
+
+h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #252525;
+}
+
+h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #252525;
+}
+
+p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #252525;
+}
