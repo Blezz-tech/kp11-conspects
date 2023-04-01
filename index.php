@@ -27,6 +27,10 @@ function getMethod(array $routes, $path) {
 
 // >>>>>>>>>>>>>>>>>>> START PATH PAGES <<<<<<<<<<<<<<<<<<<
 
+function main() {
+    return 'main';
+}
+
 // функция для корня
 function hello() {
     return 'Hello, world!';
