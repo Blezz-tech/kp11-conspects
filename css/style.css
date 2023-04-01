@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dark-theme {
+  --link-color: white;
+  --text-color: white;
+  --bg-color: var(--color-night-rider);
+  --label-bg-color: var(--color-night-rider);
+  --label-border-color: white;
+  --label-button-color: lightgray;
+
+  --footer-bg-color: var(--color-night-rider);
+  --footer-text-color: white;
+}
+
+.day-theme {
+  --link-color: var(--color-night-rider);
+  --text-color: var(--color-night-rider);
+  --bg-color: white;
+  --label-bg-color: #ecebec;
+  --label-border-color: lightgray;
+  --label-button-color: var(--color-night-rider);
+
+  --footer-bg-color: white;
+  --footer-text-color: var(--color-night-rider);
+}
+
+:root {
+  --font-bona: "Bona Nova", serif;
+  --font-roboto: "Roboto", sans-serif;
+
+  --color-night-rider: #313131;
+  --color-pastel-green: #40b82c;
+
+  --button-bg-color: var(--color-pastel-green);
+  --button-text-color: white;
+  --button-hover-color: #2deb0f;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* HEADER */
+
+.header {
+  padding-top: 20px;
+
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 100px;
+}
+
+.icon {
+  filter: invert(100%);
+}
+
+.header .header-text {
+  font-size: 64px;
+  font-weight: 400;
+  font-family: var(--font-bona);
+}
+
+/* START EXPERINCE */
+
+.start-experince {
+  margin-top: 130px;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-experince .start-experince-text {
+  font-size: 28px;
+  font-weight: 400;
+
+  border-radius: 15px;
+  border: none;
+
+  transition: 0.2s;
+  text-align: center;
+
+  font-family: var(--font-bona);
+  font-size: 36px;
+  color: var(--text-color);
+}
+
+.start-experince button {
+  margin-top: 100px;
+
+  width: 450px;
+  height: 90px;
+
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+
+  font-family: var(--font-bona);
+  font-size: 36px;
+  font-weight: 400;
+
+  border-radius: 15px;
+  border: none;
+
+  transition: 0.2s;
+}
+
+.start-experince button:hover {
+  background-color: var(--button-hover-color);
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  height: 60px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+
+  background-color: var(--footer-bg-color);
+}
+
+.footer-text {
+  color: var(--footer-text-color);
+}
+
+/* MAIN */
+
+.main {
+  position: absolute;
+  left: 310px;
+  right: 70px;
+
+  padding: 30px;
+}
+
+/* NAV */
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 10px;
+
+  width: 310px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.chapter {
+  transform: translateZ(0);
+
+  background: var(--bg-color);
+
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.chapter > .chapter-toggle {
+  position: absolute;
+
+  display: none;
+
+  opacity: 0;
+}
+
+.chapter > label {
+  position: relative;
+
+  padding: 0 20px;
+
+  display: block;
+  height: 50px;
+
+  border-top: 1px solid var(--label-border-color);
+  border-bottom: 1px solid var(--label-border-color);
+
+  background-color: var(--label-bg-color);
+
+  color: var(--text-color);
+
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 50px;
+
+  cursor: pointer;
+}
+
+.chapter > label:after {
+  position: absolute;
+  content: "";
+
+  top: 12px;
+  right: 20px;
+
+  width: 12px;
+  height: 12px;
+
+  border-left: 2px solid var(--label-button-color);
+  border-top: 2px solid var(--label-button-color);
+
+  transform: rotate(-135deg);
+  transition: 0.5s transform;
+}
+
+.chapter > section {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.4s;
+}
+
+.chapter > .chapter-toggle:checked ~ label:after {
+  transform: rotate(45deg);
+  top: 16px;
+}
+
+.chapter > .chapter-toggle:checked ~ section {
+  height: 600px;
+}
+
+.chapter > section p {
+  margin: 15px 0;
+  padding: 0 20px;
+}
