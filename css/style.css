@@ -154,16 +154,6 @@ a:visited {
   color: var(--footer-text-color);
 }
 
-/* MAIN */
-
-.main {
-  position: absolute;
-  left: 310px;
-  right: 70px;
-
-  padding: 30px;
-}
-
 /* NAV */
 
 .nav {
@@ -259,4 +249,19 @@ a:visited {
 .chapter > section p {
   margin: 15px 0;
   padding: 0 20px;
+}
+
+
+/* MAIN */
+
+.main {
+  position: absolute;
+  left: 310px;
+  right: 70px;
+
+  padding: 30px;
+}
+
+.code {
+  white-space: pre-wrap;
 }
