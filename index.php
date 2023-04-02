@@ -1,5 +1,10 @@
 <?php
 $root = $_SERVER['DOCUMENT_ROOT'];
+$_head = file_get_contents($root."/components/meta/_head.html");
+$_foot = file_get_contents($root."/components/meta/_foot.html");
+
+
+
 
 $GLOBALS['g_chapters'] = [
     1 => 'Глава 1 Введение',
@@ -37,17 +42,18 @@ function generatorNav() {
     $g_chapters = $GLOBALS['g_chapters'];
     $g_lessons = $GLOBALS['g_lessons'];
 
-    $nav = '<nav class="nav">>';
+    $nav = '<nav class="nav">';
     foreach($g_lessons as $i => $lessons) {
         $nav .= '<div class="chapter">'.
-        '<input id="toggle1" type="radio" class="chapter-toggle" name="toggle" checked />'.
-        '<label for="toggle1">'.$g_chapters[$i].'</label>'.
+        ($i == $_GET['chapter'] ?
+        '<input id="toggle'.$i.'" type="radio" class="chapter-toggle" name="toggle" checked />':
+        '<input id="toggle'.$i.'" type="radio" class="chapter-toggle" name="toggle" />'
+        ).'<label for="toggle'.$i.'">'.$g_chapters[$i].'</label>'.
         '<section>';
         foreach($lessons as $j => $lesson) {
-            $nav .= '<p class="lesson"><a href="'.'/lesson?chapter='.$i.'&lesson='.$j.'">'.$g_lessons[$i][$j].'</a></p>';
+            $nav .= '<p class="lesson"><a href="/lesson?chapter='.$i.'&lesson='.$j.'">'.$g_lessons[$i][$j].'</a></p>';
         }
-        $nav .= '</section>'.
-        '</div>';
+        $nav .= '</section></div>';
     }
     $nav .= '</nav>';
     return $nav;
@@ -72,42 +78,51 @@ function getMethod($routes, $path) {
 $routes = [];
 
 
-$routes['/lesson'] = function () {
+$routes['/lesson'] = function() {
     $root = $_SERVER['DOCUMENT_ROOT'];
+    $g_lessons = $GLOBALS['g_lessons'];
 
-    if (isset($_GET['chapter']) && isset($_GET['lesson'])) {
+    $chaper_ID = $_GET['chapter'];
+    $lesson_ID = $_GET['lesson'];
+
+    if (isset($chaper_ID) && 
+    isset($lesson_ID) &&
+    isset($g_lessons[$chaper_ID][$lesson_ID])) {
         $nav = generatorNav();
 
-        return 
-        file_get_contents($root."/components/meta/_head.html").
-        file_get_contents($root."/components/meta/_foot.html");
+        return
+        file_get_contents($root."/components/learn/chapter-".$chaper_ID.
+        '/lesson-'.$lesson_ID.'.html').
+        $nav;
 
     }
     return notFound();
 };
 
-$routes['/'] = function () {
+$routes['/'] = function() {
     $root = $_SERVER['DOCUMENT_ROOT'];
     return 
-        file_get_contents($root."/components/meta/_head.html").
         file_get_contents($root."/components/main/header.html").
         file_get_contents($root."/components/main/start-experince.html").
-        file_get_contents($root."/components/main/footer.html").
-        file_get_contents($root."/components/meta/_foot.html");
+        file_get_contents($root."/components/main/footer.html");
 };
 
 
 
-$routes['/test'] = function () {
+$routes['/test'] = function() {
+    $root = $_SERVER['DOCUMENT_ROOT'];
+    
     return "It is work";
 };
 
 
 
 function notFound() {
+    $root = $_SERVER['DOCUMENT_ROOT'];
+
     header("HTTP/1.0 404 Not Found");
 
-    return 'Нет такой страницы';
+    return file_get_contents($root."/components/meta/_error.html");
 }
 
 // >>>>>>>>>>>>>>>>>>> END PATH PAGES <<<<<<<<<<<<<<<<<<<
@@ -115,11 +130,6 @@ function notFound() {
 
 $path = getRequestPath();
 $method = getMethod($routes, $path);
-echo $method();
-
-
-
-echo '<br>'.'<br>'.$path;
-
+echo $_head.$method().$_foot;
 
 ?>
