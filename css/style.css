@@ -265,3 +265,7 @@ a:visited {
 .code {
   white-space: pre-wrap;
 }
+
+#text {
+  white-space: pre-wrap;
+}
