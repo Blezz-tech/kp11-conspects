@@ -304,15 +304,55 @@ a:visited {
 main {
   position: absolute;
   left: 310px;
-  right: 70px;
+
+  max-width: 1200px;
 
   padding: 30px;
 }
 
-.code {
+main img {
+  margin-top: 30px;
+
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 80%;
+}
+
+main code {
   white-space: pre-wrap;
 }
 
-#text {
-  white-space: pre-wrap;
+main p {
+  margin-top: 20px;
+  font-size: 20px;
+
+  text-align: left;
+}
+
+main h1 {
+  text-align: center;
+  font-family: 'Bona Nova', serif;
+  font-size: 36px;
+
+  text-align: center;
+}
+
+main h2 {
+  margin-top: 25px;
+
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Bona Nova', serif;
+
+  text-align: center;
+}
+
+main .description {
+  margin-top: 10px;
+
+  font-style: italic;
+  text-align: center;
 }
