@@ -48,6 +48,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 a:visited {
@@ -92,6 +93,8 @@ a:visited {
 }
 
 .start-experince .start-experince-text {
+  width: 50%;
+
   font-size: 28px;
   font-weight: 400;
 
@@ -184,7 +187,7 @@ a:visited {
   border-right: 1px solid lightgray;
 }
 
-.chapter>.chapter-toggle {
+.chapter > .chapter-toggle {
   position: absolute;
 
   display: none;
@@ -192,7 +195,7 @@ a:visited {
   opacity: 0;
 }
 
-.chapter>label {
+.chapter > label {
   position: relative;
 
   padding: 0 20px;
@@ -214,7 +217,7 @@ a:visited {
   cursor: pointer;
 }
 
-.chapter>label:after {
+.chapter > label:after {
   position: absolute;
   content: "";
 
@@ -231,22 +234,22 @@ a:visited {
   transition: 0.5s transform;
 }
 
-.chapter>section {
+.chapter > section {
   overflow: hidden;
   height: 0;
   transition: all 0.4s;
 }
 
-.chapter>.chapter-toggle:checked~label:after {
+.chapter > .chapter-toggle:checked ~ label:after {
   transform: rotate(45deg);
   top: 16px;
 }
 
-.chapter>.chapter-toggle:checked~section {
+.chapter > .chapter-toggle:checked ~ section {
   height: 600px;
 }
 
-.chapter>section p {
+.chapter > section p {
   margin: 15px 0;
   padding: 0 20px;
 }
@@ -261,11 +264,9 @@ a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .error-text {
-
   text-align: center;
   color: red;
 
@@ -321,8 +322,13 @@ main img {
   width: 80%;
 }
 
+pre {
+  margin-top: 25 + px;
+  margin-bottom: 0;
+}
+
 main code {
-  white-space: pre-wrap;
+  font-size: 20px;
 }
 
 main p {
@@ -334,7 +340,7 @@ main p {
 
 main h1 {
   text-align: center;
-  font-family: 'Bona Nova', serif;
+  font-family: "Bona Nova", serif;
   font-size: 36px;
 
   text-align: center;
@@ -345,7 +351,7 @@ main h2 {
 
   font-size: 40px;
   text-align: center;
-  font-family: 'Bona Nova', serif;
+  font-family: "Bona Nova", serif;
 
   text-align: center;
 }
