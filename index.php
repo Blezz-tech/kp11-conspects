@@ -51,7 +51,7 @@ function generatorNav() {
         ).'<label for="toggle'.$i.'">'.$g_chapters[$i].'</label>'.
         '<section>';
         foreach($lessons as $j => $lesson) {
-            $nav .= '<p class="lesson"><a href="/lesson?chapter='.$i.'&lesson='.$j.'">'.$g_lessons[$i][$j].'</a></p>';
+            $nav .= '<p class="lesson"><a href="/index.php/lesson?chapter='.$i.'&lesson='.$j.'">'.$g_lessons[$i][$j].'</a></p>';
         }
         $nav .= '</section></div>';
     }
