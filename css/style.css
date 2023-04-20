@@ -338,9 +338,15 @@ main p {
   text-align: left;
 }
 
+main li {
+  font-family: var(--font-roboto);
+  font-size: 18px;
+
+}
+
 main h1 {
   text-align: center;
-  font-family: "Bona Nova", serif;
+  font-family: var(--font-bona);
   font-size: 36px;
 
   text-align: center;
@@ -351,7 +357,7 @@ main h2 {
 
   font-size: 40px;
   text-align: center;
-  font-family: "Bona Nova", serif;
+  font-family: var(--font-bona);
 
   text-align: center;
 }
