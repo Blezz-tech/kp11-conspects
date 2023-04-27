@@ -306,8 +306,6 @@ main {
   position: absolute;
   left: 310px;
 
-  max-width: 1200px;
-
   padding: 30px;
 }
 
@@ -341,7 +339,6 @@ main p {
 main li {
   font-family: var(--font-roboto);
   font-size: 18px;
-
 }
 
 main h1 {
@@ -360,6 +357,18 @@ main h2 {
   font-family: var(--font-bona);
 
   text-align: center;
+}
+
+main h3 {
+  margin-top: 20px;
+}
+
+main pre {
+  margin-top: 10px;
+}
+
+main iframe {
+  margin-top: 10px;
 }
 
 main .description {
