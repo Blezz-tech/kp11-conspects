@@ -1,43 +1,42 @@
-/* h1 {
-    font-size: 92px;
-    font-weight: bolder;
-    color: rgb(214, 11, 11);
-} */
+body {
+    min-height: 100vh;
+    font-family: 'Roboto Slab', serif;
 
+}
+
+
+/* INDEX HTML */
+
+.bgg {
+    background-image: url(/static/img/index-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Остальное */
+
+/* 
 
 .head {
     background-color: rgb(48, 45, 45);
     color: white;
 }
 
-body {}
-
-a {
-    text-decoration: none;
-    color: #fff;
+h1 {
+    font-size: 92px;
+    font-weight: bolder;
+    color: rgb(214, 11, 11);
 }
+
 .store {
-    font-family: 'Roboto Slab', serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
-}
-
-.txt-iron {
-    font-family: 'Roboto Slab', serif;
-    font-size: 26px;
 }
 
 .mar2 {
     margin-left: 100px;
 }
 
-.bgg {
-    height: 100vh;
-
-    background-image: url(/static/img/Железный_лес_45.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .form-width {
     width: 500px;
@@ -74,6 +73,11 @@ a {
 
     color: #ffffff;
     -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.5);
-    font-family: 'Roboto Slab', serif;
     font-size: 26px;
-}
+} */
+
+
+
+
+
+

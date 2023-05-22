@@ -15,31 +15,31 @@ def products(request):
         'products': [
             {
                 'name': 'Лунный свет',
-                'image': '/static/img/artefacts/artefatc-1.png',
+                'image': '/static/img/artifacts/artefatc-1.png',
                 'price': 6000,
                 'description': 'Описание артефакта Лунный свет'
             },
             {
                 'name': 'Лунный свет',
-                'image': '/static/img/artefacts/artefatc-1.png',
+                'image': '/static/img/artifacts/artefatc-1.png',
                 'price': 6000,
                 'description': 'Описание артефакта Лунный свет'
             },
             {
                 'name': 'Лунный свет',
-                'image': '/static/img/artefacts/artefatc-1.png',
+                'image': '/static/img/artifacts/artefatc-1.png',
                 'price': 6000,
                 'description': 'Описание артефакта Лунный свет'
             },
             {
                 'name': 'Лунный свет',
-                'image': '/static/img/artefacts/artefatc-1.png',
+                'image': '/static/img/artifacts/artefatc-1.png',
                 'price': 6000,
                 'description': 'Описание артефакта Лунный свет'
             },
             {
                 'name': 'Лунный свет',
-                'image': '/static/img/artefacts/artefatc-1.png',
+                'image': '/static/img/artifacts/artefatc-1.png',
                 'price': 6000,
                 'description': 'Описание артефакта Лунный свет'
             },
