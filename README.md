@@ -49,30 +49,24 @@ source envname/bin/activate
 ## Установка необходимых зависимостей
 
 ```bash
-pip install Django==4.2.1
+pip install - r requirements.txt
 ```
 
-```bash
-python -m pip install Pillow
-```
+[Помощь](https://ru.stackoverflow.com/questions/1028405/python-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81-%D0%BF%D0%BE-%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D1%83-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-python-%D1%81-windows-%D0%BD%D0%B0-ubuntu)
 
 ## Запуск сервера
 
-перейти в
+### Перейти в папку с модулем
 
 ```bash
-cd store
+cd store 
 ```
 
-Прописать
+### Запустить сервер
 
 ```bash
 python manage.py runserver
 ```
-
-
-
-
 
 # Дополнительные ссылки и задачи
 
@@ -80,7 +74,7 @@ python manage.py runserver
 - https://www.google.com/search?q=stalker+%D0%BE%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D0%AE%D0%BF%D0%B8%D1%82%D0%B5%D1%80%D0%B0&tbm=isch&ved=2ahUKEwi1gaH31In_AhXCuSoKHf1RDvkQ2-cCegQIABAA&oq=stalker+%D0%BE%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D0%AE%D0%BF%D0%B8%D1%82%D0%B5%D1%80%D0%B0&gs_lcp=CgNpbWcQAzoECCMQJzoFCAAQgAQ6BggAEAgQHlDdB1jjI2CkJWgAcAB4AIABZIgB0AmSAQQxOS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=6sJrZLXkBMLzqgH9o7nIDw&bih=929&biw=1920#imgrc=VFWZw89uks6RNM
 - https://www.google.com/search?q=%D1%81%D1%82%D0%B0%D0%BB%D0%BA%D0%B5%D1%80+%D0%BA%D0%B0%D1%80%D1%8C%D0%B5%D1%80+4%D0%BA+%D0%BE%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D1%8E%D0%BF%D0%B8%D1%82%D0%B5%D1%80%D0%B0&tbm=isch&ved=2ahUKEwjK-JLY1Yn_AhWSyCoKHdRhCM0Q2-cCegQIABAA&oq=%D1%81%D1%82%D0%B0%D0%BB%D0%BA%D0%B5%D1%80+%D0%BA%D0%B0%D1%80%D1%8C%D0%B5%D1%80+4%D0%BA+%D0%BE%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8+%D1%8E%D0%BF%D0%B8%D1%82%D0%B5%D1%80%D0%B0&gs_lcp=CgNpbWcQAzoECCMQJ1DqB1j1IGCzImgAcAB4AIABSIgBlQqSAQIyMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=tcNrZIrKEJKRqwHUw6HoDA&bih=929&biw=1920
 - https://stalker.fandom.com/ru/wiki/%D0%9E%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%C2%AB%D0%AE%D0%BF%D0%B8%D1%82%D0%B5%D1%80%D0%B0%C2%BB
-- 
+- [Сохранение зависимостей, чтобы перейти с виндовс на линукс и наоборот](https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt)
 - 
 - 
 - 
