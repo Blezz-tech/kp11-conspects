@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ title }}</title>
-    <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.png">
     <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/main.css">
 </head>
@@ -39,7 +39,7 @@
             {% for product in products %}
             <div class="card">
                 <a href="#" class="text-center">
-                    <img src="{{ product.image }}" class="card-img-top" alt="">
+                    <img src="{{ product.image.url }}" class="card-img-top" alt="">
                 </a>
                 <div class="card-body text-center">
                     <p class="card-title fs-4">{{ product.name}}</p>
