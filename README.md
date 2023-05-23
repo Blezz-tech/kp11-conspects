@@ -98,3 +98,15 @@ python manage.py runserver
 - [ ] 
 - [ ] 
 - [ ] 
+
+
+
+# Обзор файлов приложения
+
+- /store/products/admin.py - отвечает за регистрацию таблиц в админке
+- /store/products/apps.py - хранит информацию о конфигурации приложения
+- /store/products/modals.py - здесь создаются таблицы для БД
+- /store/products/tests.py - создаются тесты для проекта
+- /store/products/views.py - создаются функции для шаблонов для отображения на сайте
+- /store/migrations - файлы миграции для БД
+
