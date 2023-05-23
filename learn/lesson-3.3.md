@@ -1,0 +1,151 @@
+`<main>
+    <h1>основные свойства CSS для работы</h1>
+    <h2>CSS - Работа с текстом</h2>
+    <p>На этом уроке мы познакомимся с основными приёмами для работы с текстом с помощью средств CSS.</p>
+    <p>Задавать стили CSS к тексту можно на уровне элемента body (для всей веб-страницы), элемента p (для абзаца), элемента span (для выделенного фрагмента текста) или любого другого элемента HTML. </p>
+    <h2>Основные свойства CSS для работы с текстом</h2>
+    <h3>1. Свойство font-size</h3>
+    <p>Свойство font-size изменяет размер шрифта. Оно задаётся с помощью значения и единицы измерения (em, px, pt, %). Единицы измерения em и % являются относительными и зависят от размера шрифта установленного в документе. Единицы измерения px и pt являются абсолютными и их размер зависит от разрешения экрана. Также у данного свойства есть предопределенные значения small и larger, которые соответственно уменьшают или увеличивают текст по отношению к базовому.</p>
+    <pre><code data-language="html">&lt;p style=&quot;font-size:1em;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-size:120%;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-size:16px;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-size:14pt;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-size:larger;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-size:small;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</code></pre>
+    <p style="font-size:1em;">Lorem ipsum dolor sit amet</p>
+    <p style="font-size:120%;">Lorem ipsum dolor sit amet</p>
+    <p style="font-size:16px;">Lorem ipsum dolor sit amet</p>
+    <p style="font-size:14pt;">Lorem ipsum dolor sit amet</p>
+    <p style="font-size:larger;">Lorem ipsum dolor sit amet</p>
+    <p style="font-size:small;">Lorem ipsum dolor sit amet</p>
+    <h3>2. Свойство font-weight</h3>
+    <p>Свойство font-weight изменяет жирность шрифта. Свойство font-weight имеет 2 часто используемых значения: normal (обычное) и bold (жирное). Остальные значения используются очень редко, перечислим их: числовые от 100 до 900 с шагом 100 (100 – самое тонкое начертание, 900 – самое жирное начертание), bolder и lighter.</p>
+    <pre><code data-language="html">&lt;p style=&quot;font-weight:normal;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-weight:bold;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-weight:200;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-weight:900;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-weight:lighter;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-weight:bolder;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</code></pre>
+    <p style="font-weight:normal;">Lorem ipsum dolor sit amet</p>
+    <p style="font-weight:bold;">Lorem ipsum dolor sit amet</p>
+    <p style="font-weight:200;">Lorem ipsum dolor sit amet</p>
+    <p style="font-weight:900;">Lorem ipsum dolor sit amet</p>
+    <p style="font-weight:lighter;">Lorem ipsum dolor sit amet</p>
+    <p style="font-weight:bolder;">Lorem ipsum dolor sit amet</p>
+    <h3>3. Свойство font-style</h3>
+    <p>Свойство font-style устанавливает тексту курсивное начертание. Оно принимает следующие значения: normal (обычное начертание шрифта), italic (курсивное начертание).</p>
+    <p> &lt;p style=&quot;font-style:normal;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</p>
+    <p> &lt;p style=&quot;font-style:italic;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</p>
+    <p style="font-style:normal;">Lorem ipsum dolor sit amet</p>
+    <p style="font-style:italic;">Lorem ipsum dolor sit amet</p>
+    <h3>4. Свойство font-family</h3>
+    <p>Свойство font-family изменяет шрифт или список шрифтов, с помощью которых отображается текст. В качестве значений свойство font-family принимает названия шрифтов (например: font-family: "Tahoma", "Arial") или предопределенные названия группы шрифтов (serif, sans-serif, monospace, fantasy, cursive).</p>
+    <pre><code data-language="html">&lt;p style=&quot;font-family:&apos;Times New Roman&apos;,&apos;Arial&apos;;&quot;&gt;Lorem ipsum dolor sitamet&lt;/p&gt;
+&lt;p style=&quot;font-family:serif;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-family:sans-serif;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-family:monospace;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-family:fantasy;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;font-family:cursive;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</code></pre>
+    <p style="font-family:'Times New Roman','Arial';">Lorem ipsum dolor sit amet</p>
+    <p style="font-family:serif;">Lorem ipsum dolor sit amet</p>
+    <p style="font-family:sans-serif;">Lorem ipsum dolor sit amet</p>
+    <p style="font-family:monospace;">Lorem ipsum dolor sit amet</p>
+    <p style="font-family:fantasy;">Lorem ipsum dolor sit amet</p>
+    <p style="font-family:cursive;">Lorem ipsum dolor sit amet</p>
+    <h3>5. Свойство color</h3>
+    <p>Свойство color изменяет цвет шрифта. Установить цвет можно несколькими способами: #ff0000 (шестнадцатеричное значение цвета), orange (зарезервированное название цвета), rgb(120,17,90) (RGB значение).</p>
+    <pre><code data-language="html">&lt;p style=&quot;color:#aa00aa;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;color:pink;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;color:rgb(17,17,17)&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</code></pre>
+    <p style="color:#aa00aa;">Lorem ipsum dolor sit amet</p>
+    <p style="color:pink;">Lorem ipsum dolor sit amet</p>
+    <p style="color:rgb(17,17,17)">Lorem ipsum dolor sit amet</p>
+    <h3>6. Свойство background-color</h3>
+    <p>Свойство background-color можно использовать для выделения текста цветом, т.е. текст делается похожим на текст, выделенный маркером. Установить цвет можно такими же способами, как и для свойства color. </p>
+    <pre><code data-language="html">&lt;p&gt;Lorem ipsum &lt;span style=&quot;background-color:yellow;&quot;&gt;dolor sit&lt;/span&gt;amet&lt;/p&gt;
+&lt;p style=&quot;color:orange;&quot;&gt;Lorem ipsum dolor &lt;span
+style=&quot;background-color:green;&quot;&gt;sit amet&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;background-color:gray;&quot;&gt;Lorem&lt;/span&gt; ipsum dolor sit
+amet&lt;/p&gt;</code></pre>
+    <p>Lorem ipsum <span style="background-color:yellow;">dolor sit</span> amet</p>
+    <p style="color:orange;">Lorem ipsum dolor <span style="background-color:green;">sit amet</span></p>
+    <p><span style="background-color:gray;">Lorem</span> ipsum dolor sit amet</p>
+    <h3>6. Свойство text-decoration</h3>
+    <p>Свойство text-decoration можно использовать для декоративного оформления текста. В качестве значений свойства text-decoration можно использовать следующие: none (без декоративного оформления), underline (подчёркивание), overline (линия над текстом), line-through (зачёркивание), blink (эффект мигания).</p>
+    <pre><code data-language="html">&lt;p style=&quot;text-decoration:none;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;text-decoration:underline;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;text-decoration:overline;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;text-decoration:line-through;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;p style=&quot;text-decoration:underline line-through;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</code></pre>
+    <p style="text-decoration:none;">Lorem ipsum dolor sit amet</p>
+    <p style="text-decoration:underline;">Lorem ipsum dolor sit amet</p>
+    <p style="text-decoration:overline;">Lorem ipsum dolor sit amet</p>
+    <p style="text-decoration:line-through;">Lorem ipsum dolor sit amet</p>
+    <p style="text-decoration:underline line-through;">Lorem ipsum dolor sit amet</p>
+    <p>Подчёркивание также можно создать с помощью свойства CSS border.s</p>
+    <pre><code data-language="html">&lt;p&gt;Lorem ipsum &lt;span style=&quot;color:red; text-decoration: none;border-bottom: 1px dashed red;&quot;&gt;dolor sit&lt;/span&gt; amet&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;color:blue; text-decoration: none;border-bottom: 1px dashed blue;&quot;&gt;Lorem &lt;/span&gt;ipsum dolor sit amet&lt;/p&gt;</code></pre>
+    <p>Lorem ipsum <span style="color:red; text-decoration: none;            border-bottom: 1px dashed red;">dolor sit</span> amet</p>
+    <p><span style="color:blue; text-decoration: none;            border-bottom: 1px dashed blue;">Lorem </span>ipsum dolor sit amet</p>
+    <h3>7. Свойство text-transform</h3>
+    <p>Свойство text-transform управляет регистром символов. В качестве значений свойства text-transform можно использовать следующие: none (по умолчанию), lowercase (переводит все символы в строчные), uppercase (переводит все символы в прописные), capitalize (каждое слово начинается с прописного символа).</p>
+    <pre><code data-language="html">&lt;p style=&quot;text-transform:none;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;&lt;p style=&quot;text-transform:lowercase;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;&lt;p style=&quot;text-transform:uppercase;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;&lt;p style=&quot;text-transform:capitalize;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</code></pre>
+    <p style="text-transform:none;">Lorem ipsum dolor sit amet</p>
+    <p style="text-transform:lowercase;">Lorem ipsum dolor sit amet</p>
+    <p style="text-transform:uppercase;">Lorem ipsum dolor sit amet</p>
+    <p style="text-transform:capitalize;">Lorem ipsum dolor sit amet</p>
+    <h3>8. Свойство white-space</h3>
+    <p>При обработке текста браузер не отображает больше одного пробела между словами, а также игнорирует переносы строк, которые вы выполнили в HTML коде. При помощи свойства white-space вы можете настроить поведение браузера с помощью следующих значений: normal (по умолчанию), nowrap (не переносит текст, пока не встретит тег br), pre (отображает текст как в коде на HTML), pre-wrap (отображает все пробелы между словами и переносит текст, если он не помещается в контейнер).</p>
+    <pre><code data-language="html">&lt;p style=&quot;white-space:normal;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;white-space:pre;&quot;&gt;Lorem ipsum dolor sit amet&lt;/p&gt;</code></pre>
+    <p style="white-space:normal;">Lorem ipsum dolor sit amet</p>
+    <hr>
+    <p style="white-space:pre;">Lorem ipsum dolor sit amet</p>
+    <h3>9. Свойство text-align</h3>
+    <p>Свойство text-align предназначено для выравнивания текста в горизонтальном направлении. Значения свойства text-align указывают, что текст будет выровнен: left (по левому краю), center (по центру), right (по правому краю), justify (по ширине, т.е. одновременно по левому и правому краям).</p>
+    <pre><code data-language="html">&lt;p style=&quot;text-align:left;&quot;&gt;...&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;...&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;text-align:right;&quot;&gt;...&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;text-align:justify;&quot;&gt;...&lt;/p&gt;</code></pre>
+    <p style="text-align:left;">Lorem ipsum dolor sit amet. Impedit, quo voluptas assumenda est, qui minus id quod. Quas molestias excepturi sint, obcaecati cupiditate non numquam eius. Perspiciatis, unde omnis iste natus error sit voluptatem. Et harum quidem rerum facilis est laborum et molestiae consequatur. Minus id, quod maxime placeat, facere possimus. Quo minus id, quod maxime placeat facere. Et molestiae consequatur, vel eum iure reprehenderit, qui dolorem ipsum, quia consequuntur.</p>
+    <hr>
+    <p style="text-align:center;">Lorem ipsum dolor sit amet. Impedit, quo voluptas assumenda est, qui minus id quod. Quas molestias excepturi sint, obcaecati cupiditate non numquam eius. Perspiciatis, unde omnis iste natus error sit voluptatem. Et harum quidem rerum facilis est laborum et molestiae consequatur. Minus id, quod maxime placeat, facere possimus. Quo minus id, quod maxime placeat facere. Et molestiae consequatur, vel eum iure reprehenderit, qui dolorem ipsum, quia consequuntur.</p>
+    <hr>
+    <p style="text-align:right;">Lorem ipsum dolor sit amet. Impedit, quo voluptas assumenda est, qui minus id quod. Quas molestias excepturi sint, obcaecati cupiditate non numquam eius. Perspiciatis, unde omnis iste natus error sit voluptatem. Et harum quidem rerum facilis est laborum et molestiae consequatur. Minus id, quod maxime placeat, facere possimus. Quo minus id, quod maxime placeat facere. Et molestiae consequatur, vel eum iure reprehenderit, qui dolorem ipsum, quia consequuntur.</p>
+    <hr>
+    <p style="text-align:justify;">Lorem ipsum dolor sit amet. Impedit, quo voluptas assumenda est, qui minus id quod. Quas molestias excepturi sint, obcaecati cupiditate non numquam eius. Perspiciatis, unde omnis iste natus error sit voluptatem. Et harum quidem rerum facilis est laborum et molestiae consequatur. Minus id, quod maxime placeat, facere possimus. Quo minus id, quod maxime placeat facere. Et molestiae consequatur, vel eum iure reprehenderit, qui dolorem ipsum, quia consequuntur.</p>
+    <h3>10. Свойство vertical-align</h3>
+    <p>Свойство vertical-align может использоваться для строчных элементов (в том числе для элементов со свойством display:inline-block), ячеек таблицы, и предназначено для выравнивания текста по вертикали. Значения свойства vertical-align указывают, что текст будет выровнен: top (по верхнему краю строки), middle (по середине), bottom (по нижнему краю строки), baseline (значение по умолчанию, выравнивание по базовой линии), sub (текст отображается в виде нижнего индекса, как подстрочный), super (текст отображается в виде верхнего индекса, как надстрочный).</p>
+    <pre><code data-language="html">&lt;p style=&quot;font-size:2em; background:paleturquoise;&quot;&gt;Lorem ipsum dolor &lt;smallstyle=&quot;font-size:0.5em; vertical-align:top;&quot;&gt;sit amet&lt;/small&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;font-size:2em; background:paleturquoise;&quot;&gt;Lorem ipsum dolor &lt;smallstyle=&quot;font-size:0.5em; vertical-align:middle;&quot;&gt;sit amet&lt;/small&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;font-size:2em; background:paleturquoise;&quot;&gt;Lorem ipsum dolor &lt;smallstyle=&quot;font-size:0.5em; vertical-align:bottom;&quot;&gt;sit amet&lt;/small&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;font-size:2em; background:paleturquoise;&quot;&gt;Lorem ipsum dolor &lt;smallstyle=&quot;font-size:0.5em; vertical-align:baseline;&quot;&gt;sit amet&lt;/small&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;font-size:2em; background:paleturquoise;&quot;&gt;Lorem &lt;spanstyle=&quot;vertical-align:sub&quot;&gt;ipsum&lt;/span&gt; dolor &lt;spanstyle=&quot;vertical-align:super&quot;&gt;sit amet&lt;/span&gt;.&lt;/p&gt;</code></pre>
+    <p style="font-size:2em; background:paleturquoise;">Lorem ipsum dolor <small style="font-size:0.5em; vertical-align:top;">sit amet</small>.</p>
+    <hr>
+    <p style="font-size:2em; background:paleturquoise;">Lorem ipsum dolor <small style="font-size:0.5em; vertical-align:middle;">sit amet</small>.</p>
+    <hr>
+    <p style="font-size:2em; background:paleturquoise;">Lorem ipsum dolor <small style="font-size:0.5em; vertical-align:bottom;">sit amet</small>.</p>
+    <hr>
+    <p style="font-size:2em; background:paleturquoise;">Lorem ipsum dolor <small style="font-size:0.5em; vertical-align:baseline;">sit amet</small>.</p>
+    <hr>
+    <p style="font-size:2em; background:paleturquoise;">Lorem <span style="vertical-align:sub">ipsum</span> dolor <span style="vertical-align:super">sit amet</span>.</p>
+    <h3>11. Свойство line-height</h3>
+    <p>Свойство line-height предназначено для задания высоты строки, которая влияет на расстояние между строчками текста. В качестве значений свойства line-height можно использовать следующие: число (множитель по отношению к значению высоты строки по умолчанию), проценты (например: 120% от высоты строки по умолчанию), px (например: 16px), em (например: 3em), зарезервированное слово normal (автоматический расчёт высоты).</p>
+    <pre><code data-language="html">&lt;p&gt;...&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;line-height:200%;&quot;&gt;...&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;line-height:3;&quot;&gt;...&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;line-height:normal;&quot;&gt;...&lt;/p&gt;
+&lt;hr&gt;
+&lt;p style=&quot;line-height:24px;&quot;&gt;...&lt;/p&gt;</code></pre>
+    <h3>Это была лишь малая часть того, что нужно. Далее вам необходимо ознакомиться с следующим плейлистом и видео s</h3> <iframe width="560" height="315" src="https://www.youtube.com/embed/LQxx5Z9XEdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe width="560" height="315" src="https://www.youtube.com/embed/cUSsg1NNFM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</main>`
