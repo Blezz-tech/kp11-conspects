@@ -1,7 +1,7 @@
-<main>
-    <h1>Урок 4 Лучшие браузеры для работы написания кода</h1>
+# Урок 4 Лучшие браузеры для работы написания кода
 
-    <p> Лучшего браузера как такового нет, но есть 2 фаворита это Google Chrome и FireFox. У них довольно удобная и понятная консоль разработчика </p>
-    <img src="/assets/images/learn/chapter-1/lesson-4/chrome.png" alt="">
-    <img src="/assets/images/learn/chapter-1/lesson-4/firefox.png" alt="" lass="otstup-end-page">
-</main>
+Лучшего браузера как такового нет, но есть 2 фаворита это Google Chrome и FireFox. У них довольно удобная и понятная консоль разработчика
+
+![alt](/assets/images/learn/lesson-1.4/chrome.png)
+
+![alt](/assets/images/learn/lesson-1.4/firefox.png)
