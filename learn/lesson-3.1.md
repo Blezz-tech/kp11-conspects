@@ -1,7 +1,25 @@
-<main>
-    <h1>Урок 1 Подготовительные работы CSS</h1>
-    <p>Первым делом нам надо подключить CSS в HTML</p>
-    <p>*вставка с кодом, где он подключается через link*</p>
-    <p>Далее рекомендуется посмотреть видео, чтобы вы знали больше видов подключений</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DX9ITfNVM7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</main>
+# Урок 1 Подготовительные работы CSS
+
+Первым делом нам надо подключить CSS в HTML
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body></body>
+</html>
+```
+
+_вставка с кодом, где он подключается через link_
+
+Далее рекомендуется посмотреть видео, чтобы вы знали больше видов подключений (Кликни по картинке)
+
+[![](https://i.ytimg.com/vi_webp/DX9ITfNVM7I/sddefault.webp)](https://www.youtube.com/watch?v=DX9ITfNVM7I) { .w-75 .align-self-center }
+
+

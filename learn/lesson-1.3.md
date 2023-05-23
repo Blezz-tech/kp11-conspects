@@ -6,17 +6,14 @@
 
 Первым делом нам нужно создать папку с проектом, в которой у нас будет находиться всё (картинки, HTML, CSS, JS). Важное уточнение, все файлы и папки нужно называть на английском языке, так принято сообществом
 
-![alt](/assets/images/learn/lesson-1.3/Папка_с_проектом.png)
+![alt](/assets/images/learn/lesson-1.3/Папка_с_проектом.png) {.w-25 .align-self-center }
 
 ## 2. создать структуру проекта
 
 В папке Project_1 нам нужно создать все основные файлы: index.html (В нём будем писать разметку сайта), папка img (в ней мы храним все изображения на сайте), папку css (в ней мы храним файл стилей для сайта, также создаём его в папке) и папку js (в ней мы храним файл JavaScript, также создаём его в папке). Мы делаем такую структуру, чтобы всё всегда было на своих местах, и мы не путались в файлах. Порядок во всём - ключ к успеху
 
-![alt](/assets/images/learn/lesson-1.3/Структура.png) {.w-75}
+![alt](/assets/images/learn/lesson-1.3/Структура.png) {.w-75 .align-self-center}
 
-![alt](/assets/images/learn/lesson-1.3/Файл_стилей.png) {.w-25 }
+![alt](/assets/images/learn/lesson-1.3/Файл_стилей.png) {.w-25 .align-self-center }
 
-![alt](/assets/images/learn/lesson-1.3/Жабаскрипт.png) {.w-25}
-
-
- {.d-flex .justify-content-center}
+![alt](/assets/images/learn/lesson-1.3/Жабаскрипт.png) {.w-25 .align-self-center}
