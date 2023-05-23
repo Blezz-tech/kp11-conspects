@@ -13,7 +13,7 @@ body {
     background-size: cover;
     background-position: 60% 40%;
 
-    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    /* -webkit-text-stroke: 0.5px rgb(0, 0, 0); */
 }
 
 /* Остальное */

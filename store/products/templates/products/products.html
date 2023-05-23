@@ -20,7 +20,8 @@
                         <a class="btn btn btn-success text-white" href="{% url 'products' %}">Каталог </a>
                         <a class="btn btn btn-success text-white" href="#">Войти </a>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Профиль
                             </button>
                             <ul class="dropdown-menu">
@@ -34,22 +35,35 @@
             </nav>
         </div>
     </header>
-    <div class="container mt-5 mb-5">
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-            {% for product in products %}
-            <div class="card">
-                <a href="#" class="text-center">
-                    <img src="{{ product.image.url }}" class="card-img-top" alt="">
-                </a>
-                <div class="card-body text-center">
-                    <p class="card-title fs-4">{{ product.name}}</p>
-                    <p class="card-subtitle fs-5">{{ product.price }} руб.</p>
-                    <p class="card-text">{{ product.description }}</p>
-                    <a href="#" class="btn btn-primary">Отправить в корзину</a>
-                </div>
-                <!-- <div class="card-footer text-center"></div> -->
+    <div class="container"></div>
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-xl-2 col-sm-2">
+                <ul class="list-group">
+                    {% for category in categories %}
+                    <li class="list-group-item">{{ category.name }}</li>
+                    {% endfor %}
+                </ul>
             </div>
-            {% endfor %}
+            <div class="col-xl-10 col-sm-10">
+                <div class="row">
+                    {% for product in products %}
+                    <div class="col-xl-3 col-lg-4 col-sm-4">
+                        <div class="card">
+                            <a href="#" class="text-center">
+                                <img src="{{ product.image.url }}" class="card-img-top w-50" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <p class="card-title fs-4">{{ product.name}}</p>
+                                <p class="card-subtitle fs-5">{{ product.price }} руб.</p>
+                                <p class="card-text">{{ product.description }}</p>
+                                <a href="#" class="btn btn-primary">Отправить в корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
     <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -27,6 +27,7 @@ urlpatterns = [
     path('products/', products, name='products'),
 ]
 
+# Для дебага
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_URL)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
