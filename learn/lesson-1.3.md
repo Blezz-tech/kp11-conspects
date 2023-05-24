@@ -14,6 +14,4 @@
 
 ![alt](/assets/images/learn/lesson-1.3/Структура.png) {.w-75 .align-self-center}
 
-![alt](/assets/images/learn/lesson-1.3/Файл_стилей.png) {.w-25 .align-self-center }
-
-![alt](/assets/images/learn/lesson-1.3/Жабаскрипт.png) {.w-25 .align-self-center}
+![alt](/assets/images/learn/lesson-1.3/js-and-css.png) {.w-50 .align-self-center }

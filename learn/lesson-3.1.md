@@ -16,8 +16,6 @@
 </html>
 ```
 
-_вставка с кодом, где он подключается через link_
-
 Далее рекомендуется посмотреть видео, чтобы вы знали больше видов подключений (Кликни по картинке)
 
 [![](https://i.ytimg.com/vi_webp/DX9ITfNVM7I/sddefault.webp)](https://www.youtube.com/watch?v=DX9ITfNVM7I) { .w-75 .align-self-center }
