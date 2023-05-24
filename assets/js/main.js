@@ -1,6 +1,7 @@
 const content_area = document.querySelector('#content-area');
-
 const buttons_file = document.querySelectorAll('.btn-file');
+const sun = document.querySelector('#sun');
+
 
 buttons_file.forEach(button_file => {
   button_file.addEventListener('click', (event) => {
@@ -17,3 +18,12 @@ async function start(lesson) {
 
   Rainbow.color(() => console.log('Новые блоки с кодом теперь подсвечены!'));
 }
+
+sun.addEventListener('click', (event) => {
+  const body = document.querySelector('body');
+  if (body.getAttribute('data-bs-theme') == 'light') {
+    body.setAttribute('data-bs-theme', 'dark');
+  } else {
+    body.setAttribute('data-bs-theme', 'light');
+  }
+});
