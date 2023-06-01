@@ -1,12 +1,19 @@
 ---
 title: "Main.Rmd"
-authoer: Blezz (BlezzRot, Blezz-Tech)
-date: "2023-06-01"
-
+author: Blezz (BlezzRot, Blezz-Tech)
+date: "`r Sys.Date()`"
 output:
+  html_document:
+    toc: true
+    number_sections: true
+    toc_float: true
+    theme: default
+    code_folding: show
   pdf_document:
     latex_engine: xelatex
 ---
+
+# Main
 
 ```{r}
 
@@ -103,9 +110,36 @@ rep(1:3, times = 3)
 rep(1:3, each = 4)
 
 rep(1:3, length.out = 5)
+```
 
 
+# Plots
 
+```{r}
+library(ggplot2)
+# library(svglite)
+
+# svglite("myplot.svg", width = 200, height = 200)
+
+eq = function(x){x^3 - 5*x}
+ggplot(data.frame(x=c(-4, 4)), aes(x=x)) + 
+  stat_function(fun=eq)
+
+# dev.off()
+# ggsave("build/myplot.svg", width = 2000, height = 2000, units = "px")
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
