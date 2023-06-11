@@ -130,7 +130,28 @@ ggplot(data.frame(x=c(-4, 4)), aes(x=x)) +
 
 ```
 
+```{r}
+get_fractions <- function(m, n) {
+  return(
+    unique(
+      rev(
+        sort(
+          c(
+            seq(0, 1, 1/n),
+            seq(0, 1, 1/m)
+          )
+        )
+      )
+    )
+  )
+}
 
+get_fractions(1,2)
+```
+
+```{r}
+
+```
 
 
 
