@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="5.7.1_0_c3206253" segtype="sentence" srclang="en-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="en-US">
+        <seg>![[LYHfGG_1_bird.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230611T220409Z" creationid="jenya" creationdate="20230611T220409Z">
+        <seg>![[LYHfGG_1_bird.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>![[LYHfGG_2_fx.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230611T220414Z" creationid="jenya" creationdate="20230611T220414Z">
+        <seg>![[LYHfGG_2_fx.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Introduction</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230610T211504Z" creationid="jenya" creationdate="20230610T211504Z">
+        <seg># Введение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## About this tutorial</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230611T230516Z" creationid="jenya" creationdate="20230610T211543Z">
+        <seg>## Об этом учебном пособии</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>I decided to write this because I wanted to solidify my own knowledge of Haskell and because I thought I could help people new to Haskell learn it from my perspective.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230611T225720Z" creationid="jenya" creationdate="20230611T225608Z">
+        <seg>Я решил написать это, потому что хотел укрепить свои собственные знания о Haskell и потому что думал, что смогу помочь людям, новичкам в Haskell, изучить его с моей точки зрения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If you're reading this, chances are you want to learn Haskell.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230611T203057Z" creationid="jenya" creationdate="20230611T203057Z">
+        <seg>Если вы читаете это, то возможно вы хотите выучить Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>There are quite a few tutorials on Haskell floating around on the internet.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230611T225815Z" creationid="jenya" creationdate="20230611T225815Z">
+        <seg>There are quite a few tutorials on Haskell floating around on the internet.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Welcome to **Learn You a Haskell for Great Good**!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230611T202853Z" creationid="jenya" creationdate="20230611T143314Z">
+        <seg>Добро пожаловать в **Выучи Haskell для Великого Блага**!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Well, you've come to the right place, but let's talk about this tutorial a bit first.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230611T225601Z" creationid="jenya" creationdate="20230611T225424Z">
+        <seg>Что ж, вы обратились по адресу, но давайте немного поговорим об этом уроке.</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>
