@@ -22,10 +22,50 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>![[LYHfGG_3_lazy.png]]</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170848Z" creationid="jenya" creationdate="20230615T170848Z">
+        <seg>![[LYHfGG_3_lazy.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>![[LYHfGG_4_boat.png]]</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172750Z" creationid="jenya" creationdate="20230615T172750Z">
+        <seg>![[LYHfGG_4_boat.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg># Functionally Solving Problems</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230613T160057Z" creationid="jenya" creationdate="20230613T160057Z">
+        <seg># Functionally Solving Problems</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg># Higher order functions</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230613T160006Z" creationid="jenya" creationdate="20230613T160006Z">
+        <seg># Higher order functions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg># Introduction</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230610T211504Z" creationid="jenya" creationdate="20230610T211504Z">
         <seg># Введение</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg># Modules</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230613T160009Z" creationid="jenya" creationdate="20230613T160009Z">
+        <seg># Modules</seg>
       </tuv>
     </tu>
     <tu>
@@ -38,10 +78,242 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>## So what's Haskell?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174228Z" creationid="jenya" creationdate="20230615T165018Z">
+        <seg>## Итак, что такое Haskell?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>## What you need to dive in</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173615Z" creationid="jenya" creationdate="20230615T173615Z">
+        <seg>## Во что вам нужно погрузиться</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>A text editor and a Haskell compiler.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173622Z" creationid="jenya" creationdate="20230615T173622Z">
+        <seg>Текстовый редактор и компилятор Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Although I bet that even if you don't have any significant programming experience, a smart person such as yourself will be able to follow along and learn Haskell.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164243Z" creationid="jenya" creationdate="20230615T164243Z">
+        <seg>Хотя я готов поспорить, что даже если у вас нет сколько-нибудь значительного опыта в программировании, такой умный человек, как вы, сможет последовать примеру и изучить Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>And shorter programs are easier to maintain than longer ones and have less bugs.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173443Z" creationid="jenya" creationdate="20230615T173443Z">
+        <seg>А более короткие программы легче поддерживать, чем более длинные, и в них меньше ошибок.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>At first, this seems kind of limiting but it actually has some very nice consequences: if a function is called twice with the same parameters, it's guaranteed to return the same result.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170732Z" creationid="jenya" creationdate="20230615T170732Z">
+        <seg>На первый взгляд это кажется своего рода ограничением, но на самом деле это имеет некоторые очень приятные последствия: если функция вызывается дважды с одними и теми же параметрами, она гарантированно возвращает один и тот же результат.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Because it uses a lot of high level concepts, Haskell programs are usually shorter than their imperative equivalents.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173430Z" creationid="jenya" creationdate="20230615T173430Z">
+        <seg>Поскольку в нем используется много высокоуровневых концепций, программы на Haskell обычно короче своих императивных эквивалентов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>But once you want to see the result, the first `doubleMe` tells the second one it wants the result, now!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172425Z" creationid="jenya" creationdate="20230615T172425Z">
+        <seg>Но как только вы захотите увидеть результат, первая "двойная строка" сообщит второй, что она хочет получить результат, сейчас же!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>But then once it just "clicked" and after getting over that initial hurdle, it was pretty much smooth sailing.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164811Z" creationid="jenya" creationdate="20230615T164811Z">
+        <seg>Но затем, как только это просто "щелкнуло" и после преодоления этого первоначального препятствия, все прошло довольно гладко.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>By going through several resources, I was able put together the pieces and it all just came falling into place.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164034Z" creationid="jenya" creationdate="20230615T164034Z">
+        <seg>Просмотрев несколько ресурсов, я смог собрать воедино кусочки, и все просто встало на свои места.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>For instance, you set variable `a` to 5 and then do some stuff and then set it to something else.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T165305Z" creationid="jenya" creationdate="20230615T165154Z">
+        <seg>Например, вы устанавливаете переменной `a` значение 5, а затем делаете что-то еще, а затем устанавливаете ее значение на что-то другое.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>For learning it's a lot easier and faster than compiling every time you make a change and then running the program from the prompt.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173903Z" creationid="jenya" creationdate="20230615T173903Z">
+        <seg>Для обучения это намного проще и быстрее, чем компилировать каждый раз, когда вы вносите изменения, а затем запускать программу из командной строки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>For the purposes of this tutorial we'll be using GHC, the most widely used Haskell compiler.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173653Z" creationid="jenya" creationdate="20230615T173653Z">
+        <seg>Для целей этого руководства мы будем использовать GHC, наиболее широко используемый компилятор Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>GHC can take a Haskell script (they usually have a .hs extension) and compile it but it also has an interactive mode which allows you to interactively interact with scripts.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173826Z" creationid="jenya" creationdate="20230615T173826Z">
+        <seg>GHC может взять скрипт на Haskell (обычно они имеют расширение .hs) и скомпилировать его, но он также имеет интерактивный режим, который позволяет вам интерактивно взаимодействовать со скриптами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Haskell is **elegant and concise**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173204Z" creationid="jenya" creationdate="20230615T173204Z">
+        <seg>Haskell **элегантен и лаконичен**.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Haskell is **lazy**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174251Z" creationid="jenya" creationdate="20230615T170847Z">
+        <seg>Haskell **ленив**.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Haskell is **statically typed**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172800Z" creationid="jenya" creationdate="20230615T172800Z">
+        <seg>Haskell является **статически типизированным**.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Haskell is a **purely functional programming language**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T165040Z" creationid="jenya" creationdate="20230615T165022Z">
+        <seg>Haskell - это **чисто функциональный язык программирования**.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Haskell uses a very good type system that has **type inference**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172923Z" creationid="jenya" creationdate="20230615T172923Z">
+        <seg>Haskell использует очень хорошую систему типов, которая имеет **вывод типа**.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Haskell was made by some **really smart guys** (with PhDs).</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173458Z" creationid="jenya" creationdate="20230615T173458Z">
+        <seg>Haskell был создан несколькими **действительно умными парнями** (с докторскими степенями).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>I decided to write this because I wanted to solidify my own knowledge of Haskell and because I thought I could help people new to Haskell learn it from my perspective.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230611T225720Z" creationid="jenya" creationdate="20230611T225608Z">
         <seg>Я решил написать это, потому что хотел укрепить свои собственные знания о Haskell и потому что думал, что смогу помочь людям, новичкам в Haskell, изучить его с моей точки зрения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>I failed to learn Haskell approximately 2 times before finally grasping it because it all just seemed too weird to me and I didn't get it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164552Z" creationid="jenya" creationdate="20230615T164552Z">
+        <seg>Мне не удалось выучить Haskell примерно 2 раза, прежде чем я, наконец, понял его, потому что все это казалось мне слишком странным, и я этого не понял.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>I guess what I'm trying to say is: Haskell is great and if you're interested in programming you should really learn it even if it seems weird at first.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164859Z" creationid="jenya" creationdate="20230615T164859Z">
+        <seg>Наверное, я пытаюсь сказать следующее: Haskell великолепен, и если вы интересуетесь программированием, вам действительно следует его изучить, даже если поначалу это кажется странным.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If a function you make takes two parameters and adds them together and you don't explicitly state their type, the function will work on any two parameters that act like numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173156Z" creationid="jenya" creationdate="20230615T173156Z">
+        <seg>Если созданная вами функция принимает два параметра и складывает их вместе, и вы явно не указываете их тип, функция будет работать с любыми двумя параметрами, которые действуют как числа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If we wanted to multiply our list by 8 in an imperative language and did `doubleMe(doubleMe(doubleMe(xs)))`, it would probably pass through the list once and make a copy and then return it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174308Z" creationid="jenya" creationdate="20230615T171752Z">
+        <seg>Если бы мы хотели умножить наш список на 8 на императивном языке и сделали `doubleMe( doubleMe( doubleMe(xs) ) )`, он, вероятно, прошел бы по списку один раз и сделал копию, а затем вернул бы ее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If you change the .hs script, just run `:l myfunctions` again or do `:r`, which is equivalent because it reloads the current script.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174028Z" creationid="jenya" creationdate="20230615T174028Z">
+        <seg>Если вы измените скрипт .hs, просто снова запустите `:l myfunctions` или выполните `:r`, что эквивалентно, поскольку оно перезагружает текущий скрипт.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If you have defined some functions in a file called, say, `myfunctions.hs`, you load up those functions by typing in `:l myfunctions` and then you can play with them, provided `myfunctions.hs` is in the same folder from which `ghci` was invoked.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173955Z" creationid="jenya" creationdate="20230615T173955Z">
+        <seg>Если вы определили какие-то функции в файле с именем, скажем, `myfunctions.hs`, вы загружаете эти функции, введя `:l myfunctions`, а затем можете поиграть с ними, при условии, что `myfunctions.hs` находится в той же папке, из которой был вызван `ghci`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If you say `a = 5 + 4`, you don't have to tell Haskell that `a` is a number, it can figure that out by itself.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173037Z" creationid="jenya" creationdate="20230615T173037Z">
+        <seg>Если вы говорите `a = 5 + 4`, вам не нужно говорить Haskell, что `a` - это число, он может вычислить это сам.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If you say that `a` is 5, you can't say it's something else later because you just said it was 5.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170444Z" creationid="jenya" creationdate="20230615T170444Z">
+        <seg>Если вы скажете, что `a` равно 5, вы не сможете позже сказать, что это что-то другое, потому что вы только что сказали, что это 5.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If you try to add together a number and a string, the compiler will whine at you.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172910Z" creationid="jenya" creationdate="20230615T172910Z">
+        <seg>Если вы попытаетесь сложить вместе число и строку, компилятор будет ныть на вас.</seg>
       </tuv>
     </tu>
     <tu>
@@ -54,6 +326,230 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>In 2003 the Haskell Report was published, which defines a stable version of the language.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173609Z" creationid="jenya" creationdate="20230615T173609Z">
+        <seg>В 2003 году был опубликован отчет Haskell, в котором определяется стабильная версия языка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>In a lazy language, calling `doubleMe` on a list without forcing it to show you the result ends up in the program sort of telling you "Yeah yeah, I'll do it later!".</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172010Z" creationid="jenya" creationdate="20230615T172010Z">
+        <seg>На ленивом языке вызов `doubleMe` в списке, не заставляя его показывать вам результат, приводит к тому, что программа как бы говорит вам: "Да, да, я сделаю это позже!".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>In imperative languages you get things done by giving the computer a sequence of tasks and then it executes them.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T165136Z" creationid="jenya" creationdate="20230615T165136Z">
+        <seg>В императивных языках вы добиваетесь цели, задавая компьютеру последовательность задач, а затем он их выполняет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>In purely functional programming you don't tell the computer what to do as such but rather you tell it what stuff _is_.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170029Z" creationid="jenya" creationdate="20230615T165155Z">
+        <seg>В чисто функциональном программировании вы не указываете компьютеру, что делать как таковое, а скорее сообщаете ему, чем этот материал _является_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Interactively.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173829Z" creationid="jenya" creationdate="20230615T173829Z">
+        <seg>Интерактивно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It also allows cool things such as infinite data structures.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T171704Z" creationid="jenya" creationdate="20230615T171704Z">
+        <seg>Это также позволяет создавать интересные вещи, такие как бесконечные структуры данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It forces you to think differently, which brings us to the next section …</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164947Z" creationid="jenya" creationdate="20230615T164947Z">
+        <seg>Это заставляет вас думать по-другому, что подводит нас к следующему разделу ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Learning Haskell is much like learning to program for the first time — it's fun!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164923Z" creationid="jenya" creationdate="20230615T164923Z">
+        <seg>Изучение Haskell во многом похоже на обучение программированию в первый раз — это весело!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>People there are extremely nice, patient and understanding to newbies.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164415Z" creationid="jenya" creationdate="20230615T164415Z">
+        <seg>Люди там чрезвычайно милы, терпеливы и с пониманием относятся к новичкам.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Say you have an immutable list of numbers `xs = [1,2,3,4,5,6,7,8]` and a function `doubleMe` which multiplies every element by 2 and then returns a new list.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T171742Z" creationid="jenya" creationdate="20230615T171742Z">
+        <seg>Допустим, у вас есть неизменяемый список чисел `xs = [1,2,3,4,5,6,7,8]` и функция `doubleMe`, которая умножает каждый элемент на 2, а затем возвращает новый список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>So in purely functional languages, a function has no side-effects.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170538Z" creationid="jenya" creationdate="20230615T170538Z">
+        <seg>Таким образом, в чисто функциональных языках функция не имеет побочных эффектов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>So it only does one pass through the list and only when you really need it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172605Z" creationid="jenya" creationdate="20230615T172605Z">
+        <seg>Таким образом, он выполняет только один проход по списку и только тогда, когда вам это действительно нужно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>So this is an attempt at adding another useful resource for learning Haskell so you have a bigger chance of finding one you like.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164104Z" creationid="jenya" creationdate="20230615T164104Z">
+        <seg>Итак, это попытка добавить еще один полезный ресурс для изучения Haskell, чтобы у вас было больше шансов найти тот, который вам понравится.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That goes well with referential transparency and it allows you to think of programs as a series of **transformations on data**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T171559Z" creationid="jenya" creationdate="20230615T171559Z">
+        <seg>Это хорошо сочетается со ссылочной прозрачностью и позволяет вам думать о программах как о серии **преобразований данных**.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That means that a lot of possible errors are caught at compile time.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172853Z" creationid="jenya" creationdate="20230615T172853Z">
+        <seg>Это означает, что во время компиляции обнаруживается множество возможных ошибок.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That means that unless specifically told otherwise, Haskell won't execute functions and calculate things until it's really forced to show you a result.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T171434Z" creationid="jenya" creationdate="20230615T171434Z">
+        <seg>Это означает, что, если специально не указано иное, Haskell не будет выполнять функции и вычислять что-либо, пока его действительно не заставят показать вам результат.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That means that you don't have to explicitly label every piece of code with a type because the type system can intelligently figure out a lot about it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173015Z" creationid="jenya" creationdate="20230615T173015Z">
+        <seg>Это означает, что вам не нужно явно помечать каждый фрагмент кода типом, потому что система типов может разумно многое выяснить об этом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That way when you want something from a lazy language you can just take some initial data and efficiently transform and mend it so it resembles what you want at the end.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172749Z" creationid="jenya" creationdate="20230615T172749Z">
+        <seg>Таким образом, когда вам нужно что-то из ленивого языка, вы можете просто взять некоторые исходные данные и эффективно преобразовать и исправить их, чтобы они напоминали то, что вы хотите в конце.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That's called referential transparency and not only does it allow the compiler to reason about the program's behavior, but it also allows you to easily deduce (and even prove) that a function is correct and then build more complex functions by gluing simple functions together.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170846Z" creationid="jenya" creationdate="20230615T170846Z">
+        <seg>Это называется прозрачностью ссылок, и она не только позволяет компилятору рассуждать о поведении программы, но и позволяет вам легко вывести (и даже доказать), что функция верна, а затем создавать более сложные функции путем склеивания простых функций вместе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The best way to get started is to download the [Haskell Platform](http://hackage.haskell.org/platform/), which is basically Haskell with batteries included.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173740Z" creationid="jenya" creationdate="20230615T173740Z">
+        <seg>Лучший способ начать - это загрузить [Haskell Platform](http://hackage.haskell.org/platform/), который в основном представляет собой Haskell с включенными батарейками.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The channel #haskell on the freenode network is a great place to ask questions if you're feeling stuck.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164359Z" creationid="jenya" creationdate="20230615T164254Z">
+        <seg>Канал #haskell в сети freenode - отличное место, чтобы задать вопросы, если вы чувствуете себя застрявшим.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The factorial of a number is the product of all the numbers from 1 to that number, the sum of a list of numbers is the first number plus the sum of all the other numbers, and so on.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170232Z" creationid="jenya" creationdate="20230615T165159Z">
+        <seg>Факториал числа - это произведение всех чисел от 1 до этого числа, сумма списка чисел - это первое число плюс сумма всех остальных чисел и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The first one sees that and tells you the first element is 8.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172550Z" creationid="jenya" creationdate="20230615T172550Z">
+        <seg>Первая видит это и сообщает вам, что первый элемент равен 8.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The interactive mode is invoked by typing in `ghci` at your prompt.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173915Z" creationid="jenya" creationdate="20230615T173915Z">
+        <seg>Интерактивный режим вызывается путем ввода `ghci` в вашей командной строке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The only thing a function can do is calculate something and return it as a result.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170608Z" creationid="jenya" creationdate="20230615T170608Z">
+        <seg>Единственное, что может сделать функция, - это вычислить что-то и вернуть это в результате.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The second one receives that and gives back 4 to the first one.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172540Z" creationid="jenya" creationdate="20230615T172540Z">
+        <seg>Вторая получает это и возвращает 4 первой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The second one says that to the third one and the third one reluctantly gives back a doubled 1, which is a 2.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172511Z" creationid="jenya" creationdate="20230615T172511Z">
+        <seg>Вторая скажет это третьей, и третья неохотно возвращает удвоенную 1, которая равна 2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The usual workflow for me when playing around in stuff is defining some functions in a .hs file, loading it up and messing around with them and then changing the .hs file, loading it up again and so on.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174144Z" creationid="jenya" creationdate="20230615T174144Z">
+        <seg>Обычный рабочий процесс для меня, когда я копаюсь в материалах, - это определение некоторых функций в файле .hs, его загрузка и возня с ними, а затем изменение файла .hs, повторная загрузка и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>The way I learned it was by reading several different tutorials and articles because each explained something in a different way than the other did.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230612T110623Z" creationid="jenya" creationdate="20230612T110346Z">
@@ -62,10 +558,42 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Then it would pass through the list another two times and return the result.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T171921Z" creationid="jenya" creationdate="20230615T171921Z">
+        <seg>Затем он пройдет по списку еще два раза и вернет результат.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>There are quite a few tutorials on Haskell floating around on the internet.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230612T110414Z" creationid="jenya" creationdate="20230611T225815Z">
         <seg>В Интернете есть довольно много учебных пособий по Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>This is also what we'll be doing here.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174152Z" creationid="jenya" creationdate="20230615T174152Z">
+        <seg>Это тоже то, чем мы будем заниматься здесь.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>This tutorial is aimed at people who have experience in imperative programming languages (C, C++, Java, Python …) but haven't programmed in a functional language before (Haskell, ML, OCaml …).</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164157Z" creationid="jenya" creationdate="20230615T164157Z">
+        <seg>Это руководство предназначено для людей, которые имеют опыт работы с императивными языками программирования (C, C ++, Java, Python ...), но никогда раньше не программировали на функциональном языке (Haskell, ML, OCaml вЂ/).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Type inference also allows your code to be more general.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173100Z" creationid="jenya" creationdate="20230615T173100Z">
+        <seg>Вывод типа также позволяет вашему коду быть более общим.</seg>
       </tuv>
     </tu>
     <tu>
@@ -86,10 +614,82 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>What are you, some kind of liar?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170457Z" creationid="jenya" creationdate="20230615T170457Z">
+        <seg>Ты что, какой-то лжец?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>When I was starting out in Haskell, I didn't learn from just one resource.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230612T110259Z" creationid="jenya" creationdate="20230612T110259Z">
         <seg>Когда я начинал изучать Haskell, я учился на нескольких ресурсах.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>When you compile your program, the compiler knows which piece of code is a number, which is a string and so on.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172825Z" creationid="jenya" creationdate="20230615T172825Z">
+        <seg>Когда вы компилируете свою программу, компилятор знает, какой фрагмент кода является числом, который - строкой и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>While executing them, it can change state.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T165151Z" creationid="jenya" creationdate="20230615T165151Z">
+        <seg>Во время их выполнения он может изменять состояние.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Work on Haskell began in 1987 when a committee of researchers got together to design a kick-ass language.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173549Z" creationid="jenya" creationdate="20230615T173549Z">
+        <seg>Работа над Haskell началась в 1987 году, когда комитет исследователей собрался вместе для разработки потрясающего языка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>You also can't set a variable to something and then set it to something else later.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170331Z" creationid="jenya" creationdate="20230615T170331Z">
+        <seg>Вы также не можете присвоить переменной значение чего-то, а затем присвоить ей значение чего-то другого позже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>You can call functions from scripts that you load and the results are displayed immediately.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173840Z" creationid="jenya" creationdate="20230615T173840Z">
+        <seg>Вы можете вызывать функции из скриптов, которые вы загружаете, и результаты отображаются немедленно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>You express that in the form of functions.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170250Z" creationid="jenya" creationdate="20230615T170250Z">
+        <seg>Вы выражаете это в форме функций.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>You have control flow structures for doing some action several times.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T165654Z" creationid="jenya" creationdate="20230615T165153Z">
+        <seg>У вас есть структуры потока управления для выполнения какого-либо действия несколько раз.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>You probably already have your favorite text editor installed so we won't waste time on that.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173638Z" creationid="jenya" creationdate="20230615T173638Z">
+        <seg>Вероятно, у вас уже установлен ваш любимый текстовый редактор, так что мы не будем тратить на это время.</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
