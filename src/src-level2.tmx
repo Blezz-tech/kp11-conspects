@@ -38,6 +38,22 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>![[LYHfGG_5_startingout.png]]</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174426Z" creationid="jenya" creationdate="20230615T174426Z">
+        <seg>![[LYHfGG_5_startingout.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>![[LYHfGG_6_ringring.png]]</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100953Z" creationid="jenya" creationdate="20230616T100953Z">
+        <seg>![[LYHfGG_6_ringring.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg># Functionally Solving Problems</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230613T160057Z" creationid="jenya" creationdate="20230613T160057Z">
@@ -70,10 +86,26 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg># Starting Out</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174400Z" creationid="jenya" creationdate="20230615T174354Z">
+        <seg># Начиная</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>## About this tutorial</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230612T110356Z" creationid="jenya" creationdate="20230610T211543Z">
         <seg>## Об этом учебном пособии</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>## Ready, set, go!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T092759Z" creationid="jenya" creationdate="20230615T174352Z">
+        <seg>## На старт, внимание, марш!</seg>
       </tuv>
     </tu>
     <tu>
@@ -94,10 +126,26 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>A little pitfall to watch out for here is negating numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095709Z" creationid="jenya" creationdate="20230616T095709Z">
+        <seg>Небольшая ошибка, на которую следует обратить внимание здесь, - это отрицание чисел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>A text editor and a Haskell compiler.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173622Z" creationid="jenya" creationdate="20230615T173622Z">
         <seg>Текстовый редактор и компилятор Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Alright, let's get started!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T174436Z" creationid="jenya" creationdate="20230615T174427Z">
+        <seg>Хорошо, давайте начнем!</seg>
       </tuv>
     </tu>
     <tu>
@@ -118,6 +166,30 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>As you can see, we just separate the function name from the parameter with a space.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T105256Z" creationid="jenya" creationdate="20230616T104803Z">
+        <seg>Как вы можете видеть, мы просто отделяем имя функции от параметра пробелом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>As you probably know, `&amp;&amp;` means a boolean _and_, `||` means a boolean _or_.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095805Z" creationid="jenya" creationdate="20230616T095805Z">
+        <seg>Как вы, вероятно, знаете, `&amp;&amp;` означает логическое _И_, `||` означает логическое _ИЛИ_ .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>As you've seen, we call it by sandwiching it between them.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100808Z" creationid="jenya" creationdate="20230616T100808Z">
+        <seg>Как вы видели, мы вызываем это, помещая его между ними.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>At first, this seems kind of limiting but it actually has some very nice consequences: if a function is called twice with the same parameters, it's guaranteed to return the same result.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170732Z" creationid="jenya" creationdate="20230615T170732Z">
@@ -134,10 +206,26 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Boolean algebra is also pretty straightforward.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095745Z" creationid="jenya" creationdate="20230616T095745Z">
+        <seg>Булева алгебра также довольно проста.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>But once you want to see the result, the first `doubleMe` tells the second one it wants the result, now!</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172425Z" creationid="jenya" creationdate="20230615T172425Z">
         <seg>Но как только вы захотите увидеть результат, первая "двойная строка" сообщит второй, что она хочет получить результат, сейчас же!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>But the catch is that they both have to be the same type of thing.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100350Z" creationid="jenya" creationdate="20230616T100350Z">
+        <seg>Но загвоздка в том, что они оба должны быть одного типа.</seg>
       </tuv>
     </tu>
     <tu>
@@ -154,6 +242,54 @@
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164034Z" creationid="jenya" creationdate="20230615T164034Z">
         <seg>Просмотрев несколько ресурсов, я смог собрать воедино кусочки, и все просто встало на свои места.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Calling a function with several parameters is also simple.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T105301Z" creationid="jenya" creationdate="20230616T105301Z">
+        <seg>Вызов функции с несколькими параметрами также прост.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Congratulations, you're in GHCI!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T093614Z" creationid="jenya" creationdate="20230616T093144Z">
+        <seg>Поздравляю, вы находитесь в GHCI!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Doing `5 * -3` will make GHCI yell at you but doing `5 * (-3)` will work just fine.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095740Z" creationid="jenya" creationdate="20230616T095740Z">
+        <seg>Выполнение `5 * -3` заставит GHCI кричать на вас, но выполнение `5 * (-3)` будет работать просто отлично.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Even if it wasn't `"llama"` but `"four"` or `"4"`, Haskell still wouldn't consider it to be a number.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100127Z" creationid="jenya" creationdate="20230616T100127Z">
+        <seg>Даже если бы это была не `"llama", а "four" или "4", Haskell все равно не счел бы это числом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>For a start, we'll try calling one of the most boring functions in Haskell.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T101829Z" creationid="jenya" creationdate="20230616T101829Z">
+        <seg>Для начала мы попробуем вызвать одну из самых скучных функций в Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>For instance, `*` is a function that takes two numbers and multiplies them.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100756Z" creationid="jenya" creationdate="20230616T100756Z">
+        <seg>Например, `*` - это функция, которая принимает два числа и умножает их.</seg>
       </tuv>
     </tu>
     <tu>
@@ -178,6 +314,14 @@
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173653Z" creationid="jenya" creationdate="20230615T173653Z">
         <seg>Для целей этого руководства мы будем использовать GHC, наиболее широко используемый компилятор Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Functions are usually prefix so from now on we won't explicitly state that a function is of the prefix form, we'll just assume it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T101100Z" creationid="jenya" creationdate="20230616T101100Z">
+        <seg>Функции обычно являются префиксными, поэтому с этого момента мы не будем явно указывать, что функция имеет префиксную форму, мы просто предположим это.</seg>
       </tuv>
     </tu>
     <tu>
@@ -238,6 +382,14 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Here's some simple arithmetic.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095102Z" creationid="jenya" creationdate="20230616T095028Z">
+        <seg>Вот несколько простых арифметических действий.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>I decided to write this because I wanted to solidify my own knowledge of Haskell and because I thought I could help people new to Haskell learn it from my perspective.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230611T225720Z" creationid="jenya" creationdate="20230611T225608Z">
@@ -266,6 +418,22 @@
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173156Z" creationid="jenya" creationdate="20230615T173156Z">
         <seg>Если созданная вами функция принимает два параметра и складывает их вместе, и вы явно не указываете их тип, функция будет работать с любыми двумя параметрами, которые действуют как числа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If we tried to do `True == 5`, GHCI would tell us that the types don't match.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100151Z" creationid="jenya" creationdate="20230616T100151Z">
+        <seg>Если бы мы попытались выполнить `True == 5`, GHCI сказал бы нам, что типы не совпадают.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If we want to have a negative number, it's always best to surround it with parentheses.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095722Z" creationid="jenya" creationdate="20230616T095722Z">
+        <seg>Если мы хотим получить отрицательное число, всегда лучше заключить его в круглые скобки.</seg>
       </tuv>
     </tu>
     <tu>
@@ -318,6 +486,14 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>If you want to have the same prompt, just type in `:set prompt "ghci&gt; "`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095057Z" creationid="jenya" creationdate="20230616T093632Z">
+        <seg>Если вы хотите получить такое же приглашение, просто введите `:set prompt "ghci&gt; "`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>If you're reading this, chances are you want to learn Haskell.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230611T203057Z" creationid="jenya" creationdate="20230611T203057Z">
@@ -326,10 +502,26 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>If you're the sort of horrible person who doesn't read introductions to things and you skipped it, you might want to read the last section in the introduction anyway because it explains what you need to follow this tutorial and how we're going to load functions.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T092926Z" creationid="jenya" creationdate="20230616T092926Z">
+        <seg>Если вы из тех ужасных людей, которые не читают введения к книгам, и вы пропустили его, возможно, вы все равно захотите прочитать последний раздел введения, потому что в нем объясняется, что вам нужно для выполнения этого руководства и как мы собираемся загружать функции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>In 2003 the Haskell Report was published, which defines a stable version of the language.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173609Z" creationid="jenya" creationdate="20230615T173609Z">
         <seg>В 2003 году был опубликован отчет Haskell, в котором определяется стабильная версия языка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>In Haskell, functions are called by writing the function name, a space and then the parameters, separated by spaces.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T101219Z" creationid="jenya" creationdate="20230616T101219Z">
+        <seg>В Haskell функции вызываются путем ввода имени функции, пробела, а затем параметров, разделенных пробелами.</seg>
       </tuv>
     </tu>
     <tu>
@@ -346,6 +538,14 @@
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T165136Z" creationid="jenya" creationdate="20230615T165136Z">
         <seg>В императивных языках вы добиваетесь цели, задавая компьютеру последовательность задач, а затем он их выполняет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>In most imperative languages functions are called by writing the function name and then writing its parameters in parentheses, usually separated by commas.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T101158Z" creationid="jenya" creationdate="20230616T101158Z">
+        <seg>В большинстве императивных языков функции вызываются путем ввода имени функции, а затем ее параметров в круглых скобках, обычно через запятую.</seg>
       </tuv>
     </tu>
     <tu>
@@ -390,10 +590,62 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Let's take a look at them.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100951Z" creationid="jenya" creationdate="20230616T100942Z">
+        <seg>Давайте взглянем на них.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Most functions that aren't used with numbers are _prefix_ functions.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100940Z" creationid="jenya" creationdate="20230616T100940Z">
+        <seg>Большинство функций, которые не используются с числами, являются _префиксными_ функциями.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Note: you can do `5 + 4.0` because `5` is sneaky and can act like an integer or a floating-point number.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100659Z" creationid="jenya" creationdate="20230616T100551Z">
+        <seg>
+
+&gt; Примечание: вы можете использовать `5 + 4.0`, потому что `5` является скрытым и может действовать как целое число или число с плавающей запятой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Open your terminal and type in `ghci`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T093018Z" creationid="jenya" creationdate="20230616T093018Z">
+        <seg>Откройте свой терминал и введите `ghci`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>People there are extremely nice, patient and understanding to newbies.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164415Z" creationid="jenya" creationdate="20230615T164415Z">
         <seg>Люди там чрезвычайно милы, терпеливы и с пониманием относятся к новичкам.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Prelude&gt;
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T093205Z" creationid="jenya" creationdate="20230616T093205Z">
+        <seg>Prelude&gt;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Pretty cool, huh?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095344Z" creationid="jenya" creationdate="20230616T095344Z">
+        <seg>Довольно круто, да?</seg>
       </tuv>
     </tu>
     <tu>
@@ -426,6 +678,14 @@
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164104Z" creationid="jenya" creationdate="20230615T164104Z">
         <seg>Итак, это попытка добавить еще один полезный ресурс для изучения Haskell, чтобы у вас было больше шансов найти тот, который вам понравится.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Testing for equality is done like so.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095931Z" creationid="jenya" creationdate="20230616T095931Z">
+        <seg>Проверка на равенство выполняется следующим образом.</seg>
       </tuv>
     </tu>
     <tu>
@@ -478,6 +738,17 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>The `succ` function takes anything that has a defined successor and returns that successor.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T112618Z" creationid="jenya" creationdate="20230616T104801Z">
+        <seg>Функция `succ` принимает все, что имеет определенного преемника, и возвращает этого преемника.^[Преемник (successor) - это число, следующее после некоторого натурального числа. &lt;br&gt;
+Форма: Число + 1 = Преемник &lt;br&gt;
+Функция приемника (successor function) - это функция, которая отправляет натуральное число следующему. &lt;br&gt;
+Формула: f(x) = x + 1]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>The best way to get started is to download the [Haskell Platform](http://hackage.haskell.org/platform/), which is basically Haskell with batteries included.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173740Z" creationid="jenya" creationdate="20230615T173740Z">
@@ -510,6 +781,22 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>The first thing we're going to do is run ghc's interactive mode and call some function to get a very basic feel for haskell.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T093007Z" creationid="jenya" creationdate="20230616T093007Z">
+        <seg>Первое, что мы собираемся сделать, это запустить интерактивный режим ghc и вызвать какую-нибудь функцию, чтобы получить самое базовое представление о Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The functions `min` and `max` take two things that can be put in an order (like numbers!).</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T105333Z" creationid="jenya" creationdate="20230616T105333Z">
+        <seg>Функции `min` и `max` используют две вещи, которые можно упорядочить (например, числа!).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>The interactive mode is invoked by typing in `ghci` at your prompt.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173915Z" creationid="jenya" creationdate="20230615T173915Z">
@@ -522,6 +809,14 @@
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170608Z" creationid="jenya" creationdate="20230615T170608Z">
         <seg>Единственное, что может сделать функция, - это вычислить что-то и вернуть это в результате.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The prompt here is `Prelude&gt;` but because it can get longer when you load stuff into the session, we're going to use `ghci&gt;`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T093818Z" creationid="jenya" creationdate="20230616T093630Z">
+        <seg>Подсказка здесь `Prelude&gt;`, но поскольку она может стать длиннее, когда вы загружаете материал в сеанс, мы собираемся использовать `ghci&gt;`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -582,6 +877,22 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>This is pretty self-explanatory.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095138Z" creationid="jenya" creationdate="20230616T095120Z">
+        <seg>Это говорит само за себя.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>This is what we call an _infix_ function.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100905Z" creationid="jenya" creationdate="20230616T100905Z">
+        <seg>Это то, что мы называем _инфиксной_ функцией.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>This tutorial is aimed at people who have experience in imperative programming languages (C, C++, Java, Python …) but haven't programmed in a functional language before (Haskell, ML, OCaml …).</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164157Z" creationid="jenya" creationdate="20230615T164157Z">
@@ -598,6 +909,30 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>We can also use several operators on one line and all the usual precedence rules are obeyed.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095232Z" creationid="jenya" creationdate="20230616T095232Z">
+        <seg>Мы также можем использовать несколько операторов в одной строке, и при этом соблюдаются все обычные правила приоритета.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>We can use parentheses to make the precedence explicit or to change it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095311Z" creationid="jenya" creationdate="20230616T095311Z">
+        <seg>Мы можем использовать круглые скобки, чтобы сделать приоритет явным или изменить его.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>We'll take a closer look at types a bit later.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100408Z" creationid="jenya" creationdate="20230616T100408Z">
+        <seg>Мы подробнее рассмотрим типы чуть позже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Welcome to **Learn You a Haskell for Great Good**!</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230611T202853Z" creationid="jenya" creationdate="20230611T143314Z">
@@ -606,10 +941,34 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Well, if we try the first snippet, we get a big scary error message!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095958Z" creationid="jenya" creationdate="20230616T095958Z">
+        <seg>Что ж, если мы попробуем первый фрагмент, то получим большое пугающее сообщение об ошибке!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Well, you've come to the right place, but let's talk about this tutorial a bit first.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230611T225601Z" creationid="jenya" creationdate="20230611T225424Z">
         <seg>Что ж, вы обратились по адресу, но давайте немного поговорим об этом уроке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>What GHCI is telling us here is that `"llama"` is not a number and so it doesn't know how to add it to 5.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100100Z" creationid="jenya" creationdate="20230616T100100Z">
+        <seg>GHCI говорит нам здесь, что "llama" - это не число, и поэтому он не знает, как добавить его к 5.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>What about doing `5 + "llama"` or `5 == True`?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095950Z" creationid="jenya" creationdate="20230616T095950Z">
+        <seg>Как насчет того, чтобы сделать `5 + "llama"` или `5 == True`?</seg>
       </tuv>
     </tu>
     <tu>
@@ -638,6 +997,14 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Whereas `+` works only on things that are considered numbers, `==` works on any two things that can be compared.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100338Z" creationid="jenya" creationdate="20230616T100338Z">
+        <seg>В то время как `+` работает только с теми вещами, которые считаются числами, `==` работает с любыми двумя вещами, которые можно сравнить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>While executing them, it can change state.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T165151Z" creationid="jenya" creationdate="20230615T165151Z">
@@ -650,6 +1017,22 @@
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173549Z" creationid="jenya" creationdate="20230615T173549Z">
         <seg>Работа над Haskell началась в 1987 году, когда комитет исследователей собрался вместе для разработки потрясающего языка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Yeah, I know it's not but bear with me.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095637Z" creationid="jenya" creationdate="20230616T095637Z">
+        <seg>Да, я знаю, что это не так, но потерпи меня.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Yikes!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100025Z" creationid="jenya" creationdate="20230616T100025Z">
+        <seg>Фу!</seg>
       </tuv>
     </tu>
     <tu>
@@ -670,6 +1053,14 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>You can't compare apples and oranges.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100356Z" creationid="jenya" creationdate="20230616T100356Z">
+        <seg>Вы не можете сравнивать яблоки и апельсины.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>You express that in the form of functions.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170250Z" creationid="jenya" creationdate="20230615T170250Z">
@@ -686,10 +1077,222 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>You may not have known it but we've been using functions now all along.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100748Z" creationid="jenya" creationdate="20230616T100748Z">
+        <seg>Возможно, вы этого не знали, но мы все это время использовали функции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>You probably already have your favorite text editor installed so we won't waste time on that.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173638Z" creationid="jenya" creationdate="20230615T173638Z">
         <seg>Вероятно, у вас уже установлен ваш любимый текстовый редактор, так что мы не будем тратить на это время.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>You will be greeted with something like this.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T093129Z" creationid="jenya" creationdate="20230616T093129Z">
+        <seg>Вас встретят чем-то вроде этого.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`+` expects its left and right side to be numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100138Z" creationid="jenya" creationdate="20230616T100138Z">
+        <seg>`+` ожидает, что его левая и правая стороны будут числами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`4.0` can't act like an integer, so `5` is the one that has to adapt.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100735Z" creationid="jenya" creationdate="20230616T100554Z">
+        <seg>`4.0` не может действовать как целое число, поэтому `5` - это то, что должно адаптироваться.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+GHCi, version 6.8.2: http://www.haskell.org/ghc/  :?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T093200Z" creationid="jenya" creationdate="20230616T093200Z">
+        <seg>```haskell
+GHCi, version 6.8.2: http://www.haskell.org/ghc/  :?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+No instance for (Num [Char])
+arising from a use of `+' at &lt;interactive&gt;:1:0-9
+Possible fix: add an instance declaration for (Num [Char])
+In the expression: 5 + "llama"
+In the definition of `it': it = 5 + "llama" 
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100020Z" creationid="jenya" creationdate="20230616T100020Z">
+        <seg>```haskell
+No instance for (Num [Char])
+arising from a use of `+' at &lt;interactive&gt;:1:0-9
+Possible fix: add an instance declaration for (Num [Char])
+In the expression: 5 + "llama"
+In the definition of `it': it = 5 + "llama" 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; (50 * 100) - 4999
+1
+ghci&gt; 50 * 100 - 4999
+1
+ghci&gt; 50 * (100 - 4999)
+-244950
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095325Z" creationid="jenya" creationdate="20230616T095325Z">
+        <seg>```haskell
+ghci&gt; (50 * 100) - 4999
+1
+ghci&gt; 50 * 100 - 4999
+1
+ghci&gt; 50 * (100 - 4999)
+-244950
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; 2 + 15
+17
+ghci&gt; 49 * 100
+4900
+ghci&gt; 1892 - 1472
+420
+ghci&gt; 5 / 2
+2.5
+ghci&gt;
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095114Z" creationid="jenya" creationdate="20230616T095114Z">
+        <seg>```haskell
+ghci&gt; 2 + 15
+17
+ghci&gt; 49 * 100
+4900
+ghci&gt; 1892 - 1472
+420
+ghci&gt; 5 / 2
+2.5
+ghci&gt;
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; 5 == 5
+True
+ghci&gt; 1 == 0
+False
+ghci&gt; 5 /= 5
+False
+ghci&gt; 5 /= 4
+True
+ghci&gt; "hello" == "hello"
+True 
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095937Z" creationid="jenya" creationdate="20230616T095937Z">
+        <seg>```haskell
+ghci&gt; 5 == 5
+True
+ghci&gt; 1 == 0
+False
+ghci&gt; 5 /= 5
+False
+ghci&gt; 5 /= 4
+True
+ghci&gt; "hello" == "hello"
+True 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; True &amp;&amp; False
+False
+ghci&gt; True &amp;&amp; True
+True
+ghci&gt; False || True
+True 
+ghci&gt; not False
+True
+ghci&gt; not (True &amp;&amp; True)
+False
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095921Z" creationid="jenya" creationdate="20230616T095921Z">
+        <seg>```haskell
+ghci&gt; True &amp;&amp; False
+False
+ghci&gt; True &amp;&amp; True
+True
+ghci&gt; False || True
+True 
+ghci&gt; not False
+True
+ghci&gt; not (True &amp;&amp; True)
+False
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; succ 8
+9 
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T101831Z" creationid="jenya" creationdate="20230616T101831Z">
+        <seg>```haskell
+ghci&gt; succ 8
+9 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`min` returns the one that's lesser and `max` returns the one that's greater.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T111446Z" creationid="jenya" creationdate="20230616T111446Z">
+        <seg>`min` возвращает значение, которое меньше, а `max` возвращает значение, которое больше.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`not` negates a `True` or a `False`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095822Z" creationid="jenya" creationdate="20230616T095822Z">
+        <seg>`not` отрицает `True` или `False`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>for help
+Loading package base ... linking ... done.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T093203Z" creationid="jenya" creationdate="20230616T093203Z">
+        <seg>for help
+Loading package base ... linking ... done.</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->

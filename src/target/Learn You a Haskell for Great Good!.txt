@@ -38,13 +38,13 @@ Haskell был создан несколькими **действительно 
 
 GHC может взять скрипт на Haskell (обычно они имеют расширение .hs) и скомпилировать его, но он также имеет интерактивный режим, который позволяет вам интерактивно взаимодействовать со скриптами. Интерактивно. Вы можете вызывать функции из скриптов, которые вы загружаете, и результаты отображаются немедленно. Для обучения это намного проще и быстрее, чем компилировать каждый раз, когда вы вносите изменения, а затем запускать программу из командной строки. Интерактивный режим вызывается путем ввода `ghci` в вашей командной строке. Если вы определили какие-то функции в файле с именем, скажем, `myfunctions.hs`, вы загружаете эти функции, введя `:l myfunctions`, а затем можете поиграть с ними, при условии, что `myfunctions.hs` находится в той же папке, из которой был вызван `ghci`. Если вы измените скрипт .hs, просто снова запустите `:l myfunctions` или выполните `:r`, что эквивалентно, поскольку оно перезагружает текущий скрипт. Обычный рабочий процесс для меня, когда я копаюсь в материалах, - это определение некоторых функций в файле .hs, его загрузка и возня с ними, а затем изменение файла .hs, повторная загрузка и так далее. Это тоже то, чем мы будем заниматься здесь.
 
-# Starting Out
+# Начиная
 
-## Ready, set, go!
+## На старт, внимание, марш!
 
 ![[LYHfGG_5_startingout.png]]
 
-Alright, let's get started! If you're the sort of horrible person who doesn't read introductions to things and you skipped it, you might want to read the last section in the introduction anyway because it explains what you need to follow this tutorial and how we're going to load functions. The first thing we're going to do is run ghc's interactive mode and call some function to get a very basic feel for haskell. Open your terminal and type in `ghci`. You will be greeted with something like this.
+Хорошо, давайте начнем! Если вы из тех ужасных людей, которые не читают введения к книгам, и вы пропустили его, возможно, вы все равно захотите прочитать последний раздел введения, потому что в нем объясняется, что вам нужно для выполнения этого руководства и как мы собираемся загружать функции. Первое, что мы собираемся сделать, это запустить интерактивный режим ghc и вызвать какую-нибудь функцию, чтобы получить самое базовое представление о Haskell. Откройте свой терминал и введите `ghci`. Вас встретят чем-то вроде этого.
 
 ```haskell
 GHCi, version 6.8.2: http://www.haskell.org/ghc/  :? for help
@@ -52,9 +52,9 @@ Loading package base ... linking ... done.
 Prelude>
 ```
 
-Congratulations, you're in GHCI! The prompt here is `Prelude>` but because it can get longer when you load stuff into the session, we're going to use `ghci>`. If you want to have the same prompt, just type in `:set prompt "ghci> "`.
+Поздравляю, вы находитесь в GHCI! Подсказка здесь `Prelude>`, но поскольку она может стать длиннее, когда вы загружаете материал в сеанс, мы собираемся использовать `ghci>`. Если вы хотите получить такое же приглашение, просто введите `:set prompt "ghci> "`.
 
-Here's some simple arithmetic.
+Вот несколько простых арифметических действий.
 
 ```haskell
 ghci> 2 + 15
@@ -68,7 +68,7 @@ ghci> 5 / 2
 ghci>
 ```
 
-This is pretty self-explanatory. We can also use several operators on one line and all the usual precedence rules are obeyed. We can use parentheses to make the precedence explicit or to change it.
+Это говорит само за себя. Мы также можем использовать несколько операторов в одной строке, и при этом соблюдаются все обычные правила приоритета. Мы можем использовать круглые скобки, чтобы сделать приоритет явным или изменить его.
 
 ```haskell
 ghci> (50 * 100) - 4999
@@ -79,9 +79,9 @@ ghci> 50 * (100 - 4999)
 -244950
 ```
 
-Pretty cool, huh? Yeah, I know it's not but bear with me. A little pitfall to watch out for here is negating numbers. If we want to have a negative number, it's always best to surround it with parentheses. Doing `5 * -3` will make GHCI yell at you but doing `5 * (-3)` will work just fine.
+Довольно круто, да? Да, я знаю, что это не так, но потерпи меня. Небольшая ошибка, на которую следует обратить внимание здесь, - это отрицание чисел. Если мы хотим получить отрицательное число, всегда лучше заключить его в круглые скобки. Выполнение `5 * -3` заставит GHCI кричать на вас, но выполнение `5 * (-3)` будет работать просто отлично.
 
-Boolean algebra is also pretty straightforward. As you probably know, `&&` means a boolean _and_, `||` means a boolean _or_. `not` negates a `True` or a `False`.
+Булева алгебра также довольно проста. Как вы, вероятно, знаете, `&&` означает логическое _И_, `||` означает логическое _ИЛИ_ . `not` отрицает `True` или `False`.
 
 ```haskell
 ghci> True && False
@@ -96,7 +96,7 @@ ghci> not (True && True)
 False
 ```
 
-Testing for equality is done like so.
+Проверка на равенство выполняется следующим образом.
 
 ```haskell
 ghci> 5 == 5
@@ -111,7 +111,7 @@ ghci> "hello" == "hello"
 True 
 ```
 
-What about doing `5 + "llama"` or `5 == True`? Well, if we try the first snippet, we get a big scary error message!
+Как насчет того, чтобы сделать `5 + "llama"` или `5 == True`? Что ж, если мы попробуем первый фрагмент, то получим большое пугающее сообщение об ошибке!
 
 ```haskell
 No instance for (Num [Char])
@@ -121,20 +121,25 @@ In the expression: 5 + "llama"
 In the definition of `it': it = 5 + "llama" 
 ```
 
-Yikes! What GHCI is telling us here is that `"llama"` is not a number and so it doesn't know how to add it to 5. Even if it wasn't `"llama"` but `"four"` or `"4"`, Haskell still wouldn't consider it to be a number. `+` expects its left and right side to be numbers. If we tried to do `True == 5`, GHCI would tell us that the types don't match. Whereas `+` works only on things that are considered numbers, `==` works on any two things that can be compared. But the catch is that they both have to be the same type of thing. You can't compare apples and oranges. We'll take a closer look at types a bit later. Note: you can do `5 + 4.0` because `5` is sneaky and can act like an integer or a floating-point number. `4.0` can't act like an integer, so `5` is the one that has to adapt.
+Фу! GHCI говорит нам здесь, что "llama" - это не число, и поэтому он не знает, как добавить его к 5. Даже если бы это была не `"llama", а "four" или "4", Haskell все равно не счел бы это числом. `+` ожидает, что его левая и правая стороны будут числами. Если бы мы попытались выполнить `True == 5`, GHCI сказал бы нам, что типы не совпадают. В то время как `+` работает только с теми вещами, которые считаются числами, `==` работает с любыми двумя вещами, которые можно сравнить. Но загвоздка в том, что они оба должны быть одного типа. Вы не можете сравнивать яблоки и апельсины. Мы подробнее рассмотрим типы чуть позже. 
 
-You may not have known it but we've been using functions now all along. For instance, `*` is a function that takes two numbers and multiplies them. As you've seen, we call it by sandwiching it between them. This is what we call an _infix_ function. Most functions that aren't used with numbers are _prefix_ functions. Let's take a look at them.
+> Примечание: вы можете использовать `5 + 4.0`, потому что `5` является скрытым и может действовать как целое число или число с плавающей запятой. `4.0` не может действовать как целое число, поэтому `5` - это то, что должно адаптироваться.
+
+Возможно, вы этого не знали, но мы все это время использовали функции. Например, `*` - это функция, которая принимает два числа и умножает их. Как вы видели, мы вызываем это, помещая его между ними. Это то, что мы называем _инфиксной_ функцией. Большинство функций, которые не используются с числами, являются _префиксными_ функциями. Давайте взглянем на них.
 
 ![[LYHfGG_6_ringring.png]]
 
-Functions are usually prefix so from now on we won't explicitly state that a function is of the prefix form, we'll just assume it. In most imperative languages functions are called by writing the function name and then writing its parameters in parentheses, usually separated by commas. In Haskell, functions are called by writing the function name, a space and then the parameters, separated by spaces. For a start, we'll try calling one of the most boring functions in Haskell.
+Функции обычно являются префиксными, поэтому с этого момента мы не будем явно указывать, что функция имеет префиксную форму, мы просто предположим это. В большинстве императивных языков функции вызываются путем ввода имени функции, а затем ее параметров в круглых скобках, обычно через запятую. В Haskell функции вызываются путем ввода имени функции, пробела, а затем параметров, разделенных пробелами. Для начала мы попробуем вызвать одну из самых скучных функций в Haskell.
 
 ```haskell
 ghci> succ 8
 9 
 ```
 
-The `succ` function takes anything that has a defined successor and returns that successor. As you can see, we just separate the function name from the parameter with a space. Calling a function with several parameters is also simple. The functions `min` and `max` take two things that can be put in an order (like numbers!). `min` returns the one that's lesser and `max` returns the one that's greater. See for yourself:
+Функция `succ` принимает все, что имеет определенного преемника, и возвращает этого преемника.^[Преемник (successor) - это число, следующее после некоторого натурального числа. <br>
+Форма: Число + 1 = Преемник <br>
+Функция приемника (successor function) - это функция, которая отправляет натуральное число следующему. <br>
+Формула: f(x) = x + 1] Как вы можете видеть, мы просто отделяем имя функции от параметра пробелом. Вызов функции с несколькими параметрами также прост. Функции `min` и `max` используют две вещи, которые можно упорядочить (например, числа!). `min` возвращает значение, которое меньше, а `max` возвращает значение, которое больше. See for yourself:
 
 ```haskell
 ghci> min 9 10
@@ -6389,7 +6394,7 @@ handler e
 
 Everything stays the same except the handler, which we modified to only catch a certain group of I/O exceptions. Here we used two new functions from `System.IO.Error` — `isDoesNotExistError` and `ioError`. `isDoesNotExistError` is a predicate over `IOError`s, which means that it's a function that takes an `IOError` and returns a `True` or `False`, meaning it has a type of `isDoesNotExistError :: IOError -> Bool`. We use it on the exception that gets passed to our handler to see if it's an error caused by a file not existing. We use [guard](http://learnyouahaskell.com/syntax-in-functions#guards-guards) syntax here, but we could have also used an _if else_. If it's not caused by a file not existing, we re-throw the exception that was passed by the handler with the `ioError` function. It has a type of `ioError :: IOException -> IO a`, so it takes an `IOError` and produces an I/O action that will throw it. The I/O action has a type of `IO a`, because it never actually yields a result, so it can act as `IO _anything_`.
 
-So the exception thrown in the `toTry` I/O action that we glued together with a _do_ block isn't caused by a file existing, ``toTry `catch` handler`` will catch that and then re-throw it. Pretty cool, huh?
+So the exception thrown in the `toTry` I/O action that we glued together with a _do_ block isn't caused by a file existing, ``toTry `catch` handler`` will catch that and then re-throw it. Довольно круто, да?
 
 There are several predicates that act on `IOError` and if a guard doesn't evaluate to `True`, evaluation falls through to the next guard. The predicates that act on `IOError` are:
 
@@ -6623,7 +6628,7 @@ Just like we did when solving the RPN calculator problem, we're going to solve t
 
 In the RPN calculator section, we first figured out that when calculating an expression by hand, we'd keep a sort of stack in our minds and then go over the expression one item at a time. We decided to use a list of strings to represent our expression. Finally, we used a left fold to walk oevr the list of strings while keeping a stack to produce a solution.
 
-Okay, so how would we figure out the shortest path from Heathrow to London by hand? Well, we can just sort of look at the whole picture and try to guess what the shortest path is and hopefully we'll make a guess that's right. That solution works for very small inputs, but what if we have a road that has 10,000 sections? Yikes! We also won't be able to say for certain that our solution is the optimal one, we can just sort of say that we're pretty sure.
+Okay, so how would we figure out the shortest path from Heathrow to London by hand? Well, we can just sort of look at the whole picture and try to guess what the shortest path is and hopefully we'll make a guess that's right. That solution works for very small inputs, but what if we have a road that has 10,000 sections? Фу! We also won't be able to say for certain that our solution is the optimal one, we can just sort of say that we're pretty sure.
 
 That's not a good solution then. Here's a simplified picture of our road system:
 
@@ -7731,7 +7736,7 @@ ghci> helloMe undefined
 "*** Exception: Prelude.undefined
 ```
 
-Yikes! An exception! Now why did this exception happen? Types defined with the _data_ keyword can have multiple value constructors (even though `CoolBool` only has one). So in order to see if the value given to our function conforms to the `(CoolBool _)` pattern, Haskell has to evaluate the value just enough to see which value constructor was used when we made the value. And when we try to evaluate an `undefined` value, even a little, an exception is thrown.
+Фу! An exception! Now why did this exception happen? Types defined with the _data_ keyword can have multiple value constructors (even though `CoolBool` only has one). So in order to see if the value given to our function conforms to the `(CoolBool _)` pattern, Haskell has to evaluate the value just enough to see which value constructor was used when we made the value. And when we try to evaluate an `undefined` value, even a little, an exception is thrown.
 
 Instead of using the _data_ keyword for `CoolBool`, let's try using _newtype_:
 

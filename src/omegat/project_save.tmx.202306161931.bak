@@ -54,14 +54,6 @@
     </tu>
     <tu>
       <tuv lang="en-US">
-        <seg>![[LYHfGG_7_baby.png]]</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173854Z" creationid="jenya" creationdate="20230616T173854Z">
-        <seg>![[LYHfGG_7_baby.png]]</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
         <seg># Functionally Solving Problems</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230613T160057Z" creationid="jenya" creationdate="20230613T160057Z">
@@ -414,14 +406,6 @@
     </tu>
     <tu>
       <tuv lang="en-US">
-        <seg>Functions in Haskell don't have to be in any particular order, so it doesn't matter if you define `doubleMe` first and then `doubleUs` or if you do it the other way around.</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173706Z" creationid="jenya" creationdate="20230616T173706Z">
-        <seg>Функции в Haskell не обязательно должны располагаться в каком-либо определенном порядке, поэтому не имеет значения, определяете ли вы сначала `doubleMe`, а затем `doubleUs` или делаете это наоборот.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
         <seg>GHC can take a Haskell script (they usually have a .hs extension) and compile it but it also has an interactive mode which allows you to interactively interact with scripts.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173826Z" creationid="jenya" creationdate="20230615T173826Z">
@@ -654,14 +638,6 @@
     </tu>
     <tu>
       <tuv lang="en-US">
-        <seg>In imperative languages you can just skip a couple of steps if the condition isn't satisfied but in Haskell every expression and function must return something.</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T174145Z" creationid="jenya" creationdate="20230616T174145Z">
-        <seg>В императивных языках вы можете просто пропустить пару шагов, если условие не выполнено, но в Haskell каждое выражение и функция должны что-то возвращать.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
         <seg>In imperative languages you get things done by giving the computer a sequence of tasks and then it executes them.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T165136Z" creationid="jenya" creationdate="20230615T165136Z">
@@ -816,14 +792,6 @@
     </tu>
     <tu>
       <tuv lang="en-US">
-        <seg>Now we're going to make a function that multiplies a number by 2 but only if that number is smaller than or equal to 100 because numbers bigger than 100 are big enough as it is!</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173827Z" creationid="jenya" creationdate="20230616T173827Z">
-        <seg>Теперь мы собираемся создать функцию, которая умножает число на 2, но только если это число меньше или равно 100, потому что числа больше 100 и так достаточно велики!</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
         <seg>Once inside GHCI, do `:l baby`.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T161047Z" creationid="jenya" creationdate="20230616T161047Z">
@@ -870,14 +838,6 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095344Z" creationid="jenya" creationdate="20230616T095344Z">
         <seg>Довольно круто, да?</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
-        <seg>Right here we introduced Haskell's if statement.</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T174114Z" creationid="jenya" creationdate="20230616T173855Z">
-        <seg>Прямо здесь мы представили оператор `if`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1057,14 +1017,6 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T164359Z" creationid="jenya" creationdate="20230615T164254Z">
         <seg>Канал #haskell в сети freenode - отличное место, чтобы задать вопросы, если вы чувствуете себя застрявшим.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
-        <seg>The difference between Haskell's if statement and if statements in imperative languages is that the else part is mandatory in Haskell.</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T174131Z" creationid="jenya" creationdate="20230616T174107Z">
-        <seg>Разница между оператором `if` в Haskell и операторами `if` в императивных языках заключается в том, что часть `else` является обязательной в Haskell.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1429,14 +1381,6 @@
     </tu>
     <tu>
       <tuv lang="en-US">
-        <seg>You could just redefine `doubleMe` to be `x + x + x` and since `doubleUs` calls `doubleMe`, it would automatically work in this strange new world where 2 is 3.</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173629Z" creationid="jenya" creationdate="20230616T173629Z">
-        <seg>Вы могли бы просто переопределить `doubleMe` на `x + x + x`, и поскольку `doubleUs` вызывает `doubleMe`, это автоматически сработало бы в этом странном новом мире, где 2 равно 3.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
         <seg>You express that in the form of functions.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T170250Z" creationid="jenya" creationdate="20230615T170250Z">
@@ -1473,14 +1417,6 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T093129Z" creationid="jenya" creationdate="20230616T093129Z">
         <seg>Вас встретят чем-то вроде этого.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
-        <seg>You're probably familiar with if statements from other languages.</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T174117Z" creationid="jenya" creationdate="20230616T174112Z">
-        <seg>Вероятно, вы знакомы с операторами `if` из других языков.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1539,16 +1475,6 @@ doubleMe x = x + x
         <seg>```haskell
 doubleMe x = x + x
 ```</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
-        <seg>```haskell
-doubleSmallNumber x = if x &gt; 100</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173828Z" creationid="jenya" creationdate="20230616T173828Z">
-        <seg>```haskell
-doubleSmallNumber x = if x &gt; 100</seg>
       </tuv>
     </tu>
     <tu>
@@ -1793,16 +1719,6 @@ ghci&gt; (succ 9) + (max 5 4) + 1
     </tu>
     <tu>
       <tuv lang="en-US">
-        <seg>else x*2 
-```</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173852Z" creationid="jenya" creationdate="20230616T173852Z">
-        <seg>else x*2 
-```</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
         <seg>for help
 Loading package base ... linking ... done.</seg>
       </tuv>
@@ -1825,14 +1741,6 @@ ghci&gt; doubleMe 8.3
 ghci&gt; doubleMe 8.3
 16.6 
 ```</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
-        <seg>then x</seg>
-      </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173850Z" creationid="jenya" creationdate="20230616T173850Z">
-        <seg>then x</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->

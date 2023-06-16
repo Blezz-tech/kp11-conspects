@@ -1582,7 +1582,7 @@ handler e
 
 Everything stays the same except the handler, which we modified to only catch a certain group of I/O exceptions. Here we used two new functions from `System.IO.Error` — `isDoesNotExistError` and `ioError`. `isDoesNotExistError` is a predicate over `IOError`s, which means that it's a function that takes an `IOError` and returns a `True` or `False`, meaning it has a type of `isDoesNotExistError :: IOError -> Bool`. We use it on the exception that gets passed to our handler to see if it's an error caused by a file not existing. We use [guard](http://learnyouahaskell.com/syntax-in-functions#guards-guards) syntax here, but we could have also used an _if else_. If it's not caused by a file not existing, we re-throw the exception that was passed by the handler with the `ioError` function. It has a type of `ioError :: IOException -> IO a`, so it takes an `IOError` and produces an I/O action that will throw it. The I/O action has a type of `IO a`, because it never actually yields a result, so it can act as `IO _anything_`.
 
-So the exception thrown in the `toTry` I/O action that we glued together with a _do_ block isn't caused by a file existing, ``toTry `catch` handler`` will catch that and then re-throw it. Pretty cool, huh?
+So the exception thrown in the `toTry` I/O action that we glued together with a _do_ block isn't caused by a file existing, ``toTry `catch` handler`` will catch that and then re-throw it. Довольно круто, да?
 
 There are several predicates that act on `IOError` and if a guard doesn't evaluate to `True`, evaluation falls through to the next guard. The predicates that act on `IOError` are:
 
