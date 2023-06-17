@@ -62,6 +62,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>![[LYHfGG_8_list.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074531Z" creationid="jenya" creationdate="20230617T074531Z">
+        <seg>![[LYHfGG_8_list.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># Functionally Solving Problems</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230613T160057Z" creationid="jenya" creationdate="20230613T160057Z">
@@ -110,6 +118,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## An intro to lists</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074513Z" creationid="jenya" creationdate="20230617T074513Z">
+        <seg>## Введение в списки</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Baby's first functions</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T132603Z" creationid="jenya" creationdate="20230616T132603Z">
@@ -138,6 +154,54 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173615Z" creationid="jenya" creationdate="20230615T173615Z">
         <seg>## Во что вам нужно погрузиться</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1
+33.2
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075513Z" creationid="jenya" creationdate="20230617T075513Z">
+        <seg>1
+33.2
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>6
+'B'
+ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075512Z" creationid="jenya" creationdate="20230617T075512Z">
+        <seg>6
+'B'
+ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&gt; **Note**: We can use the `let` keyword to define a name right in GHCI.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074816Z" creationid="jenya" creationdate="20230617T074816Z">
+        <seg>&gt; **Примечание**: Мы можем использовать ключевое слово `let` для определения имени прямо в GHCI.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&gt; **Note:** `[]`, `[[]]` and `[[],[],[]]` are all different things.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075445Z" creationid="jenya" creationdate="20230617T075445Z">
+        <seg>&gt; **Примечание:** `[]`, `[[]]` и `[[],[],[]]` это все разные вещи.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A common task is putting two lists together.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075057Z" creationid="jenya" creationdate="20230617T075057Z">
+        <seg>Обычная задача - собрать два списка воедино.</seg>
       </tuv>
     </tu>
     <tu>
@@ -174,6 +238,22 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>An expression is basically a piece of code that returns a value.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073553Z" creationid="jenya" creationdate="20230617T073553Z">
+        <seg>Выражение - это, по сути, фрагмент кода, который возвращает значение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>And now, a list!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074750Z" creationid="jenya" creationdate="20230617T074750Z">
+        <seg>А теперь список!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>And shorter programs are easier to maintain than longer ones and have less bugs.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173443Z" creationid="jenya" creationdate="20230615T173443Z">
@@ -182,10 +262,26 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Another thing about the if statement in Haskell is that it is an _expression_.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073657Z" creationid="jenya" creationdate="20230617T073415Z">
+        <seg>Еще одна особенность оператора `if` в Haskell заключается в том, что оператор является _выражением_ .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>As expected, you can call your own functions from other functions that you made.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T163025Z" creationid="jenya" creationdate="20230616T163005Z">
         <seg>Как и ожидалось, вы можете вызывать свои собственные функции из других созданных вами функций.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>As you can see, lists are denoted by square brackets and the values in the lists are separated by commas.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074848Z" creationid="jenya" creationdate="20230617T074848Z">
+        <seg>Как вы можете видеть, списки заключены в квадратные скобки, а значения в списках разделены запятыми.</seg>
       </tuv>
     </tu>
     <tu>
@@ -222,6 +318,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Because `'` is a valid character in functions, we can make a function like this.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073859Z" creationid="jenya" creationdate="20230617T073859Z">
+        <seg>Поскольку `'` является допустимым символом в функциях, мы можем создать функцию, подобную этой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Because `+` works on integers as well as on floating-point numbers (anything that can be considered a number, really), our function also works on any number.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T162708Z" creationid="jenya" creationdate="20230616T162708Z">
@@ -238,6 +342,30 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Because strings are lists, we can use list functions on them, which is really handy.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075048Z" creationid="jenya" creationdate="20230617T075048Z">
+        <seg>Поскольку строки представляют собой списки, мы можем использовать для них функции списка, что действительно удобно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Because the else is mandatory, an if statement will always return something and that's why it's an expression.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073645Z" creationid="jenya" creationdate="20230617T073642Z">
+        <seg>Поскольку `else` является обязательным, оператор `if` всегда будет возвращать что-то, и именно поэтому это выражение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Because we can't change what names (and functions) mean once we've defined them, `conanO'Brien` and the string `"It's a-me, Conan O'Brien!"` can be used interchangeably.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074452Z" creationid="jenya" creationdate="20230617T074401Z">
+        <seg>Поскольку мы не можем изменить значение имен (и функций), как только мы их определили, `conanO'Brien` и строка `"It's a-me, Conan O'Brien!"` могут использоваться взаимозаменяемо.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Boolean algebra is also pretty straightforward.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095745Z" creationid="jenya" creationdate="20230616T095745Z">
@@ -246,10 +374,26 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>But if you try to get the sixth element from a list that only has four elements, you'll get an error so be careful!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075556Z" creationid="jenya" creationdate="20230617T075556Z">
+        <seg>Но если вы попытаетесь получить шестой элемент из списка, состоящего всего из четырех элементов, вы получите сообщение об ошибке, так что будьте осторожны!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>But once you want to see the result, the first `doubleMe` tells the second one it wants the result, now!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T172425Z" creationid="jenya" creationdate="20230615T172425Z">
         <seg>Но как только вы захотите увидеть результат, первая "двойная строка" сообщит второй, что она хочет получить результат, сейчас же!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>But putting something at the end of a list that's fifty million entries long is going to take a while.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075219Z" creationid="jenya" creationdate="20230617T075219Z">
+        <seg>Но для того, чтобы поместить что-то в конец списка длиной в пятьдесят миллионов записей, потребуется некоторое время.</seg>
       </tuv>
     </tu>
     <tu>
@@ -326,10 +470,26 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Doing `let a = 1` inside GHCI is the equivalent of writing `a = 1` in a script and then loading it.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074831Z" creationid="jenya" creationdate="20230617T074831Z">
+        <seg>Выполнение `let a = 1` внутри GHCI эквивалентно записи `a = 1` в скрипте и последующей его загрузке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Even if it wasn't `"llama"` but `"four"` or `"4"`, Haskell still wouldn't consider it to be a number.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100127Z" creationid="jenya" creationdate="20230616T100127Z">
         <seg>Даже если бы это была не `"llama", а "four" или "4", Haskell все равно не счел бы это числом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Even if you're adding an element to the end of a list with `++`, you have to surround it with square brackets so it becomes a list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075401Z" creationid="jenya" creationdate="20230617T075401Z">
+        <seg>Даже если вы добавляете элемент в конец списка с помощью `++`, вы должны заключить его в квадратные скобки, чтобы он стал списком.</seg>
       </tuv>
     </tu>
     <tu>
@@ -430,6 +590,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Had we omitted the parentheses, it would have added one only if `x` wasn't greater than 100.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073743Z" creationid="jenya" creationdate="20230617T073743Z">
+        <seg>Если бы мы опустили круглые скобки, это добавило бы единицу только в том случае, если `x` было не больше 100.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Haskell is **elegant and concise**.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173204Z" creationid="jenya" creationdate="20230615T173204Z">
@@ -494,6 +662,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>However, putting something at the beginning of a list using the `:` operator (also called the cons operator) is instantaneous.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075232Z" creationid="jenya" creationdate="20230617T075232Z">
+        <seg>Однако поместить что-либо в начало списка с помощью оператора `:` (также называемого оператором `cons`) можно мгновенно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>I decided to write this because I wanted to solidify my own knowledge of Haskell and because I thought I could help people new to Haskell learn it from my perspective.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230611T225720Z" creationid="jenya" creationdate="20230611T225608Z">
@@ -534,6 +710,30 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If we prepend `2` to that, it becomes `[2,3]`, and so on.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075427Z" creationid="jenya" creationdate="20230617T075427Z">
+        <seg>Если мы добавим к этому `2`, оно станет `[2,3]` и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If we prepend `3` to it, it becomes `[3]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075413Z" creationid="jenya" creationdate="20230617T075413Z">
+        <seg>Если мы добавим к нему `3`, оно станет `[3]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If we tried a list like `[1,2,'a',3,'b','c',4]`, Haskell would complain that characters (which are, by the way, denoted as a character between single quotes) are not numbers.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074857Z" creationid="jenya" creationdate="20230617T074857Z">
+        <seg>Если бы мы попробовали использовать список типа `[1,2,'a',3,'b','c',4]`, Haskell пожаловался бы, что символы (которые, кстати, обозначаются как символ между одинарными кавычками) не являются числами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If we tried to do `True == 5`, GHCI would tell us that the types don't match.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100151Z" creationid="jenya" creationdate="20230616T100151Z">
@@ -546,6 +746,14 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095722Z" creationid="jenya" creationdate="20230616T095722Z">
         <seg>Если мы хотим получить отрицательное число, всегда лучше заключить его в круглые скобки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If we wanted to add one to every number that's produced in our previous function, we could have written its body like this.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073730Z" creationid="jenya" creationdate="20230617T073730Z">
+        <seg>Если бы мы хотели добавить единицу к каждому числу, полученному в нашей предыдущей функции, мы могли бы написать ее тело следующим образом.</seg>
       </tuv>
     </tu>
     <tu>
@@ -598,6 +806,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If you want to get an element out of a list by index, use `!!`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075506Z" creationid="jenya" creationdate="20230617T075506Z">
+        <seg>Если вы хотите получить элемент из списка по индексу, используйте `!!`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If you want to have the same prompt, just type in `:set prompt "ghci&gt; "`.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095057Z" creationid="jenya" creationdate="20230616T093632Z">
@@ -642,6 +858,14 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T101219Z" creationid="jenya" creationdate="20230616T101219Z">
         <seg>В Haskell функции вызываются путем ввода имени функции, пробела, а затем параметров, разделенных пробелами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>In Haskell, lists are a **homogenous** data structure.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074700Z" creationid="jenya" creationdate="20230617T074619Z">
+        <seg>В Haskell списки представляют собой **однородную** (англ. homogenous) структуру данных.</seg>
       </tuv>
     </tu>
     <tu>
@@ -694,6 +918,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>In this section we'll look at the basics of lists, strings (which are lists) and list comprehensions.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074613Z" creationid="jenya" creationdate="20230617T074613Z">
+        <seg>В этом разделе мы рассмотрим основы списков, строк (которые являются списками) и понимания списков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Interactively.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173829Z" creationid="jenya" creationdate="20230615T173829Z">
@@ -722,6 +954,30 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T132531Z" creationid="jenya" creationdate="20230616T132531Z">
         <seg>Это означает, что мы сначала вызываем функцию `bar` с `3` в качестве параметра, чтобы получить некоторое число, а затем мы снова вызываем `bar` с этим числом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It stores several elements of the same type.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074628Z" creationid="jenya" creationdate="20230617T074628Z">
+        <seg>В нем хранится несколько элементов одного и того же типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It's a valid character to use in a function name.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073839Z" creationid="jenya" creationdate="20230617T073839Z">
+        <seg>Это допустимый символ для использования в имени функции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It's the most used data structure and it can be used in a multitude of different ways to model and solve a whole bunch of problems.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074551Z" creationid="jenya" creationdate="20230617T074551Z">
+        <seg>Это наиболее используемая структура данных, и ее можно использовать множеством различных способов для моделирования и решения целого ряда проблем.</seg>
       </tuv>
     </tu>
     <tu>
@@ -758,6 +1014,22 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Lists are SO awesome.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074556Z" creationid="jenya" creationdate="20230617T074556Z">
+        <seg>Списки - это ТАК здорово.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Lists can also contain lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075644Z" creationid="jenya" creationdate="20230617T075644Z">
+        <seg>Списки также могут содержать списки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Lots of people who come from imperative languages tend to stick to the notion that parentheses should denote function application.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T114017Z" creationid="jenya" creationdate="20230616T114016Z">
@@ -782,12 +1054,36 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Much like shopping lists in the real world, lists in Haskell are very useful.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074527Z" creationid="jenya" creationdate="20230617T074527Z">
+        <seg>Подобно спискам покупок в реальном мире, списки в Haskell очень полезны.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Note the `'` at the end of the function name.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073813Z" creationid="jenya" creationdate="20230617T073813Z">
+        <seg>Обратите внимание на `'` в конце имени функции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Note: you can do `5 + 4.0` because `5` is sneaky and can act like an integer or a floating-point number.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100659Z" creationid="jenya" creationdate="20230616T100551Z">
         <seg>
 
 &gt; Примечание: вы можете использовать `5 + 4.0`, потому что `5` является скрытым и может действовать как целое число или число с плавающей запятой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Notice how `:` takes a number and a list of numbers or a character and a list of characters, whereas `++` takes two lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075313Z" creationid="jenya" creationdate="20230617T075313Z">
+        <seg>Обратите внимание, как `:` принимает число и список чисел или символ и список символов, тогда как `++` принимает два списка.</seg>
       </tuv>
     </tu>
     <tu>
@@ -970,6 +1266,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Speaking of characters, strings are just lists of characters.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075022Z" creationid="jenya" creationdate="20230617T075022Z">
+        <seg>Говоря о символах, строки - это просто списки символов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Testing for equality is done like so.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095931Z" creationid="jenya" creationdate="20230616T095931Z">
@@ -982,6 +1286,14 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T162807Z" creationid="jenya" creationdate="20230616T162807Z">
         <seg>Тестирование дает довольно предсказуемые результаты (не забудьте добавить эту функцию в файл `baby.hs`, сохранить его, а затем выполнить `:l baby` внутри GHCI).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>That apostrophe doesn't have any special meaning in Haskell's syntax.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073827Z" creationid="jenya" creationdate="20230617T073827Z">
+        <seg>Этот апостроф не имеет никакого особого значения в синтаксисе Haskell.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1010,6 +1322,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>That means that we can have a list of integers or a list of characters but we can't have a list that has a few integers and then a few characters.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074632Z" creationid="jenya" creationdate="20230617T074632Z">
+        <seg>Это означает, что у нас может быть список целых чисел или список символов, но у нас не может быть списка, состоящего из нескольких целых чисел, а затем нескольких символов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>That means that you don't have to explicitly label every piece of code with a type because the type system can intelligently figure out a lot about it.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173015Z" creationid="jenya" creationdate="20230615T173015Z">
@@ -1026,10 +1346,26 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>That's because functions can't begin with uppercase letters.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074111Z" creationid="jenya" creationdate="20230617T074111Z">
+        <seg>Это потому, что функции не могут начинаться с заглавных букв.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>That's called referential transparency and not only does it allow the compiler to reason about the program's behavior, but it also allows you to easily deduce (and even prove) that a function is correct and then build more complex functions by gluing simple functions together.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T170846Z" creationid="jenya" creationdate="20230615T170846Z">
         <seg>Это называется прозрачностью ссылок, и она не только позволяет компилятору рассуждать о поведении программы, но и позволяет вам легко вывести (и даже доказать), что функция верна, а затем создавать более сложные функции путем склеивания простых функций вместе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>That's not a problem when dealing with lists that aren't too big.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075204Z" creationid="jenya" creationdate="20230617T075204Z">
+        <seg>Это не проблема, когда имеешь дело со списками, которые не слишком велики.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1077,6 +1413,22 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The first is that in the function name we didn't capitalize Conan's name.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074107Z" creationid="jenya" creationdate="20230617T074034Z">
+        <seg>Во-первых, мы не написали имя функции с заглавной буквы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The first one is an empty list, the seconds one is a list that contains one empty list, the third one is a list that contains three empty lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075501Z" creationid="jenya" creationdate="20230617T075501Z">
+        <seg>Первый - это пустой список, второй - это список, содержащий один пустой список, третий - это список, содержащий три пустых списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The first one sees that and tells you the first element is 8.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T172550Z" creationid="jenya" creationdate="20230615T172550Z">
@@ -1105,6 +1457,14 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T105333Z" creationid="jenya" creationdate="20230616T105333Z">
         <seg>Функции `min` и `max` используют две вещи, которые можно упорядочить (например, числа!).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The indices start at 0.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075510Z" creationid="jenya" creationdate="20230617T075510Z">
+        <seg>Индексы начинаются с 0.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1149,6 +1509,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The second thing is that this function doesn't take any parameters.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074133Z" creationid="jenya" creationdate="20230617T074133Z">
+        <seg>Во-вторых, эта функция не принимает никаких параметров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The usual workflow for me when playing around in stuff is defining some functions in a .hs file, loading it up and messing around with them and then changing the .hs file, loading it up again and so on.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T174144Z" creationid="jenya" creationdate="20230615T174144Z">
@@ -1181,6 +1549,22 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>There are two noteworthy things here.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073932Z" creationid="jenya" creationdate="20230617T073918Z">
+        <seg>Здесь есть две заслуживающие внимания вещи.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>They can also contain lists that contain lists that contain lists …</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075707Z" creationid="jenya" creationdate="20230617T075707Z">
+        <seg>Они также могут содержать списки, которые содержат списки, которые содержат списки ...¦</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This is a very simple example of a common pattern you will see throughout Haskell.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T163046Z" creationid="jenya" creationdate="20230616T163046Z">
@@ -1193,6 +1577,14 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T174152Z" creationid="jenya" creationdate="20230615T174152Z">
         <seg>Это тоже то, чем мы будем заниматься здесь.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This is done by using the `++` operator.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075102Z" creationid="jenya" creationdate="20230617T075102Z">
+        <seg>Это делается с помощью оператора `++`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1237,6 +1629,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Watch out when repeatedly using the `++` operator on long strings.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075128Z" creationid="jenya" creationdate="20230617T075128Z">
+        <seg>Будьте осторожны при повторном использовании оператора `++` для длинных строк.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We can also use several operators on one line and all the usual precedence rules are obeyed.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095232Z" creationid="jenya" creationdate="20230616T095232Z">
@@ -1261,10 +1661,34 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We could have also written that if statement in one line but I find this way more readable.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073652Z" creationid="jenya" creationdate="20230617T073347Z">
+        <seg>Мы могли бы также написать это выражение `if` в одной строке, но я нахожу этот способ более читабельным.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We usually use `'` to either denote a strict version of a function (one that isn't lazy) or a slightly modified version of a function or a variable.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073847Z" creationid="jenya" creationdate="20230617T073830Z">
+        <seg>Обычно мы используем `'` либо для обозначения строгой версии функции (той, которая не является ленивой), либо для слегка измененной версии функции или переменной.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We'd have to write `succ (9 * 10)` to get 91.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T113510Z" creationid="jenya" creationdate="20230616T113510Z">
         <seg>Нам пришлось бы написать `succ (9 * 10)`, чтобы получить 91.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We'll see why a bit later.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074114Z" creationid="jenya" creationdate="20230617T074114Z">
+        <seg>Мы поймем, почему, чуть позже.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1349,10 +1773,26 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>When a function doesn't take any parameters, we usually say it's a _definition_ (or a _name_).</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074409Z" creationid="jenya" creationdate="20230617T074152Z">
+        <seg>Когда функция не принимает никаких параметров, мы обычно говорим, что это _определение_ (или _имя_^[Честно говоря не знаю как правильнее в данном случае перевести слово name]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>When you compile your program, the compiler knows which piece of code is a number, which is a string and so on.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T172825Z" creationid="jenya" creationdate="20230615T172825Z">
         <seg>Когда вы компилируете свою программу, компилятор знает, какой фрагмент кода является числом, который - строкой и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>When you put together two lists (even if you append a singleton list to a list, for instance: `[1,2,3] ++ [4]`), internally, Haskell has to walk through the whole list on the left side of `++`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075159Z" creationid="jenya" creationdate="20230617T075159Z">
+        <seg>Когда вы объединяете два списка (даже если вы добавляете одноэлементный список к списку, например: `[1,2,3] ++ [4]`), внутренне Haskell должен просмотреть весь список в левой части `++`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1485,6 +1925,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>`"hello"` is just syntactic sugar for `['h','e','l','l','o']`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075039Z" creationid="jenya" creationdate="20230617T075039Z">
+        <seg>`"hello"` - это просто синтаксический сахар для `['h','e','l','l','o']`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>`+` expects its left and right side to be numbers.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100138Z" creationid="jenya" creationdate="20230616T100138Z">
@@ -1497,6 +1945,30 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100735Z" creationid="jenya" creationdate="20230616T100554Z">
         <seg>`4.0` не может действовать как целое число, поэтому `5` - это то, что должно адаптироваться.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`5` is an expression because it returns 5, `4 + 8` is an expression, `x + y` is an expression because it returns the sum of `x` and `y`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073628Z" creationid="jenya" creationdate="20230617T073628Z">
+        <seg>`5` - это выражение, потому что оно возвращает 5, `4 + 8` - это выражение, `x + y` - это выражение, потому что оно возвращает сумму `x` и `y`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`[1,2,3]` is actually just syntactic sugar for `1:2:3:[]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075409Z" creationid="jenya" creationdate="20230617T075409Z">
+        <seg>`[1,2,3]` на самом деле является просто синтаксическим сахаром для `1:2:3:[]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`[]` is an empty list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075416Z" creationid="jenya" creationdate="20230617T075416Z">
+        <seg>`[]` - это пустой список.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1532,6 +2004,18 @@ In the definition of `it': it = 5 + "llama"
     <tu>
       <tuv lang="en-US">
         <seg>```haskell
+conanO'Brien = "It's a-me, Conan O'Brien!" 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073919Z" creationid="jenya" creationdate="20230617T073919Z">
+        <seg>```haskell
+conanO'Brien = "It's a-me, Conan O'Brien!" 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
 doubleMe x = x + x
 ```</seg>
       </tuv>
@@ -1549,6 +2033,18 @@ doubleSmallNumber x = if x &gt; 100</seg>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173828Z" creationid="jenya" creationdate="20230616T173828Z">
         <seg>```haskell
 doubleSmallNumber x = if x &gt; 100</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+doubleSmallNumber' x = (if x &gt; 100 then x else x*2) + 1
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073732Z" creationid="jenya" creationdate="20230617T073732Z">
+        <seg>```haskell
+doubleSmallNumber' x = (if x &gt; 100 then x else x*2) + 1
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -1572,6 +2068,34 @@ doubleUs x y = x*2 + y*2
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T162717Z" creationid="jenya" creationdate="20230616T162717Z">
         <seg>```haskell
 doubleUs x y = x*2 + y*2 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; "Steve Buscemi" !!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075511Z" creationid="jenya" creationdate="20230617T075511Z">
+        <seg>```haskell
+ghci&gt; "Steve Buscemi" !!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; 'A':" SMALL CAT"
+"A SMALL CAT"
+ghci&gt; 5:[1,2,3,4,5]
+[5,1,2,3,4,5]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075242Z" creationid="jenya" creationdate="20230617T075242Z">
+        <seg>```haskell
+ghci&gt; 'A':" SMALL CAT"
+"A SMALL CAT"
+ghci&gt; 5:[1,2,3,4,5]
+[5,1,2,3,4,5]
 ```</seg>
       </tuv>
     </tu>
@@ -1702,6 +2226,28 @@ False
     <tu>
       <tuv lang="en-US">
         <seg>```haskell
+ghci&gt; [1,2,3,4] ++ [9,10,11,12]
+[1,2,3,4,9,10,11,12]
+ghci&gt; "hello" ++ " " ++ "world"
+"hello world"
+ghci&gt; ['w','o'] ++ ['o','t']
+"woot"
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075103Z" creationid="jenya" creationdate="20230617T075103Z">
+        <seg>```haskell
+ghci&gt; [1,2,3,4] ++ [9,10,11,12]
+[1,2,3,4,9,10,11,12]
+ghci&gt; "hello" ++ " " ++ "world"
+"hello world"
+ghci&gt; ['w','o'] ++ ['o','t']
+"woot"
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
 ghci&gt; doubleUs 4 9
 26
 ghci&gt; doubleUs 2.3 34.2
@@ -1718,6 +2264,22 @@ ghci&gt; doubleUs 2.3 34.2
 73.0
 ghci&gt; doubleUs 28 88 + doubleMe 123
 478
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; let lostNumbers = [4,8,15,16,23,42]
+ghci&gt; lostNumbers
+[4,8,15,16,23,42]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074836Z" creationid="jenya" creationdate="20230617T074836Z">
+        <seg>```haskell
+ghci&gt; let lostNumbers = [4,8,15,16,23,42]
+ghci&gt; lostNumbers
+[4,8,15,16,23,42]
 ```</seg>
       </tuv>
     </tu>
