@@ -228,7 +228,7 @@ ghci> :t firstName
 firstName :: Person -> String
 ```
 
-There's another benefit to using record syntax. When we derive `Show` for the type, it displays it differently if we use record syntax to define and instantiate the type. Say we have a type that represents a car. We want to keep track of the company that made it, the model name and its year of production. Watch.
+There's another benefit to using record syntax. When we derive `Show` for the type, it displays it differently if we use record syntax to define and instantiate the type. Say we have a type that represents a car. We want to keep track of the company that made it, the model name and its year of production. Посмотри.
 
 ```haskell
 data Car = Car String String Int deriving (Show)

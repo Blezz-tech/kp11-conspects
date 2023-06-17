@@ -611,7 +611,7 @@ ghci> fmap (\x -> [x]) (Just 4)
 Just [4]
 ```
 
-OK, so let's say we have `Just 3` and `Just [4]`. How do we get `Just [3,4]`? Easy.
+OK, so let's say we have `Just 3` and `Just [4]`. How do we get `Just [3,4]`? Легко.
 
 ```haskell
 ghci> liftA2 (:) (Just 3) (Just [4])
@@ -914,7 +914,7 @@ ghci> helloMe undefined
 "*** Exception: Prelude.undefined
 ```
 
-Фу! An exception! Now why did this exception happen? Types defined with the _data_ keyword can have multiple value constructors (even though `CoolBool` only has one). So in order to see if the value given to our function conforms to the `(CoolBool _)` pattern, Haskell has to evaluate the value just enough to see which value constructor was used when we made the value. And when we try to evaluate an `undefined` value, even a little, an exception is thrown.
+Черт возьми! An exception! Now why did this exception happen? Types defined with the _data_ keyword can have multiple value constructors (even though `CoolBool` only has one). So in order to see if the value given to our function conforms to the `(CoolBool _)` pattern, Haskell has to evaluate the value just enough to see which value constructor was used when we made the value. And when we try to evaluate an `undefined` value, even a little, an exception is thrown.
 
 Instead of using the _data_ keyword for `CoolBool`, let's try using _newtype_:
 

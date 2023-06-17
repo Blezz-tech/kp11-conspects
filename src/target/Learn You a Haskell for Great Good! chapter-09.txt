@@ -498,7 +498,7 @@ WHAT'S WITH THAT AIRPLANE FOOD, HUH?
 IT'S SO SMALL, TASTELESS
 ```
 
-Cool, it works. What if we just run _capslocker_ and try to type in the lines ourselves?
+Круто, это работает. What if we just run _capslocker_ and try to type in the lines ourselves?
 
 ```haskell
 $ ./capslocker

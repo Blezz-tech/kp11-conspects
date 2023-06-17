@@ -1247,7 +1247,7 @@ readMaybe st = case reads st of [(x,"")] -> Just x
                                 _ -> Nothing
 ```
 
-Testing it out:
+Проверяю это на практике:
 
 ```haskell
 ghci> readMaybe "1" :: Maybe Int

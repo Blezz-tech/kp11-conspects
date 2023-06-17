@@ -168,7 +168,7 @@ Just like we did when solving the RPN calculator problem, we're going to solve t
 
 In the RPN calculator section, we first figured out that when calculating an expression by hand, we'd keep a sort of stack in our minds and then go over the expression one item at a time. We decided to use a list of strings to represent our expression. Finally, we used a left fold to walk oevr the list of strings while keeping a stack to produce a solution.
 
-Okay, so how would we figure out the shortest path from Heathrow to London by hand? Well, we can just sort of look at the whole picture and try to guess what the shortest path is and hopefully we'll make a guess that's right. That solution works for very small inputs, but what if we have a road that has 10,000 sections? Фу! We also won't be able to say for certain that our solution is the optimal one, we can just sort of say that we're pretty sure.
+Okay, so how would we figure out the shortest path from Heathrow to London by hand? Well, we can just sort of look at the whole picture and try to guess what the shortest path is and hopefully we'll make a guess that's right. That solution works for very small inputs, but what if we have a road that has 10,000 sections? Черт возьми! We also won't be able to say for certain that our solution is the optimal one, we can just sort of say that we're pretty sure.
 
 That's not a good solution then. Here's a simplified picture of our road system:
 

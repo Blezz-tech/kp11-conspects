@@ -121,7 +121,7 @@ In the expression: 5 + "llama"
 In the definition of `it': it = 5 + "llama" 
 ```
 
-Фу! GHCI говорит нам здесь, что "llama" - это не число, и поэтому он не знает, как добавить его к 5. Даже если бы это была не `"llama", а "four" или "4", Haskell все равно не счел бы это числом. `+` ожидает, что его левая и правая стороны будут числами. Если бы мы попытались выполнить `True == 5`, GHCI сказал бы нам, что типы не совпадают. В то время как `+` работает только с теми вещами, которые считаются числами, `==` работает с любыми двумя вещами, которые можно сравнить. Но загвоздка в том, что они оба должны быть одного типа. Вы не можете сравнивать яблоки и апельсины. Мы подробнее рассмотрим типы чуть позже. 
+Черт возьми! GHCI говорит нам здесь, что "llama" - это не число, и поэтому он не знает, как добавить его к 5. Даже если бы это была не `"llama", а "four" или "4", Haskell все равно не счел бы это числом. `+` ожидает, что его левая и правая стороны будут числами. Если бы мы попытались выполнить `True == 5`, GHCI сказал бы нам, что типы не совпадают. В то время как `+` работает только с теми вещами, которые считаются числами, `==` работает с любыми двумя вещами, которые можно сравнить. Но загвоздка в том, что они оба должны быть одного типа. Вы не можете сравнивать яблоки и апельсины. Мы подробнее рассмотрим типы чуть позже. 
 
 > Примечание: вы можете использовать `5 + 4.0`, потому что `5` является скрытым и может действовать как целое число или число с плавающей запятой. `4.0` не может действовать как целое число, поэтому `5` - это то, что должно адаптироваться.
 
@@ -139,7 +139,7 @@ ghci> succ 8
 Функция `succ` принимает все, что имеет определенного преемника, и возвращает этого преемника.^[Преемник (successor) - это число, следующее после некоторого натурального числа. <br>
 Форма: Число + 1 = Преемник <br>
 Функция приемника (successor function) - это функция, которая отправляет натуральное число следующему. <br>
-Формула: f(x) = x + 1] Как вы можете видеть, мы просто отделяем имя функции от параметра пробелом. Вызов функции с несколькими параметрами также прост. Функции `min` и `max` используют две вещи, которые можно упорядочить (например, числа!). `min` возвращает значение, которое меньше, а `max` возвращает значение, которое больше. See for yourself:
+Формула: f(x) = x + 1] Как вы можете видеть, мы просто отделяем имя функции от параметра пробелом. Вызов функции с несколькими параметрами также прост. Функции `min` и `max` используют две вещи, которые можно упорядочить (например, числа!). `min` возвращает значение, которое меньше, а `max` возвращает значение, которое больше. Смотрите сами:
 
 ```haskell
 ghci> min 9 10
@@ -150,7 +150,7 @@ ghci> max 100 101
 101 
 ```
 
-Function application (calling a function by putting a space after it and then typing out the parameters) has the highest precedence of them all. What that means for us is that these two statements are equivalent.
+Функциональное приложение (вызывающее функцию, ставя после нее пробел, а затем вводя параметры) имеет самый высокий приоритет из всех. Для нас это означает, что эти два утверждения эквивалентны.
 
 ```haskell
 ghci> succ 9 + max 5 4 + 1
@@ -159,21 +159,21 @@ ghci> (succ 9) + (max 5 4) + 1
 16
 ```
 
-However, if we wanted to get the successor of the product of numbers 9 and 10, we couldn't write `succ 9 * 10` because that would get the successor of 9, which would then be multiplied by 10. So 100. We'd have to write `succ (9 * 10)` to get 91.
+Однако, если бы мы хотели получить преемника произведения чисел 9 и 10, мы не могли бы написать `succ 9 * 10`, потому что это дало бы преемника 9, который затем был бы умножен на 10. Итак, 100. Нам пришлось бы написать `succ (9 * 10)`, чтобы получить 91.
 
-If a function takes two parameters, we can also call it as an infix function by surrounding it with backticks. For instance, the `div` function takes two integers and does integral division between them. Doing `div 92 10` results in a 9. But when we call it like that, there may be some confusion as to which number is doing the division and which one is being divided. So we can call it as an infix function by doing ``92 `div` 10`` and suddenly it's much clearer.
+Если функция принимает два параметра, мы также можем вызвать ее как инфиксную функцию, окружив ее обратными кавычками (` `` `). Например, функция `div` принимает два целых числа и выполняет целочисленное деление между ними. Выполнение `div 92 10` приводит к получению 9. Но когда мы называем это таким образом, может возникнуть некоторая путаница относительно того, какое число выполняет деление, а какое делится. Таким образом, мы можем вызвать это как инфиксную функцию, выполнив команду ``92 `div` 10``, и внезапно все становится намного понятнее.
 
-Lots of people who come from imperative languages tend to stick to the notion that parentheses should denote function application. For example, in C, you use parentheses to call functions like `foo()`, `bar(1)` or `baz(3, "haha")`. Like we said, spaces are used for function application in Haskell. So those functions in Haskell would be `foo`, `bar 1` and `baz 3 "haha"`. So if you see something like `bar (bar 3)`, it doesn't mean that `bar` is called with `bar` and `3` as parameters. It means that we first call the function `bar` with `3` as the parameter to get some number and then we call `bar` again with that number. In C, that would be something like `bar(bar(3))`.
+Многие люди, пришедшие из императивных языков, склонны придерживаться представления о том, что круглые скобки должны обозначать применение функции. Например, в `C` вы используете круглые скобки для вызова таких функций, как `foo()`, `bar(1)` или `baz(3, "ха-ха")`. Как мы уже говорили, пробелы используются для применения функций в Haskell. Таким образом, этими функциями в Haskell были бы `foo`, `bar 1` и `baz 3 "ха-ха"`. Поэтому, если вы видите что-то вроде `bar (bar 3)`, это не означает, что `bar` вызывается с `bar` и `3` в качестве параметров. Это означает, что мы сначала вызываем функцию `bar` с `3` в качестве параметра, чтобы получить некоторое число, а затем мы снова вызываем `bar` с этим числом. В `C` это было бы что-то вроде `bar(bar(3))`.
 
-## Baby's first functions
+## Первые детские функции
 
-In the previous section we got a basic feel for calling functions. Now let's try making our own! Open up your favorite text editor and punch in this function that takes a number and multiplies it by two.
+В предыдущем разделе мы получили базовое представление о вызове функций. Теперь давайте попробуем сделать нашу собственную функцию! Откройте свой любимый текстовый редактор и введите эту функцию, которая принимает число и умножает его на два.
 
 ```haskell
 doubleMe x = x + x
 ```
 
-Functions are defined in a similar way that they are called. The function name is followed by parameters seperated by spaces. But when defining functions, there's a `=` and after that we define what the function does. Save this as `baby.hs` or something. Now navigate to where it's saved and run `ghci` from there. Once inside GHCI, do `:l baby`. Now that our script is loaded, we can play with the function that we defined.
+Функции определяются аналогично тому, как они вызываются. За именем функции следуют параметры, разделенные пробелами. Но при определении функций есть `=`, и после этого мы определяем, что делает функция. Сохраните это как "baby.hs" или что-то в этом роде. Теперь перейдите туда, где он сохранен, и запустите `ghci` оттуда. Оказавшись внутри GHCI, выполните `:l baby`. Теперь, когда наш скрипт загружен, мы можем поиграть с функцией, которую мы определили.
 
 ```haskell
 ghci> :l baby
@@ -185,13 +185,13 @@ ghci> doubleMe 8.3
 16.6 
 ```
 
-Because `+` works on integers as well as on floating-point numbers (anything that can be considered a number, really), our function also works on any number. Let's make a function that takes two numbers and multiplies each by two and then adds them together.
+Поскольку `+` работает как с целыми числами, так и с числами с плавающей запятой (все, что на самом деле можно считать числом), наша функция также работает с любым числом. Давайте создадим функцию, которая принимает два числа и умножает каждое на два, а затем складывает их вместе.
 
 ```haskell
 doubleUs x y = x*2 + y*2 
 ```
 
-Simple. We could have also defined it as `doubleUs x y = x + x + y + y`. Testing it out produces pretty predictable results (remember to append this function to the `baby.hs` file, save it and then do `:l baby` inside GHCI).
+Просто. Мы могли бы также определить это как `doubleUs x y = x + x + y + y`. Тестирование дает довольно предсказуемые результаты (не забудьте добавить эту функцию в файл `baby.hs`, сохранить его, а затем выполнить `:l baby` внутри GHCI).
 
 ```haskell
 ghci> doubleUs 4 9
@@ -202,17 +202,17 @@ ghci> doubleUs 28 88 + doubleMe 123
 478
 ```
 
-As expected, you can call your own functions from other functions that you made. With that in mind, we could redefine `doubleUs` like this:
+Как и ожидалось, вы можете вызывать свои собственные функции из других созданных вами функций. Имея это в виду, мы могли бы переопределить `doubleUs` следующим образом:
 
 ```haskell
 doubleUs x y = doubleMe x + doubleMe y 
 ```
 
-This is a very simple example of a common pattern you will see throughout Haskell. Making basic functions that are obviously correct and then combining them into more complex functions. This way you also avoid repetition. What if some mathematicians figured out that 2 is actually 3 and you had to change your program? You could just redefine `doubleMe` to be `x + x + x` and since `doubleUs` calls `doubleMe`, it would automatically work in this strange new world where 2 is 3.
+Это очень простой пример общего шаблона, который вы увидите во всем Haskell. Создание базовых функций, которые, очевидно, являются правильными, а затем объединение их в более сложные функции. Таким образом, вы также избежите повторения. Что, если бы какие-нибудь математики выяснили, что 2 на самом деле равно 3, и вам пришлось бы изменить свою программу? Вы могли бы просто переопределить `doubleMe` на `x + x + x`, и поскольку `doubleUs` вызывает `doubleMe`, это автоматически сработало бы в этом странном новом мире, где 2 равно 3.
 
-Functions in Haskell don't have to be in any particular order, so it doesn't matter if you define `doubleMe` first and then `doubleUs` or if you do it the other way around.
+Функции в Haskell не обязательно должны располагаться в каком-либо определенном порядке, поэтому не имеет значения, определяете ли вы сначала `doubleMe`, а затем `doubleUs` или делаете это наоборот.
 
-Now we're going to make a function that multiplies a number by 2 but only if that number is smaller than or equal to 100 because numbers bigger than 100 are big enough as it is!
+Теперь мы собираемся создать функцию, которая умножает число на 2, но только если это число меньше или равно 100, потому что числа больше 100 и так достаточно велики!
 
 ```haskell
 doubleSmallNumber x = if x > 100
@@ -222,29 +222,29 @@ doubleSmallNumber x = if x > 100
 
 ![[LYHfGG_7_baby.png]]
 
-Right here we introduced Haskell's if statement. You're probably familiar with if statements from other languages. The difference between Haskell's if statement and if statements in imperative languages is that the else part is mandatory in Haskell. In imperative languages you can just skip a couple of steps if the condition isn't satisfied but in Haskell every expression and function must return something. We could have also written that if statement in one line but I find this way more readable. Another thing about the if statement in Haskell is that it is an _expression_. An expression is basically a piece of code that returns a value. `5` is an expression because it returns 5, `4 + 8` is an expression, `x + y` is an expression because it returns the sum of `x` and `y`. Because the else is mandatory, an if statement will always return something and that's why it's an expression. If we wanted to add one to every number that's produced in our previous function, we could have written its body like this.
+Прямо здесь мы представили оператор `if`. Вероятно, вы знакомы с операторами `if` из других языков. Разница между оператором `if` в Haskell и операторами `if` в императивных языках заключается в том, что часть `else` является обязательной в Haskell. В императивных языках вы можете просто пропустить пару шагов, если условие не выполнено, но в Haskell каждое выражение и функция должны что-то возвращать. Мы могли бы также написать это выражение `if` в одной строке, но я нахожу этот способ более читабельным. Еще одна особенность оператора `if` в Haskell заключается в том, что оператор является _выражением_ . Выражение - это, по сути, фрагмент кода, который возвращает значение. `5` - это выражение, потому что оно возвращает 5, `4 + 8` - это выражение, `x + y` - это выражение, потому что оно возвращает сумму `x` и `y`. Поскольку `else` является обязательным, оператор `if` всегда будет возвращать что-то, и именно поэтому это выражение. Если бы мы хотели добавить единицу к каждому числу, полученному в нашей предыдущей функции, мы могли бы написать ее тело следующим образом.
 
 ```haskell
 doubleSmallNumber' x = (if x > 100 then x else x*2) + 1
 ```
 
-Had we omitted the parentheses, it would have added one only if `x` wasn't greater than 100. Note the `'` at the end of the function name. That apostrophe doesn't have any special meaning in Haskell's syntax. It's a valid character to use in a function name. We usually use `'` to either denote a strict version of a function (one that isn't lazy) or a slightly modified version of a function or a variable. Because `'` is a valid character in functions, we can make a function like this.
+Если бы мы опустили круглые скобки, это добавило бы единицу только в том случае, если `x` было не больше 100. Обратите внимание на `'` в конце имени функции. Этот апостроф не имеет никакого особого значения в синтаксисе Haskell. Это допустимый символ для использования в имени функции. Обычно мы используем `'` либо для обозначения строгой версии функции (той, которая не является ленивой), либо для слегка измененной версии функции или переменной. Поскольку `'` является допустимым символом в функциях, мы можем создать функцию, подобную этой.
 
 ```haskell
 conanO'Brien = "It's a-me, Conan O'Brien!" 
 ```
 
-There are two noteworthy things here. The first is that in the function name we didn't capitalize Conan's name. That's because functions can't begin with uppercase letters. We'll see why a bit later. The second thing is that this function doesn't take any parameters. When a function doesn't take any parameters, we usually say it's a _definition_ (or a _name_). Because we can't change what names (and functions) mean once we've defined them, `conanO'Brien` and the string `"It's a-me, Conan O'Brien!"` can be used interchangeably.
+Здесь есть две заслуживающие внимания вещи. Во-первых, мы не написали имя функции с заглавной буквы. Это потому, что функции не могут начинаться с заглавных букв. Мы поймем, почему, чуть позже. Во-вторых, эта функция не принимает никаких параметров. Когда функция не принимает никаких параметров, мы обычно говорим, что это _определение_ (или _имя_^[Честно говоря не знаю как правильнее в данном случае перевести слово name]). Поскольку мы не можем изменить значение имен (и функций), как только мы их определили, `conanO'Brien` и строка `"It's a-me, Conan O'Brien!"` могут использоваться взаимозаменяемо.
 
-## An intro to lists
+## Введение в списки
 
 ![[LYHfGG_8_list.png]]
 
-Much like shopping lists in the real world, lists in Haskell are very useful. It's the most used data structure and it can be used in a multitude of different ways to model and solve a whole bunch of problems. Lists are SO awesome. In this section we'll look at the basics of lists, strings (which are lists) and list comprehensions.
+Подобно спискам покупок в реальном мире, списки в Haskell очень полезны. Это наиболее используемая структура данных, и ее можно использовать множеством различных способов для моделирования и решения целого ряда проблем. Списки - это ТАК здорово. В этом разделе мы рассмотрим основы списков, строк (которые являются списками) и понимания списков.
 
-In Haskell, lists are a **homogenous** data structure. It stores several elements of the same type. That means that we can have a list of integers or a list of characters but we can't have a list that has a few integers and then a few characters. And now, a list!
+В Haskell списки представляют собой **однородную** (англ. homogenous) структуру данных. В нем хранится несколько элементов одного и того же типа. Это означает, что у нас может быть список целых чисел или список символов, но у нас не может быть списка, состоящего из нескольких целых чисел, а затем нескольких символов. А теперь список!
 
-> **Note**: We can use the `let` keyword to define a name right in GHCI. Doing `let a = 1` inside GHCI is the equivalent of writing `a = 1` in a script and then loading it.
+> **Примечание**: Мы можем использовать ключевое слово `let` для определения имени прямо в GHCI. Выполнение `let a = 1` внутри GHCI эквивалентно записи `a = 1` в скрипте и последующей его загрузке.
 
 ```haskell
 ghci> let lostNumbers = [4,8,15,16,23,42]
@@ -252,9 +252,9 @@ ghci> lostNumbers
 [4,8,15,16,23,42]
 ```
 
-As you can see, lists are denoted by square brackets and the values in the lists are separated by commas. If we tried a list like `[1,2,'a',3,'b','c',4]`, Haskell would complain that characters (which are, by the way, denoted as a character between single quotes) are not numbers. Speaking of characters, strings are just lists of characters. `"hello"` is just syntactic sugar for `['h','e','l','l','o']`. Because strings are lists, we can use list functions on them, which is really handy.
+Как вы можете видеть, списки заключены в квадратные скобки, а значения в списках разделены запятыми. Если бы мы попробовали использовать список типа `[1,2,'a',3,'b','c',4]`, Haskell пожаловался бы, что символы (которые, кстати, обозначаются как символ между одинарными кавычками) не являются числами. Говоря о символах, строки - это просто списки символов. `"hello"` - это просто синтаксический сахар для `['h','e','l','l','o']`. Поскольку строки представляют собой списки, мы можем использовать для них функции списка, что действительно удобно.
 
-A common task is putting two lists together. This is done by using the `++` operator.
+Обычная задача - собрать два списка воедино. Это делается с помощью оператора `++`.
 
 ```haskell
 ghci> [1,2,3,4] ++ [9,10,11,12]
@@ -265,7 +265,7 @@ ghci> ['w','o'] ++ ['o','t']
 "woot"
 ```
 
-Watch out when repeatedly using the `++` operator on long strings. When you put together two lists (even if you append a singleton list to a list, for instance: `[1,2,3] ++ [4]`), internally, Haskell has to walk through the whole list on the left side of `++`. That's not a problem when dealing with lists that aren't too big. But putting something at the end of a list that's fifty million entries long is going to take a while. However, putting something at the beginning of a list using the `:` operator (also called the cons operator) is instantaneous.
+Будьте осторожны при повторном использовании оператора `++` для длинных строк. Когда вы объединяете два списка (даже если вы добавляете одноэлементный список к списку, например: `[1,2,3] ++ [4]`), внутренне Haskell должен просмотреть весь список в левой части `++`. Это не проблема, когда имеешь дело со списками, которые не слишком велики. Но для того, чтобы поместить что-то в конец списка длиной в пятьдесят миллионов записей, потребуется некоторое время. Однако поместить что-либо в начало списка с помощью оператора `:` (также называемого оператором `cons`) можно мгновенно.
 
 ```haskell
 ghci> 'A':" SMALL CAT"
@@ -274,13 +274,13 @@ ghci> 5:[1,2,3,4,5]
 [5,1,2,3,4,5]
 ```
 
-Notice how `:` takes a number and a list of numbers or a character and a list of characters, whereas `++` takes two lists. Even if you're adding an element to the end of a list with `++`, you have to surround it with square brackets so it becomes a list.
+Обратите внимание, как `:` принимает число и список чисел или символ и список символов, тогда как `++` принимает два списка. Даже если вы добавляете элемент в конец списка с помощью `++`, вы должны заключить его в квадратные скобки, чтобы он стал списком.
 
-`[1,2,3]` is actually just syntactic sugar for `1:2:3:[]`. `[]` is an empty list. If we prepend `3` to it, it becomes `[3]`. If we prepend `2` to that, it becomes `[2,3]`, and so on.
+`[1,2,3]` на самом деле является просто синтаксическим сахаром для `1:2:3:[]`. `[]` - это пустой список. Если мы добавим к нему `3`, оно станет `[3]`. Если мы добавим к этому `2`, оно станет `[2,3]` и так далее.
 
-> **Note:** `[]`, `[[]]` and `[[],[],[]]` are all different things. The first one is an empty list, the seconds one is a list that contains one empty list, the third one is a list that contains three empty lists.
+> **Примечание:** `[]`, `[[]]` и `[[],[],[]]` это все разные вещи. Первый - это пустой список, второй - это список, содержащий один пустой список, третий - это список, содержащий три пустых списка.
 
-If you want to get an element out of a list by index, use `!!`. The indices start at 0.
+Если вы хотите получить элемент из списка по индексу, используйте `!!`. Индексы начинаются с 0.
 
 ```haskell
 ghci> "Steve Buscemi" !! 6
@@ -289,9 +289,9 @@ ghci> [9.4,33.2,96.2,11.2,23.25] !! 1
 33.2
 ```
 
-But if you try to get the sixth element from a list that only has four elements, you'll get an error so be careful!
+Но если вы попытаетесь получить шестой элемент из списка, состоящего всего из четырех элементов, вы получите сообщение об ошибке, так что будьте осторожны!
 
-Lists can also contain lists. They can also contain lists that contain lists that contain lists …
+Списки также могут содержать списки. Они также могут содержать списки, которые содержат списки, которые содержат списки ...
 
 ```haskell
 ghci> let b = [[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
@@ -305,9 +305,9 @@ ghci> b !! 2
 [1,2,2,3,4] 
 ```
 
-The lists within a list can be of different lengths but they can't be of different types. Just like you can't have a list that has some characters and some numbers, you can't have a list that has some lists of characters and some lists of numbers.
+Списки внутри списка могут быть разной длины, но они не могут быть разных типов. Точно так же, как у вас не может быть списка, содержащего некоторые символы и некоторые цифры, у вас не может быть списка, содержащего некоторые списки символов и некоторые списки чисел.
 
-Lists can be compared if the stuff they contain can be compared. When using `<`, `<=`, `>` and `>=` to compare lists, they are compared in lexicographical order. First the heads are compared. If they are equal then the second elements are compared, etc.
+Списки можно сравнивать, если можно сравнить содержащийся в них материал. При использовании `<`, `<=`, `>` и `>=` для сравнения списков они сравниваются в лексикографическом порядке. Сначала сравниваются головы. Если они равны, то сравниваются вторые элементы и т.д.
 
 ```haskell
 ghci> [3,2,1] > [2,1,0]
@@ -322,57 +322,57 @@ ghci> [3,4,2] == [3,4,2]
 True
 ```
 
-What else can you do with lists? Here are some basic functions that operate on lists.
+Что еще вы можете сделать со списками? Вот некоторые основные функции, которые работают со списками.
 
-`head` takes a list and returns its head. The head of a list is basically its first element.
+`head` принимает список и возвращает его заголовок. Заголовок списка - это, по сути, его первый элемент.
 
 ```haskell
 ghci> head [5,4,3,2,1]
 5 
 ```
 
-`tail` takes a list and returns its tail. In other words, it chops off a list's head.
+`tail` принимает список и возвращает его хвост. Другими словами, это отрубает голову списку.
 
 ```haskell
 ghci> tail [5,4,3,2,1]
 [4,3,2,1] 
 ```
 
-`last` takes a list and returns its last element.
+`last` принимает список и возвращает его последний элемент.
 
 ```haskell
 ghci> last [5,4,3,2,1]
 1 
 ```
 
-`init` takes a list and returns everything except its last element.
+`init` принимает список и возвращает все, кроме его последнего элемента.
 
 ```haskell
 ghci> init [5,4,3,2,1]
 [5,4,3,2] 
 ```
 
-If we think of a list as a monster, here's what's what.
+Если мы думаем о списке как о монстре, то вот что есть что.
 
 ![[LYHfGG_9_listmonster.png]]
 
-But what happens if we try to get the head of an empty list?
+Но что произойдет, если мы попытаемся получить начало пустого списка?
 
 ```haskell
 ghci> head []
 *** Exception: Prelude.head: empty list
 ```
 
-Oh my! It all blows up in our face! If there's no monster, it doesn't have a head. When using `head`, `tail`, `last` and `init`, be careful not to use them on empty lists. This error cannot be caught at compile time so it's always good practice to take precautions against accidentally telling Haskell to give you some elements from an empty list.
+О боже! Все это взрывается нам в лицо! Если монстра нет, то у него нет головы. При использовании `head`, `tail`, `last` и `init` будьте осторожны и не используйте их в пустых списках. Эта ошибка не может быть обнаружена во время компиляции, поэтому всегда рекомендуется принимать меры предосторожности, чтобы случайно не попросить Haskell предоставить вам некоторые элементы из пустого списка.
 
-`length` takes a list and returns its length, obviously.
+очевидно, что `length` принимает список и возвращает его длину.
 
 ```haskell
 ghci> length [5,4,3,2,1]
 5
 ```
 
-`null` checks if a list is empty. If it is, it returns `True`, otherwise it returns `False`. Use this function instead of `xs == []` (if you have a list called `xs`)
+`null` проверяет, пуст ли список. Если это так, то он возвращает `True`, в противном случае он возвращает `False`. Используйте эту функцию вместо `xs == []` (если у вас есть список с именем `xs`)
 
 ```haskell
 ghci> null [1,2,3]
@@ -381,14 +381,14 @@ ghci> null []
 True
 ```
 
-`reverse` reverses a list.
+`reverse` переворачивает список.
 
 ```haskell
 ghci> reverse [5,4,3,2,1]
 [1,2,3,4,5]
 ```
 
-`take` takes number and a list. It extracts that many elements from the beginning of the list. Watch.
+`take` принимает номер и список. Он извлекает некоторое количество элементов из начала списка. Посмотри.
 
 ```haskell
 ghci> take 3 [5,4,3,2,1]
@@ -401,9 +401,9 @@ ghci> take 0 [6,6,6]
 []
 ```
 
-See how if we try to take more elements than there are in the list, it just returns the list. If we try to take 0 elements, we get an empty list.
+Посмотрите, как если мы попытаемся взять больше элементов, чем есть в списке, это просто вернет список. Если мы попытаемся взять 0 элементов, то получим пустой список.
 
-`drop` works in a similar way, only it drops the number of elements from the beginning of a list.
+`drop` работает аналогичным образом, только он уменьшает количество элементов из начала списка.
 
 ```haskell
 ghci> drop 3 [8,4,2,1,5,6]
@@ -414,9 +414,9 @@ ghci> drop 100 [1,2,3,4]
 [] 
 ```
 
-`maximum` takes a list of stuff that can be put in some kind of order and returns the biggest element.
+`maximum` принимает список элементов, которые можно расположить в определенном порядке, и возвращает самый большой элемент.
 
-`minimum` returns the smallest.
+`minimum` возвращает наименьшее значение.
 
 ```haskell
 ghci> minimum [8,4,2,1,5,6]
@@ -425,9 +425,9 @@ ghci> maximum [1,9,2,3,4]
 9 
 ```
 
-`sum` takes a list of numbers and returns their sum.
+`sum` принимает список чисел и возвращает их сумму.
 
-`product` takes a list of numbers and returns their product.
+`product` принимает список чисел и возвращает их произведение.
 
 ```haskell
 ghci> sum [5,2,1,6,3,2,5,7]
@@ -438,7 +438,7 @@ ghci> product [1,2,5,6,7,9,2,0]
 0 
 ```
 
-`elem` takes a thing and a list of things and tells us if that thing is an element of the list. It's usually called as an infix function because it's easier to read that way.
+`elem` берет вещь и список вещей и сообщает нам, является ли эта вещь элементом списка. Обычно она вызывается как инфиксная функция, потому что так ее легче читать.
 
 ```haskell
 ghci> 4 `elem` [3,4,5,6]
@@ -447,15 +447,15 @@ ghci> 10 `elem` [3,4,5,6]
 False
 ```
 
-Those were a few basic functions that operate on lists. We'll take a look at more list functions [later](http://learnyouahaskell.com/modules#data-list)
+Это было несколько основных функций, которые работают со списками. Мы рассмотрим дополнительные функции списка [позже](http://learnyouahaskell.com/modules#data-list)
 
-## Texas ranges
+## Техасские диапазоны
 
 ![[LYHfGG_10_cowboy.png]]
 
-What if we want a list of all numbers between 1 and 20? Sure, we could just type them all out but obviously that's not a solution for gentlemen who demand excellence from their programming languages. Instead, we'll use ranges. Ranges are a way of making lists that are arithmetic sequences of elements that can be enumerated. Numbers can be enumerated. One, two, three, four, etc. Characters can also be enumerated. The alphabet is an enumeration of characters from A to Z. Names can't be enumerated. What comes after "John"? I don't know.
+Что, если нам нужен список всех чисел от 1 до 20? Конечно, мы могли бы просто напечатать их все, но, очевидно, это не решение для джентльменов, которые требуют совершенства от своих языков программирования. Вместо этого мы будем использовать диапазоны. Диапазоны - это способ создания списков, представляющих собой арифметические последовательности элементов, которые можно перечислять. Числа можно перечислять. Один, два, три, четыре и так далее. Символы также могут быть пронумерованы. Алфавит - это перечисление символов от `A` до `Z`^[Стандарт вышел 10 лет назад и он сохраняет обратную совместимость. Поэтому, чтобы использовать unicode, нужно провести небольшие манипуляции. Об этом можно поискать в интернете. "ghci how add utf 8"]. Имена не могут быть пронумерованы. Что следует за словом "John"? Я не знаю.
 
-To make a list containing all the natural numbers from 1 to 20, you just write `[1..20]`. That is the equivalent of writing `[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]` and there's no difference between writing one or the other except that writing out long enumeration sequences manually is stupid.
+Чтобы составить список, содержащий все натуральные числа от 1 до 20, вы просто пишете `[1..20]`. Это эквивалентно написанию `[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]`, и нет никакой разницы между написанием одного или другого, за исключением того, что записывать длинные последовательности перечисления вручную глупо.
 
 ```haskell
 ghci> [1..20]
@@ -466,7 +466,7 @@ ghci> ['K'..'Z']
 "KLMNOPQRSTUVWXYZ" 
 ```
 
-Ranges are cool because you can also specify a step. What if we want all even numbers between 1 and 20? Or every third number between 1 and 20?
+Диапазоны хороши тем, что вы также можете указать шаг. Что, если нам нужны все четные числа от 1 до 20? Или каждое третье число от 1 до 20?
 
 ```haskell
 ghci> [2,4..20]
@@ -475,24 +475,24 @@ ghci> [3,6..20]
 [3,6,9,12,15,18] 
 ```
 
-It's simply a matter of separating the first two elements with a comma and then specifying what the upper limit is. While pretty smart, ranges with steps aren't as smart as some people expect them to be. You can't do `[1,2,4,8,16..100]` and expect to get all the powers of 2. Firstly because you can only specify one step. And secondly because some sequences that aren't arithmetic are ambiguous if given only by a few of their first terms.
+Это просто вопрос разделения первых двух элементов запятой, а затем указания верхнего предела. Несмотря на то, что диапазоны со ступенями довольно умны, они не так умны, как некоторые люди ожидают от них. Вы не можете выполнить `[1,2,4,8,16..100]` и ожидать, что получите все степени 2. Во-первых, потому, что вы можете указать только один шаг. А во-вторых, потому что некоторые последовательности, которые не являются арифметическими, неоднозначны, если заданы только несколькими их первыми членами.
 
-To make a list with all the numbers from 20 to 1, you can't just do `[20..1]`, you have to do `[20,19..1]`.
+Чтобы составить список со всеми числами от 20 до 1, вы не можете просто выполнить `[20..1]`, вы должны выполнить `[20,19..1]`.
 
-Watch out when using floating point numbers in ranges! Because they are not completely precise (by definition), their use in ranges can yield some pretty funky results.
+Будьте осторожны при использовании чисел с плавающей запятой в диапазонах! Поскольку они не являются полностью точными (по определению), их использование в диапазонах может привести к довольно странным результатам.
 
 ```haskell
 ghci> [0.1, 0.3 .. 1]
 [0.1,0.3,0.5,0.7,0.8999999999999999,1.0999999999999999]
 ```
 
-My advice is not to use them in list ranges.
+Мой совет - не использовать их в диапазонах списков.
 
-You can also use ranges to make infinite lists by just not specifying an upper limit. Later we'll go into more detail on infinite lists. For now, let's examine how you would get the first 24 multiples of 13. Sure, you could do `[13,26..24*13]`. But there's a better way: `take 24 [13,26..]`. Because Haskell is lazy, it won't try to evaluate the infinite list immediately because it would never finish. It'll wait to see what you want to get out of that infinite lists. And here it sees you just want the first 24 elements and it gladly obliges.
+Вы также можете использовать диапазоны для создания бесконечных списков, просто не указывая верхний предел. Позже мы более подробно остановимся на бесконечных списках. А пока давайте рассмотрим, как бы вы получили первые 24 числа, кратные 13. Конечно, вы могли бы сделать `[13,26..24*13]`. Но есть способ получше: `возьми 24 [13,26..]`. Поскольку Haskell ленив, он не будет пытаться оценить бесконечный список немедленно, потому что он никогда не завершится. Это подождет, чтобы увидеть, что вы хотите получить из этих бесконечных списков. И вот он видит, что вам нужны только первые 24 элемента, и с радостью соглашается.
 
-A handful of functions that produce infinite lists:
+Несколько функций, которые создают бесконечные списки:
 
-`cycle` takes a list and cycles it into an infinite list. If you just try to display the result, it will go on forever so you have to slice it off somewhere.
+`cycle` берет список и преобразует его в бесконечный список. Если вы просто попытаетесь отобразить результат, он будет продолжаться вечно, так что вам придется где-то его отрезать.
 
 ```haskell
 ghci> take 10 (cycle [1,2,3])
@@ -501,77 +501,74 @@ ghci> take 12 (cycle "LOL ")
 "LOL LOL LOL " 
 ```
 
-`repeat` takes an element and produces an infinite list of just that element. It's like cycling a list with only one element.
+`repeat` принимает элемент и создает бесконечный список только этого элемента. Это все равно что перебирать список, содержащий только один элемент.
 
 ```haskell
 ghci> take 10 (repeat 5)
 [5,5,5,5,5,5,5,5,5,5]
 ```
 
-Although it's simpler to just use the `replicate` function if you want some number of the same element in a list. `replicate 3 10` returns `[10,10,10]`.
+Хотя проще просто использовать функцию `replicate`, если вам нужно некоторое количество одного и того же элемента в списке. `replicate 3 10` возвращает `[10,10,10]`.
 
-## I'm a list comprehension
+## Я - списковое включение (англ. _list comprehension_)^[Альтернативное название, более понятное программистам "генераторы списков". Но использую по [вики](https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5#:~:text=%D0%90%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%20%D0%B8%D0%BB%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5,%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2.)) ]
 
 ![[LYHfGG_11_kermit.png]]
 
-If you've ever taken a course in mathematics, you've probably run into _set comprehensions_. They're normally used for building more specific sets out of general sets. A basic comprehension for a set that contains the first ten even natural numbers is $$S = \{2\ \cdot\ x\ |\ x \in \mathbb{N},\ x \leqslant 10\}$$. The part before the pipe is called the output function, `x` is the variable, `N` is the input set and `x <= 10` is the predicate. That means that the set contains the doubles of all natural numbers that satisfy the predicate.
+Если вы когда-либо проходили курс математики, вы, вероятно, сталкивались с _множествами с заданными характеристическими свойствами_^[В оригинале был термин "set comprehensions". Ссылка откуда взял: [What is Russian translation for "set comprehension"](https://russian.stackexchange.com/questions/1530/what-is-russian-translation-for-set-comprehension). И я посчитал, что второй ответ более подходящий]. Обычно они используются для построения более специфичных наборов из общих наборов. Базовое списковое включение для набора, содержащего первые десять четных натуральных чисел, составляет^[Я не знаю какая запись более правильная для русской традиции записи. Поэтому оставил как в оригинале] $$S = \{2\ \cdot\ x\ |\ x \in \mathbb{N},\ x \leqslant 10\}$$. Часть перед вертикальной чертой называется выходной функцией, `x` - это переменная, `N` - это входной набор, а `x <= 10` - это предикат^[Предикат - если просто, то это условие]. Это означает, что множество содержит удвоения всех натуральных чисел, которые удовлетворяют предикату.
 
-If we wanted to write that in Haskell, we could do something like `take 10 [2,4..]`. But what if we didn't want doubles of the first 10 natural numbers but some kind of more complex function applied on them? We could use a list comprehension for that. List comprehensions are very similar to set comprehensions. We'll stick to getting the first 10 even numbers for now. The list comprehension we could use is `[x*2 | x <- [1..10]]`. `x` is drawn from `[1..10]` and for every element in `[1..10]` (which we have bound to `x`), we get that element, only doubled. Here's that comprehension in action.
+Если бы мы хотели написать это на Haskell, мы могли бы сделать что-то вроде `take 10 [2,4..]`. Но что, если бы мы хотели получить не удвоения первых 10 натуральных чисел, а какую-то более сложную функцию, примененную к ним? Для этого мы могли бы использовать списковое включение. Списковое включение очень похоже на понимание набора. Пока мы будем придерживаться получения первых 10 четных чисел. Списковое включение, которое мы могли бы использовать, - это `[x * 2 | x <- [1..10]]`. `x` берется из `[1..10]`, и для каждого элемента в `[1..10]` (который мы привязали к `x`) мы получаем этот элемент, только удвоенный. Вот списковое включение в действии.
 
 ```haskell
 ghci> [x*2 | x <- [1..10]]
 [2,4,6,8,10,12,14,16,18,20]
 ```
 
-As you can see, we get the desired results. Now let's add a condition (or a predicate) to that comprehension. Predicates go after the binding parts and are separated from them by a comma. Let's say we want only the elements which, doubled, are greater than or equal to 12.
+Как вы можете видеть, мы получаем желаемые результаты. Теперь давайте добавим условие (или предикат) к этому списковому включению. Предикаты идут после связующих частей и отделяются от них запятой. Допустим, нам нужны только те элементы, которые в удвоенном виде больше или равны 12.
 
 ```haskell
 ghci> [x*2 | x <- [1..10], x*2 >= 12]
 [12,14,16,18,20]
 ```
 
-Cool, it works. How about if we wanted all numbers from 50 to 100 whose remainder when divided with the number 7 is 3? Easy.
+Круто, это работает. Как насчет того, если бы мы хотели получить все числа от 50 до 100, остаток от которых при делении на число 7 равен 3? Легко.
 
 ```haskell
 ghci> [ x | x <- [50..100], x `mod` 7 == 3]
 [52,59,66,73,80,87,94] 
 ```
 
-Success! Note that weeding out lists by predicates is also called **filtering**. We took a list of numbers and we filtered them by the predicate. Now for another example. Let's say we want a comprehension that replaces each odd number greater than 10 with `"BANG!"` and each odd number that's less than 10 with `"BOOM!"`. If a number isn't odd, we throw it out of our list. For convenience, we'll put that comprehension inside a function so we can easily reuse it.
+Успех! Обратите внимание, что отсеивание списков по предикатам также называется **фильтрацией** (англ. filtering). Мы взяли список чисел и отфильтровали их по предикату. Теперь перейдем к другому примеру. Допустим, нам нужно списковое включение, которое заменяет каждое нечетное число, большее 10, на `"BANG!"`, а каждое нечетное число, меньшее 10, на `"BOOM!"`. Если число не нечетное, мы исключаем его из нашего списка. Для удобства мы поместим это списковое включение внутрь функции, чтобы мы могли легко использовать его повторно.
 
 ```haskell
 boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x] 
 ```
 
-The last part of the comprehension is the predicate. The function `odd` returns `True` on an odd number and `False` on an even one. The element is included in the list only if all the predicates evaluate to `True`.
+Последняя часть спискового включения - это предикат. Функция `odd` возвращает `True` для нечетного числа и `False` для четного. Элемент включается в список только в том случае, если все предикаты оцениваются как `True`.
 
 ```haskell
 ghci> boomBangs [7..13]
 ["BOOM!","BOOM!","BANG!","BANG!"] 
 ```
 
-We can include several predicates. If we wanted all numbers from 10 to 20 that are not 13, 15 or 19, we'd do:
+Мы можем включить несколько предикатов. Если бы нам нужны были все числа от 10 до 20, которые не равны 13, 15 или 19, мы бы сделали:
 
-```haskell
 ghci> [ x | x <- [10..20], x /= 13, x /= 15, x /= 19]
-[10,11,12,14,16,17,18,20]
-```
 
-Not only can we have multiple predicates in list comprehensions (an element must satisfy all the predicates to be included in the resulting list), we can also draw from several lists. When drawing from several lists, comprehensions produce all combinations of the given lists and then join them by the output function we supply. A list produced by a comprehension that draws from two lists of length 4 will have a length of 16, provided we don't filter them. If we have two lists, `[2,5,10]` and `[8,10,11]` and we want to get the products of all the possible combinations between numbers in those lists, here's what we'd do.
+Мы не только можем иметь несколько предикатов в списковом включении (элемент должен удовлетворять всем предикатам, которые будут включены в результирующий список), мы также можем извлекать данные из нескольких списков. При рисовании из нескольких списковых включений создает все комбинации заданных списков, а затем объединяет их с помощью функции вывода, которую мы предоставляем. Список, созданный с помощью спискового включения, который основывается на двух списках длиной 4, будет иметь длину 16, при условии, что мы их не фильтруем. Если у нас есть два списка, `[2,5,10]` и `[8,10,11]`, и мы хотим получить произведения всех возможных комбинаций чисел в этих списках, вот что мы бы сделали.
 
 ```haskell
 ghci> [ x*y | x <- [2,5,10], y <- [8,10,11]]
 [16,20,22,40,50,55,80,100,110] 
 ```
 
-As expected, the length of the new list is 9. What if we wanted all possible products that are more than 50?
+Как и ожидалось, длина нового списка равна 9. Что, если бы нам понадобились все возможные произведения, которых более 50?
 
 ```haskell
 ghci> [ x*y | x <- [2,5,10], y <- [8,10,11], x*y > 50]
 [55,80,100,110] 
 ```
 
-How about a list comprehension that combines a list of adjectives and a list of nouns … for epic hilarity.
+Как насчет спискового включения, которое сочетает в себе список прилагательных и список существительных ... для эпического веселья.
 
 ```haskell
 ghci> let nouns = ["hobo","frog","pope"]
@@ -581,21 +578,21 @@ ghci> [adjective ++ " " ++ noun | adjective <- adjectives, noun <- nouns]
 "grouchy pope","scheming hobo","scheming frog","scheming pope"] 
 ```
 
-I know! Let's write our own version of `length`! We'll call it `length'`.
+Я знаю! Давайте напишем нашу собственную версию `длины`! Мы будем называть это `length'`.
 
 ```haskell
 length' xs = sum [1 | _ <- xs] 
 ```
 
-`_` means that we don't care what we'll draw from the list anyway so instead of writing a variable name that we'll never use, we just write `_`. This function replaces every element of a list with `1` and then sums that up. This means that the resulting sum will be the length of our list.
+`_` означает, что нам все равно, что мы будем извлекать из списка, поэтому вместо того, чтобы писать имя переменной, которое мы никогда не будем использовать, мы просто пишем `_`. Эта функция заменяет каждый элемент списка на `1`, а затем суммирует его. Это означает, что результирующая сумма будет равна длине нашего списка.
 
-Just a friendly reminder: because strings are lists, we can use list comprehensions to process and produce strings. Here's a function that takes a string and removes everything except uppercase letters from it.
+Просто дружеское напоминание: поскольку строки являются списками, мы можем использовать списковое включение для обработки и создания строк. Вот функция, которая принимает строку и удаляет из нее все, кроме прописных букв.
 
 ```haskell
-removeNonUppercase st = [ c | c <- st, c `elem` ['A'..'Z']] 
+removeNonUppercase st = [ c | c <- st, c `elem` ['A'..'Z']]
 ```
 
-Testing it out:
+Проверяю это на практике:
 
 ```haskell
 ghci> removeNonUppercase "Hahaha! Ahahaha!"
@@ -604,7 +601,7 @@ ghci> removeNonUppercase "IdontLIKEFROGS"
 "ILIKEFROGS" 
 ```
 
-The predicate here does all the work. It says that the character will be included in the new list only if it's an element of the list `['A'..'Z']`. Nested list comprehensions are also possible if you're operating on lists that contain lists. A list contains several lists of numbers. Let's remove all odd numbers without flattening the list.
+Предикат здесь выполняет всю работу. В нем говорится, что символ будет включен в новый список, только если он является элементом списка `['A'..'Z']`. Вложенное списковое включение также возможно, если вы работаете со списками, которые содержат списки. Список содержит несколько списков чисел. Давайте удалим все нечетные числа, не выравнивая список.
 
 ```haskell
 ghci> let xxs = [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]]
@@ -612,17 +609,17 @@ ghci> [ [ x | x <- xs, even x ] | xs <- xxs]
 [[2,2,4],[2,4,6,8],[2,4,2,6,2,6]]
 ```
 
-You can write list comprehensions across several lines. So if you're not in GHCI, it's better to split longer list comprehensions across multiple lines, especially if they're nested.
+Вы можете написать списковое включение в нескольких строках. Поэтому, если вы не используете GHCI, лучше разделить более длинные списковые включения на несколько строк, особенно если они вложены.
 
-## Tuples
+## Кортежи
 
 ![[LYHfGG_13_tuple.png]]
 
-In some ways, tuples are like lists — they are a way to store several values into a single value. However, there are a few fundamental differences. A list of numbers is a list of numbers. That's its type and it doesn't matter if it has only one number in it or an infinite amount of numbers. Tuples, however, are used when you know exactly how many values you want to combine and its type depends on how many components it has and the types of the components. They are denoted with parentheses and their components are separated by commas.
+В некотором смысле кортежи подобны спискам — это способ хранения нескольких значений в одном значении. Однако есть несколько фундаментальных отличий. Список чисел - это список чисел. Это его тип, и не имеет значения, содержит ли он только одно число или бесконечное количество чисел. Однако кортежи используются, когда вы точно знаете, сколько значений вы хотите объединить, а их тип зависит от того, сколько в нем компонентов и типов компонентов. Они обозначаются круглыми скобками, а их компоненты разделяются запятыми.
 
-Another key difference is that they don't have to be homogenous. Unlike a list, a tuple can contain a combination of several types.
+Еще одно ключевое отличие заключается в том, что они не обязательно должны быть однородными. В отличие от списка, кортеж может содержать комбинацию нескольких типов.
 
-Think about how we'd represent a two-dimensional vector in Haskell. One way would be to use a list. That would kind of work. So what if we wanted to put a couple of vectors in a list to represent points of a shape on a two-dimensional plane? We could do something like `[[1,2],[8,11],[4,5]]`. The problem with that method is that we could also do stuff like `[[1,2],[8,11,5],[4,5]]`, which Haskell has no problem with since it's still a list of lists with numbers but it kind of doesn't make sense. But a tuple of size two (also called a pair) is its own type, which means that a list can't have a couple of pairs in it and then a triple (a tuple of size three), so let's use that instead. Instead of surrounding the vectors with square brackets, we use parentheses: `[(1,2),(8,11),(4,5)]`. What if we tried to make a shape like `[(1,2),(8,11,5),(4,5)]`? Well, we'd get this error:
+Подумайте о том, как бы мы представили двумерный вектор в Haskell. Одним из способов было бы использовать список. Это вроде как сработало бы. Итак, что, если бы мы захотели поместить пару векторов в список для представления точек фигуры на двумерной плоскости? Мы могли бы сделать что-то вроде `[[1,2],[8,11],[4,5]]`. Проблема с этим методом заключается в том, что мы также могли бы делать такие вещи, как `[[1,2],[8,11,5],[4,5]]`, с чем у Haskell нет проблем, поскольку это все еще список списков с числами, но это как бы не имеет смысла. Но кортеж второго размера (также называемый парой) имеет свой собственный тип, что означает, что в списке не может быть пары пар, а затем тройки (кортеж третьего размера), поэтому давайте используем кортеж вместо списка. Вместо того чтобы заключать векторы в квадратные скобки, мы используем круглые скобки: `[(1,2),(8,11),(4,5)]`. Что, если бы мы попытались создать форму, подобную `[(1,2),(8,11,5),(4,5)]`? Ну, мы бы получили эту ошибку:
 
 ```haskell
 Couldn't match expected type `(t, t1)'
@@ -632,15 +629,15 @@ In the expression: [(1, 2), (8, 11, 5), (4, 5)]
 In the definition of `it': it = [(1, 2), (8, 11, 5), (4, 5)]
 ```
 
-It's telling us that we tried to use a pair and a triple in the same list, which is not supposed to happen. You also couldn't make a list like `[(1,2),("One",2)]` because the first element of the list is a pair of numbers and the second element is a pair consisting of a string and a number. Tuples can also be used to represent a wide variety of data. For instance, if we wanted to represent someone's name and age in Haskell, we could use a triple: `("Christopher", "Walken", 55)`. As seen in this example, tuples can also contain lists.
+Это говорит нам о том, что мы пытались использовать пару и тройку в одном списке, чего не должно было произойти. Вы также не смогли бы составить список типа `[(1,2),("Один",2)]`, потому что первый элемент списка - это пара чисел, а второй элемент - это пара, состоящая из строки и числа. Кортежи также могут использоваться для представления самых разнообразных данных. Например, если бы мы хотели представить чье-то имя и возраст в Haskell, мы могли бы использовать тройку: `("Christopher", "Walken", 55)`. Как видно из этого примера, кортежи также могут содержать списки.
 
-Use tuples when you know in advance how many components some piece of data should have. Tuples are much more rigid because each different size of tuple is its own type, so you can't write a general function to append an element to a tuple — you'd have to write a function for appending to a pair, one function for appending to a triple, one function for appending to a 4-tuple, etc.
+Используйте кортежи, когда вы заранее знаете, сколько компонентов должно быть в том или ином фрагменте данных. Кортежи намного более жесткие, потому что каждый кортеж разного размера имеет свой собственный тип, поэтому вы не можете написать общую функцию для добавления элемента к кортежу — вам пришлось бы написать функцию для добавления к паре, одну функцию для добавления к тройке, одну функцию для добавления к 4-му кортежу и т.д.
 
-While there are singleton lists, there's no such thing as a singleton tuple. It doesn't really make much sense when you think about it. A singleton tuple would just be the value it contains and as such would have no benefit to us.
+Хотя существуют одноэлементные списки, такого понятия, как одноэлементный кортеж, не существует. На самом деле это не имеет особого смысла, когда ты думаешь об этом. Одноэлементный кортеж был бы просто значением, которое он содержит, и как таковой не принес бы нам никакой пользы.
 
-Like lists, tuples can be compared with each other if their components can be compared. Only you can't compare two tuples of different sizes, whereas you can compare two lists of different sizes. Two useful functions that operate on pairs:
+Как и списки, кортежи можно сравнивать друг с другом, если можно сравнить их компоненты. Только вы не можете сравнить два кортежа разных размеров, в то время как вы можете сравнить два списка разных размеров. Две полезные функции, которые работают с парами:
 
-`fst` takes a pair and returns its first component.
+`fst` принимает пару и возвращает ее первый компонент.
 
 ```haskell
 ghci> fst (8,11)
@@ -649,7 +646,7 @@ ghci> fst ("Wow", False)
 "Wow"
 ```
 
-`snd` takes a pair and returns its second component. Surprise!
+`snd` принимает пару и возвращает ее второй компонент. Сюрприз!
 
 ```haskell
 ghci> snd (8,11)
@@ -658,9 +655,9 @@ ghci> snd ("Wow", False)
 False
 ```
 
-> **Note** these functions operate only on pairs. They won't work on triples, 4-tuples, 5-tuples, etc. We'll go over extracting data from tuples in different ways a bit later.
+> **Примечание** эти функции работают только с парами. Они не будут работать с тройками, 4-кортежами, 5-кортежами и т.д. Чуть позже мы рассмотрим извлечение данных из кортежей различными способами.
 
-A cool function that produces a list of pairs: `zip`. It takes two lists and then zips them together into one list by joining the matching elements into pairs. It's a really simple function but it has loads of uses. It's especially useful for when you want to combine two lists in a way or traverse two lists simultaneously. Here's a demonstration.
+Классная функция, которая выдает список пар: `zip`. Он берет два списка, а затем объединяет их в один список, объединяя совпадающие элементы в пары. Это действительно простая функция, но у нее множество применений. Это особенно полезно, когда вы хотите каким-то образом объединить два списка или одновременно просматривать два списка. Вот демонстрация.
 
 ```haskell
 ghci> zip [1,2,3,4,5] [5,5,5,5,5]
@@ -669,14 +666,14 @@ ghci> zip [1 .. 5] ["one", "two", "three", "four", "five"]
 [(1,"one"),(2,"two"),(3,"three"),(4,"four"),(5,"five")]
 ```
 
-It pairs up the elements and produces a new list. The first element goes with the first, the second with the second, etc. Notice that because pairs can have different types in them, `zip` can take two lists that contain different types and zip them up. What happens if the lengths of the lists don't match?
+Он объединяет элементы в пары и создает новый список. Первый элемент сочетается с первым, второй - со вторым и т.д. Обратите внимание, что, поскольку пары могут содержать разные типы, `zip` может взять два списка, содержащих разные типы, и объединить их. Что произойдет, если длины списков не совпадут?
 
 ```haskell
 ghci> zip [5,3,2,6,2,7,2,5,4,6,6] ["im","a","turtle"]
 [(5,"im"),(3,"a"),(2,"turtle")]
 ```
 
-The longer list simply gets cut off to match the length of the shorter one. Because Haskell is lazy, we can zip finite lists with infinite lists:
+Более длинный список просто обрезается, чтобы соответствовать длине более короткого. Поскольку Haskell ленив, мы можем объединять конечные списки с бесконечными списками:
 
 ```haskell
 ghci> zip [1..] ["apple", "orange", "cherry", "mango"]
@@ -685,19 +682,19 @@ ghci> zip [1..] ["apple", "orange", "cherry", "mango"]
 
 ![[LYHfGG_14_pythag.png]]
 
-Here's a problem that combines tuples and list comprehensions: which right triangle that has integers for all sides and all sides equal to or smaller than 10 has a perimeter of 24? First, let's try generating all triangles with sides equal to or smaller than 10:
+Вот задача, которая сочетает в себе понимание кортежей и списков: какой прямоугольный треугольник, который имеет целые числа для всех сторон и все стороны которого равны или меньше 10, имеет периметр 24? Сначала давайте попробуем сгенерировать все треугольники со сторонами, равными или меньшими 10:
 
 ```haskell
 ghci> let triangles = [ (a,b,c) | c <- [1..10], b <- [1..10], a <- [1..10] ] 
 ```
 
-We're just drawing from three lists and our output function is combining them into a triple. If you evaluate that by typing out `triangles` in GHCI, you'll get a list of all possible triangles with sides under or equal to 10. Next, we'll add a condition that they all have to be right triangles. We'll also modify this function by taking into consideration that side b isn't larger than the hypothenuse and that side a isn't larger than side b.
+Мы просто рисуем из трех списков, и наша функция вывода объединяет их в тройку. Если вы оцените это, введя `triangles` в GHCI, вы получите список всех возможных треугольников со сторонами меньше или равными 10. Далее мы добавим условие, что все они должны быть прямоугольными треугольниками. Мы также модифицируем эту функцию, принимая во внимание, что сторона `b` не больше гипотенузы и что сторона `a` не больше стороны `b`.
 
 ```haskell
 ghci> let rightTriangles = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2] 
 ```
 
-We're almost done. Now, we just modify the function by saying that we want the ones where the perimeter is 24.
+Мы почти закончили. Теперь мы просто модифицируем функцию, сказав, что нам нужны те, у которых периметр равен 24.
 
 ```haskell
 ghci> let rightTriangles' = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2, a+b+c == 24]
@@ -705,7 +702,7 @@ ghci> rightTriangles'
 [(6,8,10)]
 ```
 
-And there's our answer! This is a common pattern in functional programming. You take a starting set of solutions and then you apply transformations to those solutions and filter them until you get the right ones.
+И вот наш ответ! Это распространенный шаблон в функциональном программировании. Вы берете начальный набор решений, а затем применяете преобразования к этим решениям и фильтруете их до тех пор, пока не получите правильные.
 
 # Types and Typeclasses
 
@@ -1509,7 +1506,7 @@ maximum' (x:xs)
     where maxTail = maximum' xs
 ```
 
-As you can see, pattern matching goes great with recursion! Most imperative languages don't have pattern matching so you have to make a lot of if else statements to test for edge conditions. Here, we simply put them out as patterns. So the first edge condition says that if the list is empty, crash! Makes sense because what's the maximum of an empty list? I don't know. The second pattern also lays out an edge condition. It says that if it's the singleton list, just give back the only element.
+As you can see, pattern matching goes great with recursion! Most imperative languages don't have pattern matching so you have to make a lot of if else statements to test for edge conditions. Here, we simply put them out as patterns. So the first edge condition says that if the list is empty, crash! Makes sense because what's the maximum of an empty list? Я не знаю. The second pattern also lays out an edge condition. It says that if it's the singleton list, just give back the only element.
 
 Now the third pattern is where the action happens. We use pattern matching to split a list into a head and a tail. This is a very common idiom when doing recursion with lists, so get used to it. We use a _where_ binding to define `maxTail` as the maximum of the rest of the list. Then we check if the head is greater than the maximum of the rest of the list. If it is, we return the head. Otherwise, we return the maximum of the rest of the list.
 
@@ -3667,7 +3664,7 @@ ghci> :t firstName
 firstName :: Person -> String
 ```
 
-There's another benefit to using record syntax. When we derive `Show` for the type, it displays it differently if we use record syntax to define and instantiate the type. Say we have a type that represents a car. We want to keep track of the company that made it, the model name and its year of production. Watch.
+There's another benefit to using record syntax. When we derive `Show` for the type, it displays it differently if we use record syntax to define and instantiate the type. Say we have a type that represents a car. We want to keep track of the company that made it, the model name and its year of production. Посмотри.
 
 ```haskell
 data Car = Car String String Int deriving (Show)
@@ -5310,7 +5307,7 @@ WHAT'S WITH THAT AIRPLANE FOOD, HUH?
 IT'S SO SMALL, TASTELESS
 ```
 
-Cool, it works. What if we just run _capslocker_ and try to type in the lines ourselves?
+Круто, это работает. What if we just run _capslocker_ and try to type in the lines ourselves?
 
 ```haskell
 $ ./capslocker
@@ -6628,7 +6625,7 @@ Just like we did when solving the RPN calculator problem, we're going to solve t
 
 In the RPN calculator section, we first figured out that when calculating an expression by hand, we'd keep a sort of stack in our minds and then go over the expression one item at a time. We decided to use a list of strings to represent our expression. Finally, we used a left fold to walk oevr the list of strings while keeping a stack to produce a solution.
 
-Okay, so how would we figure out the shortest path from Heathrow to London by hand? Well, we can just sort of look at the whole picture and try to guess what the shortest path is and hopefully we'll make a guess that's right. That solution works for very small inputs, but what if we have a road that has 10,000 sections? Фу! We also won't be able to say for certain that our solution is the optimal one, we can just sort of say that we're pretty sure.
+Okay, so how would we figure out the shortest path from Heathrow to London by hand? Well, we can just sort of look at the whole picture and try to guess what the shortest path is and hopefully we'll make a guess that's right. That solution works for very small inputs, but what if we have a road that has 10,000 sections? Черт возьми! We also won't be able to say for certain that our solution is the optimal one, we can just sort of say that we're pretty sure.
 
 That's not a good solution then. Here's a simplified picture of our road system:
 
@@ -7433,7 +7430,7 @@ ghci> fmap (\x -> [x]) (Just 4)
 Just [4]
 ```
 
-OK, so let's say we have `Just 3` and `Just [4]`. How do we get `Just [3,4]`? Easy.
+OK, so let's say we have `Just 3` and `Just [4]`. How do we get `Just [3,4]`? Легко.
 
 ```haskell
 ghci> liftA2 (:) (Just 3) (Just [4])
@@ -7736,7 +7733,7 @@ ghci> helloMe undefined
 "*** Exception: Prelude.undefined
 ```
 
-Фу! An exception! Now why did this exception happen? Types defined with the _data_ keyword can have multiple value constructors (even though `CoolBool` only has one). So in order to see if the value given to our function conforms to the `(CoolBool _)` pattern, Haskell has to evaluate the value just enough to see which value constructor was used when we made the value. And when we try to evaluate an `undefined` value, even a little, an exception is thrown.
+Черт возьми! An exception! Now why did this exception happen? Types defined with the _data_ keyword can have multiple value constructors (even though `CoolBool` only has one). So in order to see if the value given to our function conforms to the `(CoolBool _)` pattern, Haskell has to evaluate the value just enough to see which value constructor was used when we made the value. And when we try to evaluate an `undefined` value, even a little, an exception is thrown.
 
 Instead of using the _data_ keyword for `CoolBool`, let's try using _newtype_:
 
@@ -10566,7 +10563,7 @@ readMaybe st = case reads st of [(x,"")] -> Just x
                                 _ -> Nothing
 ```
 
-Testing it out:
+Проверяю это на практике:
 
 ```haskell
 ghci> readMaybe "1" :: Maybe Int

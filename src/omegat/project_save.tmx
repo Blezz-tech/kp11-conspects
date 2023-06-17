@@ -6,6 +6,38 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="en-US">
+        <seg>![[LYHfGG_10_cowboy.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T083014Z" creationid="jenya" creationdate="20230617T083014Z">
+        <seg>![[LYHfGG_10_cowboy.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>![[LYHfGG_11_kermit.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T091157Z" creationid="jenya" creationdate="20230617T091157Z">
+        <seg>![[LYHfGG_11_kermit.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>![[LYHfGG_13_tuple.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111031Z" creationid="jenya" creationdate="20230617T111031Z">
+        <seg>![[LYHfGG_13_tuple.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>![[LYHfGG_14_pythag.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114234Z" creationid="jenya" creationdate="20230617T114234Z">
+        <seg>![[LYHfGG_14_pythag.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>![[LYHfGG_1_bird.png]]</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230611T220409Z" creationid="jenya" creationdate="20230611T220409Z">
@@ -66,6 +98,14 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074531Z" creationid="jenya" creationdate="20230617T074531Z">
         <seg>![[LYHfGG_8_list.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>![[LYHfGG_9_listmonster.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080615Z" creationid="jenya" creationdate="20230617T080615Z">
+        <seg>![[LYHfGG_9_listmonster.png]]</seg>
       </tuv>
     </tu>
     <tu>
@@ -134,6 +174,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## I'm a list comprehension</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T104008Z" creationid="jenya" creationdate="20230617T091156Z">
+        <seg>## Я - списковое включение (англ. _list comprehension_)^[Альтернативное название, более понятное программистам "генераторы списков". Но использую по [вики](https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5#:~:text=%D0%90%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%20%D0%B8%D0%BB%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5,%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2.)) ]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Ready, set, go!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T092759Z" creationid="jenya" creationdate="20230615T174352Z">
@@ -146,6 +194,22 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T174228Z" creationid="jenya" creationdate="20230615T165018Z">
         <seg>## Итак, что такое Haskell?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Texas ranges</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T083056Z" creationid="jenya" creationdate="20230617T083010Z">
+        <seg>## Техасские диапазоны</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Tuples</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111029Z" creationid="jenya" creationdate="20230617T111029Z">
+        <seg>## Кортежи</seg>
       </tuv>
     </tu>
     <tu>
@@ -170,6 +234,42 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>1]
+[0.1,0.3,0.5,0.7,0.8999999999999999,1.0999999999999999]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090733Z" creationid="jenya" creationdate="20230617T090733Z">
+        <seg>1]
+[0.1,0.3,0.5,0.7,0.8999999999999999,1.0999999999999999]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>2
+[1,2,2,3,4] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075926Z" creationid="jenya" creationdate="20230617T075926Z">
+        <seg>2
+[1,2,2,3,4] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>5] ["one", "two", "three", "four", "five"]
+[(1,"one"),(2,"two"),(3,"three"),(4,"four"),(5,"five")]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112621Z" creationid="jenya" creationdate="20230617T112621Z">
+        <seg>5] ["one", "two", "three", "four", "five"]
+[(1,"one"),(2,"two"),(3,"three"),(4,"four"),(5,"five")]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>6
 'B'
 ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
@@ -178,6 +278,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
         <seg>6
 'B'
 ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&gt; **Note** these functions operate only on pairs.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112448Z" creationid="jenya" creationdate="20230617T112448Z">
+        <seg>&gt; **Примечание** эти функции работают только с парами.</seg>
       </tuv>
     </tu>
     <tu>
@@ -198,10 +306,58 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>A basic comprehension for a set that contains the first ten even natural numbers is $$S = \{2\ \cdot\ x\ |\ x \in \mathbb{N},\ x \leqslant 10\}$$.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103155Z" creationid="jenya" creationdate="20230617T092953Z">
+        <seg>Базовое списковое включение для набора, содержащего первые десять четных натуральных чисел, составляет^[Я не знаю какая запись более правильная для русской традиции записи. Поэтому оставил как в оригинале] $$S = \{2\ \cdot\ x\ |\ x \in \mathbb{N},\ x \leqslant 10\}$$.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>A common task is putting two lists together.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075057Z" creationid="jenya" creationdate="20230617T075057Z">
         <seg>Обычная задача - собрать два списка воедино.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A cool function that produces a list of pairs: `zip`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112531Z" creationid="jenya" creationdate="20230617T112531Z">
+        <seg>Классная функция, которая выдает список пар: `zip`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A handful of functions that produce infinite lists:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090923Z" creationid="jenya" creationdate="20230617T090923Z">
+        <seg>Несколько функций, которые создают бесконечные списки:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A list contains several lists of numbers.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110837Z" creationid="jenya" creationdate="20230617T110837Z">
+        <seg>Список содержит несколько списков чисел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A list of numbers is a list of numbers.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111520Z" creationid="jenya" creationdate="20230617T111520Z">
+        <seg>Список чисел - это список чисел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A list produced by a comprehension that draws from two lists of length 4 will have a length of 16, provided we don't filter them.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105711Z" creationid="jenya" creationdate="20230617T105711Z">
+        <seg>Список, созданный с помощью спискового включения, который основывается на двух списках длиной 4, будет иметь длину 16, при условии, что мы их не фильтруем.</seg>
       </tuv>
     </tu>
     <tu>
@@ -214,10 +370,34 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>A singleton tuple would just be the value it contains and as such would have no benefit to us.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112404Z" creationid="jenya" creationdate="20230617T112404Z">
+        <seg>Одноэлементный кортеж был бы просто значением, которое он содержит, и как таковой не принес бы нам никакой пользы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>A text editor and a Haskell compiler.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173622Z" creationid="jenya" creationdate="20230615T173622Z">
         <seg>Текстовый редактор и компилятор Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Ahahaha!"
+"HA"
+ghci&gt; removeNonUppercase "IdontLIKEFROGS"
+"ILIKEFROGS" 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110529Z" creationid="jenya" creationdate="20230617T110529Z">
+        <seg>Ahahaha!"
+"HA"
+ghci&gt; removeNonUppercase "IdontLIKEFROGS"
+"ILIKEFROGS" 
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -238,10 +418,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Although it's simpler to just use the `replicate` function if you want some number of the same element in a list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T091050Z" creationid="jenya" creationdate="20230617T091050Z">
+        <seg>Хотя проще просто использовать функцию `replicate`, если вам нужно некоторое количество одного и того же элемента в списке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>An expression is basically a piece of code that returns a value.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073553Z" creationid="jenya" creationdate="20230617T073553Z">
         <seg>Выражение - это, по сути, фрагмент кода, который возвращает значение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>And here it sees you just want the first 24 elements and it gladly obliges.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090913Z" creationid="jenya" creationdate="20230617T090913Z">
+        <seg>И вот он видит, что вам нужны только первые 24 элемента, и с радостью соглашается.</seg>
       </tuv>
     </tu>
     <tu>
@@ -254,10 +450,34 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>And secondly because some sequences that aren't arithmetic are ambiguous if given only by a few of their first terms.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090704Z" creationid="jenya" creationdate="20230617T090704Z">
+        <seg>А во-вторых, потому что некоторые последовательности, которые не являются арифметическими, неоднозначны, если заданы только несколькими их первыми членами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>And shorter programs are easier to maintain than longer ones and have less bugs.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173443Z" creationid="jenya" creationdate="20230615T173443Z">
         <seg>А более короткие программы легче поддерживать, чем более длинные, и в них меньше ошибок.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>And there's our answer!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114948Z" creationid="jenya" creationdate="20230617T114948Z">
+        <seg>И вот наш ответ!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Another key difference is that they don't have to be homogenous.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111547Z" creationid="jenya" creationdate="20230617T111547Z">
+        <seg>Еще одно ключевое отличие заключается в том, что они не обязательно должны быть однородными.</seg>
       </tuv>
     </tu>
     <tu>
@@ -270,6 +490,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>As expected, the length of the new list is 9.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105812Z" creationid="jenya" creationdate="20230617T105812Z">
+        <seg>Как и ожидалось, длина нового списка равна 9.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>As expected, you can call your own functions from other functions that you made.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T163025Z" creationid="jenya" creationdate="20230616T163005Z">
@@ -278,10 +506,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>As seen in this example, tuples can also contain lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112126Z" creationid="jenya" creationdate="20230617T112126Z">
+        <seg>Как видно из этого примера, кортежи также могут содержать списки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>As you can see, lists are denoted by square brackets and the values in the lists are separated by commas.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074848Z" creationid="jenya" creationdate="20230617T074848Z">
         <seg>Как вы можете видеть, списки заключены в квадратные скобки, а значения в списках разделены запятыми.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>As you can see, we get the desired results.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102051Z" creationid="jenya" creationdate="20230617T102051Z">
+        <seg>Как вы можете видеть, мы получаем желаемые результаты.</seg>
       </tuv>
     </tu>
     <tu>
@@ -314,6 +558,22 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T170732Z" creationid="jenya" creationdate="20230615T170732Z">
         <seg>На первый взгляд это кажется своего рода ограничением, но на самом деле это имеет некоторые очень приятные последствия: если функция вызывается дважды с одними и теми же параметрами, она гарантированно возвращает один и тот же результат.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Because Haskell is lazy, it won't try to evaluate the infinite list immediately because it would never finish.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090844Z" creationid="jenya" creationdate="20230617T090844Z">
+        <seg>Поскольку Haskell ленив, он не будет пытаться оценить бесконечный список немедленно, потому что он никогда не завершится.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Because Haskell is lazy, we can zip finite lists with infinite lists:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114125Z" creationid="jenya" creationdate="20230617T114125Z">
+        <seg>Поскольку Haskell ленив, мы можем объединять конечные списки с бесконечными списками:</seg>
       </tuv>
     </tu>
     <tu>
@@ -358,6 +618,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Because they are not completely precise (by definition), their use in ranges can yield some pretty funky results.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090730Z" creationid="jenya" creationdate="20230617T090730Z">
+        <seg>Поскольку они не являются полностью точными (по определению), их использование в диапазонах может привести к довольно странным результатам.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Because we can't change what names (and functions) mean once we've defined them, `conanO'Brien` and the string `"It's a-me, Conan O'Brien!"` can be used interchangeably.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074452Z" creationid="jenya" creationdate="20230617T074401Z">
@@ -370,6 +638,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095745Z" creationid="jenya" creationdate="20230616T095745Z">
         <seg>Булева алгебра также довольно проста.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>But a tuple of size two (also called a pair) is its own type, which means that a list can't have a couple of pairs in it and then a triple (a tuple of size three), so let's use that instead.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111727Z" creationid="jenya" creationdate="20230617T111727Z">
+        <seg>Но кортеж второго размера (также называемый парой) имеет свой собственный тип, что означает, что в списке не может быть пары пар, а затем тройки (кортеж третьего размера), поэтому давайте используем кортеж вместо списка.</seg>
       </tuv>
     </tu>
     <tu>
@@ -414,6 +690,30 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>But there's a better way: `take 24 [13,26..]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090827Z" creationid="jenya" creationdate="20230617T090827Z">
+        <seg>Но есть способ получше: `возьми 24 [13,26..]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>But what happens if we try to get the head of an empty list?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080705Z" creationid="jenya" creationdate="20230617T080705Z">
+        <seg>Но что произойдет, если мы попытаемся получить начало пустого списка?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>But what if we didn't want doubles of the first 10 natural numbers but some kind of more complex function applied on them?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T100157Z" creationid="jenya" creationdate="20230617T100157Z">
+        <seg>Но что, если бы мы хотели получить не удвоения первых 10 натуральных чисел, а какую-то более сложную функцию, примененную к ним?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>But when defining functions, there's a `=` and after that we define what the function does.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T134836Z" creationid="jenya" creationdate="20230616T134836Z">
@@ -446,10 +746,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Characters can also be enumerated.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T084630Z" creationid="jenya" creationdate="20230617T084630Z">
+        <seg>Символы также могут быть пронумерованы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Congratulations, you're in GHCI!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T093614Z" creationid="jenya" creationdate="20230616T093144Z">
         <seg>Поздравляю, вы находитесь в GHCI!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Cool, it works.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102339Z" creationid="jenya" creationdate="20230617T102339Z">
+        <seg>Круто, это работает.</seg>
       </tuv>
     </tu>
     <tu>
@@ -478,6 +794,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Easy.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102709Z" creationid="jenya" creationdate="20230617T102709Z">
+        <seg>Легко.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Even if it wasn't `"llama"` but `"four"` or `"4"`, Haskell still wouldn't consider it to be a number.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100127Z" creationid="jenya" creationdate="20230616T100127Z">
@@ -494,10 +818,42 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>First the heads are compared.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080426Z" creationid="jenya" creationdate="20230617T080426Z">
+        <seg>Сначала сравниваются головы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>First, let's try generating all triangles with sides equal to or smaller than 10:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114314Z" creationid="jenya" creationdate="20230617T114259Z">
+        <seg>Сначала давайте попробуем сгенерировать все треугольники со сторонами, равными или меньшими 10:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Firstly because you can only specify one step.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090653Z" creationid="jenya" creationdate="20230617T090653Z">
+        <seg>Во-первых, потому, что вы можете указать только один шаг.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>For a start, we'll try calling one of the most boring functions in Haskell.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T101829Z" creationid="jenya" creationdate="20230616T101829Z">
         <seg>Для начала мы попробуем вызвать одну из самых скучных функций в Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>For convenience, we'll put that comprehension inside a function so we can easily reuse it.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103801Z" creationid="jenya" creationdate="20230617T103801Z">
+        <seg>Для удобства мы поместим это списковое включение внутрь функции, чтобы мы могли легко использовать его повторно.</seg>
       </tuv>
     </tu>
     <tu>
@@ -514,6 +870,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100756Z" creationid="jenya" creationdate="20230616T100756Z">
         <seg>Например, `*` - это функция, которая принимает два числа и умножает их.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>For instance, if we wanted to represent someone's name and age in Haskell, we could use a triple: `("Christopher", "Walken", 55)`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112107Z" creationid="jenya" creationdate="20230617T112107Z">
+        <seg>Например, если бы мы хотели представить чье-то имя и возраст в Haskell, мы могли бы использовать тройку: `("Christopher", "Walken", 55)`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -538,6 +902,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173903Z" creationid="jenya" creationdate="20230615T173903Z">
         <seg>Для обучения это намного проще и быстрее, чем компилировать каждый раз, когда вы вносите изменения, а затем запускать программу из командной строки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>For now, let's examine how you would get the first 24 multiples of 13.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090809Z" creationid="jenya" creationdate="20230617T090809Z">
+        <seg>А пока давайте рассмотрим, как бы вы получили первые 24 числа, кратные 13.</seg>
       </tuv>
     </tu>
     <tu>
@@ -646,10 +1018,66 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Here are some basic functions that operate on lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080528Z" creationid="jenya" creationdate="20230617T080528Z">
+        <seg>Вот некоторые основные функции, которые работают со списками.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Here's a demonstration.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112618Z" creationid="jenya" creationdate="20230617T112618Z">
+        <seg>Вот демонстрация.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Here's a function that takes a string and removes everything except uppercase letters from it.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110503Z" creationid="jenya" creationdate="20230617T110503Z">
+        <seg>Вот функция, которая принимает строку и удаляет из нее все, кроме прописных букв.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Here's a problem that combines tuples and list comprehensions: which right triangle that has integers for all sides and all sides equal to or smaller than 10 has a perimeter of 24?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114254Z" creationid="jenya" creationdate="20230617T114233Z">
+        <seg>Вот задача, которая сочетает в себе понимание кортежей и списков: какой прямоугольный треугольник, который имеет целые числа для всех сторон и все стороны которого равны или меньше 10, имеет периметр 24?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Here's some simple arithmetic.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095102Z" creationid="jenya" creationdate="20230616T095028Z">
         <seg>Вот несколько простых арифметических действий.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Here's that comprehension in action.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T104956Z" creationid="jenya" creationdate="20230617T100416Z">
+        <seg>Вот списковое включение в действии.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>How about a list comprehension that combines a list of adjectives and a list of nouns … for epic hilarity.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105929Z" creationid="jenya" creationdate="20230617T105906Z">
+        <seg>Как насчет спискового включения, которое сочетает в себе список прилагательных и список существительных ... для эпического веселья.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>How about if we wanted all numbers from 50 to 100 whose remainder when divided with the number 7 is 3?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102705Z" creationid="jenya" creationdate="20230617T102705Z">
+        <seg>Как насчет того, если бы мы хотели получить все числа от 50 до 100, остаток от которых при делении на число 7 равен 3?</seg>
       </tuv>
     </tu>
     <tu>
@@ -670,10 +1098,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>However, there are a few fundamental differences.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111516Z" creationid="jenya" creationdate="20230617T111516Z">
+        <seg>Однако есть несколько фундаментальных отличий.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>I decided to write this because I wanted to solidify my own knowledge of Haskell and because I thought I could help people new to Haskell learn it from my perspective.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230611T225720Z" creationid="jenya" creationdate="20230611T225608Z">
         <seg>Я решил написать это, потому что хотел укрепить свои собственные знания о Haskell и потому что думал, что смогу помочь людям, новичкам в Haskell, изучить его с моей точки зрения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>I don't know.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090532Z" creationid="jenya" creationdate="20230617T090532Z">
+        <seg>Я не знаю.</seg>
       </tuv>
     </tu>
     <tu>
@@ -694,6 +1138,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>I know!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110042Z" creationid="jenya" creationdate="20230617T110042Z">
+        <seg>Я знаю!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If a function takes two parameters, we can also call it as an infix function by surrounding it with backticks.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T113652Z" creationid="jenya" creationdate="20230616T113545Z">
@@ -706,6 +1158,46 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173156Z" creationid="jenya" creationdate="20230615T173156Z">
         <seg>Если созданная вами функция принимает два параметра и складывает их вместе, и вы явно не указываете их тип, функция будет работать с любыми двумя параметрами, которые действуют как числа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If a number isn't odd, we throw it out of our list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103733Z" creationid="jenya" creationdate="20230617T103632Z">
+        <seg>Если число не нечетное, мы исключаем его из нашего списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If it is, it returns `True`, otherwise it returns `False`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080805Z" creationid="jenya" creationdate="20230617T080805Z">
+        <seg>Если это так, то он возвращает `True`, в противном случае он возвращает `False`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If there's no monster, it doesn't have a head.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080729Z" creationid="jenya" creationdate="20230617T080729Z">
+        <seg>Если монстра нет, то у него нет головы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If they are equal then the second elements are compared, etc.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080433Z" creationid="jenya" creationdate="20230617T080433Z">
+        <seg>Если они равны, то сравниваются вторые элементы и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If we have two lists, `[2,5,10]` and `[8,10,11]` and we want to get the products of all the possible combinations between numbers in those lists, here's what we'd do.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105719Z" creationid="jenya" creationdate="20230617T105719Z">
+        <seg>Если у нас есть два списка, `[2,5,10]` и `[8,10,11]`, и мы хотим получить произведения всех возможных комбинаций чисел в этих списках, вот что мы бы сделали.</seg>
       </tuv>
     </tu>
     <tu>
@@ -726,6 +1218,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If we think of a list as a monster, here's what's what.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080614Z" creationid="jenya" creationdate="20230617T080614Z">
+        <seg>Если мы думаем о списке как о монстре, то вот что есть что.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If we tried a list like `[1,2,'a',3,'b','c',4]`, Haskell would complain that characters (which are, by the way, denoted as a character between single quotes) are not numbers.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074857Z" creationid="jenya" creationdate="20230617T074857Z">
@@ -742,10 +1242,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If we try to take 0 elements, we get an empty list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T081009Z" creationid="jenya" creationdate="20230617T081009Z">
+        <seg>Если мы попытаемся взять 0 элементов, то получим пустой список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If we want to have a negative number, it's always best to surround it with parentheses.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095722Z" creationid="jenya" creationdate="20230616T095722Z">
         <seg>Если мы хотим получить отрицательное число, всегда лучше заключить его в круглые скобки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If we wanted all numbers from 10 to 20 that are not 13, 15 or 19, we'd do:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105225Z" creationid="jenya" creationdate="20230617T105225Z">
+        <seg>Если бы нам нужны были все числа от 10 до 20, которые не равны 13, 15 или 19, мы бы сделали:</seg>
       </tuv>
     </tu>
     <tu>
@@ -766,6 +1282,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If we wanted to write that in Haskell, we could do something like `take 10 [2,4..]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T094804Z" creationid="jenya" creationdate="20230617T094804Z">
+        <seg>Если бы мы хотели написать это на Haskell, мы могли бы сделать что-то вроде `take 10 [2,4..]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If you change the .hs script, just run `:l myfunctions` again or do `:r`, which is equivalent because it reloads the current script.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T174028Z" creationid="jenya" creationdate="20230615T174028Z">
@@ -774,10 +1298,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If you evaluate that by typing out `triangles` in GHCI, you'll get a list of all possible triangles with sides under or equal to 10.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114822Z" creationid="jenya" creationdate="20230617T114822Z">
+        <seg>Если вы оцените это, введя `triangles` в GHCI, вы получите список всех возможных треугольников со сторонами меньше или равными 10.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If you have defined some functions in a file called, say, `myfunctions.hs`, you load up those functions by typing in `:l myfunctions` and then you can play with them, provided `myfunctions.hs` is in the same folder from which `ghci` was invoked.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173955Z" creationid="jenya" creationdate="20230615T173955Z">
         <seg>Если вы определили какие-то функции в файле с именем, скажем, `myfunctions.hs`, вы загружаете эти функции, введя `:l myfunctions`, а затем можете поиграть с ними, при условии, что `myfunctions.hs` находится в той же папке, из которой был вызван `ghci`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If you just try to display the result, it will go on forever so you have to slice it off somewhere.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090941Z" creationid="jenya" creationdate="20230617T090941Z">
+        <seg>Если вы просто попытаетесь отобразить результат, он будет продолжаться вечно, так что вам придется где-то его отрезать.</seg>
       </tuv>
     </tu>
     <tu>
@@ -834,6 +1374,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T092926Z" creationid="jenya" creationdate="20230616T092926Z">
         <seg>Если вы из тех ужасных людей, которые не читают введения к книгам, и вы пропустили его, возможно, вы все равно захотите прочитать последний раздел введения, потому что в нем объясняется, что вам нужно для выполнения этого руководства и как мы собираемся загружать функции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If you've ever taken a course in mathematics, you've probably run into _set comprehensions_.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T092930Z" creationid="jenya" creationdate="20230617T091908Z">
+        <seg>Если вы когда-либо проходили курс математики, вы, вероятно, сталкивались с _множествами с заданными характеристическими свойствами_^[В оригинале был термин "set comprehensions". Ссылка откуда взял: [What is Russian translation for "set comprehension"](https://russian.stackexchange.com/questions/1530/what-is-russian-translation-for-set-comprehension). И я посчитал, что второй ответ более подходящий].</seg>
       </tuv>
     </tu>
     <tu>
@@ -902,10 +1450,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>In other words, it chops off a list's head.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080552Z" creationid="jenya" creationdate="20230617T080552Z">
+        <seg>Другими словами, это отрубает голову списку.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>In purely functional programming you don't tell the computer what to do as such but rather you tell it what stuff _is_.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T170029Z" creationid="jenya" creationdate="20230615T165155Z">
         <seg>В чисто функциональном программировании вы не указываете компьютеру, что делать как таковое, а скорее сообщаете ему, чем этот материал _является_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>In some ways, tuples are like lists — they are a way to store several values into a single value.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111513Z" creationid="jenya" creationdate="20230617T111046Z">
+        <seg>В некотором смысле кортежи подобны спискам — это способ хранения нескольких значений в одном значении.</seg>
       </tuv>
     </tu>
     <tu>
@@ -926,6 +1490,22 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Instead of surrounding the vectors with square brackets, we use parentheses: `[(1,2),(8,11),(4,5)]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111847Z" creationid="jenya" creationdate="20230617T111833Z">
+        <seg>Вместо того чтобы заключать векторы в квадратные скобки, мы используем круглые скобки: `[(1,2),(8,11),(4,5)]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Instead, we'll use ranges.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T084554Z" creationid="jenya" creationdate="20230617T084554Z">
+        <seg>Вместо этого мы будем использовать диапазоны.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Interactively.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173829Z" creationid="jenya" creationdate="20230615T173829Z">
@@ -934,10 +1514,34 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>It all blows up in our face!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080721Z" creationid="jenya" creationdate="20230617T080721Z">
+        <seg>Все это взрывается нам в лицо!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>It also allows cool things such as infinite data structures.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T171704Z" creationid="jenya" creationdate="20230615T171704Z">
         <seg>Это также позволяет создавать интересные вещи, такие как бесконечные структуры данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It doesn't really make much sense when you think about it.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112351Z" creationid="jenya" creationdate="20230617T112351Z">
+        <seg>На самом деле это не имеет особого смысла, когда ты думаешь об этом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It extracts that many elements from the beginning of the list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080947Z" creationid="jenya" creationdate="20230617T080854Z">
+        <seg>Он извлекает некоторое количество элементов из начала списка.</seg>
       </tuv>
     </tu>
     <tu>
@@ -958,10 +1562,50 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>It pairs up the elements and produces a new list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112624Z" creationid="jenya" creationdate="20230617T112624Z">
+        <seg>Он объединяет элементы в пары и создает новый список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It says that the character will be included in the new list only if it's an element of the list `['A'..'Z']`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110727Z" creationid="jenya" creationdate="20230617T110727Z">
+        <seg>В нем говорится, что символ будет включен в новый список, только если он является элементом списка `['A'..'Z']`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>It stores several elements of the same type.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074628Z" creationid="jenya" creationdate="20230617T074628Z">
         <seg>В нем хранится несколько элементов одного и того же типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It takes two lists and then zips them together into one list by joining the matching elements into pairs.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112545Z" creationid="jenya" creationdate="20230617T112545Z">
+        <seg>Он берет два списка, а затем объединяет их в один список, объединяя совпадающие элементы в пары.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It'll wait to see what you want to get out of that infinite lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090850Z" creationid="jenya" creationdate="20230617T090850Z">
+        <seg>Это подождет, чтобы увидеть, что вы хотите получить из этих бесконечных списков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It's a really simple function but it has loads of uses.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112607Z" creationid="jenya" creationdate="20230617T112607Z">
+        <seg>Это действительно простая функция, но у нее множество применений.</seg>
       </tuv>
     </tu>
     <tu>
@@ -974,10 +1618,74 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>It's especially useful for when you want to combine two lists in a way or traverse two lists simultaneously.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112614Z" creationid="jenya" creationdate="20230617T112614Z">
+        <seg>Это особенно полезно, когда вы хотите каким-то образом объединить два списка или одновременно просматривать два списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It's like cycling a list with only one element.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T091019Z" creationid="jenya" creationdate="20230617T091019Z">
+        <seg>Это все равно что перебирать список, содержащий только один элемент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It's simply a matter of separating the first two elements with a comma and then specifying what the upper limit is.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090632Z" creationid="jenya" creationdate="20230617T090632Z">
+        <seg>Это просто вопрос разделения первых двух элементов запятой, а затем указания верхнего предела.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It's telling us that we tried to use a pair and a triple in the same list, which is not supposed to happen.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111957Z" creationid="jenya" creationdate="20230617T111957Z">
+        <seg>Это говорит нам о том, что мы пытались использовать пару и тройку в одном списке, чего не должно было произойти.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>It's the most used data structure and it can be used in a multitude of different ways to model and solve a whole bunch of problems.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074551Z" creationid="jenya" creationdate="20230617T074551Z">
         <seg>Это наиболее используемая структура данных, и ее можно использовать множеством различных способов для моделирования и решения целого ряда проблем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It's usually called as an infix function because it's easier to read that way.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082935Z" creationid="jenya" creationdate="20230617T082935Z">
+        <seg>Обычно она вызывается как инфиксная функция, потому что так ее легче читать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Just a friendly reminder: because strings are lists, we can use list comprehensions to process and produce strings.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110440Z" creationid="jenya" creationdate="20230617T110440Z">
+        <seg>Просто дружеское напоминание: поскольку строки являются списками, мы можем использовать списковое включение для обработки и создания строк.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Just like you can't have a list that has some characters and some numbers, you can't have a list that has some lists of characters and some lists of numbers.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080324Z" creationid="jenya" creationdate="20230617T080122Z">
+        <seg>Точно так же, как у вас не может быть списка, содержащего некоторые символы и некоторые цифры, у вас не может быть списка, содержащего некоторые списки символов и некоторые списки чисел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Later we'll go into more detail on infinite lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090801Z" creationid="jenya" creationdate="20230617T090801Z">
+        <seg>Позже мы более подробно остановимся на бесконечных списках.</seg>
       </tuv>
     </tu>
     <tu>
@@ -998,6 +1706,30 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Let's remove all odd numbers without flattening the list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110853Z" creationid="jenya" creationdate="20230617T110853Z">
+        <seg>Давайте удалим все нечетные числа, не выравнивая список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Let's say we want a comprehension that replaces each odd number greater than 10 with `"BANG!"` and each odd number that's less than 10 with `"BOOM!"`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103602Z" creationid="jenya" creationdate="20230617T102817Z">
+        <seg>Допустим, нам нужно списковое включение, которое заменяет каждое нечетное число, большее 10, на `"BANG!"`, а каждое нечетное число, меньшее 10, на `"BOOM!"`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Let's say we want only the elements which, doubled, are greater than or equal to 12.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102134Z" creationid="jenya" creationdate="20230617T102134Z">
+        <seg>Допустим, нам нужны только те элементы, которые в удвоенном виде больше или равны 12.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Let's take a look at them.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100951Z" creationid="jenya" creationdate="20230616T100942Z">
@@ -1006,10 +1738,34 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Let's write our own version of `length`!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110200Z" creationid="jenya" creationdate="20230617T110200Z">
+        <seg>Давайте напишем нашу собственную версию `длины`!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Like lists, tuples can be compared with each other if their components can be compared.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112411Z" creationid="jenya" creationdate="20230617T112411Z">
+        <seg>Как и списки, кортежи можно сравнивать друг с другом, если можно сравнить их компоненты.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Like we said, spaces are used for function application in Haskell.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T125612Z" creationid="jenya" creationdate="20230616T125612Z">
         <seg>Как мы уже говорили, пробелы используются для применения функций в Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>List comprehensions are very similar to set comprehensions.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103443Z" creationid="jenya" creationdate="20230617T100208Z">
+        <seg>Списковое включение очень похоже на понимание набора.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1026,6 +1782,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075644Z" creationid="jenya" creationdate="20230617T075644Z">
         <seg>Списки также могут содержать списки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Lists can be compared if the stuff they contain can be compared.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080414Z" creationid="jenya" creationdate="20230617T080414Z">
+        <seg>Списки можно сравнивать, если можно сравнить содержащийся в них материал.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1062,6 +1826,46 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>My advice is not to use them in list ranges.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090743Z" creationid="jenya" creationdate="20230617T090743Z">
+        <seg>Мой совет - не использовать их в диапазонах списков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Nested list comprehensions are also possible if you're operating on lists that contain lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110819Z" creationid="jenya" creationdate="20230617T110809Z">
+        <seg>Вложенное списковое включение также возможно, если вы работаете со списками, которые содержат списки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Next, we'll add a condition that they all have to be right triangles.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114833Z" creationid="jenya" creationdate="20230617T114833Z">
+        <seg>Далее мы добавим условие, что все они должны быть прямоугольными треугольниками.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Not only can we have multiple predicates in list comprehensions (an element must satisfy all the predicates to be included in the resulting list), we can also draw from several lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105516Z" creationid="jenya" creationdate="20230617T105303Z">
+        <seg>Мы не только можем иметь несколько предикатов в списковом включении (элемент должен удовлетворять всем предикатам, которые будут включены в результирующий список), мы также можем извлекать данные из нескольких списков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Note that weeding out lists by predicates is also called **filtering**.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102748Z" creationid="jenya" creationdate="20230617T102712Z">
+        <seg>Обратите внимание, что отсеивание списков по предикатам также называется **фильтрацией** (англ. filtering).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Note the `'` at the end of the function name.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073813Z" creationid="jenya" creationdate="20230617T073813Z">
@@ -1084,6 +1888,30 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075313Z" creationid="jenya" creationdate="20230617T075313Z">
         <seg>Обратите внимание, как `:` принимает число и список чисел или символ и список символов, тогда как `++` принимает два списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Notice that because pairs can have different types in them, `zip` can take two lists that contain different types and zip them up.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114226Z" creationid="jenya" creationdate="20230617T112812Z">
+        <seg>Обратите внимание, что, поскольку пары могут содержать разные типы, `zip` может взять два списка, содержащих разные типы, и объединить их.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Now for another example.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102808Z" creationid="jenya" creationdate="20230617T102808Z">
+        <seg>Теперь перейдем к другому примеру.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Now let's add a condition (or a predicate) to that comprehension.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103537Z" creationid="jenya" creationdate="20230617T102056Z">
+        <seg>Теперь давайте добавим условие (или предикат) к этому списковому включению.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1120,10 +1948,58 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Now, we just modify the function by saying that we want the ones where the perimeter is 24.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114926Z" creationid="jenya" creationdate="20230617T114926Z">
+        <seg>Теперь мы просто модифицируем функцию, сказав, что нам нужны те, у которых периметр равен 24.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Numbers can be enumerated.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T084615Z" creationid="jenya" creationdate="20230617T084615Z">
+        <seg>Числа можно перечислять.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Oh my!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080710Z" creationid="jenya" creationdate="20230617T080710Z">
+        <seg>О боже!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Once inside GHCI, do `:l baby`.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T161047Z" creationid="jenya" creationdate="20230616T161047Z">
         <seg>Оказавшись внутри GHCI, выполните `:l baby`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>One way would be to use a list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111608Z" creationid="jenya" creationdate="20230617T111608Z">
+        <seg>Одним из способов было бы использовать список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>One, two, three, four, etc.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T084627Z" creationid="jenya" creationdate="20230617T084627Z">
+        <seg>Один, два, три, четыре и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Only you can't compare two tuples of different sizes, whereas you can compare two lists of different sizes.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112420Z" creationid="jenya" creationdate="20230617T112420Z">
+        <seg>Только вы не можете сравнить два кортежа разных размеров, в то время как вы можете сравнить два списка разных размеров.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1144,10 +2020,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Or every third number between 1 and 20?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090623Z" creationid="jenya" creationdate="20230617T090623Z">
+        <seg>Или каждое третье число от 1 до 20?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>People there are extremely nice, patient and understanding to newbies.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T164415Z" creationid="jenya" creationdate="20230615T164415Z">
         <seg>Люди там чрезвычайно милы, терпеливы и с пониманием относятся к новичкам.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Predicates go after the binding parts and are separated from them by a comma.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102127Z" creationid="jenya" creationdate="20230617T102127Z">
+        <seg>Предикаты идут после связующих частей и отделяются от них запятой.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1166,6 +2058,22 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095344Z" creationid="jenya" creationdate="20230616T095344Z">
         <seg>Довольно круто, да?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Ranges are a way of making lists that are arithmetic sequences of elements that can be enumerated.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T084610Z" creationid="jenya" creationdate="20230617T084610Z">
+        <seg>Диапазоны - это способ создания списков, представляющих собой арифметические последовательности элементов, которые можно перечислять.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Ranges are cool because you can also specify a step.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090617Z" creationid="jenya" creationdate="20230617T090617Z">
+        <seg>Диапазоны хороши тем, что вы также можете указать шаг.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1202,6 +2110,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>See how if we try to take more elements than there are in the list, it just returns the list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080959Z" creationid="jenya" creationdate="20230617T080959Z">
+        <seg>Посмотрите, как если мы попытаемся взять больше элементов, чем есть в списке, это просто вернет список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Simple.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T162729Z" creationid="jenya" creationdate="20230616T162729Z">
@@ -1222,6 +2138,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T130601Z" creationid="jenya" creationdate="20230616T130601Z">
         <seg>Поэтому, если вы видите что-то вроде `bar (bar 3)`, это не означает, что `bar` вызывается с `bar` и `3` в качестве параметров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>So if you're not in GHCI, it's better to split longer list comprehensions across multiple lines, especially if they're nested.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111004Z" creationid="jenya" creationdate="20230617T111004Z">
+        <seg>Поэтому, если вы не используете GHCI, лучше разделить более длинные списковые включения на несколько строк, особенно если они вложены.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1266,10 +2190,50 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>So what if we wanted to put a couple of vectors in a list to represent points of a shape on a two-dimensional plane?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111621Z" creationid="jenya" creationdate="20230617T111621Z">
+        <seg>Итак, что, если бы мы захотели поместить пару векторов в список для представления точек фигуры на двумерной плоскости?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Speaking of characters, strings are just lists of characters.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075022Z" creationid="jenya" creationdate="20230617T075022Z">
         <seg>Говоря о символах, строки - это просто списки символов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Success!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102715Z" creationid="jenya" creationdate="20230617T102711Z">
+        <seg>Успех!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Sure, we could just type them all out but obviously that's not a solution for gentlemen who demand excellence from their programming languages.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T084550Z" creationid="jenya" creationdate="20230617T084550Z">
+        <seg>Конечно, мы могли бы просто напечатать их все, но, очевидно, это не решение для джентльменов, которые требуют совершенства от своих языков программирования.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Sure, you could do `[13,26..24*13]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090820Z" creationid="jenya" creationdate="20230617T090820Z">
+        <seg>Конечно, вы могли бы сделать `[13,26..24*13]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Surprise!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112442Z" creationid="jenya" creationdate="20230617T112442Z">
+        <seg>Сюрприз!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1290,6 +2254,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Testing it out:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110509Z" creationid="jenya" creationdate="20230617T110509Z">
+        <seg>Проверяю это на практике:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>That apostrophe doesn't have any special meaning in Haskell's syntax.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073827Z" creationid="jenya" creationdate="20230617T073827Z">
@@ -1306,10 +2278,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>That is the equivalent of writing `[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]` and there's no difference between writing one or the other except that writing out long enumeration sequences manually is stupid.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090611Z" creationid="jenya" creationdate="20230617T090611Z">
+        <seg>Это эквивалентно написанию `[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]`, и нет никакой разницы между написанием одного или другого, за исключением того, что записывать длинные последовательности перечисления вручную глупо.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>That means that a lot of possible errors are caught at compile time.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T172853Z" creationid="jenya" creationdate="20230615T172853Z">
         <seg>Это означает, что во время компиляции обнаруживается множество возможных ошибок.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>That means that the set contains the doubles of all natural numbers that satisfy the predicate.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T094635Z" creationid="jenya" creationdate="20230617T094635Z">
+        <seg>Это означает, что множество содержит удвоения всех натуральных чисел, которые удовлетворяют предикату.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1346,6 +2334,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>That would kind of work.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111612Z" creationid="jenya" creationdate="20230617T111612Z">
+        <seg>Это вроде как сработало бы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>That's because functions can't begin with uppercase letters.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074111Z" creationid="jenya" creationdate="20230617T074111Z">
@@ -1358,6 +2354,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T170846Z" creationid="jenya" creationdate="20230615T170846Z">
         <seg>Это называется прозрачностью ссылок, и она не только позволяет компилятору рассуждать о поведении программы, но и позволяет вам легко вывести (и даже доказать), что функция верна, а затем создавать более сложные функции путем склеивания простых функций вместе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>That's its type and it doesn't matter if it has only one number in it or an infinite amount of numbers.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111526Z" creationid="jenya" creationdate="20230617T111526Z">
+        <seg>Это его тип, и не имеет значения, содержит ли он только одно число или бесконечное количество чисел.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1377,6 +2381,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
 Форма: Число + 1 = Преемник &lt;br&gt;
 Функция приемника (successor function) - это функция, которая отправляет натуральное число следующему. &lt;br&gt;
 Формула: f(x) = x + 1]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The alphabet is an enumeration of characters from A to Z. Names can't be enumerated.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090508Z" creationid="jenya" creationdate="20230617T084642Z">
+        <seg>Алфавит - это перечисление символов от `A` до `Z`^[Стандарт вышел 10 лет назад и он сохраняет обратную совместимость. Поэтому, чтобы использовать unicode, нужно провести небольшие манипуляции. Об этом можно поискать в интернете. "ghci how add utf 8"]. Имена не могут быть пронумерованы.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1405,10 +2417,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The element is included in the list only if all the predicates evaluate to `True`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103941Z" creationid="jenya" creationdate="20230617T103941Z">
+        <seg>Элемент включается в список только в том случае, если все предикаты оцениваются как `True`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The factorial of a number is the product of all the numbers from 1 to that number, the sum of a list of numbers is the first number plus the sum of all the other numbers, and so on.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T170232Z" creationid="jenya" creationdate="20230615T165159Z">
         <seg>Факториал числа - это произведение всех чисел от 1 до этого числа, сумма списка чисел - это первое число плюс сумма всех остальных чисел и так далее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The first element goes with the first, the second with the second, etc.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112723Z" creationid="jenya" creationdate="20230617T112723Z">
+        <seg>Первый элемент сочетается с первым, второй - со вторым и т.д.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1445,6 +2473,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The function `odd` returns `True` on an odd number and `False` on an even one.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103846Z" creationid="jenya" creationdate="20230617T103846Z">
+        <seg>Функция `odd` возвращает `True` для нечетного числа и `False` для четного.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The function name is followed by parameters seperated by spaces.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T134625Z" creationid="jenya" creationdate="20230616T134625Z">
@@ -1457,6 +2493,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T105333Z" creationid="jenya" creationdate="20230616T105333Z">
         <seg>Функции `min` и `max` используют две вещи, которые можно упорядочить (например, числа!).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The head of a list is basically its first element.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080541Z" creationid="jenya" creationdate="20230617T080541Z">
+        <seg>Заголовок списка - это, по сути, его первый элемент.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1477,10 +2521,66 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The last part of the comprehension is the predicate.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103831Z" creationid="jenya" creationdate="20230617T103818Z">
+        <seg>Последняя часть спискового включения - это предикат.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The list comprehension we could use is `[x*2 | x &lt;- [1..10]]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103457Z" creationid="jenya" creationdate="20230617T100351Z">
+        <seg>Списковое включение, которое мы могли бы использовать, - это `[x * 2 | x &lt;- [1..10]]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The lists within a list can be of different lengths but they can't be of different types.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080106Z" creationid="jenya" creationdate="20230617T080106Z">
+        <seg>Списки внутри списка могут быть разной длины, но они не могут быть разных типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The longer list simply gets cut off to match the length of the shorter one.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T113623Z" creationid="jenya" creationdate="20230617T113623Z">
+        <seg>Более длинный список просто обрезается, чтобы соответствовать длине более короткого.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The only thing a function can do is calculate something and return it as a result.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T170608Z" creationid="jenya" creationdate="20230615T170608Z">
         <seg>Единственное, что может сделать функция, - это вычислить что-то и вернуть это в результате.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The part before the pipe is called the output function, `x` is the variable, `N` is the input set and `x &lt;= 10` is the predicate.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T094739Z" creationid="jenya" creationdate="20230617T094547Z">
+        <seg>Часть перед вертикальной чертой называется выходной функцией, `x` - это переменная, `N` - это входной набор, а `x &lt;= 10` - это предикат^[Предикат - если просто, то это условие].</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The predicate here does all the work.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110547Z" creationid="jenya" creationdate="20230617T110547Z">
+        <seg>Предикат здесь выполняет всю работу.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The problem with that method is that we could also do stuff like `[[1,2],[8,11,5],[4,5]]`, which Haskell has no problem with since it's still a list of lists with numbers but it kind of doesn't make sense.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111647Z" creationid="jenya" creationdate="20230617T111647Z">
+        <seg>Проблема с этим методом заключается в том, что мы также могли бы делать такие вещи, как `[[1,2],[8,11,5],[4,5]]`, с чем у Haskell нет проблем, поскольку это все еще список списков с числами, но это как бы не имеет смысла.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1557,10 +2657,66 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>They are denoted with parentheses and their components are separated by commas.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111541Z" creationid="jenya" creationdate="20230617T111541Z">
+        <seg>Они обозначаются круглыми скобками, а их компоненты разделяются запятыми.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>They can also contain lists that contain lists that contain lists …</seg>
       </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075707Z" creationid="jenya" creationdate="20230617T075707Z">
-        <seg>Они также могут содержать списки, которые содержат списки, которые содержат списки ...¦</seg>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080116Z" creationid="jenya" creationdate="20230617T075707Z">
+        <seg>Они также могут содержать списки, которые содержат списки, которые содержат списки ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>They won't work on triples, 4-tuples, 5-tuples, etc.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112502Z" creationid="jenya" creationdate="20230617T112459Z">
+        <seg>Они не будут работать с тройками, 4-кортежами, 5-кортежами и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>They're normally used for building more specific sets out of general sets.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T092944Z" creationid="jenya" creationdate="20230617T092944Z">
+        <seg>Обычно они используются для построения более специфичных наборов из общих наборов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Think about how we'd represent a two-dimensional vector in Haskell.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111600Z" creationid="jenya" creationdate="20230617T111600Z">
+        <seg>Подумайте о том, как бы мы представили двумерный вектор в Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This error cannot be caught at compile time so it's always good practice to take precautions against accidentally telling Haskell to give you some elements from an empty list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080747Z" creationid="jenya" creationdate="20230617T080747Z">
+        <seg>Эта ошибка не может быть обнаружена во время компиляции, поэтому всегда рекомендуется принимать меры предосторожности, чтобы случайно не попросить Haskell предоставить вам некоторые элементы из пустого списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This function replaces every element of a list with `1` and then sums that up.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110349Z" creationid="jenya" creationdate="20230617T110349Z">
+        <seg>Эта функция заменяет каждый элемент списка на `1`, а затем суммирует его.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This is a common pattern in functional programming.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114952Z" creationid="jenya" creationdate="20230617T114952Z">
+        <seg>Это распространенный шаблон в функциональном программировании.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1605,6 +2761,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This means that the resulting sum will be the length of our list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110426Z" creationid="jenya" creationdate="20230617T110426Z">
+        <seg>Это означает, что результирующая сумма будет равна длине нашего списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This tutorial is aimed at people who have experience in imperative programming languages (C, C++, Java, Python …) but haven't programmed in a functional language before (Haskell, ML, OCaml …).</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T164157Z" creationid="jenya" creationdate="20230615T164157Z">
@@ -1621,10 +2785,90 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Those were a few basic functions that operate on lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082944Z" creationid="jenya" creationdate="20230617T082944Z">
+        <seg>Это было несколько основных функций, которые работают со списками.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>To make a list containing all the natural numbers from 1 to 20, you just write `[1..20]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090547Z" creationid="jenya" creationdate="20230617T090547Z">
+        <seg>Чтобы составить список, содержащий все натуральные числа от 1 до 20, вы просто пишете `[1..20]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>To make a list with all the numbers from 20 to 1, you can't just do `[20..1]`, you have to do `[20,19..1]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090714Z" creationid="jenya" creationdate="20230617T090714Z">
+        <seg>Чтобы составить список со всеми числами от 20 до 1, вы не можете просто выполнить `[20..1]`, вы должны выполнить `[20,19..1]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Tuples are much more rigid because each different size of tuple is its own type, so you can't write a general function to append an element to a tuple — you'd have to write a function for appending to a pair, one function for appending to a triple, one function for appending to a 4-tuple, etc.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112211Z" creationid="jenya" creationdate="20230617T112211Z">
+        <seg>Кортежи намного более жесткие, потому что каждый кортеж разного размера имеет свой собственный тип, поэтому вы не можете написать общую функцию для добавления элемента к кортежу — вам пришлось бы написать функцию для добавления к паре, одну функцию для добавления к тройке, одну функцию для добавления к 4-му кортежу и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Tuples can also be used to represent a wide variety of data.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112044Z" creationid="jenya" creationdate="20230617T112044Z">
+        <seg>Кортежи также могут использоваться для представления самых разнообразных данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Tuples, however, are used when you know exactly how many values you want to combine and its type depends on how many components it has and the types of the components.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111536Z" creationid="jenya" creationdate="20230617T111536Z">
+        <seg>Однако кортежи используются, когда вы точно знаете, сколько значений вы хотите объединить, а их тип зависит от того, сколько в нем компонентов и типов компонентов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Two useful functions that operate on pairs:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112428Z" creationid="jenya" creationdate="20230617T112428Z">
+        <seg>Две полезные функции, которые работают с парами:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Type inference also allows your code to be more general.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173100Z" creationid="jenya" creationdate="20230615T173100Z">
         <seg>Вывод типа также позволяет вашему коду быть более общим.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Unlike a list, a tuple can contain a combination of several types.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111551Z" creationid="jenya" creationdate="20230617T111551Z">
+        <seg>В отличие от списка, кортеж может содержать комбинацию нескольких типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Use this function instead of `xs == []` (if you have a list called `xs`)</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080827Z" creationid="jenya" creationdate="20230617T080827Z">
+        <seg>Используйте эту функцию вместо `xs == []` (если у вас есть список с именем `xs`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Use tuples when you know in advance how many components some piece of data should have.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112137Z" creationid="jenya" creationdate="20230617T112137Z">
+        <seg>Используйте кортежи, когда вы заранее знаете, сколько компонентов должно быть в том или ином фрагменте данных.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1637,6 +2881,22 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Watch out when using floating point numbers in ranges!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090723Z" creationid="jenya" creationdate="20230617T090723Z">
+        <seg>Будьте осторожны при использовании чисел с плавающей запятой в диапазонах!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Watch.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080913Z" creationid="jenya" creationdate="20230617T080913Z">
+        <seg>Посмотри.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We can also use several operators on one line and all the usual precedence rules are obeyed.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095232Z" creationid="jenya" creationdate="20230616T095232Z">
@@ -1645,10 +2905,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We can include several predicates.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105208Z" creationid="jenya" creationdate="20230617T105208Z">
+        <seg>Мы можем включить несколько предикатов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We can use parentheses to make the precedence explicit or to change it.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095311Z" creationid="jenya" creationdate="20230616T095311Z">
         <seg>Мы можем использовать круглые скобки, чтобы сделать приоритет явным или изменить его.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We could do something like `[[1,2],[8,11],[4,5]]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111634Z" creationid="jenya" creationdate="20230617T111634Z">
+        <seg>Мы могли бы сделать что-то вроде `[[1,2],[8,11],[4,5]]`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1669,6 +2945,22 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We could use a list comprehension for that.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103429Z" creationid="jenya" creationdate="20230617T100203Z">
+        <seg>Для этого мы могли бы использовать списковое включение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We took a list of numbers and we filtered them by the predicate.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102804Z" creationid="jenya" creationdate="20230617T102804Z">
+        <seg>Мы взяли список чисел и отфильтровали их по предикату.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We usually use `'` to either denote a strict version of a function (one that isn't lazy) or a slightly modified version of a function or a variable.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073847Z" creationid="jenya" creationdate="20230617T073830Z">
@@ -1685,6 +2977,30 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We'll also modify this function by taking into consideration that side b isn't larger than the hypothenuse and that side a isn't larger than side b.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114901Z" creationid="jenya" creationdate="20230617T114901Z">
+        <seg>Мы также модифицируем эту функцию, принимая во внимание, что сторона `b` не больше гипотенузы и что сторона `a` не больше стороны `b`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We'll call it `length'`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110259Z" creationid="jenya" creationdate="20230617T110259Z">
+        <seg>Мы будем называть это `length'`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We'll go over extracting data from tuples in different ways a bit later.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112522Z" creationid="jenya" creationdate="20230617T112508Z">
+        <seg>Чуть позже мы рассмотрим извлечение данных из кортежей различными способами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We'll see why a bit later.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074114Z" creationid="jenya" creationdate="20230617T074114Z">
@@ -1693,10 +3009,42 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We'll stick to getting the first 10 even numbers for now.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T100222Z" creationid="jenya" creationdate="20230617T100222Z">
+        <seg>Пока мы будем придерживаться получения первых 10 четных чисел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We'll take a closer look at types a bit later.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100408Z" creationid="jenya" creationdate="20230616T100408Z">
         <seg>Мы подробнее рассмотрим типы чуть позже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We'll take a look at more list functions [later](http://learnyouahaskell.com/modules#data-list)</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T083003Z" creationid="jenya" creationdate="20230617T082938Z">
+        <seg>Мы рассмотрим дополнительные функции списка [позже](http://learnyouahaskell.com/modules#data-list)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We're almost done.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114915Z" creationid="jenya" creationdate="20230617T114915Z">
+        <seg>Мы почти закончили.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We're just drawing from three lists and our output function is combining them into a triple.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114409Z" creationid="jenya" creationdate="20230617T114325Z">
+        <seg>Мы просто рисуем из трех списков, и наша функция вывода объединяет их в тройку.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1713,6 +3061,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095958Z" creationid="jenya" creationdate="20230616T095958Z">
         <seg>Что ж, если мы попробуем первый фрагмент, то получим большое пугающее сообщение об ошибке!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Well, we'd get this error:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111952Z" creationid="jenya" creationdate="20230617T111952Z">
+        <seg>Ну, мы бы получили эту ошибку:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1749,10 +3105,66 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>What comes after "John"?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090526Z" creationid="jenya" creationdate="20230617T090526Z">
+        <seg>Что следует за словом "John"?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>What else can you do with lists?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080519Z" creationid="jenya" creationdate="20230617T080519Z">
+        <seg>Что еще вы можете сделать со списками?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>What happens if the lengths of the lists don't match?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112908Z" creationid="jenya" creationdate="20230617T112908Z">
+        <seg>Что произойдет, если длины списков не совпадут?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>What if some mathematicians figured out that 2 is actually 3 and you had to change your program?</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T163105Z" creationid="jenya" creationdate="20230616T163105Z">
         <seg>Что, если бы какие-нибудь математики выяснили, что 2 на самом деле равно 3, и вам пришлось бы изменить свою программу?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>What if we tried to make a shape like `[(1,2),(8,11,5),(4,5)]`?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111934Z" creationid="jenya" creationdate="20230617T111915Z">
+        <seg>Что, если бы мы попытались создать форму, подобную `[(1,2),(8,11,5),(4,5)]`?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>What if we want a list of all numbers between 1 and 20?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T083019Z" creationid="jenya" creationdate="20230617T083019Z">
+        <seg>Что, если нам нужен список всех чисел от 1 до 20?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>What if we want all even numbers between 1 and 20?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090621Z" creationid="jenya" creationdate="20230617T090621Z">
+        <seg>Что, если нам нужны все четные числа от 1 до 20?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>What if we wanted all possible products that are more than 50?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105843Z" creationid="jenya" creationdate="20230617T105838Z">
+        <seg>Что, если бы нам понадобились все возможные произведения, которых более 50?</seg>
       </tuv>
     </tu>
     <tu>
@@ -1777,6 +3189,30 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074409Z" creationid="jenya" creationdate="20230617T074152Z">
         <seg>Когда функция не принимает никаких параметров, мы обычно говорим, что это _определение_ (или _имя_^[Честно говоря не знаю как правильнее в данном случае перевести слово name]).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>When drawing from several lists, comprehensions produce all combinations of the given lists and then join them by the output function we supply.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105558Z" creationid="jenya" creationdate="20230617T105558Z">
+        <seg>При рисовании из нескольких списковых включений создает все комбинации заданных списков, а затем объединяет их с помощью функции вывода, которую мы предоставляем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>When using `&lt;`, `&lt;=`, `&gt;` and `&gt;=` to compare lists, they are compared in lexicographical order.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080423Z" creationid="jenya" creationdate="20230617T080423Z">
+        <seg>При использовании `&lt;`, `&lt;=`, `&gt;` и `&gt;=` для сравнения списков они сравниваются в лексикографическом порядке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>When using `head`, `tail`, `last` and `init`, be careful not to use them on empty lists.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080735Z" creationid="jenya" creationdate="20230617T080735Z">
+        <seg>При использовании `head`, `tail`, `last` и `init` будьте осторожны и не используйте их в пустых списках.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1813,6 +3249,22 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>While pretty smart, ranges with steps aren't as smart as some people expect them to be.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090642Z" creationid="jenya" creationdate="20230617T090642Z">
+        <seg>Несмотря на то, что диапазоны со ступенями довольно умны, они не так умны, как некоторые люди ожидают от них.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>While there are singleton lists, there's no such thing as a singleton tuple.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112223Z" creationid="jenya" creationdate="20230617T112223Z">
+        <seg>Хотя существуют одноэлементные списки, такого понятия, как одноэлементный кортеж, не существует.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>With that in mind, we could redefine `doubleUs` like this:</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T163032Z" creationid="jenya" creationdate="20230616T163032Z">
@@ -1839,8 +3291,8 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       <tuv lang="en-US">
         <seg>Yikes!</seg>
       </tuv>
-      <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100025Z" creationid="jenya" creationdate="20230616T100025Z">
-        <seg>Фу!</seg>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115035Z" creationid="jenya" creationdate="20230616T100025Z">
+        <seg>Черт возьми!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1853,6 +3305,22 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>You also couldn't make a list like `[(1,2),("One",2)]` because the first element of the list is a pair of numbers and the second element is a pair consisting of a string and a number.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112033Z" creationid="jenya" creationdate="20230617T112033Z">
+        <seg>Вы также не смогли бы составить список типа `[(1,2),("Один",2)]`, потому что первый элемент списка - это пара чисел, а второй элемент - это пара, состоящая из строки и числа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You can also use ranges to make infinite lists by just not specifying an upper limit.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090753Z" creationid="jenya" creationdate="20230617T090753Z">
+        <seg>Вы также можете использовать диапазоны для создания бесконечных списков, просто не указывая верхний предел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>You can call functions from scripts that you load and the results are displayed immediately.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173840Z" creationid="jenya" creationdate="20230615T173840Z">
@@ -1861,10 +3329,26 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>You can write list comprehensions across several lines.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110946Z" creationid="jenya" creationdate="20230617T110946Z">
+        <seg>Вы можете написать списковое включение в нескольких строках.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>You can't compare apples and oranges.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100356Z" creationid="jenya" creationdate="20230616T100356Z">
         <seg>Вы не можете сравнивать яблоки и апельсины.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You can't do `[1,2,4,8,16..100]` and expect to get all the powers of 2.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090648Z" creationid="jenya" creationdate="20230617T090648Z">
+        <seg>Вы не можете выполнить `[1,2,4,8,16..100]` и ожидать, что получите все степени 2.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1905,6 +3389,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173638Z" creationid="jenya" creationdate="20230615T173638Z">
         <seg>Вероятно, у вас уже установлен ваш любимый текстовый редактор, так что мы не будем тратить на это время.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You take a starting set of solutions and then you apply transformations to those solutions and filter them until you get the right ones.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114956Z" creationid="jenya" creationdate="20230617T114956Z">
+        <seg>Вы берете начальный набор решений, а затем применяете преобразования к этим решениям и фильтруете их до тех пор, пока не получите правильные.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1973,6 +3465,34 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>`_` means that we don't care what we'll draw from the list anyway so instead of writing a variable name that we'll never use, we just write `_`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110315Z" creationid="jenya" creationdate="20230617T110315Z">
+        <seg>`_` означает, что нам все равно, что мы будем извлекать из списка, поэтому вместо того, чтобы писать имя переменной, которое мы никогда не будем использовать, мы просто пишем `_`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+Couldn't match expected type `(t, t1)'
+against inferred type `(t2, t3, t4)'
+In the expression: (8, 11, 5)
+In the expression: [(1, 2), (8, 11, 5), (4, 5)]
+In the definition of `it': it = [(1, 2), (8, 11, 5), (4, 5)]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T111954Z" creationid="jenya" creationdate="20230617T111954Z">
+        <seg>```haskell
+Couldn't match expected type `(t, t1)'
+against inferred type `(t2, t3, t4)'
+In the expression: (8, 11, 5)
+In the expression: [(1, 2), (8, 11, 5), (4, 5)]
+In the definition of `it': it = [(1, 2), (8, 11, 5), (4, 5)]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>```haskell
 GHCi, version 6.8.2: http://www.haskell.org/ghc/  :?</seg>
       </tuv>
@@ -1998,6 +3518,18 @@ arising from a use of `+' at &lt;interactive&gt;:1:0-9
 Possible fix: add an instance declaration for (Num [Char])
 In the expression: 5 + "llama"
 In the definition of `it': it = 5 + "llama" 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+boomBangs xs = [ if x &lt; 10 then "BOOM!" else "BANG!" | x &lt;- xs, odd x] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T103809Z" creationid="jenya" creationdate="20230617T103809Z">
+        <seg>```haskell
+boomBangs xs = [ if x &lt; 10 then "BOOM!" else "BANG!" | x &lt;- xs, odd x] 
 ```</seg>
       </tuv>
     </tu>
@@ -2152,6 +3684,24 @@ ghci&gt;
     <tu>
       <tuv lang="en-US">
         <seg>```haskell
+ghci&gt; 4 `elem` [3,4,5,6]
+True
+ghci&gt; 10 `elem` [3,4,5,6]
+False
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082936Z" creationid="jenya" creationdate="20230617T082936Z">
+        <seg>```haskell
+ghci&gt; 4 `elem` [3,4,5,6]
+True
+ghci&gt; 10 `elem` [3,4,5,6]
+False
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
 ghci&gt; 5 == 5
 True
 ghci&gt; 1 == 0
@@ -2226,6 +3776,69 @@ False
     <tu>
       <tuv lang="en-US">
         <seg>```haskell
+ghci&gt; [ x | x &lt;- [10..20], x /= 13, x /= 15, x /= 19]
+[10,11,12,14,16,17,18,20]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105229Z" creationid="jenya" creationdate="20230617T105229Z">
+        <seg>ghci&gt; [ x | x &lt;- [10..20], x /= 13, x /= 15, x /= 19]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [ x | x &lt;- [50..100], x `mod` 7 == 3]
+[52,59,66,73,80,87,94] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102706Z" creationid="jenya" creationdate="20230617T102706Z">
+        <seg>```haskell
+ghci&gt; [ x | x &lt;- [50..100], x `mod` 7 == 3]
+[52,59,66,73,80,87,94] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11], x*y &gt; 50]
+[55,80,100,110] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105846Z" creationid="jenya" creationdate="20230617T105846Z">
+        <seg>```haskell
+ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11], x*y &gt; 50]
+[55,80,100,110] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11]]
+[16,20,22,40,50,55,80,100,110] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105720Z" creationid="jenya" creationdate="20230617T105720Z">
+        <seg>```haskell
+ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11]]
+[16,20,22,40,50,55,80,100,110] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [0.1, 0.3 ..</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090731Z" creationid="jenya" creationdate="20230617T090731Z">
+        <seg>```haskell
+ghci&gt; [0.1, 0.3 ..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
 ghci&gt; [1,2,3,4] ++ [9,10,11,12]
 [1,2,3,4,9,10,11,12]
 ghci&gt; "hello" ++ " " ++ "world"
@@ -2242,6 +3855,118 @@ ghci&gt; "hello" ++ " " ++ "world"
 "hello world"
 ghci&gt; ['w','o'] ++ ['o','t']
 "woot"
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [1..20]
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+ghci&gt; ['a'..'z']
+"abcdefghijklmnopqrstuvwxyz"
+ghci&gt; ['K'..'Z']
+"KLMNOPQRSTUVWXYZ" 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090612Z" creationid="jenya" creationdate="20230617T090612Z">
+        <seg>```haskell
+ghci&gt; [1..20]
+[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+ghci&gt; ['a'..'z']
+"abcdefghijklmnopqrstuvwxyz"
+ghci&gt; ['K'..'Z']
+"KLMNOPQRSTUVWXYZ" 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [2,4..20]
+[2,4,6,8,10,12,14,16,18,20]
+ghci&gt; [3,6..20]
+[3,6,9,12,15,18] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090624Z" creationid="jenya" creationdate="20230617T090624Z">
+        <seg>```haskell
+ghci&gt; [2,4..20]
+[2,4,6,8,10,12,14,16,18,20]
+ghci&gt; [3,6..20]
+[3,6,9,12,15,18] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [3,2,1] &gt; [2,1,0]
+True
+ghci&gt; [3,2,1] &gt; [2,10,100]
+True
+ghci&gt; [3,4,2] &gt; [3,4]
+True
+ghci&gt; [3,4,2] &gt; [2,4]
+True
+ghci&gt; [3,4,2] == [3,4,2]
+True
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080435Z" creationid="jenya" creationdate="20230617T080435Z">
+        <seg>```haskell
+ghci&gt; [3,2,1] &gt; [2,1,0]
+True
+ghci&gt; [3,2,1] &gt; [2,10,100]
+True
+ghci&gt; [3,4,2] &gt; [3,4]
+True
+ghci&gt; [3,4,2] &gt; [2,4]
+True
+ghci&gt; [3,4,2] == [3,4,2]
+True
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [x*2 | x &lt;- [1..10], x*2 &gt;= 12]
+[12,14,16,18,20]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102135Z" creationid="jenya" creationdate="20230617T102135Z">
+        <seg>```haskell
+ghci&gt; [x*2 | x &lt;- [1..10], x*2 &gt;= 12]
+[12,14,16,18,20]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; [x*2 | x &lt;- [1..10]]
+[2,4,6,8,10,12,14,16,18,20]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T100421Z" creationid="jenya" creationdate="20230617T100421Z">
+        <seg>```haskell
+ghci&gt; [x*2 | x &lt;- [1..10]]
+[2,4,6,8,10,12,14,16,18,20]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; boomBangs [7..13]
+["BOOM!","BOOM!","BANG!","BANG!"] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T104046Z" creationid="jenya" creationdate="20230617T104046Z">
+        <seg>```haskell
+ghci&gt; boomBangs [7..13]
+["BOOM!","BOOM!","BANG!","BANG!"] 
 ```</seg>
       </tuv>
     </tu>
@@ -2270,6 +3995,140 @@ ghci&gt; doubleUs 28 88 + doubleMe 123
     <tu>
       <tuv lang="en-US">
         <seg>```haskell
+ghci&gt; drop 3 [8,4,2,1,5,6]
+[1,5,6]
+ghci&gt; drop 0 [1,2,3,4]
+[1,2,3,4]
+ghci&gt; drop 100 [1,2,3,4]
+[] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T081042Z" creationid="jenya" creationdate="20230617T081042Z">
+        <seg>```haskell
+ghci&gt; drop 3 [8,4,2,1,5,6]
+[1,5,6]
+ghci&gt; drop 0 [1,2,3,4]
+[1,2,3,4]
+ghci&gt; drop 100 [1,2,3,4]
+[] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; fst (8,11)
+8
+ghci&gt; fst ("Wow", False)
+"Wow"
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112436Z" creationid="jenya" creationdate="20230617T112436Z">
+        <seg>```haskell
+ghci&gt; fst (8,11)
+8
+ghci&gt; fst ("Wow", False)
+"Wow"
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; head [5,4,3,2,1]
+5 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080542Z" creationid="jenya" creationdate="20230617T080542Z">
+        <seg>```haskell
+ghci&gt; head [5,4,3,2,1]
+5 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; head []
+*** Exception: Prelude.head: empty list
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080708Z" creationid="jenya" creationdate="20230617T080708Z">
+        <seg>```haskell
+ghci&gt; head []
+*** Exception: Prelude.head: empty list
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; init [5,4,3,2,1]
+[5,4,3,2] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115148Z" creationid="jenya" creationdate="20230617T115148Z">
+        <seg>```haskell
+ghci&gt; init [5,4,3,2,1]
+[5,4,3,2] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; last [5,4,3,2,1]
+1 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080603Z" creationid="jenya" creationdate="20230617T080603Z">
+        <seg>```haskell
+ghci&gt; last [5,4,3,2,1]
+1 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; length [5,4,3,2,1]
+5
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080755Z" creationid="jenya" creationdate="20230617T080755Z">
+        <seg>```haskell
+ghci&gt; length [5,4,3,2,1]
+5
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; let b = [[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
+ghci&gt; b
+[[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
+ghci&gt; b ++ [[1,1,1,1]]
+[[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3],[1,1,1,1]]
+ghci&gt; [6,6,6]:b
+[[6,6,6],[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
+ghci&gt; b !!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075925Z" creationid="jenya" creationdate="20230617T075925Z">
+        <seg>```haskell
+ghci&gt; let b = [[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
+ghci&gt; b
+[[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
+ghci&gt; b ++ [[1,1,1,1]]
+[[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3],[1,1,1,1]]
+ghci&gt; [6,6,6]:b
+[[6,6,6],[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
+ghci&gt; b !!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
 ghci&gt; let lostNumbers = [4,8,15,16,23,42]
 ghci&gt; lostNumbers
 [4,8,15,16,23,42]
@@ -2280,6 +4139,82 @@ ghci&gt; lostNumbers
 ghci&gt; let lostNumbers = [4,8,15,16,23,42]
 ghci&gt; lostNumbers
 [4,8,15,16,23,42]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; let nouns = ["hobo","frog","pope"]
+ghci&gt; let adjectives = ["lazy","grouchy","scheming"]
+ghci&gt; [adjective ++ " " ++ noun | adjective &lt;- adjectives, noun &lt;- nouns]
+["lazy hobo","lazy frog","lazy pope","grouchy hobo","grouchy frog",
+"grouchy pope","scheming hobo","scheming frog","scheming pope"] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110039Z" creationid="jenya" creationdate="20230617T110039Z">
+        <seg>```haskell
+ghci&gt; let nouns = ["hobo","frog","pope"]
+ghci&gt; let adjectives = ["lazy","grouchy","scheming"]
+ghci&gt; [adjective ++ " " ++ noun | adjective &lt;- adjectives, noun &lt;- nouns]
+["lazy hobo","lazy frog","lazy pope","grouchy hobo","grouchy frog",
+"grouchy pope","scheming hobo","scheming frog","scheming pope"] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; let rightTriangles = [ (a,b,c) | c &lt;- [1..10], b &lt;- [1..c], a &lt;- [1..b], a^2 + b^2 == c^2] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114903Z" creationid="jenya" creationdate="20230617T114903Z">
+        <seg>```haskell
+ghci&gt; let rightTriangles = [ (a,b,c) | c &lt;- [1..10], b &lt;- [1..c], a &lt;- [1..b], a^2 + b^2 == c^2] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; let rightTriangles' = [ (a,b,c) | c &lt;- [1..10], b &lt;- [1..c], a &lt;- [1..b], a^2 + b^2 == c^2, a+b+c == 24]
+ghci&gt; rightTriangles'
+[(6,8,10)]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114927Z" creationid="jenya" creationdate="20230617T114927Z">
+        <seg>```haskell
+ghci&gt; let rightTriangles' = [ (a,b,c) | c &lt;- [1..10], b &lt;- [1..c], a &lt;- [1..b], a^2 + b^2 == c^2, a+b+c == 24]
+ghci&gt; rightTriangles'
+[(6,8,10)]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; let triangles = [ (a,b,c) | c &lt;- [1..10], b &lt;- [1..10], a &lt;- [1..10] ] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114324Z" creationid="jenya" creationdate="20230617T114324Z">
+        <seg>```haskell
+ghci&gt; let triangles = [ (a,b,c) | c &lt;- [1..10], b &lt;- [1..10], a &lt;- [1..10] ] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; let xxs = [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]]
+ghci&gt; [ [ x | x &lt;- xs, even x ] | xs &lt;- xxs]
+[[2,2,4],[2,4,6,8],[2,4,2,6,2,6]]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110854Z" creationid="jenya" creationdate="20230617T110854Z">
+        <seg>```haskell
+ghci&gt; let xxs = [[1,3,5,2,3,1,2,4,5],[1,2,3,4,5,6,7,8,9],[1,2,4,2,1,6,3,1,3,2,3,6]]
+ghci&gt; [ [ x | x &lt;- xs, even x ] | xs &lt;- xxs]
+[[2,2,4],[2,4,6,8],[2,4,2,6,2,6]]
 ```</seg>
       </tuv>
     </tu>
@@ -2302,6 +4237,84 @@ ghci&gt; min 3.4 3.2
 3.2
 ghci&gt; max 100 101
 101 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; minimum [8,4,2,1,5,6]
+1
+ghci&gt; maximum [1,9,2,3,4]
+9 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082817Z" creationid="jenya" creationdate="20230617T082817Z">
+        <seg>```haskell
+ghci&gt; minimum [8,4,2,1,5,6]
+1
+ghci&gt; maximum [1,9,2,3,4]
+9 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; null [1,2,3]
+False
+ghci&gt; null []
+True
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080828Z" creationid="jenya" creationdate="20230617T080828Z">
+        <seg>```haskell
+ghci&gt; null [1,2,3]
+False
+ghci&gt; null []
+True
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; removeNonUppercase "Hahaha!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110527Z" creationid="jenya" creationdate="20230617T110527Z">
+        <seg>```haskell
+ghci&gt; removeNonUppercase "Hahaha!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; reverse [5,4,3,2,1]
+[1,2,3,4,5]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080833Z" creationid="jenya" creationdate="20230617T080833Z">
+        <seg>```haskell
+ghci&gt; reverse [5,4,3,2,1]
+[1,2,3,4,5]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; snd (8,11)
+11
+ghci&gt; snd ("Wow", False)
+False
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112443Z" creationid="jenya" creationdate="20230617T112443Z">
+        <seg>```haskell
+ghci&gt; snd (8,11)
+11
+ghci&gt; snd ("Wow", False)
+False
 ```</seg>
       </tuv>
     </tu>
@@ -2339,6 +4352,238 @@ ghci&gt; (succ 9) + (max 5 4) + 1
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; sum [5,2,1,6,3,2,5,7]
+31
+ghci&gt; product [6,2,1,2]
+24
+ghci&gt; product [1,2,5,6,7,9,2,0]
+0 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082858Z" creationid="jenya" creationdate="20230617T082858Z">
+        <seg>```haskell
+ghci&gt; sum [5,2,1,6,3,2,5,7]
+31
+ghci&gt; product [6,2,1,2]
+24
+ghci&gt; product [1,2,5,6,7,9,2,0]
+0 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; tail [5,4,3,2,1]
+[4,3,2,1] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080553Z" creationid="jenya" creationdate="20230617T080553Z">
+        <seg>```haskell
+ghci&gt; tail [5,4,3,2,1]
+[4,3,2,1] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; take 10 (cycle [1,2,3])
+[1,2,3,1,2,3,1,2,3,1]
+ghci&gt; take 12 (cycle "LOL ")
+"LOL LOL LOL " 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090952Z" creationid="jenya" creationdate="20230617T090952Z">
+        <seg>```haskell
+ghci&gt; take 10 (cycle [1,2,3])
+[1,2,3,1,2,3,1,2,3,1]
+ghci&gt; take 12 (cycle "LOL ")
+"LOL LOL LOL " 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; take 10 (repeat 5)
+[5,5,5,5,5,5,5,5,5,5]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115155Z" creationid="jenya" creationdate="20230617T115155Z">
+        <seg>```haskell
+ghci&gt; take 10 (repeat 5)
+[5,5,5,5,5,5,5,5,5,5]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; take 3 [5,4,3,2,1]
+[5,4,3]
+ghci&gt; take 1 [3,9,3]
+[3]
+ghci&gt; take 5 [1,2]
+[1,2]
+ghci&gt; take 0 [6,6,6]
+[]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080855Z" creationid="jenya" creationdate="20230617T080855Z">
+        <seg>```haskell
+ghci&gt; take 3 [5,4,3,2,1]
+[5,4,3]
+ghci&gt; take 1 [3,9,3]
+[3]
+ghci&gt; take 5 [1,2]
+[1,2]
+ghci&gt; take 0 [6,6,6]
+[]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; zip [1,2,3,4,5] [5,5,5,5,5]
+[(1,5),(2,5),(3,5),(4,5),(5,5)]
+ghci&gt; zip [1 ..</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112619Z" creationid="jenya" creationdate="20230617T112619Z">
+        <seg>```haskell
+ghci&gt; zip [1,2,3,4,5] [5,5,5,5,5]
+[(1,5),(2,5),(3,5),(4,5),(5,5)]
+ghci&gt; zip [1 ..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; zip [1..] ["apple", "orange", "cherry", "mango"]
+[(1,"apple"),(2,"orange"),(3,"cherry"),(4,"mango")]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114231Z" creationid="jenya" creationdate="20230617T114231Z">
+        <seg>```haskell
+ghci&gt; zip [1..] ["apple", "orange", "cherry", "mango"]
+[(1,"apple"),(2,"orange"),(3,"cherry"),(4,"mango")]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; zip [5,3,2,6,2,7,2,5,4,6,6] ["im","a","turtle"]
+[(5,"im"),(3,"a"),(2,"turtle")]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T113247Z" creationid="jenya" creationdate="20230617T113247Z">
+        <seg>```haskell
+ghci&gt; zip [5,3,2,6,2,7,2,5,4,6,6] ["im","a","turtle"]
+[(5,"im"),(3,"a"),(2,"turtle")]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+length' xs = sum [1 | _ &lt;- xs] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110302Z" creationid="jenya" creationdate="20230617T110302Z">
+        <seg>```haskell
+length' xs = sum [1 | _ &lt;- xs] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110524Z" creationid="jenya" creationdate="20230617T110504Z">
+        <seg>```haskell
+removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`cycle` takes a list and cycles it into an infinite list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090935Z" creationid="jenya" creationdate="20230617T090935Z">
+        <seg>`cycle` берет список и преобразует его в бесконечный список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`drop` works in a similar way, only it drops the number of elements from the beginning of a list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T081041Z" creationid="jenya" creationdate="20230617T081041Z">
+        <seg>`drop` работает аналогичным образом, только он уменьшает количество элементов из начала списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`elem` takes a thing and a list of things and tells us if that thing is an element of the list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082926Z" creationid="jenya" creationdate="20230617T082926Z">
+        <seg>`elem` берет вещь и список вещей и сообщает нам, является ли эта вещь элементом списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`fst` takes a pair and returns its first component.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112435Z" creationid="jenya" creationdate="20230617T112435Z">
+        <seg>`fst` принимает пару и возвращает ее первый компонент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`head` takes a list and returns its head.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080533Z" creationid="jenya" creationdate="20230617T080533Z">
+        <seg>`head` принимает список и возвращает его заголовок.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`init` takes a list and returns everything except its last element.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080608Z" creationid="jenya" creationdate="20230617T080608Z">
+        <seg>`init` принимает список и возвращает все, кроме его последнего элемента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`last` takes a list and returns its last element.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080602Z" creationid="jenya" creationdate="20230617T080602Z">
+        <seg>`last` принимает список и возвращает его последний элемент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`length` takes a list and returns its length, obviously.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080753Z" creationid="jenya" creationdate="20230617T080753Z">
+        <seg>очевидно, что `length` принимает список и возвращает его длину.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`maximum` takes a list of stuff that can be put in some kind of order and returns the biggest element.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T081058Z" creationid="jenya" creationdate="20230617T081058Z">
+        <seg>`maximum` принимает список элементов, которые можно расположить в определенном порядке, и возвращает самый большой элемент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>`min` returns the one that's lesser and `max` returns the one that's greater.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T111446Z" creationid="jenya" creationdate="20230616T111446Z">
@@ -2347,10 +4592,98 @@ ghci&gt; (succ 9) + (max 5 4) + 1
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>`minimum` returns the smallest.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T081110Z" creationid="jenya" creationdate="20230617T081110Z">
+        <seg>`minimum` возвращает наименьшее значение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>`not` negates a `True` or a `False`.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095822Z" creationid="jenya" creationdate="20230616T095822Z">
         <seg>`not` отрицает `True` или `False`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`null` checks if a list is empty.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080758Z" creationid="jenya" creationdate="20230617T080758Z">
+        <seg>`null` проверяет, пуст ли список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`product` takes a list of numbers and returns their product.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082852Z" creationid="jenya" creationdate="20230617T082827Z">
+        <seg>`product` принимает список чисел и возвращает их произведение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`repeat` takes an element and produces an infinite list of just that element.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T091011Z" creationid="jenya" creationdate="20230617T091011Z">
+        <seg>`repeat` принимает элемент и создает бесконечный список только этого элемента.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`replicate 3 10` returns `[10,10,10]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T091131Z" creationid="jenya" creationdate="20230617T091131Z">
+        <seg>`replicate 3 10` возвращает `[10,10,10]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`reverse` reverses a list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080832Z" creationid="jenya" creationdate="20230617T080832Z">
+        <seg>`reverse` переворачивает список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`snd` takes a pair and returns its second component.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112439Z" creationid="jenya" creationdate="20230617T112439Z">
+        <seg>`snd` принимает пару и возвращает ее второй компонент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`sum` takes a list of numbers and returns their sum.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082822Z" creationid="jenya" creationdate="20230617T082822Z">
+        <seg>`sum` принимает список чисел и возвращает их сумму.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`tail` takes a list and returns its tail.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080546Z" creationid="jenya" creationdate="20230617T080546Z">
+        <seg>`tail` принимает список и возвращает его хвост.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`take` takes number and a list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080845Z" creationid="jenya" creationdate="20230617T080845Z">
+        <seg>`take` принимает номер и список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`x` is drawn from `[1..10]` and for every element in `[1..10]` (which we have bound to `x`), we get that element, only doubled.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T100411Z" creationid="jenya" creationdate="20230617T100411Z">
+        <seg>`x` берется из `[1..10]`, и для каждого элемента в `[1..10]` (который мы привязали к `x`) мы получаем этот элемент, только удвоенный.</seg>
       </tuv>
     </tu>
     <tu>
