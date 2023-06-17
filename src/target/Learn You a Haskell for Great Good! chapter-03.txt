@@ -1,6 +1,6 @@
-# Types and Typeclasses
+# Типы и классы типов
 
-## Believe the type
+## Верьте типу
 
 ![[LYHfGG_15_cow.png]]
 
