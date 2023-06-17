@@ -150,6 +150,22 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># Translator's footnotes</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115530Z" creationid="jenya" creationdate="20230617T115530Z">
+        <seg># Сноски переводчика</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Types and Typeclasses</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115557Z" creationid="jenya" creationdate="20230617T115549Z">
+        <seg># Типы и классы типов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## About this tutorial</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230612T110356Z" creationid="jenya" creationdate="20230610T211543Z">
@@ -170,6 +186,14 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T132603Z" creationid="jenya" creationdate="20230616T132603Z">
         <seg>## Первые детские функции</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Believe the type</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115600Z" creationid="jenya" creationdate="20230617T115600Z">
+        <seg>## Верьте типу</seg>
       </tuv>
     </tu>
     <tu>
@@ -4063,6 +4087,20 @@ ghci&gt; head []
     <tu>
       <tuv lang="en-US">
         <seg>```haskell
+ghci&gt; init [5,4,3,2,1]
+[5,4,3,2] 
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115148Z" creationid="jenya" creationdate="20230617T115148Z">
+        <seg>```haskell
+ghci&gt; init [5,4,3,2,1]
+[5,4,3,2] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
 ghci&gt; last [5,4,3,2,1]
 1 
 ```</seg>
@@ -4387,6 +4425,20 @@ ghci&gt; take 10 (cycle [1,2,3])
 [1,2,3,1,2,3,1,2,3,1]
 ghci&gt; take 12 (cycle "LOL ")
 "LOL LOL LOL " 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```haskell
+ghci&gt; take 10 (repeat 5)
+[5,5,5,5,5,5,5,5,5,5]
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115155Z" creationid="jenya" creationdate="20230617T115155Z">
+        <seg>```haskell
+ghci&gt; take 10 (repeat 5)
+[5,5,5,5,5,5,5,5,5,5]
 ```</seg>
       </tuv>
     </tu>

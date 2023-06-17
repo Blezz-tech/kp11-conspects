@@ -38,6 +38,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>![[LYHfGG_15_cow.png]]</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115601Z" creationid="jenya" creationdate="20230617T115601Z">
+        <seg>![[LYHfGG_15_cow.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>![[LYHfGG_1_bird.png]]</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230611T220409Z" creationid="jenya" creationdate="20230611T220409Z">
@@ -150,6 +158,22 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># Translator's footnotes</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115530Z" creationid="jenya" creationdate="20230617T115530Z">
+        <seg># Сноски переводчика</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg># Types and Typeclasses</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115557Z" creationid="jenya" creationdate="20230617T115549Z">
+        <seg># Типы и классы типов</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## About this tutorial</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230612T110356Z" creationid="jenya" creationdate="20230610T211543Z">
@@ -170,6 +194,14 @@
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T132603Z" creationid="jenya" creationdate="20230616T132603Z">
         <seg>## Первые детские функции</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Believe the type</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115600Z" creationid="jenya" creationdate="20230617T115600Z">
+        <seg>## Верьте типу</seg>
       </tuv>
     </tu>
     <tu>

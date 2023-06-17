@@ -11392,3 +11392,5 @@ Now we've equipped our trees with a safety-net that will catch us should we fall
 Our file system also has a lot of cases where an operation could fail, such as trying to focus on a file or folder that doesn't exist. As an exercise, you can equip our file system with functions that fail gracefully by using the `Maybe` monad.
 
 
+# Translator's footnotes
+
