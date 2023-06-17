@@ -1,53 +1,230 @@
 <!DOCTYPE html>
-<html><head>
-			
-		<title>README</title>
-		<base href="../../">
-		<meta id="root-path" root-path="../../">
+<html>
 
-		<link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
-		<meta charset="UTF-8">
-		<script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+<head>
 
-			<link rel="stylesheet" href="lib/styles/obsidian-styles.css">
-			<link rel="stylesheet" href="lib/styles/theme.css">
-			<link rel="stylesheet" href="lib/styles/plugin-styles.css">
-			<link rel="stylesheet" href="lib/styles/snippets.css">
-			<style>  </style>
+  <title>README</title>
+  <base href="../../">
+  <meta id="root-path" root-path="../../">
 
-			
-			<!-- Graph View Data -->
-			<script>
-			let nodes=
-{"nodeCount":11,"linkCount":10,"radii":[6,5.353316326530613,4.7602040816326525,3.975765306122449,3.975765306122449,3.975765306122449,3.975765306122449,3.975765306122449,3.975765306122449,3.975765306122449,3.975765306122449],"labels":["Отчеты","README","README","Полезные ресурсы","О Haskell по-человечески (Итого)","О Haskell по-человечески (Оригинал)","Learn You a Haskell for Great Good! ru","Learn You a Haskell for Great Good! en","py Конвертация txt в xlsx","py код оптимизации mdx","nodejs - зло"],"paths":["отчеты.html","курсы/learn-you-a-haskell-for-great-good!/readme.html","readme.html","полезные-ресурсы.html","мои-решения/о-haskell-по-человечески/о-haskell-по-человечески-(итого).html","курсы/о-haskell-по-человечески/о-haskell-по-человечески-(оригинал).html","курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-ru.html","курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-en.html","для-отчета/py-конвертация-txt-в-xlsx.html","для-отчета/py-код-оптимизации-mdx.html","для-отчета/nodejs-зло.html"],"linkSources":[2,2,1,1,0,0,0,0,0,0],"linkTargets":[3,0,7,6,5,4,1,10,9,8]};
-			let attractionForce = 1;
-			let linkLength = 10;
-			let repulsionForce = 150;
-			let centralForce = 3;
-			let edgePruning = 100;
-			</script>
-			
-<script type="module" src="lib/scripts/graph_view.js"></script>
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
 
-<script src="lib/scripts/graph_wasm.js"></script>
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
 
-<script src="lib/scripts/tinycolor.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 11,
+      "linkCount": 10,
+      "radii": [6, 5.353316326530613, 4.7602040816326525, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449],
+      "labels": ["Отчеты", "README", "README", "Полезные ресурсы", "О Haskell по-человечески (Итого)", "py Конвертация txt в xlsx", "py код оптимизации mdx", "nodejs - зло", "О Haskell по-человечески (Оригинал)", "Learn You a Haskell for Great Good! ru", "Learn You a Haskell for Great Good! en"],
+      "paths": ["отчеты.html", "курсы/learn-you-a-haskell-for-great-good!/readme.html", "readme.html", "полезные-ресурсы.html", "мои-решения/о-haskell-по-человечески/о-haskell-по-человечески-(итого).html", "для-отчета/py-конвертация-txt-в-xlsx.html", "для-отчета/py-код-оптимизации-mdx.html", "для-отчета/nodejs-зло.html", "курсы/о-haskell-по-человечески/о-haskell-по-человечески-(оригинал).html", "курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-ru.html", "курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-en.html"],
+      "linkSources": [2, 2, 1, 1, 0, 0, 0, 0, 0, 0],
+      "linkTargets": [3, 0, 10, 9, 8, 4, 1, 7, 6, 5]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
 
-<script src="lib/scripts/webpage.js"></script>
+  <script type="module" src="lib/scripts/graph_view.js"></script>
 
-			</head><body class="theme-dark mod-windows is-frameless is-maximized is-hidden-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:100%; --line-width-adaptive:100%; --file-line-width:100%; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;"><div class="webpage-container"><div class="sidebar-left sidebar"><div class="sidebar-content"><div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="tree-container file-tree mod-nav-indicator" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">learn-haskell-valut</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div><div class="tree-scroll-area"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="для-отчета"><span class="tree-item-title">Для отчета</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="для-отчета/nodejs-зло.html"><span class="tree-item-title">nodejs - зло</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="для-отчета/py-код-оптимизации-mdx.html"><span class="tree-item-title">py код оптимизации mdx</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="2"><div class="tree-item-contents"><a class="tree-item-link" href="для-отчета/py-конвертация-txt-в-xlsx.html"><span class="tree-item-title">py Конвертация txt в xlsx</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="курсы"><span class="tree-item-title">Курсы</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="курсы/о-haskell-по-человечески"><span class="tree-item-title">О Haskell по-человечески</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="курсы/о-haskell-по-человечески/о-haskell-по-человечески-(оригинал).html"><span class="tree-item-title">О Haskell по-человечески (Оригинал)</span></a></div><div class="tree-item-children"></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="курсы/learn-you-a-haskell-for-great-good!"><span class="tree-item-title">Learn You a Haskell for Great Good!</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-en.html"><span class="tree-item-title">Learn You a Haskell for Great Good! en</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-ru.html"><span class="tree-item-title">Learn You a Haskell for Great Good! ru</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="курсы/learn-you-a-haskell-for-great-good!/readme.html"><span class="tree-item-title">README</span></a></div><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="мои-решения"><span class="tree-item-title">Мои решения</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2"><div class="tree-item-contents"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a class="tree-item-link" href="мои-решения/о-haskell-по-человечески"><span class="tree-item-title">О Haskell по-человечески</span></a></div><div class="tree-item-children"><div class="tree-item mod-tree-file" data-depth="3"><div class="tree-item-contents"><a class="tree-item-link" href="мои-решения/о-haskell-по-человечески/о-haskell-по-человечески-(итого).html"><span class="tree-item-title">О Haskell по-человечески (Итого)</span></a></div><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item mod-tree-file" data-depth="1"><div class="tree-item-contents"><a class="tree-item-link" href="отчеты.html"><span class="tree-item-title">Отчеты</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="1"><div class="tree-item-contents"><a class="tree-item-link" href="полезные-ресурсы.html"><span class="tree-item-title">Полезные ресурсы</span></a></div><div class="tree-item-children"></div></div><div class="tree-item mod-tree-file" data-depth="1"><div class="tree-item-contents"><a class="tree-item-link" href="readme.html"><span class="tree-item-title">README</span></a></div><div class="tree-item-children"></div></div></div></div></div></div><div class="document-container"><div class="markdown-preview-view markdown-rendered node-insert-event allow-fold-headings show-indentation-guide allow-fold-lists show-frontmatter" style="tab-size: 4;"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;"><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="mod-header"><div class="inline-title" data-heading="README" id="README" style="display: block;">README</div></div><div><p>I decided to translate this book into Russian.
-I have saved the original book in case the original disappears or becomes unavailable.</p></div><div><p>link to the original book:
-<a data-tooltip-position="top" aria-label="http://learnyouahaskell.com/" rel="noopener" class="external-link" href="http://learnyouahaskell.com/" target="_blank">Learn You a Haskell for Great Good!</a></p></div><div><hr></div><div><p>Я решил перевести эту книгу на русский язык.
-Я сохранил оригинал книги на случай, если оригинал исчезнет или станет недоступен.</p></div><div><p>ссылка на оригинальную книгу:
-<a data-tooltip-position="top" aria-label="http://learnyouahaskell.com" rel="noopener" class="external-link" href="http://learnyouahaskell.com" target="_blank">Выучи Хаскеле для Великого Блага! :3</a></p></div><div><hr></div><div><ul class="has-list-bullet">
-<li data-line="0"><div class="list-bullet"></div>English <a data-href="Learn You a Haskell for Great Good! en" href="курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-en.html" class="internal-link" target="_self" rel="noopener">Learn You a Haskell for Great Good! en</a></li>
-<li data-line="1"><div class="list-bullet"></div>Russian <a data-href="Learn You a Haskell for Great Good! ru" href="курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-ru.html" class="internal-link" target="_self" rel="noopener">Learn You a Haskell for Great Good! ru</a></li>
-</ul></div><div class="mod-footer"></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span><div class="graph-view-placeholder">
-		<div class="graph-view-container">
-			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-			<canvas id="graph-canvas" width="512px" height="512px"></canvas>
-		</div>
-		</div><div class="tree-container outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div><div class="tree-scroll-area"></div></div></div></div></div></body></html>
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:16px; --line-width:100%; --line-width-adaptive:100%; --file-line-width:100%; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">learn-haskell-valut</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="для-отчета"><span class="tree-item-title">Для отчета</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="для-отчета/nodejs-зло.html"><span class="tree-item-title">nodejs - зло</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="для-отчета/py-код-оптимизации-mdx.html"><span class="tree-item-title">py код оптимизации mdx</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="для-отчета/py-конвертация-txt-в-xlsx.html"><span class="tree-item-title">py Конвертация txt в xlsx</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="курсы"><span class="tree-item-title">Курсы</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="курсы/о-haskell-по-человечески"><span class="tree-item-title">О Haskell по-человечески</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="курсы/о-haskell-по-человечески/о-haskell-по-человечески-(оригинал).html"><span class="tree-item-title">О Haskell по-человечески (Оригинал)</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="курсы/learn-you-a-haskell-for-great-good!"><span class="tree-item-title">Learn You a Haskell for Great Good!</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-en.html"><span class="tree-item-title">Learn You a Haskell for Great Good! en</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-ru.html"><span class="tree-item-title">Learn You a Haskell for Great Good! ru</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="курсы/learn-you-a-haskell-for-great-good!/readme.html"><span class="tree-item-title">README</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="мои-решения"><span class="tree-item-title">Мои решения</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="мои-решения/о-haskell-по-человечески"><span class="tree-item-title">О Haskell по-человечески</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="мои-решения/о-haskell-по-человечески/о-haskell-по-человечески-(итого).html"><span class="tree-item-title">О Haskell по-человечески (Итого)</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="отчеты.html"><span class="tree-item-title">Отчеты</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="полезные-ресурсы.html"><span class="tree-item-title">Полезные ресурсы</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="readme.html"><span class="tree-item-title">README</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event allow-fold-headings show-indentation-guide allow-fold-lists show-frontmatter" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header">
+            <div class="inline-title" data-heading="README" id="README" style="display: block;">README</div>
+          </div>
+          <div>
+            <p>I decided to translate this book into Russian.
+              I have saved the original book in case the original disappears or becomes unavailable.</p>
+          </div>
+          <div>
+            <p>link to the original book:
+              <a data-tooltip-position="top" aria-label="http://learnyouahaskell.com/" rel="noopener" class="external-link" href="http://learnyouahaskell.com/" target="_blank">Learn You a Haskell for Great Good!</a>
+            </p>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <p>Я решил перевести эту книгу на русский язык.
+              Я сохранил оригинал книги на случай, если оригинал исчезнет или станет недоступен.</p>
+          </div>
+          <div>
+            <p>ссылка на оригинальную книгу:
+              <a data-tooltip-position="top" aria-label="http://learnyouahaskell.com" rel="noopener" class="external-link" href="http://learnyouahaskell.com" target="_blank">Выучи Хаскеле для Великого Блага! :3</a>
+            </p>
+          </div>
+          <div>
+            <hr>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>English <a data-href="Learn You a Haskell for Great Good! en" href="курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-en.html" class="internal-link" target="_self" rel="noopener">Learn You a Haskell for Great Good! en</a>
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Russian <a data-href="Learn You a Haskell for Great Good! ru" href="курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-ru.html" class="internal-link" target="_self" rel="noopener">Learn You a Haskell for Great Good! ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
