@@ -712,13 +712,13 @@ ghci> rightTriangles'
 
 ![[LYHfGG_15_cow.png]]
 
-Previously we mentioned that Haskell has a static type system. The type of every expression is known at compile time, which leads to safer code. If you write a program where you try to divide a boolean type with some number, it won't even compile. That's good because it's better to catch such errors at compile time instead of having your program crash. Everything in Haskell has a type, so the compiler can reason quite a lot about your program before compiling it.
+Ранее мы упоминали, что в Haskell есть система статических типов. Тип каждого выражения известен во время компиляции, что приводит к созданию более безопасного кода. Если вы напишете программу, в которой попытаетесь разделить логический тип на некоторое число, она даже не будет компилироваться. Это хорошо, потому что лучше отлавливать такие ошибки во время компиляции, а не вызывать сбой вашей программы. Все в Haskell имеет тип, поэтому компилятор может довольно много рассуждать о вашей программе перед ее компиляцией.
 
-Unlike Java or Pascal, Haskell has type inference. If we write a number, we don't have to tell Haskell it's a number. It can _infer_ that on its own, so we don't have to explicitly write out the types of our functions and expressions to get things done. We covered some of the basics of Haskell with only a very superficial glance at types. However, understanding the type system is a very important part of learning Haskell.
+В отличие от Java или Pascal, в Haskell есть вывод типа. Если мы пишем число, нам не нужно говорить Haskell, что это число. Он может _сделать вывод_ сам по себе, поэтому нам не нужно явно выписывать типы наших функций и выражений, чтобы что-то сделать. Мы рассмотрели некоторые основы Haskell, лишь очень поверхностно взглянув на типы. Однако понимание системы типов является очень важной частью изучения Haskell.
 
-A type is a kind of label that every expression has. It tells us in which category of things that expression fits. The expression `True` is a boolean, `"hello"` is a string, etc.
+Тип - это своего рода метка, которая есть у каждого выражения. Это говорит нам, к какой категории вещей подходит это выражение. Выражение `True` - это логическое значение, `"hello"` - это строка и т.д.
 
-Now we'll use GHCI to examine the types of some expressions. We'll do that by using the `:t` command which, followed by any valid expression, tells us its type. Let's give it a whirl.
+Теперь мы будем использовать GHCI для изучения типов некоторых выражений. Мы сделаем это с помощью команды `:t`, за которой следует любое допустимое выражение, сообщающее нам его тип. Давайте раскрутим это дело.
 
 ```haskell
 ghci> :t 'a'
@@ -735,31 +735,31 @@ ghci> :t 4 == 5
 
 ![[LYHfGG_16_bomb.png]]
 
-Here we see that doing `:t` on an expression prints out the expression followed by `::` and its type. `::` is read as "has type of". Explicit types are always denoted with the first letter in capital case. `'a'`, as it would seem, has a type of `Char`. It's not hard to conclude that it stands for _character_. `True` is of a `Bool` type. That makes sense. But what's this? Examining the type of `"HELLO!"` yields a `[Char]`. The square brackets denote a list. So we read that as it being _a list of characters_. Unlike lists, each tuple length has its own type. So the expression of `(True, 'a')` has a type of `(Bool, Char)`, whereas an expression such as `('a','b','c')` would have the type of `(Char, Char, Char)`. `4 == 5` will always return `False`, so its type is `Bool`.
+Здесь мы видим, что выполнение `:t` для выражения выводит выражение, за которым следует `::`, и его тип. `::` читается как "имеет тип". Явные типы всегда обозначаются первой буквой с большой буквы. `'a'`, как могло бы показаться, имеет тип `Char`. Нетрудно сделать вывод, что это означает _символ_ (англ. _character_). `True` относится к типу `Bool`. В этом есть смысл. Но что это такое? Анализ типа `"ПРИВЕТ!"` выдает `[Char]`. Квадратные скобки обозначают список. Итак, мы читаем это как _список символов_ (англ. _a list of characters_). В отличие от списков, длина каждого кортежа имеет свой собственный тип. Таким образом, выражение `(True, 'a')` имеет тип `(Bool, Char)`, тогда как такое выражение, как `('a','b','c')`, имело бы тип `(Char, Char, Char)`. `4 == 5` всегда возвращает `False`, поэтому его тип - `Bool`.
 
-Functions also have types. When writing our own functions, we can choose to give them an explicit type declaration. This is generally considered to be good practice except when writing very short functions. From here on, we'll give all the functions that we make type declarations. Remember the list comprehension we made previously that filters a string so that only caps remain? Here's how it looks like with a type declaration.
+Функции также имеют типы. При написании наших собственных функций мы можем предоставить им явное объявление типа. Обычно это считается хорошей практикой, за исключением случаев написания очень коротких функций. С этого момента мы будем предоставлять все функции, для которых мы делаем объявления типов. Помните представление списка, которое мы сделали ранее, которое фильтрует строку так, чтобы оставались только заглавные буквы? Вот как это выглядит с объявлением типа.
 
 ```haskell
 removeNonUppercase :: [Char] -> [Char]
 removeNonUppercase st = [ c | c <- st, c `elem` ['A'..'Z']] 
 ```
 
-`removeNonUppercase` has a type of `[Char] -> [Char]`, meaning that it maps from a string to a string. That's because it takes one string as a parameter and returns another as a result. The `[Char]` type is synonymous with `String` so it's clearer if we write `removeNonUppercase :: String -> String`. We didn't have to give this function a type declaration because the compiler can infer by itself that it's a function from a string to a string but we did anyway. But how do we write out the type of a function that takes several parameters? Here's a simple function that takes three integers and adds them together:
+`removeNonUppercase` имеет тип `[Char] -> [Char]`, что означает, что он преобразуется из строки в строку. Это потому, что он принимает одну строку в качестве параметра и возвращает другую в результате. Тип `[Char]` является синонимом `String`, поэтому будет понятнее, если мы напишем `removeNonUppercase :: String -> String`. Нам не нужно было давать этой функции объявление типа, потому что компилятор может сам сделать вывод, что это функция из строки в строку, но мы все равно это сделали. Но как нам записать тип функции, которая принимает несколько параметров? Вот простая функция, которая принимает три целых числа и складывает их вместе:
 
 ```haskell
 addThree :: Int -> Int -> Int -> Int
 addThree x y z = x + y + z
 ```
 
-The parameters are separated with `->` and there's no special distinction between the parameters and the return type. The return type is the last item in the declaration and the parameters are the first three. Later on we'll see why they're all just separated with `->` instead of having some more explicit distinction between the return types and the parameters like `Int, Int, Int -> Int` or something.
+Параметры разделяются символом `->`, и нет особого различия между параметрами и возвращаемым типом. Возвращаемый тип - это последний элемент в объявлении, а параметры - первые три. Позже мы увидим, почему все они просто разделены `->` вместо того, чтобы проводить какое-то более явное различие между возвращаемыми типами и параметрами, такими как `Int, Int, Int -> Int` или что-то в этом роде.
 
-If you want to give your function a type declaration but are unsure as to what it should be, you can always just write the function without it and then check it with `:t`. Functions are expressions too, so `:t` works on them without a problem.
+Если вы хотите предоставить своей функции объявление типа, но не уверены в том, каким оно должно быть, вы всегда можете просто написать функцию без него, а затем проверить ее с помощью `:t`. Функции тоже являются выражениями, поэтому `:t` работает с ними без проблем.
 
-Here's an overview of some common types.
+Вот обзор некоторых распространенных типов.
 
-`Int` stands for integer. It's used for whole numbers. `7` can be an `Int` but `7.2` cannot. `Int` is bounded, which means that it has a minimum and a maximum value. Usually on 32-bit machines the maximum possible `Int` is 2147483647 and the minimum is -2147483648.
+`Int` означает целое число. Он используется для целых чисел. `7` может быть `Int`, но `7.2` не может. `Int` ограничен, что означает, что он имеет минимальное и максимальное значения. Обычно на 32-разрядных машинах максимально возможное значение `Int` равно 2147483647, а минимальное -2147483648.
 
-`Integer` stands for, er … also integer. The main difference is that it's not bounded so it can be used to represent really really big numbers. I mean like really big. `Int`, however, is more efficient.
+`Integer` означает, э-э... тоже целое число. Главное отличие заключается в том, что он не ограничен, поэтому его можно использовать для представления действительно очень больших чисел. Я имею в виду, по-настоящему большой. `Int`, однако, более эффективен.
 
 ```haskell
 factorial :: Integer -> Integer
@@ -771,7 +771,7 @@ ghci> factorial 50
 30414093201713378043612608166064768844377641568960512000000000000
 ```
 
-`Float` is a real floating point with single precision.
+`Float` - это реальная плавающая точка с одинарной точностью.
 
 ```haskell
 circumference :: Float -> Float
@@ -783,7 +783,7 @@ ghci> circumference 4.0
 25.132742
 ```
 
-`Double` is a real floating point with double the precision!
+`Double` - это настоящая плавающая точка с удвоенной точностью!
 
 ```haskell
 circumference' :: Double -> Double
@@ -795,15 +795,15 @@ ghci> circumference' 4.0
 25.132741228718345
 ```
 
-`Bool` is a boolean type. It can have only two values: `True` and `False`.
+`Bool` - это логический тип. Он может иметь только два значения: `True` и `False`.
 
-`Char` represents a character. It's denoted by single quotes. A list of characters is a string.
+`Char` представляет символ. Он обозначается одинарными кавычками. Список символов представляет собой строку.
 
-Tuples are types but they are dependent on their length as well as the types of their components, so there is theoretically an infinite number of tuple types, which is too many to cover in this tutorial. Note that the empty tuple `()` is also a type which can only have a single value: `()`
+Кортежи - это типы, которые зависят от длины кортежей, а также от типов их компонентов, поэтому теоретически существует бесконечное количество типов кортежей, которых слишком много, чтобы рассматривать их в этом руководстве. Обратите внимание, что пустой кортеж `()` также является типом, который может иметь только одно значение: `()`
 
-## Type variables
+## Переменные типа
 
-What do you think is the type of the `head` function? Because `head` takes a list of any type and returns the first element, so what could it be? Let's check!
+Как вы думаете, что это за тип функции `head`? Поскольку `head` принимает список любого типа и возвращает первый элемент, так что же это может быть? Давайте проверим!
 
 ```haskell
 ghci> :t head
@@ -812,43 +812,43 @@ head :: [a] -> a
 
 ![[LYHfGG_17_box.png]]
 
-Hmmm! What is this `a`? Is it a type? Remember that we previously stated that types are written in capital case, so it can't exactly be a type. Because it's not in capital case it's actually a **type variable**. That means that `a` can be of any type. This is much like generics in other languages, only in Haskell it's much more powerful because it allows us to easily write very general functions if they don't use any specific behavior of the types in them. Functions that have type variables are called **polymorphic functions**. The type declaration of `head` states that it takes a list of any type and returns one element of that type.
+Хммм! Что это за буква `a`? Является ли это типом? Помните, что ранее мы указывали, что типы пишутся с большой буквы, поэтому это не может быть точно типом. Поскольку это не прописная буква, на самом деле это **переменная типа** (англ. **type variable**). Это означает, что `a` может быть любого типа. Это очень похоже на дженерики в других языках, только в Haskell это намного мощнее, потому что позволяет нам легко писать очень общие функции, если они не используют какое-либо специфическое поведение используемых в них типов. Функции, имеющие переменные типа, называются **полиморфными функциями** (англ. **polymorphic functions**). В объявлении типа `head` указано, что он принимает список любого типа и возвращает один элемент этого типа.
 
-Although type variables can have names longer than one character, we usually give them names of a, b, c, d …
+Хотя имена переменных типа могут быть длиннее одного символа, мы обычно присваиваем им имена a, b, c, d ...
 
-Remember `fst`? It returns the first component of a pair. Let's examine its type.
+Помнишь `fst`? Он возвращает первый компонент пары. Давайте рассмотрим его тип.
 
 ```haskell
 ghci> :t fst
 fst :: (a, b) -> a
 ```
 
-We see that `fst` takes a tuple which contains two types and returns an element which is of the same type as the pair's first component. That's why we can use `fst` on a pair that contains any two types. Note that just because `a` and `b` are different type variables, they don't have to be different types. It just states that the first component's type and the return value's type are the same.
+Мы видим, что `fst` принимает кортеж, который содержит два типа, и возвращает элемент того же типа, что и первый компонент пары. Вот почему мы можем использовать `fst` для пары, которая содержит любые два типа. Обратите внимание, что только потому, что `a` и `b` являются переменными разного типа, они не обязательно должны быть разных типов. В нем просто указано, что тип первого компонента и тип возвращаемого значения совпадают.
 
-## Typeclasses 101
+## Классы типов 101
 
 ![[LYHfGG_18_classes.png]]
 
-A typeclass is a sort of interface that defines some behavior. If a type is a part of a typeclass, that means that it supports and implements the behavior the typeclass describes. A lot of people coming from OOP get confused by typeclasses because they think they are like classes in object oriented languages. Well, they're not. You can think of them kind of as Java interfaces, only better.
+Класс типов - это своего рода интерфейс, который определяет определенное поведение. Если тип является частью класса типов, это означает, что он поддерживает и реализует поведение, описываемое классом типов. Многие люди, пришедшие из ООП, путаются в классах типов, потому что думают, что они похожи на классы в объектно-ориентированных языках. Ну, это не так. Вы можете думать о них как о интерфейсах Java, только лучше.
 
-What's the type signature of the `==` function?
+Какова сигнатура типа функции `==`?
 
 ```haskell
 ghci> :t (==)
 (==) :: (Eq a) => a -> a -> Bool
 ```
 
-> **Note**: the equality operator, `==` is a function. So are `+`, `*`, `-`, `/` and pretty much all operators. If a function is comprised only of special characters, it's considered an infix function by default. If we want to examine its type, pass it to another function or call it as a prefix function, we have to surround it in parentheses.
+> **Примечание**: оператор равенства `==` является функцией. Так же как и `+`, `*`, `-`, `/` и почти все операторы. Если функция состоит только из специальных символов, по умолчанию она считается инфиксной функцией. Если мы хотим проверить её тип, передать его другой функции или вызвать его как префиксную функцию, мы должны заключить её в круглые скобки.
 
-Interesting. We see a new thing here, the `=>` symbol. Everything before the `=>` symbol is called a **class constraint**. We can read the previous type declaration like this: the equality function takes any two values that are of the same type and returns a `Bool`. The type of those two values must be a member of the `Eq` class (this was the class constraint).
+Интересно. Здесь мы видим новую вещь - символ `=>`. Все, что находится перед символом `=>`, называется **ограничением класса** (англ. **class constraint**). Мы можем прочитать предыдущее объявление типа следующим образом: функция равенства принимает любые два значения одного и того же типа и возвращает `Bool`. Тип этих двух значений должен быть членом класса `Eq` (это было ограничение класса).
 
-The `Eq` typeclass provides an interface for testing for equality. Any type where it makes sense to test for equality between two values of that type should be a member of the `Eq` class. All standard Haskell types except for IO (the type for dealing with input and output) and functions are a part of the `Eq` typeclass.
+Класс типов `Eq` предоставляет интерфейс для проверки на равенство. Любой тип, в котором имеет смысл проверять равенство между двумя значениями этого типа, должен быть членом класса `Eq`. Все стандартные типы Haskell, за исключением ввода-вывода (тип для работы с вводом и выводом) и функций, являются частью класса типов `Eq`.
 
-The `elem` function has a type of `(Eq a) => a -> [a] -> Bool` because it uses `==` over a list to check whether some value we're looking for is in it.
+Функция `elem` имеет тип `(Eq a) => a -> [a] -> Bool`, потому что она использует `==` над списком, чтобы проверить, есть ли в нем какое-то значение, которое мы ищем.
 
-Some basic typeclasses:
+Некоторые основные классы типов:
 
-`Eq` is used for types that support equality testing. The functions its members implement are `==` and `/=`. So if there's an `Eq` class constraint for a type variable in a function, it uses `==` or `/=` somewhere inside its definition. All the types we mentioned previously except for functions are part of `Eq`, so they can be tested for equality.
+`Eq` используется для типов, которые поддерживают проверку на равенство. Функциями, которые реализуют его члены, являются `==` и `/=`. Таким образом, если существует ограничение класса `Eq` для переменной типа в функции, она использует `==` или `/=` где-то внутри своего определения. Все типы, которые мы упоминали ранее, за исключением функций, являются частью `Eq`, поэтому их можно проверить на равенство.
 
 ```haskell
 ghci> 5 == 5
@@ -863,16 +863,16 @@ ghci> 3.432 == 3.432
 True
 ```
 
-`Ord` is for types that have an ordering.
+`Ord` предназначен для типов, которые имеют порядок.
 
 ```haskell
 ghci> :t (>)
 (>) :: (Ord a) => a -> a -> Bool
 ```
 
-All the types we covered so far except for functions are part of `Ord`. `Ord` covers all the standard comparing functions such as `>`, `<`, `>=` and `<=`. The `compare` function takes two `Ord` members of the same type and returns an ordering. `Ordering` is a type that can be `GT`, `LT` or `EQ`, meaning _greater than_, _lesser than_ and _equal_, respectively.
+Все типы, которые мы рассмотрели до сих пор, за исключением функций, являются частью `Ord`. `Ord` охватывает все стандартные функции сравнения, такие как `>`, `<`, `>=` и `<=`. Функция `compare` принимает два элемента `Ord` одного и того же типа и возвращает `ordering`. `Ordering` - это тип, который может быть `GT`, `LT` или `EQ`, что означает _больше чем_ , _меньше чем_ и _эквивалентно_ соответственно. (англ. _greater than_, _lesser than_, _equal_ соответственно)
 
-To be a member of `Ord`, a type must first have membership in the prestigious and exclusive `Eq` club.
+Чтобы стать членом `Ord`, тип должен сначала иметь членство в престижном и эксклюзивном клубе `Eq`.
 
 ```haskell
 ghci> "Abrakadabra" < "Zebra"
@@ -885,7 +885,7 @@ ghci> 5 `compare` 3
 GT
 ```
 
-Members of `Show` can be presented as strings. All types covered so far except for functions are a part of `Show`. The most used function that deals with the `Show` typeclass is `show`. It takes a value whose type is a member of `Show` and presents it to us as a string.
+Члены `Show` могут быть представлены в виде строк. Все рассмотренные до сих пор типы, за исключением функций, являются частью `Показать`. Наиболее используемой функцией, которая имеет дело с классом типов `Show`, является `show`. Она принимает значение, тип которого является членом `Show`, и представляет его нам в виде строки.
 
 ```haskell
 ghci> show 3
@@ -896,7 +896,7 @@ ghci> show True
 "True"
 ```
 
-`Read` is sort of the opposite typeclass of `Show`. The `read` function takes a string and returns a type which is a member of `Read`.
+`Read` - это своего рода класс, противоположный типу `Show`. Функция `read` принимает строку и возвращает тип, который является членом `Read`.
 
 ```haskell
 ghci> read "True" || False
@@ -909,7 +909,7 @@ ghci> read "[1,2,3,4]" ++ [3]
 [1,2,3,4,3]
 ```
 
-So far so good. Again, all types covered so far are in this typeclass. But what happens if we try to do just `read "4"`?
+Пока все идет хорошо. Опять же, все рассмотренные до сих пор типы находятся в этом классе типов. Но что произойдет, если мы попытаемся просто `прочитать "4"`?
 
 ```haskell
 ghci> read "4"
@@ -919,14 +919,14 @@ ghci> read "4"
     Probable fix: add a type signature that fixes these type variable(s)
 ```
 
-What GHCI is telling us here is that it doesn't know what we want in return. Notice that in the previous uses of `read` we did something with the result afterwards. That way, GHCI could infer what kind of result we wanted out of our `read`. If we used it as a boolean, it knew it had to return a `Bool`. But now, it knows we want some type that is part of the `Read` class, it just doesn't know which one. Let's take a look at the type signature of `read`.
+Что GHCI говорит нам здесь, так это то, что он не знает, чего мы хотим взамен. Обратите внимание, что при предыдущем использовании `read` мы впоследствии что-то делали с результатом. Таким образом, GHCI мог бы сделать вывод, какого рода результат мы хотели получить от нашего `read`. Если мы использовали его как логическое значение, он знал, что должен вернуть `Bool`. Но теперь он знает, что нам нужен какой-то тип, который является частью класса `Read`, он просто не знает, какой именно. Давайте взглянем на сигнатуру типа `read`.
 
 ```haskell
 ghci> :t read
 read :: (Read a) => String -> a
 ```
 
-See? It returns a type that's part of `Read` but if we don't try to use it in some way later, it has no way of knowing which type. That's why we can use explicit **type annotations**. Type annotations are a way of explicitly saying what the type of an expression should be. We do that by adding `::` at the end of the expression and then specifying a type. Observe:
+Видишь? Он возвращает тип, который является частью `Read`, но если мы не попытаемся использовать его каким-либо образом позже, у него не будет возможности узнать, какой тип. Вот почему мы можем использовать явные **аннотации типа** (англ. _type annotations_). Аннотации типов - это способ явно указать, каким должен быть тип выражения. Мы делаем это, добавляя `::` в конце выражения, а затем указывая тип. Наблюдай:
 
 ```haskell
 ghci> read "5" :: Int
@@ -941,9 +941,9 @@ ghci> read "(3, 'a')" :: (Int, Char)
 (3, 'a')
 ```
 
-Most expressions are such that the compiler can infer what their type is by itself. But sometimes, the compiler doesn't know whether to return a value of type `Int` or `Float` for an expression like `read "5"`. To see what the type is, Haskell would have to actually evaluate `read "5"`. But since Haskell is a statically typed language, it has to know all the types before the code is compiled (or in the case of GHCI, evaluated). So we have to tell Haskell: "Hey, this expression should have this type, in case you don't know!".
+Большинство выражений таковы, что компилятор может сам определить, каков их тип. Но иногда компилятор не знает, возвращать ли значение типа `Int` или `Float` для выражения типа `read "5"`. Чтобы увидеть, что это за тип, Haskell пришлось бы на самом деле оценить `read "5"`. Но поскольку Haskell является статически типизированным языком, он должен знать все типы до того, как код будет скомпилирован (или, в случае GHCI, оценен). Итак, мы должны сказать Хаскелю: "Эй, это выражение должно иметь этот тип, на случай, если вы не знаете!".
 
-`Enum` members are sequentially ordered types — they can be enumerated. The main advantage of the `Enum` typeclass is that we can use its types in list ranges. They also have defined successors and predecesors, which you can get with the `succ` and `pred` functions. Types in this class: `()`, `Bool`, `Char`, `Ordering`, `Int`, `Integer`, `Float` and `Double`.
+Члены `Enum` представляют собой последовательно упорядоченные типы — их можно перечислять. Главное преимущество класса типов `Enum` заключается в том, что мы можем использовать его типы в диапазонах списков. У них также есть определенные преемники (англ. _successors_) и предшественники (англ. _predecesors_), которые вы можете получить с помощью функций `succ` и `pred`. Типы в этом классе: `()`, `Bool`, `Char`, `Ordering`, `Int`, `Integer`, `Float` и `Double`.
 
 ```haskell
 ghci> ['a'..'e']
@@ -956,7 +956,7 @@ ghci> succ 'B'
 'C'
 ```
 
-`Bounded` members have an upper and a lower bound.
+Элементы типа `Bounded` имеют верхнюю и нижнюю границы.
 
 ```haskell
 ghci> minBound :: Int
@@ -969,23 +969,23 @@ ghci> minBound :: Bool
 False
 ```
 
-`minBound` and `maxBound` are interesting because they have a type of `(Bounded a) => a`. In a sense they are polymorphic constants.
+`minBound` и `maxBound` интересны тем, что они имеют тип `(Bounded a) => a`. В некотором смысле они являются полиморфными константами.
 
-All tuples are also part of `Bounded` if the components are also in it.
+Все кортежи также являются частью `Bounded`, если компоненты также находятся в нем.
 
 ```haskell
 ghci> maxBound :: (Bool, Int, Char)
 (True,2147483647,'\1114111')
 ```
 
-`Num` is a numeric typeclass. Its members have the property of being able to act like numbers. Let's examine the type of a number.
+`Num` - это числовой класс типов. Его члены обладают свойством вести себя подобно числам. Давайте рассмотрим тип числа.
 
 ```haskell
 ghci> :t 20
 20 :: (Num t) => t
 ```
 
-It appears that whole numbers are also polymorphic constants. They can act like any type that's a member of the `Num` typeclass.
+Похоже, что целые числа также являются полиморфными константами. Они могут действовать как любой тип, являющийся членом класса типов `Num`.
 
 ```haskell
 ghci> 20 :: Int
@@ -998,24 +998,24 @@ ghci> 20 :: Double
 20.0
 ```
 
-Those are types that are in the `Num` typeclass. If we examine the type of `*`, we'll see that it accepts all numbers.
+Это типы, которые находятся в классе типов `Num`. Если мы рассмотрим тип `*`, то увидим, что он принимает все числа.
 
 ```haskell
 ghci> :t (*)
 (*) :: (Num a) => a -> a -> a
 ```
 
-It takes two numbers of the same type and returns a number of that type. That's why `(5 :: Int) * (6 :: Integer)` will result in a type error whereas `5 * (6 :: Integer)` will work just fine and produce an `Integer` because `5` can act like an `Integer` or an `Int`.
+Он принимает два числа одного и того же типа и возвращает число этого типа. Вот почему `(5 :: Int) * (6 :: Integer)` приведет к ошибке типа, тогда как `5 * (6 :: Integer)` будет работать просто отлично и выдаст `Integer`, потому что `5` может действовать как `Integer` или `Int`.
 
-To join `Num`, a type must already be friends with `Show` and `Eq`.
+Чтобы присоединиться к `Num`, тип уже должен быть дружен с `Show` и `Eq`.
 
-`Integral` is also a numeric typeclass. `Num` includes all numbers, including real numbers and integral numbers, `Integral` includes only integral (whole) numbers. In this typeclass are `Int` and `Integer`.
+`Integral` также является числовым классом типов. `Num` включает в себя все числа, включая действительные числа и целые числа, `Integral` включает в себя только целые числа. В этом классе типов находятся `Int` и `Integer`.
 
-`Floating` includes only floating point numbers, so `Float` and `Double`.
+`Floating` включает в себя только числа с плавающей запятой, поэтому `Float` и `Double`.
 
-A very useful function for dealing with numbers is `fromIntegral`. It has a type declaration of `fromIntegral :: (Num b, Integral a) => a -> b`. From its type signature we see that it takes an integral number and turns it into a more general number. That's useful when you want integral and floating point types to work together nicely. For instance, the `length` function has a type declaration of `length :: [a] -> Int` instead of having a more general type of `(Num b) => length :: [a] -> b`. I think that's there for historical reasons or something, although in my opinion, it's pretty stupid. Anyway, if we try to get a length of a list and then add it to `3.2`, we'll get an error because we tried to add together an `Int` and a floating point number. So to get around this, we do `fromIntegral (length [1,2,3,4]) + 3.2` and it all works out.
+Очень полезная функция для работы с числами - `fromIntegral`. Он имеет объявление типа `fromIntegral :: (Num b, Integral a) => a -> b`. Из его сигнатуры типа мы видим, что он принимает целое число и превращает его в более общее число. Это полезно, когда вы хотите, чтобы целочисленные типы и типы с плавающей запятой хорошо работали вместе. Например, функция `length` имеет объявление типа `length :: [a] -> Int` вместо того, чтобы иметь более общий тип `(Num b) => length :: [a] -> b`. Я думаю, что это существует по историческим причинам или что-то в этом роде, хотя, на мой взгляд, это довольно глупо. В любом случае, если мы попытаемся получить длину списка, а затем добавить его к `3.2`, мы получим ошибку, потому что мы пытались сложить вместе `Int` и число с плавающей запятой. Итак, чтобы обойти это, мы делаем `fromIntegral :: (Num b, Integral a) => a -> b`., и все получается.
 
-Notice that `fromIntegral` has several class constraints in its type signature. That's completely valid and as you can see, the class constraints are separated by commas inside the parentheses.
+Обратите внимание, что `fromIntegral` имеет несколько ограничений класса в своей сигнатуре типа. Это полностью допустимо, и, как вы можете видеть, ограничения класса разделены запятыми внутри круглых скобок.
 
 # Syntax in Functions
 
@@ -4655,7 +4655,7 @@ ghci> fmap (*4) (foldr treeInsert EmptyTree [5,7,3,2,1,7])
 Node 28 (Node 4 EmptyTree (Node 8 EmptyTree (Node 12 EmptyTree (Node 20 EmptyTree EmptyTree)))) EmptyTree
 ```
 
-Nice! Now how about `Either a b`? Can this be made a functor? The `Functor` typeclass wants a type constructor that takes only one type parameter but `Either` takes two. Hmmm! I know, we'll partially apply `Either` by feeding it only one parameter so that it has one free parameter. Here's how `Either a` is a functor in the standard libraries:
+Nice! Now how about `Either a b`? Can this be made a functor? The `Functor` typeclass wants a type constructor that takes only one type parameter but `Either` takes two. Хммм! I know, we'll partially apply `Either` by feeding it only one parameter so that it has one free parameter. Here's how `Either a` is a functor in the standard libraries:
 
 ```haskell
 instance Functor (Either a) where
@@ -5321,7 +5321,7 @@ LETS GO
 
 We got out of that by pressing Ctrl-D. Pretty nice! As you can see, it prints out our capslocked input back to us line by line. When the result of `getContents` is bound to `contents`, it's not represented in memory as a real string, but more like a promise that it will produce the string eventually. When we map `toUpper` over `contents`, that's also a promise to map that function over the eventual contents. And finally when `putStr` happens, it says to the previous promise: _"Hey, I need a capslocked line!"_. It doesn't have any lines yet, so it says to `contents`: _"Hey, how about actually getting a line from the terminal?"_. So that's when `getContents` actually reads from the terminal and gives a line to the code that asked it to produce something tangible. That code then maps `toUpper` over that line and gives it to `putStr`, which prints it. And then, `putStr` says: _"Hey, I need the next line, come on!"_ and this repeats until there's no more input, which is signified by an end-of-file character.
 
-Let's make program that takes some input and prints out only those lines that are shorter than 10 characters. Observe:
+Let's make program that takes some input and prints out only those lines that are shorter than 10 characters. Наблюдай:
 
 ```haskell
 main = do
@@ -8343,7 +8343,7 @@ We also saw that we can take a normal value and wrap it inside a data type. For 
 
 Like we said, an applicative value can be seen as a value with an added context. A _fancy_ value, to put it in technical terms. For instance, the character `'a'` is just a normal character, whereas `Just 'a'` has some added context. Instead of a `Char`, we have a `Maybe Char`, which tells us that its value might be a character, but it could also be an absence of a character.
 
-It was neat to see how the `Applicative` type class allowed us to use normal functions on these values with context and how that context was preserved. Observe:
+It was neat to see how the `Applicative` type class allowed us to use normal functions on these values with context and how that context was preserved. Наблюдай:
 
 ```haskell
 ghci> (*) <$> Just 2 <*> Just 8
@@ -9062,7 +9062,7 @@ ghci> guard (1 > 2) :: [()]
 []
 ```
 
-Looks interesting, but how is it useful? In the list monad, we use it to filter out non-deterministic computations. Observe:
+Looks interesting, but how is it useful? In the list monad, we use it to filter out non-deterministic computations. Наблюдай:
 
 ```haskell
 ghci> [1..50] >>= (\x -> guard ('7' `elem` show x) >> return x)
@@ -9359,7 +9359,7 @@ ghci> isBigGang 30
 
 ![[LYHfGG_107_tuco.png]]
 
-So far so good. `isBigGang` takes a normal value and returns a value with a context. As we've just seen, feeding it a normal value is not a problem. Now what if we already have a value that has a log string attached to it, such as `(3, "Smallish gang.")`, and we want to feed it to `isBigGang`? It seems like once again, we're faced with this question: if we have a function that takes a normal value and returns a value with a context, how do we take a value with a context and feed it to the function?
+Пока все идет хорошо. `isBigGang` takes a normal value and returns a value with a context. As we've just seen, feeding it a normal value is not a problem. Now what if we already have a value that has a log string attached to it, such as `(3, "Smallish gang.")`, and we want to feed it to `isBigGang`? It seems like once again, we're faced with this question: if we have a function that takes a normal value and returns a value with a context, how do we take a value with a context and feed it to the function?
 
 When we were exploring the `Maybe` monad, we made a function `applyMaybe`, which took a `Maybe a` value and a function of type `a -> Maybe b` and fed that `Maybe a` value into the function, even though the function takes a normal `a` instead of a `Maybe a`. It did this by minding the context that comes with `Maybe a` values, which is that they are values with possible failure. But inside the `a -> Maybe b` function, we were able to treat that value as just a normal value, because `applyMaybe` (which later became `>>=`) took care of checking if it was a `Nothing` or a `Just` value.
 

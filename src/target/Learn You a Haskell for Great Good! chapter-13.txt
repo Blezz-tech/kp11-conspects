@@ -41,7 +41,7 @@ ghci> isBigGang 30
 
 ![[LYHfGG_107_tuco.png]]
 
-So far so good. `isBigGang` takes a normal value and returns a value with a context. As we've just seen, feeding it a normal value is not a problem. Now what if we already have a value that has a log string attached to it, such as `(3, "Smallish gang.")`, and we want to feed it to `isBigGang`? It seems like once again, we're faced with this question: if we have a function that takes a normal value and returns a value with a context, how do we take a value with a context and feed it to the function?
+Пока все идет хорошо. `isBigGang` takes a normal value and returns a value with a context. As we've just seen, feeding it a normal value is not a problem. Now what if we already have a value that has a log string attached to it, such as `(3, "Smallish gang.")`, and we want to feed it to `isBigGang`? It seems like once again, we're faced with this question: if we have a function that takes a normal value and returns a value with a context, how do we take a value with a context and feed it to the function?
 
 When we were exploring the `Maybe` monad, we made a function `applyMaybe`, which took a `Maybe a` value and a function of type `a -> Maybe b` and fed that `Maybe a` value into the function, even though the function takes a normal `a` instead of a `Maybe a`. It did this by minding the context that comes with `Maybe a` values, which is that they are values with possible failure. But inside the `a -> Maybe b` function, we were able to treat that value as just a normal value, because `applyMaybe` (which later became `>>=`) took care of checking if it was a `Nothing` or a `Just` value.
 

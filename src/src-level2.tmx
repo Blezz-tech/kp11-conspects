@@ -46,6 +46,30 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>![[LYHfGG_16_bomb.png]]</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144656Z" creationid="jenya" creationdate="20230618T144656Z">
+        <seg>![[LYHfGG_16_bomb.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>![[LYHfGG_17_box.png]]</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151638Z" creationid="jenya" creationdate="20230618T151638Z">
+        <seg>![[LYHfGG_17_box.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>![[LYHfGG_18_classes.png]]</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T155554Z" creationid="jenya" creationdate="20230618T155554Z">
+        <seg>![[LYHfGG_18_classes.png]]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>![[LYHfGG_1_bird.png]]</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230611T220409Z" creationid="jenya" creationdate="20230611T220409Z">
@@ -248,6 +272,22 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>## Type variables</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151605Z" creationid="jenya" creationdate="20230618T151605Z">
+        <seg>## Переменные типа</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>## Typeclasses 101</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T155551Z" creationid="jenya" creationdate="20230618T155551Z">
+        <seg>## Классы типов 101</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>## What you need to dive in</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173615Z" creationid="jenya" creationdate="20230615T173615Z">
@@ -292,6 +332,22 @@
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>5]
+[3,4,5]
+ghci&gt; succ 'B'
+'C'
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183912Z" creationid="jenya" creationdate="20230618T183912Z">
+        <seg>5]
+[3,4,5]
+ghci&gt; succ 'B'
+'C'
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>5] ["one", "two", "three", "four", "five"]
 [(1,"one"),(2,"two"),(3,"three"),(4,"four"),(5,"five")]
 ```</seg>
@@ -328,6 +384,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T074816Z" creationid="jenya" creationdate="20230617T074816Z">
         <seg>&gt; **Примечание**: Мы можем использовать ключевое слово `let` для определения имени прямо в GHCI.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>&gt; **Note**: the equality operator, `==` is a function.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160226Z" creationid="jenya" creationdate="20230618T160226Z">
+        <seg>&gt; **Примечание**: оператор равенства `==` является функцией.</seg>
       </tuv>
     </tu>
     <tu>
@@ -380,6 +444,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>A list of characters is a string.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151115Z" creationid="jenya" creationdate="20230618T151115Z">
+        <seg>Список символов представляет собой строку.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>A list of numbers is a list of numbers.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T111520Z" creationid="jenya" creationdate="20230617T111520Z">
@@ -404,6 +476,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>A lot of people coming from OOP get confused by typeclasses because they think they are like classes in object oriented languages.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160138Z" creationid="jenya" creationdate="20230618T160050Z">
+        <seg>Многие люди, пришедшие из ООП, путаются в классах типов, потому что думают, что они похожи на классы в объектно-ориентированных языках.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>A singleton tuple would just be the value it contains and as such would have no benefit to us.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T112404Z" creationid="jenya" creationdate="20230617T112404Z">
@@ -420,6 +500,38 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>A type is a kind of label that every expression has.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144355Z" creationid="jenya" creationdate="20230618T144355Z">
+        <seg>Тип - это своего рода метка, которая есть у каждого выражения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>A typeclass is a sort of interface that defines some behavior.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T155756Z" creationid="jenya" creationdate="20230618T155756Z">
+        <seg>Класс типов - это своего рода интерфейс, который определяет определенное поведение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>A very useful function for dealing with numbers is `fromIntegral`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T190612Z" creationid="jenya" creationdate="20230618T190612Z">
+        <seg>Очень полезная функция для работы с числами - `fromIntegral`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Again, all types covered so far are in this typeclass.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180951Z" creationid="jenya" creationdate="20230618T180951Z">
+        <seg>Опять же, все рассмотренные до сих пор типы находятся в этом классе типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Ahahaha!"
 "HA"
 ghci&gt; removeNonUppercase "IdontLIKEFROGS"
@@ -432,6 +544,46 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
 ghci&gt; removeNonUppercase "IdontLIKEFROGS"
 "ILIKEFROGS" 
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>All standard Haskell types except for IO (the type for dealing with input and output) and functions are a part of the `Eq` typeclass.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160731Z" creationid="jenya" creationdate="20230618T160731Z">
+        <seg>Все стандартные типы Haskell, за исключением ввода-вывода (тип для работы с вводом и выводом) и функций, являются частью класса типов `Eq`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>All the types we covered so far except for functions are part of `Ord`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T161126Z" creationid="jenya" creationdate="20230618T161126Z">
+        <seg>Все типы, которые мы рассмотрели до сих пор, за исключением функций, являются частью `Ord`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>All the types we mentioned previously except for functions are part of `Eq`, so they can be tested for equality.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T161112Z" creationid="jenya" creationdate="20230618T161112Z">
+        <seg>Все типы, которые мы упоминали ранее, за исключением функций, являются частью `Eq`, поэтому их можно проверить на равенство.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>All tuples are also part of `Bounded` if the components are also in it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T184414Z" creationid="jenya" creationdate="20230618T184414Z">
+        <seg>Все кортежи также являются частью `Bounded`, если компоненты также находятся в нем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>All types covered so far except for functions are a part of `Show`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180723Z" creationid="jenya" creationdate="20230618T180723Z">
+        <seg>Все рассмотренные до сих пор типы, за исключением функций, являются частью `Показать`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -456,6 +608,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T091050Z" creationid="jenya" creationdate="20230617T091050Z">
         <seg>Хотя проще просто использовать функцию `replicate`, если вам нужно некоторое количество одного и того же элемента в списке.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Although type variables can have names longer than one character, we usually give them names of a, b, c, d …</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T154523Z" creationid="jenya" creationdate="20230618T154523Z">
+        <seg>Хотя имена переменных типа могут быть длиннее одного символа, мы обычно присваиваем им имена a, b, c, d ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Ambiguous type variable `a' in the constraint:</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181152Z" creationid="jenya" creationdate="20230618T181152Z">
+        <seg>Ambiguous type variable `a' in the constraint:</seg>
       </tuv>
     </tu>
     <tu>
@@ -520,6 +688,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T073657Z" creationid="jenya" creationdate="20230617T073415Z">
         <seg>Еще одна особенность оператора `if` в Haskell заключается в том, что оператор является _выражением_ .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Any type where it makes sense to test for equality between two values of that type should be a member of the `Eq` class.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160723Z" creationid="jenya" creationdate="20230618T160723Z">
+        <seg>Любой тип, в котором имеет смысл проверять равенство между двумя значениями этого типа, должен быть членом класса `Eq`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Anyway, if we try to get a length of a list and then add it to `3.2`, we'll get an error because we tried to add together an `Int` and a floating point number.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T191145Z" creationid="jenya" creationdate="20230618T191145Z">
+        <seg>В любом случае, если мы попытаемся получить длину списка, а затем добавить его к `3.2`, мы получим ошибку, потому что мы пытались сложить вместе `Int` и число с плавающей запятой.</seg>
       </tuv>
     </tu>
     <tu>
@@ -628,10 +812,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Because `head` takes a list of any type and returns the first element, so what could it be?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151617Z" creationid="jenya" creationdate="20230618T151617Z">
+        <seg>Поскольку `head` принимает список любого типа и возвращает первый элемент, так что же это может быть?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Because it uses a lot of high level concepts, Haskell programs are usually shorter than their imperative equivalents.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173430Z" creationid="jenya" creationdate="20230615T173430Z">
         <seg>Поскольку в нем используется много высокоуровневых концепций, программы на Haskell обычно короче своих императивных эквивалентов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Because it's not in capital case it's actually a **type variable**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151803Z" creationid="jenya" creationdate="20230618T151745Z">
+        <seg>Поскольку это не прописная буква, на самом деле это **переменная типа** (англ. **type variable**).</seg>
       </tuv>
     </tu>
     <tu>
@@ -684,10 +884,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>But how do we write out the type of a function that takes several parameters?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145456Z" creationid="jenya" creationdate="20230618T145456Z">
+        <seg>Но как нам записать тип функции, которая принимает несколько параметров?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>But if you try to get the sixth element from a list that only has four elements, you'll get an error so be careful!</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T075556Z" creationid="jenya" creationdate="20230617T075556Z">
         <seg>Но если вы попытаетесь получить шестой элемент из списка, состоящего всего из четырех элементов, вы получите сообщение об ошибке, так что будьте осторожны!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>But now, it knows we want some type that is part of the `Read` class, it just doesn't know which one.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181349Z" creationid="jenya" creationdate="20230618T181349Z">
+        <seg>Но теперь он знает, что нам нужен какой-то тип, который является частью класса `Read`, он просто не знает, какой именно.</seg>
       </tuv>
     </tu>
     <tu>
@@ -704,6 +920,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T075219Z" creationid="jenya" creationdate="20230617T075219Z">
         <seg>Но для того, чтобы поместить что-то в конец списка длиной в пятьдесят миллионов записей, потребуется некоторое время.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>But since Haskell is a statically typed language, it has to know all the types before the code is compiled (or in the case of GHCI, evaluated).</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183535Z" creationid="jenya" creationdate="20230618T183535Z">
+        <seg>Но поскольку Haskell является статически типизированным языком, он должен знать все типы до того, как код будет скомпилирован (или, в случае GHCI, оценен).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>But sometimes, the compiler doesn't know whether to return a value of type `Int` or `Float` for an expression like `read "5"`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183511Z" creationid="jenya" creationdate="20230618T183511Z">
+        <seg>Но иногда компилятор не знает, возвращать ли значение типа `Int` или `Float` для выражения типа `read "5"`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -732,6 +964,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>But what happens if we try to do just `read "4"`?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180956Z" creationid="jenya" creationdate="20230618T180956Z">
+        <seg>Но что произойдет, если мы попытаемся просто `прочитать "4"`?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>But what happens if we try to get the head of an empty list?</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T080705Z" creationid="jenya" creationdate="20230617T080705Z">
@@ -744,6 +984,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T100157Z" creationid="jenya" creationdate="20230617T100157Z">
         <seg>Но что, если бы мы хотели получить не удвоения первых 10 натуральных чисел, а какую-то более сложную функцию, примененную к ним?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>But what's this?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144909Z" creationid="jenya" creationdate="20230618T144909Z">
+        <seg>Но что это такое?</seg>
       </tuv>
     </tu>
     <tu>
@@ -852,6 +1100,38 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Everything before the `=&gt;` symbol is called a **class constraint**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160403Z" creationid="jenya" creationdate="20230618T160403Z">
+        <seg>Все, что находится перед символом `=&gt;`, называется **ограничением класса** (англ. **class constraint**).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Everything in Haskell has a type, so the compiler can reason quite a lot about your program before compiling it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T140208Z" creationid="jenya" creationdate="20230618T140208Z">
+        <seg>Все в Haskell имеет тип, поэтому компилятор может довольно много рассуждать о вашей программе перед ее компиляцией.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Examining the type of `"HELLO!"` yields a `[Char]`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144926Z" creationid="jenya" creationdate="20230618T144918Z">
+        <seg>Анализ типа `"ПРИВЕТ!"` выдает `[Char]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Explicit types are always denoted with the first letter in capital case.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144727Z" creationid="jenya" creationdate="20230618T144727Z">
+        <seg>Явные типы всегда обозначаются первой буквой с большой буквы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>First the heads are compared.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T080426Z" creationid="jenya" creationdate="20230617T080426Z">
@@ -924,6 +1204,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>For instance, the `length` function has a type declaration of `length :: [a] -&gt; Int` instead of having a more general type of `(Num b) =&gt; length :: [a] -&gt; b`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T191140Z" creationid="jenya" creationdate="20230618T191140Z">
+        <seg>Например, функция `length` имеет объявление типа `length :: [a] -&gt; Int` вместо того, чтобы иметь более общий тип `(Num b) =&gt; length :: [a] -&gt; b`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>For instance, you set variable `a` to 5 and then do some stuff and then set it to something else.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T165305Z" creationid="jenya" creationdate="20230615T165154Z">
@@ -956,6 +1244,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>From here on, we'll give all the functions that we make type declarations.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145233Z" creationid="jenya" creationdate="20230618T145233Z">
+        <seg>С этого момента мы будем предоставлять все функции, для которых мы делаем объявления типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>From its type signature we see that it takes an integral number and turns it into a more general number.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T190809Z" creationid="jenya" creationdate="20230618T190809Z">
+        <seg>Из его сигнатуры типа мы видим, что он принимает целое число и превращает его в более общее число.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Function application (calling a function by putting a space after it and then typing out the parameters) has the highest precedence of them all.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T113138Z" creationid="jenya" creationdate="20230616T113138Z">
@@ -964,10 +1268,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Functions also have types.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145106Z" creationid="jenya" creationdate="20230618T145106Z">
+        <seg>Функции также имеют типы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Functions are defined in a similar way that they are called.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T134618Z" creationid="jenya" creationdate="20230616T134618Z">
         <seg>Функции определяются аналогично тому, как они вызываются.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Functions are expressions too, so `:t` works on them without a problem.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150033Z" creationid="jenya" creationdate="20230618T150033Z">
+        <seg>Функции тоже являются выражениями, поэтому `:t` работает с ними без проблем.</seg>
       </tuv>
     </tu>
     <tu>
@@ -988,10 +1308,30 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Functions that have type variables are called **polymorphic functions**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151853Z" creationid="jenya" creationdate="20230618T151849Z">
+        <seg>Функции, имеющие переменные типа, называются **полиморфными функциями** (англ. **polymorphic functions**).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>GHC can take a Haskell script (they usually have a .hs extension) and compile it but it also has an interactive mode which allows you to interactively interact with scripts.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173826Z" creationid="jenya" creationdate="20230615T173826Z">
         <seg>GHC может взять скрипт на Haskell (обычно они имеют расширение .hs) и скомпилировать его, но он также имеет интерактивный режим, который позволяет вам интерактивно взаимодействовать со скриптами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>GT]
+[LT,EQ,GT]
+ghci&gt; [3 ..</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183911Z" creationid="jenya" creationdate="20230618T183911Z">
+        <seg>GT]
+[LT,EQ,GT]
+ghci&gt; [3 ..</seg>
       </tuv>
     </tu>
     <tu>
@@ -1060,6 +1400,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Here we see that doing `:t` on an expression prints out the expression followed by `::` and its type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144705Z" creationid="jenya" creationdate="20230618T144705Z">
+        <seg>Здесь мы видим, что выполнение `:t` для выражения выводит выражение, за которым следует `::`, и его тип.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Here's a demonstration.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T112618Z" creationid="jenya" creationdate="20230617T112618Z">
@@ -1084,6 +1432,30 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Here's a simple function that takes three integers and adds them together:</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145503Z" creationid="jenya" creationdate="20230618T145503Z">
+        <seg>Вот простая функция, которая принимает три целых числа и складывает их вместе:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Here's an overview of some common types.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150037Z" creationid="jenya" creationdate="20230618T150037Z">
+        <seg>Вот обзор некоторых распространенных типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Here's how it looks like with a type declaration.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145250Z" creationid="jenya" creationdate="20230618T145250Z">
+        <seg>Вот как это выглядит с объявлением типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Here's some simple arithmetic.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095102Z" creationid="jenya" creationdate="20230616T095028Z">
@@ -1096,6 +1468,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T104956Z" creationid="jenya" creationdate="20230617T100416Z">
         <seg>Вот списковое включение в действии.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Hmmm!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151643Z" creationid="jenya" creationdate="20230618T151643Z">
+        <seg>Хммм!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1140,6 +1520,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>However, understanding the type system is a very important part of learning Haskell.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144330Z" creationid="jenya" creationdate="20230618T144330Z">
+        <seg>Однако понимание системы типов является очень важной частью изучения Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>I decided to write this because I wanted to solidify my own knowledge of Haskell and because I thought I could help people new to Haskell learn it from my perspective.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230611T225720Z" creationid="jenya" creationdate="20230611T225608Z">
@@ -1180,6 +1568,30 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>I mean like really big.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150925Z" creationid="jenya" creationdate="20230618T150925Z">
+        <seg>Я имею в виду, по-настоящему большой.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>I think that's there for historical reasons or something, although in my opinion, it's pretty stupid.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T191143Z" creationid="jenya" creationdate="20230618T191143Z">
+        <seg>Я думаю, что это существует по историческим причинам или что-то в этом роде, хотя, на мой взгляд, это довольно глупо.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If a function is comprised only of special characters, it's considered an infix function by default.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160245Z" creationid="jenya" creationdate="20230618T160245Z">
+        <seg>Если функция состоит только из специальных символов, по умолчанию она считается инфиксной функцией.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>If a function takes two parameters, we can also call it as an infix function by surrounding it with backticks.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T113652Z" creationid="jenya" creationdate="20230616T113545Z">
@@ -1204,6 +1616,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>If a type is a part of a typeclass, that means that it supports and implements the behavior the typeclass describes.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160128Z" creationid="jenya" creationdate="20230618T160128Z">
+        <seg>Если тип является частью класса типов, это означает, что он поддерживает и реализует поведение, описываемое классом типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>If it is, it returns `True`, otherwise it returns `False`.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T080805Z" creationid="jenya" creationdate="20230617T080805Z">
@@ -1224,6 +1644,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T080433Z" creationid="jenya" creationdate="20230617T080433Z">
         <seg>Если они равны, то сравниваются вторые элементы и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If we examine the type of `*`, we'll see that it accepts all numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185658Z" creationid="jenya" creationdate="20230618T185658Z">
+        <seg>Если мы рассмотрим тип `*`, то увидим, что он принимает все числа.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1284,6 +1712,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>If we used it as a boolean, it knew it had to return a `Bool`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181313Z" creationid="jenya" creationdate="20230618T181313Z">
+        <seg>Если мы использовали его как логическое значение, он знал, что должен вернуть `Bool`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If we want to examine its type, pass it to another function or call it as a prefix function, we have to surround it in parentheses.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160332Z" creationid="jenya" creationdate="20230618T160304Z">
+        <seg>Если мы хотим проверить её тип, передать его другой функции или вызвать его как префиксную функцию, мы должны заключить её в круглые скобки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>If we want to have a negative number, it's always best to surround it with parentheses.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095722Z" creationid="jenya" creationdate="20230616T095722Z">
@@ -1320,6 +1764,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T094804Z" creationid="jenya" creationdate="20230617T094804Z">
         <seg>Если бы мы хотели написать это на Haskell, мы могли бы сделать что-то вроде `take 10 [2,4..]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If we write a number, we don't have to tell Haskell it's a number.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144107Z" creationid="jenya" creationdate="20230618T144107Z">
+        <seg>Если мы пишем число, нам не нужно говорить Haskell, что это число.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1388,10 +1840,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>If you want to give your function a type declaration but are unsure as to what it should be, you can always just write the function without it and then check it with `:t`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150015Z" creationid="jenya" creationdate="20230618T150015Z">
+        <seg>Если вы хотите предоставить своей функции объявление типа, но не уверены в том, каким оно должно быть, вы всегда можете просто написать функцию без него, а затем проверить ее с помощью `:t`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>If you want to have the same prompt, just type in `:set prompt "ghci&gt; "`.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095057Z" creationid="jenya" creationdate="20230616T093632Z">
         <seg>Если вы хотите получить такое же приглашение, просто введите `:set prompt "ghci&gt; "`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>If you write a program where you try to divide a boolean type with some number, it won't even compile.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T140148Z" creationid="jenya" creationdate="20230618T140148Z">
+        <seg>Если вы напишете программу, в которой попытаетесь разделить логический тип на некоторое число, она даже не будет компилироваться.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1460,6 +1928,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>In a sense they are polymorphic constants.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T184357Z" creationid="jenya" creationdate="20230618T184357Z">
+        <seg>В некотором смысле они являются полиморфными константами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>In imperative languages you can just skip a couple of steps if the condition isn't satisfied but in Haskell every expression and function must return something.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T174145Z" creationid="jenya" creationdate="20230616T174145Z">
@@ -1524,6 +2000,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>In this typeclass are `Int` and `Integer`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T190334Z" creationid="jenya" creationdate="20230618T190334Z">
+        <seg>В этом классе типов находятся `Int` и `Integer`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Instead of surrounding the vectors with square brackets, we use parentheses: `[(1,2),(8,11),(4,5)]`.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T111847Z" creationid="jenya" creationdate="20230617T111833Z">
@@ -1548,6 +2032,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Interesting.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160335Z" creationid="jenya" creationdate="20230618T160335Z">
+        <seg>Интересно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Is it a type?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151724Z" creationid="jenya" creationdate="20230618T151724Z">
+        <seg>Является ли это типом?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>It all blows up in our face!</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T080721Z" creationid="jenya" creationdate="20230617T080721Z">
@@ -1560,6 +2060,30 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T171704Z" creationid="jenya" creationdate="20230615T171704Z">
         <seg>Это также позволяет создавать интересные вещи, такие как бесконечные структуры данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It appears that whole numbers are also polymorphic constants.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185436Z" creationid="jenya" creationdate="20230618T185436Z">
+        <seg>Похоже, что целые числа также являются полиморфными константами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It can _infer_ that on its own, so we don't have to explicitly write out the types of our functions and expressions to get things done.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144202Z" creationid="jenya" creationdate="20230618T144202Z">
+        <seg>Он может _сделать вывод_ сам по себе, поэтому нам не нужно явно выписывать типы наших функций и выражений, чтобы что-то сделать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It can have only two values: `True` and `False`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151100Z" creationid="jenya" creationdate="20230618T151100Z">
+        <seg>Он может иметь только два значения: `True` и `False`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1588,6 +2112,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>It has a type declaration of `fromIntegral :: (Num b, Integral a) =&gt; a -&gt; b`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T190621Z" creationid="jenya" creationdate="20230618T190621Z">
+        <seg>Он имеет объявление типа `fromIntegral :: (Num b, Integral a) =&gt; a -&gt; b`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It just states that the first component's type and the return value's type are the same.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T155547Z" creationid="jenya" creationdate="20230618T154858Z">
+        <seg>В нем просто указано, что тип первого компонента и тип возвращаемого значения совпадают.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>It means that we first call the function `bar` with `3` as the parameter to get some number and then we call `bar` again with that number.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T132531Z" creationid="jenya" creationdate="20230616T132531Z">
@@ -1600,6 +2140,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T112624Z" creationid="jenya" creationdate="20230617T112624Z">
         <seg>Он объединяет элементы в пары и создает новый список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It returns a type that's part of `Read` but if we don't try to use it in some way later, it has no way of knowing which type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181410Z" creationid="jenya" creationdate="20230618T181410Z">
+        <seg>Он возвращает тип, который является частью `Read`, но если мы не попытаемся использовать его каким-либо образом позже, у него не будет возможности узнать, какой тип.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It returns the first component of a pair.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T154532Z" creationid="jenya" creationdate="20230618T154532Z">
+        <seg>Он возвращает первый компонент пары.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1620,10 +2176,34 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>It takes a value whose type is a member of `Show` and presents it to us as a string.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180830Z" creationid="jenya" creationdate="20230618T180830Z">
+        <seg>Она принимает значение, тип которого является членом `Show`, и представляет его нам в виде строки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>It takes two lists and then zips them together into one list by joining the matching elements into pairs.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T112545Z" creationid="jenya" creationdate="20230617T112545Z">
         <seg>Он берет два списка, а затем объединяет их в один список, объединяя совпадающие элементы в пары.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It takes two numbers of the same type and returns a number of that type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185702Z" creationid="jenya" creationdate="20230618T185702Z">
+        <seg>Он принимает два числа одного и того же типа и возвращает число этого типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It tells us in which category of things that expression fits.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144402Z" creationid="jenya" creationdate="20230618T144402Z">
+        <seg>Это говорит нам, к какой категории вещей подходит это выражение.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1652,6 +2232,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>It's denoted by single quotes.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151140Z" creationid="jenya" creationdate="20230618T151111Z">
+        <seg>Он обозначается одинарными кавычками.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>It's especially useful for when you want to combine two lists in a way or traverse two lists simultaneously.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T112614Z" creationid="jenya" creationdate="20230617T112614Z">
@@ -1664,6 +2252,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T091019Z" creationid="jenya" creationdate="20230617T091019Z">
         <seg>Это все равно что перебирать список, содержащий только один элемент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>It's not hard to conclude that it stands for _character_.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144854Z" creationid="jenya" creationdate="20230618T144740Z">
+        <seg>Нетрудно сделать вывод, что это означает _символ_ (англ. _character_).</seg>
       </tuv>
     </tu>
     <tu>
@@ -1692,10 +2288,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>It's used for whole numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150042Z" creationid="jenya" creationdate="20230618T150042Z">
+        <seg>Он используется для целых чисел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>It's usually called as an infix function because it's easier to read that way.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T082935Z" creationid="jenya" creationdate="20230617T082935Z">
         <seg>Обычно она вызывается как инфиксная функция, потому что так ее легче читать.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Its members have the property of being able to act like numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185419Z" creationid="jenya" creationdate="20230618T185419Z">
+        <seg>Его члены обладают свойством вести себя подобно числам.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1716,6 +2328,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Later on we'll see why they're all just separated with `-&gt;` instead of having some more explicit distinction between the return types and the parameters like `Int, Int, Int -&gt; Int` or something.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150001Z" creationid="jenya" creationdate="20230618T150001Z">
+        <seg>Позже мы увидим, почему все они просто разделены `-&gt;` вместо того, чтобы проводить какое-то более явное различие между возвращаемыми типами и параметрами, такими как `Int, Int, Int -&gt; Int` или что-то в этом роде.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Later we'll go into more detail on infinite lists.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T090801Z" creationid="jenya" creationdate="20230617T090801Z">
@@ -1728,6 +2348,38 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164923Z" creationid="jenya" creationdate="20230615T164923Z">
         <seg>Изучение Haskell во многом похоже на обучение программированию в первый раз — это весело!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Let's check!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151635Z" creationid="jenya" creationdate="20230618T151635Z">
+        <seg>Давайте проверим!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Let's examine its type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T154535Z" creationid="jenya" creationdate="20230618T154535Z">
+        <seg>Давайте рассмотрим его тип.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Let's examine the type of a number.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185423Z" creationid="jenya" creationdate="20230618T185423Z">
+        <seg>Давайте рассмотрим тип числа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Let's give it a whirl.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144428Z" creationid="jenya" creationdate="20230618T144428Z">
+        <seg>Давайте раскрутим это дело.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1760,6 +2412,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T102134Z" creationid="jenya" creationdate="20230617T102134Z">
         <seg>Допустим, нам нужны только те элементы, которые в удвоенном виде больше или равны 12.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Let's take a look at the type signature of `read`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181353Z" creationid="jenya" creationdate="20230618T181353Z">
+        <seg>Давайте взглянем на сигнатуру типа `read`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1844,6 +2504,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Members of `Show` can be presented as strings.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180704Z" creationid="jenya" creationdate="20230618T180704Z">
+        <seg>Члены `Show` могут быть представлены в виде строк.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Most expressions are such that the compiler can infer what their type is by itself.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183456Z" creationid="jenya" creationdate="20230618T183456Z">
+        <seg>Большинство выражений таковы, что компилятор может сам определить, каков их тип.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Most functions that aren't used with numbers are _prefix_ functions.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100940Z" creationid="jenya" creationdate="20230616T100940Z">
@@ -1892,6 +2568,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Note that just because `a` and `b` are different type variables, they don't have to be different types.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T154853Z" creationid="jenya" creationdate="20230618T154853Z">
+        <seg>Обратите внимание, что только потому, что `a` и `b` являются переменными разного типа, они не обязательно должны быть разных типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Note that the empty tuple `()` is also a type which can only have a single value: `()`</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151600Z" creationid="jenya" creationdate="20230618T151600Z">
+        <seg>Обратите внимание, что пустой кортеж `()` также является типом, который может иметь только одно значение: `()`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Note that weeding out lists by predicates is also called **filtering**.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T102748Z" creationid="jenya" creationdate="20230617T102712Z">
@@ -1926,10 +2618,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Notice that `fromIntegral` has several class constraints in its type signature.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T191149Z" creationid="jenya" creationdate="20230618T191149Z">
+        <seg>Обратите внимание, что `fromIntegral` имеет несколько ограничений класса в своей сигнатуре типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Notice that because pairs can have different types in them, `zip` can take two lists that contain different types and zip them up.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T114226Z" creationid="jenya" creationdate="20230617T112812Z">
         <seg>Обратите внимание, что, поскольку пары могут содержать разные типы, `zip` может взять два списка, содержащих разные типы, и объединить их.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Notice that in the previous uses of `read` we did something with the result afterwards.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181210Z" creationid="jenya" creationdate="20230618T181210Z">
+        <seg>Обратите внимание, что при предыдущем использовании `read` мы впоследствии что-то делали с результатом.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1974,6 +2682,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Now we'll use GHCI to examine the types of some expressions.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144415Z" creationid="jenya" creationdate="20230618T144415Z">
+        <seg>Теперь мы будем использовать GHCI для изучения типов некоторых выражений.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Now we're going to make a function that multiplies a number by 2 but only if that number is smaller than or equal to 100 because numbers bigger than 100 are big enough as it is!</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T173827Z" creationid="jenya" creationdate="20230616T173827Z">
@@ -1994,6 +2710,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T084615Z" creationid="jenya" creationdate="20230617T084615Z">
         <seg>Числа можно перечислять.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Observe:</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183449Z" creationid="jenya" creationdate="20230618T183449Z">
+        <seg>Наблюдай:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2096,6 +2820,24 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Previously we mentioned that Haskell has a static type system.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T140127Z" creationid="jenya" creationdate="20230618T140127Z">
+        <seg>Ранее мы упоминали, что в Haskell есть система статических типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Probable fix: add a type signature that fixes these type variable(s)
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181153Z" creationid="jenya" creationdate="20230618T181153Z">
+        <seg>Probable fix: add a type signature that fixes these type variable(s)
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Ranges are a way of making lists that are arithmetic sequences of elements that can be enumerated.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T084610Z" creationid="jenya" creationdate="20230617T084610Z">
@@ -2108,6 +2850,30 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T090617Z" creationid="jenya" creationdate="20230617T090617Z">
         <seg>Диапазоны хороши тем, что вы также можете указать шаг.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Remember `fst`?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T154528Z" creationid="jenya" creationdate="20230618T154528Z">
+        <seg>Помнишь `fst`?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Remember that we previously stated that types are written in capital case, so it can't exactly be a type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151730Z" creationid="jenya" creationdate="20230618T151730Z">
+        <seg>Помните, что ранее мы указывали, что типы пишутся с большой буквы, поэтому это не может быть точно типом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Remember the list comprehension we made previously that filters a string so that only caps remain?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145247Z" creationid="jenya" creationdate="20230618T145247Z">
+        <seg>Помните представление списка, которое мы сделали ранее, которое фильтрует строку так, чтобы оставались только заглавные буквы?</seg>
       </tuv>
     </tu>
     <tu>
@@ -2152,6 +2918,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>See?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181357Z" creationid="jenya" creationdate="20230618T181357Z">
+        <seg>Видишь?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Simple.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T162729Z" creationid="jenya" creationdate="20230616T162729Z">
@@ -2164,6 +2938,30 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T113503Z" creationid="jenya" creationdate="20230616T113503Z">
         <seg>Итак, 100.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>So are `+`, `*`, `-`, `/` and pretty much all operators.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160234Z" creationid="jenya" creationdate="20230618T160234Z">
+        <seg>Так же как и `+`, `*`, `-`, `/` и почти все операторы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>So far so good.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180925Z" creationid="jenya" creationdate="20230618T180925Z">
+        <seg>Пока все идет хорошо.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>So if there's an `Eq` class constraint for a type variable in a function, it uses `==` or `/=` somewhere inside its definition.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160836Z" creationid="jenya" creationdate="20230618T160836Z">
+        <seg>Таким образом, если существует ограничение класса `Eq` для переменной типа в функции, она использует `==` или `/=` где-то внутри своего определения.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2200,6 +2998,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>So the expression of `(True, 'a')` has a type of `(Bool, Char)`, whereas an expression such as `('a','b','c')` would have the type of `(Char, Char, Char)`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145057Z" creationid="jenya" creationdate="20230618T145057Z">
+        <seg>Таким образом, выражение `(True, 'a')` имеет тип `(Bool, Char)`, тогда как такое выражение, как `('a','b','c')`, имело бы тип `(Char, Char, Char)`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>So this is an attempt at adding another useful resource for learning Haskell so you have a bigger chance of finding one you like.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T164104Z" creationid="jenya" creationdate="20230615T164104Z">
@@ -2216,6 +3022,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>So to get around this, we do `fromIntegral (length [1,2,3,4]) + 3.2` and it all works out.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T192015Z" creationid="jenya" creationdate="20230618T191147Z">
+        <seg>Итак, чтобы обойти это, мы делаем `fromIntegral :: (Num b, Integral a) =&gt; a -&gt; b`., и все получается.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>So we can call it as an infix function by doing ``92 `div` 10`` and suddenly it's much clearer.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T113857Z" creationid="jenya" creationdate="20230616T113857Z">
@@ -2224,10 +3038,34 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>So we have to tell Haskell: "Hey, this expression should have this type, in case you don't know!".</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183555Z" creationid="jenya" creationdate="20230618T183543Z">
+        <seg>Итак, мы должны сказать Хаскелю: "Эй, это выражение должно иметь этот тип, на случай, если вы не знаете!".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>So we read that as it being _a list of characters_.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144950Z" creationid="jenya" creationdate="20230618T144937Z">
+        <seg>Итак, мы читаем это как _список символов_ (англ. _a list of characters_).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>So what if we wanted to put a couple of vectors in a list to represent points of a shape on a two-dimensional plane?</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T111621Z" creationid="jenya" creationdate="20230617T111621Z">
         <seg>Итак, что, если бы мы захотели поместить пару векторов в список для представления точек фигуры на двумерной плоскости?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Some basic typeclasses:</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160800Z" creationid="jenya" creationdate="20230618T160800Z">
+        <seg>Некоторые основные классы типов:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2320,6 +3158,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>That makes sense.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144902Z" creationid="jenya" creationdate="20230618T144856Z">
+        <seg>В этом есть смысл.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That means that `a` can be of any type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151819Z" creationid="jenya" creationdate="20230618T151819Z">
+        <seg>Это означает, что `a` может быть любого типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>That means that a lot of possible errors are caught at compile time.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172853Z" creationid="jenya" creationdate="20230615T172853Z">
@@ -2368,6 +3222,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>That way, GHCI could infer what kind of result we wanted out of our `read`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181218Z" creationid="jenya" creationdate="20230618T181218Z">
+        <seg>Таким образом, GHCI мог бы сделать вывод, какого рода результат мы хотели получить от нашего `read`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>That would kind of work.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T111612Z" creationid="jenya" creationdate="20230617T111612Z">
@@ -2384,10 +3246,34 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>That's because it takes one string as a parameter and returns another as a result.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145353Z" creationid="jenya" creationdate="20230618T145353Z">
+        <seg>Это потому, что он принимает одну строку в качестве параметра и возвращает другую в результате.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>That's called referential transparency and not only does it allow the compiler to reason about the program's behavior, but it also allows you to easily deduce (and even prove) that a function is correct and then build more complex functions by gluing simple functions together.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170846Z" creationid="jenya" creationdate="20230615T170846Z">
         <seg>Это называется прозрачностью ссылок, и она не только позволяет компилятору рассуждать о поведении программы, но и позволяет вам легко вывести (и даже доказать), что функция верна, а затем создавать более сложные функции путем склеивания простых функций вместе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That's completely valid and as you can see, the class constraints are separated by commas inside the parentheses.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T191152Z" creationid="jenya" creationdate="20230618T191152Z">
+        <seg>Это полностью допустимо, и, как вы можете видеть, ограничения класса разделены запятыми внутри круглых скобок.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That's good because it's better to catch such errors at compile time instead of having your program crash.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T140157Z" creationid="jenya" creationdate="20230618T140157Z">
+        <seg>Это хорошо, потому что лучше отлавливать такие ошибки во время компиляции, а не вызывать сбой вашей программы.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2404,6 +3290,78 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T075204Z" creationid="jenya" creationdate="20230617T075204Z">
         <seg>Это не проблема, когда имеешь дело со списками, которые не слишком велики.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That's useful when you want integral and floating point types to work together nicely.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T190811Z" creationid="jenya" creationdate="20230618T190811Z">
+        <seg>Это полезно, когда вы хотите, чтобы целочисленные типы и типы с плавающей запятой хорошо работали вместе.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That's why `(5 :: Int) * (6 :: Integer)` will result in a type error whereas `5 * (6 :: Integer)` will work just fine and produce an `Integer` because `5` can act like an `Integer` or an `Int`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185716Z" creationid="jenya" creationdate="20230618T185716Z">
+        <seg>Вот почему `(5 :: Int) * (6 :: Integer)` приведет к ошибке типа, тогда как `5 * (6 :: Integer)` будет работать просто отлично и выдаст `Integer`, потому что `5` может действовать как `Integer` или `Int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That's why we can use `fst` on a pair that contains any two types.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T154843Z" creationid="jenya" creationdate="20230618T154843Z">
+        <seg>Вот почему мы можем использовать `fst` для пары, которая содержит любые два типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>That's why we can use explicit **type annotations**.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183305Z" creationid="jenya" creationdate="20230618T183305Z">
+        <seg>Вот почему мы можем использовать явные **аннотации типа** (англ. _type annotations_).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The `Eq` typeclass provides an interface for testing for equality.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160715Z" creationid="jenya" creationdate="20230618T160715Z">
+        <seg>Класс типов `Eq` предоставляет интерфейс для проверки на равенство.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The `[Char]` type is synonymous with `String` so it's clearer if we write `removeNonUppercase :: String -&gt; String`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145431Z" creationid="jenya" creationdate="20230618T145409Z">
+        <seg>Тип `[Char]` является синонимом `String`, поэтому будет понятнее, если мы напишем `removeNonUppercase :: String -&gt; String`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The `compare` function takes two `Ord` members of the same type and returns an ordering.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180321Z" creationid="jenya" creationdate="20230618T174630Z">
+        <seg>Функция `compare` принимает два элемента `Ord` одного и того же типа и возвращает `ordering`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The `elem` function has a type of `(Eq a) =&gt; a -&gt; [a] -&gt; Bool` because it uses `==` over a list to check whether some value we're looking for is in it.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160752Z" creationid="jenya" creationdate="20230618T160752Z">
+        <seg>Функция `elem` имеет тип `(Eq a) =&gt; a -&gt; [a] -&gt; Bool`, потому что она использует `==` над списком, чтобы проверить, есть ли в нем какое-то значение, которое мы ищем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The `read` function takes a string and returns a type which is a member of `Read`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180917Z" creationid="jenya" creationdate="20230618T180917Z">
+        <seg>Функция `read` принимает строку и возвращает тип, который является членом `Read`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2455,6 +3413,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T103941Z" creationid="jenya" creationdate="20230617T103941Z">
         <seg>Элемент включается в список только в том случае, если все предикаты оцениваются как `True`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The expression `True` is a boolean, `"hello"` is a string, etc.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144409Z" creationid="jenya" creationdate="20230618T144409Z">
+        <seg>Выражение `True` - это логическое значение, `"hello"` - это строка и т.д.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2531,6 +3497,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>The functions its members implement are `==` and `/=`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160833Z" creationid="jenya" creationdate="20230618T160833Z">
+        <seg>Функциями, которые реализуют его члены, являются `==` и `/=`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>The head of a list is basically its first element.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T080541Z" creationid="jenya" creationdate="20230617T080541Z">
@@ -2587,10 +3561,42 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>The main advantage of the `Enum` typeclass is that we can use its types in list ranges.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183729Z" creationid="jenya" creationdate="20230618T183729Z">
+        <seg>Главное преимущество класса типов `Enum` заключается в том, что мы можем использовать его типы в диапазонах списков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The main difference is that it's not bounded so it can be used to represent really really big numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150921Z" creationid="jenya" creationdate="20230618T150921Z">
+        <seg>Главное отличие заключается в том, что он не ограничен, поэтому его можно использовать для представления действительно очень больших чисел.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The most used function that deals with the `Show` typeclass is `show`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180824Z" creationid="jenya" creationdate="20230618T180824Z">
+        <seg>Наиболее используемой функцией, которая имеет дело с классом типов `Show`, является `show`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>The only thing a function can do is calculate something and return it as a result.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T170608Z" creationid="jenya" creationdate="20230615T170608Z">
         <seg>Единственное, что может сделать функция, - это вычислить что-то и вернуть это в результате.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The parameters are separated with `-&gt;` and there's no special distinction between the parameters and the return type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145514Z" creationid="jenya" creationdate="20230618T145514Z">
+        <seg>Параметры разделяются символом `-&gt;`, и нет особого различия между параметрами и возвращаемым типом.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2627,6 +3633,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>The return type is the last item in the declaration and the parameters are the first three.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145622Z" creationid="jenya" creationdate="20230618T145622Z">
+        <seg>Возвращаемый тип - это последний элемент в объявлении, а параметры - первые три.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>The second one receives that and gives back 4 to the first one.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T172540Z" creationid="jenya" creationdate="20230615T172540Z">
@@ -2647,6 +3661,38 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T074133Z" creationid="jenya" creationdate="20230617T074133Z">
         <seg>Во-вторых, эта функция не принимает никаких параметров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The square brackets denote a list.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144931Z" creationid="jenya" creationdate="20230618T144931Z">
+        <seg>Квадратные скобки обозначают список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The type declaration of `head` states that it takes a list of any type and returns one element of that type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151910Z" creationid="jenya" creationdate="20230618T151910Z">
+        <seg>В объявлении типа `head` указано, что он принимает список любого типа и возвращает один элемент этого типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The type of every expression is known at compile time, which leads to safer code.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T140135Z" creationid="jenya" creationdate="20230618T140135Z">
+        <seg>Тип каждого выражения известен во время компиляции, что приводит к созданию более безопасного кода.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>The type of those two values must be a member of the `Eq` class (this was the class constraint).</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160708Z" creationid="jenya" creationdate="20230618T160708Z">
+        <seg>Тип этих двух значений должен быть членом класса `Eq` (это было ограничение класса).</seg>
       </tuv>
     </tu>
     <tu>
@@ -2691,10 +3737,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>They also have defined successors and predecesors, which you can get with the `succ` and `pred` functions.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183849Z" creationid="jenya" creationdate="20230618T183849Z">
+        <seg>У них также есть определенные преемники (англ. _successors_) и предшественники (англ. _predecesors_), которые вы можете получить с помощью функций `succ` и `pred`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>They are denoted with parentheses and their components are separated by commas.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T111541Z" creationid="jenya" creationdate="20230617T111541Z">
         <seg>Они обозначаются круглыми скобками, а их компоненты разделяются запятыми.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>They can act like any type that's a member of the `Num` typeclass.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185637Z" creationid="jenya" creationdate="20230618T185637Z">
+        <seg>Они могут действовать как любой тип, являющийся членом класса типов `Num`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2779,6 +3841,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>This is generally considered to be good practice except when writing very short functions.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145126Z" creationid="jenya" creationdate="20230618T145126Z">
+        <seg>Обычно это считается хорошей практикой, за исключением случаев написания очень коротких функций.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>This is much like generics in other languages, only in Haskell it's much more powerful because it allows us to easily write very general functions if they don't use any specific behavior of the types in them.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151838Z" creationid="jenya" creationdate="20230618T151838Z">
+        <seg>Это очень похоже на дженерики в других языках, только в Haskell это намного мощнее, потому что позволяет нам легко писать очень общие функции, если они не используют какое-либо специфическое поведение используемых в них типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>This is pretty self-explanatory.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095138Z" creationid="jenya" creationdate="20230616T095120Z">
@@ -2819,10 +3897,34 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Those are types that are in the `Num` typeclass.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185650Z" creationid="jenya" creationdate="20230618T185650Z">
+        <seg>Это типы, которые находятся в классе типов `Num`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Those were a few basic functions that operate on lists.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T082944Z" creationid="jenya" creationdate="20230617T082944Z">
         <seg>Это было несколько основных функций, которые работают со списками.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>To be a member of `Ord`, a type must first have membership in the prestigious and exclusive `Eq` club.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180307Z" creationid="jenya" creationdate="20230618T180307Z">
+        <seg>Чтобы стать членом `Ord`, тип должен сначала иметь членство в престижном и эксклюзивном клубе `Eq`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>To join `Num`, a type must already be friends with `Show` and `Eq`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185825Z" creationid="jenya" creationdate="20230618T185825Z">
+        <seg>Чтобы присоединиться к `Num`, тип уже должен быть дружен с `Show` и `Eq`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2843,10 +3945,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>To see what the type is, Haskell would have to actually evaluate `read "5"`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183521Z" creationid="jenya" creationdate="20230618T183521Z">
+        <seg>Чтобы увидеть, что это за тип, Haskell пришлось бы на самом деле оценить `read "5"`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Tuples are much more rigid because each different size of tuple is its own type, so you can't write a general function to append an element to a tuple — you'd have to write a function for appending to a pair, one function for appending to a triple, one function for appending to a 4-tuple, etc.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T112211Z" creationid="jenya" creationdate="20230617T112211Z">
         <seg>Кортежи намного более жесткие, потому что каждый кортеж разного размера имеет свой собственный тип, поэтому вы не можете написать общую функцию для добавления элемента к кортежу — вам пришлось бы написать функцию для добавления к паре, одну функцию для добавления к тройке, одну функцию для добавления к 4-му кортежу и т.д.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Tuples are types but they are dependent on their length as well as the types of their components, so there is theoretically an infinite number of tuple types, which is too many to cover in this tutorial.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151235Z" creationid="jenya" creationdate="20230618T151235Z">
+        <seg>Кортежи - это типы, которые зависят от длины кортежей, а также от типов их компонентов, поэтому теоретически существует бесконечное количество типов кортежей, которых слишком много, чтобы рассматривать их в этом руководстве.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2875,6 +3993,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Type annotations are a way of explicitly saying what the type of an expression should be.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183311Z" creationid="jenya" creationdate="20230618T183311Z">
+        <seg>Аннотации типов - это способ явно указать, каким должен быть тип выражения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Type inference also allows your code to be more general.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230615T173100Z" creationid="jenya" creationdate="20230615T173100Z">
@@ -2883,10 +4009,34 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Types in this class: `()`, `Bool`, `Char`, `Ordering`, `Int`, `Integer`, `Float` and `Double`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183856Z" creationid="jenya" creationdate="20230618T183856Z">
+        <seg>Типы в этом классе: `()`, `Bool`, `Char`, `Ordering`, `Int`, `Integer`, `Float` и `Double`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Unlike Java or Pascal, Haskell has type inference.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144103Z" creationid="jenya" creationdate="20230618T144103Z">
+        <seg>В отличие от Java или Pascal, в Haskell есть вывод типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Unlike a list, a tuple can contain a combination of several types.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T111551Z" creationid="jenya" creationdate="20230617T111551Z">
         <seg>В отличие от списка, кортеж может содержать комбинацию нескольких типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Unlike lists, each tuple length has its own type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145043Z" creationid="jenya" creationdate="20230618T145043Z">
+        <seg>В отличие от списков, длина каждого кортежа имеет свой собственный тип.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2903,6 +4053,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T112137Z" creationid="jenya" creationdate="20230617T112137Z">
         <seg>Используйте кортежи, когда вы заранее знаете, сколько компонентов должно быть в том или ином фрагменте данных.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>Usually on 32-bit machines the maximum possible `Int` is 2147483647 and the minimum is -2147483648.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150101Z" creationid="jenya" creationdate="20230618T150101Z">
+        <seg>Обычно на 32-разрядных машинах максимально возможное значение `Int` равно 2147483647, а минимальное -2147483648.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2947,6 +4105,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>We can read the previous type declaration like this: the equality function takes any two values that are of the same type and returns a `Bool`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160703Z" creationid="jenya" creationdate="20230618T160348Z">
+        <seg>Мы можем прочитать предыдущее объявление типа следующим образом: функция равенства принимает любые два значения одного и того же типа и возвращает `Bool`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>We can use parentheses to make the precedence explicit or to change it.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095311Z" creationid="jenya" creationdate="20230616T095311Z">
@@ -2987,6 +4153,46 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>We covered some of the basics of Haskell with only a very superficial glance at types.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144325Z" creationid="jenya" creationdate="20230618T144325Z">
+        <seg>Мы рассмотрели некоторые основы Haskell, лишь очень поверхностно взглянув на типы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>We didn't have to give this function a type declaration because the compiler can infer by itself that it's a function from a string to a string but we did anyway.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145428Z" creationid="jenya" creationdate="20230618T145428Z">
+        <seg>Нам не нужно было давать этой функции объявление типа, потому что компилятор может сам сделать вывод, что это функция из строки в строку, но мы все равно это сделали.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>We do that by adding `::` at the end of the expression and then specifying a type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183428Z" creationid="jenya" creationdate="20230618T183428Z">
+        <seg>Мы делаем это, добавляя `::` в конце выражения, а затем указывая тип.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>We see a new thing here, the `=&gt;` symbol.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160343Z" creationid="jenya" creationdate="20230618T160343Z">
+        <seg>Здесь мы видим новую вещь - символ `=&gt;`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>We see that `fst` takes a tuple which contains two types and returns an element which is of the same type as the pair's first component.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T154826Z" creationid="jenya" creationdate="20230618T154826Z">
+        <seg>Мы видим, что `fst` принимает кортеж, который содержит два типа, и возвращает элемент того же типа, что и первый компонент пары.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>We took a list of numbers and we filtered them by the predicate.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T102804Z" creationid="jenya" creationdate="20230617T102804Z">
@@ -3023,6 +4229,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T110259Z" creationid="jenya" creationdate="20230617T110259Z">
         <seg>Мы будем называть это `length'`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>We'll do that by using the `:t` command which, followed by any valid expression, tells us its type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144422Z" creationid="jenya" creationdate="20230618T144422Z">
+        <seg>Мы сделаем это с помощью команды `:t`, за которой следует любое допустимое выражение, сообщающее нам его тип.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3099,6 +4313,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>Well, they're not.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160141Z" creationid="jenya" creationdate="20230618T160141Z">
+        <seg>Ну, это не так.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>Well, we'd get this error:</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T111952Z" creationid="jenya" creationdate="20230617T111952Z">
@@ -3123,6 +4345,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>What GHCI is telling us here is that it doesn't know what we want in return.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181202Z" creationid="jenya" creationdate="20230618T181154Z">
+        <seg>Что GHCI говорит нам здесь, так это то, что он не знает, чего мы хотим взамен.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>What about doing `5 + "llama"` or `5 == True`?</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T095950Z" creationid="jenya" creationdate="20230616T095950Z">
@@ -3143,6 +4373,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T090526Z" creationid="jenya" creationdate="20230617T090526Z">
         <seg>Что следует за словом "John"?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>What do you think is the type of the `head` function?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151612Z" creationid="jenya" creationdate="20230618T151612Z">
+        <seg>Как вы думаете, что это за тип функции `head`?</seg>
       </tuv>
     </tu>
     <tu>
@@ -3203,10 +4441,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>What is this `a`?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151651Z" creationid="jenya" creationdate="20230618T151646Z">
+        <seg>Что это за буква `a`?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>What that means for us is that these two statements are equivalent.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T113148Z" creationid="jenya" creationdate="20230616T113148Z">
         <seg>Для нас это означает, что эти два утверждения эквивалентны.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>What's the type signature of the `==` function?</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160157Z" creationid="jenya" creationdate="20230618T160142Z">
+        <seg>Какова сигнатура типа функции `==`?</seg>
       </tuv>
     </tu>
     <tu>
@@ -3247,6 +4501,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T080735Z" creationid="jenya" creationdate="20230617T080735Z">
         <seg>При использовании `head`, `tail`, `last` и `init` будьте осторожны и не используйте их в пустых списках.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>When writing our own functions, we can choose to give them an explicit type declaration.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145113Z" creationid="jenya" creationdate="20230618T145113Z">
+        <seg>При написании наших собственных функций мы можем предоставить им явное объявление типа.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3363,6 +4625,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>You can think of them kind of as Java interfaces, only better.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160147Z" creationid="jenya" creationdate="20230618T160147Z">
+        <seg>Вы можете думать о них как о интерфейсах Java, только лучше.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>You can write list comprehensions across several lines.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T110946Z" creationid="jenya" creationdate="20230617T110946Z">
@@ -3459,10 +4729,26 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>`'a'`, as it would seem, has a type of `Char`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144738Z" creationid="jenya" creationdate="20230618T144738Z">
+        <seg>`'a'`, как могло бы показаться, имеет тип `Char`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>`+` expects its left and right side to be numbers.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T100138Z" creationid="jenya" creationdate="20230616T100138Z">
         <seg>`+` ожидает, что его левая и правая стороны будут числами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`4 == 5` will always return `False`, so its type is `Bool`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145103Z" creationid="jenya" creationdate="20230618T145103Z">
+        <seg>`4 == 5` всегда возвращает `False`, поэтому его тип - `Bool`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3479,6 +4765,190 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T073628Z" creationid="jenya" creationdate="20230617T073628Z">
         <seg>`5` - это выражение, потому что оно возвращает 5, `4 + 8` - это выражение, `x + y` - это выражение, потому что оно возвращает сумму `x` и `y`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`7` can be an `Int` but `7.2` cannot.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150047Z" creationid="jenya" creationdate="20230618T150047Z">
+        <seg>`7` может быть `Int`, но `7.2` не может.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`::` is read as "has type of".</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144712Z" creationid="jenya" creationdate="20230618T144712Z">
+        <seg>`::` читается как "имеет тип".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Bool` is a boolean type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151056Z" creationid="jenya" creationdate="20230618T151056Z">
+        <seg>`Bool` - это логический тип.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Bounded` members have an upper and a lower bound.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T184429Z" creationid="jenya" creationdate="20230618T183915Z">
+        <seg>Элементы типа `Bounded` имеют верхнюю и нижнюю границы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Char` represents a character.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151105Z" creationid="jenya" creationdate="20230618T151105Z">
+        <seg>`Char` представляет символ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Double` is a real floating point with double the precision!</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151048Z" creationid="jenya" creationdate="20230618T151048Z">
+        <seg>`Double` - это настоящая плавающая точка с удвоенной точностью!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Enum` members are sequentially ordered types — they can be enumerated.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183632Z" creationid="jenya" creationdate="20230618T183544Z">
+        <seg>Члены `Enum` представляют собой последовательно упорядоченные типы — их можно перечислять.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Eq` is used for types that support equality testing.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160821Z" creationid="jenya" creationdate="20230618T160821Z">
+        <seg>`Eq` используется для типов, которые поддерживают проверку на равенство.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Float` is a real floating point with single precision.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151031Z" creationid="jenya" creationdate="20230618T151031Z">
+        <seg>`Float` - это реальная плавающая точка с одинарной точностью.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Floating` includes only floating point numbers, so `Float` and `Double`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T190337Z" creationid="jenya" creationdate="20230618T190337Z">
+        <seg>`Floating` включает в себя только числа с плавающей запятой, поэтому `Float` и `Double`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Int` is bounded, which means that it has a minimum and a maximum value.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150054Z" creationid="jenya" creationdate="20230618T150054Z">
+        <seg>`Int` ограничен, что означает, что он имеет минимальное и максимальное значения.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Int` stands for integer.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150039Z" creationid="jenya" creationdate="20230618T150039Z">
+        <seg>`Int` означает целое число.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Int`, however, is more efficient.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150930Z" creationid="jenya" creationdate="20230618T150930Z">
+        <seg>`Int`, однако, более эффективен.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Integer` stands for, er … also integer.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150908Z" creationid="jenya" creationdate="20230618T150908Z">
+        <seg>`Integer` означает, э-э... тоже целое число.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Integral` is also a numeric typeclass.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185828Z" creationid="jenya" creationdate="20230618T185828Z">
+        <seg>`Integral` также является числовым классом типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Num` includes all numbers, including real numbers and integral numbers, `Integral` includes only integral (whole) numbers.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185838Z" creationid="jenya" creationdate="20230618T185838Z">
+        <seg>`Num` включает в себя все числа, включая действительные числа и целые числа, `Integral` включает в себя только целые числа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Num` is a numeric typeclass.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185414Z" creationid="jenya" creationdate="20230618T185414Z">
+        <seg>`Num` - это числовой класс типов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Ord` covers all the standard comparing functions such as `&gt;`, `&lt;`, `&gt;=` and `&lt;=`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T174623Z" creationid="jenya" creationdate="20230618T174623Z">
+        <seg>`Ord` охватывает все стандартные функции сравнения, такие как `&gt;`, `&lt;`, `&gt;=` и `&lt;=`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Ord` is for types that have an ordering.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T161121Z" creationid="jenya" creationdate="20230618T161121Z">
+        <seg>`Ord` предназначен для типов, которые имеют порядок.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Ordering` is a type that can be `GT`, `LT` or `EQ`, meaning _greater than_, _lesser than_ and _equal_, respectively.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180300Z" creationid="jenya" creationdate="20230618T174633Z">
+        <seg>`Ordering` - это тип, который может быть `GT`, `LT` или `EQ`, что означает _больше чем_ , _меньше чем_ и _эквивалентно_ соответственно. (англ. _greater than_, _lesser than_, _equal_ соответственно)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Read a' arising from a use of `read' at &lt;interactive&gt;:1:0-7</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181153Z" creationid="jenya" creationdate="20230618T181153Z">
+        <seg>`Read a' arising from a use of `read' at &lt;interactive&gt;:1:0-7</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`Read` is sort of the opposite typeclass of `Show`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180844Z" creationid="jenya" creationdate="20230618T180844Z">
+        <seg>`Read` - это своего рода класс, противоположный типу `Show`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`True` is of a `Bool` type.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144900Z" creationid="jenya" creationdate="20230618T144900Z">
+        <seg>`True` относится к типу `Bool`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3558,12 +5028,54 @@ In the definition of `it': it = 5 + "llama"
     <tu>
       <tuv xml:lang="en-US">
         <seg>```haskell
+addThree :: Int -&gt; Int -&gt; Int -&gt; Int
+addThree x y z = x + y + z
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145504Z" creationid="jenya" creationdate="20230618T145504Z">
+        <seg>```haskell
+addThree :: Int -&gt; Int -&gt; Int -&gt; Int
+addThree x y z = x + y + z
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
 boomBangs xs = [ if x &lt; 10 then "BOOM!" else "BANG!" | x &lt;- xs, odd x] 
 ```</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T103809Z" creationid="jenya" creationdate="20230617T103809Z">
         <seg>```haskell
 boomBangs xs = [ if x &lt; 10 then "BOOM!" else "BANG!" | x &lt;- xs, odd x] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+circumference :: Float -&gt; Float
+circumference r = 2 * pi * r
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151033Z" creationid="jenya" creationdate="20230618T151033Z">
+        <seg>```haskell
+circumference :: Float -&gt; Float
+circumference r = 2 * pi * r
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+circumference' :: Double -&gt; Double
+circumference' r = 2 * pi * r
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151049Z" creationid="jenya" creationdate="20230618T151049Z">
+        <seg>```haskell
+circumference' :: Double -&gt; Double
+circumference' r = 2 * pi * r
 ```</seg>
       </tuv>
     </tu>
@@ -3634,6 +5146,46 @@ doubleUs x y = x*2 + y*2
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T162717Z" creationid="jenya" creationdate="20230616T162717Z">
         <seg>```haskell
 doubleUs x y = x*2 + y*2 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+factorial :: Integer -&gt; Integer
+factorial n = product [1..n]
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150932Z" creationid="jenya" creationdate="20230618T150932Z">
+        <seg>```haskell
+factorial :: Integer -&gt; Integer
+factorial n = product [1..n]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; "Abrakadabra" &lt; "Zebra"
+True
+ghci&gt; "Abrakadabra" `compare` "Zebra"
+LT
+ghci&gt; 5 &gt;= 2
+True
+ghci&gt; 5 `compare` 3
+GT
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180651Z" creationid="jenya" creationdate="20230618T180651Z">
+        <seg>```haskell
+ghci&gt; "Abrakadabra" &lt; "Zebra"
+True
+ghci&gt; "Abrakadabra" `compare` "Zebra"
+LT
+ghci&gt; 5 &gt;= 2
+True
+ghci&gt; 5 `compare` 3
+GT
 ```</seg>
       </tuv>
     </tu>
@@ -3718,6 +5270,32 @@ ghci&gt;
     <tu>
       <tuv xml:lang="en-US">
         <seg>```haskell
+ghci&gt; 20 :: Int
+20
+ghci&gt; 20 :: Integer
+20
+ghci&gt; 20 :: Float
+20.0
+ghci&gt; 20 :: Double
+20.0
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185638Z" creationid="jenya" creationdate="20230618T185638Z">
+        <seg>```haskell
+ghci&gt; 20 :: Int
+20
+ghci&gt; 20 :: Integer
+20
+ghci&gt; 20 :: Float
+20.0
+ghci&gt; 20 :: Double
+20.0
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
 ghci&gt; 4 `elem` [3,4,5,6]
 True
 ghci&gt; 10 `elem` [3,4,5,6]
@@ -3766,6 +5344,36 @@ True
     <tu>
       <tuv xml:lang="en-US">
         <seg>```haskell
+ghci&gt; 5 == 5
+True
+ghci&gt; 5 /= 5
+False
+ghci&gt; 'a' == 'a'
+True
+ghci&gt; "Ho Ho" == "Ho Ho"
+True
+ghci&gt; 3.432 == 3.432
+True
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T161114Z" creationid="jenya" creationdate="20230618T161114Z">
+        <seg>```haskell
+ghci&gt; 5 == 5
+True
+ghci&gt; 5 /= 5
+False
+ghci&gt; 'a' == 'a'
+True
+ghci&gt; "Ho Ho" == "Ho Ho"
+True
+ghci&gt; 3.432 == 3.432
+True
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
 ghci&gt; :l baby
 [1 of 1] Compiling Main             ( baby.hs, interpreted )
 Ok, modules loaded: Main.</seg>
@@ -3775,6 +5383,134 @@ Ok, modules loaded: Main.</seg>
 ghci&gt; :l baby
 [1 of 1] Compiling Main             ( baby.hs, interpreted )
 Ok, modules loaded: Main.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; :t 'a'
+'a' :: Char
+ghci&gt; :t True
+True :: Bool
+ghci&gt; :t "HELLO!"
+"HELLO!" :: [Char]
+ghci&gt; :t (True, 'a')
+(True, 'a') :: (Bool, Char)
+ghci&gt; :t 4 == 5
+4 == 5 :: Bool
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T144429Z" creationid="jenya" creationdate="20230618T144429Z">
+        <seg>```haskell
+ghci&gt; :t 'a'
+'a' :: Char
+ghci&gt; :t True
+True :: Bool
+ghci&gt; :t "HELLO!"
+"HELLO!" :: [Char]
+ghci&gt; :t (True, 'a')
+(True, 'a') :: (Bool, Char)
+ghci&gt; :t 4 == 5
+4 == 5 :: Bool
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; :t (*)
+(*) :: (Num a) =&gt; a -&gt; a -&gt; a
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185652Z" creationid="jenya" creationdate="20230618T185652Z">
+        <seg>```haskell
+ghci&gt; :t (*)
+(*) :: (Num a) =&gt; a -&gt; a -&gt; a
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; :t (==)
+(==) :: (Eq a) =&gt; a -&gt; a -&gt; Bool
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T160200Z" creationid="jenya" creationdate="20230618T160200Z">
+        <seg>```haskell
+ghci&gt; :t (==)
+(==) :: (Eq a) =&gt; a -&gt; a -&gt; Bool
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; :t (&gt;)
+(&gt;) :: (Ord a) =&gt; a -&gt; a -&gt; Bool
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T161123Z" creationid="jenya" creationdate="20230618T161123Z">
+        <seg>```haskell
+ghci&gt; :t (&gt;)
+(&gt;) :: (Ord a) =&gt; a -&gt; a -&gt; Bool
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; :t 20
+20 :: (Num t) =&gt; t
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185424Z" creationid="jenya" creationdate="20230618T185424Z">
+        <seg>```haskell
+ghci&gt; :t 20
+20 :: (Num t) =&gt; t
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; :t fst
+fst :: (a, b) -&gt; a
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T154535Z" creationid="jenya" creationdate="20230618T154535Z">
+        <seg>```haskell
+ghci&gt; :t fst
+fst :: (a, b) -&gt; a
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; :t head
+head :: [a] -&gt; a
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151637Z" creationid="jenya" creationdate="20230618T151637Z">
+        <seg>```haskell
+ghci&gt; :t head
+head :: [a] -&gt; a
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; :t read
+read :: (Read a) =&gt; String -&gt; a
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T181354Z" creationid="jenya" creationdate="20230618T181354Z">
+        <seg>```haskell
+ghci&gt; :t read
+read :: (Read a) =&gt; String -&gt; a
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -3858,6 +5594,20 @@ ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11]]
 ghci&gt; [ x*y | x &lt;- [2,5,10], y &lt;- [8,10,11]]
 [16,20,22,40,50,55,80,100,110] 
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; ['a'..'e']
+"abcde"
+ghci&gt; [LT ..</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183910Z" creationid="jenya" creationdate="20230618T183910Z">
+        <seg>```haskell
+ghci&gt; ['a'..'e']
+"abcde"
+ghci&gt; [LT ..</seg>
       </tuv>
     </tu>
     <tu>
@@ -4007,6 +5757,34 @@ ghci&gt; boomBangs [7..13]
     <tu>
       <tuv xml:lang="en-US">
         <seg>```haskell
+ghci&gt; circumference 4.0
+25.132742
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151034Z" creationid="jenya" creationdate="20230618T151034Z">
+        <seg>```haskell
+ghci&gt; circumference 4.0
+25.132742
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; circumference' 4.0
+25.132741228718345
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T151050Z" creationid="jenya" creationdate="20230618T151050Z">
+        <seg>```haskell
+ghci&gt; circumference' 4.0
+25.132741228718345
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
 ghci&gt; doubleUs 4 9
 26
 ghci&gt; doubleUs 2.3 34.2
@@ -4045,6 +5823,20 @@ ghci&gt; drop 0 [1,2,3,4]
 [1,2,3,4]
 ghci&gt; drop 100 [1,2,3,4]
 [] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; factorial 50
+30414093201713378043612608166064768844377641568960512000000000000
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T150933Z" creationid="jenya" creationdate="20230618T150933Z">
+        <seg>```haskell
+ghci&gt; factorial 50
+30414093201713378043612608166064768844377641568960512000000000000
 ```</seg>
       </tuv>
     </tu>
@@ -4255,6 +6047,20 @@ ghci&gt; [ [ x | x &lt;- xs, even x ] | xs &lt;- xxs]
     <tu>
       <tuv xml:lang="en-US">
         <seg>```haskell
+ghci&gt; maxBound :: (Bool, Int, Char)
+(True,2147483647,'\1114111')
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T185406Z" creationid="jenya" creationdate="20230618T185406Z">
+        <seg>```haskell
+ghci&gt; maxBound :: (Bool, Int, Char)
+(True,2147483647,'\1114111')
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
 ghci&gt; min 9 10
 9
 ghci&gt; min 3.4 3.2
@@ -4271,6 +6077,32 @@ ghci&gt; min 3.4 3.2
 3.2
 ghci&gt; max 100 101
 101 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; minBound :: Int
+-2147483648
+ghci&gt; maxBound :: Char
+'\1114111'
+ghci&gt; maxBound :: Bool
+True
+ghci&gt; minBound :: Bool
+False
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T184031Z" creationid="jenya" creationdate="20230618T184031Z">
+        <seg>```haskell
+ghci&gt; minBound :: Int
+-2147483648
+ghci&gt; maxBound :: Char
+'\1114111'
+ghci&gt; maxBound :: Bool
+True
+ghci&gt; minBound :: Bool
+False
 ```</seg>
       </tuv>
     </tu>
@@ -4313,6 +6145,74 @@ True
     <tu>
       <tuv xml:lang="en-US">
         <seg>```haskell
+ghci&gt; read "4"
+&lt;interactive&gt;:1:0:</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180957Z" creationid="jenya" creationdate="20230618T180957Z">
+        <seg>```haskell
+ghci&gt; read "4"
+&lt;interactive&gt;:1:0:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; read "5" :: Int
+5
+ghci&gt; read "5" :: Float
+5.0
+ghci&gt; (read "5" :: Float) * 4
+20.0
+ghci&gt; read "[1,2,3,4]" :: [Int]
+[1,2,3,4]
+ghci&gt; read "(3, 'a')" :: (Int, Char)
+(3, 'a')
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T183452Z" creationid="jenya" creationdate="20230618T183452Z">
+        <seg>```haskell
+ghci&gt; read "5" :: Int
+5
+ghci&gt; read "5" :: Float
+5.0
+ghci&gt; (read "5" :: Float) * 4
+20.0
+ghci&gt; read "[1,2,3,4]" :: [Int]
+[1,2,3,4]
+ghci&gt; read "(3, 'a')" :: (Int, Char)
+(3, 'a')
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; read "True" || False
+True
+ghci&gt; read "8.2" + 3.8
+12.0
+ghci&gt; read "5" - 2
+3
+ghci&gt; read "[1,2,3,4]" ++ [3]
+[1,2,3,4,3]
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180919Z" creationid="jenya" creationdate="20230618T180919Z">
+        <seg>```haskell
+ghci&gt; read "True" || False
+True
+ghci&gt; read "8.2" + 3.8
+12.0
+ghci&gt; read "5" - 2
+3
+ghci&gt; read "[1,2,3,4]" ++ [3]
+[1,2,3,4,3]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
 ghci&gt; removeNonUppercase "Hahaha!</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T110527Z" creationid="jenya" creationdate="20230617T110527Z">
@@ -4331,6 +6231,28 @@ ghci&gt; reverse [5,4,3,2,1]
         <seg>```haskell
 ghci&gt; reverse [5,4,3,2,1]
 [1,2,3,4,5]
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
+ghci&gt; show 3
+"3"
+ghci&gt; show 5.334
+"5.334"
+ghci&gt; show True
+"True"
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T180837Z" creationid="jenya" creationdate="20230618T180837Z">
+        <seg>```haskell
+ghci&gt; show 3
+"3"
+ghci&gt; show 5.334
+"5.334"
+ghci&gt; show True
+"True"
 ```</seg>
       </tuv>
     </tu>
@@ -4535,6 +6457,20 @@ length' xs = sum [1 | _ &lt;- xs]
     <tu>
       <tuv xml:lang="en-US">
         <seg>```haskell
+removeNonUppercase :: [Char] -&gt; [Char]
+removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']] 
+```</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145252Z" creationid="jenya" creationdate="20230618T145252Z">
+        <seg>```haskell
+removeNonUppercase :: [Char] -&gt; [Char]
+removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']] 
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>```haskell
 removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']] 
 ```</seg>
       </tuv>
@@ -4618,6 +6554,14 @@ removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']]
     </tu>
     <tu>
       <tuv xml:lang="en-US">
+        <seg>`minBound` and `maxBound` are interesting because they have a type of `(Bounded a) =&gt; a`.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T184354Z" creationid="jenya" creationdate="20230618T184354Z">
+        <seg>`minBound` и `maxBound` интересны тем, что они имеют тип `(Bounded a) =&gt; a`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
         <seg>`min` returns the one that's lesser and `max` returns the one that's greater.</seg>
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230616T111446Z" creationid="jenya" creationdate="20230616T111446Z">
@@ -4654,6 +6598,14 @@ removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']]
       </tuv>
       <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230617T082852Z" creationid="jenya" creationdate="20230617T082827Z">
         <seg>`product` принимает список чисел и возвращает их произведение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en-US">
+        <seg>`removeNonUppercase` has a type of `[Char] -&gt; [Char]`, meaning that it maps from a string to a string.</seg>
+      </tuv>
+      <tuv xml:lang="ru-RU" changeid="jenya" changedate="20230618T145316Z" creationid="jenya" creationdate="20230618T145316Z">
+        <seg>`removeNonUppercase` имеет тип `[Char] -&gt; [Char]`, что означает, что он преобразуется из строки в строку.</seg>
       </tuv>
     </tu>
     <tu>

@@ -24,7 +24,7 @@ We also saw that we can take a normal value and wrap it inside a data type. For 
 
 Like we said, an applicative value can be seen as a value with an added context. A _fancy_ value, to put it in technical terms. For instance, the character `'a'` is just a normal character, whereas `Just 'a'` has some added context. Instead of a `Char`, we have a `Maybe Char`, which tells us that its value might be a character, but it could also be an absence of a character.
 
-It was neat to see how the `Applicative` type class allowed us to use normal functions on these values with context and how that context was preserved. Observe:
+It was neat to see how the `Applicative` type class allowed us to use normal functions on these values with context and how that context was preserved. Наблюдай:
 
 ```haskell
 ghci> (*) <$> Just 2 <*> Just 8
@@ -743,7 +743,7 @@ ghci> guard (1 > 2) :: [()]
 []
 ```
 
-Looks interesting, but how is it useful? In the list monad, we use it to filter out non-deterministic computations. Observe:
+Looks interesting, but how is it useful? In the list monad, we use it to filter out non-deterministic computations. Наблюдай:
 
 ```haskell
 ghci> [1..50] >>= (\x -> guard ('7' `elem` show x) >> return x)
