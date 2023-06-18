@@ -25,10 +25,10 @@
       "nodeCount": 11,
       "linkCount": 10,
       "radii": [6, 5.353316326530613, 4.7602040816326525, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449, 3.975765306122449],
-      "labels": ["Отчеты", "README", "README", "Полезные ресурсы", "О Haskell по-человечески (Итого)", "py Конвертация txt в xlsx", "py код оптимизации mdx", "nodejs - зло", "О Haskell по-человечески (Оригинал)", "Learn You a Haskell for Great Good! ru", "Learn You a Haskell for Great Good! en"],
-      "paths": ["отчеты.html", "курсы/learn-you-a-haskell-for-great-good!/readme.html", "readme.html", "полезные-ресурсы.html", "мои-решения/о-haskell-по-человечески/о-haskell-по-человечески-(итого).html", "для-отчета/py-конвертация-txt-в-xlsx.html", "для-отчета/py-код-оптимизации-mdx.html", "для-отчета/nodejs-зло.html", "курсы/о-haskell-по-человечески/о-haskell-по-человечески-(оригинал).html", "курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-ru.html", "курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-en.html"],
+      "labels": ["Отчеты", "README", "README", "Полезные ресурсы", "О Haskell по-человечески (Оригинал)", "Learn You a Haskell for Great Good! ru", "Learn You a Haskell for Great Good! en", "О Haskell по-человечески (Итого)", "py Конвертация txt в xlsx", "py код оптимизации mdx", "nodejs - зло"],
+      "paths": ["отчеты.html", "курсы/learn-you-a-haskell-for-great-good!/readme.html", "readme.html", "полезные-ресурсы.html", "курсы/о-haskell-по-человечески/о-haskell-по-человечески-(оригинал).html", "курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-ru.html", "курсы/learn-you-a-haskell-for-great-good!/learn-you-a-haskell-for-great-good!-en.html", "мои-решения/о-haskell-по-человечески/о-haskell-по-человечески-(итого).html", "для-отчета/py-конвертация-txt-в-xlsx.html", "для-отчета/py-код-оптимизации-mdx.html", "для-отчета/nodejs-зло.html"],
       "linkSources": [2, 2, 1, 1, 0, 0, 0, 0, 0, 0],
-      "linkTargets": [3, 0, 10, 9, 8, 4, 1, 7, 6, 5]
+      "linkTargets": [3, 0, 6, 5, 4, 7, 1, 10, 9, 8]
     };
     let attractionForce = 1;
     let linkLength = 10;
@@ -49,7 +49,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:16px; --line-width:100%; --line-width-adaptive:100%; --file-line-width:100%; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-maximized is-hidden-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:100%; --line-width-adaptive:100%; --file-line-width:100%; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -164,31 +164,6 @@
     <div class="document-container">
       <div class="markdown-preview-view markdown-rendered node-insert-event allow-fold-headings show-indentation-guide allow-fold-lists show-frontmatter" style="tab-size: 4;">
         <style id="MJX-CHTML-styles">
-          mjx-c.mjx-c28::before {
-            padding: 0.75em 0.389em 0.25em 0px;
-            content: "(";
-          }
-
-          mjx-c.mjx-c1D453.TEX-I::before {
-            padding: 0.705em 0.55em 0.205em 0px;
-            content: "f";
-          }
-
-          mjx-c.mjx-c2218::before {
-            padding: 0.444em 0.5em 0px 0px;
-            content: "∘";
-          }
-
-          mjx-c.mjx-c1D454.TEX-I::before {
-            padding: 0.442em 0.477em 0.205em 0px;
-            content: "g";
-          }
-
-          mjx-c.mjx-c29::before {
-            padding: 0.75em 0.389em 0.25em 0px;
-            content: ")";
-          }
-
           mjx-container[jax="CHTML"] {
             line-height: 0;
           }
@@ -958,7 +933,7 @@
 </code><button class="copy-code-button">Копировать</button></pre>
           </div>
           <div>
-            <p>Функция <code>succ</code> принимает все, что имеет определенного преемника, и возвращает этого преемника.<sup data-footnote-id="fnref-1-d702ecc298619ce7" class="footnote-ref" id="fnref-1-d702ecc298619ce7"><a href="#fn-1-d702ecc298619ce7" class="footnote-link" target="_self" rel="noopener">[1]</a></sup> Как вы можете видеть, мы просто отделяем имя функции от параметра пробелом. Вызов функции с несколькими параметрами также прост. Функции <code>min</code> и <code>max</code> используют две вещи, которые можно упорядочить (например, числа!). <code>min</code> возвращает значение, которое меньше, а <code>max</code> возвращает значение, которое больше. Смотрите сами:</p>
+            <p>Функция <code>succ</code> принимает все, что имеет определенного преемника, и возвращает этого преемника.<sup data-footnote-id="fnref-1-6cb4ee59896db769" class="footnote-ref" id="fnref-1-6cb4ee59896db769"><a href="#fn-1-6cb4ee59896db769" class="footnote-link" target="_self" rel="noopener">[1]</a></sup> Как вы можете видеть, мы просто отделяем имя функции от параметра пробелом. Вызов функции с несколькими параметрами также прост. Функции <code>min</code> и <code>max</code> используют две вещи, которые можно упорядочить (например, числа!). <code>min</code> возвращает значение, которое меньше, а <code>max</code> возвращает значение, которое больше. Смотрите сами:</p>
           </div>
           <div>
             <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">min</span> <span class="token number">9</span> <span class="token number">10</span>
@@ -1074,7 +1049,7 @@
 </code><button class="copy-code-button">Копировать</button></pre>
           </div>
           <div>
-            <p>Здесь есть две заслуживающие внимания вещи. Во-первых, мы не написали имя функции с заглавной буквы. Это потому, что функции не могут начинаться с заглавных букв. Мы поймем, почему, чуть позже. Во-вторых, эта функция не принимает никаких параметров. Когда функция не принимает никаких параметров, мы обычно говорим, что это <em>определение</em> (или <em>имя</em><sup data-footnote-id="fnref-2-d702ecc298619ce7" class="footnote-ref" id="fnref-2-d702ecc298619ce7"><a href="#fn-2-d702ecc298619ce7" class="footnote-link" target="_self" rel="noopener">[2]</a></sup>). Поскольку мы не можем изменить значение имен (и функций), как только мы их определили, <code>conanO'Brien</code> и строка <code>"It's a-me, Conan O'Brien!"</code> могут использоваться взаимозаменяемо.</p>
+            <p>Здесь есть две заслуживающие внимания вещи. Во-первых, мы не написали имя функции с заглавной буквы. Это потому, что функции не могут начинаться с заглавных букв. Мы поймем, почему, чуть позже. Во-вторых, эта функция не принимает никаких параметров. Когда функция не принимает никаких параметров, мы обычно говорим, что это <em>определение</em> (или <em>имя</em><sup data-footnote-id="fnref-2-6cb4ee59896db769" class="footnote-ref" id="fnref-2-6cb4ee59896db769"><a href="#fn-2-6cb4ee59896db769" class="footnote-link" target="_self" rel="noopener">[2]</a></sup>). Поскольку мы не можем изменить значение имен (и функций), как только мы их определили, <code>conanO'Brien</code> и строка <code>"It's a-me, Conan O'Brien!"</code> могут использоваться взаимозаменяемо.</p>
           </div>
           <div>
             <h2 data-heading="Введение в списки" id="Введение_в_списки" style="display: flex;">
@@ -1345,7 +1320,7 @@
             <p><span alt="LYHfGG_10_cowboy.png" src="LYHfGG_10_cowboy.png" class="internal-embed media-embed image-embed is-loaded"><img alt="LYHfGG_10_cowboy.png" src="курсы\learn-you-a-haskell-for-great-good!\картинки\lyhfgg_10_cowboy.png"></span></p>
           </div>
           <div>
-            <p>Что, если нам нужен список всех чисел от 1 до 20? Конечно, мы могли бы просто напечатать их все, но, очевидно, это не решение для джентльменов, которые требуют совершенства от своих языков программирования. Вместо этого мы будем использовать диапазоны. Диапазоны - это способ создания списков, представляющих собой арифметические последовательности элементов, которые можно перечислять. Числа можно перечислять. Один, два, три, четыре и так далее. Символы также могут быть пронумерованы. Алфавит - это перечисление символов от <code>A</code> до <code>Z</code><sup data-footnote-id="fnref-3-d702ecc298619ce7" class="footnote-ref" id="fnref-3-d702ecc298619ce7"><a href="#fn-3-d702ecc298619ce7" class="footnote-link" target="_self" rel="noopener">[3]</a></sup>.&nbsp;Имена не могут быть пронумерованы. Что следует за словом "John"? Я не знаю.</p>
+            <p>Что, если нам нужен список всех чисел от 1 до 20? Конечно, мы могли бы просто напечатать их все, но, очевидно, это не решение для джентльменов, которые требуют совершенства от своих языков программирования. Вместо этого мы будем использовать диапазоны. Диапазоны - это способ создания списков, представляющих собой арифметические последовательности элементов, которые можно перечислять. Числа можно перечислять. Один, два, три, четыре и так далее. Символы также могут быть пронумерованы. Алфавит - это перечисление символов от <code>A</code> до <code>Z</code><sup data-footnote-id="fnref-3-6cb4ee59896db769" class="footnote-ref" id="fnref-3-6cb4ee59896db769"><a href="#fn-3-6cb4ee59896db769" class="footnote-link" target="_self" rel="noopener">[3]</a></sup>.&nbsp;Имена не могут быть пронумерованы. Что следует за словом "John"? Я не знаю.</p>
           </div>
           <div>
             <p>Чтобы составить список, содержащий все натуральные числа от 1 до 20, вы просто пишете <code>[1..20]</code>. Это эквивалентно написанию <code>[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]</code>, и нет никакой разницы между написанием одного или другого, за исключением того, что записывать длинные последовательности перечисления вручную глупо.</p>
@@ -1421,13 +1396,13 @@
             </h2>
           </div>
           <div>
-            <p>Списковое включение<sup data-footnote-id="fnref-4-d702ecc298619ce7" class="footnote-ref" id="fnref-4-d702ecc298619ce7"><a href="#fn-4-d702ecc298619ce7" class="footnote-link" target="_self" rel="noopener">[4]</a></sup></p>
+            <p>Списковое включение<sup data-footnote-id="fnref-4-6cb4ee59896db769" class="footnote-ref" id="fnref-4-6cb4ee59896db769"><a href="#fn-4-6cb4ee59896db769" class="footnote-link" target="_self" rel="noopener">[4]</a></sup></p>
           </div>
           <div>
             <p><span alt="LYHfGG_11_kermit.png" src="LYHfGG_11_kermit.png" class="internal-embed media-embed image-embed is-loaded"><img alt="LYHfGG_11_kermit.png" src="курсы\learn-you-a-haskell-for-great-good!\картинки\lyhfgg_11_kermit.png"></span></p>
           </div>
           <div>
-            <p>Если вы когда-либо проходили курс математики, вы, вероятно, сталкивались с <em>множествами с заданными характеристическими свойствами</em><sup data-footnote-id="fnref-5-d702ecc298619ce7" class="footnote-ref" id="fnref-5-d702ecc298619ce7"><a href="#fn-5-d702ecc298619ce7" class="footnote-link" target="_self" rel="noopener">[5]</a></sup>. Обычно они используются для построения более специфичных наборов из общих наборов. Базовое списковое включение для набора, содержащего первые десять четных натуральных чисел, составляет<sup data-footnote-id="fnref-6-d702ecc298619ce7" class="footnote-ref" id="fnref-6-d702ecc298619ce7"><a href="#fn-6-d702ecc298619ce7" class="footnote-link" target="_self" rel="noopener">[6]</a></sup> <span class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c7B"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mtext class="mjx-n" space="3"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-ds mjx-b"><mjx-c class="mjx-c2115 TEX-A"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mtext class="mjx-n" space="2"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2A7D TEX-A"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c7D"></mjx-c></mjx-mo></mjx-math></mjx-container></span>. Часть перед вертикальной чертой называется выходной функцией, <code>x</code> - это переменная, <code>N</code> - это входной набор, а <code>x &lt;= 10</code> - это предикат<sup data-footnote-id="fnref-7-d702ecc298619ce7" class="footnote-ref" id="fnref-7-d702ecc298619ce7"><a href="#fn-7-d702ecc298619ce7" class="footnote-link" target="_self" rel="noopener">[7]</a></sup>. Это означает, что множество содержит удвоения всех натуральных чисел, которые удовлетворяют предикату.</p>
+            <p>Если вы когда-либо проходили курс математики, вы, вероятно, сталкивались с <em>множествами с заданными характеристическими свойствами</em><sup data-footnote-id="fnref-5-6cb4ee59896db769" class="footnote-ref" id="fnref-5-6cb4ee59896db769"><a href="#fn-5-6cb4ee59896db769" class="footnote-link" target="_self" rel="noopener">[5]</a></sup>. Обычно они используются для построения более специфичных наборов из общих наборов. Базовое списковое включение для набора, содержащего первые десять четных натуральных чисел, составляет<sup data-footnote-id="fnref-6-6cb4ee59896db769" class="footnote-ref" id="fnref-6-6cb4ee59896db769"><a href="#fn-6-6cb4ee59896db769" class="footnote-link" target="_self" rel="noopener">[6]</a></sup> <span class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c7B"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mtext class="mjx-n" space="3"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-ds mjx-b"><mjx-c class="mjx-c2115 TEX-A"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mtext class="mjx-n" space="2"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2A7D TEX-A"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c7D"></mjx-c></mjx-mo></mjx-math></mjx-container></span>. Часть перед вертикальной чертой называется выходной функцией, <code>x</code> - это переменная, <code>N</code> - это входной набор, а <code>x &lt;= 10</code> - это предикат<sup data-footnote-id="fnref-7-6cb4ee59896db769" class="footnote-ref" id="fnref-7-6cb4ee59896db769"><a href="#fn-7-6cb4ee59896db769" class="footnote-link" target="_self" rel="noopener">[7]</a></sup>. Это означает, что множество содержит удвоения всех натуральных чисел, которые удовлетворяют предикату.</p>
           </div>
           <div>
             <p>Если бы мы хотели написать это на Haskell, мы могли бы сделать что-то вроде <code>take 10 [2,4..]</code>. Но что, если бы мы хотели получить не удвоения первых 10 натуральных чисел, а какую-то более сложную функцию, примененную к ним? Для этого мы могли бы использовать списковое включение. Списковое включение очень похоже на понимание набора. Пока мы будем придерживаться получения первых 10 четных чисел. Списковое включение, которое мы могли бы использовать, - это <code>[x * 2 | x &lt;- [1..10]]</code>. <code>x</code> берется из <code>[1..10]</code>, и для каждого элемента в <code>[1..10]</code> (который мы привязали к <code>x</code>) мы получаем этот элемент, только удвоенный. Вот списковое включение в действии.</p>
@@ -1660,6 +1635,391 @@
             <p>И вот наш ответ! Это распространенный шаблон в функциональном программировании. Вы берете начальный набор решений, а затем применяете преобразования к этим решениям и фильтруете их до тех пор, пока не получите правильные.</p>
           </div>
           <div>
+            <h1 data-heading="Типы и классы типов" id="Типы_и_классы_типов">Типы и классы типов</h1>
+          </div>
+          <div>
+            <h2 data-heading="Верьте типу" id="Верьте_типу" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Верьте типу
+            </h2>
+          </div>
+          <div>
+            <p><span alt="LYHfGG_15_cow.png" src="LYHfGG_15_cow.png" class="internal-embed media-embed image-embed is-loaded"><img alt="LYHfGG_15_cow.png" src="курсы\learn-you-a-haskell-for-great-good!\картинки\lyhfgg_15_cow.png"></span></p>
+          </div>
+          <div>
+            <p>Ранее мы упоминали, что в Haskell есть система статических типов. Тип каждого выражения известен во время компиляции, что приводит к созданию более безопасного кода. Если вы напишете программу, в которой попытаетесь разделить логический тип на некоторое число, она даже не будет компилироваться. Это хорошо, потому что лучше отлавливать такие ошибки во время компиляции, а не вызывать сбой вашей программы. Все в Haskell имеет тип, поэтому компилятор может довольно много рассуждать о вашей программе перед ее компиляцией.</p>
+          </div>
+          <div>
+            <p>В отличие от Java или Pascal, в Haskell есть вывод типа. Если мы пишем число, нам не нужно говорить Haskell, что это число. Он может <em>сделать вывод</em> сам по себе, поэтому нам не нужно явно выписывать типы наших функций и выражений, чтобы что-то сделать. Мы рассмотрели некоторые основы Haskell, лишь очень поверхностно взглянув на типы. Однако понимание системы типов является очень важной частью изучения Haskell.</p>
+          </div>
+          <div>
+            <p>Тип - это своего рода метка, которая есть у каждого выражения. Это говорит нам, к какой категории вещей подходит это выражение. Выражение <code>True</code> - это логическое значение, <code>"hello"</code> - это строка и т.д.</p>
+          </div>
+          <div>
+            <p>Теперь мы будем использовать GHCI для изучения типов некоторых выражений. Мы сделаем это с помощью команды <code>:t</code>, за которой следует любое допустимое выражение, сообщающее нам его тип. Давайте раскрутим это дело.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token char string">'a'</span>
+<span class="token char string">'a'</span> <span class="token operator">::</span> <span class="token constant">Char</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token constant">True</span>
+<span class="token constant">True</span> <span class="token operator">::</span> <span class="token constant">Bool</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token string">"HELLO!"</span>
+<span class="token string">"HELLO!"</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token constant">Char</span><span class="token punctuation">]</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token punctuation">(</span><span class="token constant">True</span><span class="token punctuation">,</span> <span class="token char string">'a'</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token constant">True</span><span class="token punctuation">,</span> <span class="token char string">'a'</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token constant">Bool</span><span class="token punctuation">,</span> <span class="token constant">Char</span><span class="token punctuation">)</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token number">4</span> <span class="token operator">==</span> <span class="token number">5</span>
+<span class="token number">4</span> <span class="token operator">==</span> <span class="token number">5</span> <span class="token operator">::</span> <span class="token constant">Bool</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><span alt="LYHfGG_16_bomb.png" src="LYHfGG_16_bomb.png" class="internal-embed media-embed image-embed is-loaded"><img alt="LYHfGG_16_bomb.png" src="курсы\learn-you-a-haskell-for-great-good!\картинки\lyhfgg_16_bomb.png"></span></p>
+          </div>
+          <div>
+            <p>Здесь мы видим, что выполнение <code>:t</code> для выражения выводит выражение, за которым следует <code>::</code>, и его тип. <code>::</code> читается как "имеет тип". Явные типы всегда обозначаются первой буквой с большой буквы. <code>'a'</code>, как могло бы показаться, имеет тип <code>Char</code>. Нетрудно сделать вывод, что это означает <em>символ</em> (англ. <em>character</em>). <code>True</code> относится к типу <code>Bool</code>. В этом есть смысл. Но что это такое? Анализ типа <code>"ПРИВЕТ!"</code> выдает <code>[Char]</code>. Квадратные скобки обозначают список. Итак, мы читаем это как <em>список символов</em> (англ. <em>a list of characters</em>). В отличие от списков, длина каждого кортежа имеет свой собственный тип. Таким образом, выражение <code>(True, 'a')</code> имеет тип <code>(Bool, Char)</code>, тогда как такое выражение, как <code>('a','b','c')</code>, имело бы тип <code>(Char, Char, Char)</code>. <code>4 == 5</code> всегда возвращает <code>False</code>, поэтому его тип - <code>Bool</code>.</p>
+          </div>
+          <div>
+            <p>Функции также имеют типы. При написании наших собственных функций мы можем предоставить им явное объявление типа. Обычно это считается хорошей практикой, за исключением случаев написания очень коротких функций. С этого момента мы будем предоставлять все функции, для которых мы делаем объявления типов. Помните представление списка, которое мы сделали ранее, которое фильтрует строку так, чтобы оставались только заглавные буквы? Вот как это выглядит с объявлением типа.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">removeNonUppercase</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token constant">Char</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token constant">Char</span><span class="token punctuation">]</span>
+<span class="token hvariable">removeNonUppercase</span> <span class="token hvariable">st</span> <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token hvariable">c</span> <span class="token operator">|</span> <span class="token hvariable">c</span> <span class="token operator">&lt;-</span> <span class="token hvariable">st</span><span class="token punctuation">,</span> <span class="token hvariable">c</span> <span class="token operator">`elem`</span> <span class="token punctuation">[</span><span class="token char string">'A'</span><span class="token operator">..</span><span class="token char string">'Z'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> 
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><code>removeNonUppercase</code> имеет тип <code>[Char] -&gt; [Char]</code>, что означает, что он преобразуется из строки в строку. Это потому, что он принимает одну строку в качестве параметра и возвращает другую в результате. Тип <code>[Char]</code> является синонимом <code>String</code>, поэтому будет понятнее, если мы напишем <code>removeNonUppercase :: String -&gt; String</code>. Нам не нужно было давать этой функции объявление типа, потому что компилятор может сам сделать вывод, что это функция из строки в строку, но мы все равно это сделали. Но как нам записать тип функции, которая принимает несколько параметров? Вот простая функция, которая принимает три целых числа и складывает их вместе:</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">addThree</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span>
+<span class="token hvariable">addThree</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span> <span class="token hvariable">z</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token hvariable">y</span> <span class="token operator">+</span> <span class="token hvariable">z</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Параметры разделяются символом <code>-&gt;</code>, и нет особого различия между параметрами и возвращаемым типом. Возвращаемый тип - это последний элемент в объявлении, а параметры - первые три. Позже мы увидим, почему все они просто разделены <code>-&gt;</code> вместо того, чтобы проводить какое-то более явное различие между возвращаемыми типами и параметрами, такими как <code>Int, Int, Int -&gt; Int</code> или что-то в этом роде.</p>
+          </div>
+          <div>
+            <p>Если вы хотите предоставить своей функции объявление типа, но не уверены в том, каким оно должно быть, вы всегда можете просто написать функцию без него, а затем проверить ее с помощью <code>:t</code>. Функции тоже являются выражениями, поэтому <code>:t</code> работает с ними без проблем.</p>
+          </div>
+          <div>
+            <p>Вот обзор некоторых распространенных типов.</p>
+          </div>
+          <div>
+            <p><code>Int</code> означает целое число. Он используется для целых чисел. <code>7</code> может быть <code>Int</code>, но <code>7.2</code> не может. <code>Int</code> ограничен, что означает, что он имеет минимальное и максимальное значения. Обычно на 32-разрядных машинах максимально возможное значение <code>Int</code> равно 2147483647, а минимальное -2147483648.</p>
+          </div>
+          <div>
+            <p><code>Integer</code> означает, э-э... тоже целое число. Главное отличие заключается в том, что он не ограничен, поэтому его можно использовать для представления действительно очень больших чисел. Я имею в виду, по-настоящему большой. <code>Int</code>, однако, более эффективен.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">factorial</span> <span class="token operator">::</span> <span class="token constant">Integer</span> <span class="token operator">-&gt;</span> <span class="token constant">Integer</span>
+<span class="token hvariable">factorial</span> <span class="token hvariable">n</span> <span class="token operator">=</span> <span class="token builtin">product</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token operator">..</span><span class="token hvariable">n</span><span class="token punctuation">]</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token hvariable">factorial</span> <span class="token number">50</span>
+<span class="token number">30414093201713378043612608166064768844377641568960512000000000000</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><code>Float</code> - это реальная плавающая точка с одинарной точностью.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">circumference</span> <span class="token operator">::</span> <span class="token constant">Float</span> <span class="token operator">-&gt;</span> <span class="token constant">Float</span>
+<span class="token hvariable">circumference</span> <span class="token hvariable">r</span> <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token builtin">pi</span> <span class="token operator">*</span> <span class="token hvariable">r</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token hvariable">circumference</span> <span class="token number">4.0</span>
+<span class="token number">25.132742</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><code>Double</code> - это настоящая плавающая точка с удвоенной точностью!</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">circumference'</span> <span class="token operator">::</span> <span class="token constant">Double</span> <span class="token operator">-&gt;</span> <span class="token constant">Double</span>
+<span class="token hvariable">circumference'</span> <span class="token hvariable">r</span> <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token builtin">pi</span> <span class="token operator">*</span> <span class="token hvariable">r</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token hvariable">circumference'</span> <span class="token number">4.0</span>
+<span class="token number">25.132741228718345</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><code>Bool</code> - это логический тип. Он может иметь только два значения: <code>True</code> и <code>False</code>.</p>
+          </div>
+          <div>
+            <p><code>Char</code> представляет символ. Он обозначается одинарными кавычками. Список символов представляет собой строку.</p>
+          </div>
+          <div>
+            <p>Кортежи - это типы, которые зависят от длины кортежей, а также от типов их компонентов, поэтому теоретически существует бесконечное количество типов кортежей, которых слишком много, чтобы рассматривать их в этом руководстве. Обратите внимание, что пустой кортеж <code>()</code> также является типом, который может иметь только одно значение: <code>()</code></p>
+          </div>
+          <div>
+            <h2 data-heading="Переменные типа" id="Переменные_типа" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Переменные типа
+            </h2>
+          </div>
+          <div>
+            <p>Как вы думаете, что это за тип функции <code>head</code>? Поскольку <code>head</code> принимает список любого типа и возвращает первый элемент, так что же это может быть? Давайте проверим!</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token builtin">head</span>
+<span class="token builtin">head</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><span alt="LYHfGG_17_box.png" src="LYHfGG_17_box.png" class="internal-embed media-embed image-embed is-loaded"><img alt="LYHfGG_17_box.png" src="курсы\learn-you-a-haskell-for-great-good!\картинки\lyhfgg_17_box.png"></span></p>
+          </div>
+          <div>
+            <p>Хммм! Что это за буква <code>a</code>? Является ли это типом? Помните, что ранее мы указывали, что типы пишутся с большой буквы, поэтому это не может быть точно типом. Поскольку это не прописная буква, на самом деле это <strong>переменная типа</strong> (англ. <strong>type variable</strong>). Это означает, что <code>a</code> может быть любого типа. Это очень похоже на дженерики в других языках, только в Haskell это намного мощнее, потому что позволяет нам легко писать очень общие функции, если они не используют какое-либо специфическое поведение используемых в них типов. Функции, имеющие переменные типа, называются <strong>полиморфными функциями</strong> (англ. <strong>polymorphic functions</strong>). В объявлении типа <code>head</code> указано, что он принимает список любого типа и возвращает один элемент этого типа.</p>
+          </div>
+          <div>
+            <p>Хотя имена переменных типа могут быть длиннее одного символа, мы обычно присваиваем им имена a, b, c, d ...</p>
+          </div>
+          <div>
+            <p>Помнишь <code>fst</code>? Он возвращает первый компонент пары. Давайте рассмотрим его тип.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token builtin">fst</span>
+<span class="token builtin">fst</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span><span class="token punctuation">,</span> <span class="token hvariable">b</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Мы видим, что <code>fst</code> принимает кортеж, который содержит два типа, и возвращает элемент того же типа, что и первый компонент пары. Вот почему мы можем использовать <code>fst</code> для пары, которая содержит любые два типа. Обратите внимание, что только потому, что <code>a</code> и <code>b</code> являются переменными разного типа, они не обязательно должны быть разных типов. В нем просто указано, что тип первого компонента и тип возвращаемого значения совпадают.</p>
+          </div>
+          <div>
+            <h2 data-heading="Классы типов 101" id="Классы_типов_101" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Классы типов 101
+            </h2>
+          </div>
+          <div>
+            <p><span alt="LYHfGG_18_classes.png" src="LYHfGG_18_classes.png" class="internal-embed media-embed image-embed is-loaded"><img alt="LYHfGG_18_classes.png" src="курсы\learn-you-a-haskell-for-great-good!\картинки\lyhfgg_18_classes.png"></span></p>
+          </div>
+          <div>
+            <p>Класс типов - это своего рода интерфейс, который определяет определенное поведение. Если тип является частью класса типов, это означает, что он поддерживает и реализует поведение, описываемое классом типов. Многие люди, пришедшие из ООП, путаются в классах типов, потому что думают, что они похожи на классы в объектно-ориентированных языках. Ну, это не так. Вы можете думать о них как о интерфейсах Java, только лучше.</p>
+          </div>
+          <div>
+            <p>Какова сигнатура типа функции <code>==</code>?</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token punctuation">(</span><span class="token operator">==</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token operator">==</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token constant">Eq</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <blockquote>
+              <p><strong>Примечание</strong>: оператор равенства <code>==</code> является функцией. Так же как и <code>+</code>, <code>*</code>, <code>-</code>, <code>/</code> и почти все операторы. Если функция состоит только из специальных символов, по умолчанию она считается инфиксной функцией. Если мы хотим проверить её тип, передать его другой функции или вызвать его как префиксную функцию, мы должны заключить её в круглые скобки.</p>
+            </blockquote>
+          </div>
+          <div>
+            <p>Интересно. Здесь мы видим новую вещь - символ <code>=&gt;</code>. Все, что находится перед символом <code>=&gt;</code>, называется <strong>ограничением класса</strong> (англ. <strong>class constraint</strong>). Мы можем прочитать предыдущее объявление типа следующим образом: функция равенства принимает любые два значения одного и того же типа и возвращает <code>Bool</code>. Тип этих двух значений должен быть членом класса <code>Eq</code> (это было ограничение класса).</p>
+          </div>
+          <div>
+            <p>Класс типов <code>Eq</code> предоставляет интерфейс для проверки на равенство. Любой тип, в котором имеет смысл проверять равенство между двумя значениями этого типа, должен быть членом класса <code>Eq</code>. Все стандартные типы Haskell, за исключением ввода-вывода (тип для работы с вводом и выводом) и функций, являются частью класса типов <code>Eq</code>.</p>
+          </div>
+          <div>
+            <p>Функция <code>elem</code> имеет тип <code>(Eq a) =&gt; a -&gt; [a] -&gt; Bool</code>, потому что она использует <code>==</code> над списком, чтобы проверить, есть ли в нем какое-то значение, которое мы ищем.</p>
+          </div>
+          <div>
+            <p>Некоторые основные классы типов:</p>
+          </div>
+          <div>
+            <p><code>Eq</code> используется для типов, которые поддерживают проверку на равенство. Функциями, которые реализуют его члены, являются <code>==</code> и <code>/=</code>. Таким образом, если существует ограничение класса <code>Eq</code> для переменной типа в функции, она использует <code>==</code> или <code>/=</code> где-то внутри своего определения. Все типы, которые мы упоминали ранее, за исключением функций, являются частью <code>Eq</code>, поэтому их можно проверить на равенство.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">5</span> <span class="token operator">==</span> <span class="token number">5</span>
+<span class="token constant">True</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">5</span> <span class="token operator">/=</span> <span class="token number">5</span>
+<span class="token constant">False</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token char string">'a'</span> <span class="token operator">==</span> <span class="token char string">'a'</span>
+<span class="token constant">True</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token string">"Ho Ho"</span> <span class="token operator">==</span> <span class="token string">"Ho Ho"</span>
+<span class="token constant">True</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">3.432</span> <span class="token operator">==</span> <span class="token number">3.432</span>
+<span class="token constant">True</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><code>Ord</code> предназначен для типов, которые имеют порядок.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token punctuation">(</span><span class="token operator">&gt;</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token constant">Ord</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Все типы, которые мы рассмотрели до сих пор, за исключением функций, являются частью <code>Ord</code>. <code>Ord</code> охватывает все стандартные функции сравнения, такие как <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code> и <code>&lt;=</code>. Функция <code>compare</code> принимает два элемента <code>Ord</code> одного и того же типа и возвращает <code>ordering</code>. <code>Ordering</code> - это тип, который может быть <code>GT</code>, <code>LT</code> или <code>EQ</code>, что означает <em>больше чем</em> , <em>меньше чем</em> и <em>эквивалентно</em> соответственно. (англ. <em>greater than</em>, <em>lesser than</em>, <em>equal</em> соответственно)</p>
+          </div>
+          <div>
+            <p>Чтобы стать членом <code>Ord</code>, тип должен сначала иметь членство в престижном и эксклюзивном клубе <code>Eq</code>.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token string">"Abrakadabra"</span> <span class="token operator">&lt;</span> <span class="token string">"Zebra"</span>
+<span class="token constant">True</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token string">"Abrakadabra"</span> <span class="token operator">`compare`</span> <span class="token string">"Zebra"</span>
+<span class="token constant">LT</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">5</span> <span class="token operator">&gt;=</span> <span class="token number">2</span>
+<span class="token constant">True</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">5</span> <span class="token operator">`compare`</span> <span class="token number">3</span>
+<span class="token constant">GT</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Члены <code>Show</code> могут быть представлены в виде строк. Все рассмотренные до сих пор типы, за исключением функций, являются частью <code>Показать</code>. Наиболее используемой функцией, которая имеет дело с классом типов <code>Show</code>, является <code>show</code>. Она принимает значение, тип которого является членом <code>Show</code>, и представляет его нам в виде строки.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">show</span> <span class="token number">3</span>
+<span class="token string">"3"</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">show</span> <span class="token number">5.334</span>
+<span class="token string">"5.334"</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">show</span> <span class="token constant">True</span>
+<span class="token string">"True"</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><code>Read</code> - это своего рода класс, противоположный типу <code>Show</code>. Функция <code>read</code> принимает строку и возвращает тип, который является членом <code>Read</code>.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"True"</span> <span class="token operator">||</span> <span class="token constant">False</span>
+<span class="token constant">True</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"8.2"</span> <span class="token operator">+</span> <span class="token number">3.8</span>
+<span class="token number">12.0</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"5"</span> <span class="token operator">-</span> <span class="token number">2</span>
+<span class="token number">3</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"[1,2,3,4]"</span> <span class="token operator">++</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Пока все идет хорошо. Опять же, все рассмотренные до сих пор типы находятся в этом классе типов. Но что произойдет, если мы попытаемся просто <code>прочитать "4"</code>?</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"4"</span>
+<span class="token operator">&lt;</span><span class="token hvariable">interactive</span><span class="token operator">&gt;:</span><span class="token number">1</span><span class="token operator">:</span><span class="token number">0</span><span class="token operator">:</span>
+    <span class="token constant">Ambiguous</span> <span class="token keyword">type</span> <span class="token hvariable">variable</span> `<span class="token hvariable">a'</span> <span class="token keyword">in</span> <span class="token hvariable">the</span> <span class="token hvariable">constraint</span><span class="token operator">:</span>
+      `<span class="token constant">Read</span> <span class="token hvariable">a'</span> <span class="token hvariable">arising</span> <span class="token hvariable">from</span> <span class="token hvariable">a</span> <span class="token hvariable">use</span> <span class="token keyword">of</span> `<span class="token builtin">read</span>' <span class="token hvariable">at</span> <span class="token operator">&lt;</span><span class="token hvariable">interactive</span><span class="token operator">&gt;:</span><span class="token number">1</span><span class="token operator">:</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">7</span>
+    <span class="token constant">Probable</span> <span class="token hvariable">fix</span><span class="token operator">:</span> <span class="token hvariable">add</span> <span class="token hvariable">a</span> <span class="token keyword">type</span> <span class="token hvariable">signature</span> <span class="token hvariable">that</span> <span class="token hvariable">fixes</span> <span class="token hvariable">these</span> <span class="token keyword">type</span> <span class="token hvariable">variable</span><span class="token punctuation">(</span><span class="token hvariable">s</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Что GHCI говорит нам здесь, так это то, что он не знает, чего мы хотим взамен. Обратите внимание, что при предыдущем использовании <code>read</code> мы впоследствии что-то делали с результатом. Таким образом, GHCI мог бы сделать вывод, какого рода результат мы хотели получить от нашего <code>read</code>. Если мы использовали его как логическое значение, он знал, что должен вернуть <code>Bool</code>. Но теперь он знает, что нам нужен какой-то тип, который является частью класса <code>Read</code>, он просто не знает, какой именно. Давайте взглянем на сигнатуру типа <code>read</code>.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token builtin">read</span>
+<span class="token builtin">read</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token constant">Read</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token constant">String</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Видишь? Он возвращает тип, который является частью <code>Read</code>, но если мы не попытаемся использовать его каким-либо образом позже, у него не будет возможности узнать, какой тип. Вот почему мы можем использовать явные <strong>аннотации типа</strong> (англ. <em>type annotations</em>). Аннотации типов - это способ явно указать, каким должен быть тип выражения. Мы делаем это, добавляя <code>::</code> в конце выражения, а затем указывая тип. Наблюдай:</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"5"</span> <span class="token operator">::</span> <span class="token constant">Int</span>
+<span class="token number">5</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"5"</span> <span class="token operator">::</span> <span class="token constant">Float</span>
+<span class="token number">5.0</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token builtin">read</span> <span class="token string">"5"</span> <span class="token operator">::</span> <span class="token constant">Float</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">4</span>
+<span class="token number">20.0</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"[1,2,3,4]"</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token constant">Int</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">read</span> <span class="token string">"(3, 'a')"</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token constant">Int</span><span class="token punctuation">,</span> <span class="token constant">Char</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token char string">'a'</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Большинство выражений таковы, что компилятор может сам определить, каков их тип. Но иногда компилятор не знает, возвращать ли значение типа <code>Int</code> или <code>Float</code> для выражения типа <code>read "5"</code>. Чтобы увидеть, что это за тип, Haskell пришлось бы на самом деле оценить <code>read "5"</code>. Но поскольку Haskell является статически типизированным языком, он должен знать все типы до того, как код будет скомпилирован (или, в случае GHCI, оценен). Итак, мы должны сказать Хаскелю: "Эй, это выражение должно иметь этот тип, на случай, если вы не знаете!".</p>
+          </div>
+          <div>
+            <p>Члены <code>Enum</code> представляют собой последовательно упорядоченные типы — их можно перечислять. Главное преимущество класса типов <code>Enum</code> заключается в том, что мы можем использовать его типы в диапазонах списков. У них также есть определенные преемники (англ. <em>successors</em>) и предшественники (англ. <em>predecesors</em>), которые вы можете получить с помощью функций <code>succ</code> и <code>pred</code>. Типы в этом классе: <code>()</code>, <code>Bool</code>, <code>Char</code>, <code>Ordering</code>, <code>Int</code>, <code>Integer</code>, <code>Float</code> и <code>Double</code>.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token char string">'a'</span><span class="token operator">..</span><span class="token char string">'e'</span><span class="token punctuation">]</span>
+<span class="token string">"abcde"</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token constant">LT</span> <span class="token operator">..</span> <span class="token constant">GT</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token constant">LT</span><span class="token punctuation">,</span><span class="token constant">EQ</span><span class="token punctuation">,</span><span class="token constant">GT</span><span class="token punctuation">]</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token number">3</span> <span class="token operator">..</span> <span class="token number">5</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">succ</span> <span class="token char string">'B'</span>
+<span class="token char string">'C'</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Элементы типа <code>Bounded</code> имеют верхнюю и нижнюю границы.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">minBound</span> <span class="token operator">::</span> <span class="token constant">Int</span>
+<span class="token operator">-</span><span class="token number">2147483648</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">maxBound</span> <span class="token operator">::</span> <span class="token constant">Char</span>
+<span class="token char string">'\1114111'</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">maxBound</span> <span class="token operator">::</span> <span class="token constant">Bool</span>
+<span class="token constant">True</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">minBound</span> <span class="token operator">::</span> <span class="token constant">Bool</span>
+<span class="token constant">False</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><code>minBound</code> и <code>maxBound</code> интересны тем, что они имеют тип <code>(Bounded a) =&gt; a</code>. В некотором смысле они являются полиморфными константами.</p>
+          </div>
+          <div>
+            <p>Все кортежи также являются частью <code>Bounded</code>, если компоненты также находятся в нем.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token builtin">maxBound</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token constant">Bool</span><span class="token punctuation">,</span> <span class="token constant">Int</span><span class="token punctuation">,</span> <span class="token constant">Char</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token constant">True</span><span class="token punctuation">,</span><span class="token number">2147483647</span><span class="token punctuation">,</span><span class="token char string">'\1114111'</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p><code>Num</code> - это числовой класс типов. Его члены обладают свойством вести себя подобно числам. Давайте рассмотрим тип числа.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token number">20</span>
+<span class="token number">20</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token constant">Num</span> <span class="token hvariable">t</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token hvariable">t</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Похоже, что целые числа также являются полиморфными константами. Они могут действовать как любой тип, являющийся членом класса типов <code>Num</code>.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">20</span> <span class="token operator">::</span> <span class="token constant">Int</span>
+<span class="token number">20</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">20</span> <span class="token operator">::</span> <span class="token constant">Integer</span>
+<span class="token number">20</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">20</span> <span class="token operator">::</span> <span class="token constant">Float</span>
+<span class="token number">20.0</span>
+<span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token number">20</span> <span class="token operator">::</span> <span class="token constant">Double</span>
+<span class="token number">20.0</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Это типы, которые находятся в классе типов <code>Num</code>. Если мы рассмотрим тип <code>*</code>, то увидим, что он принимает все числа.</p>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ghci</span><span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token hvariable">t</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token constant">Num</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span>
+</code><button class="copy-code-button">Копировать</button></pre>
+          </div>
+          <div>
+            <p>Он принимает два числа одного и того же типа и возвращает число этого типа. Вот почему <code>(5 :: Int) * (6 :: Integer)</code> приведет к ошибке типа, тогда как <code>5 * (6 :: Integer)</code> будет работать просто отлично и выдаст <code>Integer</code>, потому что <code>5</code> может действовать как <code>Integer</code> или <code>Int</code>.</p>
+          </div>
+          <div>
+            <p>Чтобы присоединиться к <code>Num</code>, тип уже должен быть дружен с <code>Show</code> и <code>Eq</code>.</p>
+          </div>
+          <div>
+            <p><code>Integral</code> также является числовым классом типов. <code>Num</code> включает в себя все числа, включая действительные числа и целые числа, <code>Integral</code> включает в себя только целые числа. В этом классе типов находятся <code>Int</code> и <code>Integer</code>.</p>
+          </div>
+          <div>
+            <p><code>Floating</code> включает в себя только числа с плавающей запятой, поэтому <code>Float</code> и <code>Double</code>.</p>
+          </div>
+          <div>
+            <p>Очень полезная функция для работы с числами - <code>fromIntegral</code>. Он имеет объявление типа <code>fromIntegral :: (Num b, Integral a) =&gt; a -&gt; b</code>. Из его сигнатуры типа мы видим, что он принимает целое число и превращает его в более общее число. Это полезно, когда вы хотите, чтобы целочисленные типы и типы с плавающей запятой хорошо работали вместе. Например, функция <code>length</code> имеет объявление типа <code>length :: [a] -&gt; Int</code> вместо того, чтобы иметь более общий тип <code>(Num b) =&gt; length :: [a] -&gt; b</code>. Я думаю, что это существует по историческим причинам или что-то в этом роде, хотя, на мой взгляд, это довольно глупо. В любом случае, если мы попытаемся получить длину списка, а затем добавить его к <code>3.2</code>, мы получим ошибку, потому что мы пытались сложить вместе <code>Int</code> и число с плавающей запятой. Итак, чтобы обойти это, мы делаем <code>fromIntegral :: (Num b, Integral a) =&gt; a -&gt; b</code>., и все получается.</p>
+          </div>
+          <div>
+            <p>Обратите внимание, что <code>fromIntegral</code> имеет несколько ограничений класса в своей сигнатуре типа. Это полностью допустимо, и, как вы можете видеть, ограничения класса разделены запятыми внутри круглых скобок.</p>
+          </div>
+          <div>
             <h1 data-heading="Сноски переводчика" id="Сноски_переводчика">Сноски переводчика</h1>
           </div>
           <div>
@@ -1668,7 +2028,7 @@
             <section class="footnotes">
               <hr>
               <ol>
-                <li data-line="-570" data-footnote-id="fn-1-d702ecc298619ce7" id="fn-1-d702ecc298619ce7">
+                <li data-line="-881" data-footnote-id="fn-1-6cb4ee59896db769" id="fn-1-6cb4ee59896db769">
                   Преемник (successor) - это число, следующее после некоторого натурального числа.
                   <br>
 
@@ -1679,35 +2039,35 @@
                   <br>
 
                   Формула: f(x) = x + 1
-                  <a href="#fnref-1-d702ecc298619ce7" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+                  <a href="#fnref-1-6cb4ee59896db769" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
                 </li>
-                <li data-line="-472" data-footnote-id="fn-2-d702ecc298619ce7" id="fn-2-d702ecc298619ce7">
+                <li data-line="-783" data-footnote-id="fn-2-6cb4ee59896db769" id="fn-2-6cb4ee59896db769">
                   Честно говоря не знаю как правильнее в данном случае перевести слово name
-                  <a href="#fnref-2-d702ecc298619ce7" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+                  <a href="#fnref-2-6cb4ee59896db769" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
                 </li>
-                <li data-line="-253" data-footnote-id="fn-3-d702ecc298619ce7" id="fn-3-d702ecc298619ce7">
+                <li data-line="-564" data-footnote-id="fn-3-6cb4ee59896db769" id="fn-3-6cb4ee59896db769">
                   Стандарт вышел 10 лет назад и он сохраняет обратную совместимость. Поэтому, чтобы использовать unicode, нужно провести небольшие манипуляции. Об этом можно поискать в интернете. "ghci how add utf 8"
-                  <a href="#fnref-3-d702ecc298619ce7" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+                  <a href="#fnref-3-6cb4ee59896db769" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
                 </li>
-                <li data-line="-194" data-footnote-id="fn-4-d702ecc298619ce7" id="fn-4-d702ecc298619ce7">
+                <li data-line="-505" data-footnote-id="fn-4-6cb4ee59896db769" id="fn-4-6cb4ee59896db769">
                   Альтернативное название, более понятное программистам "генераторы списков". Но использую по
                   <a data-tooltip-position="top" aria-label="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5#:~:text=%D0%90%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%20%D0%B8%D0%BB%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5,%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2." rel="noopener" class="external-link" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5#:~:text=%D0%90%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%20%D0%B8%D0%BB%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5,%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2." target="_blank">вики</a>
                   )
-                  <a href="#fnref-4-d702ecc298619ce7" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+                  <a href="#fnref-4-6cb4ee59896db769" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
                 </li>
-                <li data-line="-190" data-footnote-id="fn-5-d702ecc298619ce7" id="fn-5-d702ecc298619ce7">
+                <li data-line="-501" data-footnote-id="fn-5-6cb4ee59896db769" id="fn-5-6cb4ee59896db769">
                   В оригинале был термин "set comprehensions". Ссылка откуда взял:
                   <a data-tooltip-position="top" aria-label="https://russian.stackexchange.com/questions/1530/what-is-russian-translation-for-set-comprehension" rel="noopener" class="external-link" href="https://russian.stackexchange.com/questions/1530/what-is-russian-translation-for-set-comprehension" target="_blank">What is Russian translation for "set comprehension"</a>
                   . И я посчитал, что второй ответ более подходящий
-                  <a href="#fnref-5-d702ecc298619ce7" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+                  <a href="#fnref-5-6cb4ee59896db769" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
                 </li>
-                <li data-line="-190" data-footnote-id="fn-6-d702ecc298619ce7" id="fn-6-d702ecc298619ce7">
+                <li data-line="-501" data-footnote-id="fn-6-6cb4ee59896db769" id="fn-6-6cb4ee59896db769">
                   Я не знаю какая запись более правильная для русской традиции записи. Поэтому оставил как в оригинале
-                  <a href="#fnref-6-d702ecc298619ce7" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+                  <a href="#fnref-6-6cb4ee59896db769" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
                 </li>
-                <li data-line="-190" data-footnote-id="fn-7-d702ecc298619ce7" id="fn-7-d702ecc298619ce7">
+                <li data-line="-501" data-footnote-id="fn-7-6cb4ee59896db769" id="fn-7-6cb4ee59896db769">
                   Предикат - если просто, то это условие
-                  <a href="#fnref-7-d702ecc298619ce7" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
+                  <a href="#fnref-7-6cb4ee59896db769" class="footnote-backref footnote-link" target="_self" rel="noopener">↩︎</a>
                 </li>
               </ol>
             </section>
@@ -1772,6 +2132,23 @@
                 </div>
                 <div class="tree-item mod-tree-heading" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="#Кортежи"><span class="tree-item-title">Кортежи</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Типы_и_классы_типов"><span class="tree-item-title">Типы и классы типов</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Верьте_типу"><span class="tree-item-title">Верьте типу</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Переменные_типа"><span class="tree-item-title">Переменные типа</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Классы_типов_101"><span class="tree-item-title">Классы типов 101</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
               </div>
