@@ -182,6 +182,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># Syntax in Functions</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T113713Z" creationid="jenya" creationdate="20230619T113713Z">
+        <seg># Синтаксис в функциях</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># Translator's footnotes</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T115530Z" creationid="jenya" creationdate="20230617T115530Z">
@@ -236,6 +244,14 @@
         <seg>## Я - списковое включение (англ. _list comprehension_)
 
 Списковое включение^[Альтернативное название, более понятное программистам "генераторы списков". Но использую по [вики](https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5#:~:text=%D0%90%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%20%D0%B8%D0%BB%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%20%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5,%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2.)) ]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Pattern matching</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T113801Z" creationid="jenya" creationdate="20230619T113801Z">
+        <seg>## Соответствие шаблону</seg>
       </tuv>
     </tu>
     <tu>
@@ -988,6 +1004,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>But what if we wanted a function that says the numbers from 1 to 5 and says `"Not between 1 and 5"` for any other number?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114230Z" creationid="jenya" creationdate="20230619T114148Z">
+        <seg>Но что, если бы нам нужна была функция, которая произносит числа от 1 до 5 и говорит `"Не между 1 и 5"` для любого другого числа?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>But what's this?</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T144909Z" creationid="jenya" creationdate="20230618T144909Z">
@@ -1528,6 +1552,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>However, with it:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114242Z" creationid="jenya" creationdate="20230619T114242Z">
+        <seg>Однако, с этим:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>I decided to write this because I wanted to solidify my own knowledge of Haskell and because I thought I could help people new to Haskell learn it from my perspective.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230611T225720Z" creationid="jenya" creationdate="20230611T225608Z">
@@ -1628,6 +1660,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080805Z" creationid="jenya" creationdate="20230617T080805Z">
         <seg>Если это так, то он возвращает `True`, в противном случае он возвращает `False`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If it's not, it falls through to the second pattern, which matches anything and binds it to `x`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114135Z" creationid="jenya" creationdate="20230619T114135Z">
+        <seg>Если это не так, он переходит ко второму шаблону, который соответствует чему угодно и привязывает это к `x`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2392,6 +2432,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Let's make a really trivial function that checks if the number we supplied to it is a seven or not.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114054Z" creationid="jenya" creationdate="20230619T114054Z">
+        <seg>Давайте создадим действительно тривиальную функцию, которая проверяет, является ли число, которое мы ей указали, семеркой или нет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Let's remove all odd numbers without flattening the list.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110853Z" creationid="jenya" creationdate="20230617T110853Z">
@@ -2564,6 +2612,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105516Z" creationid="jenya" creationdate="20230617T105303Z">
         <seg>Мы не только можем иметь несколько предикатов в списковом включении (элемент должен удовлетворять всем предикатам, которые будут включены в результирующий список), мы также можем извлекать данные из нескольких списков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Note that if we moved the last pattern (the catch-all one) to the top, it would always say `"Not between 1 and 5"`, because it would catch all the numbers and they wouldn't have a chance to fall through and be checked for any other patterns.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114431Z" creationid="jenya" creationdate="20230619T114246Z">
+        <seg>Обратите внимание, что если бы мы переместили последний шаблон (универсальный) наверх, он всегда говорил бы `"Не между 1 и 5"`, потому что он перехватил бы все числа, и у них не было бы шанса провалиться и быть проверенными на наличие любых других шаблонов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2782,6 +2838,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090623Z" creationid="jenya" creationdate="20230617T090623Z">
         <seg>Или каждое третье число от 1 до 20?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Pattern matching consists of specifying patterns to which some data should conform and then checking to see if it does and deconstructing the data according to those patterns.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114016Z" creationid="jenya" creationdate="20230619T113923Z">
+        <seg>Сопоставление с образцом состоит в указании шаблонов, которым должны соответствовать некоторые данные, а затем проверке, соответствует ли это, и деструктуризации данных в соответствии с этими шаблонами.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3593,6 +3657,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The only way a number can conform to the first pattern here is if it is 7.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114125Z" creationid="jenya" creationdate="20230619T114125Z">
+        <seg>Единственный способ, которым число может соответствовать первому шаблону здесь, - это если оно равно 7.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The parameters are separated with `-&gt;` and there's no special distinction between the parameters and the return type.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T145514Z" creationid="jenya" creationdate="20230618T145514Z">
@@ -3793,10 +3865,26 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This chapter will cover some of Haskell's cool syntactic constructs and we'll start with pattern matching.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T113909Z" creationid="jenya" creationdate="20230619T113909Z">
+        <seg>В этой главе будут рассмотрены некоторые интересные синтаксические конструкции Haskell, и мы начнем с сопоставления с шаблоном.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This error cannot be caught at compile time so it's always good practice to take precautions against accidentally telling Haskell to give you some elements from an empty list.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080747Z" creationid="jenya" creationdate="20230617T080747Z">
         <seg>Эта ошибка не может быть обнаружена во время компиляции, поэтому всегда рекомендуется принимать меры предосторожности, чтобы случайно не попросить Haskell предоставить вам некоторые элементы из пустого списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This function could have also been implemented by using an if statement.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114142Z" creationid="jenya" creationdate="20230619T114142Z">
+        <seg>Эта функция также могла бы быть реализована с помощью оператора if .</seg>
       </tuv>
     </tu>
     <tu>
@@ -3869,6 +3957,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100905Z" creationid="jenya" creationdate="20230616T100905Z">
         <seg>Это то, что мы называем _инфиксной_ функцией.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This leads to really neat code that's simple and readable.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114034Z" creationid="jenya" creationdate="20230619T114034Z">
+        <seg>Это приводит к действительно аккуратному коду, простому и читабельному.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4481,6 +4577,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>When defining functions, you can define separate function bodies for different patterns.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114021Z" creationid="jenya" creationdate="20230619T114021Z">
+        <seg>При определении функций вы можете определить отдельные тела функций для разных шаблонов.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>When drawing from several lists, comprehensions produce all combinations of the given lists and then join them by the output function we supply.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105558Z" creationid="jenya" creationdate="20230617T105558Z">
@@ -4509,6 +4613,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T145113Z" creationid="jenya" creationdate="20230618T145113Z">
         <seg>При написании наших собственных функций мы можем предоставить им явное объявление типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>When you call `lucky`, the patterns will be checked from top to bottom and when it conforms to a pattern, the corresponding function body will be used.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114105Z" creationid="jenya" creationdate="20230619T114105Z">
+        <seg>Когда вы вызываете `lucky`, шаблоны будут проверены сверху вниз, и когда они будут соответствовать шаблону, будет использовано соответствующее тело функции.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4569,6 +4681,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Without pattern matching, we'd have to make a pretty convoluted if then else tree.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114232Z" creationid="jenya" creationdate="20230619T114232Z">
+        <seg>Без сопоставления с шаблоном нам пришлось бы создать довольно запутанное дерево if then else.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Work on Haskell began in 1987 when a committee of researchers got together to design a kick-ass language.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173549Z" creationid="jenya" creationdate="20230615T173549Z">
@@ -4621,6 +4741,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173840Z" creationid="jenya" creationdate="20230615T173840Z">
         <seg>Вы можете вызывать функции из скриптов, которые вы загружаете, и результаты отображаются немедленно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You can pattern match on any data type — numbers, characters, lists, tuples, etc.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114039Z" creationid="jenya" creationdate="20230619T114039Z">
+        <seg>Вы можете сопоставлять шаблоны для любого типа данных — числа, символы, списки, кортежи и т.д.</seg>
       </tuv>
     </tu>
     <tu>

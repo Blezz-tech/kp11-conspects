@@ -238,6 +238,14 @@
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## Guards, guards!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124540Z" creationid="jenya" creationdate="20230619T124540Z">
+        <seg>## Стража, стража!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## I'm a list comprehension</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T121032Z" creationid="jenya" creationdate="20230617T091156Z">
@@ -396,6 +404,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>&gt; **Note**: The `x:xs` pattern is used a lot, especially with recursive functions.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121356Z" creationid="jenya" creationdate="20230619T121356Z">
+        <seg>&gt; **Примечание**: Шаблон `x:xs` используется часто, особенно с рекурсивными функциями.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>&gt; **Note**: We can use the `let` keyword to define a name right in GHCI.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074816Z" creationid="jenya" creationdate="20230617T074816Z">
@@ -496,6 +512,14 @@ ghci&gt; [9.4,33.2,96.2,11.2,23.25] !!</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T160138Z" creationid="jenya" creationdate="20230618T160050Z">
         <seg>Многие люди, пришедшие из ООП, путаются в классах типов, потому что думают, что они похожи на классы в объектно-ориентированных языках.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>A pattern like `x:xs` will bind the head of the list to `x` and the rest of it to `xs`, even if there's only one element so `xs` ends up being an empty list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121150Z" creationid="jenya" creationdate="20230619T121150Z">
+        <seg>Шаблон типа `x:xs` привяжет начало списка к `x`, а остальную его часть к `xs`, даже если есть только один элемент, так что `xs` окажется пустым списком.</seg>
       </tuv>
     </tu>
     <tu>
@@ -612,6 +636,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Also note that we've taken care of all possible patterns of a list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122644Z" creationid="jenya" creationdate="20230619T122644Z">
+        <seg>Также обратите внимание, что мы позаботились обо всех возможных шаблонах списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Also notice the `error` function that we used.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121936Z" creationid="jenya" creationdate="20230619T121936Z">
+        <seg>Также обратите внимание на функцию `error`, которую мы использовали.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Although I bet that even if you don't have any significant programming experience, a smart person such as yourself will be able to follow along and learn Haskell.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T164243Z" creationid="jenya" creationdate="20230615T164243Z">
@@ -688,6 +728,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114948Z" creationid="jenya" creationdate="20230617T114948Z">
         <seg>И вот наш ответ!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>And we also know that the sum of a list is the head plus the sum of the rest of the list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123330Z" creationid="jenya" creationdate="20230619T123330Z">
+        <seg>И мы также знаем, что сумма списка - это глава плюс сумма остальной части списка.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>And we've defined `length' []` to be `0`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123314Z" creationid="jenya" creationdate="20230619T123314Z">
+        <seg>И мы определили `length' []` равным `0`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -836,6 +892,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Because it isn't, it falls through to the second pattern.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123004Z" creationid="jenya" creationdate="20230619T123004Z">
+        <seg>Поскольку это не так, это подпадает под второй шаблон.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Because it uses a lot of high level concepts, Haskell programs are usually shorter than their imperative equivalents.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173430Z" creationid="jenya" creationdate="20230615T173430Z">
@@ -900,6 +964,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>But calling `head` on an empty list doesn't make sense.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122017Z" creationid="jenya" creationdate="20230619T122017Z">
+        <seg>Но вызывать `head` в пустом списке не имеет смысла.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>But how do we write out the type of a function that takes several parameters?</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T145456Z" creationid="jenya" creationdate="20230618T145456Z">
@@ -912,6 +984,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075556Z" creationid="jenya" creationdate="20230617T075556Z">
         <seg>Но если вы попытаетесь получить шестой элемент из списка, состоящего всего из четырех элементов, вы получите сообщение об ошибке, так что будьте осторожны!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>But in a nutshell, this is what happens if we try to get the factorial of, say, 3.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114727Z" creationid="jenya" creationdate="20230619T114727Z">
+        <seg>Но в двух словах, это то, что произойдет, если мы попытаемся получить факториал, скажем, 3.</seg>
       </tuv>
     </tu>
     <tu>
@@ -932,6 +1012,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>But patterns that have `:` in them only match against lists of length 1 or more.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121400Z" creationid="jenya" creationdate="20230619T121400Z">
+        <seg>Но шаблоны, в которых есть `:`, совпадают только со списками длиной 1 или более.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>But putting something at the end of a list that's fifty million entries long is going to take a while.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T075219Z" creationid="jenya" creationdate="20230617T075219Z">
@@ -944,6 +1032,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T183535Z" creationid="jenya" creationdate="20230618T183535Z">
         <seg>Но поскольку Haskell является статически типизированным языком, он должен знать все типы до того, как код будет скомпилирован (или, в случае GHCI, оценен).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>But since `[1,2,3]` is just syntactic sugar for `1:2:3:[]`, you can also use the former pattern.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121143Z" creationid="jenya" creationdate="20230619T121143Z">
+        <seg>Но поскольку `[1,2,3]` - это просто синтаксический сахар для `1:2:3:[]`, вы также можете использовать прежний шаблон.</seg>
       </tuv>
     </tu>
     <tu>
@@ -976,6 +1072,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090827Z" creationid="jenya" creationdate="20230617T090827Z">
         <seg>Но есть способ получше: `возьми 24 [13,26..]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>But what about triples?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120509Z" creationid="jenya" creationdate="20230619T120509Z">
+        <seg>Но как насчет троек?</seg>
       </tuv>
     </tu>
     <tu>
@@ -1056,6 +1160,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T084630Z" creationid="jenya" creationdate="20230617T084630Z">
         <seg>Символы также могут быть пронумерованы.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Check this out:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120640Z" creationid="jenya" creationdate="20230619T120632Z">
+        <seg>Оцени это:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Checking if it works:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121527Z" creationid="jenya" creationdate="20230619T121527Z">
+        <seg>Проверка, работает ли это:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1164,6 +1284,22 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>First we defined the result of a known input — the empty list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122515Z" creationid="jenya" creationdate="20230619T122515Z">
+        <seg>Сначала мы определили результат известного ввода — пустой список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>First, it will check if it's an empty list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122735Z" creationid="jenya" creationdate="20230619T122735Z">
+        <seg>Во-первых, он проверит, является ли это пустым списком.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>First, let's try generating all triangles with sides equal to or smaller than 10:</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T114314Z" creationid="jenya" creationdate="20230617T114259Z">
@@ -1232,6 +1368,14 @@ ghci&gt; removeNonUppercase "IdontLIKEFROGS"
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T191140Z" creationid="jenya" creationdate="20230618T191140Z">
         <seg>Например, функция `length` имеет объявление типа `length :: [a] -&gt; Int` вместо того, чтобы иметь более общий тип `(Num b) =&gt; length :: [a] -&gt; b`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>For instance, the pattern `xs@(x:y:ys)`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124718Z" creationid="jenya" creationdate="20230619T123456Z">
+        <seg>Например, образец `xs@(x:y:ys)`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1368,6 +1512,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Had we written the second pattern on top of the first one, it would catch all numbers, including 0 and our calculation would never terminate.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114833Z" creationid="jenya" creationdate="20230619T114833Z">
+        <seg>Если бы мы написали второй шаблон поверх первого, он бы улавливал все числа, включая 0, и наше вычисление никогда бы не завершилось.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Haskell is **elegant and concise**.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T173204Z" creationid="jenya" creationdate="20230615T173204Z">
@@ -1456,6 +1608,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Here's a quick and dirty example:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124213Z" creationid="jenya" creationdate="20230619T124213Z">
+        <seg>Вот быстрый и грязный пример:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Here's a simple function that takes three integers and adds them together:</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T145503Z" creationid="jenya" creationdate="20230618T145503Z">
@@ -1476,6 +1636,22 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T145250Z" creationid="jenya" creationdate="20230618T145250Z">
         <seg>Вот как это выглядит с объявлением типа.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Here's how that looks like translated in Haskell terms.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114709Z" creationid="jenya" creationdate="20230619T114709Z">
+        <seg>Вот как это выглядит в переводе на термины Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Here's how we would have done it if we didn't know about pattern matching:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120338Z" creationid="jenya" creationdate="20230619T120338Z">
+        <seg>Вот как бы мы это сделали, если бы не знали о сопоставлении шаблонов:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1688,6 +1864,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If we define a function like this:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120143Z" creationid="jenya" creationdate="20230619T120143Z">
+        <seg>Если мы определим функцию, подобную этой:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If we examine the type of `*`, we'll see that it accepts all numbers.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T185658Z" creationid="jenya" creationdate="20230618T185658Z">
@@ -1864,10 +2048,26 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If you tried to pattern match against `(xs ++ ys)`, what would be in the first and what would be in the second list?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124804Z" creationid="jenya" creationdate="20230619T124331Z">
+        <seg>Если бы вы попытались сопоставить образец с `(xs ++ ys)`, что было бы в первом, а что во втором списке?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If you try to add together a number and a string, the compiler will whine at you.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T172910Z" creationid="jenya" creationdate="20230615T172910Z">
         <seg>Если вы попытаетесь сложить вместе число и строку, компилятор будет ныть на вас.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If you want to bind, say, the first three elements to variables and the rest of the list to another variable, you can use something like `x:y:z:zs`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121444Z" creationid="jenya" creationdate="20230619T121444Z">
+        <seg>Если вы хотите привязать, скажем, первые три элемента к переменным, а остальную часть списка к другой переменной, вы можете использовать что-то вроде `x:y:z:zs`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2128,6 +2328,30 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>It causes the program to crash, so it's not good to use it too much.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122012Z" creationid="jenya" creationdate="20230619T122012Z">
+        <seg>Это приводит к сбою программы, поэтому не стоит использовать ее слишком часто.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It complains that we have non-exhaustive patterns, and rightfully so.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120159Z" creationid="jenya" creationdate="20230619T120159Z">
+        <seg>Он жалуется, что у нас есть неисчерпывающие шаблоны, и это справедливо.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It doesn't make much sense.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124339Z" creationid="jenya" creationdate="20230619T124339Z">
+        <seg>В этом нет особого смысла.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>It doesn't really make much sense when you think about it.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112351Z" creationid="jenya" creationdate="20230617T112351Z">
@@ -2168,10 +2392,26 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>It matches on the second pattern and there it says that the length is `1 + length' "am"`, because we broke it into a head and a tail and discarded the head.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123049Z" creationid="jenya" creationdate="20230619T123008Z">
+        <seg>Он совпадает со вторым шаблоном, и там написано, что длина равна `1 + length' "am"`, потому что мы разделили его на голову и хвост и выбросили голову.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>It means that we first call the function `bar` with `3` as the parameter to get some number and then we call `bar` again with that number.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T132531Z" creationid="jenya" creationdate="20230616T132531Z">
         <seg>Это означает, что мы сначала вызываем функцию `bar` с `3` в качестве параметра, чтобы получить некоторое число, а затем мы снова вызываем `bar` с этим числом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It means that we really don't care what that part is, so we just write a `_`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120526Z" creationid="jenya" creationdate="20230619T120526Z">
+        <seg>Это означает, что нам действительно все равно, что это за часть, поэтому мы просто пишем `_`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2216,6 +2456,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>It takes a string and generates a runtime error, using that string as information about what kind of error occurred.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122002Z" creationid="jenya" creationdate="20230619T122002Z">
+        <seg>Он принимает строку и генерирует ошибку времени выполнения, используя эту строку в качестве информации о том, какого рода ошибка произошла.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>It takes a value whose type is a member of `Show` and presents it to us as a string.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T180830Z" creationid="jenya" creationdate="20230618T180830Z">
@@ -2244,6 +2492,30 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T144402Z" creationid="jenya" creationdate="20230618T144402Z">
         <seg>Это говорит нам, к какой категории вещей подходит это выражение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It tries to compute `3 * factorial 2`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114733Z" creationid="jenya" creationdate="20230619T114733Z">
+        <seg>Он пытается вычислить `3 * factorial 2`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It will only match against lists that have three elements or more.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121509Z" creationid="jenya" creationdate="20230619T121509Z">
+        <seg>Он будет соответствовать только спискам, содержащим три элемента или более.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It would make sense to match stuff against `(xs ++ [x,y,z])` or just `(xs ++ [x])`, but because of the nature of lists, you can't do that.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124501Z" creationid="jenya" creationdate="20230619T124501Z">
+        <seg>Было бы разумно сопоставить материал с `(xs ++ [x, y, z])` или просто `(xs ++ [x])`, но из-за природы списков вы не можете этого сделать.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2424,6 +2696,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Let's implement `sum`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123321Z" creationid="jenya" creationdate="20230619T123321Z">
+        <seg>Давайте реализуем `sum`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Let's make a function that takes two numbers and multiplies each by two and then adds them together.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T162716Z" creationid="jenya" creationdate="20230616T162716Z">
@@ -2436,6 +2716,22 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114054Z" creationid="jenya" creationdate="20230619T114054Z">
         <seg>Давайте создадим действительно тривиальную функцию, которая проверяет, является ли число, которое мы ей указали, семеркой или нет.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Let's make a trivial function that tells us some of the first elements of the list in (in)convenient English form.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122025Z" creationid="jenya" creationdate="20230619T122025Z">
+        <seg>Давайте создадим тривиальную функцию, которая сообщает нам некоторые из первых элементов списка в удобной английской форме.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Let's modify the function so that it uses pattern matching.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120353Z" creationid="jenya" creationdate="20230619T120353Z">
+        <seg>Давайте модифицируем функцию таким образом, чтобы она использовала сопоставление с шаблоном.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2460,6 +2756,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102134Z" creationid="jenya" creationdate="20230617T102134Z">
         <seg>Допустим, нам нужны только те элементы, которые в удвоенном виде больше или равны 12.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Let's see what happens if we call `length'` on `"ham"`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123034Z" creationid="jenya" creationdate="20230619T122702Z">
+        <seg>Давайте посмотрим, что произойдет, если мы вызовем `length'` на `"ham"`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2536,6 +2840,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Lists themselves can also be used in pattern matching.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121123Z" creationid="jenya" creationdate="20230619T121123Z">
+        <seg>Сами списки также можно использовать при сопоставлении с шаблоном.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Lots of people who come from imperative languages tend to stick to the notion that parentheses should denote function application.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T114017Z" creationid="jenya" creationdate="20230616T114016Z">
@@ -2576,6 +2888,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Much better.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120401Z" creationid="jenya" creationdate="20230619T120401Z">
+        <seg>Намного лучше.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Much like shopping lists in the real world, lists in Haskell are very useful.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074527Z" creationid="jenya" creationdate="20230617T074527Z">
@@ -2608,10 +2928,34 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Nice!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121809Z" creationid="jenya" creationdate="20230619T121542Z">
+        <seg>Отлично!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Normally we use as patterns to avoid repeating ourselves when matching against a bigger pattern when we have to use the whole thing again in the function body.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124649Z" creationid="jenya" creationdate="20230619T124217Z">
+        <seg>Обычно мы используем именованные образцы, чтобы избежать повторения при сопоставлении с более крупным шаблоном, когда нам приходится использовать все это снова в теле функции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Not only can we have multiple predicates in list comprehensions (an element must satisfy all the predicates to be included in the resulting list), we can also draw from several lists.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T105516Z" creationid="jenya" creationdate="20230617T105303Z">
         <seg>Мы не только можем иметь несколько предикатов в списковом включении (элемент должен удовлетворять всем предикатам, которые будут включены в результирующий список), мы также можем извлекать данные из нескольких списков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Note that `(x:[])` and `(x:y:[])` could be rewriten as `[x]` and `[x,y]` (because its syntatic sugar, we don't need the parentheses).</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122114Z" creationid="jenya" creationdate="20230619T122114Z">
+        <seg>Обратите внимание, что `(x:[])` и `(x:y: [])` могут быть переписаны как `[x]` и `[x,y]` (поскольку это синтаксический сахар, нам не нужны круглые скобки).</seg>
       </tuv>
     </tu>
     <tu>
@@ -2636,6 +2980,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T151600Z" creationid="jenya" creationdate="20230618T151600Z">
         <seg>Обратите внимание, что пустой кортеж `()` также является типом, который может иметь только одно значение: `()`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Note that this is already a catch-all pattern.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120403Z" creationid="jenya" creationdate="20230619T120403Z">
+        <seg>Обратите внимание, что это уже универсальный шаблон.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2690,6 +3042,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Notice that if you want to bind to several variables (even if one of them is just `_` and doesn't actually bind at all), we have to surround them in parentheses.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121810Z" creationid="jenya" creationdate="20230619T121810Z">
+        <seg>Обратите внимание, что если вы хотите привязать к нескольким переменным (даже если одна из них просто `_` и на самом деле вообще не привязывается), мы должны заключить их в круглые скобки.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Notice that in the previous uses of `read` we did something with the result afterwards.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T181210Z" creationid="jenya" creationdate="20230618T181210Z">
@@ -2702,6 +3062,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102808Z" creationid="jenya" creationdate="20230617T102808Z">
         <seg>Теперь перейдем к другому примеру.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Now here comes the trick — we've defined the factorial of 0 to be just 1 and because it encounters that pattern before the catch-all one, it just returns 1.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114805Z" creationid="jenya" creationdate="20230619T114805Z">
+        <seg>Теперь начинается хитрость — мы определили, что факториал 0 равен всего лишь 1, и поскольку он встречает этот шаблон перед всеобъемлющим, он просто возвращает 1.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2738,6 +3106,22 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Now that we know how to pattern match against list, let's make our own implementation of the `head` function.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121520Z" creationid="jenya" creationdate="20230619T121520Z">
+        <seg>Теперь, когда мы знаем, как сопоставить шаблон со списком, давайте создадим нашу собственную реализацию функции `head`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Now we'll do it by using pattern matching and a little recursion:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122457Z" creationid="jenya" creationdate="20230619T122457Z">
+        <seg>Теперь мы сделаем это, используя сопоставление с шаблоном и небольшую рекурсию:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Now we'll use GHCI to examine the types of some expressions.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T144415Z" creationid="jenya" creationdate="20230618T144415Z">
@@ -2770,6 +3154,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>O-kay.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123126Z" creationid="jenya" creationdate="20230619T123116Z">
+        <seg>Хорошо.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Observe:</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T183449Z" creationid="jenya" creationdate="20230618T183449Z">
@@ -2790,6 +3182,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T161047Z" creationid="jenya" creationdate="20230616T161047Z">
         <seg>Оказавшись внутри GHCI, выполните `:l baby`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>One more thing — you can't use `++` in pattern matches.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124752Z" creationid="jenya" creationdate="20230619T124316Z">
+        <seg>Еще одна вещь — вы не можете использовать `++` при сопоставлении образцов.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2838,6 +3238,22 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T090623Z" creationid="jenya" creationdate="20230617T090623Z">
         <seg>Или каждое третье число от 1 до 20?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Pattern matching can also be used on tuples.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120307Z" creationid="jenya" creationdate="20230619T120307Z">
+        <seg>Сопоставление с образцом также может быть использовано для кортежей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Pattern matching can also fail.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120141Z" creationid="jenya" creationdate="20230619T120141Z">
+        <seg>Сопоставление с образцом также может привести к сбою.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2918,6 +3334,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Recursion is important in Haskell and we'll take a closer look at it later.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114721Z" creationid="jenya" creationdate="20230619T114721Z">
+        <seg>Рекурсия важна в Haskell, и мы подробнее рассмотрим ее позже.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Remember `fst`?</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T154528Z" creationid="jenya" creationdate="20230618T154528Z">
@@ -2930,6 +3354,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T151730Z" creationid="jenya" creationdate="20230618T151730Z">
         <seg>Помните, что ранее мы указывали, что типы пишутся с большой буквы, поэтому это не может быть точно типом.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Remember the factorial function we implemented previously?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114620Z" creationid="jenya" creationdate="20230619T114620Z">
+        <seg>Помните функцию факториала, которую мы реализовали ранее?</seg>
       </tuv>
     </tu>
     <tu>
@@ -2990,6 +3422,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Should a pattern match fail, it will just move on to the next element.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120643Z" creationid="jenya" creationdate="20230619T120643Z">
+        <seg>Если совпадение с шаблоном завершится неудачей, он просто перейдет к следующему элементу.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Simple.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T162729Z" creationid="jenya" creationdate="20230616T162729Z">
@@ -3030,6 +3470,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>So if we write that down, we get:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123334Z" creationid="jenya" creationdate="20230619T123334Z">
+        <seg>Итак, если мы запишем это, мы получим:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>So if you see something like `bar (bar 3)`, it doesn't mean that `bar` is called with `bar` and `3` as parameters.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T130601Z" creationid="jenya" creationdate="20230616T130601Z">
@@ -3054,6 +3502,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>So in the end we have `1 + (1 + (1 + 0))`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123318Z" creationid="jenya" creationdate="20230619T123318Z">
+        <seg>Итак, в итоге мы имеем `1 + (1 + (1 + 0))`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>So it only does one pass through the list and only when you really need it.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T172605Z" creationid="jenya" creationdate="20230615T172605Z">
@@ -3062,10 +3518,26 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>So right now we have `1 + (1 + length' "m")`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123243Z" creationid="jenya" creationdate="20230619T123238Z">
+        <seg>Итак, прямо сейчас у нас есть `1 + (1 + length' "m")`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>So the expression of `(True, 'a')` has a type of `(Bool, Char)`, whereas an expression such as `('a','b','c')` would have the type of `(Char, Char, Char)`.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T145057Z" creationid="jenya" creationdate="20230618T145057Z">
         <seg>Таким образом, выражение `(True, 'a')` имеет тип `(Bool, Char)`, тогда как такое выражение, как `('a','b','c')`, имело бы тип `(Char, Char, Char)`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>So the final result is equivalent to `3 * (2 * (1 * 1))`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114827Z" creationid="jenya" creationdate="20230619T114827Z">
+        <seg>Таким образом, конечный результат эквивалентен `3 * (2 * (1 * 1))`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3374,6 +3846,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>That's why order is important when specifying patterns and it's always best to specify the most specific ones first and then the more general ones later.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120136Z" creationid="jenya" creationdate="20230619T120136Z">
+        <seg>Вот почему порядок важен при указании шаблонов, и всегда лучше сначала указать наиболее конкретные из них, а затем более общие.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>That's why we can use `fst` on a pair that contains any two types.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T154843Z" creationid="jenya" creationdate="20230618T154843Z">
@@ -3406,6 +3886,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The `_` means the same thing as it does in list comprehensions.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120601Z" creationid="jenya" creationdate="20230619T120518Z">
+        <seg>`_` означает то же самое, что и в списковом включении.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The `compare` function takes two `Ord` members of the same type and returns an ordering.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T180321Z" creationid="jenya" creationdate="20230618T174630Z">
@@ -3418,6 +3906,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T160752Z" creationid="jenya" creationdate="20230618T160752Z">
         <seg>Функция `elem` имеет тип `(Eq a) =&gt; a -&gt; [a] -&gt; Bool`, потому что она использует `==` над списком, чтобы проверить, есть ли в нем какое-то значение, которое мы ищем.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The `length'` of `"am"` is, similarly, `1 + length' "m"`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123231Z" creationid="jenya" creationdate="20230619T123128Z">
+        <seg>`length "am"` аналогично равна `1 + length' "m"`.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3489,6 +3985,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The factorial of 2 is `2 * factorial 1`, so for now we have `3 * (2 * factorial 1)`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114742Z" creationid="jenya" creationdate="20230619T114740Z">
+        <seg>Факториал 2 равен `2 * factorial 1`, так что на данный момент у нас есть `3 * (2 * factorial 1)`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The factorial of a number is the product of all the numbers from 1 to that number, the sum of a list of numbers is the first number plus the sum of all the other numbers, and so on.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T170232Z" creationid="jenya" creationdate="20230615T165159Z">
@@ -3529,10 +4033,27 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The first pattern matches an empty list and the second one matches anything that isn't an empty list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122653Z" creationid="jenya" creationdate="20230619T122653Z">
+        <seg>Первый шаблон соответствует пустому списку, а второй соответствует всему, что не является пустым списком.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The first thing we're going to do is run ghc's interactive mode and call some function to get a very basic feel for haskell.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T093007Z" creationid="jenya" creationdate="20230616T093007Z">
         <seg>Первое, что мы собираемся сделать, это запустить интерактивный режим ghc и вызвать какую-нибудь функцию, чтобы получить самое базовое представление о Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The first two elements are: " ++ show x ++ " and " ++ show y
+```</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122040Z" creationid="jenya" creationdate="20230619T122034Z">
+        <seg>Первыми двумя элементами являются: " ++ show x ++ " и " ++ show y</seg>
       </tuv>
     </tu>
     <tu>
@@ -3753,6 +4274,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The type of `addVectors` (in both cases) is `addVectors :: (Num a) =&gt; (a, a) -&gt; (a, a) - &gt; (a, a)`, so we are guaranteed to get two pairs as parameters.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120409Z" creationid="jenya" creationdate="20230619T120409Z">
+        <seg>Тип `addVectors` (в обоих случаях) - `addVectors :: (Num a) =&gt; (a, a) -&gt; (a, a) - &gt; (a, a)`, поэтому мы гарантированно получим две пары в качестве параметров.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The type of every expression is known at compile time, which leads to safer code.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T140135Z" creationid="jenya" creationdate="20230618T140135Z">
@@ -3785,10 +4314,26 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Then in the second pattern we take the list apart by splitting it into a head and a tail.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122627Z" creationid="jenya" creationdate="20230619T122627Z">
+        <seg>Затем во втором шаблоне мы разбираем список на части, разделяя его на начало и конец.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Then it would pass through the list another two times and return the result.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T171921Z" creationid="jenya" creationdate="20230615T171921Z">
         <seg>Затем он пройдет по списку еще два раза и вернет результат.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Then we state that the factorial of any positive integer is that integer multiplied by the factorial of its predecessor.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114659Z" creationid="jenya" creationdate="20230619T114659Z">
+        <seg>Затем мы утверждаем, что факториал любого положительного целого числа - это это целое число, умноженное на факториал его предшественника.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3805,6 +4350,22 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073932Z" creationid="jenya" creationdate="20230617T073918Z">
         <seg>Здесь есть две заслуживающие внимания вещи.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>There we go!</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120359Z" creationid="jenya" creationdate="20230619T120359Z">
+        <seg>Вот так!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>There's also a thing called _as patterns_.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124655Z" creationid="jenya" creationdate="20230619T123338Z">
+        <seg>Существует также такая вещь, как _именованные образцы_ (англ. _as patterns_) .</seg>
       </tuv>
     </tu>
     <tu>
@@ -3889,6 +4450,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This function is safe because it takes care of the empty list, a singleton list, a list with two elements and a list with more than two elements.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122059Z" creationid="jenya" creationdate="20230619T122059Z">
+        <seg>Эта функция безопасна, поскольку она обрабатывает пустой список, одноэлементный список, список с двумя элементами и список с более чем двумя элементами.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This function replaces every element of a list with `1` and then sums that up.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T110349Z" creationid="jenya" creationdate="20230617T110349Z">
@@ -3909,6 +4478,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T163046Z" creationid="jenya" creationdate="20230616T163046Z">
         <seg>Это очень простой пример общего шаблона, который вы увидите во всем Haskell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This is also known as the edge condition.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122626Z" creationid="jenya" creationdate="20230619T122626Z">
+        <seg>Это также известно как граничное условие.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3953,6 +4530,22 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This is similar to the factorial function we wrote earlier.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122503Z" creationid="jenya" creationdate="20230619T122503Z">
+        <seg>Это похоже на факторную функцию, о которой мы писали ранее.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This is the first time we've defined a function recursively.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114718Z" creationid="jenya" creationdate="20230619T114718Z">
+        <seg>Это первый раз, когда мы определили функцию рекурсивно.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This is what we call an _infix_ function.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100905Z" creationid="jenya" creationdate="20230616T100905Z">
@@ -3977,6 +4570,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This pattern will match exactly the same thing as `x:y:ys` but you can easily get the whole list via `xs` instead of repeating yourself by typing out `x:y:ys` in the function body again.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124723Z" creationid="jenya" creationdate="20230619T123459Z">
+        <seg>Этот образец будет соответствовать точно тому же, что и `x:y:ys`, но вы можете легко получить весь список через `xs` вместо того, чтобы повторяться, снова введя `x:y:ys` в теле функции.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This tutorial is aimed at people who have experience in imperative programming languages (C, C++, Java, Python …) but haven't programmed in a functional language before (Haskell, ML, OCaml …).</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230615T164157Z" creationid="jenya" creationdate="20230615T164157Z">
@@ -3993,6 +4594,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Those are a handy way of breaking something up according to a pattern and binding it to names whilst still keeping a reference to the whole thing.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124702Z" creationid="jenya" creationdate="20230619T123353Z">
+        <seg>Это удобный способ разбить что-либо в соответствии с образцом и привязать его к именам, сохраняя при этом ссылку на все это.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Those are types that are in the `Num` typeclass.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T185650Z" creationid="jenya" creationdate="20230618T185650Z">
@@ -4005,6 +4614,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T082944Z" creationid="jenya" creationdate="20230617T082944Z">
         <seg>Это было несколько основных функций, которые работают со списками.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>To add together two vectors, we add their x components separately and then their y components separately.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120318Z" creationid="jenya" creationdate="20230619T120318Z">
+        <seg>Чтобы сложить вместе два вектора, мы добавляем их компоненты x отдельно, а затем их компоненты y отдельно.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4185,6 +4802,22 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We already implemented our own `length` function using list comprehension.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122452Z" creationid="jenya" creationdate="20230619T122434Z">
+        <seg>Мы уже реализовали нашу собственную функцию `length`, используя списковое включение.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We can also define a factorial function _recursively_, the way it is usually defined in mathematics.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114647Z" creationid="jenya" creationdate="20230619T114632Z">
+        <seg>Мы также можем определить функцию факториала _рекурсивно_, как это обычно определяется в математике.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We can also use several operators on one line and all the usual precedence rules are obeyed.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095232Z" creationid="jenya" creationdate="20230616T095232Z">
@@ -4213,6 +4846,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095311Z" creationid="jenya" creationdate="20230616T095311Z">
         <seg>Мы можем использовать круглые скобки, чтобы сделать приоритет явным или изменить его.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We can't rewrite `(x:y:_)` with square brackets because it matches any list of length 2 or more.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122358Z" creationid="jenya" creationdate="20230619T122358Z">
+        <seg>Мы не можем переписать `(x:y:_)` в квадратных скобках, потому что он соответствует любому списку длиной 2 или более.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4257,6 +4898,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We defined the factorial of a number `n` as `product [1..n]`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114629Z" creationid="jenya" creationdate="20230619T114629Z">
+        <seg>Мы определили факториал числа `n` как `произведение [1..n]`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We didn't have to give this function a type declaration because the compiler can infer by itself that it's a function from a string to a string but we did anyway.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T145428Z" creationid="jenya" creationdate="20230618T145428Z">
@@ -4269,6 +4918,22 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T183428Z" creationid="jenya" creationdate="20230618T183428Z">
         <seg>Мы делаем это, добавляя `::` в конце выражения, а затем указывая тип.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We know that the sum of an empty list is 0.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123322Z" creationid="jenya" creationdate="20230619T123322Z">
+        <seg>Мы знаем, что сумма пустого списка равна 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We say that the length is equal to 1 plus the length of the tail.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122634Z" creationid="jenya" creationdate="20230619T122634Z">
+        <seg>Мы говорим, что длина равна 1 плюс длина хвоста.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4289,6 +4954,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We start by saying that the factorial of 0 is 1.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114657Z" creationid="jenya" creationdate="20230619T114657Z">
+        <seg>Мы начнем с того, что скажем, что факториал 0 равен 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We took a list of numbers and we filtered them by the predicate.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102804Z" creationid="jenya" creationdate="20230617T102804Z">
@@ -4297,10 +4970,26 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We use `_` to match the head because we don't actually care what it is.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122640Z" creationid="jenya" creationdate="20230619T122640Z">
+        <seg>Мы используем `_` для обозначения заголовка, потому что на самом деле нам все равно, что это такое.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We usually use `'` to either denote a strict version of a function (one that isn't lazy) or a slightly modified version of a function or a variable.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T073847Z" creationid="jenya" creationdate="20230617T073830Z">
         <seg>Обычно мы используем `'` либо для обозначения строгой версии функции (той, которая не является ленивой), либо для слегка измененной версии функции или переменной.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We write that down as a pattern.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123325Z" creationid="jenya" creationdate="20230619T123325Z">
+        <seg>Мы записываем это как шаблон.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4405,6 +5094,22 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T095958Z" creationid="jenya" creationdate="20230616T095958Z">
         <seg>Что ж, если мы попробуем первый фрагмент, то получим большое пугающее сообщение об ошибке!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Well, that works, but there's a better way to do it.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120349Z" creationid="jenya" creationdate="20230619T120349Z">
+        <seg>Что ж, это работает, но есть способ получше сделать это.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Well, there are no provided functions that do that but we can make our own.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120511Z" creationid="jenya" creationdate="20230619T120511Z">
+        <seg>Ну, нет никаких предусмотренных функций, которые делали бы это, но мы можем создать наши собственные.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4537,6 +5242,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>What if we wanted to make a function that takes two vectors in a 2D space (that are in the form of pairs) and adds them together?</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120317Z" creationid="jenya" creationdate="20230619T120317Z">
+        <seg>Что, если бы мы хотели создать функцию, которая берет два вектора в 2D-пространстве (которые находятся в виде пар) и складывает их вместе?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>What is this `a`?</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T151651Z" creationid="jenya" creationdate="20230618T151646Z">
@@ -4593,6 +5306,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>When making patterns, we should always include a catch-all pattern so that our program doesn't crash if we get some unexpected input.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120303Z" creationid="jenya" creationdate="20230619T120303Z">
+        <seg>При создании шаблонов мы всегда должны включать универсальный шаблон, чтобы наша программа не завершилась сбоем, если мы получим какие-то неожиданные входные данные.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>When using `&lt;`, `&lt;=`, `&gt;` and `&gt;=` to compare lists, they are compared in lexicographical order.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080423Z" creationid="jenya" creationdate="20230617T080423Z">
@@ -4645,6 +5366,22 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T100338Z" creationid="jenya" creationdate="20230616T100338Z">
         <seg>В то время как `+` работает только с теми вещами, которые считаются числами, `==` работает с любыми двумя вещами, которые можно сравнить.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Whereas patterns are a way of making sure a value conforms to some form and deconstructing it, guards are a way of testing whether some property of a value (or several of them) are true or false.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124943Z" creationid="jenya" creationdate="20230619T124544Z">
+        <seg>В то время как образцы - это способ убедиться, что значение соответствует некоторой форме, и деструктуризации образцов, guardians - это способ проверить, является ли какое-либо свойство значения (или несколько из них) истинным или ложным.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Which reminds me, you can also pattern match in list comprehensions.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120630Z" creationid="jenya" creationdate="20230619T120611Z">
+        <seg>Это напоминает мне, что вы также можете сопоставлять шаблоны в списковом включении.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4745,6 +5482,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>You can match with the empty list `[]` or any pattern that involves `:` and the empty list.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T121128Z" creationid="jenya" creationdate="20230619T121128Z">
+        <seg>Вы можете сопоставить с пустым списком `[]` или любым шаблоном, который включает `:` и пустой список.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>You can pattern match on any data type — numbers, characters, lists, tuples, etc.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114039Z" creationid="jenya" creationdate="20230619T114039Z">
@@ -4789,6 +5534,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T173629Z" creationid="jenya" creationdate="20230616T173629Z">
         <seg>Вы могли бы просто переопределить `doubleMe` на `x + x + x`, и поскольку `doubleUs` вызывает `doubleMe`, это автоматически сработало бы в этом странном новом мире, где 2 равно 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You do that by putting a name and an `@` in front of a pattern.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T124710Z" creationid="jenya" creationdate="20230619T123450Z">
+        <seg>Вы делаете это, помещая имя и знак `@` перед образцом.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6634,6 +7387,22 @@ removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']]
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>`factorial 1` is `1 * factorial 0`, so we have `3 * (2 * (1 * factorial 0))`.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T114802Z" creationid="jenya" creationdate="20230619T114755Z">
+        <seg>`factorial 1` равен `1 * factorial 0`, таким образом, мы имеем `3 * (2 * (1 * factorial 0))`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`fst` and `snd` extract the components of pairs.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120505Z" creationid="jenya" creationdate="20230619T120505Z">
+        <seg>`fst` и `snd` извлекают компоненты пар.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>`fst` takes a pair and returns its first component.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T112435Z" creationid="jenya" creationdate="20230617T112435Z">
@@ -6662,6 +7431,14 @@ removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']]
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T080602Z" creationid="jenya" creationdate="20230617T080602Z">
         <seg>`last` принимает список и возвращает его последний элемент.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>`length' "m"` is `1 + length' ""` (could also be written as `1 + length' []`).</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T123307Z" creationid="jenya" creationdate="20230619T123247Z">
+        <seg>`length' "m"` равна `1 + length' ""` (также может быть записана как `1 + length' []`).</seg>
       </tuv>
     </tu>
     <tu>
@@ -6798,6 +7575,14 @@ removeNonUppercase st = [ c | c &lt;- st, c `elem` ['A'..'Z']]
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T100411Z" creationid="jenya" creationdate="20230617T100411Z">
         <seg>`x` берется из `[1..10]`, и для каждого элемента в `[1..10]` (который мы привязали к `x`) мы получаем этот элемент, только удвоенный.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>and then try to call it with an input that we didn't expect, this is what happens:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230619T120146Z" creationid="jenya" creationdate="20230619T120146Z">
+        <seg>а затем попробуйте вызвать его с помощью ввода, которого мы не ожидали, вот что произойдет:</seg>
       </tuv>
     </tu>
     <tu>

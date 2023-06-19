@@ -1,12 +1,12 @@
-# Syntax in Functions
+# Синтаксис в функциях
 
-## Pattern matching
+## Соответствие шаблону
 
 ![[LYHfGG_19_pattern.png]]
 
-This chapter will cover some of Haskell's cool syntactic constructs and we'll start with pattern matching. Pattern matching consists of specifying patterns to which some data should conform and then checking to see if it does and deconstructing the data according to those patterns.
+В этой главе будут рассмотрены некоторые интересные синтаксические конструкции Haskell, и мы начнем с сопоставления с шаблоном. Сопоставление с образцом состоит в указании шаблонов, которым должны соответствовать некоторые данные, а затем проверке, соответствует ли это, и деструктуризации данных в соответствии с этими шаблонами.
 
-When defining functions, you can define separate function bodies for different patterns. This leads to really neat code that's simple and readable. You can pattern match on any data type — numbers, characters, lists, tuples, etc. Let's make a really trivial function that checks if the number we supplied to it is a seven or not.
+При определении функций вы можете определить отдельные тела функций для разных шаблонов. Это приводит к действительно аккуратному коду, простому и читабельному. Вы можете сопоставлять шаблоны для любого типа данных — числа, символы, списки, кортежи и т.д. Давайте создадим действительно тривиальную функцию, которая проверяет, является ли число, которое мы ей указали, семеркой или нет.
 
 ```haskell
 lucky :: (Integral a) => a -> String
@@ -14,7 +14,7 @@ lucky 7 = "LUCKY NUMBER SEVEN!"
 lucky x = "Sorry, you're out of luck, pal!" 
 ```
 
-When you call `lucky`, the patterns will be checked from top to bottom and when it conforms to a pattern, the corresponding function body will be used. The only way a number can conform to the first pattern here is if it is 7. If it's not, it falls through to the second pattern, which matches anything and binds it to `x`. This function could have also been implemented by using an if statement. But what if we wanted a function that says the numbers from 1 to 5 and says `"Not between 1 and 5"` for any other number? Without pattern matching, we'd have to make a pretty convoluted if then else tree. However, with it:
+Когда вы вызываете `lucky`, шаблоны будут проверены сверху вниз, и когда они будут соответствовать шаблону, будет использовано соответствующее тело функции. Единственный способ, которым число может соответствовать первому шаблону здесь, - это если оно равно 7. Если это не так, он переходит ко второму шаблону, который соответствует чему угодно и привязывает это к `x`. Эта функция также могла бы быть реализована с помощью оператора if . Но что, если бы нам нужна была функция, которая произносит числа от 1 до 5 и говорит `"Не между 1 и 5"` для любого другого числа? Без сопоставления с шаблоном нам пришлось бы создать довольно запутанное дерево if then else. Однако, с этим:
 
 ```haskell
 sayMe :: (Integral a) => a -> String
@@ -26,7 +26,7 @@ sayMe 5 = "Five!"
 sayMe x = "Not between 1 and 5"
 ```
 
-Note that if we moved the last pattern (the catch-all one) to the top, it would always say `"Not between 1 and 5"`, because it would catch all the numbers and they wouldn't have a chance to fall through and be checked for any other patterns.
+Обратите внимание, что если бы мы переместили последний шаблон (универсальный) наверх, он всегда говорил бы `"Не между 1 и 5"`, потому что он перехватил бы все числа, и у них не было бы шанса провалиться и быть проверенными на наличие любых других шаблонов.
 
 Remember the factorial function we implemented previously? We defined the factorial of a number `n` as `product [1..n]`. We can also define a factorial function _recursively_, the way it is usually defined in mathematics. We start by saying that the factorial of 0 is 1. Then we state that the factorial of any positive integer is that integer multiplied by the factorial of its predecessor. Here's how that looks like translated in Haskell terms.
 
