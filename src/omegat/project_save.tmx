@@ -2392,6 +2392,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>In the previous section, we defined a BMI calculator function and berator like this:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230620T090149Z" creationid="jenya" creationdate="20230620T090137Z">
+        <seg>В предыдущем разделе мы определили функцию калькулятора ИМТ и "ругалочку" следующим образом:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>In this section we'll look at the basics of lists, strings (which are lists) and list comprehensions.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T074613Z" creationid="jenya" creationdate="20230617T074613Z">
@@ -3282,6 +3290,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Notice that we repeat ourselves here three times.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230620T090152Z" creationid="jenya" creationdate="20230620T090152Z">
+        <seg>Обратите внимание, что мы повторяемся здесь три раза.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Now for another example.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230617T102808Z" creationid="jenya" creationdate="20230617T102808Z">
@@ -3606,6 +3622,14 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Repeating yourself (three times) while programming is about as desirable as getting kicked inna head.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230620T090301Z" creationid="jenya" creationdate="20230620T090301Z">
+        <seg>Повторяться (три раза) во время программирования примерно так же желательно, как получить удар по голове.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Right here we introduced Haskell's if statement.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T174114Z" creationid="jenya" creationdate="20230616T173855Z">
@@ -3666,6 +3690,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230616T162729Z" creationid="jenya" creationdate="20230616T162729Z">
         <seg>Просто.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Since we repeat the same expression three times, it would be ideal if we could calculate it once, bind it to a name and then use that name instead of the expression.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230620T090303Z" creationid="jenya" creationdate="20230620T090303Z">
+        <seg>Поскольку мы повторяем одно и то же выражение три раза, было бы идеально, если бы мы могли вычислить его один раз, привязать к имени, а затем использовать это имя вместо выражения.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5242,6 +5274,22 @@ ghci&gt; [3 ..</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We put the keyword `where` after the guards (usually it's best to indent it as much as the pipes are indented) and then we define several names or functions.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230620T090311Z" creationid="jenya" creationdate="20230620T090311Z">
+        <seg>Мы помещаем ключевое слово `where` после защитных знаков (обычно лучше всего делать с ним такой же отступ, как и в каналах), а затем определяем несколько имен или функций.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We repeat ourselves three times.</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230620T090250Z" creationid="jenya" creationdate="20230620T090250Z">
+        <seg>Мы повторяем это три раза.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We say that the length is equal to 1 plus the length of the tail.</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230619T122634Z" creationid="jenya" creationdate="20230619T122634Z">
@@ -5438,6 +5486,14 @@ ghci&gt; [3 ..</seg>
       </tuv>
       <tuv lang="ru-RU" changeid="jenya" changedate="20230618T160141Z" creationid="jenya" creationdate="20230618T160141Z">
         <seg>Ну, это не так.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Well, we can modify our function like this:</seg>
+      </tuv>
+      <tuv lang="ru-RU" changeid="jenya" changedate="20230620T090305Z" creationid="jenya" creationdate="20230620T090305Z">
+        <seg>Что ж, мы можем изменить нашу функцию следующим образом:</seg>
       </tuv>
     </tu>
     <tu>
