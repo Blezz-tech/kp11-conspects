@@ -26,6 +26,10 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Lib.Math
+      Lib.NormIO
+      Lib.Task
+      Lib.Task.Days
   other-modules:
       Paths_my_oblivion_haskell
   hs-source-dirs:
@@ -33,6 +37,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , containers
   default-language: Haskell2010
 
 executable my-oblivion-haskell-exe
@@ -44,6 +49,7 @@ executable my-oblivion-haskell-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , containers
     , my-oblivion-haskell
   default-language: Haskell2010
 
@@ -57,5 +63,6 @@ test-suite my-oblivion-haskell-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , containers
     , my-oblivion-haskell
   default-language: Haskell2010

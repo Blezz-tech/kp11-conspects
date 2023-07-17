@@ -1,6 +1,10 @@
 module Lib
-    ( someFunc
-    ) where
+  ( module Lib.Math,
+    module Lib.NormIO,
+    module Lib.Task,
+  )
+where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+import Lib.Math
+import Lib.NormIO
+import Lib.Task
