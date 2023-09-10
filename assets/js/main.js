@@ -11,8 +11,8 @@ buttons_file.forEach(button_file => {
 });
 
 async function start(lesson) {
-  let url = document.location.origin;
-  let response = await fetch(`${url}/learn/${lesson}`);
+
+  const response = await fetch(`https://blezz-tech.github.io/test-php-site/learn/${lesson}`);
   const commits = await response.text();
   content_area.innerHTML = md.render(commits);
 
