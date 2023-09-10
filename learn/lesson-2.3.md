@@ -14,7 +14,7 @@
 </body>
 ```
 
-![img-1](/assets/images/learn/lesson-2.3/img-1.png)
+![img-1](./assets/images/learn/lesson-2.3/img-1.png)
 
 РИС. 1. ОСНОВНЫЕ СЕКЦИИ СТРАНИЦЫ {.text-center}
 
@@ -22,7 +22,7 @@
 
 Элементы `<header>`, `<div>` и `<footer>` — блочные, поэтому они будут занимать всю ширину их блока-контейнера — элемента `<body>`. Страница с такой разметкой будет хорошо смотреться на небольших экранах, но на устройствах с большим разрешением текст таких страниц будет неудобно читать. Поэтому необходимо добавить тег-контейнер для контента — содержимого каждой секции:
 
-![img-2](/assets/images/learn/lesson-2.3/img-2.png)
+![img-2](./assets/images/learn/lesson-2.3/img-2.png)
 
 РИС. 2. ОСНОВНЫЕ СЕКЦИИ СТРАНИЦЫ С ТЕГОМ-КОНТЕЙНЕРОМ {.text-center}
 
@@ -58,7 +58,7 @@
 </header>
 ```
 
-![img-2](/assets/images/learn/lesson-2.3/img-2.png)
+![img-2](./assets/images/learn/lesson-2.3/img-2.png)
 
 РИС. 3. ШАПКА САЙТА С ДОБАВЛЕННЫМИ ЛОГОТИПОМ И ССЫЛКАМИ {.text-center}
 
@@ -83,7 +83,7 @@ nav li {
 
 Существует несколько способов разместить блочные элементы в строку. Все они приведены в уроке Горизонтальное меню для сайта.
 
-![img-2](/assets/images/learn/lesson-2.3/img-2.png)
+![img-2](./assets/images/learn/lesson-2.3/img-2.png)
 
 РИС. 4. ЭФФЕКТ СХЛОПЫВАНИЯ БЛОКА-КОНТЕЙНЕРА {.text-center}
 
@@ -108,13 +108,13 @@ nav li {
 }
 ```
 
-![img-2](/assets/images/learn/lesson-2.3/img-2.png)
+![img-2](./assets/images/learn/lesson-2.3/img-2.png)
 
 РИС. 5. ОЧИСТКА ПОТОКА {.text-center}
 
 Рассмотрим ситуацию, когда в качестве логотипа выступает картинка. Она может быть добавлена непосредственно внутрь тега или же в качестве фонового изображения. Картинка будет иметь свою высоту, которая может сильно отличаться от высоты меню навигации, поэтому перед нами встанет проблема вертикального выравнивания элементов шапки.
 
-![img-2](/assets/images/learn/lesson-2.3/img-2.png)
+![img-2](./assets/images/learn/lesson-2.3/img-2.png)
 
 РИС. 6. ЛОГОТИП-КАРТИНКА {.text-center}
 
@@ -127,7 +127,7 @@ nav a {
 }
 ```
 
-![img-2](/assets/images/learn/lesson-2.3/img-2.png)
+![img-2](./assets/images/learn/lesson-2.3/img-2.png)
 
 РИС. 7. ВЫРАВНИВАНИЕ ССЫЛОК МЕНЮ ШАПКИ {.text-center}
 
@@ -149,7 +149,7 @@ nav a {
 </div>
 ```
 
-![img-2](/assets/images/learn/lesson-2.3/img-2.png)
+![img-2](./assets/images/learn/lesson-2.3/img-2.png)
 
 РИС. 8. СЕТКА ОСНОВНОЙ ЧАСТИ СТРАНИЦЫ {.text-center}
 
@@ -174,7 +174,7 @@ nav a {
 
 Высота блоков сетки определяется высотой их содержимого, поэтому она может быть разная:
 
-![img-2](/assets/images/learn/lesson-2.3/img-2.png)
+![img-2](./assets/images/learn/lesson-2.3/img-2.png)
 
 РИС. 9. РАЗНАЯ ВЫСОТА ЭЛЕМЕНТОВ СЕТКИ {.text-center}
 

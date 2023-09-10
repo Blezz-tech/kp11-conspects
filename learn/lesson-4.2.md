@@ -16,4 +16,4 @@
 
 8. Научитесь Яндексить и Гуглить
 
-[![alt](/assets/images/learn/lesson-4.2/наковальня.svg)](./index.html) {.w-50 .align-self-center}
+[![alt](./assets/images/learn/lesson-4.2/наковальня.svg)](./index.html) {.w-50 .align-self-center}
