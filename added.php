@@ -11,15 +11,32 @@ console.log(
 
 
 <?php
-$csv_path = "./db/index.csv";
-$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-$csv_handle = fopen($csv_path, "a");
-fputcsv(
-  $csv_handle,
-  $arr
-);
+
+$is_normal = true;
+
+foreach (range(1, 10) as $i) {
+  $is_normal = $is_normal && array_key_exists("q" . $i, $_POST);
+}
+
+if ($is_normal) {
+  $arr = [];
+  foreach (range(1, 10) as $i) {
+    array_push($arr, $_POST["q" . $i]);
+  }
+
+  $csv_path = "./db/index.csv";
+  $csv_handle = fopen($csv_path, "a");
+  fputcsv($csv_handle, $arr);
+  fclose($csv_handle);
+
+} else {
+  echo "<h1>ОШЫБКА ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ</h1>";
+  echo '<img src="./img/loli-flex.gif" alt="">';
+}
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,11 +49,13 @@ fputcsv(
 
 <body>
   <?php include "./components/navbar.php"; ?>
+
   <pre>
     <?php
     print_r($_POST);
     ?>
   </pre>
+
 </body>
 
 </html>
