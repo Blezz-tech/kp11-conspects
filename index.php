@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <?php include "./components/navbar.php"; ?>
   <div class="container text-center">
     <h1 class="fs-1">Survey Name</h1>
     <p>Subtitle for the Survey Name</p>
@@ -34,7 +35,7 @@
         </button>
       </li>
     </ul>
-    <form action="" method="post">
+    <form action="./add.php" method="post">
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade py-3 show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <div class="row">
@@ -525,158 +526,60 @@
           </div>
         </div>
         <div class="tab-pane fade py-3" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-          <div>
+
+          <?php foreach ([5, 6] as $question_k => $question) : ?>
             <div class="row">
               <div class="mb-3 col-12 col-md-6">
-                <h2 class="fw-blod fs-5">Question #5: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
+                <h2 class="fw-blod fs-5">Question #<?= $question ?>: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum malesauda semper velit, id condimentum dui aliquet non.</p>
               </div>
               <div class="mb-3 col-12 col-md-6">
                 <div class="mb-3 d-flex justify-content-between">
+                  <?php foreach (array_fill(0, 5, $question) as $key => $cell) : ?>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="q<?= $question ?>" value="1" id="q<?= $question ?>r<?= $key + 1 ?>" required>
+                      <label class="form-check-label" for="q<?= $question ?>r<?= $key + 1 ?>"><?= $key + 1 ?></label>
+                    </div>
+                  <?php endforeach ?>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="1" id="q5r1" required>
-                    <label class="form-check-label" for="q5r1">1</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="2" id="q5r2" required>
-                    <label class="form-check-label" for="q5r2">2</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="3" id="q5r3" required>
-                    <label class="form-check-label" for="q5r3">3</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="4" id="q5r4" required>
-                    <label class="form-check-label" for="q5r4">4</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="5" id="q5r5" required>
-                    <label class="form-check-label" for="q5r5">5</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q5" value="6" id="q5r6" required>
-                    <label class="form-check-label" for="q5r6">n/a
+                    <input class="form-check-input" type="radio" name="q<?= $question ?>" value="6" id="q<?= $question ?>r6" required>
+                    <label class="form-check-label" for="q<?= $question ?>r6">n/a
                   </div>
                   </label>
                 </div>
                 <div class="form-floating">
-                  <textarea class="form-control" name="q5-textarea" placeholder="Write a comment here..." id="q5-textarea" style="height: 100px"></textarea>
-                  <label for="q5-textarea">Write a comment here...</label>
+                  <textarea class="form-control" name="q<?= $question ?>-textarea" placeholder="Write a comment here..." id="q<?= $question ?>-textarea" style="height: 100px"></textarea>
+                  <label for="q<?= $question ?>-textarea">Write a comment here...</label>
                 </div>
               </div>
             </div>
             <hr>
-          </div>
-          <div>
+          <?php endforeach ?>
+
+          <?php foreach ([7, 8] as $question_k => $question) : ?>
             <div class="row">
               <div class="mb-3 col-12 col-md-6">
-                <h2 class="fw-blod fs-5">Question #6: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum malesauda semper velit, id condimentum dui aliquet non.</p>
-              </div>
-              <div class="mb-3 col-12 col-md-6">
-                <div class="mb-3 d-flex justify-content-between">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q6" value="1" id="q6r1" required>
-                    <label class="form-check-label" for="q6r1">1</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q6" value="2" id="q6r2" required>
-                    <label class="form-check-label" for="q6r2">2</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q6" value="3" id="q6r3" required>
-                    <label class="form-check-label" for="q6r3">3</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q6" value="4" id="q6r4" required>
-                    <label class="form-check-label" for="q6r4">4</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q6" value="5" id="q6r5" required>
-                    <label class="form-check-label" for="q6r5">5</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q6" value="6" id="q6r6" required>
-                    <label class="form-check-label" for="q6r6">n/a
-                  </div>
-                  </label>
-                </div>
-                <div class="form-floating">
-                  <textarea class="form-control" name="q6-textarea" placeholder="Write a comment here..." id="q6-textarea" style="height: 100px"></textarea>
-                  <label for="q6-textarea">Write a comment here...</label>
-                </div>
-              </div>
-            </div>
-            <hr>
-          </div>
-          <div>
-            <div class="row">
-              <div class="mb-3 col-12 col-md-6">
-                <h2 class="fw-blod fs-5">Question #7: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
+                <h2 class="fw-blod fs-5">Question #<?= $question ?>: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum malesauda semper velit, id condimentum dui aliquet non.</p>
               </div>
               <div class="mb-3 col-12 col-md-6">
                 <div class="btn-group d-flex mb-3">
-                  <input type="radio" class="btn-check" name="q7" id="q7r1" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q7r1">1</label>
+                  <?php foreach (array_fill(0, 5, $question) as $key => $cell) : ?>
+                    <input type="radio" class="btn-check" name="q<?= $question ?>" id="q<?= $question ?>r<?= $key + 1 ?>" autocomplete="off" />
+                    <label class="btn btn-outline-secondary" for="q<?= $question ?>r<?= $key + 1 ?>"><?= $key + 1 ?></label>
+                  <?php endforeach ?>
 
-                  <input type="radio" class="btn-check" name="q7" id="q7r2" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q7r2">2</label>
-
-                  <input type="radio" class="btn-check" name="q7" id="q7r3" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q7r3">3</label>
-
-                  <input type="radio" class="btn-check" name="q7" id="q7r4" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q7r4">4</label>
-
-                  <input type="radio" class="btn-check" name="q7" id="q7r5" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q7r5">5</label>
-
-                  <input type="radio" class="btn-check" name="q7" id="q7r6" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q7r6">n/a</label>
+                  <input type="radio" class="btn-check" name="q<?= $question ?>" id="q<?= $question ?>r6" autocomplete="off" />
+                  <label class="btn btn-outline-secondary" for="q<?= $question ?>r6">n/a</label>
                 </div>
                 <div class="form-floating">
-                  <textarea class="form-control" name="q7-textarea" placeholder="Write a comment here..." id="q7-textarea" style="height: 100px"></textarea>
-                  <label for="q7-textarea">Write a comment here...</label>
+                  <textarea class="form-control" name="q<?= $question ?>-textarea" placeholder="Write a comment here..." id="q<?= $question ?>-textarea" style="height: 100px"></textarea>
+                  <label for="q<?= $question ?>-textarea">Write a comment here...</label>
                 </div>
               </div>
             </div>
             <hr>
-          </div>
-          <div>
-            <div class="row">
-              <div class="mb-3 col-12 col-md-6">
-                <h2 class="fw-blod fs-5">Question #8: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum malesauda semper velit, id condimentum dui aliquet non.</p>
-              </div>
-              <div class="mb-3 col-12 col-md-6">
-                <div class="btn-group d-flex mb-3">
-                  <input type="radio" class="btn-check" name="q8" id="q8r1" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q8r1">1</label>
-
-                  <input type="radio" class="btn-check" name="q8" id="q8r2" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q8r2">2</label>
-
-                  <input type="radio" class="btn-check" name="q8" id="q8r3" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q8r3">3</label>
-
-                  <input type="radio" class="btn-check" name="q8" id="q8r4" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q8r4">4</label>
-
-                  <input type="radio" class="btn-check" name="q8" id="q8r5" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q8r5">5</label>
-
-                  <input type="radio" class="btn-check" name="q8" id="q8r6" autocomplete="off" />
-                  <label class="btn btn-outline-secondary" for="q8r6">n/a</label>
-                </div>
-                <div class="form-floating">
-                  <textarea class="form-control" name="q8-textarea" placeholder="Write a comment here..." id="q8-textarea" style="height: 100px"></textarea>
-                  <label for="q8-textarea">Write a comment here...</label>
-                </div>
-              </div>
-            </div>
-            <hr>
-          </div>
+          <?php endforeach ?>
           <div>
             <div class="row">
               <div class="mb-3 col-12 col-md-6">

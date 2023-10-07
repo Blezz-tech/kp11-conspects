@@ -64,63 +64,61 @@ function transpose($array)
 </head>
 
 <body>
-  <div id="app">
-    <div class="container text-center">
-      <h1 class="fs-1">Survey Name</h1>
-      <p>Subtitle for the Survey Name</p>
-    </div>
-    <div class="container">
-      <?php foreach ($csv_t as $row_k => $row) : ?>
-        <?php if ($row_k == 0) : ?>
-          <h5 class="fs-5 text-center">Results with perceentages</h5>
-        <?php endif; ?>
+  <?php include "./components/navbar.php"; ?>
+  <div class="container text-center">
+    <h1 class="fs-1">Survey Name</h1>
+    <p>Subtitle for the Survey Name</p>
+  </div>
+  <div class="container">
+    <?php foreach ($csv_t as $row_k => $row) : ?>
+      <?php if ($row_k == 0) : ?>
+        <h5 class="fs-5 text-center">Results with perceentages</h5>
+      <?php endif; ?>
 
-        <?php if ($row_k == 4) : ?>
-          <h5 class="fs-5 text-center">Results with ratings</h5>
-        <?php endif; ?>
+      <?php if ($row_k == 4) : ?>
+        <h5 class="fs-5 text-center">Results with ratings</h5>
+      <?php endif; ?>
 
-        <h3 class="fw-blod fs-6">Question #<?= $row_k + 1 ?>: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h3>
+      <h3 class="fw-blod fs-6">Question #<?= $row_k + 1 ?>: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h3>
 
-        <?php if ($row_k < 4) : ?>
-          <?php foreach ($row as $key => $cell) : ?>
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <p class="mb-1">Answer for radio <?= $key + 1 ?></p>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="progress">
-                  <div class="progress-bar <?= background($row, $cell) ?>" role="progressbar" style="width:<?= $cell / array_sum($row) * 100 ?>%">
-                    <?= round($cell / array_sum($row) * 100) ?>%
-                  </div>
-                </div>
-              </div>
-            </div>
-          <?php endforeach ?>
-        <?php else : ?>
+      <?php if ($row_k < 4) : ?>
+        <?php foreach ($row as $key => $cell) : ?>
           <div class="row">
             <div class="col-12 col-md-6">
-              <p class="mb-1">Answer distribution</p>
+              <p class="mb-1">Answer for radio <?= $key + 1 ?></p>
             </div>
             <div class="col-12 col-md-6">
               <div class="progress">
-                <?php foreach ($row as $key => $cell) : ?>
-                  <div class="progress-bar <?= background($row, $cell) ?>" role="progressbar" style="width:<?= $cell / array_sum($row) * 100 ?>%">
-                    <?= round($cell / array_sum($row) * 100) ?>%
-                  </div>
-                <?php endforeach ?>
+                <div class="progress-bar <?= background($row, $cell) ?>" role="progressbar" style="width:<?= $cell / array_sum($row) * 100 ?>%">
+                  <?= round($cell / array_sum($row) * 100) ?>%
+                </div>
               </div>
             </div>
           </div>
+        <?php endforeach ?>
+      <?php else : ?>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p class="mb-1">Answer distribution</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="progress">
+              <?php foreach ($row as $key => $cell) : ?>
+                <div class="progress-bar <?= background($row, $cell) ?>" role="progressbar" style="width:<?= $cell / array_sum($row) * 100 ?>%">
+                  <?= round($cell / array_sum($row) * 100) ?>%
+                </div>
+              <?php endforeach ?>
+            </div>
+          </div>
+        </div>
 
-        <?php endif; ?>
+      <?php endif; ?>
 
-        <?php if ($row_k !== 9 && $row_k !== 3) : ?>
-          <hr>
-        <?php endif; ?>
+      <?php if ($row_k !== 9 && $row_k !== 3) : ?>
+        <hr>
+      <?php endif; ?>
 
-      <?php endforeach ?>
-    </div>
-    <div class="container"></div>
+    <?php endforeach ?>
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
 
