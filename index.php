@@ -35,7 +35,7 @@
         </button>
       </li>
     </ul>
-    <form action="./add.php" method="post">
+    <form action="./added.php" method="post">
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade py-3 show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <div class="row">
@@ -358,8 +358,11 @@
           </div>
         </div>
         <div class="tab-pane fade py-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-          <div>
-            <h2 class="  fw-blod fs-5 text-center">Question #1: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
+
+
+          <?php foreach (range(1, 4) as $question_k => $question) : ?>
+            <h2 class="fw-blod fs-5 text-center">Question #<?=$question?>: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
+
             <div class="row">
               <div class="mb-3 col-12 col-md-6">
                 <figure class="figure">
@@ -368,159 +371,26 @@
                 </figure>
               </div>
               <div class="mb-3 col-12 col-md-6">
+                <?php foreach (array_fill(0, 5, $question) as $key => $cell) : ?>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" value="1" id="q1r1" required>
-                  <label class="form-check-label" for="q1r1">Answer for radio 1</label>
+                  <input class="form-check-input" type="radio" name="q<?=$question?>" value="<?=$key+1?>" id="q<?=$question?>r<?=$key+1?>" required>
+                  <label class="form-check-label" for="q<?=$question?>r<?=$key+1?>">Answer for radio <?=$key+1?></label>
                 </div>
+                <?php endforeach ?>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" value="2" id="q1r2" required>
-                  <label class="form-check-label" for="q1r2">Answer for radio 2</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" value="3" id="q1r3" required>
-                  <label class="form-check-label" for="q1r3">Answer for radio 3</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" value="4" id="q1r4" required>
-                  <label class="form-check-label" for="q1r4">Answer for radio 4</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" value="5" id="q1r5" required>
-                  <label class="form-check-label" for="q1r5">Answer for radio 5</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q1" value="6" id="q1r6" required>
-                  <label class="form-check-label" for="q1r6">
-                    <input type="text" class="form-control" name="q1r6">
+                  <input class="form-check-input" type="radio" name="q<?=$question?>" value="6" id="q<?=$question?>r6" required>
+                  <label class="form-check-label" for="q<?=$question?>r6">
+                    <input type="text" class="form-control" name="q<?=$question?>r6">
                     <div class="form-text">If none of the answers above is appropriate for you please own answer in the input field.</div>
                   </label>
                 </div>
               </div>
             </div>
-            <hr>
-          </div>
-          <div>
-            <h2 class="mb-3 fw-blod fs-5 text-center">Question #2: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
-            <div class="row">
-              <div class="mb-3 col-12 col-md-6">
-                <figure class="figure">
-                  <img src="./img/1600x900.png" class="figure-img img-fluid rounded" alt="...">
-                  <figcaption class="figure-caption">A caption for the figure image.</figcaption>
-                </figure>
-              </div>
-              <div class="mb-3 col-12 col-md-6">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" value="1" id="q2r1" required>
-                  <label class="form-check-label" for="q2r1">Answer for radio 1</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" value="2" id="q2r2" required>
-                  <label class="form-check-label" for="q2r2">Answer for radio 2</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" value="3" id="q2r3" required>
-                  <label class="form-check-label" for="q2r3">Answer for radio 3</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" value="4" id="q2r4" required>
-                  <label class="form-check-label" for="q2r4">Answer for radio 4</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" value="5" id="q2r5" required>
-                  <label class="form-check-label" for="q2r5">Answer for radio 5</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q2" value="6" id="q2r6" required>
-                  <label class="form-check-label" for="q2r6">
-                    <input type="text" class="form-control" name="q2r6">
-                    <div class="form-text">If none of the answers above is appropriate for you please own answer in the input field.</div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <hr>
-          </div>
-          <div>
-            <h2 class="mb-3 fw-blod fs-5 text-center">Question #3: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
-            <div class="row">
-              <div class="mb-3 col-12 col-md-6">
-                <figure class="figure">
-                  <img src="./img/1600x900.png" class="figure-img img-fluid rounded" alt="...">
-                  <figcaption class="figure-caption">A caption for the figure image.</figcaption>
-                </figure>
-              </div>
-              <div class="mb-3 col-12 col-md-6">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q3" value="1" id="q3r1" required>
-                  <label class="form-check-label" for="q3r1">Answer for radio 1</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q3" value="2" id="q3r2" required>
-                  <label class="form-check-label" for="q3r2">Answer for radio 2</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q3" value="3" id="q3r3" required>
-                  <label class="form-check-label" for="q3r3">Answer for radio 3</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q3" value="4" id="q3r4" required>
-                  <label class="form-check-label" for="q3r4">Answer for radio 4</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q3" value="5" id="q3r5" required>
-                  <label class="form-check-label" for="q3r5">Answer for radio 5</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q3" value="6" id="q3r6" required>
-                  <label class="form-check-label" for="q3r6">
-                    <input type="text" class="form-control" name="q3r6">
-                    <div class="form-text">If none of the answers above is appropriate for you please own answer in the input field.</div>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <hr>
-          </div>
-          <div>
-            <h2 class="mb-3 fw-blod fs-5 text-center">Question #4: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
-            <div class="row">
-              <div class="mb-3 col-12 col-md-6">
-                <figure class="figure">
-                  <img src="./img/1600x900.png" class="figure-img img-fluid rounded" alt="...">
-                  <figcaption class="figure-caption">A caption for the figure image.</figcaption>
-                </figure>
-              </div>
-              <div class="mb-3 col-12 col-md-6">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q4" value="1" id="q4r1" required>
-                  <label class="form-check-label" for="q4r1">Answer for radio 1</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q4" value="2" id="q4r2" required>
-                  <label class="form-check-label" for="q4r2">Answer for radio 2</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q4" value="3" id="q4r3" required>
-                  <label class="form-check-label" for="q4r3">Answer for radio 3</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q4" value="4" id="q4r4" required>
-                  <label class="form-check-label" for="q4r4">Answer for radio 4</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q4" value="5" id="q4r5" required>
-                  <label class="form-check-label" for="q4r5">Answer for radio 5</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q4" value="6" id="q4r6" required>
-                  <label class="form-check-label" for="q4r6">
-                    <input type="text" class="form-control" name="q4r6">
-                    <div class="form-text">If none of the answers above is appropriate for you please own answer in the input field.</div>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
+            <?php if ($question !== 4) : ?>
+              <hr>
+            <?php endif; ?>
+
+          <?php endforeach ?>
           <div class="d-flex justify-content-end">
             <button type="button" class="btn btn-outline-secondary"> Step 3 </button>
           </div>
@@ -580,45 +450,32 @@
             </div>
             <hr>
           <?php endforeach ?>
-          <div>
+
+          <?php foreach ([9, 10] as $question_k => $question) : ?>
             <div class="row">
               <div class="mb-3 col-12 col-md-6">
-                <h2 class="fw-blod fs-5">Question #9: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
+                <h2 class="fw-blod fs-5">Question #<?= $question ?>: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum malesauda semper velit, id condimentum dui aliquet non.</p>
               </div>
               <div class="mb-3 col-12 col-md-6">
                 <div class="mb-3 d-flex gap-3">
-                  <label for="q9r1" class="form-label">1</label>
-                  <input type="range" class="form-range" min="1" max="5" step="0.5" id="q9r1">
-                  <label for="q9r1" class="form-label">5</label>
+                  <label for="q<?= $question ?>r1" class="form-label">1</label>
+                  <input type="range" class="form-range" min="1" max="5" step="1" id="q<?= $question ?>r1">
+                  <label for="q<?= $question ?>r1" class="form-label">5</label>
                 </div>
                 <div class="form-floating">
-                  <textarea class="form-control" name="q9-textarea" placeholder="Write a comment here..." id="q9-textarea" style="height: 100px"></textarea>
-                  <label for="q9-textarea">Write a comment here...</label>
+                  <textarea class="form-control" name="q<?= $question ?>-textarea" placeholder="Write a comment here..." id="q<?= $question ?>-textarea" style="height: 100px"></textarea>
+                  <label for="q<?= $question ?>-textarea">Write a comment here...</label>
                 </div>
               </div>
             </div>
-            <hr>
-          </div>
-          <div>
-            <div class="row">
-              <div class="mb-3 col-12 col-md-6">
-                <h2 class="fw-blod fs-5">Question #9: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vestibulum malesauda semper velit, id condimentum dui aliquet non.</p>
-              </div>
-              <div class="mb-3 col-12 col-md-6">
-                <div class="mb-3 d-flex gap-3">
-                  <label for="q10r1" class="form-label">1</label>
-                  <input type="range" class="form-range" min="1" max="5" step="0.5" id="q10r1">
-                  <label for="q10r1" class="form-label">5</label>
-                </div>
-                <div class="form-floating">
-                  <textarea class="form-control" name="q10-textarea" placeholder="Write a comment here..." id="q10-textarea" style="height: 100px"></textarea>
-                  <label for="q10-textarea">Write a comment here...</label>
-                </div>
-              </div>
-            </div>
-          </div>
+
+            <?php if ($question !== 10) : ?>
+
+              <hr>
+            <?php endif; ?>
+
+          <?php endforeach ?>
           <div class="d-flex justify-content-end">
             <button type="submit" class="btn btn-secondary"> Submit </button>
           </div>

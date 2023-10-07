@@ -120,6 +120,7 @@ function transpose($array)
 
     <?php endforeach ?>
   </div>
+  <div class="py-4"></div>
   <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
