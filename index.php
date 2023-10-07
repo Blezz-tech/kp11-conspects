@@ -43,13 +43,13 @@
               <label class="form-label">Sex:</label>
               <div class="mb-3 d-flex gap-3">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="sex" value="male" id="form-male" required>
+                  <input class="form-check-input" type="radio" name="sex" value="male" id="form-male" >
                   <label class="form-check-label" for="form-male">
                     Male
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="sex" value="female" id="form-female" required>
+                  <input class="form-check-input" type="radio" name="sex" value="female" id="form-female" >
                   <label class="form-check-label" for="form-female">
                     Female
                   </label>
@@ -58,11 +58,11 @@
             </div>
             <div class="mb-3 col-12 col-md-3">
               <label for="form-age" class="form-label">Age:</label>
-              <input type="number" name="age" class="form-control" id="form-age" aria-describedby="ageHelp" required>
+              <input type="number" name="age" class="form-control" id="form-age" aria-describedby="ageHelp" >
             </div>
             <div class="mb-3 col-12 col-md-6">
               <label for="form-phone" class="form-label">Phone:</label>
-              <input type="tel" name="phone" class="form-control" id="form-phone" aria-describedby="phoneHelp" required>
+              <input type="tel" name="phone" class="form-control" id="form-phone" aria-describedby="phoneHelp" >
             </div>
           </div>
           <div class="row">
@@ -358,8 +358,6 @@
           </div>
         </div>
         <div class="tab-pane fade py-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-
-
           <?php foreach (range(1, 4) as $question_k => $question) : ?>
             <h2 class="fw-blod fs-5 text-center">Question #<?=$question?>: Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
 
@@ -373,12 +371,12 @@
               <div class="mb-3 col-12 col-md-6">
                 <?php foreach (array_fill(0, 5, $question) as $key => $cell) : ?>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q<?=$question?>" value="<?=$key+1?>" id="q<?=$question?>r<?=$key+1?>" required>
+                  <input class="form-check-input" type="radio" name="q<?=$question?>" value="<?=$key+1?>" id="q<?=$question?>r<?=$key+1?>" >
                   <label class="form-check-label" for="q<?=$question?>r<?=$key+1?>">Answer for radio <?=$key+1?></label>
                 </div>
                 <?php endforeach ?>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="q<?=$question?>" value="6" id="q<?=$question?>r6" required>
+                  <input class="form-check-input" type="radio" name="q<?=$question?>" value="6" id="q<?=$question?>r6" >
                   <label class="form-check-label" for="q<?=$question?>r6">
                     <input type="text" class="form-control" name="q<?=$question?>r6">
                     <div class="form-text">If none of the answers above is appropriate for you please own answer in the input field.</div>
@@ -407,12 +405,12 @@
                 <div class="mb-3 d-flex justify-content-between">
                   <?php foreach (array_fill(0, 5, $question) as $key => $cell) : ?>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="q<?= $question ?>" value="1" id="q<?= $question ?>r<?= $key + 1 ?>" required>
+                      <input class="form-check-input" type="radio" name="q<?= $question ?>" value="<?= $key + 1 ?>" id="q<?= $question ?>r<?= $key + 1 ?>" >
                       <label class="form-check-label" for="q<?= $question ?>r<?= $key + 1 ?>"><?= $key + 1 ?></label>
                     </div>
                   <?php endforeach ?>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q<?= $question ?>" value="6" id="q<?= $question ?>r6" required>
+                    <input class="form-check-input" type="radio" name="q<?= $question ?>" value="6" id="q<?= $question ?>r6" >
                     <label class="form-check-label" for="q<?= $question ?>r6">n/a
                   </div>
                   </label>
@@ -435,7 +433,7 @@
               <div class="mb-3 col-12 col-md-6">
                 <div class="btn-group d-flex mb-3">
                   <?php foreach (array_fill(0, 5, $question) as $key => $cell) : ?>
-                    <input type="radio" class="btn-check" name="q<?= $question ?>" id="q<?= $question ?>r<?= $key + 1 ?>" autocomplete="off" />
+                    <input type="radio" class="btn-check" name="q<?= $question ?>" value="<?= $key + 1 ?>" id="q<?= $question ?>r<?= $key + 1 ?>" autocomplete="off" />
                     <label class="btn btn-outline-secondary" for="q<?= $question ?>r<?= $key + 1 ?>"><?= $key + 1 ?></label>
                   <?php endforeach ?>
 
@@ -460,7 +458,7 @@
               <div class="mb-3 col-12 col-md-6">
                 <div class="mb-3 d-flex gap-3">
                   <label for="q<?= $question ?>r1" class="form-label">1</label>
-                  <input type="range" class="form-range" min="1" max="5" step="1" id="q<?= $question ?>r1">
+                  <input type="range" class="form-range" min="1" max="5" step="1" name="q<?= $question ?>" id="q<?= $question ?>">
                   <label for="q<?= $question ?>r1" class="form-label">5</label>
                 </div>
                 <div class="form-floating">
