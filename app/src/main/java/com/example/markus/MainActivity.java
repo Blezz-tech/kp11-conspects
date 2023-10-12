@@ -77,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         }
+        resultField.setText(operand.toString().replace('.', ','));
+        numberField.setText("");
     }
 
 
