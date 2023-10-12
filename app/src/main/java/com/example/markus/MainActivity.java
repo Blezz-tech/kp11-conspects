@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 numberField.setText("");
             }
         }
+        lastOperation = op;
+        operationField.setText(lastOperation);
     }
 
     private void performOperation(Double number, String operation) {
