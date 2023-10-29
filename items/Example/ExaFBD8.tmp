@@ -6,42 +6,45 @@
 [node name="Example" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 420.0
-offset_bottom = 200.0
+offset_right = 640.0
+offset_bottom = 320.0
 script = ExtResource("1_eroqe")
+example_id = null
 
 [node name="FlexContainer" type="Container" parent="."]
 layout_mode = 0
-offset_left = 90.0
+offset_left = 112.0
 offset_top = 18.0
-offset_right = 330.0
-offset_bottom = 138.0
+offset_right = 508.0
+offset_bottom = 212.0
 script = ExtResource("1_j85qc")
-justify_content = 3
+debug_draw = true
 
 [node name="ColorRect" type="ColorRect" parent="FlexContainer"]
-custom_minimum_size = Vector2(32, 32)
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ColorRect2" type="ColorRect" parent="FlexContainer"]
-custom_minimum_size = Vector2(32, 32)
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ColorRect3" type="ColorRect" parent="FlexContainer"]
-custom_minimum_size = Vector2(32, 32)
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ColorRect4" type="ColorRect" parent="FlexContainer"]
-custom_minimum_size = Vector2(32, 32)
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="ColorRect5" type="ColorRect" parent="FlexContainer"]
-custom_minimum_size = Vector2(32, 32)
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
 [node name="OptionButton" type="OptionButton" parent="."]
-offset_left = 90.0
-offset_top = 160.0
-offset_right = 330.0
-offset_bottom = 180.0
-theme_override_font_sizes/font_size = 16
+layout_mode = 0
+offset_left = 220.0
+offset_top = 270.0
+offset_right = 420.0
+offset_bottom = 290.0
+
+[connection signal="ready" from="OptionButton" to="." method="_on_option_button_ready"]
