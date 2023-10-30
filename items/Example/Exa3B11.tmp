@@ -9,6 +9,9 @@ anchors_preset = 0
 offset_right = 420.0
 offset_bottom = 200.0
 script = ExtResource("1_eroqe")
+propery_id = null
+button_disabled = null
+default_value = null
 
 [node name="FlexContainer" type="Container" parent="."]
 layout_mode = 0
