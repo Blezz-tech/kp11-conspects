@@ -40,4 +40,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [https://www.youtube.com/watch?v=VGiphTEApfo&list=PLiZoB8JBsdzlgeYHZDJ_orG0vy8JiEhKr](NextJS 13. Быстрый старт)
 - [https://www.youtube.com/watch?v=IGld40kxLFE&list=PLYqZg4z10UTOw-CvkbNvOcu4op5Iy_Url](Next.js 13 RU)
-- [https://www.youtube.com/watch?v=-MFiza7ZRzs](Next.js 13 EN)
+- [https://www.youtube.com/watch?v=6h649f2fB9Q&list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj](Next.js 13 EN)
