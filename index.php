@@ -16,10 +16,10 @@ $studnets = [1, 2, 3, 4, 5, 6];
 </head>
 
 <body>
-  <?= file_get_contents("./components/nav.php")?>
-  <h1 class="mt-3 text-center">Курсы</h1>
-  <h2 class="mt-3 text-center">Форма</h2>
-  <div class="container">
+  <!-- <?= file_get_contents("./components/nav.php")?>  -->
+  <!-- <h1 class="mt-3 text-center">Курсы</h1> -->
+  <!-- <h2 class="mt-3 text-center">Форма</h2> -->
+  <!-- <div class="container">
     <form action="" method="post">
       <div class="mb-3">
         <input type="text" class="form-control" name="name" placeholder="ФИО">
@@ -32,8 +32,8 @@ $studnets = [1, 2, 3, 4, 5, 6];
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-  </div>
-  <h2 class="mt-3 text-center">Таблица</h2>
+  </div> -->
+  <!-- <h2 class="mt-3 text-center">Таблица</h2> -->
   <div class="container">
     <?php foreach ($tables as $key => $value) : ?>
       <div class="mb-5">
@@ -41,16 +41,18 @@ $studnets = [1, 2, 3, 4, 5, 6];
         <table class="table table-striped">
           <tr class="row">
             <th scope="col" class="col-5">Название</th>
-            <th scope="col" class="col-4">Длительность курса</th>
+            <th scope="col" class="col-2">Длительность курса</th>
             <th scope="col" class="col-2">Стоимость обучения</th>
             <th scope="col" class="col-1">Возраст</th>
+            <th scope="col" class="col-2"></th>
           </tr>
           <?php foreach ($value as $course) : ?>
             <tr class="row">
               <td scope="col" class="col-5"><?= $course["Название"] ?></td>
-              <td scope="col" class="col-4"><?= ($course["Длительность курса"] == "" ? "" : $course["Длительность курса"] . " часов") ?></td>
+              <td scope="col" class="col-2"><?= ($course["Длительность курса"] == "" ? "" : $course["Длительность курса"] . " часов") ?></td>
               <td scope="col" class="col-2"><?= ($course["Стоимость обучения"] == "" ? "" : $course["Стоимость обучения"] . " руб") ?></td>
               <td scope="col" class="col-1"><?= $course["Возраст"] ?></td>
+              <td scope="col" class="col-2 d-flex justify-content-center"><button type="button" class="btn btn-danger">Подробнее</button></td>
             </tr>
           <?php endforeach; ?>
         </table>
@@ -92,7 +94,7 @@ $studnets = [1, 2, 3, 4, 5, 6];
       <a target="_blank" href="https://kp11.mskobr.ru/postuplenie-v-kolledzh/specialnosti-professii" class="list-group-item list-group-item-action">Контрольные цифры приема</a>
     </div>
   </div>
-  <?= file_get_contents("./components/footer.php")?>
+  <!-- <?= file_get_contents("./components/footer.php")?> -->
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
