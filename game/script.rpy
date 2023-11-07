@@ -1,7 +1,7 @@
 ﻿
 define e = Character('Эйлин', color="#c8ffc8")
 
-image display flex = "lol kek.png"
+image tutor_1_1 = "tutor_1_1.png"
 
 label start:
 
@@ -12,7 +12,6 @@ label start:
 
 
 label introduction:
-    show taunka at right
 
     e "Флексы это такая весёлая дичь"
 
@@ -20,10 +19,20 @@ label introduction:
 
 
 label tutor_1:
-    show display flex at topleft
+    show tutor_1_1 as truecenter
 
     e "Урок 1"
 
     e "Для начала нужно прописать display: flex;"
 
+    e "Офишительное объяснение флексов"
+
     return
+
+
+label tutor_2:
+
+    e "Урок 2"
+
+    e "Кудасай"
+
