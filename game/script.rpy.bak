@@ -3,8 +3,8 @@ define e = Character('', color="#c8ffc8")
 
 label start:
 
-    call tutor_1 from _call_tutor_1 
-    call tutor_2 from _call_tutor_2 
+    call tutor_1 
+    call tutor_2 
 
     return
 
