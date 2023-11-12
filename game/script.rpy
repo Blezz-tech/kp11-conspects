@@ -13,12 +13,18 @@ label start:
 
     call tutor_1 from _call_tutor_1 
     call tutor_2 from _call_tutor_2 
-    call tutor_3
-    call tutor_4
-    call tutor_5
-    call tutor_6
-    call tutor_7
-    call tutor_8
+    call tutor_3 from _call_tutor_3
+    call tutor_4 from _call_tutor_4
+    call tutor_5 from _call_tutor_5
+    call tutor_6 from _call_tutor_6
+    call tutor_7 from _call_tutor_7
+    call tutor_8 from _call_tutor_8
+    call tutor_9 from _call_tutor_9
+    call tutor_10 from _call_tutor_10
+    call tutor_11 from _call_tutor_11
+    call tutor_12 from _call_tutor_12
+    call tutor_13 from _call_tutor_13
+    call tutor_14 from _call_tutor_14
 
     return
 
@@ -181,8 +187,6 @@ label tutor_6:
 
     e "Хотя большинство значений поддерживаются основными браузерами, с некоторыми из них могут быть трудности."
 
-    e "Поэтому лучше на всякий случай проверяйте поддержку на [Can I use](https://caniuse.com/#search=justify-content%20flex)."
-
     return
 
 
@@ -196,7 +200,7 @@ label tutor_7:
 
     e "Возможные значения:"
 
-    e "stretch (значение по умолчанию) — ряды растягиваются одинаково, так, чтобы занять всё доступное пространство родителя.
+    e "stretch (значение по умолчанию) — ряды растягиваются одинаково, так, чтобы занять всё доступное пространство родителя."
 
     e "flex-start / start — все ряды располагаются у начала поперечной оси. Первое значение не зависит от направления чтения текущего языка, в отличие от второго."
 
@@ -227,9 +231,9 @@ label tutor_8:
 
     e "Если указаны два значения, то первое будет задавать отступы между рядами (row-gap), а второе — между колонками (column-gap)."
 
-    e "Значения можно указывать в любых доступных [единицах измерения](/css/numeric-types/), включая проценты."
+    e "Значения можно указывать в любых доступных единицах измерения, включая проценты."
 
-    e "Допускается использование функции [calc()](/css/calc/)."
+    e "Допускается использование функции calc()."
 
     return
 
@@ -295,8 +299,6 @@ label tutor_12:
 
     e "Свойство flex-basis указывает на размер элемента до того, как свободное место будет распределено"
 
-    e "(см. [flex-grow](/css/flexbox-guide/#flex-grow))."
-
     e "Значением может быть размер в любых относительных или абсолютных единицах: 20rem, 5vw, 250px."
 
     e "А также можно использовать ключевое слово auto (значение по умолчанию)."
@@ -323,7 +325,7 @@ label tutor_13:
 
     return
 
-label tutor_13:
+label tutor_14:
 
     e "Свойства align-self"
 
