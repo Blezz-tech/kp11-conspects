@@ -1,4 +1,12 @@
 ﻿
+define img_tutor_1 =  im.FactorScale("tutor 1.png", 0.5)
+define img_tutor_2 =  im.FactorScale("tutor 2.png", 0.5)
+define img_tutor_3 =  im.FactorScale("tutor 3.png", 0.5)
+define img_tutor_4 =  im.FactorScale("tutor 4.png", 0.5)
+define img_tutor_5 =  im.FactorScale("tutor 5.png", 0.5)
+define img_tutor_6 =  im.FactorScale("tutor 6.png", 0.5)
+define img_tutor_7 =  im.FactorScale("tutor 7.png", 0.5)
+
 define e = Character('', color="#c8ffc8")
 
 label start:
@@ -13,35 +21,33 @@ label tutor_1:
 
     e "Гайд по flexbox"
 
-    e "Всё, что нужно знать про флексбоксы: основные термины, свойства флекс-контейнера и флекс-элементов, полезные ссылки по теме."
-
     e "Основные термины"
 
-    show image "tutor_1_1.png" at truecenter
+    show image img_tutor_1 at truecenter
 
     e "Флекс-контейнер: элемент, к которому применяется свойство display: flex. Вложенные в него элементы подчиняются правилам раскладки флексов."
 
     e "Флекс-элемент: элемент, вложенный во флекс-контейнер."
 
-    hide image "tutor_1_1.png" at truecenter
+    hide image img_tutor_1
 
-    show image "tutor_1_2.png" at truecenter
+    show image img_tutor_2 at truecenter
 
     e "Основная ось: основная направляющая флекс-контейнера, вдоль которой располагаются флекс-элементы."
 
     e "Поперечная (побочная, перпендикулярная) ось: ось, идущая перпендикулярно основной. Позже вы поймёте, для чего она нужна."
 
-    hide image "tutor_1_2.png" at truecenter
+    hide image img_tutor_2
 
-    show image "tutor_1_3.png" at truecenter
+    show image img_tutor_3 at truecenter
 
     e "Начало / конец основной оси: точки в начале и в конце основной оси соответственно. Это пригодится нам для выравнивания флекс-элементов."
 
     e "Начало / конец поперечной оси: точки в начале и в конце поперечной оси соответственно."
 
-    hide image "tutor_1_3.png" at truecenter
+    hide image img_tutor_3
 
-    show image "tutor_1_4.png" at truecenter
+    show image img_tutor_4 at truecenter
 
     e "Размер по основной оси (основной размер): размер флекс-элемента вдоль основной оси. Это может быть ширина или высота в зависимости от направления основной оси."
 
@@ -49,7 +55,7 @@ label tutor_1:
 
     e "Этот размер всегда перпендикулярен основному размеру. Если основной размер — это ширина, то поперечный размер — это высота, и наоборот."
 
-    hide image "tutor_1_4.png" at truecenter
+    hide image img_tutor_4
 
     return
 
@@ -58,7 +64,7 @@ label tutor_2:
 
     e "Свойства флекс-контейнера"
 
-    show image "tutor_2_1.png" at truecenter
+    show image img_tutor_5 at truecenter
 
     e "Свойство display"
 
@@ -66,13 +72,14 @@ label tutor_2:
 
     e "Снаружи флекс-контейнер выглядит как блочный элемент — занимает всю ширину родителя, следующие за ним элементы в разметке переносятся на новую строку."
 
-    hide image "tutor_2_1.png" at truecenter
+    hide image img_tutor_5
 
-    show image "tutor_2_2.png" at truecenter
+    show image img_tutor_6 at truecenter
 
     e "Если контейнеру задано значение inline-flex, то снаружи он начинает вести себя как строчный (инлайн) элемент — размеры зависят только от внутреннего контента, встаёт в строку с другими элементами. Внутри это ровно такой же флекс-контейнер, как и при предыдущем значении."
 
-    hide image "tutor_2_2.png" at truecenter
+    hide image img_tutor_6
+
 
     e ""
 
