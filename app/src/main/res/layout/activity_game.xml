@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:toals="http://schemas.android.com/toals"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/bg_color"
     tools:context=".GameActivity">
 
@@ -12,14 +12,14 @@
         android:id="@+id/game_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="#000"
         android:text="Score: 0"
         android:textColor="@color/text_color"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/game_container"
@@ -28,7 +28,7 @@
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/game_score" >
+        app:layout_constraintTop_toBottomOf="@id/game_score">
 
         <com.example.zmeika.GameView
             android:id="@+id/game_view"
@@ -38,13 +38,13 @@
 
         <TextView
             android:id="@+id/game_status"
-            android:text="GAME OVER"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:textColor="@color/text_color"
-            android:visibility="invisible"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="GAME OVER"
+            android:textColor="@color/text_color"
+            android:textSize="30dp"
+            android:visibility="invisible" />
     </FrameLayout>
 
     <Button
@@ -68,8 +68,7 @@
         android:src="@drawable/top_arrow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/game_container"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/game_container" />
 
     <ImageButton
         android:id="@+id/left_btn"
@@ -78,7 +77,8 @@
         android:background="@drawable/nav_btn_bg"
         android:src="@drawable/left_arrow"
         app:layout_constraintEnd_toStartOf="@+id/up_btn"
-        app:layout_constraintTop_toBottomOf="@+id/up_btn"/>
+        app:layout_constraintTop_toBottomOf="@+id/up_btn" />
+
     <ImageButton
         android:id="@+id/right_btn"
         android:layout_width="60dp"
