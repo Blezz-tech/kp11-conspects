@@ -498,7 +498,7 @@ style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
 
-    background "gui/overlay/game_menu.png"
+    background "gui/overlay/game_menu_1.png"
 
 style game_menu_navigation_frame:
     xsize 420

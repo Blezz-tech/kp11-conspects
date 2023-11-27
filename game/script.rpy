@@ -35,12 +35,12 @@ define code_24 = im.FactorScale("code 24.png", 2)
 define code_25 = im.FactorScale("code 25.png", 2)
 define code_26 = im.FactorScale("code 26.png", 2)
 define code_27 = im.FactorScale("code 27.png", 2)
-# define code_28 = im.FactorScale("code 28.png", 2)
-# define code_29 = im.FactorScale("code 29.png", 2)
-# define code_30 = im.FactorScale("code 30.png", 2)
-# define code_31 = im.FactorScale("code 31.png", 2)
-# define code_32 = im.FactorScale("code 32.png", 2)
-# define code_33 = im.FactorScale("code 33.png", 2)
+define code_28 = im.FactorScale("code 28.png", 2)
+define code_29 = im.FactorScale("code 29.png", 2)
+define code_30 = im.FactorScale("code 30.png", 2)
+define code_31 = im.FactorScale("code 31.png", 2)
+define code_32 = im.FactorScale("code 32.png", 2)
+define code_33 = im.FactorScale("code 33.png", 2)
 # define code_34 = im.FactorScale("code 34.png", 2)
 # define code_35 = im.FactorScale("code 35.png", 2)
 # define code_36 = im.FactorScale("code 36.png", 2)
@@ -62,6 +62,7 @@ define code_27 = im.FactorScale("code 27.png", 2)
 define e = Character('', color="#c8ffc8")
 
 label start:
+    scene bg street
 
     call tutor_1 from _call_tutor_1 
     call tutor_2 from _call_tutor_2 
@@ -78,6 +79,7 @@ label start:
     call tutor_13 from _call_tutor_13
     call tutor_14 from _call_tutor_14
     call tutor_15
+    call end
 
     return
 
@@ -333,6 +335,8 @@ label tutor_7:
     show image code_16 at truecenter
     with Dissolve(.5)
     
+    e "align-items"
+
     e "Свойство выравнивания элементов внутри контейнера по поперечной оси."
 
     e "Возможные значения:"
@@ -383,11 +387,14 @@ label tutor_7:
     show image code_22 at truecenter
     with Dissolve(.5)
 
-    e "Это может быть сложно понять сразу, поэтому мы сделали демку. Обратите внимание, что вне зависимости от размера шрифта все блоки выравниваются по базовой линии первой строки."
+    e "Это может быть сложно понять сразу, но со временем вы всё поймёте."
+
+    e " Обратите внимание, что вне зависимости от размера шрифта все блоки выравниваются по базовой линии первой строки."
 
     hide image code_22
 
     return
+
 
 label tutor_8:
 
@@ -480,6 +487,9 @@ label tutor_10:
 
 label tutor_11:
 
+    show image code_28 at truecenter
+    with Dissolve(.5)
+
     e "Свойства flex-grow"
 
     e "Это свойство указывает, может ли вырастать флекс-элемент при наличии свободного места, и насколько."
@@ -492,10 +502,15 @@ label tutor_11:
 
     e "Если при этом одному из элементов мы зададим flex-grow: 2, то он постарается занять в два раза больше свободного места, чем его соседи."
 
+    hide image img_tutor_28
+
     return
 
 
 label tutor_12:
+
+    show image code_29 at truecenter
+    with Dissolve(.5)
 
     e "Свойства flex-shrink"
 
@@ -511,10 +526,15 @@ label tutor_12:
 
     e "Они довольно непростые, даже опытный разработчик не всегда знает, как они в точности работают. Загляните в конец статьи, если хотите подробнее почитать о каждом из них."
 
+    hide image img_tutor_29
+
     return
 
 
 label tutor_13:
+
+    show image code_30 at truecenter
+    with Dissolve(.5)
 
     e "Свойства flex-basis"
 
@@ -528,9 +548,14 @@ label tutor_13:
 
     e "Если никакие размеры не заданы, а свойству flex-basis установлено значение auto, то элемент занимает столько пространства, сколько нужно для отображения контента."
 
+    hide image img_tutor_30
+
     return
 
 label tutor_14:
+
+    show image code_31 at truecenter
+    with Dissolve(.5)
 
     e "Свойства flex"
 
@@ -544,9 +569,21 @@ label tutor_14:
 
     e "что расшифровывается как flex-grow: 0, flex-shrink: 1, flex-basis: auto."
 
+    hide image img_tutor_32
+
+    show image code_31 at truecenter
+    with Dissolve(.5)
+
+    e "Возможные значения"
+
+    hide image img_tutor_32
+
     return
 
 label tutor_15:
+
+    show image code_33 at truecenter
+    with Dissolve(.5)
 
     e "Свойства align-self"
 
@@ -555,5 +592,15 @@ label tutor_15:
     e "Например, в коде выше у родителя задано выравнивание вложенных элементов по верхнему краю родителя."
 
     e "А для элемента с классом .item мы задаём выравнивание по нижнему краю."
+
+    hide image img_tutor_33
+
+    return
+
+label end:
+
+    e "Поздравляем!"
+
+    e "Вы успешно окончили данное руководство!"
 
     return
