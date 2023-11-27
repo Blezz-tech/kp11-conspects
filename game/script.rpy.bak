@@ -78,8 +78,8 @@ label start:
     call tutor_12 from _call_tutor_12
     call tutor_13 from _call_tutor_13
     call tutor_14 from _call_tutor_14
-    call tutor_15 from _call_tutor_15
-    call end from _call_end
+    call tutor_15
+    call end
 
     return
 
