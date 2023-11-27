@@ -14,7 +14,6 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class GameView extends View {
-
     public GameView(Context context) {
         super(context);
     }
@@ -28,6 +27,7 @@ public class GameView extends View {
     }
 
     private static final String TAG = "GameView";
+
     private static final int MAP_SIZE = 20;
     private static final int START_X = 5;
     private static final int START_Y = 10;
@@ -37,16 +37,16 @@ public class GameView extends View {
     private Direction mDir;
 
     private ScoreUpdateListener mScoreUpdatedListener;
+
     private boolean mGameOver = false;
 
     private int mBoxSize;
-
     private int mBoxPadding;
 
     private final Paint mPaint = new Paint();
 
     public void init() {
-        mBoxSize = 300 / MAP_SIZE;                                // 300dp Не работает
+        mBoxSize = 1000 / MAP_SIZE;                                // 300dp Не работает
         mBoxPadding = mBoxSize / 10;
     }
 
@@ -97,7 +97,8 @@ public class GameView extends View {
         Point first = mSnake.getFirst();
         Log.d(TAG, "first: " + first.x + " " + first.y);
         Point next = getNext(first);
-        Log.d(TAG, "next: " + next.x + next.y);
+        Log.d(TAG, "next: " + next.x + " " + next.y);
+
         switch (next.type) {
             case EMPTY:
                 Log.d(TAG, "next: empty");
@@ -132,8 +133,7 @@ public class GameView extends View {
                 (mDir == Direction.LEFT || mDir == Direction.RIGHT)) {
             return;
         }
-        if
-        ((dir == Direction.UP || dir == Direction.DOWN) &&
+        if ((dir == Direction.UP || dir == Direction.DOWN) &&
                 (mDir == Direction.UP || mDir == Direction.DOWN)) {
             return;
         }
@@ -152,7 +152,7 @@ public class GameView extends View {
                 y = y == MAP_SIZE - 1 ? 0 : y + 1;
                 break;
             case LEFT:
-                x = x == 0 ? MAP_SIZE - 1 : x - 1 - 1;
+                x = x == 0 ? MAP_SIZE - 1 : x - 1;
                 break;
             case RIGHT:
                 x = x == MAP_SIZE - 1 ? 0 : x + 1;
@@ -162,9 +162,7 @@ public class GameView extends View {
     }
 
 
-    public boolean isGameOver() {
-        return mGameOver;
-    }
+    public boolean isGameOver() { return mGameOver; }
 
     @Override
     protected void onDraw(Canvas canvas) {

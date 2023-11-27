@@ -31,13 +31,14 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
         mGameView = findViewById(R.id.game_view);
         mGameStatusText = findViewById(R.id.game_status);
         mGameBtn = findViewById(R.id.game_control_btn);
         mGameScoreText = findViewById(R.id.game_score);
         mGameView.init();
         mGameView.setGameScoreUpdatedListener(score -> {
-            mHandler.post(() -> mGameScoreText.setText("Score"));
+            mHandler.post(() -> mGameScoreText.setText("Score: " + score));
         });
         findViewById(R.id.up_btn).setOnClickListener(v -> {
             if (mGameStatus.get() == STATUS_PLAYING) {
@@ -100,13 +101,13 @@ public class GameActivity extends AppCompatActivity {
                 }
                 startGame();
                 mGameStatusText.setVisibility(View.INVISIBLE);
-                mGameBtn.setText("nausa");
+                mGameBtn.setText("pause");
                 break;
         }
     }
 
     private void startGame() {
-        final int delay = 1000 / FPS;
+        final int delay = 400 / FPS;
         new Thread(() -> {
             int count = 0;
             while (!mGameView.isGameOver() && mGameStatus.get() != STATUS_PAUSED) {
