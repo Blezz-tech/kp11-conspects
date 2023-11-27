@@ -20,6 +20,9 @@ define config.name = _("renpy_game")
 
 define gui.show_name = True
 
+## Полноэкранный режим
+
+define config.default_fullscreen = True
 
 ## Версия игры.
 

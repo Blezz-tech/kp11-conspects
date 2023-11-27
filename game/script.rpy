@@ -1,4 +1,5 @@
-﻿
+﻿define img_start   =  im.FactorScale("flex-box-start.png", 1)
+
 define img_tutor_1 =  im.FactorScale("tutor 1.png", 0.5)
 define img_tutor_2 =  im.FactorScale("tutor 2.png", 0.5)
 define img_tutor_3 =  im.FactorScale("tutor 3.png", 0.5)
@@ -6,6 +7,57 @@ define img_tutor_4 =  im.FactorScale("tutor 4.png", 0.5)
 define img_tutor_5 =  im.FactorScale("tutor 5.png", 0.5)
 define img_tutor_6 =  im.FactorScale("tutor 6.png", 0.5)
 define img_tutor_7 =  im.FactorScale("tutor 7.png", 0.5)
+
+define code_1 = im.FactorScale("code 1.png", 2)
+define code_2 = im.FactorScale("code 2.png", 2)
+define code_3 = im.FactorScale("code 3.png", 2)
+define code_4 = im.FactorScale("code 4.png", 1)
+define code_5 = im.FactorScale("code 5.png", 2)
+define code_6 = im.FactorScale("code 6.png", 2)
+define code_7 = im.FactorScale("code 7.png", 2)
+define code_8 = im.FactorScale("code 8.png", 2)
+define code_9 = im.FactorScale("code 9.png", 2)
+define code_10 = im.FactorScale("code 10.png", 2)
+define code_11 = im.FactorScale("code 11.png", 2)
+define code_12 = im.FactorScale("code 12.png", 2)
+define code_13 = im.FactorScale("code 13.png", 2)
+define code_14 = im.FactorScale("code 14.png", 2)
+define code_15 = im.FactorScale("code 15.png", 2)
+define code_16 = im.FactorScale("code 16.png", 2)
+define code_17 = im.FactorScale("code 17.png", 2)
+define code_18 = im.FactorScale("code 18.png", 2)
+define code_19 = im.FactorScale("code 19.png", 2)
+define code_20 = im.FactorScale("code 20.png", 2)
+define code_21 = im.FactorScale("code 21.png", 2)
+define code_22 = im.FactorScale("code 22.png", 2)
+# define code_23 = im.FactorScale("code 23.png", 2)
+# define code_24 = im.FactorScale("code 24.png", 2)
+# define code_25 = im.FactorScale("code 25.png", 2)
+# define code_26 = im.FactorScale("code 26.png", 2)
+# define code_27 = im.FactorScale("code 27.png", 2)
+# define code_28 = im.FactorScale("code 28.png", 2)
+# define code_29 = im.FactorScale("code 29.png", 2)
+# define code_30 = im.FactorScale("code 30.png", 2)
+# define code_31 = im.FactorScale("code 31.png", 2)
+# define code_32 = im.FactorScale("code 32.png", 2)
+# define code_33 = im.FactorScale("code 33.png", 2)
+# define code_34 = im.FactorScale("code 34.png", 2)
+# define code_35 = im.FactorScale("code 35.png", 2)
+# define code_36 = im.FactorScale("code 36.png", 2)
+# define code_37 = im.FactorScale("code 37.png", 2)
+# define code_38 = im.FactorScale("code 38.png", 2)
+# define code_39 = im.FactorScale("code 39.png", 2)
+# define code_40 = im.FactorScale("code 40.png", 2)
+# define code_41 = im.FactorScale("code 41.png", 2)
+# define code_42 = im.FactorScale("code 42.png", 2)
+# define code_43 = im.FactorScale("code 43.png", 2)
+# define code_44 = im.FactorScale("code 44.png", 2)
+# define code_45 = im.FactorScale("code 45.png", 2)
+# define code_46 = im.FactorScale("code 46.png", 2)
+# define code_47 = im.FactorScale("code 47.png", 2)
+# define code_48 = im.FactorScale("code 48.png", 2)
+# define code_49 = im.FactorScale("code 49.png", 2)
+
 
 define e = Character('', color="#c8ffc8")
 
@@ -25,17 +77,24 @@ label start:
     call tutor_12 from _call_tutor_12
     call tutor_13 from _call_tutor_13
     call tutor_14 from _call_tutor_14
+    call tutor_15
 
     return
 
 
 label tutor_1:
 
+    show image img_start at truecenter
+    with Dissolve(.5)
+
     e "Гайд по flexbox"
 
     e "Основные термины"
 
+    hide image img_start
+
     show image img_tutor_1 at truecenter
+    with Dissolve(.5)
 
     e "Флекс-контейнер: элемент, к которому применяется свойство display: flex. Вложенные в него элементы подчиняются правилам раскладки флексов."
 
@@ -44,6 +103,7 @@ label tutor_1:
     hide image img_tutor_1
 
     show image img_tutor_2 at truecenter
+    with Dissolve(.5)
 
     e "Основная ось: основная направляющая флекс-контейнера, вдоль которой располагаются флекс-элементы."
 
@@ -52,6 +112,7 @@ label tutor_1:
     hide image img_tutor_2
 
     show image img_tutor_3 at truecenter
+    with Dissolve(.5)
 
     e "Начало / конец основной оси: точки в начале и в конце основной оси соответственно. Это пригодится нам для выравнивания флекс-элементов."
 
@@ -60,6 +121,7 @@ label tutor_1:
     hide image img_tutor_3
 
     show image img_tutor_4 at truecenter
+    with Dissolve(.5)
 
     e "Размер по основной оси (основной размер): размер флекс-элемента вдоль основной оси. Это может быть ширина или высота в зависимости от направления основной оси."
 
@@ -74,6 +136,9 @@ label tutor_1:
 
 label tutor_2:
 
+    show image code_1 at truecenter
+    with Dissolve(.5)
+
     e "Свойства флекс-контейнера"
 
     e "Свойство display"
@@ -82,22 +147,35 @@ label tutor_2:
 
     e "Снаружи флекс-контейнер выглядит как блочный элемент — занимает всю ширину родителя, следующие за ним элементы в разметке переносятся на новую строку."
 
+    hide code_1
+
+    show image code_2 at truecenter
+    with Dissolve(.5)
+
     e "Если контейнеру задано значение inline-flex, то снаружи он начинает вести себя как строчный (инлайн) элемент — размеры зависят только от внутреннего контента, встаёт в строку с другими элементами."
 
     e "Внутри это ровно такой же флекс-контейнер, как и при предыдущем значении."
+
+    hide code_2
 
     return
 
 
 label tutor_3:
 
-    show image img_tutor_5 at truecenter
+    show image code_3 at truecenter
+    with Dissolve(.5)
 
     e "Свойство flex-direction"
 
     e "Свойство управления направлением основной и поперечной осей."
 
     e "Возможные значения:"
+
+    hide code_3
+
+    show image img_tutor_5 at truecenter
+    with Dissolve(.5)
 
     e "row (значение по умолчанию) — основная ось идёт горизонтально слева направо, поперечная ось идёт вертикально сверху вниз."
 
@@ -121,6 +199,7 @@ label tutor_3:
 label tutor_4:
 
     show image img_tutor_6 at truecenter
+    with Dissolve(.5)
 
     e "Свойство flex-wrap"
 
@@ -141,6 +220,9 @@ label tutor_4:
 
 label tutor_5:
 
+    show image code_4 at truecenter
+    with Dissolve(.5)
+
     e "Свойство flex-flow"
 
     e "Это свойство-шорткат для одновременного определения значений свойств flex-direction и flex-wrap."
@@ -151,50 +233,167 @@ label tutor_5:
 
     e "В таком случае проще было бы иметь два отдельных свойства и менять значения отдельно."
 
-    return
+    hide image code_4
 
+    return
 
 
 label tutor_6:
 
-    e "Свойство flex-flow"
+    show image code_5 at truecenter
+    with Dissolve(.5)
+
+    e "Свойство justify-content"
 
     e "Свойство позволяет выравнивать флекс-элементы внутри флекс-контейнера по основной оси."
 
     e "Возможные значения:"
 
+    hide image code_5
+
+    show image code_6 at truecenter
+    with Dissolve(.5)
+
     e "start — элементы прижимаются к тому краю, откуда начинается чтение на том языке, на котором отображается сайт."
+
+    hide image code_6
+
+    show image code_7 at truecenter
+    with Dissolve(.5)
 
     e "end — элементы прижимаются к краю, противоположному началу направления чтения на языке сайта."
 
+    hide image code_7
+
+    show image code_8 at truecenter
+    with Dissolve(.5)
+
     e "flex-start — элементы прижимаются к краю, от которого начинается основная ось."
+
+    hide image code_8
+
+    show image code_9 at truecenter
+    with Dissolve(.5)
 
     e "flex-end — элементы прижимаются к краю, у которого основная ось заканчивается."
 
+    hide image code_9
+
+    show image code_10 at truecenter
+    with Dissolve(.5)
+
     e "left — элементы прижмутся к левому краю родителя."
+
+    hide image code_10
+
+    show image code_11 at truecenter
+    with Dissolve(.5)
 
     e "right — элементы прижмутся к правому краю родителя."
 
+    hide image code_11
+
+    show image code_12 at truecenter
+    with Dissolve(.5)
+
     e "center — элементы выстраиваются по центру родителя."
 
+    hide image code_12
+
+    show image code_13 at truecenter
+    with Dissolve(.5)
+
     e "space-between — крайние элементы прижимаются к краям родителя, оставшиеся выстраиваются внутри контейнера равномерно, так, чтобы между ними были одинаковые отступы."
+
+    hide image code_13
+
+    show image code_14 at truecenter
+    with Dissolve(.5)
 
     e "space-around — свободное пространство делится поровну между элементами и по половине от этой доли размещается по бокам от каждого элемента."
 
     e "Таким образом, между соседними элементами будет равное расстояние, а снаружи крайних элементов — по половине этого расстояния."
 
+    hide image code_14
+
+    show image code_15 at truecenter
+    with Dissolve(.5)
+
     e "space-evenly — свободное место будет распределено так, чтобы расстояние между любыми двумя элементами было одинаковым и расстояние от крайних элементов до края было таким же."
 
     e "Хотя большинство значений поддерживаются основными браузерами, с некоторыми из них могут быть трудности."
 
+    hide image code_15
+
     return
+
 
 
 label tutor_7:
 
+    show image code_16 at truecenter
+    with Dissolve(.5)
+    
+    e "Свойство выравнивания элементов внутри контейнера по поперечной оси."
+
+    e "Возможные значения:"
+
+    hide image code_16
+
+    show image code_17 at truecenter
+    with Dissolve(.5)
+
+    e "stretch (значение по умолчанию) — элементы растягиваются вдоль поперечной оси так, чтобы заполнить всего родителя."
+    
+    e "Это очень удобно, если вы делаете двухколоночный макет."
+    
+    e "Раньше приходилось при помощи разных костылей добиваться одинаковой высоты, а теперь достаточно сделать контейнер флексом, и колонки по умолчанию будут одной высоты."
+
+    hide image code_17
+
+    show image code_18 at truecenter
+    with Dissolve(.5)
+
+    e "flex-start или start — элементы выстраиваются у начала поперечной оси."
+    
+    e "Разница между ними лишь в том, что второе значение «уважает» направление чтения выбранного языка."
+    
+    hide image code_18
+
+    show image code_19 at truecenter
+    with Dissolve(.5)
+
+    e "flex-end или end — элементы выстраиваются у конца поперечной оси. Разница между первым и вторым значениями аналогична предыдущему пункту."
+    
+    hide image code_19
+
+    show image code_20 at truecenter
+    with Dissolve(.5)
+
+    e "center — элементы выстраиваются по центру поперечной оси."
+
+    hide image code_20
+
+    show image code_21 at truecenter
+    with Dissolve(.5)
+
+    e "baseline — элементы выравниваются по базовой линии текста. «Базовая линия» — baseline — воображаемая линия, проходящая по нижнему краю знаков шрифта (без учёта выносных элементов)."
+
+    
+    hide image code_21
+
+
+    return
+
+label tutor_8:
+
     e "Свойство align-content"
 
-    e "Свойство распределяет свободное пространство по поперечной оси между рядами флекс-элементов. Предположим, у вас 11 элементов в 3 рядах. Если размер родителя по поперечной оси позволяет, то при помощи align-content можно распределять строчки элементов: по верхнему краю, по нижнему, по центру или равномерно."
+    e "Свойство распределяет свободное пространство по поперечной оси между рядами флекс-элементов."
+
+    e "Предположим, у вас 11 элементов в 3 рядах."
+
+    e "Если размер родителя по поперечной оси позволяет, то при помощи align-content можно распределять строчки элементов: по верхнему краю, по нижнему, по центру или равномерно."
 
     e "Не имеет видимого значения, если элементы располагаются в один ряд."
 
@@ -211,13 +410,13 @@ label tutor_7:
     e "space-between — первый ряд прижимается к началу поперечной оси, последний — к концу поперечной оси, а остальные располагаются так, чтобы свободное пространство было поделено на отступы между ними равномерно."
 
     e "space-around — отступы у каждого ряда равнозначны отступам у любого другого ряда."
-
+    
     e "space-evenly — отступы между рядами и от краёв родителя одинаковые."
-
+    
     return
 
 
-label tutor_8:
+label tutor_9:
 
     e "Свойство gap"
 
@@ -238,9 +437,10 @@ label tutor_8:
     return
 
 
-label tutor_9:
+label tutor_10:
 
     show image img_tutor_7 at truecenter
+    with Dissolve(.5)
 
     e "Свойства флекс-элемента"
 
@@ -257,7 +457,7 @@ label tutor_9:
     return
 
 
-label tutor_10:
+label tutor_11:
 
     e "Свойства flex-grow"
 
@@ -274,7 +474,7 @@ label tutor_10:
     return
 
 
-label tutor_11:
+label tutor_12:
 
     e "Свойства flex-shrink"
 
@@ -293,7 +493,7 @@ label tutor_11:
     return
 
 
-label tutor_12:
+label tutor_13:
 
     e "Свойства flex-basis"
 
@@ -309,7 +509,7 @@ label tutor_12:
 
     return
 
-label tutor_13:
+label tutor_14:
 
     e "Свойства flex"
 
@@ -325,7 +525,7 @@ label tutor_13:
 
     return
 
-label tutor_14:
+label tutor_15:
 
     e "Свойства align-self"
 
