@@ -30,11 +30,11 @@ define code_19 = im.FactorScale("code 19.png", 2)
 define code_20 = im.FactorScale("code 20.png", 2)
 define code_21 = im.FactorScale("code 21.png", 2)
 define code_22 = im.FactorScale("code 22.png", 2)
-# define code_23 = im.FactorScale("code 23.png", 2)
-# define code_24 = im.FactorScale("code 24.png", 2)
-# define code_25 = im.FactorScale("code 25.png", 2)
-# define code_26 = im.FactorScale("code 26.png", 2)
-# define code_27 = im.FactorScale("code 27.png", 2)
+define code_23 = im.FactorScale("code 23.png", 2)
+define code_24 = im.FactorScale("code 24.png", 2)
+define code_25 = im.FactorScale("code 25.png", 2)
+define code_26 = im.FactorScale("code 26.png", 2)
+define code_27 = im.FactorScale("code 27.png", 2)
 # define code_28 = im.FactorScale("code 28.png", 2)
 # define code_29 = im.FactorScale("code 29.png", 2)
 # define code_30 = im.FactorScale("code 30.png", 2)
@@ -328,7 +328,6 @@ label tutor_6:
     return
 
 
-
 label tutor_7:
 
     show image code_16 at truecenter
@@ -392,6 +391,9 @@ label tutor_7:
 
 label tutor_8:
 
+    show image code_23 at truecenter
+    with Dissolve(.5)
+
     e "Свойство align-content"
 
     e "Свойство распределяет свободное пространство по поперечной оси между рядами флекс-элементов."
@@ -404,19 +406,36 @@ label tutor_8:
 
     e "Возможные значения:"
 
+    hide image code_23
+
+    show image code_24 at truecenter
+    with Dissolve(.5)
+
     e "flex-start / start — все ряды располагаются у начала поперечной оси. Первое значение не зависит от направления чтения текущего языка, в отличие от второго."
+
+    hide image code_24
+
+    show image code_25 at truecenter
+    with Dissolve(.5)
 
     e "flex-end / end — все ряды располагаются у конца поперечной оси. end «уважает» направление чтения текущего языка."
 
+    hide image code_25
+
+    show image code_26 at truecenter
+    with Dissolve(.5)
+
     e "center — ряды выравниваются по центру родителя."
 
-    e "space-between — первый ряд прижимается к началу поперечной оси, последний — к концу поперечной оси, а остальные располагаются так, чтобы свободное пространство было поделено на отступы между ними равномерно."
+    hide image code_26
 
-    
     return
 
 
 label tutor_9:
+
+    show image code_27 at truecenter
+    with Dissolve(.5)
 
     e "Свойство gap"
 
@@ -433,6 +452,8 @@ label tutor_9:
     e "Значения можно указывать в любых доступных единицах измерения, включая проценты."
 
     e "Допускается использование функции calc()."
+
+    hide image code_27
 
     return
 
