@@ -1,34 +1,76 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 74, in script call
-    call tutor_9 from _call_tutor_9
-  File "game/script.rpy", line 438, in script
-    show image code_27 at truecenter
-  File "game/script.rpy", line 438, in <module>
-    show image code_27 at truecenter
-NameError: name 'code_27' is not defined
+While processing text tag {bi} in 'Ссылка: {bi}https://flexboxfroggy.com/#ru{/bi}'.:
+  File "game/script.rpy", line 82, in script call
+    call end from _call_end
+  File "game/script.rpy", line 610, in script
+    e "Ссылка: {bi}https://flexboxfroggy.com/#ru{/bi}"
+Exception: Unknown text tag 'bi'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 74, in script call
-    call tutor_9 from _call_tutor_9
-  File "game/script.rpy", line 438, in script
-    show image code_27 at truecenter
-  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\ast.py", line 1384, in show_imspec
-    expression = renpy.python.py_eval(expression)
-  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 438, in <module>
-    show image code_27 at truecenter
-NameError: name 'code_27' is not defined
+  File "game/script.rpy", line 82, in script call
+    call end from _call_end
+  File "game/script.rpy", line 610, in script
+    e "Ссылка: {bi}https://flexboxfroggy.com/#ru{/bi}"
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\core.py", line 4175, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\core.py", line 2782, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\screen.py", line 731, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\layout.py", line 1338, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\text\text.py", line 2171, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\text\text.py", line 629, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "C:\ProgramData\chocolatey\lib\renpy\tools\renpy-7.3.5-sdk\renpy\text\text.py", line 1289, in segment
+    raise Exception("Unknown text tag %r" % text)
+Exception: Unknown text tag 'bi'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Руководство по Flex-box 1.0
-Mon Nov 27 19:35:51 2023
+Sun Dec 10 20:46:26 2023

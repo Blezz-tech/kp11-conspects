@@ -39,7 +39,7 @@ define code_28 = im.FactorScale("code 28.png", 2)
 define code_29 = im.FactorScale("code 29.png", 2)
 define code_30 = im.FactorScale("code 30.png", 2)
 define code_31 = im.FactorScale("code 31.png", 2)
-define code_32 = im.FactorScale("code 32.png", 2)
+define code_32 = im.FactorScale("code 32.png",0.75)
 define code_33 = im.FactorScale("code 33.png", 2)
 # define code_34 = im.FactorScale("code 34.png", 2)
 # define code_35 = im.FactorScale("code 35.png", 2)
@@ -502,7 +502,7 @@ label tutor_11:
 
     e "Если при этом одному из элементов мы зададим flex-grow: 2, то он постарается занять в два раза больше свободного места, чем его соседи."
 
-    hide image img_tutor_28
+    hide image code_28
 
     return
 
@@ -526,7 +526,7 @@ label tutor_12:
 
     e "Они довольно непростые, даже опытный разработчик не всегда знает, как они в точности работают. Загляните в конец статьи, если хотите подробнее почитать о каждом из них."
 
-    hide image img_tutor_29
+    hide image code_29
 
     return
 
@@ -548,7 +548,7 @@ label tutor_13:
 
     e "Если никакие размеры не заданы, а свойству flex-basis установлено значение auto, то элемент занимает столько пространства, сколько нужно для отображения контента."
 
-    hide image img_tutor_30
+    hide image code_30
 
     return
 
@@ -569,14 +569,14 @@ label tutor_14:
 
     e "что расшифровывается как flex-grow: 0, flex-shrink: 1, flex-basis: auto."
 
-    hide image img_tutor_32
+    hide image code_31
 
-    show image code_31 at truecenter
+    show image code_32 at truecenter
     with Dissolve(.5)
 
     e "Возможные значения"
 
-    hide image img_tutor_32
+    hide image code_32
 
     return
 
@@ -593,7 +593,7 @@ label tutor_15:
 
     e "А для элемента с классом .item мы задаём выравнивание по нижнему краю."
 
-    hide image img_tutor_33
+    hide image code_33
 
     return
 
@@ -607,7 +607,7 @@ label end:
 
     e "Для этого лучше всего подойдёт интерактиваый тренажёр flex froggy"
 
-    e "Ссылка: https://flexboxfroggy.com/#ru"
+    e "Ссылка: {b}https://flexboxfroggy.com/#ru{/b}"
 
     e "Желаем вам успехов!"
 
