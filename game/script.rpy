@@ -89,7 +89,7 @@ label tutor_1:
     show image img_start at truecenter
     with Dissolve(.5)
 
-    e "Гайд по flexbox"
+    e "Руководство по flexbox"
 
     e "Основные термины"
 
