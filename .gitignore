@@ -1,0 +1,6 @@
+game/saves/
+
+log.txt
+errors.txt
+
+*.bak
