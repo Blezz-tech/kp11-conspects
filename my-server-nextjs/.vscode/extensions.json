@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "formulahendry.auto-complete-tag",
+    "equinusocio.vsc-community-material-theme",
+    "mrmlnc.vscode-csscomb",
+    "dbaeumer.vscode-eslint",
+    "haskell.haskell",
+    "justusadam.language-haskell",
+    "james-yu.latex-workshop",
+    "yandeu.five-server",
+    "pkief.material-icon-theme",
+    "equinusocio.vsc-material-theme",
+    "equinusocio.vsc-material-theme-icons",
+    "jnoortheen.nix-ide",
+    "bmewburn.vscode-intelephense-client",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-ceintl.vscode-language-pack-ru",
+    "redhat.vscode-xml"
+  ]
+}
