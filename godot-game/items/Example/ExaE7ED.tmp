@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://wj5w1pbve48w"]
+
+[ext_resource type="Script" path="res://items/Example/Example.gd" id="1_eroqe"]
+[ext_resource type="Script" path="res://addons/godot-flexbox/flex_container.gd" id="1_j85qc"]
+
+[node name="Example" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 320.0
+script = ExtResource("1_eroqe")
+example_id = null
+
+[node name="FlexContainer" type="Container" parent="."]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 18.0
+offset_right = 508.0
+offset_bottom = 212.0
+script = ExtResource("1_j85qc")
+debug_draw = true
+
+[node name="ColorRect" type="ColorRect" parent="FlexContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="ColorRect2" type="ColorRect" parent="FlexContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="ColorRect3" type="ColorRect" parent="FlexContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="ColorRect4" type="ColorRect" parent="FlexContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="ColorRect5" type="ColorRect" parent="FlexContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 270.0
+offset_right = 420.0
+offset_bottom = 290.0
+
+[connection signal="ready" from="OptionButton" to="." method="_on_option_button_ready"]
