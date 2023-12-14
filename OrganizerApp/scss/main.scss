@@ -1,0 +1,173 @@
+@import "_my.scss";
+
+body {
+	font-family: "Manrope", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header {
+	border-bottom: 1px solid #e5e9f2;
+}
+
+.header-container {
+	display: flex;
+	justify-content: center;
+	height: 72px;
+	width: 100%;
+	.nav {
+		margin-top: 22px;
+		margin-right: 20%;
+		margin-bottom: 22px;
+		margin-left: 10px;
+	}
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	width: 490px;
+	li {
+		list-style-type: none;
+	}
+	a {
+		text-decoration: none;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: bold;
+		color: #18191f;
+	}
+}
+
+.appstore {
+	margin-bottom: 16px;
+	margin-top: 16px;
+	width: 294px;
+	a {
+		&:first-child {
+			margin-right: 10px;
+		}
+		&:last-child {
+			margin-right: 10px;
+		}
+	}
+}
+
+.logo {
+	margin-bottom: 21px;
+	margin-top: 21px;
+	margin-left: 10px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-right: 38px;
+}
+
+.title-text {
+	width: 464px;
+	height: 434px;
+	h1 {
+		margin-bottom: 16px;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 72px;
+		line-height: 98px;
+		color: #18191f;
+	}
+	p {
+		margin-bottom: 32px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 32px;
+		color: #18191f;
+		line-height: 32px;
+	}
+}
+
+button {
+	width: 284px;
+	height: 62px;
+
+	border: 0;
+	background: #8c30f5;
+	border-radius: 8px;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+}
+
+.image {
+	img {
+		width: 524px;
+		height: 400px;
+	}
+}
+
+footer {
+	width: 100%;
+	background: #0b0d17;
+}
+
+.footer-container {
+	margin-top: auto;
+	display: flex;
+	width: 100%;
+	height: 72px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.copyright {
+	width: 270px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	margin-left: 10%;
+	p {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: #d9dbe1;
+	}
+}
+.footer-social {
+	margin-top: 19px;
+	margin-right: 10%;
+	margin-bottom: 19px;
+	margin-left: auto;
+	width: 184px;
+	height: 34px;
+}
+
+.social-list {
+	display: flex;
+	justify-content: space-between;
+	li {
+		width: 34px;
+		height: 34px;
+		list-style-type: none;
+	}
+	img {
+		display: block;
+		margin: 8px;
+		width: 18px;
+		height: 18px;
+	}
+	a {
+		display: inline-block;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background: #23252e;
+		text-decoration: none;
+	}
+}
