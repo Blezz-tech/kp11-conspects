@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid gray;
+}
+
+.header img {
+    width: 400px;
+}
+
+.header>nav>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+main {
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+section {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.product .image {
+    margin-left: auto;
+    width: 290px;
+    margin-right: auto;
+}
+
+.product h2 {
+    text-align: center;
+}
+
+.product-title {
+    margin-top: 10px;
+}
+
+.poduct-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.poduct-container p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.desctiption table {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+}
+
+.desctiption table tr {
+    width: 100%;
+}
+
+.desctiption table td {
+    padding: 5px;
+    width: 100%;
+}
+
+.desctiption table thead td {
+    font-weight: 700;
+}
+
+.desctiption table tbody tr:nth-child(2n+1) td {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.desctiption table td:nth-child(1) {
+    text-align: left;
+}
+
+.desctiption table td:nth-child(2) {
+    text-align: right;
+}
+
+.title {
+    margin-left: 10px;
+    font-size: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form * {
+    margin-top: 10px;
+}
+
+
+
+
+
+.footer {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+li {    
+    list-style-type:none;
+}
