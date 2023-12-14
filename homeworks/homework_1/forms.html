@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Домашнее задание 1</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link href="css/styles.css" rel="stylesheet">
-        <script src="js/vue.js"></script>
+        <link rel="stylesheet" href="./../plagin/css/bootstrap.min.css">
+        <link href="./css/styles.css" rel="stylesheet">
+        <script src="./../plagin/js/vue.js"></script>
     </head>
     <body>
         <div class="wrapper">
             <div class="form-app">
-                <div class="my-form" v-if="!data['form-posted']">
+                <div class="my-form" v-if="!hasSend">
                     <div class="header">
                         <h1>Guests</h1>
                         <button class="add-guest" @click="addGuest">ADD GUEST</button>
@@ -28,7 +28,7 @@
                             <p class="text">Property name</p>
                             <input class="add-prop-str" type="text" v-model="data['prop-name']">
                             <br>
-                            <button class="add-prop" @click="addProp">ADD PROP</button>
+                            <button class="add-prop" @click="addProp" :disabled="!newPropNameReady">ADD PROP</button>
                         </div>
                     </div>
                     <ul class="guest-group">
@@ -93,6 +93,14 @@
 
                     }
                 ),
+				computed: {
+					hasSend() {
+						return this.data["form-posted"];
+					},
+					newPropNameReady() {
+						return this.data["prop-name"] != "";
+					},
+				},
                 methods: {
                     addGuest() {
                         const guest = [];
@@ -106,15 +114,13 @@
                     },
                     addProp() {
                         const propName = this.data["prop-name"];
-                        if (propName != "") {
-                            this.lists.property.push(propName);
+						
+						this.lists.property.push(propName);
+						this.lists.guests.forEach(e => {
+							e.push("");
+						});
 
-                            this.lists.guests.forEach(e => {
-                                e.push("");
-                            });
-
-                            this.data["prop-name"] = "";
-                        }
+						this.data["prop-name"] = "";
                     },
                     removeProp(i) {
                         this.lists.property.splice(i, 1);

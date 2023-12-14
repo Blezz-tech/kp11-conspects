@@ -16,12 +16,43 @@ ul {
 	list-style-type: none;
 }
 
+.sample {
+	padding: 20px;
+}
+
+.progress {
+	height: 20px;
+}
+
+.progress-bar {
+	height: inherit;
+	width: 0;
+
+
+	transition-property: width;
+	transition-duration: 3s;
+
+
+	color: #007BFF;
+}
+
+input.form-control {
+	width: 300px;
+}
+
+
+
+
+
+
+
+
+/* 
 .wrapper {
 	min-height: 100vh;
 
 	padding: 25px;
 
-	/* background-color: rgb(95, 220, 220); */
 	background-color: #faf3d5;
 }
 
@@ -196,4 +227,4 @@ ul {
 	font-weight: 500;
 
 	background-color: #994d00;
-}
+} */
