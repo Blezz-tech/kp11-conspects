@@ -1,4 +1,4 @@
-pandoc "./3 курс/2 семестр/ТерВерИМатСтат/README.md" \
+pandoc "./3 курс/2 семестр/ТерВерИМатСтат/Работа 1.md" \
     -o output.docx \
     --from markdown \
     --to docx \
