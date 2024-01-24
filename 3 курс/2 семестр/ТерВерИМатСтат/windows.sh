@@ -1,4 +1,4 @@
-pandoc "./Работа 1.md" \
+pandoc "./ПР_1.md" \
     -o output.docx \
     --from markdown \
     --to docx \
