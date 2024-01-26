@@ -12,22 +12,19 @@ case $1 in
    ;;
 
    *)
-   echo "Непонятно что"
+   echo "Передайте привильный аргемент в скрипт"
    exit
    ;;
 esac
 
-if [[ -v FILE_PATH ]]; then
-  echo "Билдится $FILE_PATH"
-  mkdir -p output
-  pandoc $FILE_PATH \
-      -o ./output/output.docx \
-      --from markdown \
-      --to docx \
-      --reference-doc ./custom-reference.docx
-else 
-    echo "FILE_PATH $FILE_PATH не существует."
-fi
+
+echo "Билдится $FILE_PATH"
+mkdir -p output
+pandoc $FILE_PATH \
+    -o ./output/output.docx \
+    --from markdown \
+    --to docx \
+    --reference-doc ./custom-reference.docx
 
 case "$(uname -sr)" in
 
