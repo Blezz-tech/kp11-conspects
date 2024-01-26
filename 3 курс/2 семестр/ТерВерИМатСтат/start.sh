@@ -1,10 +1,37 @@
 mkdir -p output
 
-pandoc ./ПР_1.md \
-    -o ./output/output.docx \
-    --from markdown \
-    --to docx \
-    --reference-doc ./custom-reference.docx
+
+
+case $1 in
+   "11")
+   FILE_PATH="Работа_1.md"
+   ;;
+
+   "12")
+   FILE_PATH="Работа_2.md"
+   ;;
+
+   "21")
+   FILE_PATH="ПР_1.md"
+   ;;
+
+   *)
+   echo "Непонятно что"
+   exit
+   ;;
+esac
+
+
+if [[ -v FILE_PATH ]]; then
+  echo "Билдится $FILE_PATH"
+  pandoc $FILE_PATH \
+      -o ./output/output.docx \
+      --from markdown \
+      --to docx \
+      --reference-doc ./custom-reference.docx
+else 
+    echo "FILE_PATH $FILE_PATH не существует."
+fi
 
 
 case "$(uname -sr)" in
