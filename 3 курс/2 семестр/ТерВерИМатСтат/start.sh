@@ -1,7 +1,3 @@
-mkdir -p output
-
-
-
 case $1 in
    "11")
    FILE_PATH="Работа_1.md"
@@ -21,9 +17,9 @@ case $1 in
    ;;
 esac
 
-
 if [[ -v FILE_PATH ]]; then
   echo "Билдится $FILE_PATH"
+  mkdir -p output
   pandoc $FILE_PATH \
       -o ./output/output.docx \
       --from markdown \
@@ -32,7 +28,6 @@ if [[ -v FILE_PATH ]]; then
 else 
     echo "FILE_PATH $FILE_PATH не существует."
 fi
-
 
 case "$(uname -sr)" in
 
