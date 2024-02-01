@@ -24,24 +24,18 @@ def build [arg] {
 }
 
 def open [arg] {
-    let os = uname -sr
+    let os = sys | get host | get name
     match $os {
-        "Darwin*" => {
-            echo 'Mac OS X'
-        },
-        "Linux*Microsoft*" => {
-            echo 'WSL'
-        },
-        "Linux*" => {
-            echo 'Linux'
+        "Linux" => {
+            print 'Linux'
             xdg-open ($targetDir + /output.docx)
         },
-        "CYGWIN*|MINGW*|MINGW32*|MSYS*" => {
-            echo 'MS Windows'
+        "Windows" => {
+            print 'MS Windows'
             start ($targetDir + /output.docx)
         },
         _ => {
-            echo 'Other OS'
+            print 'Other OS'
         }
     }
 }
