@@ -19,9 +19,9 @@ esac
 
 
 echo "Билдится $FILE_PATH"
-mkdir -p output
+mkdir -p target
 pandoc $FILE_PATH \
-    -o ./output/output.docx \
+    -o ./target/output.docx \
     --from markdown \
     --to docx \
     --reference-doc ./custom-reference.docx
@@ -38,12 +38,12 @@ case "$(uname -sr)" in
 
    Linux*)
      echo 'Linux'
-     xdg-open ./output/output.docx 
+     xdg-open ./target/output.docx 
      ;;
 
    CYGWIN*|MINGW*|MINGW32*|MSYS*)
      echo 'MS Windows'
-     start ./output/output.docx
+     start ./target/output.docx
      ;;
 
    *)
