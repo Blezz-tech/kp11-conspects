@@ -2,6 +2,7 @@ let targetDir = "./target"
 
 def build [arg] {
     let file_path = match $arg {
+        0 => "Конспект.md",
         11 => "Работа_1.md",
         12 => "Работа_2.md",
         21 => "ПР_1.md",
