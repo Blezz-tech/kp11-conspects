@@ -19,6 +19,8 @@ def build [arg] {
         --from markdown
         --to docx
         --reference-doc ./custom-reference.docx)
+
+    open $arg
 }
 
 def open [arg] {
@@ -42,7 +44,6 @@ def open [arg] {
             echo 'Other OS'
         }
     }
-
 }
 
 def main [arg] {
