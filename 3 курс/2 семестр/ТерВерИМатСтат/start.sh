@@ -20,7 +20,7 @@ esac
 
 echo "Билдится $FILE_PATH"
 mkdir -p target
-pandoc $FILE_PATH \
+pandoc "src/$FILE_PATH" \
     -o ./target/output.docx \
     --from markdown \
     --to docx \
