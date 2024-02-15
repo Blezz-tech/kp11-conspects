@@ -1,4 +1,5 @@
 let targetDir = "./target"
+let targetName = "/output.docx"
 
 def build [arg] {
     let file_path = match $arg {
@@ -19,7 +20,7 @@ def build [arg] {
     mkdir $targetDir
     let srcDir = ("./src/" + $file_path) 
     (pandoc $srcDir
-        -o ($targetDir + /output.docx)
+        -o ($targetDir + $targetName)
         --from markdown
         --to docx
         --reference-doc ./custom-reference.docx)
@@ -28,18 +29,23 @@ def build [arg] {
 }
 
 def open [arg] {
+
     let os = sys | get host | get name
     match $os {
         "Linux" => {
             print 'Linux'
-            xdg-open ($targetDir + /output.docx)
+            xdg-open ($targetDir + $targetName)
         },
         "Windows" => {
             print 'MS Windows'
-            start ($targetDir + /output.docx)
+            start ($targetDir + $targetName)
+        },
+        "NixOS" => {
+            print 'NixOS'
+            xdg-open ($targetDir + $targetName)
         },
         _ => {
-            print 'Other OS'
+            print 'Other OS: ' + $os 
         }
     }
 }
