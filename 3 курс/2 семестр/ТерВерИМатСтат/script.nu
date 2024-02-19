@@ -25,7 +25,7 @@ def generate-img [] {
                 | str replace ".dot" ".png") 
             
             print $name
-            (circo $it.name
+            (dot $it.name
                 -Tpng
                 -o $name )
         }
