@@ -9,6 +9,12 @@ def generate-img [] {
     cp Картинки/* target/Картинки -r
     cp src/* target/src -r
     cp custom-reference.docx target
+
+    cd target
+    
+    (circo ./src/Главы/Введение.dot
+        -Tpng
+        -o ./Картинки/Главы/Введение.png )
 }
 
 def main [] {
@@ -19,6 +25,7 @@ def main [] {
 def "main build-all" [] {
     generate-img
     cd target
+
 
     # Генерация Документов
     let none_none = ls src/*.md

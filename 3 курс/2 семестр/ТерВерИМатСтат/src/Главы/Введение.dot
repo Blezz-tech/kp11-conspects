@@ -1,0 +1,60 @@
+digraph MindMap {
+  dpi=300;
+  size = "15";
+  fontname="Helvetica";
+  graph [ranksep=2];
+
+  node [
+    shape=ellipse
+    style=filled
+    fillcolor="#03C04A"
+    fontname=Helvetica
+    fontsize=50
+    fontcolor="#FFFFFF"
+    width=8
+    height=4
+    penwidth=0
+    fixedsize=true
+    ];
+  edge [
+    arrowhead=normal
+    arrowsize=2
+    penwidth=5
+    ];
+
+  root [ label ="Введение" ];
+  
+  node [
+    fontsize=24
+    fillcolor="#008ECC"
+    width=6
+    height=3
+    ];
+  
+   11 [ label="Зачем изучать статистику?" ];
+   12 [ label="От издательства" ];
+   13 [ label="Отправляемся \n в приключение" ];
+   14 [ label="Что такое \n байесовская статистика?" ];
+   15 [ label="Что стоит знать, прежде \n чем приступить к чтению" ];
+   16 [ label="Структура книги" ];
+   
+  root->{ 11 12 13 14 15 16 };
+  
+  node [
+    fontsize=22
+    fillcolor="#1034AF"
+    width=4
+    height=2
+    ];
+    
+  21 [ label="Часть I. Введение \n в теорию вероятностей" ];
+  22 [ label="Часть II. Байесовские и \n априорные вероятности" ];
+  23 [ label="Часть III. \n Оценка параметров" ];
+  24 [ label="Часть IV. Проверка \n гипотез: сердце статистики" ];
+  25 [ label="Приложение A. \n Краткое введение в язык R" ];
+  26 [ label="Приложение Б. \n Математический минимум" ];
+  27 [ label="Приложение В. \n Ответы к упражнениям" ];
+
+  16-> { 21 22 23 24 25 26 27 };
+  
+}
