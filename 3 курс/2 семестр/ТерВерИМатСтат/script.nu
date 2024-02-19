@@ -20,12 +20,14 @@ def generate-img [] {
         | par-each { 
             |it|
             print $it.name
-            let name = echo $it.name
+            let name = "./Картинки/Главы/" + ($it.name
                 | path basename
-                | str replace ".dot" ".png"
+                | str replace ".dot" ".png") 
+            
+            print $name
             (circo $it.name
                 -Tpng
-                -o (./Картинки/Главы/ + $name) )
+                -o $name )
         }
 }
 
