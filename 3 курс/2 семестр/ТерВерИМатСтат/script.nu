@@ -18,6 +18,7 @@ def main [] {
 # Создание всех конкретного документов
 def "main build-all" [] {
     generate-img
+    cd target
 
     # Генерация Документов
     let none_none = ls src/*.md
@@ -28,7 +29,7 @@ def "main build-all" [] {
                 | path basename
                 | str replace ".md" ".docx" 
             (pandoc $it.name
-                -o ("target/" + $name)
+                -o $name
                 --from markdown
                 --to docx
                 --reference-doc ./custom-reference.docx)
