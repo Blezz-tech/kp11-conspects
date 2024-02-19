@@ -1,0 +1,54 @@
+digraph MindMap {
+  dpi=300;
+  size = "15";
+  fontname="Helvetica";
+  graph [ranksep=2];
+
+  node [
+    shape=ellipse
+    style=filled
+    fillcolor="#03C04A"
+    fontname=Helvetica
+    fontsize=50
+    fontcolor="#FFFFFF"
+    width=10
+    height=6
+    penwidth=0
+    fixedsize=true
+    ];
+  edge [
+    arrowhead=normal
+    arrowsize=2
+    penwidth=5
+    ];
+
+  root [ label="Как получить биноминальное \n распределение" ];
+  
+  node [
+    fontsize=36
+    fillcolor="#008ECC"
+    width=8
+    height=4
+    ];
+  
+   11 [ label="Пример: игра «гача»" ];
+   12 [ label="Структура биномиального \n распределения" ];
+   13 [ label="Выделение главного в задаче" ];
+   14 [ label="Упражнения" ];
+   15 [ label="Заключение" ];
+   16 [ label="Подсчет исходов через \n биномиальные \n коэффициенты" ];
+   
+  root->{ 11 12 13 14 15 16 };
+  
+  node [
+    fontsize=22
+    fillcolor="#1034AF"
+    width=6
+    height=3
+    ];
+    
+  21 [ label="Комбинаторика: умный \n подсчет через \n биномиальные \n коэффициенты" ];
+  22 [ label="Вычисляем вероятность \n желательного исхода" ];
+
+  16 -> { 21 22 };
+}
