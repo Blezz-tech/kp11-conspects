@@ -15,6 +15,18 @@ def generate-img [] {
     (circo ./src/Главы/Введение.dot
         -Tpng
         -o ./Картинки/Главы/Введение.png )
+    
+    let none_none = ls src/Главы/*.dot
+        | par-each { 
+            |it|
+            print $it.name
+            let name = echo $it.name
+                | path basename
+                | str replace ".dot" ".png"
+            (circo $it.name
+                -Tpng
+                -o (./Картинки/Главы/ + $name) )
+        }
 }
 
 def main [] {
@@ -25,7 +37,6 @@ def main [] {
 def "main build-all" [] {
     generate-img
     cd target
-
 
     # Генерация Документов
     let none_none = ls src/*.md
