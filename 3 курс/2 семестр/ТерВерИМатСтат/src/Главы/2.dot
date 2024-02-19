@@ -1,0 +1,55 @@
+digraph MindMap {
+  dpi=300;
+  size = "15";
+  fontname="Helvetica";
+  graph [ranksep=2];
+
+  node [
+    shape=ellipse
+    style=filled
+    fillcolor="#03C04A"
+    fontname=Helvetica
+    fontsize=50
+    fontcolor="#FFFFFF"
+    width=10
+    height=6
+    penwidth=0
+    fixedsize=true
+    ];
+  edge [
+    arrowhead=normal
+    arrowsize=2
+    penwidth=5
+    ];
+
+  root [ label ="Измеряем \n неопределенность" ];
+  
+  node [
+    fontsize=36
+    fillcolor="#008ECC"
+    width=8
+    height=4
+    ];
+  
+   11 [ label="Что такое вероятность?" ];
+   12 [ label="Упражнения" ];
+   13 [ label="Вычисление вероятностей \n  через подсчет исходов" ];
+   14 [ label="Заключение" ];
+   15 [ label="Вычисление вероятности как \n соотношения предположений" ];
+   
+  root->{ 11 12 13 14 15 };
+  
+  node [
+    fontsize=22
+    fillcolor="#1034AF"
+    width=6
+    height=3
+    ];
+    
+  21 [ label="Использование ставок для \n определения вероятности" ];
+  22 [ label="Вычисление вероятности" ];
+  23 [ label="Измеряем уверенность \n при бросании монеты" ];
+
+  15-> { 21 22 23 };
+  
+}

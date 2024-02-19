@@ -11,8 +11,8 @@ digraph MindMap {
     fontname=Helvetica
     fontsize=50
     fontcolor="#FFFFFF"
-    width=8
-    height=4
+    width=10
+    height=6
     penwidth=0
     fixedsize=true
     ];
@@ -25,10 +25,10 @@ digraph MindMap {
   root [ label ="Введение" ];
   
   node [
-    fontsize=24
+    fontsize=36
     fillcolor="#008ECC"
-    width=6
-    height=3
+    width=8
+    height=4
     ];
   
    11 [ label="Зачем изучать статистику?" ];
@@ -41,10 +41,10 @@ digraph MindMap {
   root->{ 11 12 13 14 15 16 };
   
   node [
-    fontsize=22
+    fontsize=32
     fillcolor="#1034AF"
-    width=4
-    height=2
+    width=6
+    height=3
     ];
     
   21 [ label="Часть I. Введение \n в теорию вероятностей" ];
