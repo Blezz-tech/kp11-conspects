@@ -1,7 +1,43 @@
 let targetName = "./output.docx"
 
-def main [arg] {
-    nu generate-img.nu
+def generate-img [] {
+    mkdir target/Картинки
+    mkdir target/src
+
+    mkdir target/Картинки/Главы
+
+    cp Картинки/* target/Картинки -r
+    cp src/* target/src -r
+    cp custom-reference.docx target
+}
+
+def main [] {
+
+}
+
+# Создание всех конкретного документов
+def "main build-all" [] {
+    generate-img
+
+    # Генерация Документов
+    let none_none = ls src/*.md
+        | par-each { 
+            |it|
+            print $it.name
+            let name = echo $it.name
+                | path basename
+                | str replace ".md" ".docx" 
+            (pandoc $it.name
+                -o ("target/" + $name)
+                --from markdown
+                --to docx
+                --reference-doc ./custom-reference.docx)
+        }
+}
+
+# Создание и открытие конкретного документа
+def "main open" [arg] {
+    generate-img
     cd target
 
     let file_path = match $arg {
@@ -18,7 +54,7 @@ def main [arg] {
         }
     }
 
-    echo ("Билдится " + $file_path)
+    print ("Билдится " + $file_path)
 
     (pandoc ("./src/" + $file_path)
         -o $targetName
