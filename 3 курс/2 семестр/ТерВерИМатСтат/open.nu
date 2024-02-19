@@ -1,7 +1,9 @@
-let targetDir = "./target"
-let targetName = "/output.docx"
+let targetName = "./output.docx"
 
-def build [arg] {
+def main [arg] {
+    nu generate-img.nu
+    cd target
+
     let file_path = match $arg {
         0 => "Конспект.md",
         11 => "Работа_1.md",
@@ -11,45 +13,37 @@ def build [arg] {
         22 => "ПР_2.md",
         23 => "ПР_3.md",
         _ => {
-            echo "Передайте привильный аргемент в скрипт";
+            print "Передайте правильный аргумент в скрипт";
             exit
         }
     }
 
     echo ("Билдится " + $file_path)
-    mkdir $targetDir
-    let srcDir = ("./src/" + $file_path) 
-    (pandoc $srcDir
-        -o ($targetDir + $targetName)
+
+    (pandoc ("./src/" + $file_path)
+        -o $targetName
         --from markdown
         --to docx
         --reference-doc ./custom-reference.docx)
-
-    open $arg
-}
-
-def open [arg] {
-
+    
     let os = sys | get host | get name
     match $os {
         "Linux" => {
             print 'Linux'
-            xdg-open ($targetDir + $targetName)
+            xdg-open $targetName
         },
         "Windows" => {
             print 'MS Windows'
-            start ($targetDir + $targetName)
+            start ("target" + $targetName)
         },
         "NixOS" => {
             print 'NixOS'
-            xdg-open ($targetDir + $targetName)
+            xdg-open $targetName
         },
         _ => {
-            print 'Other OS: ' + $os 
+            print 'Other OS'
         }
     }
 }
 
-def main [arg] {
-    build $arg
-}
+
