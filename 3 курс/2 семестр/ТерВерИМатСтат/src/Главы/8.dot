@@ -1,0 +1,62 @@
+digraph MindMap {
+  dpi=300;
+  size = "15";
+  fontname="Helvetica";
+  graph [ranksep=2];
+
+  node [
+    shape=ellipse
+    style=filled
+    fillcolor="#03C04A"
+    fontname=Helvetica
+    fontsize=50
+    fontcolor="#FFFFFF"
+    width=10
+    height=6
+    penwidth=0
+    fixedsize=true
+    ];
+  edge [
+    arrowhead=normal
+    arrowsize=2
+    penwidth=5
+    ];
+
+  root [ label="Априорная и апостериорная \n вероятности и правдоподобие \n в теореме Байеса" fontsize=45];
+  
+  node [
+    fontsize=36
+    fillcolor="#008ECC"
+    width=8
+    height=4
+    ];
+  
+   11 [ label="Сравнение \n ненормализованных \n апостериорных \n вероятностей"];
+   12 [ label="Три компонента" ];
+   13 [ label="Заключение" ];
+   14 [ label="Упражнения" ];
+   15 [ label="Рассматриваем \n альтернативную гипотезу" ];
+   16 [ label="Осмотр места происшествия" ];
+   
+  root->{ 11 12 13 14 15 16 };
+  
+  node [
+    fontsize=22
+    fillcolor="#1034AF"
+    width=6
+    height=3
+    ];
+
+  23 [ label="Находим \n правдоподобие" ];
+  24 [ label="Вычисляем априорную \n вероятность" ];
+  25 [ label="Нормализация данных" ];
+
+  15 -> { 23 24 25 };
+
+  26 [ label="Апостериорная \n вероятность \n альтернативной \n гипотезы" ];
+  27 [ label="Правдоподобие \n альтернативной \n гипотезы" ];
+  28 [ label="Априорная вероятность \n альтернативной \n гипотезы" ];
+
+  16 -> { 26 27 28 };
+
+}
