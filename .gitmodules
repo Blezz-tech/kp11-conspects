@@ -1,0 +1,3 @@
+[submodule "example_rust"]
+	path = example_rust
+	url = https://github.com/Blezz-tech/example_rust.git
