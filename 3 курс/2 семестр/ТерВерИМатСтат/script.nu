@@ -12,10 +12,6 @@ def generate-img [] {
 
     cd target
     
-    (circo ./src/Главы/Введение.dot
-        -Tpng
-        -o ./Картинки/Главы/Введение.png )
-    
     let none_none = ls src/Главы/*.dot
         | par-each { 
             |it|
