@@ -51,37 +51,9 @@ reviews
 ### 5
 
 ```python
+animals.to_csv("cows_and_goats.csv")
 
-```
-
-### 6
-
-```python
-
-```
-
-### 7
-
-```python
-
-```
-
-### 8
-
-```python
-
-```
-
-### 9
-
-```python
-
-```
-
-### 10
-
-```python
-
+q5.check()
 ```
 
 ## Indexing, Selecting & Assigning
