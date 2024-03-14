@@ -123,7 +123,7 @@ df
 ### 8
 
 ```python
-italian_wines =  reviews[reviews.country == 'Italy']
+italian_wines =  reviews[reviews.country.isin(['Italy'])]
 
 q8.check()
 ```
@@ -131,13 +131,13 @@ q8.check()
 ### 9
 
 ```python
+top_oceania_wines = reviews.loc[
+    (reviews.country.isin(['Australia', 'New Zealand']))
+    & (reviews.points >= 95)
+]
 
-```
-
-### 10
-
-```python
-
+q9.check()
+top_oceania_wines
 ```
 
 ## Summary Functions and Maps
