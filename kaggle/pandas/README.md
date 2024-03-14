@@ -61,49 +61,71 @@ q5.check()
 ### 1
 
 ```python
+desc = reviews["description"]
 
+q1.check()
 ```
 
 ### 2
 
 ```python
+first_description = reviews.description.iloc[0]
 
+q2.check()
+first_description
 ```
 
 ### 3
 
 ```python
+first_row = reviews.iloc[0]
 
+q3.check()
+first_row
 ```
 
 ### 4
 
 ```python
+first_descriptions = reviews.description.iloc[0:10]
 
+q4.check()
+first_descriptions
 ```
 
 ### 5
 
 ```python
+sample_reviews = reviews.iloc[[1,2,3,5,8]]
 
+q5.check()
+sample_reviews
 ```
 
 ### 6
 
 ```python
+df = reviews.loc[[0,1,10,100], ["country", "province", "region_1", "region_2"]]
 
+q6.check()
+df
 ```
 
 ### 7
 
 ```python
+df = reviews.loc[0:99, ["country", "variety"]]
 
+q7.check()
+df
 ```
 
 ### 8
 
 ```python
+italian_wines =  reviews[reviews.country == 'Italy']
 
+q8.check()
 ```
 
 ### 9
