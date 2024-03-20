@@ -1,0 +1,44 @@
+digraph MindMap {
+  dpi=300;
+  size = "15";
+  fontname="Helvetica";
+  graph [ranksep=2];
+
+  node [
+    shape=ellipse
+    style=filled
+    fillcolor="#03C04A"
+    fontname=Helvetica
+    fontsize=50
+    fontcolor="#FFFFFF"
+    width=10
+    height=6
+    penwidth=0
+    fixedsize=true
+    ];
+  edge [
+    arrowhead=normal
+    arrowsize=2
+    penwidth=5
+    ];
+
+  root [ label="Глава 14. \n Оценка параметров \n с априорными вероятностями" fontsize=45];
+  
+  node [
+    fontsize=36
+    fillcolor="#008ECC"
+    width=8
+    height=4
+    ];
+  
+   11 [ label="Прогнозирование коэффициентов \n конверсии рассылки" ];
+   12 [ label="Использование широкого \n контекста с априорными \n вероятностями" ];
+   13 [ label="Априорная вероятность \n как средство \n измерения опыта" ];
+   14 [ label="Существует ли \n справедливая априорная \n вероятность, если \n ничего не известно?" ];
+   15 [ label="Заключение" ];
+   16 [ label="Упражнения" ];
+   
+  root->{ 11 12 13 15 16 };
+
+}
+

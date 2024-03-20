@@ -1,0 +1,53 @@
+digraph MindMap {
+  dpi=300;
+  size = "15";
+  fontname="Helvetica";
+  graph [ranksep=2];
+
+  node [
+    shape=ellipse
+    style=filled
+    fillcolor="#03C04A"
+    fontname=Helvetica
+    fontsize=50
+    fontcolor="#FFFFFF"
+    width=10
+    height=6
+    penwidth=0
+    fixedsize=true
+    ];
+  edge [
+    arrowhead=normal
+    arrowsize=2
+    penwidth=5
+    ];
+
+  root [ label="Глава 13. Инструменты оценки \n параметров: PDF, CDF \n и квантильная функция" fontsize=45];
+  
+  node [
+    fontsize=36
+    fillcolor="#008ECC"
+    width=8
+    height=4
+    ];
+  
+  11 [ label="Оценка коэффициента \n конверсии рассылки" ];
+  12 [ label="Функция плотности \n вероятности" ];
+  13 [ label="Визуализация и \n интерпретация PDF" ];
+  14 [ label="Работа с PDF в R" ];
+  15 [ label="Введение в кумулятивную \n функцию распределения" ];
+  16 [ label="Визуализация и \n интерпретация CDF" ];
+  17 [ label="Нахождение медианы" ];
+  18 [ label="Визуальное приближение \n интегралов" ];
+  19 [ label="Оценка доверительных \n интервалов" ];
+  20 [ label="Использование CDF \n в R" ];
+  21 [ label="Квантильная функция" ];
+  22 [ label="Визуализация и \n понимание квантильной \n функции" ];
+  23 [ label="Вычисление \n квантилей в R" ];
+  24 [ label="Заключение" ];
+  25 [ label="Упражнения" ];
+   
+  root->{ 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 };
+
+}
+
