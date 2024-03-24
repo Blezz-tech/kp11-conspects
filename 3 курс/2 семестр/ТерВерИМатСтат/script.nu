@@ -1,18 +1,21 @@
 let targetName = "./output.docx"
 
 def generate-img [] {
-    mkdir target/Картинки
-    mkdir target/src
+    # mkdir target/src
+    # mkdir target/src/Картинки
 
-    mkdir target/Картинки/Главы
+    # cp src/Картинки/* target/src/Картинки -r
+    # cp src/* target/src -r
+    # cp custom-reference.docx target
 
-    cp Картинки/* target/Картинки -r
-    cp src/* target/src -r
-    cp custom-reference.docx target
+    mkdir target
+    mkdir target/src/Картинки/Главы
 
-    cd target
+    cp src/ target/ --recursive
+
+    cd target/src/
     
-    let none_none = ls src/Главы/*.dot
+    let none_none = ls Главы/*.dot
         | par-each { 
             |it|
             print $it.name
@@ -26,7 +29,7 @@ def generate-img [] {
                 -o $name )
         }
 
-    let none_none = ls src/*.ipynb
+    let none_none = ls ./*.ipynb
         | par-each { 
             |it|
             print $it.name
@@ -44,10 +47,10 @@ def main [] {
 # Создание всех конкретного документов
 def "main build-all" [] {
     generate-img
-    cd target
+    cd target/src
 
     # Генерация Документов
-    let none_none = ls src/*.md
+    let none_none = ls *.md
         | par-each { 
             |it|
             print $it.name
@@ -65,7 +68,7 @@ def "main build-all" [] {
 # Создание и открытие конкретного документа
 def "main open" [arg] {
     generate-img
-    cd target
+    cd target/src/
 
     let file_path = match $arg {
         0 => "0.md",
@@ -91,7 +94,7 @@ def "main open" [arg] {
 
     print ("Билдится " + $file_path)
 
-    (pandoc ("./src/" + $file_path)
+    (pandoc $file_path
         -o $targetName
         --from markdown
         --to docx
