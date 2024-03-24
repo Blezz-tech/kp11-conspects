@@ -13,8 +13,12 @@
     devShells.${system} = {
       default = pkgs.mkShell rec {
         nativeBuildInputs = with pkgs; [
-
-          python3
+          graphviz
+          nushellFull
+          python311Full
+          python311Packages.jupyter
+          python311Packages.matplotlib
+          python311Packages.numpy
         ];
         buildInputs = with pkgs; [];
       };
