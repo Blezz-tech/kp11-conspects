@@ -15,6 +15,7 @@
         nativeBuildInputs = with pkgs; [
           graphviz
           nushellFull
+          pandoc
           python311Full
           python311Packages.jupyter
           python311Packages.matplotlib
