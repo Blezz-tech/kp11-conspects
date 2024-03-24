@@ -25,6 +25,16 @@ def generate-img [] {
                 -Tpng
                 -o $name )
         }
+
+    let none_none = ls src/*.ipynb
+        | par-each { 
+            |it|
+            print $it.name
+            
+            (jupyter nbconvert
+                --to markdown
+                --execute $it.name)
+        }
 }
 
 def main [] {
