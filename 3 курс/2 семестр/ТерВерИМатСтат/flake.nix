@@ -19,6 +19,8 @@
           python311Packages.jupyter
           python311Packages.matplotlib
           python311Packages.numpy
+          python311Packages.scipy
+          python311Packages.nbconvert
         ];
         buildInputs = with pkgs; [];
       };
