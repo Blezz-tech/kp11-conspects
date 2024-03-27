@@ -22,6 +22,7 @@
           python311Packages.numpy
           python311Packages.scipy
           python311Packages.nbconvert
+          python311Packages.statsmodels
         ];
         buildInputs = with pkgs; [];
       };

@@ -1,0 +1,58 @@
+digraph MindMap {
+  dpi=300;
+  size = "15";
+  fontname="Helvetica";
+  graph [ranksep=2];
+
+  node [
+    shape=ellipse
+    style=filled
+    fillcolor="#03C04A"
+    fontname=Helvetica
+    fontsize=50
+    fontcolor="#FFFFFF"
+    width=10
+    height=6
+    penwidth=0
+    fixedsize=true
+    ];
+  edge [
+    arrowhead=normal
+    arrowsize=2
+    penwidth=5
+    ];
+
+  root [ label="От оценки параметров \n к проверке гипотез: \n создание байесовских \n А/В-тестов" fontsize=45];
+
+
+  node [
+    fontsize=36
+    fillcolor="#008ECC"
+    width=8
+    height=4
+    ];
+  
+   11 [ label="Настройка байесовского \n А/В-теста"];
+   12 [ label="Моделирование по \n методу Монте-Карло" ];
+   13 [ label="Заключение" ];
+   14 [ label="Упражнения" ];
+   
+  root->{ 11 12 13 14 };
+  
+  node [
+    fontsize=22
+    fillcolor="#1034AF"
+    width=6
+    height=3
+    ];
+
+  21 [ label="Нахождение априорной \n вероятности" ];
+  22 [ label="Сбор данных" ];
+  23 [ label="В скольких мирах \n B — лучший вариант?" ];
+  24 [ label="Насколько каждый \n вариант B лучше, \n чем каждый вариант A?" ];
+
+  11 -> { 21 22 };
+  12 -> { 23 24 };
+
+
+}

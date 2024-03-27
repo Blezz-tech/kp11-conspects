@@ -1,0 +1,60 @@
+digraph MindMap {
+  dpi=300;
+  size = "15";
+  fontname="Helvetica";
+  graph [ranksep=2];
+
+  node [
+    shape=ellipse
+    style=filled
+    fillcolor="#03C04A"
+    fontname=Helvetica
+    fontsize=50
+    fontcolor="#FFFFFF"
+    width=10
+    height=6
+    penwidth=0
+    fixedsize=true
+    ];
+  edge [
+    arrowhead=normal
+    arrowsize=2
+    penwidth=5
+    ];
+
+  root [ label="Введение \n в коэффициент Байеса \n и апостериорные шансы: \n конкуренция идей" fontsize=45];
+
+
+
+  node [
+    fontsize=36
+    fillcolor="#008ECC"
+    width=8
+    height=4
+    ];
+  
+   11 [ label="Пересмотр теоремы \n Байеса"];
+   12 [ label="Создание проверки \n гипотезы с использованием \n отношения постериоров" ];
+   13 [ label="Заключение" ];
+   14 [ label="Упражнения" ];
+   
+  root->{ 11 12 13 14 };
+  
+  node [
+    fontsize=22
+    fillcolor="#1034AF"
+    width=6
+    height=3
+    ];
+
+  21 [ label="Коэффициент Байеса" ];
+  22 [ label="Априорные шансы" ];
+  23 [ label="Апостериорные шансы" ];
+  24 [ label="Проверка утяжеленной \n игральной кости" ];
+  25 [ label="Самодиагностика по интернету" ];
+
+  12 -> { 21 22 23 24 25 };
+
+
+
+}
