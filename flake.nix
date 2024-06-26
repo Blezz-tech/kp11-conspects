@@ -1,53 +1,69 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:cachix/devenv-nixpkgs/rolling";
     systems.url = "github:nix-systems/default";
-    devenv.url = "github:cachix/devenv/v0.6.3";
+    devenv.url = "github:cachix/devenv";
+    devenv.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { nixpkgs, devenv, systems, ... }@inputs:
-    let forEachSystem = nixpkgs.lib.genAttrs (import systems);
-    in {
-      devShells = forEachSystem (system:
-        let pkgs = nixpkgs.legacyPackages.${system};
-        in {
-          default = devenv.lib.mkShell {
-            inherit inputs pkgs;
-            modules = [{
+  nixConfig = {
+    extra-trusted-public-keys = "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=";
+    extra-substituters = "https://devenv.cachix.org";
+  };
 
-              packages = with pkgs; [
-                mysql-workbench
-              ];
+  outputs = { self, nixpkgs, devenv, systems, ... } @ inputs:
+    let
+      forEachSystem = nixpkgs.lib.genAttrs (import systems);
+    in
+    {
+      packages = forEachSystem (system: {
+        devenv-up = self.devShells.${system}.default.config.procfileScript;
+      });
 
-              languages.php = {
-                enable = true;
-                version = "8.1";
-              };
+      devShells = forEachSystem
+        (system:
+          let
+            pkgs = nixpkgs.legacyPackages.${system};
+          in
+          {
+            default = devenv.lib.mkShell {
+              inherit inputs pkgs;
+              modules = [
+                {
+                  packages = with pkgs; [
+                    mysql-workbench
+                  ];
 
-              services.mysql = {
-                enable = true;
-                package = pkgs.mariadb;
-                initialDatabases = [{ name = "qual_pei"; }];
-                ensureUsers = [
-                  {
-                    name = "root";
-                    password = "";
-                    ensurePermissions = { "root.*" = "ALL PRIVILEGES"; };
-                  }
-                ];
-                settings = {
-                  mysqld = {
-                    "bind_address" = "localhost";
+                  languages.php = {
+                    enable = true;
+                    version = "8.1";
                   };
-                };
-              };
 
-              scripts = {
-                EnvClearAll.exec = "rm -rf ./.devenv ./.direnv";
-                EnvClearStatic.exec = "rm -rf ./.devenv/state";
-              };
-            }];
-          };
-        });
+                  services.mysql = {
+                    enable = true;
+                    package = pkgs.mariadb;
+                    initialDatabases = [{ name = "qual-pei"; }];
+                    ensureUsers = [
+                      {
+                        name = "root";
+                        password = "";
+                        ensurePermissions = { "root.*" = "ALL PRIVILEGES"; };
+                      }
+                    ];
+                    settings = {
+                      mysqld = {
+                        "bind_address" = "localhost";
+                      };
+                    };
+                  };
+
+                  scripts = {
+                    EnvClearAll.exec = "rm -rf ./.devenv ./.direnv";
+                    EnvClearStatic.exec = "rm -rf ./.devenv/state";
+                  };
+                }
+              ];
+            };
+          });
     };
 }
