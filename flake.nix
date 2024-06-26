@@ -27,7 +27,7 @@
               services.mysql = {
                 enable = true;
                 package = pkgs.mariadb;
-                initialDatabases = [{ name = "qual-pei"; }];
+                initialDatabases = [{ name = "qual_pei"; }];
                 ensureUsers = [
                   {
                     name = "root";
