@@ -46,10 +46,15 @@
                                         </li>
                                     @else
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="{{ route('admin.products.index') }}">Все продукты</a>
+                                            <a class="nav-link active" href="{{ route('admin.orders.all') }}">Все заявки</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="{{ route('admin.products.create') }}">Создать продукт</a>
+                                            <a class="nav-link active" href="{{ route('admin.products.index') }}">Все
+                                                продукты</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="{{ route('admin.products.create') }}">Создать
+                                                продукт</a>
                                         </li>
                                     @endif
                                     <li class="nav-item">

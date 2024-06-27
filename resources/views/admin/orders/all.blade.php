@@ -29,7 +29,7 @@
                         @elseif ($ticket->status == -1)
                             Отказано
                         @else
-                            <form action="{{ route('admin.change.status') }}" method="POST">
+                            <form action="{{ route('admin.orders.changestatus') }}" method="POST">
                                 @csrf
                                 <input type="hidden" name="id" value="{{ $order->id }}">
                                 <div class="form-check">
