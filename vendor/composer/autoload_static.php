@@ -8,21 +8,21 @@ class ComposerStaticInit2506c0fccb63d618850cad8033362779
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
+        '6264df2020ce3a5f27360e1523541f0e' => __DIR__ . '/..' . '/laravel-lang/publisher/helper.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '6264df2020ce3a5f27360e1523541f0e' => __DIR__ . '/..' . '/laravel-lang/publisher/helper.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
@@ -125,6 +125,9 @@ class ComposerStaticInit2506c0fccb63d618850cad8033362779
             'Laravel\\Sail\\' => 13,
             'LaravelLang\\Publisher\\' => 22,
             'LaravelLang\\Lang\\' => 17,
+            'LaravelLang\\HttpStatuses\\' => 25,
+            'LaravelLang\\Attributes\\' => 23,
+            'LaravelLang\\Actions\\' => 20,
         ),
         'I' => 
         array (
@@ -429,6 +432,18 @@ class ComposerStaticInit2506c0fccb63d618850cad8033362779
         'LaravelLang\\Lang\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel-lang/lang/src',
+        ),
+        'LaravelLang\\HttpStatuses\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-lang/http-statuses/src',
+        ),
+        'LaravelLang\\Attributes\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-lang/attributes/src',
+        ),
+        'LaravelLang\\Actions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-lang/actions/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -2869,6 +2884,16 @@ class ComposerStaticInit2506c0fccb63d618850cad8033362779
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'LaravelLang\\Actions\\Plugin' => __DIR__ . '/..' . '/laravel-lang/actions/src/Plugin.php',
+        'LaravelLang\\Actions\\Plugins\\Main' => __DIR__ . '/..' . '/laravel-lang/actions/src/Plugins/Main.php',
+        'LaravelLang\\Actions\\ServiceProvider' => __DIR__ . '/..' . '/laravel-lang/actions/src/ServiceProvider.php',
+        'LaravelLang\\Attributes\\Plugin' => __DIR__ . '/..' . '/laravel-lang/attributes/src/Plugin.php',
+        'LaravelLang\\Attributes\\Plugins\\Laravel' => __DIR__ . '/..' . '/laravel-lang/attributes/src/Plugins/Laravel.php',
+        'LaravelLang\\Attributes\\Plugins\\Lumen' => __DIR__ . '/..' . '/laravel-lang/attributes/src/Plugins/Lumen.php',
+        'LaravelLang\\Attributes\\ServiceProvider' => __DIR__ . '/..' . '/laravel-lang/attributes/src/ServiceProvider.php',
+        'LaravelLang\\HttpStatuses\\Plugin' => __DIR__ . '/..' . '/laravel-lang/http-statuses/src/Plugin.php',
+        'LaravelLang\\HttpStatuses\\Plugins\\Main' => __DIR__ . '/..' . '/laravel-lang/http-statuses/src/Plugins/Main.php',
+        'LaravelLang\\HttpStatuses\\ServiceProvider' => __DIR__ . '/..' . '/laravel-lang/http-statuses/src/ServiceProvider.php',
         'LaravelLang\\Lang\\Plugin' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugin.php',
         'LaravelLang\\Lang\\Plugins\\Breeze\\Master' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Breeze/Master.php',
         'LaravelLang\\Lang\\Plugins\\Breeze\\V1' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Breeze/V1.php',
