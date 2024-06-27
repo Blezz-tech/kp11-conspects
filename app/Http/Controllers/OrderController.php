@@ -5,10 +5,28 @@ namespace App\Http\Controllers;
 use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
+    public function changestatus(Request $request)
+    {
+        $ticket = Order::find($request->id);
+        $ticket->status = $request->status;
+        $ticket->save();
+        return redirect()->route('showpanel')->with(['info' => 'Статус успешно изменён']);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function all()
+    {
+        $orders = Order::all();
+        return view('admin.orders.all', [ "orders" => $orders ]);
+    }
+
     /**
      * Display a listing of the resource.
      *
