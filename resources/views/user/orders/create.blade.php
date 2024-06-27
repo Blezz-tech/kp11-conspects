@@ -21,7 +21,7 @@
                                 @csrf
                                 <input class="form-control" type="text" name="product_id" value="{{ $product->id }}" hidden required>
                                 <input class="form-control" type="text" name="address" placeholder="Адрес" required>
-                                <input class="form-control" type="number" name="count" placeholder="Количество" required>
+                                <input class="form-control" type="number" name="count" placeholder="Количество" min="1" required>
                                 <button type="submit" class="btn btn-primary">Заказать</button>
                             </div>
                         </form>
