@@ -10,7 +10,7 @@ erDiagram
         int id
         string login
         string password
-        string fio
+        string name
         string phone
         string email
         bool is_admin
