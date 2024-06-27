@@ -32,7 +32,7 @@
                                         <a class="nav-link active" href="{{ route('regform') }}">Регистрация</a>
                                     </li>
                                     <li class="nav-item">
-                                        {{-- <a class="nav-link active" href="{{ route('loginform') }}">Вход</a> --}}
+                                        <a class="nav-link active" href="{{ route('loginform') }}">Вход</a>
                                     </li>
                                 @endguest
                                 @auth

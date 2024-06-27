@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -18,13 +19,51 @@ class UserController extends Controller
     }
 
     /**
+     * Show the form for login form.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function loginform()
+    {
+        return view("guest.loginform");
+    }
+
+    /**
+     * Login user.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function login(Request $request)
+    {
+        $credentials = $request->validate([
+            'login' => ['required'],
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            if (Auth::user()->is_admin) {
+                return redirect()->route('showpanel')->with(['info' => 'Успешный вход']);
+            }
+            return redirect()->route('home')->with(['info' => 'Успешный вход']);
+        }
+
+        return back()->withErrors([
+            'login' => 'The provided credentials do not match our records.',
+        ])->onlyInput('login');
+    }
+
+
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view("guest.regform");
     }
 
     /**
@@ -95,10 +134,5 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function regform()
-    {
-        return view("guest.regform");
     }
 }

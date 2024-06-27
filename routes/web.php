@@ -19,10 +19,10 @@ Route::get('/', function () {
 })->name("home");
 
 Route::middleware(['guest'])->group(function () {
-    Route::get('/register', [UserController::class, 'regform'])->name('regform');
+    Route::get('/register', [UserController::class, 'create'])->name('regform');
     Route::post('/register', [UserController::class, 'store'])->name('register');
-    // Route::get('/login', [RegisterController::class, 'loginform'])->name('loginform');
-    // Route::post('/login', [RegisterController::class, 'login'])->name('login');
+    Route::get('/login', [UserController::class, 'loginform'])->name('loginform');
+    Route::post('/login', [UserController::class, 'login'])->name('login');
 });
 
 Route::middleware(['auth'])->group(function () {
