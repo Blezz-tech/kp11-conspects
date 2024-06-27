@@ -3,7 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,6 +22,15 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
-        // ]);
+        // ]);use App\Models\Ticket;
+
+        # Admin
+        DB::table('users')->insert([
+            'login' => 'sklad',
+            'name' => 'Admin',
+            'email' => 'admin@admin.admin',
+            'password' => Hash::make('123qwe'),
+        ]);
+
     }
 }
