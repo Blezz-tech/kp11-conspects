@@ -35,11 +35,9 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::middleware(['admin'])->group(function () {
+    Route::get('/admin/products/index', [ProductContoller::class, 'index'])->name('admin.products.index');
+    Route::get('/admin/products/create', [ProductContoller::class, 'create'])->name('admin.products.create');
+    Route::post('/admin/products/store', [ProductContoller::class, 'store'])->name('admin.products.store');
     // Route::get('/admin', [AdminController::class, 'showPanel'])->name('showpanel');
     // Route::post('/changestatus', [TicketController::class, 'changestatus'])->name('changestatus');
 });
-
-
-Route::get('/admin/products/index', [ProductContoller::class, 'index'])->name('products.index');
-Route::get('/admin/products/create', [ProductContoller::class, 'create'])->name('products.create');
-Route::post('/admin/products/store', [ProductContoller::class, 'store'])->name('products.store');

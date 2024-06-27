@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('content')
-    <form class="mt-4" method="POST" action="{{ route('products.store') }}">
+    <form class="mt-4" method="POST" action="{{ route('admin.products.store') }}">
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Наименование</label>

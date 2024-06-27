@@ -36,26 +36,26 @@
                                     </li>
                                 @endguest
                                 @auth
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="{{ route('user.orders.index') }}">Мои заказы</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="{{ route('user.orders.create') }}">Заказать</a>
-                                    </li>
+                                    @if (!Auth::user()->is_admin)
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="{{ route('user.orders.index') }}">Мои
+                                                заказы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="{{ route('user.orders.create') }}">Заказать</a>
+                                        </li>
+                                    @else
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="{{ route('admin.products.index') }}">Все продукты</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="{{ route('admin.products.create') }}">Создать продукт</a>
+                                        </li>
+                                    @endif
                                     <li class="nav-item">
                                         <a class="nav-link active" href="{{ route('logout') }}">Выйти</a>
                                     </li>
                                 @endauth
-                                {{-- @if (Auth::check() && Auth::user()->is_admin)
-                            <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('showpanel') }}">Все записи</a>
-                            </li>
-                        @endif --}}
-                                {{-- @auth('admin')
-                            <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('showpanel') }}">Все записи</a>
-                            </li>
-                        @endauth --}}
                             </ul>
                         </div>
                     </div>

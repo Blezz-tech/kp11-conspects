@@ -43,9 +43,6 @@ class UserController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            if (Auth::user()->is_admin) {
-                return redirect()->route('showpanel')->with(['info' => 'Успешный вход']);
-            }
             return redirect()->route('home')->with(['info' => 'Успешный вход']);
         }
 
