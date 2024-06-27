@@ -13,11 +13,12 @@ erDiagram
         string fio
         string phone
         string email
+        bool is_admin
     }
 
-    ADMIN {
-        int user_id
-    }
+    %% ADMIN {
+    %%     int user_id
+    %% }
     
     PRODUCT {
         int id
