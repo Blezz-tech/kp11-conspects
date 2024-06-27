@@ -37,10 +37,10 @@
                                 @endguest
                                 @auth
                                     <li class="nav-item">
-                                        {{-- <a class="nav-link active" href="{{ route('mytickets') }}">Мои записи</a> --}}
+                                        <a class="nav-link active" href="{{ route('user.orders.index') }}">Мои заказы</a>
                                     </li>
                                     <li class="nav-item">
-                                        {{-- <a class="nav-link active" href="{{ route('createticket') }}">Записаться</a> --}}
+                                        <a class="nav-link active" href="{{ route('user.orders.create') }}">Заказать</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active" href="{{ route('logout') }}">Выйти</a>

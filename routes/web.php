@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductContoller;
 
 /*
@@ -27,9 +28,9 @@ Route::middleware(['guest'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    // Route::get('/mytickets', [TicketController::class, 'mytickets'])->name('mytickets');
-    // Route::get('/createticket', [TicketController::class, 'ShowTicketForm'])->name('createticket');
-    // Route::post('/createticket', [TicketController::class, 'store'])->name('storeticket');
+    Route::get('/user/orders/index', [OrderController::class, 'index'])->name('user.orders.index');
+    Route::get('/user/orders/create', [OrderController::class, 'create'])->name('user.orders.create');
+    Route::post('/user/orders/store', [OrderController::class, 'store'])->name('user.orders.store');
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 });
 

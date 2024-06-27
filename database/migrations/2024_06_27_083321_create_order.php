@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
+            $table->integer('count');
             $table->string('address');
             $table->integer('status');
             $table->timestamps();

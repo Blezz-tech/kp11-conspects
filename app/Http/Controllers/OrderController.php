@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
@@ -13,7 +16,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $orders = auth()->user()->orders;
+        return view('user.orders.index', [ "orders" => $orders ]);
     }
 
     /**
@@ -23,7 +27,8 @@ class OrderController extends Controller
      */
     public function create()
     {
-        //
+        $products = Product::all();
+        return view('user.orders.create', ['products' => $products]);
     }
 
     /**
@@ -34,7 +39,19 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'product_id' => ['required'],
+            'address' => ['required'],
+            'count' => ['required'],
+        ]);
+        $order = Order::create([
+            'product_id' => $request->product_id,
+            'address' => $request->address,
+            'count' => $request->count,
+            'user_id' => Auth::user()->id,
+            'status' => 0,
+        ]);
+        return redirect()->route('home')->with(['info' => 'Заказ успешно создан']);
     }
 
     /**
