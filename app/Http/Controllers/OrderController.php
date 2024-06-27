@@ -44,11 +44,12 @@ class OrderController extends Controller
             'address' => ['required'],
             'count' => ['required'],
         ]);
+
         $order = Order::create([
             'product_id' => $request->product_id,
             'address' => $request->address,
             'count' => $request->count,
-            'user_id' => Auth::user()->id,
+            'user_id' => auth()->user()->id,
             'status' => 0,
         ]);
         return redirect()->route('home')->with(['info' => 'Заказ успешно создан']);
