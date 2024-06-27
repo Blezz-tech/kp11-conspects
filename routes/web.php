@@ -40,5 +40,5 @@ Route::middleware(['admin'])->group(function () {
 
 
 Route::get('/admin/products/index', [ProductContoller::class, 'index'])->name('products.index');
-
-
+Route::get('/admin/products/create', [ProductContoller::class, 'create'])->name('products.create');
+Route::post('/admin/products/store', [ProductContoller::class, 'store'])->name('products.store');
