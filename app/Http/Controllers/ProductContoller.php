@@ -40,7 +40,7 @@ class ProductContoller extends Controller
             'name' => ['required'],
             'price' => ['required'],
         ]);
-        $ticket = Product::create([
+        $product = Product::create([
             'name' => $request->name,
             'price' => $request->price,
         ]);

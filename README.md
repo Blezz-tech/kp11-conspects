@@ -30,6 +30,7 @@ erDiagram
         int id
         int user_id
         int product_id
+        int count
         string address
         int status
     }
