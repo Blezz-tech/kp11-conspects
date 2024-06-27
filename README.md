@@ -2,7 +2,42 @@
 
 - [задание](./docs/task.md)
 
+ER Диаграмма
 
+```mermaid
+erDiagram
+    USER {
+        int id
+        string login
+        string password
+        string fio
+        string phone
+        string email
+    }
+
+    ADMIN {
+        int user_id
+    }
+    
+    PRODUCT {
+        int id
+        string name
+        float price
+    }
+
+    ORDER {
+        int id
+        int user_id
+        int product_id
+        string address
+        int status
+    }
+
+    USER ||--|| ADMIN : user_id
+
+    USER ||--o{ ORDER : user_id
+    PRODUCT ||--o{ ORDER : product_id
+```
 
 
 # Дефолт
