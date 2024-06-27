@@ -29,7 +29,9 @@ class DatabaseSeeder extends Seeder
             'login' => 'sklad',
             'name' => 'Admin',
             'email' => 'admin@admin.admin',
+            'phone' => '+7(800)-555-35-35',
             'password' => Hash::make('123qwe'),
+            'is_admin' => true,
         ]);
 
     }
