@@ -34,7 +34,7 @@ erDiagram
         int status
     }
 
-    USER ||--|| ADMIN : user_id
+    %% USER ||--|| ADMIN : user_id
 
     USER ||--o{ ORDER : user_id
     PRODUCT ||--o{ ORDER : product_id
