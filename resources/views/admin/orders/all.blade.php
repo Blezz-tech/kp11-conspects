@@ -24,9 +24,9 @@
                     <td>{{ $order->count * $order->product->price }}</td>
                     <td>{{ $order->address }}</td>
                     <td>
-                        @if ($ticket->status == 1)
+                        @if ($order->status == 1)
                             Принято
-                        @elseif ($ticket->status == -1)
+                        @elseif ($order->status == -1)
                             Отказано
                         @else
                             <form action="{{ route('admin.orders.changestatus') }}" method="POST">
