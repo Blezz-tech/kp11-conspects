@@ -30,9 +30,9 @@
               inherit inputs pkgs;
               modules = [
                 {
-                  # packages = with pkgs; [
-                  #   mysql-workbench
-                  # ];
+                  packages = with pkgs; [
+                    mysql-workbench
+                  ];
 
                   languages.php = {
                     enable = true;
