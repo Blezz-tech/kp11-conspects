@@ -12,8 +12,8 @@
             @forelse($products as $key => $product)
                 <tr>
                     <th>{{$key}}</th>
-                    <td>{{$name}}</td>
-                    <td>{{$price}}</td>
+                    <td>{{$product->name}}</td>
+                    <td>{{$product->price}}</td>
                 </tr>
             @empty
                 <tr>
