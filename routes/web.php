@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('all.home');
+})->name("home");
 
 Route::middleware(['guest'])->group(function () {
     // Route::get('/register', [RegisterController::class, 'regform'])->name('regform');
