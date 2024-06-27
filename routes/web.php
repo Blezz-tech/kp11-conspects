@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,8 +19,8 @@ Route::get('/', function () {
 })->name("home");
 
 Route::middleware(['guest'])->group(function () {
-    // Route::get('/register', [RegisterController::class, 'regform'])->name('regform');
-    // Route::post('/register', [RegisterController::class, 'register'])->name('register');
+    Route::get('/register', [UserController::class, 'regform'])->name('regform');
+    Route::post('/register', [UserController::class, 'store'])->name('register');
     // Route::get('/login', [RegisterController::class, 'loginform'])->name('loginform');
     // Route::post('/login', [RegisterController::class, 'login'])->name('login');
 });

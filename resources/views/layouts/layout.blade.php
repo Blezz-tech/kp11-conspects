@@ -29,7 +29,7 @@
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 @guest
                                     <li class="nav-item">
-                                        {{-- <a class="nav-link active" href="{{ route('regform') }}">Регистрация</a> --}}
+                                        <a class="nav-link active" href="{{ route('regform') }}">Регистрация</a>
                                     </li>
                                     <li class="nav-item">
                                         {{-- <a class="nav-link active" href="{{ route('loginform') }}">Вход</a> --}}
