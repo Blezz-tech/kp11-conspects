@@ -13,7 +13,7 @@ class OrderController extends Controller
         $ticket = Order::find($request->id);
         $ticket->status = $request->status;
         $ticket->save();
-        return redirect()->route('showpanel')->with(['info' => 'Статус успешно изменён']);
+        return redirect()->route('admin.orders.all')->with(['info' => 'Статус успешно изменён']);
     }
 
     /**
