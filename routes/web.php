@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductContoller;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,8 @@ Route::middleware(['admin'])->group(function () {
     // Route::get('/admin', [AdminController::class, 'showPanel'])->name('showpanel');
     // Route::post('/changestatus', [TicketController::class, 'changestatus'])->name('changestatus');
 });
+
+
+Route::get('/admin/products/index', [ProductContoller::class, 'index'])->name('products.index');
+
+
