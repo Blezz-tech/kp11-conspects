@@ -34,5 +34,26 @@ class DatabaseSeeder extends Seeder
             'is_admin' => true,
         ]);
 
+        # Товары
+        foreach ([
+            ['Арбуз', '200'],
+            ['Шоколад', '100'],
+            ['Сахар', '150'],
+            ['Кекс', '75'],
+        ] as $key => $product) {
+            DB::table('products')->insert([
+                'name' => $product[0],
+                'price' => $product[1],
+            ]);
+        }
+
+        # Юззвери
+        DB::table('users')->insert([
+            'login' => 'admin',
+            'password' => Hash::make('1234'),
+            'phone' => '+7(800)-555-35-35',
+            'name' => 'пользователь',
+            'email' => Str::random(10).'@example.com',
+        ]);
     }
 }
