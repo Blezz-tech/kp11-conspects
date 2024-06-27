@@ -29,7 +29,7 @@ Route::middleware(['auth'])->group(function () {
     // Route::get('/mytickets', [TicketController::class, 'mytickets'])->name('mytickets');
     // Route::get('/createticket', [TicketController::class, 'ShowTicketForm'])->name('createticket');
     // Route::post('/createticket', [TicketController::class, 'store'])->name('storeticket');
-    // Route::get('/logout', [RegisterController::class, 'logout'])->name('logout');
+    Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 });
 
 Route::middleware(['admin'])->group(function () {

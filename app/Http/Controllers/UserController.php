@@ -54,7 +54,16 @@ class UserController extends Controller
         ])->onlyInput('login');
     }
 
-
+    /**
+     * Logout User.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('home')->with(['info' => 'Выполнен выход из системы']);
+    }
 
     /**
      * Show the form for creating a new resource.

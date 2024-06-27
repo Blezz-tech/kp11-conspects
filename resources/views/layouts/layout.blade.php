@@ -43,7 +43,7 @@
                                         {{-- <a class="nav-link active" href="{{ route('createticket') }}">Записаться</a> --}}
                                     </li>
                                     <li class="nav-item">
-                                        {{-- <a class="nav-link active" href="{{ route('logout') }}">Выйти</a> --}}
+                                        <a class="nav-link active" href="{{ route('logout') }}">Выйти</a>
                                     </li>
                                 @endauth
                                 {{-- @if (Auth::check() && Auth::user()->is_admin)
