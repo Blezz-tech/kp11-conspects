@@ -55,5 +55,29 @@ class DatabaseSeeder extends Seeder
             'name' => 'пользователь',
             'email' => Str::random(10).'@example.com',
         ]);
+
+        # Заказы
+
+        DB::table('orders')->insert([
+            'user_id' => 2,
+            'product_id' => 1,
+            'count' => 300,
+            'address' => "Чебоксары",
+            'status' => 0,
+        ]);
+        DB::table('orders')->insert([
+            'user_id' => 2,
+            'product_id' => 2,
+            'count' => 50,
+            'address' => "Чебоксары",
+            'status' => 0,
+        ]);
+        DB::table('orders')->insert([
+            'user_id' => 2,
+            'product_id' => 3,
+            'count' => 150,
+            'address' => "Чебоксары",
+            'status' => 0,
+        ]);
     }
 }
