@@ -1,15 +1,153 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+
+
+  <div class="row col-12">
+    <div class="narrow-block flex col-12 row items-center" style="margin-left: auto;">
+      <div class="flex column col-7">
+        <div>
+          <h3>О компании</h3>
+          <hr class="q-mt-lg">
+        </div>
+        <div>
+          <h4 class="q-mt-xl q-mb-xl">Наша компания</h4>
+          <p>ООО «МегаСтрой» - известная и активно развивающаяся компания, специализирующаяся в области генподрядных
+            услуг, строительно-монтажных работ, капитального ремонта, реконструкции и реставрации зданий и сооружений,
+            земляных работ и услуг по устройству нулевых циклов. «МегаСтрой» - это сплоченный коллектив
+            профессионалов.</p>
+        </div>
+        <div>
+          <h4 class="q-mt-xl q-mb-xl">Наш коллектив</h4>
+          <p>Основу компании составляют высококвалифицированные специалисты - монтажники, сварщики, механизаторы,
+            механики, которые ежегодно повышают квалификацию в учебных центрах, стажируются на предприятиях,
+            производящих новую технику.
+
+            Именно высокая квалификация персонала нашей компании гарантирует успешное решение инженерно-технических и
+            управленческих задач любого уровня сложности.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-borders shadow-24" style="margin-left: auto;">
+        <h4 class="q-ma-xl">Все наши услуги</h4>
+        <ul class="q-ma-xl">
+          <li><a href="">Генеральный подряд</a></li>
+          <li><a href="">Стена в грунте</a></li>
+          <li><a href="">Монолитное строительство</a></li>
+          <li><a href="">Разработка котлованов</a></li>
+          <li><a href="">Шпунтовое ограждение</a></li>
+          <li><a href="">Буроинъекционные сваи</a></li>
+          <li><a href="">Буронабивные сваи</a></li>
+          <li><a href="">Сваи РИТ, ЭРСТ, Микродур</a></li>
+          <li><a href="">Укрепление грунтов</a></li>
+          <li><a href="">Цементация</a></li>
+          <li><a href="">Усиление фундамента</a></li>
+          <li><a href="">Анкерные системы</a></li>
+          <li><a href="">Гидроизоляция</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--________-->
+
+
+  <!--2 block-->
+  <h3 class="q-mt-lg q-mb-lg">Наши работы</h3>
+  <div class="q-py-lg row q-col-gutter-md">
+    <div class="q-pa-sm col-8" style="background-color: white; height: fit-content;">
+      <q-carousel
+        swipeable
+        animated
+        arrows
+        v-model="slide"
+        v-model:fullscreen="fullscreen"
+        infinite
+      >
+        <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg"/>
+        <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg"/>
+        <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg"/>
+        <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg"/>
+
+        <template v-slot:control>
+          <q-carousel-control
+            position="bottom-right"
+            :offset="[18, 18]"
+          >
+            <q-btn no-caps class="btn text-white" :to="{ name: '49-kvesisskaya' }">Подробнее</q-btn>
+          </q-carousel-control>
+        </template>
+      </q-carousel>
+    </div>
+
+
+    <div class="col-4">
+      <div class="items-center justify-between flex q-pb-md">
+
+        <h4>Новости</h4>
+        <a class="text-dark" href="">Все события</a>
+
+      </div>
+
+      <div class="flex no-wrap q-gutter-sm q-pb-md">
+        <div class="date" style="height: max-content">
+          <div style="width: 50px; height: 50px">
+            <h5 class="text-white">20</h5>
+            Март
+          </div>
+        </div>
+        <div class="column">
+          <h5 style="line-height: initial">
+            <a href="">
+              Выставка «Строительная Техника и Технологии» 2016</a>
+          </h5>
+          <div class="text-body1">СТТ – выставка строительной техники и оборудования №1 в России и странах СНГ.</div>
+        </div>
+      </div>
+
+      <div class="flex no-wrap q-gutter-sm q-pb-md">
+          <div class="date" style="height: max-content">
+            <div style="width: 50px; height: 50px">
+            <h5 class="text-white">20</h5>
+              Май
+          </div>
+          </div>
+        <div class="column">
+          <h5 style="line-height: initial">
+            <a href="">
+              Международной конференции «Энергоинтеграция-2013» </a>
+          </h5>
+          <div class="text-body1">Строительная компания ООО «МегаСтрой» приняла участие в III Международной конференции
+            «Энергоинтеграция-2013» </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--  ____-->
+
+
+  <!--MAP-->
+
+  <iframe class="q-mt-xl narrow-block"
+          src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3Afa9d46d1ec17792480637a31d922323cfbdbc6c5a612341893dbd80e20fd80db"
+          frameborder="0" allowfullscreen="true" width="1280px" height="720px" style="display: block;"></iframe>
+
+
 </template>
 
 <script setup>
-defineOptions({
-  name: 'IndexPage'
-});
+
+</script>
+
+
+<script>
+import {ref} from 'vue'
+
+export default {
+  setup() {
+    return {
+      slide: ref(1)
+    }
+  }
+}
+
+
 </script>
