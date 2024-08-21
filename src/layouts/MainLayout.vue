@@ -1,27 +1,21 @@
+<script>
+import HeaderHeader from 'src/components/HeaderHeader.vue';
+import NavMenu from 'src/components/NavMenu/NavMenu.vue';
+import { ref } from 'vue'
+
+export default {
+  components: { HeaderHeader, NavMenu },
+  setup() {
+    return {
+      slide: ref(1)
+    }
+  }
+}
+</script>
+
 <template>
   <q-layout view="lHh lpR fff" class="m-bg">
-    <q-header class="m-bg">
-      <q-toolbar class="narrow-block">
-        <q-toolbar-title>
-          <div>
-            <div class="q-ma-sm flex">
-              <a href="./"><img src="src/assets/megas.png" alt="" /></a>
-              <div class="flex items-center">
-                <p class="text-grey q-ml-xl" style="font-weight: bold">+7 (495)</p>
-                <h4 class="text-black" style="font-weight: bold">795 93 39</h4>
-              </div>
-              <!-- Добавляем класс для стилизации -->
-              <div class="flex q-col-gutter-md items-center right-aligned">
-                <router-link to="/about">О компании</router-link>
-                <router-link to="/about">Новости</router-link>
-                <router-link to="/about">Наши объекты</router-link>
-                <router-link to="/contacts">Контакты</router-link>
-              </div>
-            </div>
-          </div>
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
+    <HeaderHeader />
     <div style="background-color: #212c32;">
       <div class="narrow-block bg-white relative-position" style="top: 125px">
         <q-carousel animated v-model="slide" arrows infinite>
@@ -33,108 +27,8 @@
       </div>
     </div>
     <div class="narrow-block" style="margin-top: 170px">
-      <q-tabs inline-label class="q-mt-xl q-mb-xl" outside-arrows>
-        <router-link to="podryad" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/1.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">ген</b>
-                <h5>подряд</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="wallgrunt" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/2.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">стена</b>
-                <h5>в грунте</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="monolitnoe-stroitelstvo" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/3.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">монолитное</b>
-                <h5>строительство</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="shpuntovoe-ograzhdenie" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/4.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">шпунтовое</b>
-                <h5>ограждение</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="buronabivnye-svai" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/5.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">Буронабивные</b>
-                <h5>Cваи</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="buroinektsionnye-svai" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/6.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">Буроинъекционные</b>
-                <h5>Cваи</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="sss" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/7.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">РИТ, ЭРСТ</b>
-                <h5>Cваи</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="sss" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/8.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">гидро</b>
-                <h5>изоляция</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="sss" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/9.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">Разработка</b>
-                <h5>котлованов</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-        <router-link to="ssss" style="text-decoration: none;">
-          <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-            <div style="padding-left: 100px; background: url(src/assets/10.png) left center no-repeat;height:100px;">
-              <div class="column justify-center full-height items-start">
-                <b class="no-underline text-black">Укрепление</b>
-                <h5>грунтов</h5>
-              </div>
-            </div>
-          </q-tab>
-        </router-link>
-      </q-tabs>
+      <NavMenu>
+      </NavMenu>
     </div>
     <q-page-container class="m-bg" style="padding-top: 0">
       <q-page>
@@ -186,18 +80,3 @@
     </q-footer>
   </q-layout>
 </template>
-
-<script setup>
-</script>
-
-<script>
-import { ref } from 'vue'
-
-export default {
-  setup() {
-    return {
-      slide: ref(1)
-    }
-  }
-}
-</script>
