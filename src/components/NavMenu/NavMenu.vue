@@ -1,5 +1,5 @@
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, computed, ref } from 'vue'
 
 export default defineComponent({
   name: "NavMenu"
@@ -8,105 +8,89 @@ export default defineComponent({
 
 <template>
   <q-tabs inline-label class="q-mt-xl q-mb-xl" outside-arrows>
-    <router-link to="podryad" style="text-decoration: none;">
+    <router-link v-for="(item, index) in menu" :key="index" :to="item.tmp_routing" style="text-decoration: none;">
       <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/1.png) left center no-repeat;height:100px;">
+        <div :style="tabStyles(item)">
           <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">ген</b>
-            <h5>подряд</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="wallgrunt" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/2.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">стена</b>
-            <h5>в грунте</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="monolitnoe-stroitelstvo" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/3.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">монолитное</b>
-            <h5>строительство</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="shpuntovoe-ograzhdenie" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/4.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">шпунтовое</b>
-            <h5>ограждение</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="buronabivnye-svai" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/5.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">Буронабивные</b>
-            <h5>Cваи</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="buroinektsionnye-svai" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/6.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">Буроинъекционные</b>
-            <h5>Cваи</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="sss" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/7.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">РИТ, ЭРСТ</b>
-            <h5>Cваи</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="sss" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/8.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">гидро</b>
-            <h5>изоляция</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="sss" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/9.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">Разработка</b>
-            <h5>котлованов</h5>
-          </div>
-        </div>
-      </q-tab>
-    </router-link>
-    <router-link to="ssss" style="text-decoration: none;">
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div style="padding-left: 100px; background: url(src/assets/10.png) left center no-repeat;height:100px;">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">Укрепление</b>
-            <h5>грунтов</h5>
+            <b class="no-underline text-black">{{ item.title }}</b>
+            <h5>{{ item.subtitle }}</h5>
           </div>
         </div>
       </q-tab>
     </router-link>
   </q-tabs>
 </template>
+
+<script setup>
+
+// TODO Удалить роутинг, чтобы все они сылались на /articles/:id
+const menu = ref([
+  {
+    'title': 'ген',
+    'subtitle': 'подряд',
+    'img': '/src/assets/1.png',
+    'tmp_routing': 'podryad'
+  },
+  {
+    'title': 'стена',
+    'subtitle': 'в грунте',
+    'img': '/src/assets/2.png',
+    'tmp_routing': 'wallgrunt'
+  },
+  {
+    'title': 'монолитное',
+    'subtitle': 'строительство',
+    'img': '/src/assets/3.png',
+    'tmp_routing': 'monolitnoe-stroitelstvo'
+  },
+  {
+    'title': 'шпунтовое',
+    'subtitle': 'ограждение',
+    'img': '/src/assets/4.png',
+    'tmp_routing': 'shpuntovoe-ograzhdenie'
+  },
+  {
+    'title': 'Буронабивные',
+    'subtitle': 'Cваи',
+    'img': '/src/assets/5.png',
+    'tmp_routing': 'buronabivnye-svai'
+  },
+  {
+    'title': 'Буроинъекционные',
+    'subtitle': 'Cваи',
+    'img': '/src/assets/6.png',
+    'tmp_routing': 'buroinektsionnye-svai'
+  },
+  {
+    'title': 'РИТ, ЭРСТ',
+    'subtitle': 'Cваи',
+    'img': '/src/assets/7.png',
+    'tmp_routing': 'sss'
+  },
+  {
+    'title': 'гидро',
+    'subtitle': 'изоляция',
+    'img': '/src/assets/8.png',
+    'tmp_routing': 'sss'
+  },
+  {
+    'title': 'Разработка',
+    'subtitle': 'котлованов',
+    'img': '/src/assets/9.png',
+    'tmp_routing': 'sss'
+  },
+  {
+    'title': 'Укрепление',
+    'subtitle': 'грунтов',
+    'img': '/src/assets/10.png',
+    'tmp_routing': 'ssss'
+  }
+]);
+
+const tabStyles = computed(() => (item) => ({
+  paddingLeft: '100px',
+  background: `url(${item.img}) left center no-repeat`,
+  height: '100px',
+}));
+
+</script>
