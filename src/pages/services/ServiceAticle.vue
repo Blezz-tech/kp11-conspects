@@ -186,9 +186,15 @@ _Существует несколько разновидностей данно
   
 ]
 
+function fakeFetch(id) {
+  return articles.filter(item => item.id == id)[0];
+}
+
 
 </script>
 
 <template>
-  <MarkdownRenderer :source="articles[$route.params.id]" />
+  <MarkdownRenderer
+    :source="fakeFetch(Number($route.params.id)).text"
+  />
 </template>
