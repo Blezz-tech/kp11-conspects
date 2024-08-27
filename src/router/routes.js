@@ -10,16 +10,8 @@ const routes = [
       { path: 'documents', component: () => import('pages/DocumentsIndex.vue'), name: 'Documents' },
       { path: '/services/:id', component: () => import('pages/services/ServiceAticle.vue'), name: 'Service' },
 
-      { path: 'podryad', component: () => import('pages/services/FirstService.vue'), name: 'Podryad' },
-      { path: 'wallgrunt', component: () => import('pages/services/SecondService.vue'), name: 'Wallgrunt' },
-      { path: 'monolitnoe-stroitelstvo', component: () => import('pages/services/ThirdService.vue'), name: 'Monolitnoe-stroitelstvo' },
       { path: '49-kvesisskaya', component: () => import('pages/OurWorks/KvesisskayaPage.vue'), name: '49-kvesisskaya' },
-      { path: 'shpuntovoe-ograzhdenie', component: () => import('pages/services/FourthService.vue'), name: 'shpuntovoe-ograzhdenie' },
-      { path: 'buronabivnye-svai', component: () => import('pages/services/FifthService.vue'), name: 'buronabivnye-svai' },
-      { path: 'buroinektsionnye-svai', component: () => import('pages/services/SixthService.vues'), name: 'buroinektsionnye-svai' },
-
       // другие маршруты здесь
-
     ]
   },
   {
