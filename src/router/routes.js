@@ -8,6 +8,8 @@ const routes = [
       { path: 'about', component: () => import('pages/AboutIndex.vue'), name: 'AboutUs' },
       { path: 'contacts', component: () => import('pages/ContactsIndex.vue'), name: 'Contacts' },
       { path: 'documents', component: () => import('pages/DocumentsIndex.vue'), name: 'Documents' },
+      { path: '/services/:id', component: () => import('pages/services/ServiceAticle.vue'), name: 'Service' },
+
       { path: 'podryad', component: () => import('pages/services/FirstService.vue'), name: 'Podryad' },
       { path: 'wallgrunt', component: () => import('pages/services/SecondService.vue'), name: 'Wallgrunt' },
       { path: 'monolitnoe-stroitelstvo', component: () => import('pages/services/ThirdService.vue'), name: 'Monolitnoe-stroitelstvo' },
