@@ -12,7 +12,7 @@ export default defineComponent({
       v-for="(item) in menu"
       :key="item.id" :to="{
         name: 'Service',
-        params: {id: item.id }
+        params: {id: item.file_id }
       }"
       style="text-decoration: none;"
     >
