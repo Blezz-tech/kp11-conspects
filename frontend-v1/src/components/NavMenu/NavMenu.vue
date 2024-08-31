@@ -30,69 +30,11 @@ export default defineComponent({
 
 <script setup>
 
+
+import { navData } from 'src/lib/data';
+
 // TODO Удалить роутинг, чтобы все они сылались на /articles/:id
-const menu = ref([
-  {
-    'id': 1,
-    'title': 'ген',
-    'subtitle': 'подряд',
-    'img': '/src/assets/1.png',
-  },
-  {
-    'id': 2,
-    'title': 'стена',
-    'subtitle': 'в грунте',
-    'img': '/src/assets/2.png',
-  },
-  {
-    'id': 3,
-    'title': 'монолитное',
-    'subtitle': 'строительство',
-    'img': '/src/assets/3.png',
-  },
-  {
-    'id': 4,
-    'title': 'шпунтовое',
-    'subtitle': 'ограждение',
-    'img': '/src/assets/4.png',
-  },
-  {
-    'id': 5,
-    'title': 'Буронабивные',
-    'subtitle': 'Cваи',
-    'img': '/src/assets/5.png',
-  },
-  {
-    'id': 6,
-    'title': 'Буроинъекционные',
-    'subtitle': 'Cваи',
-    'img': '/src/assets/6.png',
-  },
-  {
-    'id': 7,
-    'title': 'РИТ, ЭРСТ',
-    'subtitle': 'Cваи',
-    'img': '/src/assets/7.png',
-  },
-  {
-    'id': 8,
-    'title': 'гидро',
-    'subtitle': 'изоляция',
-    'img': '/src/assets/8.png',
-  },
-  {
-    'id': 9,
-    'title': 'Разработка',
-    'subtitle': 'котлованов',
-    'img': '/src/assets/9.png',
-  },
-  {
-    'id': 10,
-    'title': 'Укрепление',
-    'subtitle': 'грунтов',
-    'img': '/src/assets/10.png',
-  }
-]);
+const menu = ref(navData);
 
 const tabStyles = computed(() => (item) => ({
   paddingLeft: '100px',

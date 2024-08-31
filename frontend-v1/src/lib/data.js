@@ -1,6 +1,5 @@
 
-const articles = () => {
-    return [
+const articles = [
 {
     'id': 1,
     'text': `
@@ -407,7 +406,73 @@ _Монолитное строительство получило такую п�
 
 `,
 },
-]
-};
+];
 
-export {articles};
+const navData = [
+{
+    'id': 1,
+    'title': 'ген',
+    'subtitle': 'подряд',
+    'img': '/src/assets/1.png',
+},
+{
+    'id': 2,
+    'title': 'стена',
+    'subtitle': 'в грунте',
+    'img': '/src/assets/2.png',
+},
+{
+    'id': 3,
+    'title': 'монолитное',
+    'subtitle': 'строительство',
+    'img': '/src/assets/3.png',
+},
+{
+    'id': 4,
+    'title': 'шпунтовое',
+    'subtitle': 'ограждение',
+    'img': '/src/assets/4.png',
+},
+{
+    'id': 5,
+    'title': 'Буронабивные',
+    'subtitle': 'Cваи',
+    'img': '/src/assets/5.png',
+},
+{
+    'id': 6,
+    'title': 'Буроинъекционные',
+    'subtitle': 'Cваи',
+    'img': '/src/assets/6.png',
+},
+{
+    'id': 7,
+    'title': 'РИТ, ЭРСТ',
+    'subtitle': 'Cваи',
+    'img': '/src/assets/7.png',
+},
+{
+    'id': 8,
+    'title': 'гидро',
+    'subtitle': 'изоляция',
+    'img': '/src/assets/8.png',
+},
+{
+    'id': 9,
+    'title': 'Разработка',
+    'subtitle': 'котлованов',
+    'img': '/src/assets/9.png',
+},
+{
+    'id': 10,
+    'title': 'Укрепление',
+    'subtitle': 'грунтов',
+    'img': '/src/assets/10.png',
+}
+];
+
+
+export {
+    articles,
+    navData
+};
