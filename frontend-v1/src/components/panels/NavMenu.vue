@@ -31,7 +31,7 @@ export default defineComponent({
 <script setup>
 
 
-import { navData } from 'src/lib/data';
+import { navData } from 'src/fake_database/data';
 
 // TODO Удалить роутинг, чтобы все они сылались на /articles/:id
 const menu = ref(navData);

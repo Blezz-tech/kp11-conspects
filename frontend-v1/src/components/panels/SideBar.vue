@@ -8,7 +8,7 @@ export default defineComponent({
 </script>
 
 <script setup>
-import { navData } from 'src/lib/data';
+import { navData } from 'src/fake_database/data';
 
 const menu = ref(navData);
 
