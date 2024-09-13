@@ -8,7 +8,7 @@ const routes = [
       { path: 'about', component: () => import('pages/AboutIndex.vue'), name: 'AboutUs' },
       { path: 'contacts', component: () => import('pages/ContactsIndex.vue'), name: 'Contacts' },
       { path: 'documents', component: () => import('pages/DocumentsIndex.vue'), name: 'Documents' },
-      { path: '/services/:id', component: () => import('pages/services/ServiceAticle.vue'), name: 'Service' },
+      { path: '/services/:id', component: () => import('src/pages/ServiceAticle.vue'), name: 'Service' },
 
       { path: '49-kvesisskaya', component: () => import('pages/OurWorks/KvesisskayaPage.vue'), name: '49-kvesisskaya' },
       // другие маршруты здесь
