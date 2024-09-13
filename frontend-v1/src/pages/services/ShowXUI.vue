@@ -11,11 +11,7 @@ function fakeFetch(id) {
 
 
 <script>
-import SideBar from 'src/components/panels/SideBar.vue';
 
-export default {
-  components: { SideBar },
-}
 </script>
 
 <template>
