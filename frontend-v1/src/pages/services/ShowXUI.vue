@@ -19,11 +19,5 @@ export default {
 </script>
 
 <template>
-  <div class="narrow-block flex col-12 row items-start" style="margin-left: auto;">
-    <div class="flex column col-7">
-      <MarkdownRenderer :source="fakeFetch(Number($route.params.id)).text" />
-    </div>
-    <SideBar>
-    </SideBar>
-  </div>
+  <MarkdownRenderer :source="fakeFetch(Number($route.params.id)).text" />
 </template>
