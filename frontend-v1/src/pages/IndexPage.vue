@@ -4,7 +4,7 @@
 
 <script>
 import { ref } from 'vue'
-import SideBar from 'src/components/SideBar.vue';
+import SideBar from 'src/components/panels/SideBar.vue';
 
 
 export default {

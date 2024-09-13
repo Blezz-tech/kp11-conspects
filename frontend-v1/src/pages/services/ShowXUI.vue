@@ -1,5 +1,5 @@
 <script setup>
-import MarkdownRenderer from 'src/components/MarkdownRenderer.vue';
+import MarkdownRenderer from 'src/components/utils/MarkdownRenderer.vue';
 
 import { articles } from 'src/lib/data';
 
@@ -11,7 +11,7 @@ function fakeFetch(id) {
 
 
 <script>
-import SideBar from 'src/components/SideBar.vue';
+import SideBar from 'src/components/panels/SideBar.vue';
 
 export default {
   components: { SideBar },

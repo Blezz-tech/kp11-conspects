@@ -1,6 +1,6 @@
 <script>
-import HeaderHeader from 'src/components/HeaderHeader.vue';
-import NavMenu from 'src/components/NavMenu/NavMenu.vue';
+import HeaderHeader from 'src/components/panels/HeaderHeader.vue';
+import NavMenu from 'src/components/panels/NavMenu.vue';
 import { ref } from 'vue'
 
 export default {
