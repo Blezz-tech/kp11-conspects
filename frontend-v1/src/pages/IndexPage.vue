@@ -5,10 +5,11 @@
 <script>
 import { ref } from 'vue'
 import SideBar from 'src/components/panels/SideBar.vue';
+import MapPanel from 'src/components/panels/MapPanel.vue';
 
 
 export default {
-  components: { SideBar },
+  components: { SideBar, MapPanel },
   setup() {
     return {
       slide: ref(1)
@@ -106,8 +107,5 @@ export default {
     </div>
   </div>
 
-  <!--MAP-->
-  <iframe class="q-mt-xl narrow-block"
-    src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3Afa9d46d1ec17792480637a31d922323cfbdbc6c5a612341893dbd80e20fd80db"
-    frameborder="0" allowfullscreen="true" width="1280px" height="720px" style="display: block;"></iframe>
+  <MapPanel />
 </template>
