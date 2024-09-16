@@ -23,7 +23,7 @@ const menu = ref(navData);
                 :key="item.id"
             >
                 <router-link
-                    :to="{ name: 'Service', params: {id: item.file_id }}"
+                    :to="{ name: 'services.show', params: {id: item.file_id }}"
                     style="text-decoration: none;"
                 >{{ item.full_name }}</router-link>
             </li>

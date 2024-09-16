@@ -11,7 +11,7 @@ export default defineComponent({
     <router-link
       v-for="(item) in menu"
       :key="item.id" :to="{
-        name: 'Service',
+        name: 'services.show',
         params: {id: item.file_id }
       }"
       style="text-decoration: none;"
