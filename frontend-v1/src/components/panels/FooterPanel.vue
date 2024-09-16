@@ -1,3 +1,49 @@
+<script setup>
+import { ref } from 'vue';
+
+const first_block = ref([
+    {
+        "id": 1,
+        "to": "about",
+        "title": "О компании",
+    },
+    {
+        "id": 2,
+        "to": "",
+        "title": "Новости",
+    },
+    {
+        "id": 3,
+        "to": "documents",
+        "title": "Документы",
+    },
+]);
+
+const second_block = ref([
+    {
+        "id": 1,
+        "to": "",
+        "title": "Генподряд",
+    },
+    {
+        "id": 2,
+        "to": "",
+        "title": "Стена в грунте",
+    },
+    {
+        "id": 3,
+        "to": "",
+        "title": "Монолитное строительство",
+    },
+    {
+        "id": 4,
+        "to": "",
+        "title": "Наши объекты",
+    },
+]);
+
+</script>
+
 <template>
     <q-footer class="m-bg q-mt-xl">
         <hr class="q-mt-xl">
@@ -9,26 +55,32 @@
                 <div class="flex column">
                     <h6>Информация</h6>
                     <ul class="q-mt-sm">
-                        <li><router-link to="about" class="text-black" style="font-weight: normal" href="">О
-                                компании</router-link></li>
-                        <li><router-link to="" class="text-black" style="font-weight: normal"
-                                href="">Новости</router-link></li>
-                        <li><router-link to="documents" class="text-black" style="font-weight: normal"
-                                href="">Документы</router-link></li>
+                        <li
+                            v-for="item in first_block"
+                            :key="item.id"
+                        >
+                            <router-link
+                                :to="item.to"
+                                class="text-black"
+                                style="font-weight: normal"
+                            > {{ item.title }}
+                            </router-link>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <h6>Услуги</h6>
                     <ul class="q-mt-sm">
-                        <li><router-link to="" class="text-black" style="font-weight: normal"
-                                href="">Генподряд</router-link></li>
-                        <li><router-link to="" class="text-black" style="font-weight: normal" href="">Стена в
-                                грунте</router-link>
-                        </li>
-                        <li><router-link to="" class="text-black" style="font-weight: normal" href="">Монолитное
-                                строительство</router-link></li>
-                        <li><router-link to="" class="text-black" style="font-weight: normal" href="">Наши
-                                объекты</router-link>
+                        <li
+                            v-for="item in second_block"
+                            :key="item.id"
+                        >
+                            <router-link
+                                :to="item.to"
+                                class="text-black"
+                                style="font-weight: normal"
+                            > {{ item.title }}
+                            </router-link>
                         </li>
                     </ul>
                 </div>
