@@ -23,6 +23,16 @@ import { works } from 'src/fake_database/data';
             <img style="width: 220px; height: 140px" :src="image.path" alt="">
           </q-tab>
         </q-tabs>
+        <q-tabs v-if="work.long_images !== null" inline-label class="q-mt-sm q-mb-sm" outside-arrows>
+          <q-tab
+            v-for="image in work.long_images"
+            :key="image.id"
+            class="rounded-borders q-mr-md"
+            style="gap: 5%"
+          >
+            <img style="width: 200px;" :src="image.path" alt="">
+          </q-tab>
+        </q-tabs>
       </div>
     </div>
   </div>

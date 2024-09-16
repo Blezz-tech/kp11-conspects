@@ -515,6 +515,10 @@ const navData = [
 // },
 ];
 
+/*
+
+К полям images и long_images добавить alt
+*/
 const works = [
     {
         "id": 1,
