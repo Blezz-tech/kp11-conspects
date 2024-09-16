@@ -7,25 +7,23 @@ export default defineComponent({
 </script>
 
 <template>
-  <q-tabs inline-label class="q-mt-xl q-mb-xl" outside-arrows>
-    <router-link
-      v-for="(item) in menu"
-      :key="item.id" :to="{
+  <div class="narrow-block" style="margin-top: 170px">
+    <q-tabs inline-label class="q-mt-xl q-mb-xl" outside-arrows>
+      <router-link v-for="(item) in menu" :key="item.id" :to="{
         name: 'services.show',
-        params: {id: item.file_id }
-      }"
-      style="text-decoration: none;"
-    >
-      <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
-        <div :style="tabStyles(item)">
-          <div class="column justify-center full-height items-start">
-            <b class="no-underline text-black">{{ item.title }}</b>
-            <h5>{{ item.subtitle }}</h5>
+        params: { id: item.file_id }
+      }" style="text-decoration: none;">
+        <q-tab class="bg-white rounded-borders q-mr-md" style="gap: 5%">
+          <div :style="tabStyles(item)">
+            <div class="column justify-center full-height items-start">
+              <b class="no-underline text-black">{{ item.title }}</b>
+              <h5>{{ item.subtitle }}</h5>
+            </div>
           </div>
-        </div>
-      </q-tab>
-    </router-link>
-  </q-tabs>
+        </q-tab>
+      </router-link>
+    </q-tabs>
+  </div>
 </template>
 
 <script setup>

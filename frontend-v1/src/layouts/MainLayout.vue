@@ -27,10 +27,7 @@ export default {
         </q-carousel>
       </div>
     </div>
-    <div class="narrow-block" style="margin-top: 170px">
-      <NavMenu>
-      </NavMenu>
-    </div>
+    <NavMenu />
     <q-page-container class="m-bg" style="padding-top: 0">
       <q-page>
         <div class="narrow-block">
