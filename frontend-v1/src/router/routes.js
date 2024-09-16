@@ -8,10 +8,10 @@ const routes = [
       { path: 'about', component: () => import('pages/AboutIndex.vue'), name: 'AboutUs' },
       { path: 'contacts', component: () => import('pages/ContactsIndex.vue'), name: 'Contacts' },
       { path: 'documents', component: () => import('pages/DocumentsIndex.vue'), name: 'Documents' },
-      { path: '/services/:id', component: () => import('src/pages/services/ShowXUI.vue'), name: 'Service' },
+      { path: '/services/:id', component: () => import('src/pages/services/ShowPage.vue'), name: 'Service' },
       { path: '/works', component: () => import('src/pages/works/IndexPage.vue'), name: 'works.index' },
 
-      { path: '49-kvesisskaya', component: () => import('src/pages/works/ShowXUI.vue'), name: '49-kvesisskaya' },
+      { path: '49-kvesisskaya', component: () => import('src/pages/works/ShowPage.vue'), name: '49-kvesisskaya' },
       // другие маршруты здесь
     ]
   },
