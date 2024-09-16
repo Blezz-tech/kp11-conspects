@@ -521,7 +521,7 @@ const works = [
         "address": "г.Москва, ЦАО, Потаповский переулок дом 6. стр 1.",
         "title": "Реставрация объекта культурного значения \"Здание усадьбы конца XVII – XVIII веков\" Главный дом в Жилой комплекс",
         "description": "Комплекс строительно-монтажных работ по устройству шпунтового ограждения котлована и устройству распорной системы котлована с разработкой грунта котлована.",
-        "date_start": "",
+        "date_start": "XXXX",
         "date_end": "2022 год",
         "images": [
             {
@@ -587,6 +587,71 @@ const works = [
             {
                 "id": 16,
                 "path": "/src/assets/images/works/obj1/16.jpg"
+            },
+        ],
+        "long_images": null
+    },
+    {
+        "id": 2,
+        "address": "г.Москва, ЦАО, Тверской район, площадь Тверская Застава, вл.3.",
+        "title": "Строительство общественно-рекреационного комплекса Тверская Застава.",
+        "description": "Генеральный подрядчик ООО МегаСтрой",
+        "date_start": "12.10.2020",
+        "date_end": "2 квартал 2023",
+        "images": [
+            {
+                "id": 1,
+                "path": "/src/assets/images/works/obj2/01.jpg"
+            },
+            {
+                "id": 2,
+                "path": "/src/assets/images/works/obj2/02.jpg"
+            },
+            {
+                "id": 3,
+                "path": "/src/assets/images/works/obj2/03.jpg"
+            },
+            {
+                "id": 4,
+                "path": "/src/assets/images/works/obj2/04.jpg"
+            },
+            {
+                "id": 5,
+                "path": "/src/assets/images/works/obj2/05.jpg"
+            },
+            {
+                "id": 6,
+                "path": "/src/assets/images/works/obj2/06.jpg"
+            },
+            {
+                "id": 7,
+                "path": "/src/assets/images/works/obj2/07.jpg"
+            },
+            {
+                "id": 8,
+                "path": "/src/assets/images/works/obj2/08.jpg"
+            },
+            {
+                "id": 9,
+                "path": "/src/assets/images/works/obj2/09.jpg"
+            },
+        ],
+        "long_images": [
+            {
+                "id": 1,
+                "path": "/src/assets/images/works/obj2-long/01.jpg"
+            },
+            {
+                "id": 2,
+                "path": "/src/assets/images/works/obj2-long/02.jpg"
+            },
+            {
+                "id": 3,
+                "path": "/src/assets/images/works/obj2-long/03.jpg"
+            },
+            {
+                "id": 4,
+                "path": "/src/assets/images/works/obj2-long/04.jpg"
             },
         ]
     }
