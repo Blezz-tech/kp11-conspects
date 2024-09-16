@@ -518,74 +518,75 @@ const navData = [
 const works = [
     {
         "id": 1,
-        "address": "г.Москва,ЦАО,Потаповский переулок дом 6. стр 1. Реставрация объекта культурного значения \"Здание усадьбы конца XVII – XVIII веков\" Главный дом в Жилой комплекс",
+        "address": "г.Москва, ЦАО, Потаповский переулок дом 6. стр 1.",
+        "title": "Реставрация объекта культурного значения \"Здание усадьбы конца XVII – XVIII веков\" Главный дом в Жилой комплекс",
         "description": "Комплекс строительно-монтажных работ по устройству шпунтового ограждения котлована и устройству распорной системы котлована с разработкой грунта котлована.",
         "date_start": "",
         "date_end": "2022 год",
         "images": [
             {
                 "id": 1,
-                "path": "/images/works/obj1/01"
+                "path": "/src/assets/images/works/obj1/01.jpg"
             },
             {
                 "id": 2,
-                "path": "/images/works/obj1/02"
+                "path": "/src/assets/images/works/obj1/02.jpg"
             },
             {
                 "id": 3,
-                "path": "/images/works/obj1/03"
+                "path": "/src/assets/images/works/obj1/03.jpg"
             },
             {
                 "id": 4,
-                "path": "/images/works/obj1/04"
+                "path": "/src/assets/images/works/obj1/04.jpg"
             },
             {
                 "id": 5,
-                "path": "/images/works/obj1/05"
+                "path": "/src/assets/images/works/obj1/05.jpg"
             },
             {
                 "id": 6,
-                "path": "/images/works/obj1/06"
+                "path": "/src/assets/images/works/obj1/06.jpg"
             },
             {
                 "id": 7,
-                "path": "/images/works/obj1/07"
+                "path": "/src/assets/images/works/obj1/07.jpg"
             },
             {
                 "id": 8,
-                "path": "/images/works/obj1/08"
+                "path": "/src/assets/images/works/obj1/08.jpg"
             },
             {
                 "id": 9,
-                "path": "/images/works/obj1/09"
+                "path": "/src/assets/images/works/obj1/09.jpg"
             },
             {
                 "id": 10,
-                "path": "/images/works/obj1/10"
+                "path": "/src/assets/images/works/obj1/10.jpg"
             },
             {
                 "id": 11,
-                "path": "/images/works/obj1/11"
+                "path": "/src/assets/images/works/obj1/11.jpg"
             },
             {
                 "id": 12,
-                "path": "/images/works/obj1/12"
+                "path": "/src/assets/images/works/obj1/12.jpg"
             },
             {
                 "id": 13,
-                "path": "/images/works/obj1/13"
+                "path": "/src/assets/images/works/obj1/13.jpg"
             },
             {
                 "id": 14,
-                "path": "/images/works/obj1/14"
+                "path": "/src/assets/images/works/obj1/14.jpg"
             },
             {
                 "id": 15,
-                "path": "/images/works/obj1/15"
+                "path": "/src/assets/images/works/obj1/15.jpg"
             },
             {
                 "id": 16,
-                "path": "/images/works/obj1/16"
+                "path": "/src/assets/images/works/obj1/16.jpg"
             },
         ]
     }

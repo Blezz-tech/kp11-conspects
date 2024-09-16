@@ -21,7 +21,7 @@ export default defineComponent({
                         <div class="flex q-col-gutter-md items-center right-aligned">
                             <router-link to="/about">О компании</router-link>
                             <router-link to="/about">Новости</router-link>
-                            <router-link to="/about">Наши объекты</router-link>
+                            <router-link to="/works">Наши объекты</router-link>
                             <router-link to="/contacts">Контакты</router-link>
                         </div>
                     </div>

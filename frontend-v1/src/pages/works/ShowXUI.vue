@@ -1,4 +1,11 @@
 <script setup>
+import { works } from 'src/fake_database/data';
+
+function fakeFetch(id) {
+  return works.filter(item => item.id == id)[0];
+}
+
+const work = fakeFetch(Number($route.params.id));
 
 </script>
 
