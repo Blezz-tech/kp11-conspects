@@ -10,6 +10,7 @@ const routes = [
       { path: 'documents', component: () => import('pages/DocumentsIndex.vue'), name: 'Documents' },
       { path: '/services/:id', component: () => import('src/pages/services/ShowPage.vue'), name: 'services.show' },
       { path: '/works', component: () => import('src/pages/works/IndexPage.vue'), name: 'works.index' },
+      { path: '/works/:id', component: () => import('src/pages/works/ShowPage.vue'), name: 'works.show' },
 
       { path: '49-kvesisskaya', component: () => import('src/pages/works/ShowPage.vue'), name: '49-kvesisskaya' },
       // другие маршруты здесь
