@@ -20,8 +20,8 @@
     </form>
 
     @foreach ($products as $product)
-        <div class="card" style="width: 18rem">
-            <img src="{{ $product->img_path }}" class="card-img-top" alt="">
+        <div class="card" >
+            <img src="/{{ $product->img_path }}" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">{{ $product->title }}</h5>
                 <p class="card-text">{{ $product->price }}</p>
