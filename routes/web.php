@@ -27,4 +27,4 @@ Route::get('/contacts', [PagesController::class, 'contacts'])->name('contacts');
 Route::get('/catalog', [PagesController::class, 'catalog'])->name('catalog');
 Route::post('/catalog/filter', [PagesController::class, 'catalogFilter'])->name('catalog.filter');
 
-Route::get('product/{id}', [ProductController::class, 'show'])->name('contacts');
+Route::get('product/{id}', [ProductController::class, 'show'])->name('product.show');
