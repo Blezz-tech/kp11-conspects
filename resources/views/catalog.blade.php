@@ -3,7 +3,7 @@
 @section('content')
     <form action="{{ route('catalog.filter') }}" method="POST">
         @csrf
-        <div class="d-flex justify-content-between mb-3">
+        <div class="d-flex justify-content-between mb-3 gap-3">
             <select name="filter" class="form-select">
                 <option value="0">Все категории</option>
                 @foreach ($categories as $category)
@@ -18,7 +18,7 @@
             <button class="btn btn-primary" type="submit">Применить</button>
         </div>
     </form>
-    <div class="row  g-4">
+    <div class="row">
         @foreach ($products as $product)
             <div class="col">
                 <div class="card" style="width: 18rem;">
