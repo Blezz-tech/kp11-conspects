@@ -5,7 +5,7 @@
         <div class="card-body">
             <img src="{{ asset($product->img_path) }}" class="card-img-top w-60" alt="Картинка рояля">
             <h5 class="card-title">{{ $product->title }}</h5>
-            <p class="card-text">Стоимость: {{ $product->price }}</p>
+            <p class="card-text">Стоимость: {{ $product->price }} ₽</p>
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Год производства: {{ $product->year }}</li>
