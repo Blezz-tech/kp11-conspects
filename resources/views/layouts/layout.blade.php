@@ -32,7 +32,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container p-4">
         @if (session()->has('info'))
             <div class="alert alert-success fade show d-flex justify-content-between">
                 <p style="margin: 0">{{ session('info') }}</p>
