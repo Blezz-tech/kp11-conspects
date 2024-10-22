@@ -16,7 +16,6 @@
 <body>
     <nav class="navbar bg-dark pb-4 pt-4" data-bs-theme="dark">
         <div class="container d-flex">
-            <a class="navbar-brand" href="#">Главная</a>
             <a class="navbar-brand" href="{{ route('about') }}">О нас</a>
             <a class="navbar-brand" href="{{ route('catalog') }}">Каталог</a>
             {{-- <a class="navbar-brand" href="{{route('contacts')}}">Контакты</a> --}}
