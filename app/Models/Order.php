@@ -13,11 +13,13 @@ class Order extends Model
 
     protected $guarded = [];
 
-    public function user() {
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 
-    public function products() {
+    public function products()
+    {
         return $this->belongsToMany(Product::class)->withPivot('qty');
     }
 }

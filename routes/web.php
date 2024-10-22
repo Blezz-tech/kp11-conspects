@@ -30,7 +30,7 @@ Route::get('/contacts', function () {
 
 Route::get('/catalog', function () {
     $products = Product::where('qty', '>', '0')->get();
-    return view('catalog', ['products' =>$products, 'categories' => Category::all()]);
+    return view('catalog', ['products' => $products, 'categories' => Category::all()]);
 })->name('catalog');
 
 Route::post('/catalog/filter', function (Request $request) {
@@ -38,9 +38,7 @@ Route::post('/catalog/filter', function (Request $request) {
         $products = Product::where('qty', '>', '0')
                             ->orderBy($request->sort)
                             ->get();
-    }
-
-    else {
+    } else {
         $products = Category::find($request->filter)
             ->products()
             ->orderBy($request->sort)
