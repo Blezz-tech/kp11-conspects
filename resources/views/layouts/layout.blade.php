@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="icon" href="{{asset('img/logo.png')}}">
+    <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+    <link rel="icon" href="{{ asset('/img/logo.png') }}">
     {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> --}}
 
-    <script src="/js/jquery-3.6.4.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar bg-dark pb-4 pt-4"  data-bs-theme="dark">
+    <nav class="navbar bg-dark pb-4 pt-4" data-bs-theme="dark">
         <div class="container d-flex">
             <a class="navbar-brand" href="#">Главная</a>
-            <a class="navbar-brand" href="{{route('about')}}">О нас</a>
-            <a class="navbar-brand" href="{{route('catalog')}}">Каталог</a>
+            <a class="navbar-brand" href="{{ route('about') }}">О нас</a>
+            <a class="navbar-brand" href="{{ route('catalog') }}">Каталог</a>
             {{-- <a class="navbar-brand" href="{{route('contacts')}}">Контакты</a> --}}
 
             <form class="d-flex" role="search">
@@ -48,8 +47,9 @@
             © Все права защищены и подтверждены
         </div>
     </footer> --}}
-    <script src="asset('js/bootstrap.bundle.js')"></script>
-    <script src="asset('js/main.js')"></script>
+    <script src="{{ asset('/js/bootstrap.bundle.js') }}"></script>
+    <script src="{{ asset('/js/main.js') }}"></script>
+    <script src="{{ asset('/js/jquery-3.6.4.min.js') }}"></script>
 </body>
 
 </html>
