@@ -34,3 +34,7 @@ Route::middleware(['guest'])->group(function () {
     Route::get('/register', [RegisterController::class, 'create'])->name('auth.create');
     Route::post('/register', [RegisterController::class, 'store'])->name('auth.store');
 });
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/logout', [RegisterController::class, 'logout'])->name('auth.logout');
+});

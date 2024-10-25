@@ -38,4 +38,10 @@ class RegisterController extends Controller
 
         return redirect('/')->with('info', 'Вы успешно зарегистрировались!');
     }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/')->with('info', 'Выход выполнен!');
+    }
 }

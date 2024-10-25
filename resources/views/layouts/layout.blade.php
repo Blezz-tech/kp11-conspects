@@ -29,8 +29,11 @@
             <div class="d-flex" style="width: max-content">
                 @guest
                     <a class="btn btn-secondary" href="{{ route('auth.create') }}">Зарегистрироваться</a>
+                    <a href="#" class="btn btn-success">Вход</a>
                 @endguest
-                <a href="#" class="btn btn-success">Вход</a>
+                @auth
+                    <a class="btn btn-secondary" href="{{ route('auth.logout') }}">Выйти</a>|
+                @endauth
             </div>
         </div>
     </nav>
