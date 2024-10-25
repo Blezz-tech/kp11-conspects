@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use app\Models\Category;
 
 class ProductController extends Controller
 {
@@ -12,7 +13,11 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $products = Product::orderBy('title')->get();
+        return view('admin.products.index', [
+            'products' => $products,
+            'categories' => Category::all()
+        ]);
     }
 
     /**

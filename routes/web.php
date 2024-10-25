@@ -7,7 +7,7 @@ use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,4 +44,7 @@ Route::middleware(['auth'])->group(function () {
 
 Route::middleware(['admin'])->group(function () {
     Route::view('/admin', 'admin.layout');
+    Route::resource('/admin/categories', CategoryController::class);
+    Route::resource('/admin/products', ProductController::class);
+    Route::post('/admin/filter',[ ProductController::class, 'filter'])->name('admin.products.filter');
 });
