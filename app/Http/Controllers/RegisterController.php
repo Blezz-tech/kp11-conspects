@@ -59,7 +59,11 @@ class RegisterController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect('/')->with('info', 'Вход выполнен!');
+            if (Auth::user()->isAdmin) {
+                return redirect('/admin')->with('info', 'Вы зашли как администратор');
+            } else {
+                return redirect('/')->with('info', 'Вход выполнен!');
+            }
         }
 
         return back()->withErrors(['Данные не соответствуют!']);
