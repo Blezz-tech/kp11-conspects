@@ -27,7 +27,9 @@
             </form>
 
             <div class="d-flex" style="width: max-content">
-                <a href="#" class="btn btn-primary" style="margin-right: 25px">Регистарция</a>
+                @guest
+                    <a class="btn btn-secondary" href="{{ route('auth.create') }}">Зарегистрироваться</a>
+                @endguest
                 <a href="#" class="btn btn-success">Вход</a>
             </div>
         </div>
