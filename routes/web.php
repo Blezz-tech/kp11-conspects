@@ -42,4 +42,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/logout', [RegisterController::class, 'logout'])->name('auth.logout');
 });
 
-
+Route::middleware(['admin'])->group(function () {
+    Route::view('/admin', 'admin.layout');
+});
