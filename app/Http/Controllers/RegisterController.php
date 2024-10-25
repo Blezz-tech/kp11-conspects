@@ -13,6 +13,13 @@ class RegisterController extends Controller
 
     public function store(Request $request)
     {
-        //dd($request);
+        $request->validate([
+            'name' => ['regex:/^[А-Яа-я\- ]{1,}$/u', 'required'],
+            'surname' => ['regex:/^[А-Яа-я\- ]{1,}$/u', 'required'],
+            'patronymic' => ['regex:/^[А-Яа-я\- ]{0,}$/u', 'nullable'],
+            'login' => ['regex:/^[0-9A-Za-z\-]+$/', 'unique:users', 'required'],
+            'email' => ['email', 'unique:users', 'required'],
+            'password' => ['confirmed', 'min:6', 'required'],
+        ]);
     }
 }
