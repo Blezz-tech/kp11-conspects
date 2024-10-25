@@ -1,8 +1,9 @@
-@extends('layout')
+@extends('layouts.layout')
+
 @section('content')
     <div class='container w-50'>
         <h1>Введите данные</h1>
-        @if (Errors->any())
+        @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
