@@ -15,20 +15,35 @@
         <form method="post" action="{{ route('auth.store') }}">
             @csrf
             <div class="mb-3">
+              <label for="name" class="form-label">Имя</label>
+              <input name="name" type="string" class="form-control" id="name" aria-describedby="name">
+            </div>
+            <div class="mb-3">
+              <label for="surname" class="form-label">Фамилия</label>
+              <input name="surname" type="string" class="form-control" id="surname" aria-describedby="surname">
+            </div>
+            <div class="mb-3">
+              <label for="patronymic" class="form-label">Отчество</label>
+              <input name="patronymic" type="string" class="form-control" id="patronymic" aria-describedby="patronymic">
+            </div>
+            <div class="mb-3">
+              <label for="login" class="form-label">Логин</label>
+              <input name="login" type="string" class="form-control" id="login" aria-describedby="login">
+            </div>
+            <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Пароль</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input name="password" type="password" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword2" class="form-label">Повторите пароль</label>
-              <input type="password" class="form-control" id="exampleInputPassword2">
+              <input name="password-second" type="password" class="form-control" id="exampleInputPassword2">
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <input name="" type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Согласен на всё</label>
             </div>
             <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
