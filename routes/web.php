@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\RegisterController;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
@@ -28,3 +29,8 @@ Route::get('/catalog', [PagesController::class, 'catalog'])->name('catalog');
 Route::post('/catalog/filter', [PagesController::class, 'catalogFilter'])->name('catalog.filter');
 
 Route::get('product/{id}', [ProductController::class, 'show'])->name('product.show');
+
+Route::middleware(['guest'])->group(function () {
+    Route::get('/register', [RegisterController::class, 'create'])->name('auth.create');
+    Route::post('/register', [RegisterController::class, 'store'])->name('auth.store');
+});
