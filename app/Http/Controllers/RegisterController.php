@@ -52,6 +52,16 @@ class RegisterController extends Controller
 
     public function login(Request $request)
     {
-        //dd($request);
+        $credentials = $request->validate([
+            'login' => ['required'],
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect('/')->with('info', 'Вход выполнен!');
+        }
+
+        return back()->withErrors(['Данные не соответствуют!']);
     }
 }
