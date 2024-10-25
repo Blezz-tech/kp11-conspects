@@ -20,6 +20,24 @@ class ProductController extends Controller
         ]);
     }
 
+
+
+    public function filter(Request $request)
+    {
+        if ($request->filter == 0) {
+            $products = Product::orderBy($request->sort)
+                ->get();
+        } else {
+            $products = Category::find($request->filter)
+                ->products()
+                ->orderBy($request->sort)
+                ->get();
+        }
+
+        return view('admin.products.index', ['products' => $products, 'categories' => Category::all()]);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      */
