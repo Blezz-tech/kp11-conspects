@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
@@ -21,5 +23,19 @@ class RegisterController extends Controller
             'email' => ['email', 'unique:users', 'required'],
             'password' => ['confirmed', 'min:6', 'required'],
         ]);
+
+        $user = User::create([
+            'name' => $request->name,
+            'surname' => $request->surname,
+            'patronymic' => $request->patronymic,
+            'login' => $request->login,
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+        ]);
+
+        Auth::login($user);
+        $request->session()->regenerate();
+
+        return redirect('/')->with('info', 'Вы успешно зарегистрировались!');
     }
 }
