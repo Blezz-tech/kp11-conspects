@@ -31,16 +31,16 @@
               <input name="login" type="string" class="form-control" id="login" aria-describedby="login">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="email" class="form-label">Email</label>
+              <input name="email" type="email" class="form-control" id="email" aria-describedby="email">
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Пароль</label>
-              <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+              <label for="password" class="form-label">Пароль</label>
+              <input name="password" type="password" class="form-control" id="password">
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword2" class="form-label">Повторите пароль</label>
-              <input name="password-second" type="password" class="form-control" id="exampleInputPassword2">
+              <label for="password_confirmation" class="form-label">Повторите пароль</label>
+              <input name="password_confirmation" type="password" class="form-control" id="password_confirmation">
             </div>
             <div class="mb-3 form-check">
               <input name="" type="checkbox" class="form-check-input" id="exampleCheck1">
