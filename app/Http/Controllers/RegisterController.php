@@ -44,4 +44,14 @@ class RegisterController extends Controller
         Auth::logout();
         return redirect('/')->with('info', 'Выход выполнен!');
     }
+
+    public function loginform()
+    {
+        return view('auth.loginform');
+    }
+
+    public function login(Request $request)
+    {
+        //dd($request);
+    }
 }

@@ -33,8 +33,13 @@ Route::get('product/{id}', [ProductController::class, 'show'])->name('product.sh
 Route::middleware(['guest'])->group(function () {
     Route::get('/register', [RegisterController::class, 'create'])->name('auth.create');
     Route::post('/register', [RegisterController::class, 'store'])->name('auth.store');
+
+    Route::get('/login', [RegisterController::class, 'loginform'])->name('auth.loginform');
+    Route::post('/login', [RegisterController::class, 'login'])->name('auth.login');
 });
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/logout', [RegisterController::class, 'logout'])->name('auth.logout');
 });
+
+
