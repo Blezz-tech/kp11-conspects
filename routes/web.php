@@ -43,8 +43,8 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::middleware(['admin'])->group(function () {
-    Route::view('/admin', 'admin.layout');
+    Route::view('/admin', 'admin.layout')->name('adminhome');
     Route::resource('/admin/categories', CategoryController::class);
     Route::resource('/admin/products', ProductController::class);
-    // Route::post('/admin/filter',[ ProductController::class, 'filter'])->name('admin.products.filter');
+    Route::post('/admin/filter',[ ProductController::class, 'filter'])->name('admin.products.filter');
 });
