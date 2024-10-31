@@ -3,13 +3,14 @@
 pragma solidity >0.8.0;
 
 contract TestEstate{
-    address admin = 0xdD870fA1b7C4700F2BD7f44238821C26f7392148;
+    address admin = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
 
     struct Estate {
         uint id_estate;
         address owner;
         uint square;
         bool pledge;
+        // true: в залоге
     }
 
     Estate[] public estates;
@@ -19,14 +20,15 @@ contract TestEstate{
         uint price;
         address customer;
         bool status_order;
+        // true: объявление активно
     }
 
     Order[] public orders;
 
     constructor(){
-        estates.push(Estate(0, 0x583031D1113aD414F02576BD6afaBfb302140225, 120, false));
-        estates.push(Estate(1, 0x583031D1113aD414F02576BD6afaBfb302140225, 15, true));
-        estates.push(Estate(2, 0x4B0897b0513fdC7C541B6d9D7E929C4e5364D2dB, 100, false));
+        estates.push(Estate(0, 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2, 120, false));
+        estates.push(Estate(1, 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2, 15, true));
+        estates.push(Estate(2, 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db, 100, false));
 
         orders.push(Order(2, 5*10**18, address(0), true));
     }
