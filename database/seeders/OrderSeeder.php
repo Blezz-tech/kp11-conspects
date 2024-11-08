@@ -14,10 +14,10 @@ class OrderSeeder extends Seeder
     public function run()
     {
         DB::table('orders')->insert([
-            ['user_id' => 1, 'status' => 'в корзине', 'created_at' => now(), 'updated_at' => now()],
-            ['user_id' => 1, 'status' => 'новый', 'created_at' => '2023-04-11', 'updated_at' => '2023-04-11'],
-            ['user_id' => 1, 'status' => 'подтвержден', 'created_at' => '2023-03-21', 'updated_at' => '2023-03-21'],
-            ['user_id' => 1, 'status' => 'отменен', 'created_at' => '2023-02-25', 'updated_at' => '2023-02-25'],
+            ['user_id' => 1, 'status' => 'в корзине', 'coment' => NULL, 'created_at' => now(), 'updated_at' => now()],
+            ['user_id' => 1, 'status' => 'новый', 'coment' => NULL, 'created_at' => '2023-04-11', 'updated_at' => '2023-04-11'],
+            ['user_id' => 1, 'status' => 'подтвержден', 'coment' => NULL, 'created_at' => '2023-03-21', 'updated_at' => '2023-03-21'],
+            ['user_id' => 1, 'status' => 'отменен', 'coment' => 'сорян', 'created_at' => '2023-02-25', 'updated_at' => '2023-02-25'],
         ]);
 
         DB::table('order_product')->insert([
