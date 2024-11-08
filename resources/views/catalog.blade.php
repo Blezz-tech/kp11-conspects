@@ -1,5 +1,11 @@
 @extends('layouts.layout')
 
+@auth
+    <a href="{{route('cart.add', ['id' => $product->id])}}" class="btn btn-primary">
+        В корзину
+    </a>
+@endauth
+
 @section('content')
     <form action="{{ route('catalog.filter') }}" method="POST">
         @csrf

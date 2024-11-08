@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -36,6 +37,11 @@ class RegisterController extends Controller
         Auth::login($user);
         $request->session()->regenerate();
 
+        $order = new Order;
+        $order->user_id = Auth::user()->id;
+        $order->status = 'В корзине';
+        $order->save();
+
         return redirect('/')->with('info', 'Вы успешно зарегистрировались!');
     }
 
@@ -65,6 +71,8 @@ class RegisterController extends Controller
                 return redirect('/')->with('info', 'Вход выполнен!');
             }
         }
+
+
 
         return back()->withErrors(['Данные не соответствуют!']);
     }

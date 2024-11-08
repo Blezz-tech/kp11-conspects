@@ -1,14 +1,15 @@
 <?php
 
+use App\Models\Product;
+use App\Models\Category;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\OrderController;
-use App\Models\Category;
-use App\Models\Product;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,12 +36,21 @@ Route::middleware(['guest'])->group(function () {
     Route::get('/register', [RegisterController::class, 'create'])->name('auth.create');
     Route::post('/register', [RegisterController::class, 'store'])->name('auth.store');
 
-    Route::get('/login', [RegisterController::class, 'loginform'])->name('auth.loginform');
+    Route::get('/login', [RegisterController::class, 'loginform'])->name('login');
     Route::post('/login', [RegisterController::class, 'login'])->name('auth.login');
 });
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/logout', [RegisterController::class, 'logout'])->name('auth.logout');
+    Route::get('cart/add/{id}', [CartController::class,'add'])->name('cart.add');
+
+    Route::get('cart/show', [CartController::class, 'show'])->name('cart.show');
+
+    Route::post('cart/change/{id}', [CartController::class, 'change'])->name('cart.change');
+    Route::get('cart/delete/{id}', [CartController::class, 'delete'])->name('cart.delete');
+
+
+
 });
 
 Route::middleware(['admin'])->group(function () {
