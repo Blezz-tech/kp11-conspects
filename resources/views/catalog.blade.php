@@ -18,20 +18,20 @@
             <button class="btn btn-primary" type="submit">Применить</button>
         </div>
     </form>
-    <div class="row">
+    {{-- <div class="row"> --}}
+    <div class="d-flex flex-wrap gap-4 justify-content-center">
         @foreach ($products as $product)
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset($product->img_path) }}" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ $product->title }}</h5>
-                        <p class="card-text">{{ $product->price }} ₽</p>
-                        <a href="{{ route('product.show', ['id' => $product->id]) }}" class="btn btn-primary">
-                            Описание товара
-                        </a>
-                    </div>
+            <div class="card mb-5" style="width: 18rem;">
+                <img src="{{ asset($product->img_path) }}" class="card-img-top" alt="" height="250px">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $product->title }}</h5>
+                    <p class="card-text">{{ $product->price }} ₽</p>
+                    <a href="{{ route('product.show', ['id' => $product->id]) }}" class="btn btn-primary">
+                        Описание товара
+                    </a>
                 </div>
             </div>
         @endforeach
     </div>
+    {{-- </div> --}}
 @endsection
