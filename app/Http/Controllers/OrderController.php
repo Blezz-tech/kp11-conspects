@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -10,17 +11,28 @@ class OrderController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-       $orders = Order::where('status', '!=', 'в корзине')->withCount('products')->get();
-       return view('admin.orders.index', ['orders'=>$orders]);
+        $orders = new Collection();
+
+        if ($request->status == 'нет') {
+            $orders = Order::where('status', '!=', 'в корзине')
+                ->withCount('products')
+                ->get();
+        } else {
+            $orders = Order::where('status',  $request->status)
+                ->withCount('products')
+                ->get();
+        }
+
+        return view('admin.orders.index', ['orders' => $orders]);
     }
 
     /** Изменить статус заказа на "подтвержден"
-    *
-    *(доступен для администратора)
-    * @param \App\Models\Order $order
-    * @return \Illuminate\Http\Response **/
+     *
+     *(доступен для администратора)
+     * @param \App\Models\Order $order
+     * @return \Illuminate\Http\Response **/
     public function confirm(Order $order)
     {
         //dd($order);

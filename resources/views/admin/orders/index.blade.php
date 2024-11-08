@@ -4,6 +4,20 @@
 @section('content')
 
 
+<form action="{{ route('admin.orders.index') }}" method="GET">
+    @csrf
+    <div class="d-flex justify-content-between mb-3 gap-3">
+        <select name="status" class="form-select">
+            <option value="нет">Все категории</option>
+            <option value="новый">новый</option>
+            <option value="подтвержден">подтвержден</option>
+            <option value="в корзине">в корзине</option>
+            <option value="отменен">отменен</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Применить</button>
+</form>
+
 <table class="table table-striped mt-5">
     <thead>
         <tr>
