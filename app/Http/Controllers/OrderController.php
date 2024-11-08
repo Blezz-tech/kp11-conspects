@@ -29,6 +29,15 @@ class OrderController extends Controller
         return redirect('admin/orders')->with('info', 'Статус заказа изменен');
     }
 
+
+    public function cancel(Request $request, Order $order)
+    {
+        //dd($order);
+        $order->status = 'отменен';
+        $order->comment = $request->coment;
+        $order->save();
+        return redirect('admin/orders')->with('info', 'Статус заказа изменен');
+    }
     /**
      * Show the form for creating a new resource.
      */
