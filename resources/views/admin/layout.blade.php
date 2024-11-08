@@ -35,7 +35,7 @@
                         <a class="nav-link active" href="{{route('products.index')}}">Товары</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Заказы</a> <!--будет потом....наверное...-->
+                        <a class="nav-link active" href="{{route('admin.orders.index')}}">Заказы</a> <!--будет потом....наверное...-->
                     </li>
 
                 </ul>

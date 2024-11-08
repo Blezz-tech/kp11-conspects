@@ -47,4 +47,6 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('/admin/categories', CategoryController::class);
     Route::resource('/admin/products', ProductController::class);
     Route::post('/admin/filter',[ ProductController::class, 'filter'])->name('admin.products.filter');
+
+    Route::get('/admin/orders', [OrderController::class, 'index'])->name('admin.orders.index');
 });

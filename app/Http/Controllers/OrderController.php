@@ -12,7 +12,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+       $order = Order::where('status', '!=', 'в корзине')->withCount('products')->get();
+       return view('admin.orders.index', ['orders'=>$orders]);
     }
 
     /**
