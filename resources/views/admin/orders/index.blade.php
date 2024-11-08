@@ -23,7 +23,7 @@
         <td>{{ $order->status }}</td>
         <td>
             @if ($order->status === 'отменен')
-                Причина отмены: {{ $order->comment }}
+                Причина отмены: {{ $order->coment }}
             @else
                 Нет комментария
             @endif
