@@ -20,13 +20,15 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    // protected $fillable = [
-    //     'name',
-    //     'email',
-    //     'password',
-    // ];
-
-    protected $guarded = ['isAdmin'];
+    protected $fillable = [
+        'name',
+        'surname',
+        'patronymic',
+        'login',
+        'email',
+        'password',
+        'isAdmin',
+    ];
 
     public function orders()
     {
