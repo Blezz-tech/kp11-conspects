@@ -34,6 +34,4 @@
 </table>
 
 
-<!-- <a href="{{route('orders.create')}}" class="btn btn-primary" role="button">Добавить новую категорию</a> -->
-
 @endsection

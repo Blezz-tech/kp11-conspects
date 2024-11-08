@@ -3,6 +3,7 @@
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\OrderController;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
@@ -49,4 +50,5 @@ Route::middleware(['admin'])->group(function () {
     Route::post('/admin/filter',[ ProductController::class, 'filter'])->name('admin.products.filter');
 
     Route::get('/admin/orders', [OrderController::class, 'index'])->name('admin.orders.index');
+    Route::get('/admin/{order}/confirm/', [OrderController::class, 'confirm'])->name('admin.orders.confirm');
 });

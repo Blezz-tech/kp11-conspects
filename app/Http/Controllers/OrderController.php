@@ -12,8 +12,21 @@ class OrderController extends Controller
      */
     public function index()
     {
-       $order = Order::where('status', '!=', 'в корзине')->withCount('products')->get();
+       $orders = Order::where('status', '!=', 'в корзине')->withCount('products')->get();
        return view('admin.orders.index', ['orders'=>$orders]);
+    }
+
+    /** Изменить статус заказа на "подтвержден"
+    *
+    *(доступен для администратора)
+    * @param \App\Models\Order $order
+    * @return \Illuminate\Http\Response **/
+    public function confirm(Order $order)
+    {
+        //dd($order);
+        $order->status = 'подтвержден';
+        $order->save();
+        return redirect('admin/orders')->with('info', 'Статус заказа изменен');
     }
 
     /**
