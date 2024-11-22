@@ -17,7 +17,7 @@
                     {{$product->price}} рублей за 1 товар
                 </td>
                 <td>
-                    <form id="product-form" action="{{route('cart.change', $product)}}" method="post">
+                    <form id="product-form-{{$product->id}}" action="{{route('cart.change', $product)}}" method="post">
                         @csrf
                         <input type="btn btn-primary" name="qty" value="{{$product->pivot->qty}}" min="0"
                             max="{{$product->qty}}">
@@ -25,7 +25,7 @@
                     </form>
                 </td>
                 <td>
-                    <button form="product-form" class="btn btn-primary" type="submit">Изменить</button>
+                    <button form="product-form-{{$product->id}}" class="btn btn-primary" type="submit">Изменить</button>
                 </td>
                 <td>
                     <a href="{{route('cart.delete', $product->id)}}" class="btn btn-primary">Удалить</a>

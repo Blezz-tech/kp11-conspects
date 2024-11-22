@@ -12,9 +12,10 @@ class CartController extends Controller
 
         $order = Auth::user()->orders()->firstWhere('status', 'в корзине');
 
-        $product = $order->products()->find($product_id);
+        $products = $order->products();
 
-        if ($product) {
+        if ($products) {
+            $product = $products->find($product_id);
             $qty = $product->pivot->qty + 1;
             $order->products()->updateExistingPivot($product->id, ['qty' => $qty]);
         } else {

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Order;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -21,10 +22,15 @@ class UserSeeder extends Seeder
             'isAdmin' => 1,
         ]);
 
-        User::factory()->create([
+        $user = User::factory()->create([
             'login' => 'user',
             'email' => 'user@user.user',
             'password' =>  Hash::make('123'),
         ]);
+
+        $order = new Order;
+        $order->user_id = $user->id;
+        $order->status = 'В корзине';
+        $order->save();
     }
 }
