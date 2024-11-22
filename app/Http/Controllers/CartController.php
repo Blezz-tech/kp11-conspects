@@ -23,11 +23,12 @@ class CartController extends Controller
 
         return redirect()->back()->with('info', 'Товар добавлен в корзину');
     }
+
     public function show()
     {
         $order = Auth::user()->orders()->firstWhere('status', 'в корзине');
 
-        return view('cart', ['products' => $order->products]);
+        return view('cart', ['products' => $order == null ? null : $order->products]);
     }
 
     public function change($product_id, Request $request)

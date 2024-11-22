@@ -4,6 +4,8 @@
 
 <h2>Выбранные товары</h2>
 
+@if($products != null) 
+
 <table class="table table-striped mt-5">
     <tbody>
         @foreach ($products as $product)
@@ -57,4 +59,11 @@
         </div>
     </div>
 </div>
+
+@else
+
+<p>Корзина пуста</p>
+
+@endif
+
 @endsection
