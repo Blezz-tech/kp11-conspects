@@ -4,7 +4,7 @@
 
 <h2>Выбранные товары</h2>
 
-<table class="table table -stripped mt-5">
+<table class="table table-striped mt-5">
     <tbody>
         @foreach ($products as $product)
             <tr>
@@ -33,4 +33,28 @@
     </tbody>
 </table>
 
+<button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Заказать
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Введите пароль для подтверждения заказа</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="{{route('orders.send')}}" method="post">
+                @csrf
+                <div class="modal-body">
+                    <input type="password" name="password">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Заказать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 @endsection

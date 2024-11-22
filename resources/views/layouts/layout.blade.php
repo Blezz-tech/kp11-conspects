@@ -19,9 +19,12 @@
         <div class="container d-flex">
             <a class="navbar-brand" href="{{ route('about') }}">О нас</a>
             <a class="navbar-brand" href="{{ route('catalog') }}">Каталог</a>
-            {{-- <a class="navbar-brand" href="{{route('contacts')}}">Контакты</a> --}}
-            <a class="navbar-brand" href="{{ route('cart.show') }}">Корзина</a>
-
+            <a class="navbar-brand" href="{{route('contacts')}}">Контакты</a>
+            
+            @auth
+                <a class="navbar-brand" href="{{route('cart.show')}}">Корзина</a>
+                <a class="navbar-brand" href="{{route('orders.list')}}" class="nav-link active">Мои заказы</a>
+            @endauth
 
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
