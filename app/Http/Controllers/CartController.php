@@ -12,14 +12,13 @@ class CartController extends Controller
 
         $order = Auth::user()->orders()->firstWhere('status', 'в корзине');
 
-        $products = $order->products();
+        $product = $order->products()->find($product_id);;
 
-        if ($products) {
-            $product = $products->find($product_id);
+        if ($product) {
             $qty = $product->pivot->qty + 1;
             $order->products()->updateExistingPivot($product->id, ['qty' => $qty]);
         } else {
-            $order->product()->attach($product->id, ['qty' => 1]);
+            $order->products()->attach($product_id, ['qty' => 1]);
         }
 
         return redirect()->back()->with('info', 'Товар добавлен в корзину');
