@@ -28,28 +28,21 @@ class OrderController extends Controller
         return view('admin.orders.index', ['orders' => $orders]);
     }
 
-    /** Изменить статус заказа на "подтвержден"
-     *
-     *(доступен для администратора)
-     * @param \App\Models\Order $order
-     * @return \Illuminate\Http\Response **/
     public function confirm(Order $order)
     {
-        //dd($order);
-        $order->status = 'подтвержден';
+        $order->status = 'подтверждено';
         $order->save();
-        return redirect('admin/orders')->with('info', 'Статус заказа изменен');
+        return redirect('admin/orders')->with('success', 'Статус заказа изменен');
     }
-
 
     public function cancel(Request $request, Order $order)
     {
-        //dd($order);
-        $order->status = 'отменен';
-        $order->comment = $request->coment;
+        $order->status = 'отменено';
+        $order->comment = $request->comment;
         $order->save();
-        return redirect('admin/orders')->with('info', 'Статус заказа изменен');
+        return redirect('admin/orders')->with('success', 'Статус заказа изменен');
     }
+
     /**
      * Show the form for creating a new resource.
      */
