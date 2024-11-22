@@ -43,6 +43,32 @@ class OrderController extends Controller
         return redirect('admin/orders')->with('success', 'Статус заказа изменен');
     }
 
+    public function send(Request $request)
+    {
+        if (Hash::check($request->password, Auth::user()->password)) {
+            $order = Auth::user()->orders()->firstWhere('status', 'в корзине');
+            $order->status = 'новый';
+            $order->save();
+
+            $order = new Order;
+            $order->user_id = Auth::user()->id;
+            $order->status = 'в корзине';
+            $order->save();
+
+            return redirect('/catalog')->with('success', 'Заказ отправлен');
+        }
+        else {
+            return redirect()->back()->with('error', 'Неправильный пароль');
+        }
+    }
+
+    public function list()
+    {
+        $orders = Auth::user()->orders()->orderBy('created_at')->get();
+
+        return view('orders', ['orders' => $orders]);
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -88,6 +114,8 @@ class OrderController extends Controller
      */
     public function destroy(Order $order)
     {
-        //
+        $order->products()->detach();
+        $order->delete();
+        return redirect()->back()->with('success', 'Заказ удален');
     }
 }
