@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from sympy import symbols, lambdify, log, sin, cos
+from sympy import symbols, lambdify, log, sin, cos, tan, cot
 import os
 
 os.makedirs("./data/ПР9", exist_ok=True)
@@ -138,23 +138,23 @@ tasks = [
     },
     {
         "title": "11",
-        "f": lambda x: cos(x) + x ** 3 - 2
+        "f": lambda x: tan(0.3 * x + 0.4) - x ** 2
     },
     {
         "title": "12",
-        "f": lambda x: cos(x) + 2 * x - 3
+        "f": lambda x: x ** 2 - 20 * sin(x)
     },
     {
         "title": "13",
-        "f": lambda x: cos(x) - x ** 3 + 2
+        "f": lambda x: cot(x) - x / 3
     },
     {
         "title": "14",
-        "f": lambda x: log(x) - x ** 2 + 5
+        "f": lambda x: tan(0.47 * x + 0.2) - x ** 2
     },
     {
         "title": "15",
-        "f": lambda x: log(x) + 2 ** x - 3
+        "f": lambda x: x ** 2 + 4 * sin(x)
     }
 ]
 
