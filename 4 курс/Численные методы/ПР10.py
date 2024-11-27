@@ -71,8 +71,22 @@ def resolver(title, x, a, f, f_name):
     plt.clf()
 
     # Ответ
-    print(f"f({a}) = {f_a:.4f}")
-    print(f"L({a}) = {L_a:.4f}")
+    print("\n### Ответ:")
+
+    print(f"\nf({a}) = {f_a:.4f}")
+
+    print(f"\nL({a}) = {L_a:.4f}")
+
+    print(f"\n![График функции задания {title}](./data/ПР10/task-{title}.jpg)")
+
+    print("\n### Проверка:")
+
+    with open('ПР10.py', 'r') as file:
+        content = file.read()
+        print("")
+        print("```")
+        print(content)
+        print("```")
 
 tasks = [
     {
