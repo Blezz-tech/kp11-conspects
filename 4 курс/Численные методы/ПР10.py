@@ -41,13 +41,15 @@ def resolver(title, x, a, f, f_name):
     x_nodes = np.array(x)
     y_nodes = f(x_nodes)
 
+    min_x = min(x)
+    max_x = max(x)
 
     # Вычисляем значения
     f_a = f(a)
     L_a = lagrange_interpolation(a, x_nodes, y_nodes)
 
     # Генерируем значения для графика
-    x_values = np.linspace(2, 4, 100)
+    x_values = np.linspace(min_x, max_x, 100)
     f_values = f(x_values)
     L_values = lagrange_interpolation(x_values, x_nodes, y_nodes)
 
@@ -63,7 +65,7 @@ def resolver(title, x, a, f, f_name):
     plt.ylabel('y')
     plt.axhline(0, color='black', linewidth=0.5, ls='--')
     plt.axvline(0, color='black', linewidth=0.5, ls='--')
-    plt.xlim(min(x), max(x))
+    plt.xlim(min_x, max_x)
     plt.legend()
     plt.grid()
     # plt.show()
