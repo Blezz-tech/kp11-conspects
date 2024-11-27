@@ -1,15 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Определяем функцию f(x)
-def f(x):
-    return (np.log(x))**(13/4)
-
-# Узлы интерполирования
-x_nodes = np.array([2, 3, 4])
-y_nodes = f(x_nodes)
-
-# Функция для вычисления полинома Лагранжа
+# Чистая функция для вычисления полинома Лагранжа
 def lagrange_interpolation(x, x_nodes, y_nodes):
     L = 0
     for i in range(len(x_nodes)):
@@ -19,6 +11,15 @@ def lagrange_interpolation(x, x_nodes, y_nodes):
                 term *= (x - x_nodes[j]) / (x_nodes[i] - x_nodes[j])
         L += term
     return L
+
+
+# Определяем функцию f(x)
+def f(x):
+    return (np.log(x))**(13/4)
+
+# Узлы интерполирования
+x_nodes = np.array([2, 3, 4])
+y_nodes = f(x_nodes)
 
 # Точка для вычисления
 a = 2.5
@@ -42,8 +43,8 @@ plt.scatter(a, L_a, color='purple', label=f'L({a}) = {L_a:.4f}', zorder=5)
 plt.title('Интерполяция Лагранжа')
 plt.xlabel('x')
 plt.ylabel('y')
-plt.axhline(0, color='black',linewidth=0.5, ls='--')
-plt.axvline(0, color='black',linewidth=0.5, ls='--')
+plt.axhline(0, color='black', linewidth=0.5, ls='--')
+plt.axvline(0, color='black', linewidth=0.5, ls='--')
 plt.legend()
 plt.grid()
 plt.show()
