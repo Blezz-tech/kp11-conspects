@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+os.makedirs("./data/ПР11", exist_ok=True)
 
 def newton_interpolation(x, y, x_dots):
     n = len(x)
@@ -23,13 +26,30 @@ def newton_interpolation(x, y, x_dots):
     
     return results
 
-def resolver(x, y, x_dots):
+def resolver(title, x, y, x_dots):
+    print("\n## Задача", title)
+
+    # Условие
+    print("\n### Условие:")
+    print("\nПостроить интерполяционный полином Ньютона и соответствующий график для функции Y, заданной таблично и вычислить значение функции в точках а), б), в).")
+
+    print(f"\nа) {x_dots[0]} б) {x_dots[1]} в) {x_dots[2]}")
+    print("\n```")
+    print(f"\nx = {x}")
+    print(f"\ny = {y}")
+    print("\n```")
+
+    # Решение
+    print("\n### Решение:")
+
+    with open('ПР10.py', 'r') as file:
+        content = file.read()
+        print("\n```")
+        print(content)
+        print("\n```")
+
     # Вычисление значений интерполяционного полинома
     results = newton_interpolation(x, y, x_dots)
-
-    # Вывод результатов
-    for x_dot, result in zip(x_dots, results):
-        print(f"f({x_dot}) = {result:.4f}")
 
     # Построение графика
     # Создание массива точек для графика интерполяции
@@ -51,8 +71,26 @@ def resolver(x, y, x_dots):
     plt.ylabel('y')
     plt.legend()
     plt.grid()
-    plt.show()
+    # plt.show()
+    plt.savefig(f"./data/ПР11/task-{title}.jpg", dpi=300, bbox_inches='tight')
+    plt.clf()
 
+    # Ответ
+    print("\n### Ответ:")
+
+    # Вывод результатов
+    for x_dot, result in zip(x_dots, results):
+        print(f"\nf({x_dot}) = {result:.4f}")
+    
+    print(f"\n![График функции задания {title}](./data/ПР11/task-{title}.jpg)")
+
+    print("\n### Проверка:")
+
+    with open('ПР10.py', 'r') as file:
+        content = file.read()
+        print("\n```")
+        print(content)
+        print("\n```")
 
 # Данные
 
@@ -85,5 +123,5 @@ tasks = [
 ]
 
 for task in tasks:
-    x, y, x_dots = task['x'], task['y'], task['x_dots']
-    resolver(x, y, x_dots)
+    title, x, y, x_dots = task['title'], task['x'], task['y'], task['x_dots']
+    resolver(title, x, y, x_dots)
