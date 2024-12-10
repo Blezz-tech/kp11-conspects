@@ -42,7 +42,7 @@ def resolver(title, x, y, x_dots):
     # Решение
     print("\n### Решение:")
 
-    with open('ПР10.py', 'r') as file:
+    with open('ПР11.py', 'r') as file:
         content = file.read()
         print("\n```")
         print(content)
@@ -86,7 +86,7 @@ def resolver(title, x, y, x_dots):
 
     print("\n### Проверка:")
 
-    with open('ПР10.py', 'r') as file:
+    with open('ПР11.py', 'r') as file:
         content = file.read()
         print("\n```")
         print(content)
