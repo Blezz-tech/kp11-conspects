@@ -11,7 +11,6 @@ class AdminController extends Controller
      */
     public function index()
     {
-        dd("Сделать админку");
-        // return view("");
+        return view('pages.admin-panel');
     }
 }

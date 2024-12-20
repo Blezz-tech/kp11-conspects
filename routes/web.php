@@ -18,8 +18,6 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', [PageController::class,'index'])->name('home');
 
-Route::get('/admin', [AdminController::class, 'index'])->name('admin.panel');
-
 Route::get('/login', [AuthController::class, 'loginfrom'])->name('auth.loginform');
 Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
 
@@ -27,3 +25,6 @@ Route::get('/register', [AuthController::class, 'registerfrom'])->name('auth.reg
 Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
 
 Route::post('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
+
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.panel');
