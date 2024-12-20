@@ -27,7 +27,21 @@ class AuthController extends Controller
      */
     public function login(Request $request)
     {
-        // TODO: Сделать проверку на вхож
+        $credentials = $request->validate([
+            'login' => 'required',
+            'password' => 'required|confirmed',
+        ]);
+
+        if (auth()->attempt($credentials)) {
+            $request->session()->regenerate();
+
+            return redirect()->intended('home');
+        }
+
+        return back()->withErrors([
+            'login' => 'Неверные данные',
+        ])->onlyInput('login');
+
     }
 
     /**
@@ -43,7 +57,7 @@ class AuthController extends Controller
      */
     public function logout()
     {
-        // TODO: Сделать выход
+        auth()->logout();
     }
 
 }
