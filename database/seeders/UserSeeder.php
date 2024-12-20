@@ -14,15 +14,20 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->count(10)->create([
-            'password' => Hash::make('123'),
-        ]);
-        # TODO: Добавить генерацию 10 тикетов на пользователя
+        for ($i = 0; $i < 10; $i++) {
+            User::factory()->create([
+                'login' => 'user'. $i,
+                'password' => Hash::make('123'),
+            ]);
+            # TODO: Добавить генерацию 10 тикетов на пользователя
+        }
+
 
         User::factory()->create([
-            "email"    => "admin@admin.admin",
-            "name"     => "admin",
-            "password" => Hash::make("admin"),
+            'login'    => 'admin',
+            'email'    => 'admin@admin.admin',
+            'name'     => 'admin',
+            'password' => Hash::make("admin"),
             'is_admin' => true,
         ]);
     }
