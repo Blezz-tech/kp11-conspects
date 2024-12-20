@@ -21,7 +21,7 @@ Route::get('/', [PageController::class,'index'])->name('home');
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.panel');
 
 Route::get('/login', [AuthController::class, 'loginfrom'])->name('auth.loginform');
-Route::post('/login', [AdminController::class, 'login'])->name('auth.login');
+Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
 
 Route::get('/register', [AuthController::class, 'registerfrom'])->name('auth.registerform');
-Route::post('/register', [AdminController::class, 'register'])->name('auth.register');
+Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
