@@ -17,6 +17,7 @@ class TicketFactory extends Factory
     public function definition(): array
     {
         return [
+            # TODO: Добавить генерацию тикетов
             //
         ];
     }

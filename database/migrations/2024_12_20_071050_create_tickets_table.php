@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            # TODO: Добавить поля для модели Ticket
         });
     }
 

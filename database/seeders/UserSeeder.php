@@ -17,6 +17,7 @@ class UserSeeder extends Seeder
         User::factory()->count(10)->create([
             'password' => Hash::make('123'),
         ]);
+        # TODO: Добавить генерацию 10 тикетов на пользователя
 
         User::factory()->create([
             "email"    => "admin@admin.admin",
