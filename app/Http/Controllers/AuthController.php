@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -47,9 +48,22 @@ class AuthController extends Controller
     /**
      * Create New User.
      */
-    public function regsiter(Request $request)
+    public function register(Request $request)
     {
-        // TODO: Сделать прокерку на регстирацию и саму регистрацию
+        $credetials = $request->validate([
+            'login' => 'required|unique:users,login', # TODO: Сделать валидацю (только латиница), озможно как-то можно будет использовать slug
+            'name' => 'required', # TODO: Сделать валидацию (только кириллические буквы, дефис и пробелы) |regex://i
+            'email' => 'required|email',
+            'password' => 'required|min:5',
+            'password_repeat' => 'required',  # TODO: Сделать правильно на эакивалентность полю password (Возможно это правило same)
+            'is_accept' => 'required',
+        ]);
+
+        $credetials['is_accept'] = true;
+
+        User::create($credetials);
+
+        return redirect()->route('home');
     }
 
     /**
