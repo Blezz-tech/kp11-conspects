@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
 
@@ -18,3 +19,9 @@ use App\Http\Controllers\AdminController;
 Route::get('/', [PageController::class,'index'])->name('home');
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.panel');
+
+Route::get('/login', [AuthController::class, 'loginfrom'])->name('auth.loginform');
+Route::post('/login', [AdminController::class, 'login'])->name('auth.login');
+
+Route::get('/register', [AuthController::class, 'registerfrom'])->name('auth.registerform');
+Route::post('/register', [AdminController::class, 'register'])->name('auth.register');
