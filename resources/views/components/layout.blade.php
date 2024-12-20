@@ -8,7 +8,9 @@
 </head>
 <body>
     <x-navbar />
-    {{ $slot }}
+    <div class="container mt-3">
+        {{ $slot }}
+    </div>
     <script src="/js/bootstrap.bundle.js"></script>
 </body>
 </html>
