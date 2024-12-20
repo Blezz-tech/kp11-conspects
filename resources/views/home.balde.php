@@ -47,6 +47,7 @@
             </nav>
         </div>
     </div>
-    <link rel="stylesheet" href="/js/bootstrap.bundle.js">
+
+    <script src="/js/bootstrap.bundle.js"></script>
 </body>
 </html>
