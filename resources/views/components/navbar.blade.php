@@ -21,11 +21,11 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             {{-- TODO: Заменить на конопку, добавить route()  --}}
-                            <a class="nav-link" href="#">Вход</a>
+                            <a class="nav-link" href="{{ route('auth.loginform') }}">Вход</a>
                         </li>
                         <li class="nav-item">
                             {{-- TODO: Заменить на конопку, добавить route() --}}
-                            <a class="nav-link" href="#">Регистрация</a>
+                            <a class="nav-link" href="{{ route('auth.registerform') }}">Регистрация</a>
                         </li>
                     </ul>
                 </div>
