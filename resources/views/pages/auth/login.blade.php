@@ -10,5 +10,5 @@
           <input name="password" type="password" class="form-control" id="password">
         </div>
         <button type="submit" class="btn btn-primary">Войти</button>
-      </form>
+    </form>
 </x-layout>
