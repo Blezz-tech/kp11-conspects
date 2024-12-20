@@ -13,8 +13,17 @@ return new class extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('description');
+            $table->boolean('status')->default(0);
+            $table->string('photo_before')->nullable();
+            $table->string('photo_after');
+            $table->string('comment')->nullable();
             $table->timestamps();
-            # TODO: Добавить поля для модели Ticket
+
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('category_id')->constrained()->onDelete('cascade');
+
         });
     }
 
