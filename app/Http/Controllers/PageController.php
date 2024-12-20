@@ -13,4 +13,12 @@ class PageController extends Controller
     {
         return view("home");
     }
+
+    /**
+     * User account page.
+     */
+    public function account()
+    {
+        return view('pages.user.account');
+    }
 }

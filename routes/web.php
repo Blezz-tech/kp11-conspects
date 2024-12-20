@@ -28,3 +28,5 @@ Route::post('/auth/logout', [AuthController::class, 'logout'])->name('auth.logou
 
 // TODO: Сделать админку недоступной для пользователя
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.panel');
+
+Route::get('/user/account', [PageController::class, 'account'])->name('user.account');
