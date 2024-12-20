@@ -29,7 +29,7 @@ class AuthController extends Controller
     {
         $credentials = $request->validate([
             'login' => 'required',
-            'password' => 'required|confirmed',
+            'password' => 'required',
         ]);
 
         if (auth()->attempt($credentials)) {
