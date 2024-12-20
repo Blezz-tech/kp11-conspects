@@ -11,6 +11,20 @@ class Ticket extends Model
     use HasFactory;
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'name',
+        'title',
+        'description',
+        'photo_before',
+        'photo_after',
+        'comment',
+    ];
+
+    /**
      * Get the categories that owns the comment.
      */
     public function category(): BelongsTo

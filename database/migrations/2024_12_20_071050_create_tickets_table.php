@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('description');
-            $table->boolean('status')->default(0);
             $table->string('photo_before')->nullable();
             $table->string('photo_after');
             $table->string('comment')->nullable();
@@ -23,7 +22,7 @@ return new class extends Migration
 
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
-
+            $table->foreignId('state_id')->constrained()->onDelete('cascade')->default(0);
         });
     }
 
