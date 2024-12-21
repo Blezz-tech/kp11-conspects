@@ -57,7 +57,7 @@ class AuthController extends Controller
 
         User::create($credetials);
 
-        return redirect()->route('home');
+        return redirect()->route('user.account')->with('info', 'Регистрация выполнена!');
     }
 
     /**
