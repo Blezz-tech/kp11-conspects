@@ -67,7 +67,7 @@ class AuthController extends Controller
     {
         auth()->logout();
 
-        return redirect()->route('home');
+        return redirect()->route('home')->with('info', 'Выпонен выход!');
     }
 
 }
