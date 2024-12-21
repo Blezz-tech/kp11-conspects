@@ -15,10 +15,12 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         for ($i = 0; $i < 10; $i++) {
-            User::factory()->create([
-                'login' => 'user'. $i,
-                'password' => Hash::make('123'),
-            ]);
+            User::factory()
+                ->hasTickets(10)
+                ->create([
+                    'login' => 'user'. $i,
+                    'password' => Hash::make('123'),
+                ]);
             # TODO: Добавить генерацию 10 тикетов на пользователя
         }
 
