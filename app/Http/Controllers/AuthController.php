@@ -51,8 +51,8 @@ class AuthController extends Controller
     public function register(Request $request)
     {
         $credetials = $request->validate([
-            'login' => 'required|unique:users,login', # TODO: Сделать валидацю (только латиница), озможно как-то можно будет использовать slug
-            'name' => 'required', # TODO: Сделать валидацию (только кириллические буквы, дефис и пробелы) |regex://i
+            'login' => 'required|unique:users,login|regex:/^[a-zA-Z]+$/u',
+            'name' => 'required|regex:/^[а-яА-ЯёЁ\- ]+$/u',
             'email' => 'required|email',
             'password' => 'required|min:5|confirmed',
             'is_accept' => 'required',
