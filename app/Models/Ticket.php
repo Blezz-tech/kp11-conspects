@@ -40,5 +40,11 @@ class Ticket extends Model
         return $this->belongsTo(User::class);
     }
 
-
+    /**
+     * Get the post that owns the comment.
+     */
+    public function state(): BelongsTo
+    {
+        return $this->belongsTo(State::class);
+    }
 }
