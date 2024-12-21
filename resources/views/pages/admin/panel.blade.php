@@ -25,8 +25,16 @@
                     <td>{{ $ticket->description }}</td>
                     <td>{{ $ticket->category->name }}</td>
                     <td>{{ $ticket->state->name }}</td>
-                    <td>{{ $ticket->photo_before }}</td>
-                    <td>{{ $ticket->photo_after }}</td>
+                    <td>
+                        <img style="max-width: 100px; height: auto;" src="{{ asset($ticket->photo_before) }}" alt="Photo Before" />
+                    </td>
+                    @if ($ticket->photo_after != null)
+                        <td>
+                            <img style="max-width: 100px; height: auto;" src="{{ asset($ticket->photo_after) }}" alt="Photo Before" />
+                        </td>
+                    @else
+                        <td>-</td>
+                    @endif
                     <td>{{ $ticket->comment }}</td>
                     <td>
                         {{-- TODO: Сделать кнопки с ссылками на страницы:
