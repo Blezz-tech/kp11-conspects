@@ -55,10 +55,8 @@ class AuthController extends Controller
             'name' => 'required|regex:/^[а-яА-ЯёЁ\- ]+$/u',
             'email' => 'required|email',
             'password' => 'required|min:5|confirmed',
-            'is_accept' => 'required',
+            'is_accept' => 'accepted',
         ]);
-
-        $credetials['is_accept'] = true;
 
         User::create($credetials);
 
