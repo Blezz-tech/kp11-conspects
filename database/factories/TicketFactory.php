@@ -24,8 +24,8 @@ class TicketFactory extends Factory
             'title' => fake()->text(),
             'description' => fake()->text(),
             'photo_before' => '-',
-            'photo_after' => $state == 1 ? '-' : null,
-            'comment' => $state == 1 ? fake()->text() : null,
+            'photo_after' => $state == 2 ? '-' : null,
+            'comment' => $state == 2 ? fake()->text() : null,
 
             'user_id' => User::inRandomOrder()->first()->id,
             'category_id' => Category::inRandomOrder()->first()->id,
