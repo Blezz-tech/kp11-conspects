@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('description');
-            $table->string('photo_before')->nullable();
-            $table->string('photo_after');
+            $table->string('photo_before');
+            $table->string('photo_after')->nullable();;
             $table->string('comment')->nullable();
             $table->timestamps();
 
