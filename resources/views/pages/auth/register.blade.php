@@ -26,9 +26,9 @@
             {{-- TODO: Сделать подсветку ошибочных полей --}}
         </div>
         <div class="mb-3">
-            <label for="password_repeat" class="form-label">Повтор пароля</label>
-            <input name="password_repeat" type="password" class="form-control" id="passwordRepeatHelp">
-            <div id="passwordRepeatHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <label for="password_confirmation" class="form-label">Повтор пароля</label>
+            <input name="password_confirmation" type="password" class="form-control" id="passwordConfirmationHelp">
+            <div id="passwordConfirmationHelp" class="form-text">We'll never share your email with anyone else.</div>
             {{-- TODO: Сделать подсветку ошибочных полей --}}
         </div>
         <div class="mb-3 form-check">

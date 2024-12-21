@@ -54,8 +54,7 @@ class AuthController extends Controller
             'login' => 'required|unique:users,login', # TODO: Сделать валидацю (только латиница), озможно как-то можно будет использовать slug
             'name' => 'required', # TODO: Сделать валидацию (только кириллические буквы, дефис и пробелы) |regex://i
             'email' => 'required|email',
-            'password' => 'required|min:5',
-            'password_repeat' => 'required',  # TODO: Сделать правильно на эакивалентность полю password (Возможно это правило same)
+            'password' => 'required|min:5|confirmed',
             'is_accept' => 'required',
         ]);
 
