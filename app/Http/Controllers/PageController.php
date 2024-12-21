@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -19,6 +20,10 @@ class PageController extends Controller
      */
     public function account()
     {
-        return view('pages.user.account');
+        $tickets = User::find(auth()->id())->tickets;
+
+        return view('pages.user.account', [
+            'tickets' => $tickets,
+        ]);
     }
 }
