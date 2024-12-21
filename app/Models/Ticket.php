@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -23,6 +24,11 @@ class Ticket extends Model
         'photo_after',
         'comment',
     ];
+
+    public function getFmtCreatedAtAttribute()
+    {
+        return Carbon::parse($this->created_at)->format('d.m.y, H:i');
+    }
 
     /**
      * Get the categories that owns the comment.
