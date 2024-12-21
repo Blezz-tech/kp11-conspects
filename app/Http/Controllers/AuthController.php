@@ -32,17 +32,14 @@ class AuthController extends Controller
             'login' => 'required',
             'password' => 'required',
         ]);
-
         if (auth()->attempt($credentials)) {
             $request->session()->regenerate();
-
-            return redirect()->route('home');
+            if (auth()->user()->is_admin) {
+                return redirect()->route('admin.panel')->with('info', 'Вы зашли как администратор');
+            }
+            return redirect()->route('user.account')->with('info', 'Вход выполнен!');
         }
-
-        return back()->withErrors([
-            'login' => 'Неверные данные',
-        ])->onlyInput('login');
-
+        return back()->withErrors([ 'login' => 'Неверные данные',]);
     }
 
     /**
