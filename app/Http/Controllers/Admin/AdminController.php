@@ -30,7 +30,32 @@ class AdminController extends Controller
 
     public function acceptTicket(Request $request, $ticketId)
     {
-        // TODO
+        $ticket = Ticket::find($ticketId);
+
+        if ($ticket->state->id != 1) {
+            return back()
+                ->withErrors([ 'ticket' => 'Заявку нельзя изменить']);
+        }
+
+        if (!$ticket) {
+            return redirect()
+                ->route('admin.tickets.index')
+                ->withErrors(['Тикета не существует']);
+        }
+
+        $credentials = $request->validate([
+            'photo_after' => 'required|image|mimes:jpg,jpeg,png,bmp|max:10240',
+        ]);
+
+        $img_path = $request->file('photo_after')->store('storage');
+
+        $ticket->state_id = 2;
+        $ticket->photo_after = $img_path;
+        $ticket->save();
+
+        return redirect()
+            ->route('admin.tickets.index')
+            ->with(['Тикет успешно решён']);
     }
 
     public function rejectTicketPage(Request $request, $ticketId)
