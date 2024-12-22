@@ -6,5 +6,8 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.categories.index') }}">Все категории</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.categories.create') }}">Создать категорию</a>
+        </li>
     </ul>
 </x-layout>
