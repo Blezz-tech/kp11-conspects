@@ -18,7 +18,7 @@
                         @endadmin
                         @auth
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('user.account') }}">Личный кабинет</a>
+                                <a class="nav-link active" href="{{ route('user.home') }}">Личный кабинет</a>
                             </li>
                         @endauth
                     </ul>

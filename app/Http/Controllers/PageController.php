@@ -25,12 +25,10 @@ class PageController extends Controller
     /**
      * User account page.
      */
-    public function account()
+    public function home()
     {
         $tickets = User::find(auth()->id())->tickets;
 
-        return view('user.account', [
-            'tickets' => $tickets,
-        ]);
+        return view('user.home');
     }
 }

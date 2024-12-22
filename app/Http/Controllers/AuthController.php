@@ -35,9 +35,13 @@ class AuthController extends Controller
         if (auth()->attempt($credentials)) {
             $request->session()->regenerate();
             if (auth()->user()->is_admin) {
-                return redirect()->route('admin.tickets.index')->with('info', 'Вы зашли как администратор');
+                return redirect()
+                    ->route('admin.tickets.index')
+                    ->with('info', 'Вы зашли как администратор');
             }
-            return redirect()->route('user.account')->with('info', 'Вход выполнен!');
+            return redirect()
+                ->route('user.home')
+                ->with('info', 'Вход выполнен!');
         }
         return back()->withErrors([ 'login' => 'Неверные данные',]);
     }
@@ -58,7 +62,7 @@ class AuthController extends Controller
 
         User::create($credetials);
 
-        return redirect()->route('user.account')->with('info', 'Регистрация выполнена!');
+        return redirect()->route('user.tickets.index')->with('info', 'Регистрация выполнена!');
     }
 
     /**
@@ -68,7 +72,9 @@ class AuthController extends Controller
     {
         auth()->logout();
 
-        return redirect()->route('home')->with('info', 'Выпонен выход!');
+        return redirect()
+            ->route('user.home')
+            ->with('info', 'Выпонен выход!');
     }
 
 }

@@ -30,7 +30,7 @@ Route::post('/register', [AuthController::class, 'register'])->name('auth.regist
 
 Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
-    Route::get('/user/account', [PageController::class, 'account'])->name('user.account');
+    Route::get('/user/home', [PageController::class, 'home'])->name('user.home');
 
     Route::prefix('user')->group(function () {
         Route::resource('tickets', UserTicketController::class, ['as' => 'user']);

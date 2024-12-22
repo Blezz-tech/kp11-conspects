@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Models\User;
 use App\Models\Ticket;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Category;
 
 class UserTicketController extends Controller
 {
@@ -16,7 +17,11 @@ class UserTicketController extends Controller
      */
     public function index()
     {
-        //
+        $tickets = User::find(id: auth()->id())->tickets;
+
+        return view('user.tickets.index', [
+            'tickets' => $tickets,
+        ]);
     }
 
     /**
@@ -52,7 +57,9 @@ class UserTicketController extends Controller
             'user_id' => $userId
         ]);
 
-        return redirect()->route('user.account')->with('info', 'Заявка успешно добавлена.');
+        return redirect()
+            ->route('user.tickets.index')
+            ->with('info', 'Заявка успешно добавлена.');
     }
 
     /**
@@ -88,19 +95,19 @@ class UserTicketController extends Controller
 
         if ($ticket->user->id != auth()->id()) {
             return redirect()
-                ->route('user.account')
+                ->route('user.tickets.index')
                 ->withErrors([ 'ticket' => 'Заявка не принадлежит вам']);
         }
 
         if ($ticket->state->id != 1) {
             return redirect()
-                ->route('user.account')
+                ->route('user.tickets.index')
                 ->withErrors([ 'ticket' => 'Заявку нельзя удалить']);
         }
 
         $ticket->delete();
 
-        return redirect()->route('user.account')->withInfo([
+        return redirect()->route('user.tickets.index')->withInfo([
             'Заявка успешно удалена'
         ]);
     }

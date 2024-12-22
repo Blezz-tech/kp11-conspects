@@ -6,6 +6,6 @@
             @method('delete')
             <button type="submit" class="btn btn-outline-danger">Да</button>
         </form>
-        <a class="btn btn-outline-primary" role="button" href={{ route('user.account') }} >Вернуться</a>
+        <a class="btn btn-outline-primary" role="button" href={{ route('user.tickets.index') }} >Вернуться</a>
     </div>
 </x-layout-errors>
