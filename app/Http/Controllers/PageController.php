@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use App\Models\Ticket;
 use Illuminate\Http\Request;
 
@@ -20,15 +19,5 @@ class PageController extends Controller
         return view("home", [
             'tickets' => $tickets,
         ]);
-    }
-
-    /**
-     * User account page.
-     */
-    public function home()
-    {
-        $tickets = User::find(auth()->id())->tickets;
-
-        return view('user.home');
     }
 }
