@@ -23,9 +23,9 @@
                     'active' => $i == 0,
                 ])>
                     <img src="{{ $ticket->photo_after }}" style="width: 100%; height: 480px;" class="d-block" alt="Фоточка">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block bg-secondary" style="--bs-bg-opacity: .75;">
                         <h5>{{$ticket->s_title}}</h5>
-                        <p>{{$ticket->s_description}}</p>
+                        <p>{{$ticket->category->name}} {{$ticket->created_at}}</p>
                     </div>
                 </div>
             @endforeach
