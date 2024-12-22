@@ -23,7 +23,7 @@
                     'carousel-item' => true,
                     'active' => $i == 0,
                 ])>
-                    <img src="{{ $ticket->photo_after }}" style="width: 100%; height: 480px;" class="d-block" alt="Фоточка">
+                    <img src="{{ asset($ticket->photo_after) }}" style="width: 100%; height: 480px;" class="d-block" alt="Фоточка">
                     <div class="carousel-caption d-none d-md-block bg-secondary" style="--bs-bg-opacity: .75;">
                         <h5>{{$ticket->s_title}}</h5>
                         <p>{{$ticket->category->name}} {{$ticket->created_at}}</p>
@@ -39,5 +39,33 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Следующий</span>
         </button>
+    </div>
+
+
+    @foreach ($tickets as $ticket)
+        <div class="mt-3">
+            <a id="imba">
+                <img src="{{ asset($ticket->photo_after) }}" />
+                <img src="{{ asset($ticket->photo_before) }}" />
+            </a>
         </div>
+    @endforeach
+    <style>
+        #imba img:last-child {
+            display: none;
+        }
+
+        #imba:hover img:last-child {
+            display: block;
+        }
+
+        #imba:hover img:first-child {
+            display: none;
+        }
+
+        #imba img {
+            width: 100%;
+            height: 480px;
+        }
+    </style>
 </x-layout>
