@@ -22,7 +22,7 @@ class PageController extends Controller
     {
         $tickets = User::find(auth()->id())->tickets;
 
-        return view('pages.user.account', [
+        return view('user.account', [
             'tickets' => $tickets,
         ]);
     }

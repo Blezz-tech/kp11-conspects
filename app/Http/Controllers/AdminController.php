@@ -14,7 +14,7 @@ class AdminController extends Controller
     {
         $tickets = Ticket::all();
 
-        return view('pages.admin.panel', [
+        return view('admin.panel', [
             'tickets' => $tickets]
         );
     }

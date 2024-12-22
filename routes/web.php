@@ -29,21 +29,21 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
     Route::get('/user/account', [PageController::class, 'account'])->name('user.account');
 
-    Route::get('/user/tickets/create', [UserController::class, 'createTicketPage'])->name('user.tickets.createPage');
-    Route::post('/user/tickets/create', [UserController::class, 'createTicket'])->name('user.tickets.create');
+    Route::get('/user/tickets/create', [UserController::class, 'createTicketPage'])->name('user.ticket.createPage');
+    Route::post('/user/tickets/create', [UserController::class, 'createTicket'])->name('user.ticket.create');
 
-    Route::get('/user/tickets/delete/{id}', [UserController::class, 'deleteTicketPage'])->name('user.tickets.deletePage');
-    Route::post('/user/tickets/delete/{id}', [UserController::class, 'deleteTicket'])->name('user.tickets.delete');
+    Route::get('/user/tickets/delete/{id}', [UserController::class, 'deleteTicketPage'])->name('user.ticket.deletePage');
+    Route::post('/user/tickets/delete/{id}', [UserController::class, 'deleteTicket'])->name('user.ticket.delete');
 });
 
 Route::middleware(['admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.panel');
 
-    Route::get('/admin/tickets/accept/{id}', [AdminController::class, 'acceptTicketPage'])->name('admin.tickets.acceptPage');
-    Route::post('/admin/tickets/accept/{id}', [UserController::class, 'acceptTicket'])->name('admin.tickets.accept');
+    Route::get('/admin/tickets/accept/{id}', [AdminController::class, 'acceptTicketPage'])->name('admin.ticket.acceptPage');
+    Route::post('/admin/tickets/accept/{id}', [UserController::class, 'acceptTicket'])->name('admin.ticket.accept');
 
-    Route::get('/admin/tickets/reject/{id}', [AdminController::class, 'rejectTicketPage'])->name('admin.tickets.rejectPage');
-    Route::post('/admin/tickets/reject/{id}', [UserController::class, 'rejectTicket'])->name('admin.tickets.reject');
+    Route::get('/admin/tickets/reject/{id}', [AdminController::class, 'rejectTicketPage'])->name('admin.ticket.rejectPage');
+    Route::post('/admin/tickets/reject/{id}', [UserController::class, 'rejectTicket'])->name('admin.ticket.reject');
 });
 
 

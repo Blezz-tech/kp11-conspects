@@ -13,7 +13,7 @@ class UserController extends Controller
      */
     public function createTicketPage()
     {
-        return view('users.tickets.create');
+        return view('user.ticket.create');
     }
 
     /**
@@ -46,7 +46,7 @@ class UserController extends Controller
                 ->withErrors([ 'ticket' => 'Заявку нельзя удалить']);
         }
 
-        return view('users.tickets.delete', [
+        return view('user.ticket.delete', [
             'ticket' => $ticket,
         ]);
     }

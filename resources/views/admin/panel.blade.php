@@ -1,5 +1,6 @@
 <x-layout>
-    {{-- TODO: Сделать верстку ЛК --}}
+    {{-- TODO: Сделать верстку админки --}}
+
     <table class="table">
         <thead>
         <tr>
@@ -33,6 +34,7 @@
                         ]) role="alert">
                             {{ $ticket->state->name }}
                         </div>
+                    </td>
                     <td>
                         <img style="max-width: 100px; height: 75px;" src="{{ asset($ticket->photo_before) }}" alt="Photo Before" />
                     </td>
@@ -45,7 +47,14 @@
                     @endif
                     <td>{{ $ticket->s_comment }}</td>
                     <td>
-                        <a class="btn btn-outline-danger" href="{{ route('user.tickets.deletePage', $ticket) }}" role="button">Удалить</a>
+                        <div class="d-flex flex-column gap-1">
+                            <a class="btn btn-outline-primary" href="{{ route('admin.ticket.acceptPage', $ticket) }}" role="button">Принять</a>
+                            <a class="btn btn-outline-danger" href="{{ route('admin.ticket.rejectPage', $ticket) }}" role="button">Отклонить</a>
+                        </div>
+                        {{-- TODO: Сделать кнопки с ссылками на страницы:
+                            1. Подтвердить
+                            2. Удалить
+                        --}}
                     </td>
                 </tr>
             @endforeach

@@ -12,7 +12,7 @@ class AuthController extends Controller
      */
     public function loginfrom()
     {
-        return view("pages.auth.login");
+        return view("auth.login");
     }
 
     /**
@@ -20,7 +20,7 @@ class AuthController extends Controller
      */
     public function registerfrom()
     {
-        return view("pages.auth.register");
+        return view("auth.register");
     }
 
     /**
