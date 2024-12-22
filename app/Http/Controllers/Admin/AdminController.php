@@ -25,7 +25,7 @@ class AdminController extends Controller
         if (!$ticket) {
             return redirect()
                 ->route('admin.tickets.index')
-                ->withErrors(['Тикета не существует']);
+                ->withErrors(['Заявки не существует']);
         }
 
         return view('admin.tickets.accept', [
@@ -45,7 +45,7 @@ class AdminController extends Controller
         if (!$ticket) {
             return redirect()
                 ->route('admin.tickets.index')
-                ->withErrors(['Тикета не существует']);
+                ->withErrors(['Заявка не существует']);
         }
 
         $credentials = $request->validate([
@@ -60,7 +60,7 @@ class AdminController extends Controller
 
         return redirect()
             ->route('admin.tickets.index')
-            ->with('info', 'Тикет успешно решён');
+            ->with('info', 'Заявка успешно решёна');
     }
 
     public function rejectTicketPage(Request $request, $ticketId)
@@ -75,7 +75,7 @@ class AdminController extends Controller
         if (!$ticket) {
             return redirect()
                 ->route('admin.tickets.index')
-                ->withErrors(['Тикета не существует']);
+                ->withErrors(['Заявки не существует']);
         }
 
         return view('admin.tickets.reject', [
@@ -97,6 +97,6 @@ class AdminController extends Controller
 
         return redirect()
             ->route('admin.tickets.index')
-            ->with('info', 'Тикет успешно отклонён');
+            ->with('info', 'Заявка успешно отклонёна');
     }
 }
