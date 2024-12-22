@@ -36,13 +36,13 @@
                     <td>
                         <img style="max-width: 100px; height: 75px;" src="{{ asset($ticket->photo_before) }}" alt="Photo Before" />
                     </td>
-                    @if ($ticket->photo_after != null)
-                        <td>
+                    <td>
+                        @if ($ticket->photo_after != null)
                             <img style="max-width: 100px; height: 75px;" src="{{ asset($ticket->photo_after) }}" alt="Photo Before" />
-                        </td>
-                    @else
-                        <td>-</td>
-                    @endif
+                        @else
+                            -
+                        @endif
+                    </td>
                     <td>{{ $ticket->s_comment }}</td>
                     <td>
                         @if ($ticket->state->id == 1)
