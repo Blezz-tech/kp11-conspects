@@ -1,5 +1,6 @@
 <x-layout>
-    <h1>Главная страница</h1>
+    <h1 class="text-center">Главная страница</h1>
+    <h3 class="text-center">Всего выполнено заявок: <strong>{{ $totalAcceptedTickets }}</strong></h3>
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             @foreach ($tickets as $i => $ticket)

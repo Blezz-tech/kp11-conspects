@@ -16,8 +16,11 @@ class PageController extends Controller
             ->latest()
             ->take(4)
             ->get();
+        $totalAcceptedTickets = Ticket::where('state_id', 2)
+            ->count();
         return view("home", [
             'tickets' => $tickets,
+            'totalAcceptedTickets' => $totalAcceptedTickets,
         ]);
     }
 }
