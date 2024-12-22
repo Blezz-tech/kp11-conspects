@@ -7,6 +7,7 @@ use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminTicketController;
 use App\Http\Controllers\Admin\AdminCategoryController;
+use App\Http\Controllers\User\UserTicketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,11 +32,11 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
     Route::get('/user/account', [PageController::class, 'account'])->name('user.account');
 
-    Route::get('/user/tickets/create', [UserController::class, 'createTicketPage'])->name('user.ticket.createPage');
-    Route::post('/user/tickets/create', [UserController::class, 'createTicket'])->name('user.ticket.create');
+    Route::prefix('user')->group(function () {
+        Route::resource('tickets', UserTicketController::class, ['as' => 'user']);
 
-    Route::get('/user/tickets/delete/{id}', [UserController::class, 'deleteTicketPage'])->name('user.ticket.deletePage');
-    Route::post('/user/tickets/delete/{id}', [UserController::class, 'deleteTicket'])->name('user.ticket.delete');
+        Route::get('/tickets/delete/{id}', [UserTicketController::class, 'deleteTicketPage'])->name('user.ticket.destroyPage');
+    });
 });
 
 Route::prefix('admin')->middleware(['admin'])->group(function () {
