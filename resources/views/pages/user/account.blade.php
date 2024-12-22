@@ -20,21 +20,21 @@
                 <tr>
                     <th scope="row">{{ $ticket->id }}</th>
                     <td>{{ $ticket->created_at }}</td>
-                    <td>{{ $ticket->title }}</td>
-                    <td>{{ $ticket->description }}</td>
+                    <td>{{ $ticket->s_title }}</td>
+                    <td>{{ $ticket->s_description }}</td>
                     <td>{{ $ticket->category->name }}</td>
                     <td>{{ $ticket->state->name }}</td>
                     <td>
-                        <img style="max-width: 100px; height: auto;" src="{{ asset($ticket->photo_before) }}" alt="Photo Before" />
+                        <img style="max-width: 100px; height: 75px;" src="{{ asset($ticket->photo_before) }}" alt="Photo Before" />
                     </td>
                     @if ($ticket->photo_after != null)
                         <td>
-                            <img style="max-width: 100px; height: auto;" src="{{ asset($ticket->photo_after) }}" alt="Photo Before" />
+                            <img style="max-width: 100px; height: 75px;" src="{{ asset($ticket->photo_after) }}" alt="Photo Before" />
                         </td>
                     @else
                         <td>-</td>
                     @endif
-                    <td>{{ $ticket->comment }}</td>
+                    <td>{{ $ticket->s_comment }}</td>
                     <td>
                         {{-- TODO: Сделать кнопки с ссылками на страницы:
                             1. Подтвердить
