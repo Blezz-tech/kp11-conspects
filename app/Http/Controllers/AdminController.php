@@ -8,13 +8,6 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    /**
-     * Admin Panel.
-     */
-    public function index()
-    {
-    }
-
     public function acceptTicketPage(Request $request, $ticketId)
     {
         $ticket = Ticket::find($ticketId);
