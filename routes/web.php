@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminCategoryController;
 use App\Http\Controllers\Admin\AdminTicketController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -39,17 +40,15 @@ Route::middleware(['auth'])->group(function () {
 
 Route::prefix('admin')->middleware(['admin'])->group(function () {
     Route::resources([
-        'tickets' => AdminTicketController::class
+        'tickets' => AdminTicketController::class,
+        'categories' => AdminCategoryController::class,
     ], ['as' => 'admin']);
 
-    Route::get('/tickets/accept/{id}', [AdminController::class, 'acceptTicketPage'])->name('admin.ticket.acceptPage');
-    Route::post('/tickets/accept/{id}', [AdminController::class, 'acceptTicket'])->name('admin.ticket.accept');
+    Route::get('/tickets/accept/{id}', [AdminController::class, 'acceptTicketPage'])->name('admin.tickets.acceptPage');
+    Route::post('/tickets/accept/{id}', [AdminController::class, 'acceptTicket'])->name('admin.tickets.accept');
 
-    Route::get('/tickets/reject/{id}', [AdminController::class, 'rejectTicketPage'])->name('admin.ticket.rejectPage');
-    Route::post('/tickets/reject/{id}', [AdminController::class, 'rejectTicket'])->name('admin.ticket.reject');
-
-    Route::get('/category/index', [AdminController::class, 'categoriesPage'])->name('admin.category.index');
-    Route::post('/category/delete/{id}', [AdminController::class, 'deleteCategory'])->name('admin.category.delete');
+    Route::get('/tickets/reject/{id}', [AdminController::class, 'rejectTicketPage'])->name('admin.tickets.rejectPage');
+    Route::post('/tickets/reject/{id}', [AdminController::class, 'rejectTicket'])->name('admin.tickets.reject');
 });
 
 

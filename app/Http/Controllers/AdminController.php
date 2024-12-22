@@ -19,11 +19,11 @@ class AdminController extends Controller
 
         if (!$ticket) {
             return redirect()
-                ->route('admin.ticket.index')
+                ->route('admin.tickets.index')
                 ->withErrors(['Тикета не существует']);
         }
 
-        return view('admin.ticket.accept', [
+        return view('admin.tickets.accept', [
             'ticket' => $ticket
         ]);
     }
@@ -44,11 +44,11 @@ class AdminController extends Controller
 
         if (!$ticket) {
             return redirect()
-                ->route('admin.ticket.index')
+                ->route('admin.tickets.index')
                 ->withErrors(['Тикета не существует']);
         }
 
-        return view('admin.ticket.reject', [
+        return view('admin.tickets.reject', [
             'ticket' => $ticket
         ]);
     }
@@ -66,25 +66,7 @@ class AdminController extends Controller
         $ticket->save();
 
         return redirect()
-            ->route('admin.ticket.index')
+            ->route('admin.tickets.index')
             ->with(['Тикет успешно отклонён']);
     }
-
-    public function categoriesPage()
-    {
-        $categories =  Category::all();
-        return view('admin.category.index', [
-            'categories' => $categories
-        ]);
-    }
-
-    public function deleteCategory(Request $request, $categoryId)
-    {
-        $category = Category::find($categoryId);
-        $category->delete();
-        return redirect()
-            ->route('admin.category.index')
-            ->with(['Категория успешно удалена']);
-    }
-
 }

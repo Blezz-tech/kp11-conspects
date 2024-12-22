@@ -13,8 +13,9 @@
                     <th scope="row">{{ $category->id }}</th>
                     <td>{{ $category->name }}</td>
                     <td>
-                        <form method="POST" action="{{ route('admin.category.delete', $category) }}">
+                        <form method="POST" action="{{ route('admin.categories.destroy', $category) }}">
                             @csrf
+                            @method('delete')
                             <button type="submit" class="btn btn-outline-danger">Удалить</button>
                         </form>
                     </td>

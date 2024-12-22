@@ -10,10 +10,10 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         @admin
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('admin.ticket.index') }}">Админка</a>
+                                <a class="nav-link active" href="{{ route('admin.tickets.index') }}">Админка</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('admin.category.index') }}">Категории</a>
+                                <a class="nav-link active" href="{{ route('admin.categories.index') }}">Категории</a>
                             </li>
                         @endadmin
                         @auth

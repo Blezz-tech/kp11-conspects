@@ -2,22 +2,21 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Ticket;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class AdminTicketController extends Controller
+class AdminCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $tickets = Ticket::all();
-
-        return view('admin.tickets.index', [
-            'tickets' => $tickets]
-        );
+        $categories =  Category::all();
+        return view('admin.categories.index', [
+            'categories' => $categories
+        ]);
     }
 
     /**
@@ -65,6 +64,10 @@ class AdminTicketController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $category = Category::find($id);
+        $category->delete();
+        return redirect()
+            ->route('admin.categories.index')
+            ->with(['Категория успешно удалена']);
     }
 }
