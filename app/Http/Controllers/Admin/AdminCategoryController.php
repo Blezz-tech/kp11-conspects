@@ -78,7 +78,7 @@ class AdminCategoryController extends Controller
         $category->delete();
         return redirect()
             ->route('admin.categories.index')
-            ->with(['Категория успешно удалена']);
+            ->with('info', 'Категория успешно удалена');
     }
 
     // RESOURCE CONTROLLER

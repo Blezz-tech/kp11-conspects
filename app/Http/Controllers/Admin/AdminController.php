@@ -60,7 +60,7 @@ class AdminController extends Controller
 
         return redirect()
             ->route('admin.tickets.index')
-            ->with(['Тикет успешно решён']);
+            ->with('info', 'Тикет успешно решён');
     }
 
     public function rejectTicketPage(Request $request, $ticketId)
@@ -97,6 +97,6 @@ class AdminController extends Controller
 
         return redirect()
             ->route('admin.tickets.index')
-            ->with(['Тикет успешно отклонён']);
+            ->with('info', 'Тикет успешно отклонён');
     }
 }
