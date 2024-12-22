@@ -16,12 +16,11 @@ class UserSeeder extends Seeder
     {
         for ($i = 0; $i < 10; $i++) {
             User::factory()
-                ->hasTickets(10)
+                ->hasTickets(15)
                 ->create([
                     'login' => 'user'. $i,
                     'password' => Hash::make('123'),
                 ]);
-            # TODO: Добавить генерацию 10 тикетов на пользователя
         }
 
 

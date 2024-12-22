@@ -1,5 +1,4 @@
 <x-layout-errors>
-    {{-- TODO: Сделать верстку ЛК --}}
     <table class="table">
         <thead>
         <tr>

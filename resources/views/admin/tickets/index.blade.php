@@ -1,6 +1,4 @@
 <x-layout-errors>
-    {{-- TODO: Сделать верстку админки --}}
-
     <table class="table">
         <thead>
         <tr>
