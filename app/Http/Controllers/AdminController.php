@@ -29,7 +29,9 @@ class AdminController extends Controller
                 ->with(['Тикета не существует']);
         }
 
-        return view('admin.ticket.accept');
+        return view('admin.ticket.accept', [
+            'ticket' => $ticket
+        ]);
     }
 
     public function acceptTicket(Request $request, $ticketId)
@@ -47,7 +49,9 @@ class AdminController extends Controller
                 ->with(['Тикета не существует']);
         }
 
-        return view('admin.ticket.reject');
+        return view('admin.ticket.reject', [
+            'ticket' => $ticket
+        ]);
     }
 
     public function rejectTicket(Request $request, $ticketId)
