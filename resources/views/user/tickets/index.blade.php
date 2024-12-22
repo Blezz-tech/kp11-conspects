@@ -1,4 +1,16 @@
 <x-layout-errors>
+    <form action="{{ route('user.tickets.index') }}" method="GET">
+        @csrf
+        <div class="mb-3">
+            <select name="state_id" class="form-select" aria-label="Default select example">
+                <option value="" selected>все</option>
+                @foreach ($states as $state)
+                    <option value="{{ $state->id }}">{{ $state->name }}</option>
+                @endforeach
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Фильтровать</button>
+    </form>
     <table class="table">
         <thead>
         <tr>

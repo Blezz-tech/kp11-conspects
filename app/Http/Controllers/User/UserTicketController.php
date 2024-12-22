@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Models\User;
+use App\Models\State;
 use App\Models\Ticket;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -15,12 +16,22 @@ class UserTicketController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $tickets = User::find(id: auth()->id())->tickets->sortByDesc("created_at");;
+        $state_id = $request->query('state_id');
+        $tickets = $tickets = User::find(id: auth()->id())->tickets;
+        if ($state_id != null) {
+            $tickets = Ticket::where('state_id', $state_id)->get();
+        } else {
+            $tickets = Ticket::all();
+        }
+        $tickets = $tickets->sortByDesc("created_at");
+
+        $states = State::all();
 
         return view('user.tickets.index', [
             'tickets' => $tickets,
+            'states' => $states,
         ]);
     }
 
