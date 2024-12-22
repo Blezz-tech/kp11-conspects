@@ -15,7 +15,7 @@ class AdminTicketController extends Controller
      */
     public function index()
     {
-        $tickets = Ticket::all();
+        $tickets = Ticket::all()->sortByDesc("created_at");
 
         return view('admin.tickets.index', [
             'tickets' => $tickets]

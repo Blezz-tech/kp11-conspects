@@ -17,7 +17,7 @@ class UserTicketController extends Controller
      */
     public function index()
     {
-        $tickets = User::find(id: auth()->id())->tickets;
+        $tickets = User::find(id: auth()->id())->tickets->sortByDesc("created_at");;
 
         return view('user.tickets.index', [
             'tickets' => $tickets,
