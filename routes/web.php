@@ -44,6 +44,9 @@ Route::middleware(['admin'])->group(function () {
 
     Route::get('/admin/tickets/reject/{id}', [AdminController::class, 'rejectTicketPage'])->name('admin.ticket.rejectPage');
     Route::post('/admin/tickets/reject/{id}', [AdminController::class, 'rejectTicket'])->name('admin.ticket.reject');
+
+    Route::get('/admin/category/index', [AdminController::class, 'categoriesPage'])->name('admin.category.index');
+    Route::post('/admin/category/delete/{id}', [AdminController::class, 'deleteCategory'])->name('admin.category.delete');
 });
 
 

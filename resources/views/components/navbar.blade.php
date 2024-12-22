@@ -12,6 +12,9 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('admin.panel') }}">Админка</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="{{ route('admin.category.index') }}">Категории</a>
+                            </li>
                         @endadmin
                         @auth
                             <li class="nav-item">

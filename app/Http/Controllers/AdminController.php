@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Ticket;
 use Illuminate\Http\Request;
 
@@ -80,4 +81,22 @@ class AdminController extends Controller
             ->route('admin.panel')
             ->with(['Тикет успешно отклонён']);
     }
+
+    public function categoriesPage()
+    {
+        $categories =  Category::all();
+        return view('admin.category.index', [
+            'categories' => $categories
+        ]);
+    }
+
+    public function deleteCategory(Request $request, $categoryId)
+    {
+        $category = Category::find($categoryId);
+        $category->delete();
+        return redirect()
+            ->route('admin.category.index')
+            ->with(['Категория успешно удалена']);
+    }
+
 }
