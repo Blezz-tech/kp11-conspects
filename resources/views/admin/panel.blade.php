@@ -47,14 +47,12 @@
                     @endif
                     <td>{{ $ticket->s_comment }}</td>
                     <td>
-                        <div class="d-flex flex-column gap-1">
-                            <a class="btn btn-outline-primary" href="{{ route('admin.ticket.acceptPage', $ticket) }}" role="button">Принять</a>
-                            <a class="btn btn-outline-danger" href="{{ route('admin.ticket.rejectPage', $ticket) }}" role="button">Отклонить</a>
-                        </div>
-                        {{-- TODO: Сделать кнопки с ссылками на страницы:
-                            1. Подтвердить
-                            2. Удалить
-                        --}}
+                        @if ($ticket->state->id == 1)
+                            <div class="d-flex flex-column gap-1">
+                                <a class="btn btn-outline-primary" href="{{ route('admin.ticket.acceptPage', $ticket) }}" role="button">Принять</a>
+                                <a class="btn btn-outline-danger" href="{{ route('admin.ticket.rejectPage', $ticket) }}" role="button">Отклонить</a>
+                            </div>
+                        @endif
                     </td>
                 </tr>
             @endforeach
