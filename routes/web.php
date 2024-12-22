@@ -24,10 +24,11 @@ Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
 Route::get('/register', [AuthController::class, 'registerfrom'])->name('auth.registerform');
 Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
 
-Route::post('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
+Route::middleware(['auth'])->group(function () {
+    Route::post('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
+    Route::get('/user/account', [PageController::class, 'account'])->name('user.account');
+});
 
 Route::middleware(['admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.panel');
 });
-
-Route::get('/user/account', [PageController::class, 'account'])->name('user.account');
