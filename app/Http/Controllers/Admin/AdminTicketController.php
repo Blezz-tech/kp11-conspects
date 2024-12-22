@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 
 class AdminTicketController extends Controller
 {
+    // RESOURCE CONTROLLER
+
     /**
      * Display a listing of the resource.
      */
@@ -67,4 +69,7 @@ class AdminTicketController extends Controller
     {
         //
     }
+
+    // RESOURCE CONTROLLER
+
 }

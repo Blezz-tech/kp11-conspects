@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 
 class AdminCategoryController extends Controller
 {
+    // RESOURCE CONTROLLER
+
     /**
      * Display a listing of the resource.
      */
@@ -70,4 +72,8 @@ class AdminCategoryController extends Controller
             ->route('admin.categories.index')
             ->with(['Категория успешно удалена']);
     }
+
+    // RESOURCE CONTROLLER
+
+
 }

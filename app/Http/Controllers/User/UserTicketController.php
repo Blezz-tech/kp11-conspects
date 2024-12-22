@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 
 class UserTicketController extends Controller
 {
+    // RESOURCE CONTROLLER
+
     /**
      * Display a listing of the resource.
      */
@@ -85,6 +87,8 @@ class UserTicketController extends Controller
             'Заявка успешно удалена'
         ]);
     }
+
+    // RESOURCE CONTROLLER
 
     /**
      * Show the form for creating a new resource.
