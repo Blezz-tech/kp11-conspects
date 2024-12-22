@@ -38,4 +38,12 @@ Route::middleware(['auth'])->group(function () {
 
 Route::middleware(['admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.panel');
+
+    Route::get('/admin/tickets/accept/{id}', [AdminController::class, 'acceptTicketPage'])->name('admin.tickets.acceptPage');
+    Route::post('/admin/tickets/accept/{id}', [UserController::class, 'acceptTicket'])->name('admin.tickets.accept');
+
+    Route::get('/admin/tickets/reject/{id}', [AdminController::class, 'rejectTicketPage'])->name('admin.tickets.rejectPage');
+    Route::post('/admin/tickets/reject/{id}', [UserController::class, 'rejectTicket'])->name('admin.tickets.reject');
 });
+
+

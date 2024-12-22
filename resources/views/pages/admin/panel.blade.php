@@ -48,9 +48,8 @@
                     <td>{{ $ticket->s_comment }}</td>
                     <td>
                         <div class="d-flex flex-column gap-1">
-                            {{$ticket}}
-                            <a class="btn btn-outline-primary" href="#" role="button">Принять</a>
-                            <a class="btn btn-outline-danger" href="#" role="button">Отклонить</a>
+                            <a class="btn btn-outline-primary" href="{{ route('admin.tickets.acceptPage', $ticket) }}" role="button">Принять</a>
+                            <a class="btn btn-outline-danger" href="{{ route('admin.tickets.rejectPage', $ticket) }}" role="button">Отклонить</a>
                         </div>
                         {{-- TODO: Сделать кнопки с ссылками на страницы:
                             1. Подтвердить

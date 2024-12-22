@@ -18,4 +18,40 @@ class AdminController extends Controller
             'tickets' => $tickets]
         );
     }
+
+    public function acceptTicketPage(Request $request, $ticketId)
+    {
+        $ticket = Ticket::find($ticketId);
+
+        if (!$ticket) {
+            return redirect()
+                ->route('admin.panel')
+                ->with(['Тикета не существует']);
+        }
+
+        return view('admin.ticket.accept');
+    }
+
+    public function acceptTicket(Request $request, $ticketId)
+    {
+
+    }
+
+    public function rejectTicketPage(Request $request, $ticketId)
+    {
+        $ticket = Ticket::find($ticketId);
+
+        if (!$ticket) {
+            return redirect()
+                ->route('admin.panel')
+                ->with(['Тикета не существует']);
+        }
+
+        return view('admin.ticket.reject');
+    }
+
+    public function rejectTicket(Request $request, $ticketId)
+    {
+
+    }
 }
