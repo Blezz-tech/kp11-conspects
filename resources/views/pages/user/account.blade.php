@@ -25,6 +25,7 @@
                     <td>{{ $ticket->category->name }}</td>
                     <td>
                         <div @class([
+                            'text-center' => true,
                             'alert' => true,
                             'alert-primary' => $ticket->state->id == 1,
                             'alert-success' => $ticket->state->id == 2,
