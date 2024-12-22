@@ -1,19 +1,10 @@
 <x-layout>
-    <ul class="nav flex-column">
+    <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link" href="{{ route('user.tickets.index') }}">Мои заявки</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="{{ route('user.tickets.create') }}">Создать заявку</a>
         </li>
     </ul>
-    <li class="nav-item">
-        <a class="nav-link active" href="{{ route('user.tickets.index') }}">Личный кабинет</a>
-    </li>
 </x-layout>
