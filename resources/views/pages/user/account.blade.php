@@ -23,7 +23,15 @@
                     <td>{{ $ticket->s_title }}</td>
                     <td>{{ $ticket->s_description }}</td>
                     <td>{{ $ticket->category->name }}</td>
-                    <td>{{ $ticket->state->name }}</td>
+                    <td>
+                        <div @class([
+                            'alert' => true,
+                            'alert-primary' => $ticket->state->id == 1,
+                            'alert-success' => $ticket->state->id == 2,
+                            'alert-danger' => $ticket->state->id == 3,
+                        ]) role="alert">
+                            {{ $ticket->state->name }}
+                        </div>
                     <td>
                         <img style="max-width: 100px; height: 75px;" src="{{ asset($ticket->photo_before) }}" alt="Photo Before" />
                     </td>
