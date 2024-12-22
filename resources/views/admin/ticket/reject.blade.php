@@ -1,10 +1,10 @@
 <x-layout>
     <h1>Отклонение заявки</h1>
     <div class="row">
-        <div class="col-md-3">
-            <img style="max-width: 300px; height: 225px;" src="{{ asset($ticket->photo_before)}} " alt="">
+        <div class="col-xl-4">
+            <img class="d-block m-auto" style="max-width: 300px; height: 225px;" src="{{ asset($ticket->photo_before)}} " alt="">
         </div>
-        <div class="col-md-9">
+        <div class="col-xl-8">
             <h3>{{$ticket->title}}</h3>
             <p>Описание: {{$ticket->description}}</p>
             <p>Категория: <strong>{{$ticket->category->name}}</strong></p>
