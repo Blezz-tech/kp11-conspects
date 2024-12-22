@@ -42,7 +42,7 @@
     </div>
 
 
-    @foreach ($tickets as $ticket)
+    @foreach ($tickets as $i => $ticket)
         <div id="imba{{$i}}" class="mt-3"></div>
         <style>
             #imba{{$i}} {
