@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,12 @@ Route::post('/register', [AuthController::class, 'register'])->name('auth.regist
 Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
     Route::get('/user/account', [PageController::class, 'account'])->name('user.account');
+
+    Route::get('/user/tickets/create', [UserController::class, 'createTicketPage'])->name('user.tickets.createPage');
+    Route::post('/user/tickets/create', [UserController::class, 'createTicket'])->name('user.tickets.create');
+
+    Route::get('/user/tickets/delete/{id}', [UserController::class, 'deleteTicketPage'])->name('user.tickets.deletePage');
+    Route::post('/user/tickets/delete/{id}', [UserController::class, 'deleteTicket'])->name('user.tickets.delete');
 });
 
 Route::middleware(['admin'])->group(function () {
