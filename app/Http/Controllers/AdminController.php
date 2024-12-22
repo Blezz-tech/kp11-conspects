@@ -34,7 +34,7 @@ class AdminController extends Controller
 
     public function acceptTicket(Request $request, $ticketId)
     {
-
+        // TODO
     }
 
     public function rejectTicketPage(Request $request, $ticketId)
@@ -52,6 +52,6 @@ class AdminController extends Controller
 
     public function rejectTicket(Request $request, $ticketId)
     {
-
+        // TODO
     }
 }
