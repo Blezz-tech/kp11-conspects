@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Models\Ticket;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 
 class UserTicketController extends Controller
 {
@@ -23,7 +24,7 @@ class UserTicketController extends Controller
      */
     public function create()
     {
-        return view('user.tickets.create');
+        return view('user.tickets.create', ['categories' => Category::all()]);
     }
 
     /**
@@ -32,10 +33,26 @@ class UserTicketController extends Controller
     public function store(Request $request)
     {
         $credentials = $request->validate([
-            // TODO: Сделать валидацижю тикета
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'category_id' => 'required|exists:categories,id',
+            'photo_before' => 'required|image|mimes:jpg,jpeg,png,bmp|max:10240', // 10MB
         ]);
 
-        // TODO: Сделать сохранение тикета
+        $img_path = $request->file('photo_before')->store('storage');
+
+        $userId = auth()->id();
+        // Создание новой заявки
+        Ticket::create(attributes: [
+            'title' => $request->title,
+            'description' => $request->description,
+            'category_id' => $request->category_id,
+            'photo_before' => $img_path,
+            'state_id' => 1,
+            'user_id' => $userId
+        ]);
+
+        return redirect()->route('main')->with('info', 'Заявка успешно добавлена.');
     }
 
     /**
