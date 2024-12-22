@@ -20,11 +20,16 @@ class TicketFactory extends Factory
     public function definition(): array
     {
         $state = State::inRandomOrder()->first()->id;
+        $x = rand(1, 7);
+        $y = rand(1,7);
+        while ($y == $x) {
+            $y = rand(1, 7);
+        }
         return [
             'title' => fake()->text(),
             'description' => fake()->text(),
-            'photo_before' => 'imgs/'.rand(1,7).'.jpg',
-            'photo_after' => $state == 2 ? 'imgs/'.rand(1,7).'.jpg' : null,
+            'photo_before' => 'imgs/'.$x.'.jpg',
+            'photo_after' => $state == 2 ? 'imgs/'.$y.'.jpg' : null,
             'comment' => $state == 3 ? fake()->text() : null,
 
             'user_id' => User::inRandomOrder()->first()->id,
