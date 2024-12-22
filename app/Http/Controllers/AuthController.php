@@ -51,7 +51,8 @@ class AuthController extends Controller
             'login' => 'required|unique:users,login|regex:/^[a-zA-Z]+$/u',
             'name' => 'required|regex:/^[а-яА-ЯёЁ\- ]+$/u',
             'email' => 'required|email',
-            'password' => 'required|min:5|confirmed',
+            'password' => 'required|min:5',
+            'password_confirmation' => 'required|same:password',
             'is_accept' => 'accepted',
         ]);
 

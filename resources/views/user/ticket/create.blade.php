@@ -1,3 +1,3 @@
-<x-layout>
+<x-layout-errors>
 {{-- TODO: Сделать добавление заявки --}}
-</x-layout>
+</x-layout-errors>

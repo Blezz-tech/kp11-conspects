@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout-errors>
     <h1>Отклонение заявки</h1>
     <div class="row">
         <div class="col-xl-4">
@@ -20,4 +20,4 @@
         <button type="submit" class="btn btn-danger">Отклонить</button>
         <a class="btn btn-primary" href="{{ route('admin.tickets.index') }}" role="button">Назад</a>
     </form>
-</x-layout>
+</x-layout-errors>

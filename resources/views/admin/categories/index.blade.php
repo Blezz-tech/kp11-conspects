@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout-errors>
     <table class="table">
         <thead>
         <tr>
@@ -23,4 +23,4 @@
             @endforeach
         </tbody>
     </table>
-</x-layout>
+</x-layout-errors>

@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout-errors>
     {{-- TODO: Сделать верстку админки --}}
 
     <table class="table">
@@ -58,4 +58,4 @@
             @endforeach
         </tbody>
     </table>
-</x-layout>
+</x-layout-errors>

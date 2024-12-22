@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout-errors>
     {{-- TODO: Сделать верстку ЛК --}}
     <table class="table">
         <thead>
@@ -53,4 +53,4 @@
             @endforeach
         </tbody>
     </table>
-</x-layout>
+</x-layout-errors>

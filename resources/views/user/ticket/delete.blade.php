@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout-errors>
     <h1>Вы уверены, что хотите удалить данную заявку?</h1>
     <div class="d-flex flex-row justify-content-evenly">
         <form method="POST" action="{{ route('user.ticket.delete', $ticket)}}">
@@ -7,4 +7,4 @@
         </form>
         <a class="btn btn-outline-primary" role="button" href={{ route('user.account') }} >Вернуться</a>
     </div>
-</x-layout>
+</x-layout-errors>
