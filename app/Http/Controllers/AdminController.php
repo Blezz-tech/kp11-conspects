@@ -23,10 +23,15 @@ class AdminController extends Controller
     {
         $ticket = Ticket::find($ticketId);
 
+        if ($ticket->state->id != 1) {
+            return back()
+                ->withErrors([ 'ticket' => 'Заявку нельзя изменить']);
+        }
+
         if (!$ticket) {
             return redirect()
                 ->route('admin.panel')
-                ->with(['Тикета не существует']);
+                ->withErrors(['Тикета не существует']);
         }
 
         return view('admin.ticket.accept', [
@@ -43,10 +48,15 @@ class AdminController extends Controller
     {
         $ticket = Ticket::find($ticketId);
 
+        if ($ticket->state->id != 1) {
+            return back()
+                ->withErrors([ 'ticket' => 'Заявку нельзя изменить']);
+        }
+
         if (!$ticket) {
             return redirect()
                 ->route('admin.panel')
-                ->with(['Тикета не существует']);
+                ->withErrors(['Тикета не существует']);
         }
 
         return view('admin.ticket.reject', [
@@ -56,6 +66,18 @@ class AdminController extends Controller
 
     public function rejectTicket(Request $request, $ticketId)
     {
-        // TODO
+        $credentials = $request->validate([
+            'comment' => 'required|string|min:5',
+        ]);
+
+        $ticket = Ticket::find($ticketId);
+
+        $ticket->state_id = 3;
+        $ticket->comment = $credentials['comment'];
+        $ticket->save();
+
+        return redirect()
+            ->route('admin.panel')
+            ->with(['Тикет успешно отклонён']);
     }
 }
