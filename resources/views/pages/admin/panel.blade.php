@@ -47,6 +47,11 @@
                     @endif
                     <td>{{ $ticket->s_comment }}</td>
                     <td>
+                        <div class="d-flex flex-column gap-1">
+                            {{$ticket}}
+                            <a class="btn btn-outline-primary" href="#" role="button">Принять</a>
+                            <a class="btn btn-outline-danger" href="#" role="button">Отклонить</a>
+                        </div>
                         {{-- TODO: Сделать кнопки с ссылками на страницы:
                             1. Подтвердить
                             2. Удалить

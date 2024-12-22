@@ -45,10 +45,7 @@
                     @endif
                     <td>{{ $ticket->s_comment }}</td>
                     <td>
-                        {{-- TODO: Сделать кнопки с ссылками на страницы:
-                            1. Подтвердить
-                            2. Удалить
-                        --}}
+                        <a class="btn btn-outline-danger" href="{{ route('user.tickets.deletePage', $ticket->id) }}" role="button">Удалить</a>
                     </td>
                 </tr>
             @endforeach
