@@ -107,9 +107,9 @@ class UserTicketController extends Controller
 
         $ticket->delete();
 
-        return redirect()->route('user.tickets.index')->withInfo([
-            'Заявка успешно удалена'
-        ]);
+        return redirect()
+            ->route('user.tickets.index')
+            ->with('info', 'Заявка успешно удалена');
     }
 
     // RESOURCE CONTROLLER
