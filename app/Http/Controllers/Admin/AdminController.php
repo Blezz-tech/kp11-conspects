@@ -8,6 +8,11 @@ use App\Http\Controllers\Controller;
 
 class AdminController extends Controller
 {
+    public function home()
+    {
+        return view('admin.home');
+    }
+
     public function acceptTicketPage(Request $request, $ticketId)
     {
         $ticket = Ticket::find($ticketId);

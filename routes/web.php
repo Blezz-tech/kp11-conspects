@@ -45,6 +45,8 @@ Route::prefix('admin')->middleware(['admin'])->group(function () {
         'categories' => AdminCategoryController::class,
     ], ['as' => 'admin']);
 
+    Route::get('/home', [AdminController::class, 'home'])->name('admin.home');
+
     Route::get('/tickets/accept/{id}', [AdminController::class, 'acceptTicketPage'])->name('admin.tickets.acceptPage');
     Route::post('/tickets/accept/{id}', [AdminController::class, 'acceptTicket'])->name('admin.tickets.accept');
 

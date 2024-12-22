@@ -36,7 +36,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
             if (auth()->user()->is_admin) {
                 return redirect()
-                    ->route('admin.tickets.index')
+                    ->route('admin.home')
                     ->with('info', 'Вы зашли как администратор');
             }
             return redirect()
