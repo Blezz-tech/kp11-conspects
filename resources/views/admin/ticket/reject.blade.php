@@ -18,6 +18,6 @@
             <textarea name="comment" class="form-control" id="commentId" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-danger">Отклонить</button>
-        <a class="btn btn-primary" href="{{ route('admin.panel') }}" role="button">Назад</a>
+        <a class="btn btn-primary" href="{{ route('admin.ticket.index') }}" role="button">Назад</a>
     </form>
 </x-layout>

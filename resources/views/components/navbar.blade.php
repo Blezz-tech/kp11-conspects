@@ -10,7 +10,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         @admin
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{ route('admin.panel') }}">Админка</a>
+                                <a class="nav-link active" href="{{ route('admin.ticket.index') }}">Админка</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('admin.category.index') }}">Категории</a>

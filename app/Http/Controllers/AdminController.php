@@ -13,11 +13,6 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $tickets = Ticket::all();
-
-        return view('admin.panel', [
-            'tickets' => $tickets]
-        );
     }
 
     public function acceptTicketPage(Request $request, $ticketId)
@@ -31,7 +26,7 @@ class AdminController extends Controller
 
         if (!$ticket) {
             return redirect()
-                ->route('admin.panel')
+                ->route('admin.ticket.index')
                 ->withErrors(['Тикета не существует']);
         }
 
@@ -56,7 +51,7 @@ class AdminController extends Controller
 
         if (!$ticket) {
             return redirect()
-                ->route('admin.panel')
+                ->route('admin.ticket.index')
                 ->withErrors(['Тикета не существует']);
         }
 
@@ -78,7 +73,7 @@ class AdminController extends Controller
         $ticket->save();
 
         return redirect()
-            ->route('admin.panel')
+            ->route('admin.ticket.index')
             ->with(['Тикет успешно отклонён']);
     }
 
