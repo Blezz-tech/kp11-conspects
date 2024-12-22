@@ -34,7 +34,7 @@
                         ]) role="alert">
                             {{ $ticket->state->name }}
                         </div>
-                    <td>
+                    </td>
                     <td>
                         <img style="max-width: 100px; height: 75px;" src="{{ asset($ticket->photo_before) }}" alt="Photo Before" />
                     </td>
