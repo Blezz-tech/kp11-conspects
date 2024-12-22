@@ -25,15 +25,15 @@
                     @guest
                         <ul class="navbar-nav gap-3">
                             <li class="nav-item">
-                                <a class="btn btn-outline-primary" href="{{ route('auth.loginform') }}">Вход</a>
+                                <a class="btn btn-outline-primary" href="{{ route('loginform') }}">Вход</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-outline-primary" href="{{ route('auth.registerform') }}">Регистрация</a>
+                                <a class="btn btn-outline-primary" href="{{ route('registerform') }}">Регистрация</a>
                             </li>
                         </ul>
                     @endguest
                     @auth
-                        <form action="{{ route('auth.logout') }}" method="POST">
+                        <form action="{{ route('logout') }}" method="POST">
                             @csrf
                             <button type="submit" class="btn btn-outline-primary">Выход</button>
                         </form>
