@@ -33,9 +33,18 @@ class UserController extends Controller
      */
     public function deleteTicketPage(Request $request, $ticketId)
     {
-        $ticket = Ticket::where('id', $ticketId)
-            ->where('user_id', auth()->id())
-            ->firstOrFail();
+
+        $ticket = Ticket::where('id', $ticketId)->firstOrFail();
+
+        if ($ticket->user->id != auth()->id()) {
+            return back()
+                ->withErrors([ 'ticket' => 'Заявка не принадлежит вам']);
+        }
+
+        if ($ticket->state->id != 1) {
+            return back()
+                ->withErrors([ 'ticket' => 'Заявку нельзя удалить']);
+        }
 
         return view('users.tickets.delete', [
             'ticket' => $ticket,
@@ -47,13 +56,23 @@ class UserController extends Controller
      */
     public function deleteTicket(Request $request, $ticketId)
     {
-        $ticket = Ticket::where('id', $ticketId)
-            ->where('user_id', auth()->id())
-            ->firstOrFail();
+        $ticket = Ticket::where('id', $ticketId)->firstOrFail();
+
+        if ($ticket->user->id != auth()->id()) {
+            return redirect()
+                ->route('user.account')
+                ->withErrors([ 'ticket' => 'Заявка не принадлежит вам']);
+        }
+
+        if ($ticket->state->id != 1) {
+            return redirect()
+                ->route('user.account')
+                ->withErrors([ 'ticket' => 'Заявку нельзя удалить']);
+        }
 
         $ticket->delete();
 
-        redirect()->route('user.account')->withInfo([
+        return redirect()->route('user.account')->withInfo([
             'Заявка успешно удалена'
         ]);
     }

@@ -45,7 +45,7 @@
                     @endif
                     <td>{{ $ticket->s_comment }}</td>
                     <td>
-                        <a class="btn btn-outline-danger" href="{{ route('user.tickets.deletePage', $ticket->id) }}" role="button">Удалить</a>
+                        <a class="btn btn-outline-danger" href="{{ route('user.tickets.deletePage', $ticket) }}" role="button">Удалить</a>
                     </td>
                 </tr>
             @endforeach
