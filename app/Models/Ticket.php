@@ -24,6 +24,10 @@ class Ticket extends Model
         'photo_before',
         'photo_after',
         'comment',
+
+        'user_id',
+        'state_id',
+        'category_id',
     ];
 
     public function getCreatedAtAttribute($value)
