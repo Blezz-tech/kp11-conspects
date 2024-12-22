@@ -1,4 +1,4 @@
-<x-layout-errors>
+<x-layout>
     <h1>Отклонение заявки</h1>
     <div class="row">
         <div class="col-xl-4">
@@ -14,10 +14,22 @@
     <form method="POST" action="{{ route('admin.tickets.reject', $ticket) }}">
         @csrf
         <div class="mb-3">
-            <label for="commentId" class="form-label">Причина отказа</label>
-            <textarea name="comment" class="form-control" id="commentId" rows="3"></textarea>
+            <label for="comment" class="form-label">Причина отказа</label>
+            <textarea
+                name="comment"
+                @class([
+                    "form-control" => true,
+                    "is-invalid" => $errors->has('comment'),
+                ])
+                id="comment"
+                rows="3"
+                aria-describedby="commentHelp"
+            ></textarea>
+            @error('comment')
+                <div id="commentHelp" class="form-text text-danger">{{ $message }}</div>
+            @enderror
         </div>
         <button type="submit" class="btn btn-danger">Отклонить</button>
         <a class="btn btn-primary" href="{{ route('admin.tickets.index') }}" role="button">Назад</a>
     </form>
-</x-layout-errors>
+</x-layout>

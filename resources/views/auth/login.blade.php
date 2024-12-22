@@ -25,7 +25,8 @@
                     "form-control" => true,
                     "is-invalid" => $errors->has('password'),
                 ])
-                id="passwordHelp" >
+                id="password"
+                aria-describedby="passwordHelp">
             @error('password')
                 <div id="passwordHelp" class="form-text text-danger">{{ $message }}</div>
             @enderror
