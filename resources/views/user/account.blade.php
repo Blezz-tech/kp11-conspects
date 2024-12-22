@@ -45,7 +45,9 @@
                     @endif
                     <td>{{ $ticket->s_comment }}</td>
                     <td>
-                        <a class="btn btn-outline-danger" href="{{ route('user.ticket.deletePage', $ticket) }}" role="button">Удалить</a>
+                        @if ($ticket->state->id == 1)
+                            <a class="btn btn-outline-danger" href="{{ route('user.ticket.deletePage', $ticket) }}" role="button">Удалить</a>
+                        @endif
                     </td>
                 </tr>
             @endforeach
