@@ -20,7 +20,7 @@
             @foreach ($tickets as $ticket)
                 <tr>
                     <th scope="row">{{ $ticket->id }}</th>
-                    <td>{{ $ticket->fmt_created_at }}</td>
+                    <td>{{ $ticket->created_at }}</td>
                     <td>{{ $ticket->title }}</td>
                     <td>{{ $ticket->description }}</td>
                     <td>{{ $ticket->category->name }}</td>

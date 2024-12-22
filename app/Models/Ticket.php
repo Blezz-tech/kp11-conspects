@@ -25,9 +25,9 @@ class Ticket extends Model
         'comment',
     ];
 
-    public function getFmtCreatedAtAttribute()
+    public function getCreatedAtAttribute($value)
     {
-        return Carbon::parse($this->created_at)->format('d.m.y, H:i');
+        return Carbon::parse($value)->format('d.m.y, H:i');
     }
 
     /**
