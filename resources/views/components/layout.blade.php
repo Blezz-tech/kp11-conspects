@@ -8,6 +8,7 @@
 </head>
 <body>
     <x-navbar />
+    <x-info-message />
     <div class="container mt-3">
         {{ $slot }}
     </div>
