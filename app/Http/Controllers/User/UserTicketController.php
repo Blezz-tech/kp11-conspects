@@ -52,7 +52,7 @@ class UserTicketController extends Controller
             'user_id' => $userId
         ]);
 
-        return redirect()->route('main')->with('info', 'Заявка успешно добавлена.');
+        return redirect()->route('user.account')->with('info', 'Заявка успешно добавлена.');
     }
 
     /**
