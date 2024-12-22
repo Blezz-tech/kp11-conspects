@@ -43,29 +43,20 @@
 
 
     @foreach ($tickets as $ticket)
-        <div class="mt-3">
-            <a id="imba">
-                <img src="{{ asset($ticket->photo_after) }}" />
-                <img src="{{ asset($ticket->photo_before) }}" />
-            </a>
-        </div>
+        <div id="imba{{$i}}" class="mt-3"></div>
+        <style>
+            #imba{{$i}} {
+                width: 100%;
+                height: 480px;
+
+                transition: background 1s;
+
+                background: url({{ asset($ticket->photo_after) }});
+            }
+
+            #imba{{$i}}:hover {
+                background: url({{ asset($ticket->photo_before) }});
+            }
+        </style>
     @endforeach
-    <style>
-        #imba img:last-child {
-            display: none;
-        }
-
-        #imba:hover img:last-child {
-            display: block;
-        }
-
-        #imba:hover img:first-child {
-            display: none;
-        }
-
-        #imba img {
-            width: 100%;
-            height: 480px;
-        }
-    </style>
 </x-layout>
