@@ -36,7 +36,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/user/home', [UserController::class, 'home'])->name('user.home');
 
-    Route::post('/tickets/{id}/create', [UserController::class, 'store'])->name('user.tickets.store');
+    Route::post('/tickets/create', [UserController::class, 'store'])->name('user.tickets.store');
     Route::delete('/tickets/{id}/delete', [UserController::class, 'destroy'])->name('user.tickets.destroy');
 });
 

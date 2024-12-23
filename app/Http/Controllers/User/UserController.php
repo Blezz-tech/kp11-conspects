@@ -24,7 +24,7 @@ class UserController extends Controller
         return view('user.home', [
             'tickets' => $tickets,
             'states' => State::all(),
-            'category' => Category::all(),
+            'categories' => Category::all(),
         ]);
     }
 
