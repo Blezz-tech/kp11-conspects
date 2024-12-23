@@ -19,7 +19,10 @@ class UserSeeder extends Seeder
             $user = User::factory()->create(['login' => "user$i"]);
             for ($j = 0; $j < 15; $j++) {
                 Ticket::factory()->create([
-                    'created_at' => now()->addSeconds(3600 * $i + 60 * $j),
+                    'created_at' => now()
+                        ->subDays(5)
+                        ->addHours($i)
+                        ->addMinutes($j),
                     'user_id' => $user->id,
                 ]);
             }
