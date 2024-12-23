@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->string('comment');
-            $table->date('date_get');
+            $table->dateTime('date_get');
             $table->boolean('is_nalik');
             $table->timestamps();
 
