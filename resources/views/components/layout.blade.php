@@ -11,6 +11,7 @@
 <body>
     <x-navbar />
     <div class="container mt-3">
+        <x-error-message />
         {{ $slot }}
     </div>
     <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
