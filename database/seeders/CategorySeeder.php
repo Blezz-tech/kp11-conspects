@@ -13,8 +13,8 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::create(['name' => 'услуга']);
-        Category::create(['name' => 'ремонт дорог']);
-        Category::create(['name' => 'уборка мусора']);
+        Category::create(['name' => 'Покраска ногтей']);
+        Category::create(['name' => 'Стрижка']);
+        Category::create(['name' => 'Заказное убийство']);
     }
 }
