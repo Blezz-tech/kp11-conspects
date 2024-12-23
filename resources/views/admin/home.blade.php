@@ -18,8 +18,8 @@
             <th scope="col">Время</th>
             <th scope="col">Описание</th>
             <th scope="col">Категория</th>
+            <th scope="col">Оплата</th>
             <th scope="col">Статус</th>
-            <th scope="col">Коммент</th>
             <th scope="col">Действие</th>
         </tr>
         </thead>
@@ -30,6 +30,7 @@
                     <td>{{ $ticket->created_at }}</td>
                     <td>{{ $ticket->comment }}</td>
                     <td>{{ $ticket->category->name }}</td>
+                    <td>{{ $ticket->is_nalink ? 'Налик' : 'Картой' }}</td>
                     <td>
                         <div @class([
                             'text-center' => true,
@@ -41,7 +42,6 @@
                             {{ $ticket->state->name }}
                         </div>
                     </td>
-                    <td>{{ $ticket->s_comment }}</td>
                     <td>
                         @if ($ticket->state->id == 1)
                             <div class="d-flex flex-column gap-1">

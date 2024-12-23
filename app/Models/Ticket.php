@@ -27,19 +27,9 @@ class Ticket extends Model
         return Carbon::parse($value)->format('d.m.y, H:i');
     }
 
-    public function getSTitleAttribute()
+    public function getDateGetAttribute($value)
     {
-        return Str::limit($this->title, 30);
-    }
-
-    public function getSDescriptionAttribute()
-    {
-        return Str::limit($this->description, 30);
-    }
-
-    public function getSCommentAttribute()
-    {
-        return Str::limit($this->comment, 30);
+        return Carbon::parse($value)->format('d.m.y, H:i');
     }
 
     public function category(): BelongsTo
