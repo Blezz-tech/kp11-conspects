@@ -16,10 +16,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         for ($i = 0; $i < 10; $i++) {
-            $user = User::factory()->create([
-                    'login' => 'user'. $i,
-                    'password' => Hash::make('123'),
-                ]);
+            $user = User::factory()->create(['email' => "user$i@a.a"]);
             for ($j = 0; $j < 15; $j++) {
                 Ticket::factory()->create([
                     'created_at' => now()->addSeconds(3600 * $i + 60 * $j),
@@ -29,7 +26,6 @@ class UserSeeder extends Seeder
         }
 
         User::factory()->create([
-            'login'    => 'admin',
             'email'    => 'admin@admin.admin',
             'name'     => 'admin',
             'password' => Hash::make("admin"),

@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
+            $table->string('comment');
             $table->date('date_get');
-            $table->bool('is_nalink');
+            $table->boolean('is_nalink');
             $table->timestamps();
 
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
