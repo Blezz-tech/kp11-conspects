@@ -10,7 +10,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        {{-- @admin
+                        @admin
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('admin.home') }}">Админка</a>
                             </li>
@@ -19,7 +19,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('user.home') }}">Личный кабинет</a>
                             </li>
-                        @endauth --}}
+                        @endauth
                     </ul>
                     @guest
                         <ul class="navbar-nav gap-3">
