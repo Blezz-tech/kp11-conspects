@@ -45,8 +45,14 @@
                     <td>
                         @if ($ticket->state->id == 1)
                             <div class="d-flex flex-column gap-1">
-                                <a class="btn btn-outline-primary" href="{{ route('admin.tickets.accept', $ticket) }}" role="button">Принять</a>
-                                <a class="btn btn-outline-danger" href="{{ route('admin.tickets.reject', $ticket) }}" role="button">Отклонить</a>
+                                <form method="POST" action="{{ route('admin.tickets.accept', $ticket) }}">
+                                    @csrf
+                                    <button type="submit" class="btn btn-outline-primary">Принять</button>
+                                </form>
+                                <form method="POST" action="{{ route('admin.tickets.reject', $ticket) }}">
+                                    @csrf
+                                    <button type="submit" class="btn btn-outline-danger">Отклонить</button>
+                                </form>
                             </div>
                         @endif
                     </td>
