@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\User\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,5 @@ Route::post('/register', [AuthController::class, 'register'])->name('register');
 
 Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/user/home', [UserController::class, 'home'])->name('user.home');
 });
