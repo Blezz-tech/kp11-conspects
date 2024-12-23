@@ -28,5 +28,5 @@ Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/user/home', [UserController::class, 'home'])->name('user.home');
-    Route::get('/user/admin', [UserController::class, 'home'])->name('admin.admin');
+    Route::get('/user/admin', [UserController::class, 'home'])->name('admin.home');
 });
