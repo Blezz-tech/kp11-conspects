@@ -15,11 +15,9 @@ class UserController extends Controller
     {
         $state_id = $request->query('state_id');
 
-        $tickets = Ticket::where('user_id', auth()->user()->id)->get();
+        $tickets = auth()->user()->tickets;
         if ($state_id != null) {
-            $tickets = Ticket::where('state_id', $state_id)->get();
-        } else {
-            $tickets = Ticket::all();
+            $tickets = $tickets->where('state_id', $state_id);
         }
         $tickets = $tickets->sortByDesc("created_at");
 
@@ -60,9 +58,8 @@ class UserController extends Controller
     public function destroy(string $id)
     {
         $ticket = Ticket::where('id', $id)->firstOrFail();
-        dd(auth()->user()->id, $ticket->user->id);
 
-        if ($ticket->user->id != auth()->user()->id) {
+        if ($ticket->user->id != auth()->id()) {
             return redirect()
                 ->route('user.home')
                 ->withErrors([ 'ticket' => 'Заявка не принадлежит вам']);

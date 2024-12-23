@@ -26,7 +26,7 @@
         <tbody>
             @foreach ($tickets as $ticket)
                 <tr>
-                    <th scope="row">{{ $ticket->id }}</th>
+                    <th scope="row">{{ $ticket->user->id }}</th>
                     <td>{{ $ticket->created_at }}</td>
                     <td>{{ $ticket->comment }}</td>
                     <td>{{ $ticket->category->name }}</td>
