@@ -12,7 +12,9 @@ class PageController extends Controller
      */
     public function index()
     {
+        $totalAcceptedTickets = Ticket::where('state_id', 2)->count();
         return view("home", [
+            'totalAcceptedTickets' => $totalAcceptedTickets,
         ]);
     }
 }
