@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\AdminTicketsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +26,19 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'registerfrom'])->name('registerform');
 Route::post('/register', [AuthController::class, 'register'])->name('register');
 
+Route::middleware(['auth'])->group(function () {
+    Route::post('/auth/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/user/home', [UserController::class, 'home'])->name('user.home');
+    Route::get('/admin/home', [AdminController::class, 'home'])->name('admin.home');
+});
 
 Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/user/home', [UserController::class, 'home'])->name('user.home');
     Route::get('/admin/home', [AdminController::class, 'home'])->name('admin.home');
+});
+
+Route::middleware(['admin'])->group(function () {
+    Route::post('/admin/tickets/accept', [AdminTicketsController::class, 'accept'])->name('admin.tickets.accept');
+    Route::post('/admin/tickets/reject', [AdminTicketsController::class, 'reject'])->name('admin.tickets.reject');
 });
