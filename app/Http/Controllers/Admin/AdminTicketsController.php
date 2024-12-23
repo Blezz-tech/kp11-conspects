@@ -20,7 +20,7 @@ class AdminTicketsController extends Controller
 
         if (!$ticket) {
             return redirect()
-                ->route('admin.tickets.index')
+                ->route('admin.home')
                 ->withErrors(['Заявка не существует']);
         }
 
@@ -28,7 +28,7 @@ class AdminTicketsController extends Controller
         $ticket->save();
 
         return redirect()
-            ->route('admin.tickets.index')
+            ->route('admin.home')
             ->with('info', 'Заявка успешно решёна');
     }
 
@@ -43,7 +43,7 @@ class AdminTicketsController extends Controller
 
         if (!$ticket) {
             return redirect()
-                ->route('admin.tickets.index')
+                ->route('admin.home')
                 ->withErrors(['Заявка не существует']);
         }
 
@@ -51,7 +51,7 @@ class AdminTicketsController extends Controller
         $ticket->save();
 
         return redirect()
-            ->route('admin.tickets.index')
+            ->route('admin.home')
             ->with('info', 'Заявка успешно отклонёна');
     }
 }
