@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
@@ -59,7 +60,14 @@ class AuthController extends Controller
             'password' => 'required|min:5',
             'password_confirmation' => 'required|same:password',
         ]);
-        User::create($credetials);
+        User::create([
+            'login' => $request->login,
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'password' => Hash::make($request->password)
+        ]);
+
 
         $request->session()->regenerate();
 
