@@ -19,7 +19,7 @@
         <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Время</th>
+            <th scope="col">Время получения</th>
             <th scope="col">Описание</th>
             <th scope="col">Категория</th>
             <th scope="col">Оплата</th>
@@ -30,8 +30,8 @@
         <tbody>
             @foreach ($tickets as $ticket)
                 <tr>
-                    <th scope="row">{{ $ticket->user->id }}</th>
-                    <td>{{ $ticket->created_at }}</td>
+                    <th scope="row">{{ $ticket->id }}</th>
+                    <td>{{ $ticket->date_get }}</td>
                     <td>{{ $ticket->comment }}</td>
                     <td>{{ $ticket->category->name }}</td>
                     <td>{{ $ticket->is_nalink ? 'Налик' : 'Картой' }}</td>
@@ -73,8 +73,8 @@
             <form id="create-ticket-form" action="{{ route('user.tickets.store') }}" method="POST">
                 @csrf
                 <div class="mb-3">
-                    <label for="description" class="form-label">Описание</label>
-                    <input name="description" class="form-control" type="description" id="description">
+                    <label for="comment" class="form-label">Описание</label>
+                    <textarea name="comment" class="form-control" id="comment" rows="3" ></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="category_id" class="form-label">Категория</label>
@@ -85,9 +85,9 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="mb-3">
-                    <label for="description" class="form-label">Описание</label>
-                    <textarea name="description" class="form-control" id="description" rows="3" ></textarea>
+                <div class="mb-3 form-check form-switch">
+                    <input name="is_nalik" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">вкл - наликом / выкл - наличкой</label>
                 </div>
               </form>
           </div>

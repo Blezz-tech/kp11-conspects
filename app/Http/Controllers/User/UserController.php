@@ -31,23 +31,16 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $credentials = $request->validate([
-            'title' => 'required|string|max:255',
-            'description' => 'required|string',
+            'comment' => 'required|string',
             'category_id' => 'required|exists:categories,id',
-            'photo_before' => 'required|image|mimes:jpg,jpeg,png,bmp|max:10240', // 10MB
         ]);
 
-        $img_path = $request->file('photo_before')->store('storage');
-
-        $userId = auth()->id();
-        // Создание новой заявки
         Ticket::create(attributes: [
-            'title' => $request->title,
-            'description' => $request->description,
+            'comment' => $request->comment,
             'category_id' => $request->category_id,
-            'photo_before' => $img_path,
+            'is_nalik' => $request->is_nalik =! null ? 1 : 0,
             'state_id' => 1,
-            'user_id' => $userId
+            'user_id' => auth()->id(),
         ]);
 
         return redirect()

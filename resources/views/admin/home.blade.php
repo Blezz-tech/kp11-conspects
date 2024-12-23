@@ -15,7 +15,7 @@
         <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Время</th>
+            <th scope="col">Время получения</th>
             <th scope="col">Описание</th>
             <th scope="col">Категория</th>
             <th scope="col">Оплата</th>
@@ -27,7 +27,7 @@
             @foreach ($tickets as $ticket)
                 <tr>
                     <th scope="row">{{ $ticket->id }}</th>
-                    <td>{{ $ticket->created_at }}</td>
+                    <td>{{ $ticket->date_get }}</td>
                     <td>{{ $ticket->comment }}</td>
                     <td>{{ $ticket->category->name }}</td>
                     <td>{{ $ticket->is_nalink ? 'Налик' : 'Картой' }}</td>
