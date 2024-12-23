@@ -45,8 +45,9 @@
                     <td>
                         @if ($ticket->state->id == 1)
                             <div class="d-flex flex-column gap-1">
-                                <form method="POST" action="{{ route('user.tickets.reject', $ticket) }}">
+                                <form method="POST" action="{{ route('user.tickets.destroy', $ticket) }}">
                                     @csrf
+                                    @method('delete')
                                     <button type="submit" class="btn btn-outline-danger">Удалить</button>
                                 </form>
                             </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Models\User;
 use App\Models\State;
 use App\Models\Ticket;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,7 +14,8 @@ class UserController extends Controller
     public function home(Request $request)
     {
         $state_id = $request->query('state_id');
-        $tickets = $tickets = User::find(id: auth()->id())->tickets;
+
+        $tickets = Ticket::where('user_id', auth()->user()->id)->get();
         if ($state_id != null) {
             $tickets = Ticket::where('state_id', $state_id)->get();
         } else {
@@ -21,17 +23,11 @@ class UserController extends Controller
         }
         $tickets = $tickets->sortByDesc("created_at");
 
-        $states = State::all();
-
         return view('user.home', [
             'tickets' => $tickets,
-            'states' => $states,
+            'states' => State::all(),
+            'category' => Category::all(),
         ]);
-    }
-
-    public function create()
-    {
-        return view('user.tickets.create', ['categories' => Category::all()]);
     }
 
     public function store(Request $request)
@@ -57,7 +53,31 @@ class UserController extends Controller
         ]);
 
         return redirect()
-            ->route('user.tickets.index')
+            ->route('user.home')
             ->with('info', 'Заявка успешно добавлена.');
+    }
+
+    public function destroy(string $id)
+    {
+        $ticket = Ticket::where('id', $id)->firstOrFail();
+        dd(auth()->user()->id, $ticket->user->id);
+
+        if ($ticket->user->id != auth()->user()->id) {
+            return redirect()
+                ->route('user.home')
+                ->withErrors([ 'ticket' => 'Заявка не принадлежит вам']);
+        }
+
+        if ($ticket->state->id != 1) {
+            return redirect()
+                ->route('user.home')
+                ->withErrors([ 'ticket' => 'Заявку нельзя удалить']);
+        }
+
+        $ticket->delete();
+
+        return redirect()
+            ->route('user.home')
+            ->with('info', 'Заявка успешно удалена');
     }
 }
