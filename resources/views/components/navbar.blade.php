@@ -22,20 +22,20 @@
                         @endauth --}}
                     </ul>
                     @guest
-                        {{-- <ul class="navbar-nav gap-3">
+                        <ul class="navbar-nav gap-3">
                             <li class="nav-item">
                                 <a class="btn btn-outline-primary" href="{{ route('loginform') }}">Вход</a>
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-outline-primary" href="{{ route('registerform') }}">Регистрация</a>
                             </li>
-                        </ul> --}}
+                        </ul>
                     @endguest
                     @auth
-                        {{-- <form action="{{ route('logout') }}" method="POST">
+                        <form action="{{ route('logout') }}" method="POST">
                             @csrf
                             <button type="submit" class="btn btn-outline-primary">Выход</button>
-                        </form> --}}
+                        </form>
                     @endauth
                 </div>
             </div>
