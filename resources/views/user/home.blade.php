@@ -19,6 +19,7 @@
         <thead>
         <tr>
             <th scope="col">#</th>
+            <th scope="col">Время создания</th>
             <th scope="col">Время получения</th>
             <th scope="col">Описание</th>
             <th scope="col">Категория</th>
@@ -31,6 +32,7 @@
             @foreach ($tickets as $ticket)
                 <tr>
                     <th scope="row">{{ $ticket->id }}</th>
+                    <td>{{ $ticket->created_at }}</td>
                     <td>{{ $ticket->date_get }}</td>
                     <td>{{ $ticket->comment }}</td>
                     <td>{{ $ticket->category->name }}</td>
