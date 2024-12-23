@@ -52,7 +52,9 @@ class AuthController extends Controller
     public function register(Request $request)
     {
         $credetials = $request->validate([
+            'login' => 'required|unique:users,login|regex:/^[a-zA-Z]+$/u',
             'name' => 'required|regex:/^[а-яА-ЯёЁ\- ]+$/u',
+            'phone' => 'required',
             'email' => 'required|email',
             'password' => 'required|min:5',
             'password_confirmation' => 'required|same:password',
@@ -60,7 +62,7 @@ class AuthController extends Controller
 
         User::create($credetials);
 
-        return redirect()->route('user.tickets.index')->with('info', 'Регистрация выполнена!');
+        return redirect()->route('user.home')->with('info', 'Регистрация выполнена!');
     }
 
     /**
@@ -71,7 +73,7 @@ class AuthController extends Controller
         auth()->logout();
 
         return redirect()
-            ->route('user.home')
+            ->route('home')
             ->with('info', 'Выпонен выход!');
     }
 

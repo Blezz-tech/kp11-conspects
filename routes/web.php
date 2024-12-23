@@ -23,3 +23,7 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'registerfrom'])->name('registerform');
 Route::post('/register', [AuthController::class, 'register'])->name('register');
 
+
+Route::middleware(['auth'])->group(function () {
+    Route::post('/auth/logout', [AuthController::class, 'logout'])->name('logout');
+});
