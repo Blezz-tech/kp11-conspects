@@ -35,10 +35,11 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::post('/auth/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/user/home', [UserController::class, 'home'])->name('user.home');
-    Route::get('/admin/home', [AdminController::class, 'home'])->name('admin.home');
 });
 
 Route::middleware(['admin'])->group(function () {
-    Route::post('/admin/tickets/accept', [AdminTicketsController::class, 'accept'])->name('admin.tickets.accept');
-    Route::post('/admin/tickets/reject', [AdminTicketsController::class, 'reject'])->name('admin.tickets.reject');
+    Route::get('/admin/home', [AdminController::class, 'home'])->name('admin.home');
+
+    Route::post('/admin/tickets/accept/{id}', [AdminTicketsController::class, 'accept'])->name('admin.tickets.accept');
+    Route::post('/admin/tickets/reject/{id}', [AdminTicketsController::class, 'reject'])->name('admin.tickets.reject');
 });

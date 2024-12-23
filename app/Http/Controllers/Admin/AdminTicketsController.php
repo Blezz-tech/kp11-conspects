@@ -32,7 +32,7 @@ class AdminTicketsController extends Controller
             ->with('info', 'Заявка успешно решёна');
     }
 
-    public function rejectTicket(Request $request, $ticketId)
+    public function reject(Request $request, $ticketId)
     {
         $ticket = Ticket::find($ticketId);
 
