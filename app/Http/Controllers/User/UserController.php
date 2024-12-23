@@ -33,11 +33,14 @@ class UserController extends Controller
         $credentials = $request->validate([
             'comment' => 'required|string',
             'category_id' => 'required|exists:categories,id',
+            'date_get' => 'required|date',
+            'time_get' => 'required|',
         ]);
 
         Ticket::create(attributes: [
             'comment' => $request->comment,
             'category_id' => $request->category_id,
+            'date_get' => date($request->date_get.' '.$request->time_get),
             'is_nalik' => $request->is_nalik =! null ? 1 : 0,
             'state_id' => 1,
             'user_id' => auth()->id(),

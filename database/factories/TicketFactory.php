@@ -22,7 +22,7 @@ class TicketFactory extends Factory
         return [
             'date_get' => now(),
             'comment' => fake()->text(),
-            'is_nalink' => rand(0, 1),
+            'is_nalik' => rand(0, 1),
             'user_id' => User::inRandomOrder()->first()->id,
             'category_id' => Category::inRandomOrder()->first()->id,
             'state_id' => State::inRandomOrder()->first()->id,

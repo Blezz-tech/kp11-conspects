@@ -74,7 +74,15 @@
                 @csrf
                 <div class="mb-3">
                     <label for="comment" class="form-label">Описание</label>
-                    <textarea name="comment" class="form-control" id="comment" rows="3" ></textarea>
+                    <input name="comment" class="form-control" id="comment" rows="3" ></input>
+                </div>
+                <div class="mb-3">
+                    <label for="date_get" class="form-label">Дата получения услуги</label>
+                    <input name="date_get" type="date" class="form-control" id="date_get" ></input>
+                </div>
+                <div class="mb-3">
+                    <label for="time_get" class="form-label">Время получения услуги</label>
+                    <input name="time_get" type="time" class="form-control" id="time_get" ></input>
                 </div>
                 <div class="mb-3">
                     <label for="category_id" class="form-label">Категория</label>

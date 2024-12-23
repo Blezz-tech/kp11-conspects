@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('comment');
             $table->date('date_get');
-            $table->boolean('is_nalink');
+            $table->boolean('is_nalik');
             $table->timestamps();
 
             $table->foreignId('user_id')->constrained()->onDelete('cascade');

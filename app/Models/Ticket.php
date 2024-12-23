@@ -15,7 +15,7 @@ class Ticket extends Model
     protected $fillable = [
         'comment',
         'date_get',
-        'is_nalink',
+        'is_nalik',
 
         'user_id',
         'state_id',
