@@ -59,10 +59,11 @@ class AuthController extends Controller
             'password' => 'required|min:5',
             'password_confirmation' => 'required|same:password',
         ]);
-
         User::create($credetials);
 
-        return redirect()->route('user.home')->with('info', 'Регистрация выполнена!');
+        $request->session()->regenerate();
+
+        return redirect()->route('home')->with('info', 'Регистрация выполнена!');
     }
 
     /**
