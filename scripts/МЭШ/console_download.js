@@ -1,11 +1,24 @@
 console.clear();
 
+const replacer = (x) => {
+    switch (x) {
+        case 'Правовое обеспечение профессиональной деятельности':
+            return 'ПОПД';
+        case 'Тестирование информационных систем':
+            return 'Тестирование ИС';
+        case 'Физическая культура':
+            return 'Физ-ра';
+        default:
+            return x;
+    }
+}
+
 const weeksColumns = [...document.querySelectorAll('[class*="gridColumn"]')];
 
 const weeksColumns1 = weeksColumns.map(
     x => [...x.querySelectorAll('.diary-emotion-cache-ucorbh-root')].map(x => [...x.querySelectorAll('span')].map(x => x.innerText)).map(x => ({
             "time": x[0],
-            "text": x[1] + ' ' + x[2]
+            "text": x[1] + ' ' + replacer(x[2])
         })
     )
 ).filter(x => x.length !== 0);
@@ -58,17 +71,17 @@ console.log(result2);
 function downloadTextFile(filename, content) {
     // Создаем объект Blob с текстовым содержимым
     const blob = new Blob([content], { type: 'text/plain' });
-    
+
     // Создаем URL для объекта Blob
     const url = URL.createObjectURL(blob);
-    
+
     // Создаем временный элемент <a>
     const link = document.createElement('a');
     link.href = url;
     link.download = filename; // Указываем имя файла для скачивания
-    
+
     link.click(); // Программно инициируем клик по ссылке
-    
+
     URL.revokeObjectURL(url); // Освобождаем память, удаляя созданный URL
 }
 
