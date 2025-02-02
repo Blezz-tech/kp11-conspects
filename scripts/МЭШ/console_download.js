@@ -1,5 +1,7 @@
 console.clear();
 
+// Функции
+
 const replacer = (x) => {
     switch (x) {
         case 'Правовое обеспечение профессиональной деятельности':
@@ -13,13 +15,17 @@ const replacer = (x) => {
     }
 }
 
+const convertArrayToCSV = (x) => x.map((d) => d.join('\t')).join('\n');
+
+// Работа с данными
+
 const weeksColumns = [...document.querySelectorAll('[class*="gridColumn"]')];
 
 const weeksColumns1 = weeksColumns.map(
     x => [...x.querySelectorAll('.diary-emotion-cache-ucorbh-root')].map(x => [...x.querySelectorAll('span')].map(x => x.innerText)).map(x => ({
-            "time": x[0],
-            "text": x[1] + ' ' + replacer(x[2])
-        })
+        "time": x[0],
+        "text": x[1] + ' ' + replacer(x[2])
+    })
     )
 ).filter(x => x.length !== 0);
 
@@ -61,9 +67,7 @@ Object.entries(result).forEach(([key, value]) => {
 
 result1.unshift(["*", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница"])
 
-const result2 = result1.map(function(d){
-    return d.join('\t');
-}).join('\n');
+const result2 = convertArrayToCSV(result1);
 
 console.log(result2);
 
