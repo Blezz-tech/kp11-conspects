@@ -30,7 +30,7 @@ Route::middleware(['guest'])->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/order', [OrderController::class, 'order'])->name('order');
-
+    Route::post('/order', [OrderController::class, 'order_store'])->name('order_store');
     Route::get('/logout', [RegistrationController::class, 'logout'])->name('logout');
 });
 
