@@ -16,7 +16,7 @@
                 </ul>
             </div>
         @endif
-        <form method="post" action="{{route('order_store')}}">
+        <form  method="post" action="{{route('order_store')}}">
             @csrf
             <div class="mb-3">
                 <label for="address" class="form-label">Укажите свой адрес</label>
