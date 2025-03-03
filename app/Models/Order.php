@@ -8,7 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     use HasFactory;
-
+    protected $fillable = [
+        'address',
+        'date',
+        'time',
+        'email',
+        'payment_type',
+        'service_id',
+        'user_id'
+    ];
     public function user()
     {
         return $this->belongsTo(User::class);
