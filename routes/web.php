@@ -32,9 +32,16 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/order', [OrderController::class, 'order'])->name('order');
     Route::post('/order', [OrderController::class, 'order_store'])->name('order_store');
     Route::get('/logout', [RegistrationController::class, 'logout'])->name('logout');
+
+
+    Route::get('/orders-history', [OrderController::class, 'orders_history'])->name('orders_history');
+
 });
 
 Route::middleware(['admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
     Route::get('/admin-orders', [AdminController::class, 'admin_orders'])->name('admin_orders');
+
+    Route::get('/status-form/{id}', [AdminController::class, 'admin_status'])->name('admin_status');
+    Route::put('/status-form/{id}', [AdminController::class, 'admin_status_store'])->name('admin_status_store');
 });

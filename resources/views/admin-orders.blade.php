@@ -20,17 +20,32 @@
         <tbody>
             @foreach ($orders as $order)
                 <tr>
-                    <th scope="row">{{ $order->created_at }}</th>
-                    <td>{{ $order->status }}
-                        @if ($order->status == 'Новый')
-                            <a href="{{ route('orders.destroy', $order) }}" class="btn btn-primary">Удалить</a>
+                    <td scope="row">{{ $order->user->name }}</td>
+                    <td scope="row">{{ $order->email }}</td>
+                    <td scope="row">{{ $order->address }}</td>
+                    <td scope="row">{{ $order->date }}</td>
+                    <td scope="row">{{ $order->time }}</td>
+                    <td scope="row">{{ $order->payment_type }}</td>
+                    <td scope="row">{{ $order->status }}</td>
+
+                    <td>
+                        @if ($order->status == 'new')
+                            <a href="{{route('admin_status', $order)}}" class="btn btn-primary">Сменить статус</a>
+                        @elseif ($order->status != 'new')
+                            <button disabled href="#" class="btn btn-danger">Disabled</button>
                         @endif
                     </td>
-                    <td>
+
+                    {{-- <td>{{ $order->status }}
+                        @if ($order->status == 'new')
+                            <a href="{{ route('orders.destroy', $order) }}" class="btn btn-primary">Сменить статус</a>
+                        @endif
+                    </td> --}}
+                    {{-- <td>
                         @foreach ($order->products as $product)
                             <p>{{ $product->title . ' ' . $product->price . ' руб. ' . $product->pivot->qty . ' шт.' }}</p>
                         @endforeach
-                    </td>
+                    </td> --}}
                 </tr>
             @endforeach
         </tbody>

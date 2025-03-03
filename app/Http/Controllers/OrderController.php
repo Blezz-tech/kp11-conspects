@@ -44,4 +44,13 @@ class OrderController extends Controller
 
         return redirect()->back()->with('info', 'Заявка успешно отправлена!');
     }
+
+
+
+
+    public function orders_history(){
+        $applications = Order::where('user_id', auth()->id())->get();
+
+        return view('orders-user-history', compact('applications'));
+    }
 }
