@@ -9,8 +9,8 @@ class Service extends Model
 {
     use HasFactory;
 
-    public function orderItems()
+    public function orders()
     {
-        return $this->hasMany(OrderItem::class);
+        return $this->hasMany(Order::class);
     }
 }
