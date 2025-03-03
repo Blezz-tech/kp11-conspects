@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([ // здесь регистрируем все сидоры, которые у нас есть, чтобы запускать их с помощью команды php artisan db:seed
             UserSeeder::class,
             ServiceSeeder::class,
+            OrderSeeder::class,
         ]);
     }
 }
