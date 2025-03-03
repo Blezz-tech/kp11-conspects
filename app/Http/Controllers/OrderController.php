@@ -28,8 +28,8 @@ class OrderController extends Controller
             'filter' => 'required|exists:services,id', // Проверка на существование услуги
         ]);
 
-        // Получаем user_id (например, из сессии или аутентифицированного пользователя)
-        $userId = auth()->id(); // Если вы используете аутентификацию
+
+        $userId = auth()->id();
 
         // Сохранение данных в БД
         Order::create([
