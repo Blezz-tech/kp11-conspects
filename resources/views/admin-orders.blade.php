@@ -18,7 +18,7 @@
             </tr>
         </thead>
         <tbody>
-            {{-- @foreach ($orders as $order)
+            @foreach ($orders as $order)
                 <tr>
                     <th scope="row">{{ $order->created_at }}</th>
                     <td>{{ $order->status }}
@@ -32,7 +32,7 @@
                         @endforeach
                     </td>
                 </tr>
-            @endforeach --}}
+            @endforeach
         </tbody>
     </table>
 @endsection
