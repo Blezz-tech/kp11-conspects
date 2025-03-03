@@ -14,7 +14,8 @@ class Order extends Model
         'time',
         'email',
         'payment_type',
-        'service_id',
+        'status',
+        'rejection_reason',
         'user_id'
     ];
     public function user()

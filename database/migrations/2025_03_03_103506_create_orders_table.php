@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('address');
             $table->date('date');
             $table->time('time');
@@ -22,6 +21,8 @@ return new class extends Migration
             $table->enum('payment_type', ['cash', 'card']);
             $table->enum('status', ['new', 'confirmed', 'completed', 'cancelled']);
             $table->text('rejection_reason')->nullable();
+
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
         });
     }
 

@@ -38,8 +38,8 @@ class OrderController extends Controller
             'time' => $validatedData['time'],
             'email' => $validatedData['email'],
             'payment_type' => $validatedData['payment_type'],
-            'user_id' => $userId, // Сохраняем user_id
-            // 'service_id' => $validatedData['filter'], // Сохраняем ID услуги
+            'user_id' => $userId,
+            'status' => 'new'
         ]);
 
         return redirect()->back()->with('info', 'Заявка успешно отправлена!');
