@@ -19,7 +19,6 @@ class RegistrationController extends Controller
             'name' => ['regex:/^[А-Яа-я\- ]{1,}$/u', 'required'],
             'login' => ['regex:/^[0-9A-Za-z\-]+$/', 'unique:users', 'required'],
             'phone' => ['regex:/^\+7\(\d{3}\)-\d{3}-\d{2}-\d{2}$/', 'required'],
-            // 'phone' => ['regex:/^\+7 \d{3}-\d{3}-\d{2}-\d{2}$/', 'required']
             'email' => ['email', 'unique:users', 'required'],
             'password' => ['confirmed', 'min:6', 'required'],
         ]);
@@ -29,7 +28,6 @@ class RegistrationController extends Controller
             'login' => $request->login,
             'phone' => $request->phone,
             'email' => $request->email,
-            // 'address' => null,
             'password' => bcrypt($request->password),
         ]);
 
