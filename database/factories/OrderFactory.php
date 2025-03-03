@@ -25,7 +25,6 @@ class OrderFactory extends Factory
             'payment_type' => fake()->randomElement(['cash', 'card']),
             'status' => fake()->randomElement(['new', 'confirmed', 'cancelled']),
             'rejection_reason' => fake()->text(100),
-            'user_id' => User::factory()->create(),
         ];
     }
 }
