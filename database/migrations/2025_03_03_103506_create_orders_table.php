@@ -19,7 +19,7 @@ return new class extends Migration
             $table->time('time');
             $table->string('email');
             $table->enum('payment_type', ['cash', 'card']);
-            $table->enum('status', ['new', 'confirmed', 'cancelled']);
+            $table->enum('status', ['new', 'in_process', 'confirmed', 'cancelled']);
             $table->text('rejection_reason')->nullable();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
         });
