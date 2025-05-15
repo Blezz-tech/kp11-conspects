@@ -17,7 +17,7 @@ class OrderController extends Controller
     {
         $orders = new Collection();
 
-        if ($request->status == 'нет') {
+        if ($request->status == '') {
             $orders = Order::where('status', '!=', 'в корзине')
                 ->withCount('products')
                 ->get();

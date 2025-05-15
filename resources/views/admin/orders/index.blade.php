@@ -8,7 +8,7 @@
     @csrf
     <div class="d-flex justify-content-between mb-3 gap-3">
         <select name="status" class="form-select">
-            <option value="нет">Все категории</option>
+            <option value="">Все категории</option>
             <option value="новый">новый</option>
             <option value="подтвержден">подтвержден</option>
             <option value="в корзине">в корзине</option>
