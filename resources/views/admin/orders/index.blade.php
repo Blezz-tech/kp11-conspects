@@ -54,7 +54,7 @@
                     @if ($order->status === 'новый')
                         <form method="POST" action="{{route('admin.orders.cancel', $order)}}">
                             @csrf
-                            <input typ="text" name="coment" value="комментарий">
+                            <input typ="text" name="coment" value="" required>
                             <button type='submit' class='btn btn-primary mt-3'>
                                 Отменить заказ
                             </button>
