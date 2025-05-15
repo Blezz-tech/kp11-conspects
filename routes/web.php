@@ -63,6 +63,6 @@ Route::middleware(['admin'])->group(function () {
 
     Route::get('/admin/orders', [OrderController::class, 'index'])->name('admin.orders.index');
     Route::get('/admin/{order}/confirm/', [OrderController::class, 'confirm'])->name('admin.orders.confirm');
-    Route::get('/admin/{order}/cancel/', [OrderController::class, 'cancel'])->name('admin.orders.cancel');
+    Route::post('/admin/{order}/cancel/', [OrderController::class, 'cancel'])->name('admin.orders.cancel');
 
 });
