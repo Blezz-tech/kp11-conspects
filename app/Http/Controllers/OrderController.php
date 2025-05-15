@@ -39,8 +39,8 @@ class OrderController extends Controller
 
     public function cancel(Request $request, Order $order)
     {
-        $order->status = 'отменено';
-        $order->comment = $request->comment;
+        $order->status = 'отменен';
+        $order->coment = $request->coment;
         $order->save();
         return redirect('admin/orders')->with('success', 'Статус заказа изменен');
     }
