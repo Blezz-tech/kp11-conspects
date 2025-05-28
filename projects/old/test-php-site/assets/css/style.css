@@ -1,0 +1,46 @@
+.ff-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.ff-bona {
+  font-family: "Bona Nova", serif;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.min-vh-80 {
+  min-height: 80vh;
+}
+
+/* HEADER */
+
+.icon {
+  filter: invert(100%);
+}
+
+/* CONTENT AREA */
+
+#content-area {
+  font-family: "Roboto", sans-serif;
+}
+
+#content-area img {
+  width: 100%;
+}
+
+pre {
+  font-size: 16px;
+  width: 100%;
+}
+
+code {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 36px;
+
+  font-family: "Bona Nova", serif;
+}

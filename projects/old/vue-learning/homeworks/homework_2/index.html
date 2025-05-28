@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1</title>
+        <link rel="stylesheet" href="../plagin/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../plagin/css/font-awesome.min.css">
+        <link href="./css/styles.css" rel="stylesheet">
+        <script src="../plagin/js/vue.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sample">
+                <form>
+                    <div class="progress">
+                        <div class="progress-bar" :style="progressStyles"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group-item" v-for="(item) in info">
+                            <label>{{item.name + ' ' + symbol(item)}}</label>
+                            <input type="text" class="form-control" v-model="item.value" @input="check">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" @click="sendData">
+                        Send Data
+                    </button>
+                </form>
+                <div v-show="hasSend">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            Vue.createApp({
+                data: () => (
+                    {
+                        info: [
+                            {
+                                name: 'Name',
+                                value: '',
+                                pattern: /^[a-zA-Z ]{2,30}$/
+                            },
+                            {
+                                name: 'Phone',
+                                value: '',
+                                pattern: /^[0-9]{7,14}$/
+                            },
+                            {
+                                name: 'Email',
+                                value: '',
+                                pattern: /.+/
+                            },
+                            {
+                                name: 'Some Field 1',
+                                value: '',
+                                pattern: /.+/
+                            }, {
+                                name: 'Some Field 2',
+                                value: '',
+                                pattern: /.+/
+                            }
+                        ],
+                        data: {
+                            send: false,
+                            check: ""
+                        }
+                    }
+                ),
+                computed: {
+                    hasSend() {
+                        return this.data.send;
+                    },
+                    progressStyles() {
+                        return {'width': this.data.check};
+                    }
+                },
+                methods: {
+                    sendData() {
+                        this.data.send = true;
+                    },
+                    checkValue(item) {
+                        return item.pattern.test(item.value);
+                    },
+                    symbol(item) {
+                        return this.checkValue(item) ? "✅" : "❌";
+                    },
+                    check() {
+                        this.data.check = this.info.reduce((acc, item) => {
+                            return acc + (item.pattern.test(item.value) ? 100 / this.info.length : 0);
+                        }, 0) + '%';
+                    }
+
+                }
+            }).mount('.sample');
+        </script>
+    </body>
+</html>

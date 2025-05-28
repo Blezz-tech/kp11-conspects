@@ -1,0 +1,58 @@
+{
+	"examples": [
+		{
+			"property": "flex-direction",
+			"values": [
+				"row",
+				"row-reverse",
+				"column",
+				"column-reverse"
+			]
+		},
+		{
+			"property": "flex-wrap",
+			"values": [
+				"nowrap",
+				"wrap",
+				"wrap-reverse"
+			]
+		},
+		{
+			"property": "justify-content",
+			"values": [
+				"flex-start",
+				"center",
+				"flex-end",
+				"space-between",
+				"space-around",
+				"space-evenly"
+			]
+		},
+		{
+			"property": "align-items",
+			"values": [
+				"auto",
+				"flex-start",
+				"center",
+				"flex-end",
+				"stretch",
+				"baseline",
+				"space-between",
+				"space-around"
+			]
+		},
+		{
+			"property": "align-content",
+			"values": [
+				"auto",
+				"flex-start",
+				"center",
+				"flex-end",
+				"stretch",
+				"baseline",
+				"space-between",
+				"space-around"
+			]
+		}
+	]
+}

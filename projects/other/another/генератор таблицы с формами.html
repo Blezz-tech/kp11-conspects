@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const body = document.getElementsByTagName('body')[0];
+
+        // Удаление всех дочерних элементов
+        while (body.firstChild) {
+            body.removeChild(body.firstChild);
+        }
+
+        // generator table
+        const table = document.createElement('table');
+        for (i = 0; i < 100; i++) {
+            const tr = document.createElement('tr');
+            for (j = 0; j < 23; j++) {
+                const td = document.createElement('td');
+
+                // create Form
+                const form = document.createElement('input');
+
+                td.appendChild(form);
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+
+        body.appendChild(table);
+    </script>
+</body>
+
+</html>

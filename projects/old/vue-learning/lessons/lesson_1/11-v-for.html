@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Урок 1</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/vue.js"></script>
+    </head>
+    <body>
+		<!--
+			v-foe="value in array"
+			v-foe="value, key in array"
+			v-foe="value in obj"
+			v-foe="value, key in obj"
+			v-foe="value, key, i in obj" { a: 100, b: 200 }
+		-->
+		<div class="wrapper">
+			<div class="sample">
+				<button @click="addNumber">Add</button>
+				<ul class="list-group">
+					<li
+						class="list-group-item"
+						v-for="(number, i) in numbers"
+						@click="onDouble(i)"
+					>{{ i }} | {{ number }}</li>
+				</ul>
+
+			</div>
+		</div>
+		<script>
+
+		let app = Vue.createApp({
+			data: () => ({
+				numbers: [1.5, 2.5, 9999]
+			}),
+			methods: {
+				addNumber() {
+					this.numbers.push(Math.random());
+				},
+				onDouble(i){
+					this.numbers[i] *= 2;
+					// v2 this.$set(this.numbers, i, this.numbers[i] * 2)
+					// v2 numbers [{value: 1.5}, {value: 2.5}]
+				}
+			}
+		});
+
+			app.mount('.sample');
+		</script>
+	</body>
+</html>

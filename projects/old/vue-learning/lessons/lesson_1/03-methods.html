@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Урок 1</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/vue.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div
+                class="sample">
+                <!-- @input="onInput($event)" -->
+                <input type="text" :value="name" @input="onInput">
+                <hr>
+                <h2>Hello,
+                    {{ name }}</h2>
+            </div>
+        </div>
+        <script>
+
+            let app = Vue.createApp({
+                data: () => (
+                    {name: '21'}
+                ),
+                methods: {
+                    onInput(e) {
+                        this.name = e.target.value;
+                    }
+                }
+            });
+
+            app.mount('.sample');
+            console.log(app)
+            /*
+		{
+			name: '21', // proxy
+			onInput: options.methods.onInput.bind(this)
+		}
+		*/
+        </script>
+    </body>
+</html>

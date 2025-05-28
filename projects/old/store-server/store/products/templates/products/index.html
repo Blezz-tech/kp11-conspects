@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.png">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body class="bgg">
+    <header class="bg-dark p-2">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid d-flex ">
+                    <a class="text-light fs-5" href="{% url 'index' %}">Хабар (Будел логитип)</a>
+                    <div class="d-flex gap-3">
+                        <a class="btn btn btn-light" href="{% url 'products' %}">Каталог</a>
+                        <a class="btn btn btn-light" href="#">Войти</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-xl-5 col-sm-12 mt-4">
+                <p class="p-2 rounded bg-dark bg-opacity-75 text-light fs-3">Есть тут старая подстанция, её ещё Железным лесом называют. Ты если там будешь - поймёшь, почему. Так рассказывают, что после выброса там по нескольку артефактов находили. В смысле опасности место так себе - ну «электры», ну фонит немного… Правда, ещё полтергейсты есть. Если спрятаться не успел, закидают тебя всяким хламом.</p>
+                <a class="btn btn-info text-light btn-lg" href="{% url 'products' %}">Узнать больше об аномалиях Зоны</a>
+            </div>
+        </div>
+    </section>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
