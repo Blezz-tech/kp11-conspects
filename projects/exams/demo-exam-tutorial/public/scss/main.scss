@@ -1,0 +1,15 @@
+$primary:    #063069;
+$secondary:  #afaa8b;
+$success:    #cdc01b;
+$info:       #ff9e00;
+$warning:    #b8211d;
+$danger:     #ca3924;
+$light:      #f7eeb5;
+$dark:       #110a0a;
+
+.h1{
+    color: #063069
+}
+
+@import "../bootstrap/bootstrap.scss";
+
