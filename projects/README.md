@@ -6,4 +6,5 @@
 
 - [old](./old/README.md)
 - [other](./other/README.md)
+- [exams](./exams/README.md)
 - [4 курс](./course-4/README.md)
