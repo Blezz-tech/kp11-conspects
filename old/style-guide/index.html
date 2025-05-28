@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+
+
+</head>
+
+<body>
+    <h1 class="text-center mt-4">Nav bar</h1>
+    <div class="bg-primary text-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-4">Colored links</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <p><a href="#"
+                    class="link-indigo link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Primary
+                    link</a></p>
+            <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
+                    link</a></p>
+            <p><a href="#"
+                    class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Success
+                    link</a></p>
+            <p><a href="#"
+                    class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Danger
+                    link</a></p>
+            <p><a href="#"
+                    class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Warning
+                    link</a></p>
+            <p><a href="#"
+                    class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Info
+                    link</a></p>
+            <p><a href="#"
+                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Light
+                    link</a></p>
+            <p><a href="#"
+                    class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dark
+                    link</a></p>
+            <p><a href="#"
+                    class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Emphasis
+                    link</a></p>
+        </div>
+        <h1 class="text-center mt-4">Pagination</h1>
+        <div class="d-flex justify-content-center mt-3">
+            <nav aria-label="Пример навигации по страницам">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Следующая</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="text-center mt-4">Variants Buttons</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+
+
+        <h1 class="text-center mt-4">Outline buttons</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+
+
+        <h1 class="text-center mt-4">Form</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <h1 class="text-center mt-4">Icons</h1>
+        <div class="row mt-3">
+
+            <div class="col-1"><img src="./svgs/regular/address-book.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/address-card.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/bell-slash.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/bell.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/bookmark.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/building.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/calendar-check.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/calendar-days.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/calendar-minus.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/calendar-plus.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/calendar-xmark.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/calendar.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/chart-bar.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/chess-bishop.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/chess-king.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/chess-knight.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/chess-pawn.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/chess-queen.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/chess-rook.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-check.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-dot.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-down.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-left.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-pause.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-play.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-question.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-right.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-stop.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-up.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-user.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle-xmark.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/circle.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/clipboard.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/clock.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/clone.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/closed-captioning.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/comment-dots.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/comment.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/comments.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/compass.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/copy.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/copyright.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/credit-card.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/envelope-open.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/envelope.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/eye-slash.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/eye.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-angry.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-dizzy.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-flushed.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-frown-open.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-frown.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grimace.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-beam-sweat.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-beam.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-hearts.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-squint-tears.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-squint.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-stars.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-tears.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-tongue-squint.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-tongue-wink.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-tongue.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-wide.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin-wink.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-grin.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-kiss-beam.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-kiss-wink-heart.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-kiss.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-laugh-beam.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-laugh-squint.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-laugh-wink.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-laugh.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-meh-blank.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-meh.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-rolling-eyes.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-sad-cry.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-sad-tear.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-smile-beam.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-smile-wink.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-smile.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-surprise.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/face-tired.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-audio.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-code.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-excel.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-image.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-lines.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-pdf.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-powerpoint.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-video.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-word.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file-zipper.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/file.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/flag.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/floppy-disk.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/folder-closed.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/folder-open.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/folder.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/font-awesome.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/futbol.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/gem.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-back-fist.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-lizard.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-peace.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-point-down.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-point-left.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-point-right.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-point-up.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-pointer.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-scissors.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand-spock.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hand.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/handshake.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hard-drive.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/heart.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hospital.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hourglass-half.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/hourglass.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/id-badge.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/id-card.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/image.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/images.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/keyboard.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/lemon.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/life-ring.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/lightbulb.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/map.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/message.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/money-bill-1.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/moon.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/newspaper.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/note-sticky.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/object-group.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/object-ungroup.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/paper-plane.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/paste.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/pen-to-square.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/rectangle-list.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/rectangle-xmark.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/registered.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/share-from-square.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/snowflake.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square-caret-down.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square-caret-left.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square-caret-right.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square-caret-up.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square-check.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square-full.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square-minus.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square-plus.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/square.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/star-half-stroke.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/star-half.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/star.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/sun.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/thumbs-down.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/thumbs-up.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/trash-can.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/user.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/window-maximize.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/window-minimize.svg"></div>
+            <div class="col-1"><img src="./svgs/regular/window-restore.svg"></div>
+        </div>
+        <h1 class="text-center mt-4">logo</h1>
+        <div class="d-flex justify-content-center mt-3">
+            <img src="./img/Aperture_Science.svg.png">
+        </div>
+
+
+
+
+        <h1 class="text-center mt-4">sample images</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <img src="./img/img2.jpg">
+            <img src="./img/img3.jpg">
+
+        </div>
+
+
+        <h1 class="text-center mt-4">sample headings of different levels</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+
+        </div>
+
+
+        <h1 class="text-center mt-4">text samples</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, earum!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, earum!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, earum!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, earum!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, earum!</p>
+
+        </div>
+
+
+        <h1 class="text-center mt-4">carousel</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-between mt-3">
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <h1 class="text-center mt-4">card</h1>
+        <div class="d-flex justify-content-between mt-3">
+            <div class="card" style="width: 18rem;">
+                <img src="./img/bootstrap-logo.svg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-center mt-4"></h1>
+        <div class="d-flex justify-content-between mt-3">
+
+        </div>
+
+        <h1 class="text-center mt-4"></h1>
+        <div class="d-flex justify-content-between mt-3">
+
+        </div>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
