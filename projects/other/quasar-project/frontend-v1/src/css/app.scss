@@ -1,0 +1,109 @@
+// app global css in SCSS form
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.narrow-block {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  }
+
+li {
+  list-style: none;
+}
+
+.m-bg {
+  background-color: #e7e7e7;
+}
+
+
+h1, h2, h3, h5, h6, a, {
+  color: #066da7;
+  font-weight: bold;
+
+}
+
+
+hr {
+  color: #e7e7e7;
+}
+
+.date {
+  display: block;
+  width: 50px;
+  height: 51px;
+  font-size: 13px;
+  text-align: center;
+  background: #006fb4;
+  color: #fff;
+  line-height: 14px;
+  float: left;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+
+}
+
+.date-block {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+p, a, b, .text-body1, ul, li {
+ font-size: 18px;
+}
+
+
+.btn {
+  font-weight: bold;
+  font-size: 18px;
+  width: 140px;
+  height: 40px;
+  color: white;
+  background: #006fb4;
+}
+
+.right-aligned {
+  margin-left: auto;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.right-aligned {
+  margin-right: auto; /* Прижимает элементы к правому краю */
+}
+
+.document {
+  width: 102px;
+  height: 142px;
+}
+
+.dotted {
+  border-top: 1px dashed gray;
+  opacity: 50%;
+
+}
+
+.las {
+ color: #006fb4;
+}
+
+
+.icon-cont {
+width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+.disc {
+  list-style: disc;
+}
